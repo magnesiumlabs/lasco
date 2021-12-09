@@ -1,0 +1,8 @@
+## Files
+*.orig
+*.log
+
+## Folders
+.DS_Store
+/.idea
+/node_modules
