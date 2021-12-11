@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:map";
 @use "@sass-collective/breakpoint";
 @use "@sass-collective/css";
 @use "./variables";
@@ -46,7 +47,13 @@
 // ------------------------------------------------------------------------- //
 
 @mixin _set-class($property, $key) {
-    &-#{$key} {
+    $name: $key;
+
+    @if map.has-key(variables.$names, $key) {
+        $name: map.get(variables.$names, $key);
+    }
+
+    &-#{$name} {
         @include css.declaration($property, $key);
     }
 }
