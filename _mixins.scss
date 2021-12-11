@@ -10,6 +10,24 @@
 @mixin core-styles {
 
     // --------------------------------- //
+    // Display
+    // --------------------------------- //
+
+    @each $key in variables.$display {
+        .#{$key} {
+            @include css.declaration(display, $key);
+
+            // --------------------------------- //
+            // Breakpoint
+            // --------------------------------- //
+
+            @include _breakpoint {
+                @include css.declaration(display, $key);
+            }
+        }
+    }
+
+    // --------------------------------- //
     // Align
     // --------------------------------- //
 
@@ -63,12 +81,22 @@
         @include _set-class($property, $key);
     }
 
+    // --------------------------------- //
+    // Breakpoint
+    // --------------------------------- //
+
+    @include _breakpoint {
+        @each $key in $values {
+            @include _set-class($property, $key);
+        }
+    }
+}
+
+@mixin _breakpoint() {
     @each $key, $value in breakpoint.$screens {
-        @include breakpoint.styles($key) {
+        @include breakpoint.up($key) {
             @include css.selector($key) {
-                @each $key in $values {
-                    @include _set-class($property, $key);
-                }
+                @content;
             }
         }
     }
