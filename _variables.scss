@@ -1,0 +1,62 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+// --------------------------------- //
+// Align
+// --------------------------------- //
+
+$align-self: (
+    auto,
+    flex-start,
+    flex-end,
+    center,
+    stretch,
+    baseline
+) !default;
+
+$align-items: (
+    flex-start,
+    flex-end,
+    center,
+    baseline,
+    stretch
+) !default;
+
+$align-content: (
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+
+// --------------------------------- //
+// Justify
+// --------------------------------- //
+
+$justify-self: (
+    auto,
+    start,
+    end,
+    center,
+    stretch
+) !default;
+
+$justify-items: (
+    start,
+    end,
+    center,
+    stretch
+) !default;
+
+$justify-content: (
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+

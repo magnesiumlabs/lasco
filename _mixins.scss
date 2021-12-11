@@ -1,0 +1,74 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/breakpoint";
+@use "@sass-collective/css";
+@use "./variables";
+
+@mixin core-styles {
+
+    // --------------------------------- //
+    // Align
+    // --------------------------------- //
+
+    .align-self {
+        @include _classes(align-self, variables.$align-self);
+    }
+
+    .align-content {
+        @include _classes(align-content, variables.$align-content);
+    }
+
+    .align-items {
+        @include _classes(align-items, variables.$align-items);
+    }
+
+    // --------------------------------- //
+    // Justify
+    // --------------------------------- //
+
+    .justify-self {
+        @include _classes(justify-self, variables.$justify-self);
+    }
+
+    .justify-content {
+        @include _classes(justify-content, variables.$justify-content);
+    }
+
+    .justify-items {
+        @include _classes(justify-items, variables.$justify-items);
+    }
+}
+
+// ------------------------------------------------------------------------- //
+// Private mixins
+// ------------------------------------------------------------------------- //
+
+@mixin _set-class($property, $key) {
+    &-#{$key} {
+        @include css.declaration($property, $key);
+    }
+}
+
+@mixin _classes($property, $values) {
+    @each $key in $values {
+        @include _set-class($property, $key);
+    }
+
+    @each $key, $value in breakpoint.$screens {
+        @include breakpoint.styles($key) {
+            @include css.selector($key) {
+                @each $key in $values {
+                    @include _set-class($property, $key);
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------------------- //
+// Public mixins
+// ------------------------------------------------------------------------- //
+
+// ...
