@@ -2,9 +2,13 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
+@use "sass:map";
+
 $names: (
     flex-start: start,
     flex-end: end,
+    column: col,
+    column-reverse: col-reverse,
     space-between: between,
     space-around: around,
     space-evenly: evenly
@@ -18,6 +22,39 @@ $display: (
     flex,
     grid
 ) !default;
+
+// --------------------------------- //
+// Flex
+// --------------------------------- //
+
+$defaults-flex-grow: (
+    0: 0,
+    1: 1
+);
+
+$defaults-flex-shrink: (
+    0: 0,
+    1: 1
+);
+
+$flex-direction: (
+    row,
+    row-reverse,
+    column,
+    column-reverse
+) !default;
+
+$flex-wrap: (
+    wrap,
+    wrap-reverse,
+    nowrap
+) !default;
+
+$flex-grow: () !default;
+$flex-grow: map.merge($defaults-flex-grow, $flex-grow);
+
+$flex-shrink: () !default;
+$flex-shrink: map.merge($defaults-flex-shrink, $flex-shrink);
 
 // --------------------------------- //
 // Align

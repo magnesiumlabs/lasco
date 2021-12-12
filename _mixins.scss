@@ -28,6 +28,75 @@
     }
 
     // --------------------------------- //
+    // Flex
+    // --------------------------------- //
+
+    .flex {
+
+        // --------------------------------- //
+        // Direction
+        // --------------------------------- //
+
+        &-direction {
+            @include _classes(flex-direction, variables.$flex-direction);
+        }
+
+        // --------------------------------- //
+        // Wrap
+        // --------------------------------- //
+
+        @include _classes(flex-wrap, variables.$flex-wrap);
+
+        // --------------------------------- //
+        // Grow
+        // --------------------------------- //
+
+        &-grow {
+            @each $key, $value in variables.$flex-grow {
+                @if ($value == 1) {
+                    @include css.declaration(flex-grow, $value);
+
+                    @include _breakpoint {
+                        @include css.declaration(flex-grow, $value);
+                    }
+                } @else {
+                    @include _suffix($key) {
+                        @include css.declaration(flex-grow, $value);
+
+                        @include _breakpoint {
+                            @include css.declaration(flex-grow, $value);
+                        }
+                    }
+                }
+            }
+        }
+
+        // --------------------------------- //
+        // Shrink
+        // --------------------------------- //
+
+        &-shrink {
+            @each $key, $value in variables.$flex-shrink {
+                @if ($value == 1) {
+                    @include css.declaration(flex-shrink, $value);
+
+                    @include _breakpoint {
+                        @include css.declaration(flex-shrink, $value);
+                    }
+                } @else {
+                    @include _suffix($key) {
+                        @include css.declaration(flex-shrink, $value);
+
+                        @include _breakpoint {
+                            @include css.declaration(flex-shrink, $value);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // --------------------------------- //
     // Align
     // --------------------------------- //
 
@@ -63,6 +132,12 @@
 // ------------------------------------------------------------------------- //
 // Private mixins
 // ------------------------------------------------------------------------- //
+
+@mixin _suffix($name) {
+    &-#{$name} {
+        @content;
+    }
+}
 
 @mixin _set-class($property, $key) {
     $name: $key;
