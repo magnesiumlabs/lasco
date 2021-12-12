@@ -104,31 +104,21 @@
     }
 }
 
-@mixin _set-class($property, $key) {
-    $name: $key;
+@mixin _class-suffix($property, $key) {
+    $suffix: $key;
 
     @if map.has-key(variables.$names, $key) {
-        $name: map.get(variables.$names, $key);
+        $suffix: map.get(variables.$names, $key);
     }
 
-    &-#{$name} {
-        @include css.declaration($property, $key);
+    &-#{$suffix} {
+        @include _declaration($property, $key);
     }
 }
 
-@mixin _classes($property, $values) {
-    @each $key in $values {
-        @include _set-class($property, $key);
-    }
-
-    // --------------------------------- //
-    // Breakpoint
-    // --------------------------------- //
-
-    @include _breakpoint {
-        @each $key in $values {
-            @include _set-class($property, $key);
-        }
+@mixin _classes($property, $list) {
+    @each $key in $list {
+        @include _class-suffix($property, $key);
     }
 }
 
