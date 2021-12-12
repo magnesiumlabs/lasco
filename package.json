@@ -39,5 +39,25 @@
         "@sass-collective/breakpoint": "^2.4.0",
         "@sass-collective/css": "^2.0.1",
         "sass": "^1.45.0"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "sass",
+        "utilities",
+        "library",
+        "css",
+        "front-end"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
     }
 }
