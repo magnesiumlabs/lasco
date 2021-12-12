@@ -28,13 +28,13 @@ $display: (
 // --------------------------------- //
 
 $defaults-flex-grow: (
-    0: 0,
-    1: 1
+    default: 1,
+    0: 0
 );
 
 $defaults-flex-shrink: (
-    0: 0,
-    1: 1
+    default: 1,
+    0: 0
 );
 
 $flex-direction: (

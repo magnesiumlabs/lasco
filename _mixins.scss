@@ -15,15 +15,7 @@
 
     @each $key in variables.$display {
         .#{$key} {
-            @include css.declaration(display, $key);
-
-            // --------------------------------- //
-            // Breakpoint
-            // --------------------------------- //
-
-            @include _breakpoint {
-                @include css.declaration(display, $key);
-            }
+            @include _declaration(display, $key);
         }
     }
 
@@ -32,64 +24,31 @@
     // --------------------------------- //
 
     .flex {
-
-        // --------------------------------- //
-        // Direction
-        // --------------------------------- //
+        @include _classes(flex-wrap, variables.$flex-wrap);
 
         &-direction {
             @include _classes(flex-direction, variables.$flex-direction);
         }
 
-        // --------------------------------- //
-        // Wrap
-        // --------------------------------- //
-
-        @include _classes(flex-wrap, variables.$flex-wrap);
-
-        // --------------------------------- //
-        // Grow
-        // --------------------------------- //
-
         &-grow {
             @each $key, $value in variables.$flex-grow {
-                @if ($value == 1) {
-                    @include css.declaration(flex-grow, $value);
-
-                    @include _breakpoint {
-                        @include css.declaration(flex-grow, $value);
-                    }
+                @if ($key == default) {
+                    @include _declaration(flex-grow, $value);
                 } @else {
-                    @include _suffix($key) {
-                        @include css.declaration(flex-grow, $value);
-
-                        @include _breakpoint {
-                            @include css.declaration(flex-grow, $value);
-                        }
+                    &-#{$key} {
+                        @include _declaration(flex-grow, $value);
                     }
                 }
             }
         }
 
-        // --------------------------------- //
-        // Shrink
-        // --------------------------------- //
-
         &-shrink {
             @each $key, $value in variables.$flex-shrink {
-                @if ($value == 1) {
-                    @include css.declaration(flex-shrink, $value);
-
-                    @include _breakpoint {
-                        @include css.declaration(flex-shrink, $value);
-                    }
+                @if ($key == default) {
+                    @include _declaration(flex-shrink, $value);
                 } @else {
-                    @include _suffix($key) {
-                        @include css.declaration(flex-shrink, $value);
-
-                        @include _breakpoint {
-                            @include css.declaration(flex-shrink, $value);
-                        }
+                    &-#{$key} {
+                        @include _declaration(flex-shrink, $value);
                     }
                 }
             }
@@ -100,32 +59,36 @@
     // Align
     // --------------------------------- //
 
-    .align-self {
-        @include _classes(align-self, variables.$align-self);
-    }
+    .align {
+        &-self {
+            @include _classes(align-self, variables.$align-self);
+        }
 
-    .align-content {
-        @include _classes(align-content, variables.$align-content);
-    }
+        &-content {
+            @include _classes(align-content, variables.$align-content);
+        }
 
-    .align-items {
-        @include _classes(align-items, variables.$align-items);
+        &-items {
+            @include _classes(align-items, variables.$align-items);
+        }
     }
 
     // --------------------------------- //
     // Justify
     // --------------------------------- //
 
-    .justify-self {
-        @include _classes(justify-self, variables.$justify-self);
-    }
+    .justify {
+        &-self {
+            @include _classes(justify-self, variables.$justify-self);
+        }
 
-    .justify-content {
-        @include _classes(justify-content, variables.$justify-content);
-    }
+        &-content {
+            @include _classes(justify-content, variables.$justify-content);
+        }
 
-    .justify-items {
-        @include _classes(justify-items, variables.$justify-items);
+        &-items {
+            @include _classes(justify-items, variables.$justify-items);
+        }
     }
 }
 
@@ -133,9 +96,11 @@
 // Private mixins
 // ------------------------------------------------------------------------- //
 
-@mixin _suffix($name) {
-    &-#{$name} {
-        @content;
+@mixin _declaration($property, $value) {
+    @include css.declaration($property, $value);
+
+    @include _breakpoint {
+        @include css.declaration($property, $value);
     }
 }
 
