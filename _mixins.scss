@@ -5,6 +5,7 @@
 @use "sass:map";
 @use "@sass-collective/breakpoint";
 @use "@sass-collective/css";
+@use "./config";
 @use "./variables";
 
 @mixin core-styles {

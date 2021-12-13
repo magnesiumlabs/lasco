@@ -1,0 +1,14 @@
+// ============================================================================================= //
+//                                         CONFIGURATION                                         //
+// ============================================================================================= //
+
+@use "@sass-collective/breakpoint";
+@use "./variables";
+
+///
+/// @see {mixin} breakpoint.config
+///
+@include breakpoint.config(
+    variables.$breakpoints,
+    variables.$breakpoints-reset
+);
