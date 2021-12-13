@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/magnesiumlabs/lasco/compare/v0.2.0...v0.3.0) (2021-12-13)
+
+
+### Features
+
+* **options:** add breakpoints options ([dcaa713](https://github.com/magnesiumlabs/lasco/commit/dcaa713ad37a6fc18f50a84ad9d83d8ee1d349f3))
+
 ## [0.2.0](https://github.com/magnesiumlabs/lasco/compare/v0.1.0...v0.2.0) (2021-12-13)
 
 
