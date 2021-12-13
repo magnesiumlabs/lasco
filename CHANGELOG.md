@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/magnesiumlabs/lasco/compare/v0.1.0...v0.2.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* remove `main` on package.json ([0e87302](https://github.com/magnesiumlabs/lasco/commit/0e87302904a933b54d002f4d301a8020f428b421))
+
 ## 0.1.0 (2021-12-12)
 
 
