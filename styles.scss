@@ -2,6 +2,9 @@
 //                                             LASCO                                             //
 // ============================================================================================= //
 
-@use "./mixins";
+@use "./src/config";
 
-@include mixins.core-styles;
+@use "./src/components/display/styles" as display-styles;
+@use "./src/components/flex/styles" as flex-styles;
+@use "./src/components/align/styles" as align-styles;
+@use "./src/components/justify/styles" as justify-styles;

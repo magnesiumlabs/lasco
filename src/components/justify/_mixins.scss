@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+
+@mixin core-styles {
+    .justify-self {
+        @include core.classes(justify-self, core.$justify-self);
+    }
+
+    .justify-content {
+        @include core.classes(justify-content, core.$justify-content);
+    }
+
+    .justify-items {
+        @include core.classes(justify-items, core.$justify-items);
+    }
+}

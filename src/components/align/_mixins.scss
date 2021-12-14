@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+
+@mixin core-styles {
+    .align-self {
+        @include core.classes(align-self, core.$align-self);
+    }
+
+    .align-content {
+        @include core.classes(align-content, core.$align-content);
+    }
+
+    .align-items {
+        @include core.classes(align-items, core.$align-items);
+    }
+}

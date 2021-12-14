@@ -1,0 +1,39 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+
+@mixin core-styles {
+    .flex {
+        @include core.classes(flex-wrap, core.$flex-wrap);
+    }
+
+    .flex-direction {
+        @include core.classes(flex-direction, core.$flex-direction);
+    }
+
+    .flex-grow {
+        @each $key, $value in core.$flex-grow {
+            @if ($key == default) {
+                @include core.declaration(flex-grow, $value);
+            } @else {
+                &-#{$key} {
+                    @include core.declaration(flex-grow, $value);
+                }
+            }
+        }
+    }
+
+    .flex-shrink {
+        @each $key, $value in core.$flex-shrink {
+            @if ($key == default) {
+                @include core.declaration(flex-shrink, $value);
+            } @else {
+                &-#{$key} {
+                    @include core.declaration(flex-shrink, $value);
+                }
+            }
+        }
+    }
+}
