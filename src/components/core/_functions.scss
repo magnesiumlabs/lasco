@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                           FUNCTIONS                                           //
+// ============================================================================================= //
+
+@use "sass:meta";
+@use "sass:string";
+
+///
+/// Replace.
+///
+@function replace($string, $search, $replace: "") {
+    $index: string.index($string, $search);
+
+    @if $index {
+        @return string.slice($string, 1, $index - 1) + $replace + replace(str-slice($string, $index + string.length($search)), $search, $replace);
+    }
+
+    @return $string;
+}

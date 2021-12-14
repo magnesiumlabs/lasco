@@ -30,6 +30,26 @@ $display: (
     grid
 ) !default;
 
+
+// --------------------------------- //
+// Height
+// --------------------------------- //
+
+$defaults-height: (
+    0: 0,
+    full: 100%,
+    screen: 100vh
+) !default;
+
+$min-height: () !default;
+$min-height: map.merge($defaults-height, $min-height);
+
+$max-height: () !default;
+$max-height: map.merge($defaults-height, $max-height);
+
+$height: () !default;
+$height: map.merge($defaults-height, $height);
+
 // --------------------------------- //
 // Flex
 // --------------------------------- //
