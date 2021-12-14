@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/magnesiumlabs/lasco/compare/v0.3.0...v0.4.0) (2021-12-14)
+
+
+### Features
+
+* move files to `src` folder ([210af74](https://github.com/magnesiumlabs/lasco/commit/210af74c2ecba2d1c1b9b351987eab4bebd4d8b4))
+
 ## [0.3.0](https://github.com/magnesiumlabs/lasco/compare/v0.2.0...v0.3.0) (2021-12-13)
 
 
