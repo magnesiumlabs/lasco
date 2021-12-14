@@ -1,0 +1,58 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:meta";
+@use "sass:map";
+@use "../core";
+
+@mixin core-styles {
+    .min-w {
+        @each $key, $value in core.$min-width {
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, "/", \/);
+            }
+
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, ".", \.);
+            }
+
+            &-#{$key} {
+                @include core.declaration(min-width, $value);
+            }
+        }
+    }
+
+    .max-w {
+        @each $key, $value in core.$max-width {
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, "/", \/);
+            }
+
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, ".", \.);
+            }
+
+            &-#{$key} {
+                @include core.declaration(max-width, $value);
+            }
+        }
+    }
+
+    .w {
+
+        @each $key, $value in core.$width {
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, "/", \/);
+            }
+
+            @if meta.type-of($key) == "string" {
+                $key: core.replace($key, ".", \.);
+            }
+
+            &-#{$key} {
+                @include core.declaration(width, $value);
+            }
+        }
+    }
+}

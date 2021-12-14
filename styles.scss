@@ -5,6 +5,7 @@
 @use "./src/config";
 
 @use "./src/components/display/styles" as display-styles;
+@use "./src/components/width/styles" as width-styles;
 @use "./src/components/height/styles" as height-styles;
 @use "./src/components/flex/styles" as flex-styles;
 @use "./src/components/align/styles" as align-styles;

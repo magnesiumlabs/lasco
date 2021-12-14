@@ -30,6 +30,24 @@ $display: (
     grid
 ) !default;
 
+// --------------------------------- //
+// Width
+// --------------------------------- //
+
+$defaults-width: (
+    0: 0,
+    full: 100%,
+    screen: 100vw
+);
+
+$min-width: () !default;
+$min-width: map.merge($defaults-width, $min-width);
+
+$max-width: () !default;
+$max-width: map.merge($defaults-width, $max-width);
+
+$width: () !default;
+$width: map.merge($defaults-width, $width);
 
 // --------------------------------- //
 // Height
@@ -39,7 +57,7 @@ $defaults-height: (
     0: 0,
     full: 100%,
     screen: 100vh
-) !default;
+);
 
 $min-height: () !default;
 $min-height: map.merge($defaults-height, $min-height);
