@@ -7,49 +7,55 @@
 
 @mixin core-styles {
     .min-h {
-        @each $key, $value in core.$min-height {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+        @if not core.is-disabled(min-height) {
+            @each $key, $value in core.$min-height {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            &-#{$key} {
-                @include core.declaration(min-height, $value);
+                &-#{$key} {
+                    @include core.declaration(min-height, $value);
+                }
             }
         }
     }
 
     .max-h {
-        @each $key, $value in core.$max-height {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+        @if not core.is-disabled(max-height) {
+            @each $key, $value in core.$max-height {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            &-#{$key} {
-                @include core.declaration(max-height, $value);
+                &-#{$key} {
+                    @include core.declaration(max-height, $value);
+                }
             }
         }
     }
 
     .h {
-        @each $key, $value in core.$height {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+        @if not core.is-disabled(height) {
+            @each $key, $value in core.$height {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            &-#{$key} {
-                @include core.declaration(height, $value);
+                &-#{$key} {
+                    @include core.declaration(height, $value);
+                }
             }
         }
     }

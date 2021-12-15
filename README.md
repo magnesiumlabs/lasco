@@ -17,3 +17,43 @@ npm install lasco
 ```scss
 @use "lasco/styles";
 ```
+
+### Options
+
+| Name        | Default | Description                            |
+|-------------|---------|----------------------------------------|
+| `$disabled` | `()`    | Sets a list of properties to disabled. |
+
+### Properties
+
+| Name               |
+|--------------------|
+| `$display`         |
+| `$min-width`       |
+| `$max-width`       |
+| `$width`           |
+| `$min-height`      |
+| `$max-height`      |
+| `$height`          |
+| `$flex-direction`  |
+| `$flex-wrap`       |
+| `$flex-grow`       |
+| `$flex-shrink`     |
+| `$align-self`      |
+| `$align-items`     |
+| `$align-content`   |
+| `$justify-self`    |
+| `$justify-items`   |
+| `$justify-content` |
+
+#### Disable property with `$disabled`
+
+```scss
+@use "lasco" with (
+    $disabled: (
+        min-height,
+        max-height
+        // etc...
+    )
+);
+```

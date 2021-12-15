@@ -2,8 +2,11 @@
 //                                           FUNCTIONS                                           //
 // ============================================================================================= //
 
+@use "sass:list";
+@use "sass:map";
 @use "sass:meta";
 @use "sass:string";
+@use "./variables";
 
 ///
 /// Replace.
@@ -16,4 +19,12 @@
     }
 
     @return $string;
+}
+
+//@function is-disabled($map) {
+//    @return map.get($map, disabled);
+//}
+
+@function is-disabled($property) {
+    @return list.index(variables.$disabled, $property);
 }

@@ -8,50 +8,55 @@
 
 @mixin core-styles {
     .min-w {
-        @each $key, $value in core.$min-width {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+        @if not core.is-disabled(min-width) {
+            @each $key, $value in core.$min-width {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            &-#{$key} {
-                @include core.declaration(min-width, $value);
+                &-#{$key} {
+                    @include core.declaration(min-width, $value);
+                }
             }
         }
     }
 
     .max-w {
-        @each $key, $value in core.$max-width {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+        @if not core.is-disabled(max-width) {
+            @each $key, $value in core.$max-width {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            &-#{$key} {
-                @include core.declaration(max-width, $value);
+                &-#{$key} {
+                    @include core.declaration(max-width, $value);
+                }
             }
         }
     }
 
     .w {
+        @if not core.is-disabled(width) {
+            @each $key, $value in core.$width {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
 
-        @each $key, $value in core.$width {
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, "/", \/);
-            }
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
 
-            @if meta.type-of($key) == "string" {
-                $key: core.replace($key, ".", \.);
-            }
-
-            &-#{$key} {
-                @include core.declaration(width, $value);
+                &-#{$key} {
+                    @include core.declaration(width, $value);
+                }
             }
         }
     }

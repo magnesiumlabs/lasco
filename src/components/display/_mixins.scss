@@ -5,9 +5,11 @@
 @use "../core";
 
 @mixin core-styles {
-    @each $key in core.$display {
-        .#{$key} {
-            @include core.declaration(display, $key);
+    @if not core.is-disabled(display) {
+        @each $key in core.$display {
+            .#{$key} {
+                @include core.declaration(display, $key);
+            }
         }
     }
 }
