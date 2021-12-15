@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/magnesiumlabs/lasco/compare/v0.4.0...v0.5.0) (2021-12-15)
+
+
+### Features
+
+* **height:** add main classes ([6fc4c94](https://github.com/magnesiumlabs/lasco/commit/6fc4c9438086e284ba91bc1606092745b9968fe0))
+* **options:** add `disabled` option ([84768af](https://github.com/magnesiumlabs/lasco/commit/84768af6d2359d08e024cffdeaf49b98c60e4fb6))
+* **width:** add main classes ([b969c03](https://github.com/magnesiumlabs/lasco/commit/b969c0301693778b1d845f2673a785e96c2f8c25))
+
 ## [0.4.0](https://github.com/magnesiumlabs/lasco/compare/v0.3.0...v0.4.0) (2021-12-14)
 
 
