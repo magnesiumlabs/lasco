@@ -104,6 +104,17 @@ $flex-shrink: () !default;
 $flex-shrink: map.merge($defaults-flex-shrink, $flex-shrink);
 
 // --------------------------------- //
+// Gap
+// --------------------------------- //
+
+$defaults-gap: (
+    0: 0
+);
+
+$gap: () !default;
+$gap: map.merge($defaults-gap, $gap);
+
+// --------------------------------- //
 // Align
 // --------------------------------- //
 
