@@ -35,11 +35,11 @@ npm install lasco
 | Name              | Docs                                         |
 |-------------------|----------------------------------------------|
 | `display`         | _Coming soon_                                |
-| `min-width`       | _Coming soon_                                |
-| `max-width`       | _Coming soon_                                |
+| `min-width`       | See [readme](/src/components/width#readme).  |
+| `max-width`       | See [readme](/src/components/width#readme).  |
 | `width`           | See [readme](/src/components/width#readme).  |
-| `min-height`      | _Coming soon_                                |
-| `max-height`      | _Coming soon_                                |
+| `min-height`      | See [readme](/src/components/height#readme). |
+| `max-height`      | See [readme](/src/components/height#readme). |
 | `height`          | See [readme](/src/components/height#readme). |
 | `flex-direction`  | _Coming soon_                                |
 | `flex-wrap`       | _Coming soon_                                |
