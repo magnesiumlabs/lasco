@@ -40,7 +40,8 @@
         "sass": "^1.45.0"
     },
     "files": [
-        "*.scss"
+        "*.scss",
+        "src/**/*"
     ],
     "keywords": [
         "lasco",
