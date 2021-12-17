@@ -24,7 +24,7 @@ To control the `min-width` at a specific breakpoint, add a `{screen}:` prefix to
 
 ### Extend
 
-You can easily extend the Lasco's width scales:
+You can easily extend the Lasco's `min-width` scales:
 
 ```scss
 @use "lasco" with (
