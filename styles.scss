@@ -4,9 +4,30 @@
 
 @use "./src/config";
 
+// ------------------------------------------------------------------------- //
+// Display
+// ------------------------------------------------------------------------- //
+
 @use "./src/components/display/styles" as display-styles;
+
+// ------------------------------------------------------------------------- //
+// Width
+// ------------------------------------------------------------------------- //
+
+@use "./src/components/width/min/styles" as min-width-styles;
+@use "./src/components/width/max/styles" as max-width-styles;
 @use "./src/components/width/styles" as width-styles;
+
+// ------------------------------------------------------------------------- //
+// Height
+// ------------------------------------------------------------------------- //
+
 @use "./src/components/height/styles" as height-styles;
+
+// ------------------------------------------------------------------------- //
+// ...
+// ------------------------------------------------------------------------- //
+
 @use "./src/components/flex/styles" as flex-styles;
 @use "./src/components/gap/styles" as gap-styles;
 @use "./src/components/align/styles" as align-styles;

@@ -4,12 +4,12 @@
 
 @use "sass:meta";
 @use "sass:map";
-@use "../core";
+@use "../../core";
 
 @mixin core-styles {
-    .w {
-        @if not core.is-disabled(width) {
-            @each $key, $value in core.$width {
+    .max-w {
+        @if not core.is-disabled(max-width) {
+            @each $key, $value in core.$max-width {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }
@@ -19,7 +19,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration(width, $value);
+                    @include core.declaration(max-width, $value);
                 }
             }
         }
