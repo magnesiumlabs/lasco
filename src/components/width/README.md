@@ -4,8 +4,6 @@ Class generator for setting `width` property for an element.
 
 ## Classes
 
-### `width`
-
 | Class      | Property        |
 |------------|-----------------|
 | `w-0`      | `width: 0;`     |
@@ -14,10 +12,9 @@ Class generator for setting `width` property for an element.
 
 ## Responsive
 
-To control the width at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+To control the `width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-
 <div class="w-0 md:w-full">
     <!-- ... -->
 </div>

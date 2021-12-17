@@ -1,10 +1,8 @@
-# max-width
+# Max-Width
 
 Class generator for setting `max-width` property for an element.
 
 ## Classes
-
-### `max-width`
 
 | Class          | Property            |
 |----------------|---------------------|
@@ -17,7 +15,6 @@ Class generator for setting `max-width` property for an element.
 To control the `max-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-
 <div class="max-w-0 md:max-w-full">
     <!-- ... -->
 </div>
@@ -27,7 +24,7 @@ To control the `max-width` at a specific breakpoint, add a `{screen}:` prefix to
 
 ### Extend
 
-You can easily extend the Lasco's width scales:
+You can easily extend the Lasco's `max-width` scales:
 
 ```scss
 @use "lasco" with (

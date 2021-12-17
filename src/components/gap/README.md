@@ -13,7 +13,6 @@ Class generator for setting `gap` property for an element.
 To control the gap at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-
 <div class="gap-0 md:gap-24">
     <!-- ... -->
 </div>

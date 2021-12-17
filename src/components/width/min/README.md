@@ -4,8 +4,6 @@ Class generator for setting `min-width` property for an element.
 
 ## Classes
 
-### `min-width`
-
 | Class          | Property            |
 |----------------|---------------------|
 | `min-w-0`      | `min-width: 0;`     |
@@ -17,7 +15,6 @@ Class generator for setting `min-width` property for an element.
 To control the `min-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-
 <div class="min-w-0 md:min-w-full">
     <!-- ... -->
 </div>
