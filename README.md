@@ -1,4 +1,4 @@
-/max# Lasco
+# Lasco
 
 [![Version](https://flat.badgen.net/npm/v/lasco)](https://www.npmjs.com/package/lasco)
 [![Downloads](https://flat.badgen.net/npm/dt/lasco)](https://www.npmjs.com/package/lasco)
