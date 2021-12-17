@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/magnesiumlabs/lasco/compare/v0.7.0...v0.8.0) (2021-12-17)
+
+
+### Features
+
+* **place:** add main classes ([03818c0](https://github.com/magnesiumlabs/lasco/commit/03818c065f91a61172451f80ed61712e29191a06))
+
 ## [0.7.0](https://github.com/magnesiumlabs/lasco/compare/v0.6.1...v0.7.0) (2021-12-16)
 
 ### [0.6.1](https://github.com/magnesiumlabs/lasco/compare/v0.6.0...v0.6.1) (2021-12-16)
