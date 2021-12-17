@@ -172,3 +172,31 @@ $justify-content: (
     space-evenly
 ) !default;
 
+// --------------------------------- //
+// Place
+// --------------------------------- //
+
+$place-self: (
+    auto,
+    start,
+    end,
+    center,
+    stretch
+) !default;
+
+$place-items: (
+    start,
+    end,
+    center,
+    stretch
+) !default;
+
+$place-content: (
+    start,
+    end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+
