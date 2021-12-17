@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:meta";
+@use "../../core";
+
+@mixin core-styles {
+    .max-h {
+        @if not core.is-disabled(max-height) {
+            @each $key, $value in core.$max-height {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
+
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, ".", \.);
+                }
+
+                &-#{$key} {
+                    @include core.declaration(max-height, $value);
+                }
+            }
+        }
+    }
+}

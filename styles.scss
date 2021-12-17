@@ -22,6 +22,8 @@
 // Height
 // ------------------------------------------------------------------------- //
 
+@use "./src/components/height/min/styles" as min-height-styles;
+@use "./src/components/height/max/styles" as max-height-styles;
 @use "./src/components/height/styles" as height-styles;
 
 // ------------------------------------------------------------------------- //
