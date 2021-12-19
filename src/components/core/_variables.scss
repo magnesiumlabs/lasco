@@ -28,8 +28,13 @@ $breakpoints-reset: false !default;
 // --------------------------------- //
 
 $display: (
+    block,
+    inline-block,
     flex,
-    grid
+    inline-flex,
+    grid,
+    inline-grid,
+    hidden
 ) !default;
 
 // --------------------------------- //
