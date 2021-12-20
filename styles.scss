@@ -30,6 +30,7 @@
 // ...
 // ------------------------------------------------------------------------- //
 
+@use "./src/components/aspect-ratio/styles" as aspect-ratio-styles;
 @use "./src/components/flex/styles" as flex-styles;
 @use "./src/components/gap/styles" as gap-styles;
 @use "./src/components/align/styles" as align-styles;

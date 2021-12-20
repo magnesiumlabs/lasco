@@ -1,0 +1,23 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:string";
+@use "sass:meta";
+@use "../core";
+
+@mixin core-styles {
+    .aspect {
+        @if not core.is-disabled(aspect-ratio) {
+            @each $key, $value in core.$aspect-ratio {
+                @if meta.type-of($key) == "string" {
+                    $key: core.replace($key, "/", \/);
+                }
+
+                &-#{$key} {
+                    @include core.declaration(aspect-ratio, string.unquote($value));
+                }
+            }
+        }
+    }
+}

@@ -76,6 +76,19 @@ $height: () !default;
 $height: map.merge($defaults-height, $height);
 
 // --------------------------------- //
+// Aspect Ratio
+// --------------------------------- //
+
+$defaults-aspect-ratio: (
+    auto: auto,
+    square: "1/1",
+    video: "16/9"
+);
+
+$aspect-ratio: () !default;
+$aspect-ratio: map.merge($defaults-aspect-ratio, $aspect-ratio);
+
+// --------------------------------- //
 // Flex
 // --------------------------------- //
 
