@@ -5,11 +5,12 @@
 @use "sass:meta";
 @use "sass:map";
 @use "../../core";
+@use "./variables";
 
 @mixin core-styles {
     .max-w {
         @if not core.is-disabled(max-width) {
-            @each $key, $value in core.$max-width {
+            @each $key, $value in variables.$max-width {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }

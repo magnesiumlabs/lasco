@@ -5,11 +5,12 @@
 @use "sass:meta";
 @use "sass:string";
 @use "../core";
+@use "./variables";
 
 @mixin core-styles {
     .gap {
         @if not core.is-disabled(gap) {
-            @each $key, $value in core.$gap {
+            @each $key, $value in variables.$gap {
                 $property: gap;
 
                 @if meta.type-of($key) == "string" and string.index($key, "x-") {

@@ -4,11 +4,12 @@
 
 @use "sass:meta";
 @use "../../core";
+@use "./variables";
 
 @mixin core-styles {
     .min-h {
         @if not core.is-disabled(min-height) {
-            @each $key, $value in core.$min-height {
+            @each $key, $value in variables.$min-height {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }

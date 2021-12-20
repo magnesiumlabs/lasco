@@ -24,80 +24,15 @@ $breakpoints: () !default;
 $breakpoints-reset: false !default;
 
 // --------------------------------- //
-// Display
-// --------------------------------- //
-
-$display: (
-    block,
-    inline-block,
-    flex,
-    inline-flex,
-    grid,
-    inline-grid,
-    hidden
-) !default;
-
-// --------------------------------- //
-// Width
-// --------------------------------- //
-
-$defaults-width: (
-    0: 0,
-    full: 100%,
-    screen: 100vw
-);
-
-$min-width: () !default;
-$min-width: map.merge($defaults-width, $min-width);
-
-$max-width: () !default;
-$max-width: map.merge($defaults-width, $max-width);
-
-$width: () !default;
-$width: map.merge($defaults-width, $width);
-
-// --------------------------------- //
-// Height
-// --------------------------------- //
-
-$defaults-height: (
-    0: 0,
-    full: 100%,
-    screen: 100vh
-);
-
-$min-height: () !default;
-$min-height: map.merge($defaults-height, $min-height);
-
-$max-height: () !default;
-$max-height: map.merge($defaults-height, $max-height);
-
-$height: () !default;
-$height: map.merge($defaults-height, $height);
-
-// --------------------------------- //
-// Aspect Ratio
-// --------------------------------- //
-
-$defaults-aspect-ratio: (
-    auto: auto,
-    square: "1/1",
-    video: "16/9"
-);
-
-$aspect-ratio: () !default;
-$aspect-ratio: map.merge($defaults-aspect-ratio, $aspect-ratio);
-
-// --------------------------------- //
 // Flex
 // --------------------------------- //
 
-$defaults-flex-grow: (
+$_defaults-flex-grow: (
     default: 1,
     0: 0
 );
 
-$defaults-flex-shrink: (
+$_defaults-flex-shrink: (
     default: 1,
     0: 0
 );
@@ -116,21 +51,10 @@ $flex-wrap: (
 ) !default;
 
 $flex-grow: () !default;
-$flex-grow: map.merge($defaults-flex-grow, $flex-grow);
+$flex-grow: map.merge($_defaults-flex-grow, $flex-grow);
 
 $flex-shrink: () !default;
-$flex-shrink: map.merge($defaults-flex-shrink, $flex-shrink);
-
-// --------------------------------- //
-// Gap
-// --------------------------------- //
-
-$defaults-gap: (
-    0: 0
-);
-
-$gap: () !default;
-$gap: map.merge($defaults-gap, $gap);
+$flex-shrink: map.merge($_defaults-flex-shrink, $flex-shrink);
 
 // --------------------------------- //
 // Align

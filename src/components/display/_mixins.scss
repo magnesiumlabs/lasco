@@ -3,10 +3,11 @@
 // ============================================================================================= //
 
 @use "../core";
+@use "./variables";
 
 @mixin core-styles {
     @if not core.is-disabled(display) {
-        @each $key in core.$display {
+        @each $key in variables.$display {
             $value: $key;
 
             @if ($key == hidden) {

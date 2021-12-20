@@ -3,3 +3,12 @@
 // ============================================================================================= //
 
 @forward "./src/components/core/variables";
+@forward "./src/components/display/variables";
+@forward "./src/components/width/min/variables";
+@forward "./src/components/width/max/variables";
+@forward "./src/components/width/variables";
+@forward "./src/components/height/min/variables";
+@forward "./src/components/height/max/variables";
+@forward "./src/components/height/variables";
+@forward "./src/components/aspect-ratio/variables";
+@forward "./src/components/gap/variables";
