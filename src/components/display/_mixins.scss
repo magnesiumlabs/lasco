@@ -2,20 +2,21 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "@sass-collective/css";
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
-    @if not core.is-disabled(display) {
-        @each $key in variables.$display {
-            $value: $key;
+    @each $key in variables.$display {
+        $value: $key;
 
-            @if ($key == hidden) {
-                $value: none;
-            }
+        @if ($key == hidden) {
+            $value: none;
+        }
 
-            .#{$key} {
-                @include core.declaration(display, $value);
+        .#{$key} {
+            @include core.declaration(display) {
+                @include css.declaration(display, $value);
             }
         }
     }

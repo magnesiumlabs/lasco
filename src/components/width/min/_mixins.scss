@@ -4,12 +4,13 @@
 
 @use "sass:meta";
 @use "sass:map";
+@use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .min-w {
-        @if not core.is-disabled(min-width) {
+        @include core.declaration(min-width) {
             @each $key, $value in variables.$min-width {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
@@ -20,7 +21,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration(min-width, $value);
+                    @include css.declaration(min-width, $value);
                 }
             }
         }

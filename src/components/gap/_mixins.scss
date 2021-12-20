@@ -4,12 +4,13 @@
 
 @use "sass:meta";
 @use "sass:string";
+@use "@sass-collective/css";
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .gap {
-        @if not core.is-disabled(gap) {
+        @include core.declaration(gap) {
             @each $key, $value in variables.$gap {
                 $property: gap;
 
@@ -20,7 +21,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration($property, $value);
+                    @include css.declaration($property, $value);
                 }
             }
         }

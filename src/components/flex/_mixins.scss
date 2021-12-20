@@ -2,29 +2,30 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "@sass-collective/css";
 @use "../core";
 
 @mixin core-styles {
     .flex {
-        @if not core.is-disabled(flex-wrap) {
+        @include core.declaration(flex-wrap) {
             @include core.classes(flex-wrap, core.$flex-wrap);
         }
     }
 
     .flex-direction {
-        @if not core.is-disabled(flex-direction) {
+        @include core.declaration(flex-direction) {
             @include core.classes(flex-direction, core.$flex-direction);
         }
     }
 
     .flex-grow {
-        @if not core.is-disabled(flex-grow) {
+        @include core.declaration(flex-grow) {
             @each $key, $value in core.$flex-grow {
                 @if ($key == default) {
-                    @include core.declaration(flex-grow, $value);
+                    @include css.declaration(flex-grow, $value);
                 } @else {
                     &-#{$key} {
-                        @include core.declaration(flex-grow, $value);
+                        @include css.declaration(flex-grow, $value);
                     }
                 }
             }
@@ -32,13 +33,13 @@
     }
 
     .flex-shrink {
-        @if not core.is-disabled(flex-shrink) {
+        @include core.declaration(flex-shrink) {
             @each $key, $value in core.$flex-shrink {
                 @if ($key == default) {
-                    @include core.declaration(flex-shrink, $value);
+                    @include css.declaration(flex-shrink, $value);
                 } @else {
                     &-#{$key} {
-                        @include core.declaration(flex-shrink, $value);
+                        @include css.declaration(flex-shrink, $value);
                     }
                 }
             }

@@ -4,12 +4,13 @@
 
 @use "sass:meta";
 @use "sass:map";
+@use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .max-w {
-        @if not core.is-disabled(max-width) {
+        @include core.declaration(max-width) {
             @each $key, $value in variables.$max-width {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
@@ -20,7 +21,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration(max-width, $value);
+                    @include css.declaration(max-width, $value);
                 }
             }
         }

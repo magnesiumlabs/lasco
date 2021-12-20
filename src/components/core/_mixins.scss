@@ -30,7 +30,7 @@
     }
 
     &-#{$suffix} {
-        @include declaration($property, $key);
+        @include css.declaration($property, $key);
     }
 }
 
@@ -38,11 +38,13 @@
 // Public mixins
 // ------------------------------------------------------------------------- //
 
-@mixin declaration($property, $value) {
-    @include css.declaration($property, $value);
+@mixin declaration($property) {
+    @if not functions.is-disabled($property) {
+        @content;
 
-    @include _breakpoint {
-        @include css.declaration($property, $value);
+        @include _breakpoint {
+            @content;
+        }
     }
 }
 

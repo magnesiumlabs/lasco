@@ -6,19 +6,19 @@
 
 @mixin core-styles {
     .place-self {
-        @if not core.is-disabled(place-self) {
+        @include core.declaration(place-self) {
             @include core.classes(place-self, core.$place-self);
         }
     }
 
     .place-content {
-        @if not core.is-disabled(place-content) {
+        @include core.declaration(place-content) {
             @include core.classes(place-content, core.$place-content);
         }
     }
 
     .place-items {
-        @if not core.is-disabled(place-items) {
+        @include core.declaration(place-items) {
             @include core.classes(place-items, core.$place-items);
         }
     }

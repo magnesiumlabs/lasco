@@ -4,19 +4,20 @@
 
 @use "sass:string";
 @use "sass:meta";
+@use "@sass-collective/css";
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .aspect {
-        @if not core.is-disabled(aspect-ratio) {
+        @include core.declaration(aspect-ratio) {
             @each $key, $value in variables.$aspect-ratio {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }
 
                 &-#{$key} {
-                    @include core.declaration(aspect-ratio, string.unquote($value));
+                    @include css.declaration(aspect-ratio, string.unquote($value));
                 }
             }
         }

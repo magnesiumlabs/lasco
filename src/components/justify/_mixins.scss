@@ -6,19 +6,19 @@
 
 @mixin core-styles {
     .justify-self {
-        @if not core.is-disabled(justify-self) {
+        @include core.declaration(justify-self) {
             @include core.classes(justify-self, core.$justify-self);
         }
     }
 
     .justify-content {
-        @if not core.is-disabled(justify-content) {
+        @include core.declaration(justify-content) {
             @include core.classes(justify-content, core.$justify-content);
         }
     }
 
     .justify-items {
-        @if not core.is-disabled(justify-items) {
+        @include core.declaration(justify-items) {
             @include core.classes(justify-items, core.$justify-items);
         }
     }

@@ -3,12 +3,13 @@
 // ============================================================================================= //
 
 @use "sass:meta";
+@use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .max-h {
-        @if not core.is-disabled(max-height) {
+        @include core.declaration(max-height) {
             @each $key, $value in variables.$max-height {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
@@ -19,7 +20,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration(max-height, $value);
+                    @include css.declaration(max-height, $value);
                 }
             }
         }

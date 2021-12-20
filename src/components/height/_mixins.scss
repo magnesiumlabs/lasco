@@ -3,12 +3,13 @@
 // ============================================================================================= //
 
 @use "sass:meta";
+@use "@sass-collective/css";
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .h {
-        @if not core.is-disabled(height) {
+        @include core.declaration(height) {
             @each $key, $value in variables.$height {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
@@ -19,7 +20,7 @@
                 }
 
                 &-#{$key} {
-                    @include core.declaration(height, $value);
+                    @include css.declaration(height, $value);
                 }
             }
         }
