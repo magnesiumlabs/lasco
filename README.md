@@ -32,30 +32,31 @@ npm install lasco
 
 ### Properties
 
-| Property          | Status                                          | Docs                                                |
-|-------------------|-------------------------------------------------|-----------------------------------------------------|
-| `display`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/display/#readme).      |
-| `min-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/min#readme).     |
-| `max-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/max#readme).     |
-| `width`           | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width#readme).         |
-| `min-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/min#readme).    |
-| `max-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/max#readme).    |
-| `height`          | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height#readme).        |
-| `aspect-ratio`    | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/aspect-ratio/#readme). |
-| `flex-direction`  | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `flex-wrap`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `flex-grow`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `flex-shrink`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `gap`             | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/gap/#readme).          |
-| `align-self`      | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `align-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `align-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `justify-self`    | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `justify-items`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `justify-content` | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `place-self`      | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `place-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
-| `place-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                       |
+| Property          | Status                                          | Docs                                               |
+|-------------------|-------------------------------------------------|----------------------------------------------------|
+| `display`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/display#readme).      |
+| `min-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/min#readme).    |
+| `max-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/max#readme).    |
+| `width`           | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width#readme).        |
+| `min-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/min#readme).   |
+| `max-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/max#readme).   |
+| `height`          | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height#readme).       |
+| `aspect-ratio`    | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/aspect-ratio#readme). |
+| `flex-direction`  | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `flex-wrap`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `flex-grow`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `flex-shrink`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `gap`             | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/gap#readme).          |
+| `align-self`      | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `align-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `align-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `justify-self`    | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `justify-items`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `justify-content` | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `place-self`      | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `place-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `place-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
+| `z-index`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/z-index#readme).      |
 
 #### Disable property with `$disabled`
 

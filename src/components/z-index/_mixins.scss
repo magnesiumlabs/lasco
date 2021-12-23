@@ -1,0 +1,21 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:meta";
+@use "sass:string";
+@use "@sass-collective/css";
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .z {
+        @include core.declaration(z-index) {
+            @each $key, $value in variables.$z-index {
+                &-#{$key} {
+                    @include css.declaration(z-index, $value);
+                }
+            }
+        }
+    }
+}
