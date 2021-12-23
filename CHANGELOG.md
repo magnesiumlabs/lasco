@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/magnesiumlabs/lasco/compare/v0.10.0...v0.11.0) (2021-12-23)
+
+
+### Features
+
+* **z-index:** add main classes ([9518ff1](https://github.com/magnesiumlabs/lasco/commit/9518ff1c71175d044ccc0728b2b0850692e7c53f))
+
+
+### Code Refactoring
+
+* add some dedicated `_variables.scss` ([a2a6370](https://github.com/magnesiumlabs/lasco/commit/a2a637048268ce73c9f7fa92cc42d24353e10e07))
+* **build:** better breakpoint code generation ([1b970b4](https://github.com/magnesiumlabs/lasco/commit/1b970b4d8c465ec1e32fb57a07f4855005803ec1))
+
 ## [0.10.0](https://github.com/magnesiumlabs/lasco/compare/v0.9.0...v0.10.0) (2021-12-20)
 
 
