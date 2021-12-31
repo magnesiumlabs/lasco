@@ -1,0 +1,17 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    @each $key in variables.$position {
+        .#{$key} {
+            @include core.declaration(position) {
+                @include css.declaration(position, $key);
+            }
+        }
+    }
+}

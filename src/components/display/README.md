@@ -28,6 +28,20 @@ To control the `display` at a specific breakpoint, add a `{screen}:` prefix toke
 
 ## Customization
 
+### Filter
+
+You can also filter the classes that you only want to use, the following Sass...
+
+```scss
+@use "lasco" with (
+    $display: (
+        flex
+    )
+);
+```
+
+...will produce only the `flex` classes.
+
 ### Disabled
 
 If you don't want to use the `display` classes in your project, you can disable them entirely by setting the `display`
