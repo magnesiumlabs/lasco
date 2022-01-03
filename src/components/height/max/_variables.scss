@@ -4,11 +4,11 @@
 
 @use "sass:map";
 
-$_defaults-max-height: (
+$_defaults: (
     0: 0,
     full: 100%,
     screen: 100vh
 );
 
 $max-height: () !default;
-$max-height: map.merge($_defaults-max-height, $max-height);
+$max-height: map.merge($_defaults, $max-height);

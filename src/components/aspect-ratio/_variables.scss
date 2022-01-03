@@ -4,11 +4,11 @@
 
 @use "sass:map";
 
-$_defaults-aspect-ratio: (
+$_defaults: (
     auto: auto,
     square: "1/1",
     video: "16/9"
 );
 
 $aspect-ratio: () !default;
-$aspect-ratio: map.merge($_defaults-aspect-ratio, $aspect-ratio);
+$aspect-ratio: map.merge($_defaults, $aspect-ratio);

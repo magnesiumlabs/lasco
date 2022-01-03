@@ -4,11 +4,11 @@
 
 @use "sass:map";
 
-$_defaults-min-height: (
+$_defaults: (
     0: 0,
     full: 100%,
     screen: 100vh
 );
 
 $min-height: () !default;
-$min-height: map.merge($_defaults-min-height, $min-height);
+$min-height: map.merge($_defaults, $min-height);

@@ -4,9 +4,9 @@
 
 @use "sass:map";
 
-$_defaults-gap: (
+$_defaults: (
     0: 0
 );
 
 $gap: () !default;
-$gap: map.merge($_defaults-gap, $gap);
+$gap: map.merge($_defaults, $gap);

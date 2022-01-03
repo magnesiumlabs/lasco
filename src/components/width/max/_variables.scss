@@ -4,11 +4,11 @@
 
 @use "sass:map";
 
-$_defaults-max-width: (
+$_defaults: (
     0: 0,
     full: 100%,
     screen: 100vw
 );
 
 $max-width: () !default;
-$max-width: map.merge($_defaults-max-width, $max-width);
+$max-width: map.merge($_defaults, $max-width);
