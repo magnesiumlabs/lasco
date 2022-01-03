@@ -40,8 +40,7 @@ You can also filter the classes that you only want to use, the following Sass...
 
 ### Disabled
 
-If you don't want to use the `position` classes in your project, you can disable them entirely by setting the `position`
-properties on `$disabled` option:
+The following Sass...
 
 ```scss
 @use "lasco" with (
@@ -50,3 +49,5 @@ properties on `$disabled` option:
     )
 );
 ```
+
+...will disable entirely the `position` classes.

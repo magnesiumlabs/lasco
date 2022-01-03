@@ -36,8 +36,7 @@ You can easily extend the Lasco's width scales:
 
 ### Disabled
 
-If you don't want to use the `aspect-ratio` classes in your project, you can disable them entirely by setting
-the `aspect-ratio` property on `$disabled` option:
+The following Sass...
 
 ```scss
 @use "lasco" with (
@@ -46,3 +45,5 @@ the `aspect-ratio` property on `$disabled` option:
     )
 );
 ```
+
+...will disable entirely the `aspect-ratio` classes.

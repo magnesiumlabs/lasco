@@ -38,8 +38,7 @@ You can easily extend the Lasco's `max-width` scales:
 
 ### Disabled
 
-If you don't want to use the `max-width` classes in your project, you can disable them entirely by setting
-the `max-width` property on `$disabled` option:
+The following Sass...
 
 ```scss
 @use "lasco" with (
@@ -48,3 +47,5 @@ the `max-width` property on `$disabled` option:
     )
 );
 ```
+
+...will disable entirely the `max-width` classes.

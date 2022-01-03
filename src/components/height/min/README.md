@@ -38,8 +38,7 @@ You can easily extend the Lasco's `min-height` scales:
 
 ### Disabled
 
-If you don't want to use the `min-height` classes in your project, you can disable them entirely by setting
-the `min-height` property on `$disabled` option:
+The following Sass...
 
 ```scss
 @use "lasco" with (
@@ -48,3 +47,5 @@ the `min-height` property on `$disabled` option:
     )
 );
 ```
+
+...will disable entirely the `min-height` classes.

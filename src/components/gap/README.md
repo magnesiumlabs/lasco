@@ -37,8 +37,7 @@ You can easily extend the Lasco's gap scales:
 
 ### Disabled
 
-If you don't want to use the `gap` classes in your project, you can disable them entirely by setting the `gap`
-properties on `$disabled` option:
+The following Sass...
 
 ```scss
 @use "lasco" with (
@@ -47,3 +46,5 @@ properties on `$disabled` option:
     )
 );
 ```
+
+...will disable entirely the `gap` classes.
