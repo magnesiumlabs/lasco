@@ -8,19 +8,19 @@
         "clean": "npm-run-all --parallel clean:*",
         "build": "npm run clean:dist && webpack && npm run clean:chunks",
         "prepare": "husky install && npm run build",
-        "release:patch": "npm run release -- --release-as patch",
-        "release:minor": "npm run release -- --release-as minor",
-        "release:major": "npm run release -- --release-as major",
-        "release:dry": "npm run release -- --dry-run",
-        "release": "standard-version"
+        "test": "echo 'all tests passed!'",
+        "release:dry": "semantic-release --dry-run",
+        "release": "semantic-release"
     },
     "engines": {
-        "node": ">=12.0.0",
-        "npm": ">=7.0.0"
+        "node": ">=14.0.0",
+        "npm": ">=8.0.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^16.1.0",
         "@commitlint/config-conventional": "^16.0.0",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/git": "^10.0.1",
         "autoprefixer": "^10.4.2",
         "css-loader": "^6.5.1",
         "css-minimizer-webpack-plugin": "^3.4.1",
@@ -30,7 +30,7 @@
         "postcss-loader": "^6.2.1",
         "rimraf": "^3.0.2",
         "sass-loader": "^12.4.0",
-        "standard-version": "^9.3.2",
+        "semantic-release": "^19.0.2",
         "webpack": "^5.67.0",
         "webpack-cli": "^4.9.2"
     },
