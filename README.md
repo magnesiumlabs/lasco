@@ -32,16 +32,36 @@ npm install lasco
 
 ### Properties
 
+#### Layout
+
 | Property          | Status                                          | Docs                                               |
 |-------------------|-------------------------------------------------|----------------------------------------------------|
+| `aspect-ratio`    | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/aspect-ratio#readme). |
 | `display`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/display#readme).      |
+| `position`        | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/position#readme).     |
+| `z-index`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/z-index#readme).      |
+
+#### Effect
+
+| Property          | Status                                          | Docs                                               |
+|-------------------|-------------------------------------------------|----------------------------------------------------|
+| `opacity`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/opacity#readme).      |
+
+#### Sizing
+
+| Property          | Status                                          | Docs                                               |
+|-------------------|-------------------------------------------------|----------------------------------------------------|
+| `width`           | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width#readme).        |
 | `min-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/min#readme).    |
 | `max-width`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width/max#readme).    |
-| `width`           | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/width#readme).        |
+| `height`          | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height#readme).       |
 | `min-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/min#readme).   |
 | `max-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/max#readme).   |
-| `height`          | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height#readme).       |
-| `aspect-ratio`    | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/aspect-ratio#readme). |
+
+#### Others
+
+| Property          | Status                                          | Docs                                               |
+|-------------------|-------------------------------------------------|----------------------------------------------------|
 | `flex-direction`  | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `flex-wrap`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `flex-grow`       | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
@@ -56,9 +76,6 @@ npm install lasco
 | `place-self`      | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `place-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `place-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
-| `position`        | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/position#readme).     |
-| `opacity`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/opacity#readme).      |
-| `z-index`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/z-index#readme).      |
 
 #### Disable property with `$disabled`
 
