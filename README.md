@@ -57,6 +57,7 @@ npm install lasco
 | `place-items`     | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `place-content`   | ![Version](https://flat.badgen.net/npm/v/lasco) | _Coming soon_                                      |
 | `position`        | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/position#readme).     |
+| `opacity`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/opacity#readme).      |
 | `z-index`         | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/z-index#readme).      |
 
 #### Disable property with `$disabled`

@@ -1,0 +1,20 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:list";
+@use "@sass-collective/css";
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .opacity {
+        @include core.declaration(opacity) {
+            @each $key, $value in variables.$opacity {
+                &-#{$key} {
+                    @include css.declaration(opacity, $value);
+                }
+            }
+        }
+    }
+}
