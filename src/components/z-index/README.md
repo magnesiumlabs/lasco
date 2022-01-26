@@ -1,29 +1,28 @@
 # Z-Index
 
-Class generator for setting `z-index` property for an element.
+Utilities for applying position order of an element.
 
-## Classes
+## Usage
+
+Use the class `z-{index}` for setup order position.
+
+```html
+<div class="z-0">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class    | Property         |
 |----------|------------------|
 | `z-0`    | `z-index: 0;`    |
 | `z-auto` | `z-index: auto;` |
 
-## Breakpoints
+### Configuration
 
-To control the `z-index` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
-
-```html
-<div class="z-0 lg:z-auto">
-    <!-- ... -->
-</div>
-```
-
-## Customization
-
-### Extend
-
-You can easily extend the Lasco's `z-index` scales:
+By default, Lasco provides two `z-index` utilities, `0` and `auto`. You can easily extend the default scales using the
+Sass configuration:
 
 ```scss
 @use "lasco" with (
@@ -31,6 +30,17 @@ You can easily extend the Lasco's `z-index` scales:
         10: 10
     )
 );
+```
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:z-auto` will be only apply on large screens size and above.
+
+```html
+<div class="z-0 lg:z-auto">
+    <!-- ... -->
+</div>
 ```
 
 ### Disabled
