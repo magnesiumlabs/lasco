@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.0](https://github.com/magnesiumlabs/lasco/compare/v0.15.0...v0.16.0) (2022-01-26)
+
+
+### Features
+
+* **contrast:** add main classes ([04602d2](https://github.com/magnesiumlabs/lasco/commit/04602d2d88fbe90abc4863e21673f706032c90e2))
+
+
+### Bug Fixes
+
+* missing `[@charset](https://github.com/charset)` on sass ([2e81eb0](https://github.com/magnesiumlabs/lasco/commit/2e81eb085e2a3f07f541b5ff30c41f8a59f3aff0))
+
 ## [0.15.0](https://github.com/magnesiumlabs/lasco/compare/v0.14.0...v0.15.0) (2022-01-26)
 
 
