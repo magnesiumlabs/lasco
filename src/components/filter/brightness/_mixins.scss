@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .brightness {
+        @include core.declaration(brightness) {
+            @each $key, $value in variables.$brightness {
+                &-#{$key} {
+                    @include css.declaration(filter, brightness($value));
+                }
+            }
+        }
+    }
+}

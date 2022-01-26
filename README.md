@@ -60,9 +60,10 @@ npm install lasco
 
 #### Filters
 
-| Property | Status                                          | Docs                                              |
-|----------|-------------------------------------------------|---------------------------------------------------|
-| `blur`   | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/filter/blur#readme). |
+| Property     | Status                                          | Docs                                                    |
+|--------------|-------------------------------------------------|---------------------------------------------------------|
+| `blur`       | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/filter/blur#readme).       |
+| `brightness` | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/filter/brightness#readme). |
 
 #### Others
 
