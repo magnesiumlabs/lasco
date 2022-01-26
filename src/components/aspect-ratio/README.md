@@ -4,7 +4,7 @@ Utilities for applying ratio aspect of an element.
 
 ## Usage
 
-Use the class `aspect-{index}` for setup order position.
+Use the `aspect-{index}` class for setup ratio aspect.
 
 ```html
 <div class="aspect-square">
@@ -22,8 +22,8 @@ Use the class `aspect-{index}` for setup order position.
 
 ### Configuration
 
-By default, Lasco provides two `aspect-ratio` utilities, `auto`, `square` and `video`. You can easily extend the default
-scales using the Sass configuration:
+By default, Lasco provides three `aspect-ratio` utilities, `auto`, `square` and `video`. You can easily extend the default
+scales using the Sass configuration, the following Sass...
 
 ```scss
 @use "lasco" with (
@@ -31,6 +31,14 @@ scales using the Sass configuration:
         "4/3": "4/3"
     )
 );
+```
+
+...will produce the following CSS...
+
+```css
+.aspect-4\/3 {
+    aspect-ratio: 4/3;
+}
 ```
 
 ### Breakpoints

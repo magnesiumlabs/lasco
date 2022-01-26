@@ -1,8 +1,19 @@
 # Display
+# Display
 
-Class generator for setting `display` property for an element.
+Utilities for applying display type of element.
 
-## Classes
+## Usage
+
+Use the `{key}` class for setup the diplsay type.
+
+```html
+<div class="block">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class          | Property                 |
 |----------------|--------------------------|
@@ -16,21 +27,10 @@ Class generator for setting `display` property for an element.
 | `inline-table` | `display: inline-table;` |
 | `hidden`       | `display: none;`         |
 
-## Breakpoints
+### Configuration
 
-To control the `display` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
-
-```html
-<div class="block lg:hidden">
-    <!-- ... -->
-</div>
-```
-
-## Customization
-
-### Filter
-
-You can also filter the classes that you only want to use, the following Sass...
+By default, Lasco provides some `{key}` utilities. You can easily filter the default scales using the Sass
+configuration, the following Sass...
 
 ```scss
 @use "lasco" with (
@@ -41,6 +41,17 @@ You can also filter the classes that you only want to use, the following Sass...
 ```
 
 ...will produce only the `flex` classes.
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:hidden` will be only apply on large screens size and above.
+
+```html
+<div class="block lg:hidden">
+    <!-- ... -->
+</div>
+```
 
 ### Disabled
 

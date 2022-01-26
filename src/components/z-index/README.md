@@ -4,7 +4,7 @@ Utilities for applying position order of an element.
 
 ## Usage
 
-Use the class `z-{index}` for setup order position.
+Use the `z-{index}` class for setup order position.
 
 ```html
 <div class="z-0">
@@ -30,6 +30,14 @@ Sass configuration:
         10: 10
     )
 );
+```
+
+...will produce the following CSS...
+
+```css
+.z-10 {
+    z-index: 10;
+}
 ```
 
 ### Breakpoints
