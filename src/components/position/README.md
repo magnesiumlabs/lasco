@@ -12,12 +12,12 @@ Class generator for setting `position` property for an element.
 | `static`   | `position: static;`   |
 | `sticky`   | `position: sticky;`   |
 
-## Responsive
+## Breakpoints
 
 To control the `position` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="sticky md:absolute">
+<div class="sticky lg:absolute">
     <!-- ... -->
 </div>
 ```

@@ -8,7 +8,7 @@ Class generator for setting `brightness` property for an element.
 |------------------|--------------------------|
 | `brightness-0`   | `filter: brightness(0);` |
 
-## Responsive
+## Breakpoints
 
 To control the `brightness` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 

@@ -8,7 +8,7 @@ Class generator for setting `contrast` property for an element.
 |--------------|------------------------|
 | `contrast-0` | `filter: contrast(0);` |
 
-## Responsive
+## Breakpoints
 
 To control the `contrast` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 

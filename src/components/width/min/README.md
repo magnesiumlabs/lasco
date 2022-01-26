@@ -10,12 +10,12 @@ Class generator for setting `min-width` property for an element.
 | `min-w-full`   | `min-width: 100%;`  |
 | `min-w-screen` | `min-width: 100vw;` |
 
-## Responsive
+## Breakpoints
 
 To control the `min-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="min-w-0 md:min-w-full">
+<div class="min-w-0 lg:min-w-full">
     <!-- ... -->
 </div>
 ```

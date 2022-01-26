@@ -16,7 +16,7 @@ Class generator for setting `display` property for an element.
 | `inline-table` | `display: inline-table;` |
 | `hidden`       | `display: none;`         |
 
-## Responsive
+## Breakpoints
 
 To control the `display` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 

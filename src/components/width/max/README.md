@@ -10,12 +10,12 @@ Class generator for setting `max-width` property for an element.
 | `max-w-full`   | `max-width: 100%;`  |
 | `max-w-screen` | `max-width: 100vw;` |
 
-## Responsive
+## Breakpoints
 
 To control the `max-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="max-w-0 md:max-w-full">
+<div class="max-w-0 lg:max-w-full">
     <!-- ... -->
 </div>
 ```

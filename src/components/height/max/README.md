@@ -10,12 +10,12 @@ Class generator for setting `max-height` property for an element.
 | `max-h-full`   | `max-height: 100%;`  |
 | `max-h-screen` | `max-height: 100vh;` |
 
-## Responsive
+## Breakpoints
 
 To control the `max-height` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="max-h-0 md:max-h-full">
+<div class="max-h-0 lg:max-h-full">
     <!-- ... -->
 </div>
 ```

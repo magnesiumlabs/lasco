@@ -12,12 +12,12 @@ Class generator for setting `height` property for an element.
 | `h-full`   | `height: 100%;`  |
 | `h-screen` | `height: 100vh;` |
 
-## Responsive
+## Breakpoints
 
 To control the `height` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="h-0 md:h-full">
+<div class="h-0 lg:h-full">
     <!-- ... -->
 </div>
 ```

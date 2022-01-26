@@ -10,7 +10,7 @@ Class generator for setting `aspect-ratio` property for an element.
 | `square` | `aspect-ratio: 1/1`  |
 | `video`  | `aspect-ratio: 16/9` |
 
-## Responsive
+## Breakpoints
 
 To control the `aspect-ratio` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 

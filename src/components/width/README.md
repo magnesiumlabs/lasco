@@ -10,12 +10,12 @@ Class generator for setting `width` property for an element.
 | `w-full`   | `width: 100%;`  |
 | `w-screen` | `width: 100vw;` |
 
-## Responsive
+## Breakpoints
 
 To control the `width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="w-0 md:w-full">
+<div class="w-0 lg:w-full">
     <!-- ... -->
 </div>
 ```

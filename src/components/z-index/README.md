@@ -9,12 +9,12 @@ Class generator for setting `z-index` property for an element.
 | `z-0`    | `z-index: 0;`    |
 | `z-auto` | `z-index: auto;` |
 
-## Responsive
+## Breakpoints
 
 To control the `z-index` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="z-0 md:z-auto">
+<div class="z-0 lg:z-auto">
     <!-- ... -->
 </div>
 ```

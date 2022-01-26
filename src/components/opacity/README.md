@@ -9,12 +9,12 @@ Class generator for setting `opacity` property for an element.
 | `opacity-0`   | `opacity: 0;` |
 | `opacity-100` | `opacity: 1;` |
 
-## Responsive
+## Breakpoints
 
 To control the `opacity` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="opacity-0 md:opacity-100">
+<div class="opacity-0 lg:opacity-100">
     <!-- ... -->
 </div>
 ```

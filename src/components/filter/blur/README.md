@@ -8,7 +8,7 @@ Class generator for setting `blur` property for an element.
 |----------|--------------------|
 | `blur-0` | `filter: blur(0);` |
 
-## Responsive
+## Breakpoints
 
 To control the `blur` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 

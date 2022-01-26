@@ -10,12 +10,12 @@ Class generator for setting `min-height` property for an element.
 | `min-h-full`   | `min-height: 100%;`  |
 | `min-h-screen` | `min-height: 100vh;` |
 
-## Responsive
+## Breakpoints
 
 To control the `min-height` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
-<div class="min-h-0 md:min-h-full">
+<div class="min-h-0 lg:min-h-full">
     <!-- ... -->
 </div>
 ```
