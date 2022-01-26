@@ -1,30 +1,29 @@
 # Aspect-ratio
 
-Class generator for setting `aspect-ratio` property for an element.
+Utilities for applying ratio aspect of an element.
 
-## Classes
+## Usage
 
-| Class    | Property             |
-|----------|----------------------|
-| `auto`   | `aspect-ratio: auto` |
-| `square` | `aspect-ratio: 1/1`  |
-| `video`  | `aspect-ratio: 16/9` |
-
-## Breakpoints
-
-To control the `aspect-ratio` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+Use the class `aspect-{index}` for setup order position.
 
 ```html
-<div class="aspect-auto lg:aspect-video">
+<div class="aspect-square">
     <!-- ... -->
 </div>
 ```
 
-## Customization
+### Scales
 
-### Extend
+| Class           | Property             |
+|-----------------|----------------------|
+| `aspect-auto`   | `aspect-ratio: auto` |
+| `aspect-square` | `aspect-ratio: 1/1`  |
+| `aspect-video`  | `aspect-ratio: 16/9` |
 
-You can easily extend the Lasco's width scales:
+### Configuration
+
+By default, Lasco provides two `aspect-ratio` utilities, `auto`, `square` and `video`. You can easily extend the default
+scales using the Sass configuration:
 
 ```scss
 @use "lasco" with (
@@ -32,6 +31,17 @@ You can easily extend the Lasco's width scales:
         "4/3": "4/3"
     )
 );
+```
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:aspect-video` will be only apply on large screens size and above.
+
+```html
+<div class="aspect-auto lg:aspect-video">
+    <!-- ... -->
+</div>
 ```
 
 ### Disabled
