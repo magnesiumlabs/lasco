@@ -58,6 +58,12 @@ npm install lasco
 | `min-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/min#readme).   |
 | `max-height`      | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/height/max#readme).   |
 
+#### Filters
+
+| Property | Status                                          | Docs                                              |
+|----------|-------------------------------------------------|---------------------------------------------------|
+| `blur`   | ![Version](https://flat.badgen.net/npm/v/lasco) | See [readme](/src/components/filter/blur#readme). |
+
 #### Others
 
 | Property          | Status                                          | Docs                                               |

@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .blur {
+        @include core.declaration(blur) {
+            @each $key, $value in variables.$blur {
+                &-#{$key} {
+                    @include css.declaration(filter, blur($value));
+                }
+            }
+        }
+    }
+}
