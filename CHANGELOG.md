@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.0](https://github.com/magnesiumlabs/lasco/compare/v0.13.0...v0.14.0) (2022-01-26)
+
+
+### Features
+
+* **blur:** add main classes ([ae6fa53](https://github.com/magnesiumlabs/lasco/commit/ae6fa536373736217d1710da1d61355b8d9e33d8))
+
 ## [0.13.0](https://github.com/magnesiumlabs/lasco/compare/v0.12.0...v0.13.0) (2022-01-26)
 
 
