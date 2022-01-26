@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/magnesiumlabs/lasco/compare/v0.12.0...v0.13.0) (2022-01-26)
+
+
+### Features
+
+* **opacity:** add main classes ([030183c](https://github.com/magnesiumlabs/lasco/commit/030183c8ee9b28bf0cc1e339555850bc87d9c3c6))
+
+
+### Code Refactoring
+
+* remove unneeded `[@use](https://github.com/use)` calls ([4435752](https://github.com/magnesiumlabs/lasco/commit/443575251ca9b3de039084bc9e93ac4b1fa917a6))
+* simplify private variables names ([0e3f7d2](https://github.com/magnesiumlabs/lasco/commit/0e3f7d2a3bea3d44b3674d6a07d4660cd56036ec))
+
 ## [0.12.0](https://github.com/magnesiumlabs/lasco/compare/v0.11.0...v0.12.0) (2022-01-03)
 
 
