@@ -5,23 +5,18 @@
 @use "./src/config";
 
 // ------------------------------------------------------------------------- //
-// Display
+// Layout
 // ------------------------------------------------------------------------- //
 
 @use "./src/components/display/styles" as display-styles;
 
 // ------------------------------------------------------------------------- //
-// Width
+// Sizing
 // ------------------------------------------------------------------------- //
 
 @use "./src/components/width/min/styles" as min-width-styles;
 @use "./src/components/width/max/styles" as max-width-styles;
 @use "./src/components/width/styles" as width-styles;
-
-// ------------------------------------------------------------------------- //
-// Height
-// ------------------------------------------------------------------------- //
-
 @use "./src/components/height/min/styles" as min-height-styles;
 @use "./src/components/height/max/styles" as max-height-styles;
 @use "./src/components/height/styles" as height-styles;
