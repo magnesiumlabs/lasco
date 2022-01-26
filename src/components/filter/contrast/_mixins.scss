@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .contrast {
+        @include core.declaration(contrast) {
+            @each $key, $value in variables.$contrast {
+                &-#{$key} {
+                    @include css.declaration(filter, contrast($value));
+                }
+            }
+        }
+    }
+}
