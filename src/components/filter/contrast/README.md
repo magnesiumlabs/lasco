@@ -1,6 +1,6 @@
 # Contrast
 
-Class generator for setting `contrast` property for an element.
+Class generator for setting `contrast` filter property for an element.
 
 ## Classes
 
@@ -32,6 +32,8 @@ You can easily extend the Lasco's `contrast` scales:
     )
 );
 ```
+
+> **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(Source [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/filter-function/contrast()#exemples))_
 
 ### Disabled
 

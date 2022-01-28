@@ -1,6 +1,6 @@
 # Blur
 
-Class generator for setting `blur` property for an element.
+Class generator for setting `blur` filter property for an element.
 
 ## Classes
 
@@ -32,6 +32,8 @@ You can easily extend the Lasco's `blur` scales:
     )
 );
 ```
+
+> **Note:** the radius can be a pixel or rem value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur()#examples))_
 
 ### Disabled
 
