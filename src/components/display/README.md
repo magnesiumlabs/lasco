@@ -1,5 +1,4 @@
 # Display
-# Display
 
 Utilities for applying display type of element.
 
