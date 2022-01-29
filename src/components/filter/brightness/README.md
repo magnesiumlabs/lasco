@@ -1,16 +1,10 @@
 # Brightness
 
-Class generator for setting `brightness` filter property for an element.
+Utilities for applying brightness of an element.
 
-## Classes
+## Usage
 
-| Class            | Property                 |
-|------------------|--------------------------|
-| `brightness-0`   | `filter: brightness(0);` |
-
-## Breakpoints
-
-To control the `brightness` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+Use the `brightness-{amount}` class for setup ratio aspect.
 
 ```html
 
@@ -19,11 +13,16 @@ To control the `brightness` at a specific breakpoint, add a `{screen}:` prefix t
 </div>
 ```
 
-## Customization
+### Scales
 
-### Extend
+| Class          | Property                 |
+|----------------|--------------------------|
+| `brightness-0` | `filter: brightness(0);` |
 
-You can easily extend the Lasco's `brightness` scales:
+### Configuration
+
+By default, Lasco provides a handful of general purpose brightness utilities. You can easily extend the default scales
+using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -34,6 +33,18 @@ You can easily extend the Lasco's `brightness` scales:
 ```
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(Source [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/filter-function/brightness()#exemples))_
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:brightness` will be only apply on large screens size and above.
+
+```html
+
+<div class="brightness-0">
+    <!-- ... -->
+</div>
+```
 
 ### Disabled
 

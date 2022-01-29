@@ -1,12 +1,13 @@
 # Grayscale
 
-Utilities for applying filter grayscale of an element.
+Utilities for applying grayscale of an element.
 
 ## Usage
 
 Use the `grayscale-{amount}` class for setup ratio aspect.
 
 ```html
+
 <div class="grayscale-0">
     <!-- ... -->
 </div>

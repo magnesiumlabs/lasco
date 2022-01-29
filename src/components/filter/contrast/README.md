@@ -1,16 +1,10 @@
 # Contrast
 
-Class generator for setting `contrast` filter property for an element.
+Utilities for applying contrast of an element.
 
-## Classes
+## Usage
 
-| Class        | Property               |
-|--------------|------------------------|
-| `contrast-0` | `filter: contrast(0);` |
-
-## Breakpoints
-
-To control the `contrast` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+Use the `contrast-{amount}` class for setup ratio aspect.
 
 ```html
 
@@ -19,11 +13,16 @@ To control the `contrast` at a specific breakpoint, add a `{screen}:` prefix tok
 </div>
 ```
 
-## Customization
+### Scales
 
-### Extend
+| Class        | Property               |
+|--------------|------------------------|
+| `contrast-0` | `filter: contrast(0);` |
 
-You can easily extend the Lasco's `contrast` scales:
+### Configuration
+
+By default, Lasco provides a handful of general purpose contrast utilities. You can easily extend the default scales
+using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -34,6 +33,18 @@ You can easily extend the Lasco's `contrast` scales:
 ```
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(Source [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/filter-function/contrast()#exemples))_
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:contrast` will be only apply on large screens size and above.
+
+```html
+
+<div class="contrast-0">
+    <!-- ... -->
+</div>
+```
 
 ### Disabled
 

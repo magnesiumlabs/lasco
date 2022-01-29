@@ -1,16 +1,10 @@
 # Blur
 
-Class generator for setting `blur` filter property for an element.
+Utilities for applying blur of an element.
 
-## Classes
+## Usage
 
-| Class    | Property           |
-|----------|--------------------|
-| `blur-0` | `filter: blur(0);` |
-
-## Breakpoints
-
-To control the `blur` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+Use the `blur-{radius}` class for setup ratio aspect.
 
 ```html
 
@@ -19,11 +13,16 @@ To control the `blur` at a specific breakpoint, add a `{screen}:` prefix token t
 </div>
 ```
 
-## Customization
+### Scales
 
-### Extend
+| Class    | Property           |
+|----------|--------------------|
+| `blur-0` | `filter: blur(0);` |
 
-You can easily extend the Lasco's `blur` scales:
+### Configuration
+
+By default, Lasco provides a handful of general purpose blur utilities. You can easily extend the default scales using
+the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -34,6 +33,18 @@ You can easily extend the Lasco's `blur` scales:
 ```
 
 > **Note:** the radius can be a pixel or rem value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur()#examples))_
+
+### Breakpoints
+
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:blur` will be only apply on large screens size and above.
+
+```html
+
+<div class="blur-0">
+    <!-- ... -->
+</div>
+```
 
 ### Disabled
 
