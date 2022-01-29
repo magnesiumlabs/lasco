@@ -4,7 +4,7 @@ Utilities for applying display type of element.
 
 ## Usage
 
-Use the `{key}` class for setup the diplsay type.
+Use the `{key}` class for setup the display type.
 
 ```html
 <div class="block">
