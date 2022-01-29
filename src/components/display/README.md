@@ -54,7 +54,7 @@ example `lg:hidden` will be only apply on large screens size and above.
 
 ### Disabled
 
-The following Sass...
+If you want, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (
@@ -63,5 +63,3 @@ The following Sass...
     )
 );
 ```
-
-...will disable entirely the `display` classes.

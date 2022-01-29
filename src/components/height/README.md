@@ -40,7 +40,7 @@ You can easily extend the Lasco's height scales:
 
 ### Disabled
 
-The following Sass...
+If you want, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (
@@ -49,5 +49,3 @@ The following Sass...
     )
 );
 ```
-
-...will disable entirely the `height` classes.
