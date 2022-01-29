@@ -1,0 +1,21 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .grayscale {
+        @include core.declaration(grayscale) {
+            @each $key, $value in variables.$grayscale {
+                &-#{$key} {
+                    @include css.declaration(filter, grayscale($value));
+                }
+            }
+
+            @include css.declaration(filter, grayscale(100%));
+        }
+    }
+}
