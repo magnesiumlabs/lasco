@@ -1,0 +1,11 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "@sass-collective/property";
+@use "@sass-collective/property/custom-properties";
+
+@mixin declaration($value) {
+    @include property.declaration(filter, custom-properties.create(--lsc-#{$value}));
+}

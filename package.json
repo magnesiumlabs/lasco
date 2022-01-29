@@ -35,6 +35,7 @@
     "dependencies": {
         "@sass-collective/breakpoint": "^2.4.1",
         "@sass-collective/css": "^2.0.2",
+        "@sass-collective/property": "^4.6.3",
         "sass": "^1.49.0"
     },
     "files": [
