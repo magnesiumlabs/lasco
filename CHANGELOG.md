@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.0](https://github.com/magnesiumlabs/lasco/compare/v0.16.0...v0.17.0) (2022-01-29)
+
+
+### Features
+
+* **blur, brightness, contrast:** use custom properties ([9ac65ad](https://github.com/magnesiumlabs/lasco/commit/9ac65ad935fabf1fc23a23bcfe57ec044617f68f))
+* **filter:** update README.md ([1ad10d4](https://github.com/magnesiumlabs/lasco/commit/1ad10d4a35e170a61cea85094ebb9d4a89da4d99))
+* **grayscale:** add main classes ([20690cc](https://github.com/magnesiumlabs/lasco/commit/20690cc40b2bb273e9355db1f59eab679ef45060))
+* **grayscale:** change `100%` to `1` ([401c666](https://github.com/magnesiumlabs/lasco/commit/401c666a0632e2a731cc547d577bc6e0bf793a4f))
+* **grayscale:** use custom properties ([087a240](https://github.com/magnesiumlabs/lasco/commit/087a240d079a955513fc1f5a3c7680eeb68cca24))
+
+
+### Bug Fixes
+
+* **deps:** update to `nanoid` 3.2.0 ([4cac7e0](https://github.com/magnesiumlabs/lasco/commit/4cac7e02bcad10486e7a54d77509688999a2c87b))
+
 ## [0.16.0](https://github.com/magnesiumlabs/lasco/compare/v0.15.0...v0.16.0) (2022-01-26)
 
 
