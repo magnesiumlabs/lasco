@@ -2,8 +2,10 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/css";
+@use "@sass-collective/property";
+@use "@sass-collective/property/custom-properties";
 @use "../../core";
+@use "../index" as filter;
 @use "./variables";
 
 @mixin core-styles {
@@ -11,7 +13,8 @@
         @include core.declaration(contrast) {
             @each $key, $value in variables.$contrast {
                 &-#{$key} {
-                    @include css.declaration(filter, contrast($value));
+                    @include property.declaration(custom-properties.create(--lsc-contrast, contrast($value)));
+                    @include filter.declaration(contrast);
                 }
             }
         }
