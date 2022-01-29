@@ -64,6 +64,7 @@ npm install lasco
 |--------------|---------------------------------------------------------|
 | `blur`       | See [readme](/src/components/filter/blur#readme).       |
 | `brightness` | See [readme](/src/components/filter/brightness#readme). |
+| `contrast`   | See [readme](/src/components/filter/contrast#readme).   |
 | `grayscale`  | See [readme](/src/components/filter/grayscale#readme).  |
 
 #### Others
