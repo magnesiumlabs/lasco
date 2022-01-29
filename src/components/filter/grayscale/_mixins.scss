@@ -18,7 +18,7 @@
                 }
             }
 
-            @include property.declaration(custom-properties.create(--lsc-grayscale, grayscale(100%)));
+            @include property.declaration(custom-properties.create(--lsc-grayscale, grayscale(1)));
             @include filter.declaration(grayscale);
         }
     }

@@ -14,10 +14,10 @@ Use the `grayscale-{amount}` class for setup ratio aspect.
 
 ### Scales
 
-| Class         | Property                   |
-|---------------|----------------------------|
-| `grayscale-0` | `filter: grayscale(0);`    |
-| `grayscale`   | `filter: grayscale(100%);` |
+| Class         | Property                |
+|---------------|-------------------------|
+| `grayscale-0` | `filter: grayscale(0);` |
+| `grayscale`   | `filter: grayscale(1);` |
 
 ### Configuration
 
@@ -27,7 +27,7 @@ using the Sass configuration.
 ```scss
 @use "lasco" with (
     $grayscale: (
-        50: 50%
+        50: 0.5
     )
 );
 ```
