@@ -15,9 +15,10 @@ Use the `contrast-{amount}` class for setup ratio aspect.
 
 ### Scales
 
-| Class        | Property               |
-|--------------|------------------------|
-| `contrast-0` | `filter: contrast(0);` |
+| Class          | Property               |
+|----------------|------------------------|
+| `contrast-0`   | `filter: contrast(0);` |
+| `contrast-100` | `filter: contrast(1);` |
 
 ### Configuration
 
