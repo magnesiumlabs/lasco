@@ -34,65 +34,70 @@ npm install lasco
 
 ### Layout
 
-| Property          | Docs                                               |
-|-------------------|----------------------------------------------------|
-| `aspect-ratio`    | See [readme](/src/components/aspect-ratio#readme). |
-| `display`         | See [readme](/src/components/display#readme).      |
-| `position`        | See [readme](/src/components/position#readme).     |
-| `z-index`         | See [readme](/src/components/z-index#readme).      |
+| Property       | Docs                                                      |
+|----------------|-----------------------------------------------------------|
+| `aspect-ratio` | See [documentation](/src/components/aspect-ratio#readme). |
+| `display`      | See [documentation](/src/components/display#readme).      |
+| `position`     | See [documentation](/src/components/position#readme).     |
+| `z-index`      | See [documentation](/src/components/z-index#readme).      |
 
 ### Effect
 
-| Property  | Docs                                          |
-|-----------|-----------------------------------------------|
-| `opacity` | See [readme](/src/components/opacity#readme). |
+| Property  | Docs                                                 |
+|-----------|------------------------------------------------------|
+| `opacity` | See [documentation](/src/components/opacity#readme). |
 
 ### Sizing
 
-| Property     | Docs                                             |
-|--------------|--------------------------------------------------|
-| `width`      | See [readme](/src/components/width#readme).      |
-| `min-width`  | See [readme](/src/components/width/min#readme).  |
-| `max-width`  | See [readme](/src/components/width/max#readme).  |
-| `height`     | See [readme](/src/components/height#readme).     |
-| `min-height` | See [readme](/src/components/height/min#readme). |
-| `max-height` | See [readme](/src/components/height/max#readme). |
+| Property     | Docs                                                    |
+|--------------|---------------------------------------------------------|
+| `width`      | See [documentation](/src/components/width#readme).      |
+| `min-width`  | See [documentation](/src/components/width/min#readme).  |
+| `max-width`  | See [documentation](/src/components/width/max#readme).  |
+| `height`     | See [documentation](/src/components/height#readme).     |
+| `min-height` | See [documentation](/src/components/height/min#readme). |
+| `max-height` | See [documentation](/src/components/height/max#readme). |
 
 ### Backgrounds
 
-| Property                | Docs                                                        |
-|-------------------------|-------------------------------------------------------------|
-| `background-attachment` | See [readme](/src/components/background/attachment#readme). |
-| `background-clip`       | See [readme](/src/components/background/clip#readme).       |
-| `background-color`      | See [readme](/src/components/background/color#readme).      |
+| Property                | Docs                                                               |
+|-------------------------|--------------------------------------------------------------------|
+| `background-attachment` | See [documentation](/src/components/background/attachment#readme). |
+| `background-clip`       | See [documentation](/src/components/background/clip#readme).       |
+| `background-color`      | See [documentation](/src/components/background/color#readme).      |
+| `background-image`      | _Coming soon..._                                                   |
+| `background-origin`     | _Coming soon..._                                                   |
+| `background-position`   | _Coming soon..._                                                   |
+| `background-repeat`     | _Coming soon..._                                                   |
+| `background-size`       | _Coming soon..._                                                   |
 
 ### Filters
 
-| Property     | Docs                                                    |
-|--------------|---------------------------------------------------------|
-| `blur`       | See [readme](/src/components/filter/blur#readme).       |
-| `brightness` | See [readme](/src/components/filter/brightness#readme). |
-| `contrast`   | See [readme](/src/components/filter/contrast#readme).   |
-| `grayscale`  | See [readme](/src/components/filter/grayscale#readme).  |
+| Property     | Docs                                                           |
+|--------------|----------------------------------------------------------------|
+| `blur`       | See [documentation](/src/components/filter/blur#readme).       |
+| `brightness` | See [documentation](/src/components/filter/brightness#readme). |
+| `contrast`   | See [documentation](/src/components/filter/contrast#readme).   |
+| `grayscale`  | See [documentation](/src/components/filter/grayscale#readme).  |
 
 ### Others
 
-| Property          | Docs                                      |
-|-------------------|-------------------------------------------|
-| `flex-direction`  | _Coming soon_                             |
-| `flex-wrap`       | _Coming soon_                             |
-| `flex-grow`       | _Coming soon_                             |
-| `flex-shrink`     | _Coming soon_                             |
-| `gap`             | See [readme](/src/components/gap#readme). |
-| `align-self`      | _Coming soon_                             |
-| `align-items`     | _Coming soon_                             |
-| `align-content`   | _Coming soon_                             |
-| `justify-self`    | _Coming soon_                             |
-| `justify-items`   | _Coming soon_                             |
-| `justify-content` | _Coming soon_                             |
-| `place-self`      | _Coming soon_                             |
-| `place-items`     | _Coming soon_                             |
-| `place-content`   | _Coming soon_                             |
+| Property          | Docs                                             |
+|-------------------|--------------------------------------------------|
+| `flex-direction`  | _Coming soon_                                    |
+| `flex-wrap`       | _Coming soon_                                    |
+| `flex-grow`       | _Coming soon_                                    |
+| `flex-shrink`     | _Coming soon_                                    |
+| `gap`             | See [documentation](/src/components/gap#readme). |
+| `align-self`      | _Coming soon_                                    |
+| `align-items`     | _Coming soon_                                    |
+| `align-content`   | _Coming soon_                                    |
+| `justify-self`    | _Coming soon_                                    |
+| `justify-items`   | _Coming soon_                                    |
+| `justify-content` | _Coming soon_                                    |
+| `place-self`      | _Coming soon_                                    |
+| `place-items`     | _Coming soon_                                    |
+| `place-content`   | _Coming soon_                                    |
 
 ## Disabled
 
