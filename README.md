@@ -65,11 +65,11 @@ npm install lasco
 | `background-attachment` | See [documentation](/src/components/background/attachment#readme). |
 | `background-clip`       | See [documentation](/src/components/background/clip#readme).       |
 | `background-color`      | See [documentation](/src/components/background/color#readme).      |
-| `background-image`      | _Coming soon..._                                                   |
-| `background-origin`     | _Coming soon..._                                                   |
-| `background-position`   | _Coming soon..._                                                   |
-| `background-repeat`     | _Coming soon..._                                                   |
-| `background-size`       | _Coming soon..._                                                   |
+| `background-image`      | _Coming soon._                                                     |
+| `background-origin`     | _Coming soon._                                                     |
+| `background-position`   | _Coming soon._                                                     |
+| `background-repeat`     | _Coming soon._                                                     |
+| `background-size`       | _Coming soon._                                                     |
 
 ### Filters
 
@@ -84,20 +84,20 @@ npm install lasco
 
 | Property          | Docs                                             |
 |-------------------|--------------------------------------------------|
-| `flex-direction`  | _Coming soon_                                    |
-| `flex-wrap`       | _Coming soon_                                    |
-| `flex-grow`       | _Coming soon_                                    |
-| `flex-shrink`     | _Coming soon_                                    |
+| `flex-direction`  | _Coming soon._                                   |
+| `flex-wrap`       | _Coming soon._                                   |
+| `flex-grow`       | _Coming soon._                                   |
+| `flex-shrink`     | _Coming soon._                                   |
 | `gap`             | See [documentation](/src/components/gap#readme). |
-| `align-self`      | _Coming soon_                                    |
-| `align-items`     | _Coming soon_                                    |
-| `align-content`   | _Coming soon_                                    |
-| `justify-self`    | _Coming soon_                                    |
-| `justify-items`   | _Coming soon_                                    |
-| `justify-content` | _Coming soon_                                    |
-| `place-self`      | _Coming soon_                                    |
-| `place-items`     | _Coming soon_                                    |
-| `place-content`   | _Coming soon_                                    |
+| `align-self`      | _Coming soon._                                   |
+| `align-items`     | _Coming soon._                                   |
+| `align-content`   | _Coming soon._                                   |
+| `justify-self`    | _Coming soon._                                   |
+| `justify-items`   | _Coming soon._                                   |
+| `justify-content` | _Coming soon._                                   |
+| `place-self`      | _Coming soon._                                   |
+| `place-items`     | _Coming soon._                                   |
+| `place-content`   | _Coming soon._                                   |
 
 ## Disabled
 
