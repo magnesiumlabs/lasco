@@ -49,7 +49,7 @@ example `lg:contrast` will be only apply on large screens size and above.
 
 ### Disabled
 
-If you want, you can easily disable this utility with `$disabled` option.
+If you needed, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (

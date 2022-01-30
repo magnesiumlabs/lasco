@@ -35,7 +35,7 @@ You can easily extend the Lasco's `opacity` scales:
 
 ### Disabled
 
-If you want, you can easily disable this utility with `$disabled` option.
+If you needed, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (

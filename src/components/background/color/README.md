@@ -48,7 +48,7 @@ example `lg:bg-color-transparent` will be only apply on large screens size and a
 
 ### Disabled
 
-If you want, you can easily disable this utility with `$disabled` option.
+If you needed, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (

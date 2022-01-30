@@ -38,7 +38,7 @@ You can easily extend the Lasco's `max-height` scales:
 
 ### Disabled
 
-If you want, you can easily disable this utility with `$disabled` option.
+If you needed, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (

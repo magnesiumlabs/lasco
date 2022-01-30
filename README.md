@@ -30,9 +30,9 @@ npm install lasco
 | `$breakpoints-reset` | `false`                                                                                                             | Sets the `$breakpoints` has new defaults. |
 | `$disabled`          | `()`                                                                                                                | Sets a list of properties to disabled.    |
 
-### Properties
+## Properties
 
-#### Layout
+### Layout
 
 | Property          | Docs                                               |
 |-------------------|----------------------------------------------------|
@@ -41,13 +41,13 @@ npm install lasco
 | `position`        | See [readme](/src/components/position#readme).     |
 | `z-index`         | See [readme](/src/components/z-index#readme).      |
 
-#### Effect
+### Effect
 
 | Property  | Docs                                          |
 |-----------|-----------------------------------------------|
 | `opacity` | See [readme](/src/components/opacity#readme). |
 
-#### Sizing
+### Sizing
 
 | Property     | Docs                                             |
 |--------------|--------------------------------------------------|
@@ -58,7 +58,7 @@ npm install lasco
 | `min-height` | See [readme](/src/components/height/min#readme). |
 | `max-height` | See [readme](/src/components/height/max#readme). |
 
-#### Backgrounds
+### Backgrounds
 
 | Property                | Docs                                                        |
 |-------------------------|-------------------------------------------------------------|
@@ -66,7 +66,7 @@ npm install lasco
 | `background-clip`       | See [readme](/src/components/background/clip#readme).       |
 | `background-color`      | See [readme](/src/components/background/color#readme).      |
 
-#### Filters
+### Filters
 
 | Property     | Docs                                                    |
 |--------------|---------------------------------------------------------|
@@ -75,7 +75,7 @@ npm install lasco
 | `contrast`   | See [readme](/src/components/filter/contrast#readme).   |
 | `grayscale`  | See [readme](/src/components/filter/grayscale#readme).  |
 
-#### Others
+### Others
 
 | Property          | Docs                                      |
 |-------------------|-------------------------------------------|
@@ -94,7 +94,9 @@ npm install lasco
 | `place-items`     | _Coming soon_                             |
 | `place-content`   | _Coming soon_                             |
 
-#### Disable property with `$disabled`
+## Disabled
+
+If you needed, you can easily disable this utility with `$disabled` option.
 
 ```scss
 @use "lasco" with (
