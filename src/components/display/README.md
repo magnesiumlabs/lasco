@@ -29,7 +29,7 @@ Use the `{key}` class for setup the display type.
 
 ### Configuration
 
-By default, Lasco provides a handful of general purpose display type utilities. You can easily extend the default scales
+By default, Lasco provides a handful of general purpose display type utilities. You can easily filter the default scales
 using the Sass configuration.
 
 ```scss

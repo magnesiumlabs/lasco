@@ -27,7 +27,7 @@ To control the `position` at a specific breakpoint, add a `{screen}:` prefix tok
 
 ### Filter
 
-By default, Lasco provides a handful of general purpose position utilities. You can easily extend the default scales
+By default, Lasco provides a handful of general purpose position utilities. You can easily filter the default scales
 using the Sass configuration.
 
 ```scss
