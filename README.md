@@ -64,6 +64,7 @@ npm install lasco
 |-------------------------|-------------------------------------------------------------|
 | `background-attachment` | See [readme](/src/components/background/attachment#readme). |
 | `background-clip`       | See [readme](/src/components/background/clip#readme).       |
+| `background-color`      | See [readme](/src/components/background/color#readme).      |
 
 #### Filters
 

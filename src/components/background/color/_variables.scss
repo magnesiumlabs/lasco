@@ -1,0 +1,14 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "sass:map";
+
+$_defaults: (
+    inherit: inherit,
+    current: currentColor,
+    "transparent": transparent
+);
+
+$bg-color: () !default;
+$bg-color: map.merge($_defaults, $bg-color);

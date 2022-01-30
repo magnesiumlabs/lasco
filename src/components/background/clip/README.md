@@ -4,7 +4,7 @@ Utilities for controlling background box.
 
 ## Usage
 
-Use the `bg-clip-{value}` class for setup ratio aspect.
+Use the `bg-clip-{value}` class for setup background box.
 
 ```html
 

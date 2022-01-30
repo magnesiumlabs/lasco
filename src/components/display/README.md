@@ -1,6 +1,6 @@
 # Display
 
-Utilities for applying display type of element.
+Utilities for applying display type of an element.
 
 ## Usage
 

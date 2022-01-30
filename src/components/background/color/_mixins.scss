@@ -7,19 +7,11 @@
 @use "./variables";
 
 @mixin core-styles {
-    .bg-clip {
-        @include core.declaration(bg-clip) {
-            @each $key in variables.$bg-clip {
+    .bg-color {
+        @include core.declaration(bg-color) {
+            @each $key, $value in variables.$bg-color {
                 &-#{$key} {
-                    $value: null;
-
-                    @if $key != text {
-                        $value: #{$key}-box;
-                    } @else {
-                        $value: #{$key};
-                    }
-
-                    @include css.declaration(background-clip, $value);
+                    @include css.declaration(background-color, $value);
                 }
             }
         }
