@@ -14,6 +14,8 @@
 
                 @if $key == round or $key == space {
                     $suffix: repeat-#{$key};
+                } @else if $key == no-repeat {
+                    $suffix: repeat-none;
                 } @else {
                     $suffix: $key;
                 }

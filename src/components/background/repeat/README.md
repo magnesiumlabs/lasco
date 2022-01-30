@@ -18,7 +18,7 @@ Use the `bg-repeat-{style}` class for setup background image repeat.
 | Class             | Property                        |
 |-------------------|---------------------------------|
 | `bg-repeat`       | `background-repeat: repeat;`    |
-| `bg-no-repeat`    | `background-repeat: no-repeat;` |
+| `bg-repeat-none`  | `background-repeat: no-repeat;` |
 | `bg-repeat-x`     | `background-repeat: repeat-x;`  |
 | `bg-repeat-y`     | `background-repeat: repeat-y;`  |
 | `bg-repeat-round` | `background-repeat: round;`     |
@@ -40,11 +40,11 @@ default scales using the Sass configuration.
 ### Breakpoints
 
 You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:bg-no-repeat` will be only apply on large screens size and above.
+example `lg:bg-repeat-none` will be only apply on large screens size and above.
 
 ```html
 
-<div class="bg-repeat lg:bg-no-repeat">
+<div class="bg-repeat lg:bg-repeat-none">
     <!-- ... -->
 </div>
 ```
