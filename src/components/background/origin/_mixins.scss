@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .bg-origin {
+        @include core.declaration(bg-origin) {
+            @each $key in variables.$bg-origin {
+                &-#{$key} {
+                    @include css.declaration(background-origin, #{$key}-box);
+                }
+            }
+        }
+    }
+}
