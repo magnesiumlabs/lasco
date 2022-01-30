@@ -7,6 +7,7 @@ Utilities for applying ratio aspect of an element.
 Use the `aspect-{index}` class for setup ratio aspect.
 
 ```html
+
 <div class="aspect-square">
     <!-- ... -->
 </div>
@@ -22,8 +23,8 @@ Use the `aspect-{index}` class for setup ratio aspect.
 
 ### Configuration
 
-By default, Lasco provides three `aspect-ratio` utilities, `auto`, `square` and `video`. You can easily extend the default
-scales using the Sass configuration, the following Sass...
+By default, Lasco provides a handful of general purpose ratio aspect utilities. You can easily extend the default scales
+using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -33,20 +34,13 @@ scales using the Sass configuration, the following Sass...
 );
 ```
 
-...will produce the following CSS...
-
-```css
-.aspect-4\/3 {
-    aspect-ratio: 4/3;
-}
-```
-
 ### Breakpoints
 
 You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
 example `lg:aspect-video` will be only apply on large screens size and above.
 
 ```html
+
 <div class="aspect-auto lg:aspect-video">
     <!-- ... -->
 </div>

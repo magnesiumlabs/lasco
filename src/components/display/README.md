@@ -7,6 +7,7 @@ Utilities for applying display type of element.
 Use the `{key}` class for setup the display type.
 
 ```html
+
 <div class="block">
     <!-- ... -->
 </div>
@@ -28,8 +29,8 @@ Use the `{key}` class for setup the display type.
 
 ### Configuration
 
-By default, Lasco provides some `{key}` utilities. You can easily filter the default scales using the Sass
-configuration, the following Sass...
+By default, Lasco provides a handful of general purpose display type utilities. You can easily extend the default scales
+using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -39,14 +40,13 @@ configuration, the following Sass...
 );
 ```
 
-...will produce only the `flex` classes.
-
 ### Breakpoints
 
 You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
 example `lg:hidden` will be only apply on large screens size and above.
 
 ```html
+
 <div class="block lg:hidden">
     <!-- ... -->
 </div>

@@ -17,6 +17,7 @@ Class generator for setting `position` property for an element.
 To control the `position` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
+
 <div class="sticky lg:absolute">
     <!-- ... -->
 </div>
@@ -26,7 +27,8 @@ To control the `position` at a specific breakpoint, add a `{screen}:` prefix tok
 
 ### Filter
 
-You can also filter the classes that you only want to use, the following Sass...
+By default, Lasco provides a handful of general purpose position utilities. You can easily extend the default scales
+using the Sass configuration.
 
 ```scss
 @use "lasco" with (
