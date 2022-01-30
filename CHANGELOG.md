@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.0](https://github.com/magnesiumlabs/lasco/compare/v0.18.0...v0.19.0) (2022-01-30)
+
+
+### Features
+
+* **background-image:** add main classes ([eb734a5](https://github.com/magnesiumlabs/lasco/commit/eb734a5b71d5eae1a331f3fd07ec880445c618dc))
+* **background-origin:** add main classes ([03f1634](https://github.com/magnesiumlabs/lasco/commit/03f1634c30b822874d2a8cd7d2761afe81709835))
+* **background-repeat:** add main classes ([afad551](https://github.com/magnesiumlabs/lasco/commit/afad55170934c2f39f21b28af3a32bee126b0ae7))
+* **background-repeat:** change `bg-no-repeat` for `bg-repeat-none` ([56f589e](https://github.com/magnesiumlabs/lasco/commit/56f589e3ce500048b14e078903fbf3d572c1c1c1))
+* **background:** add `[@error](https://github.com/error)` if value on filter option don't match ([7276a69](https://github.com/magnesiumlabs/lasco/commit/7276a69bb9225ef2666360a20e17f31e6be40410))
+
 ## [0.18.0](https://github.com/magnesiumlabs/lasco/compare/v0.17.0...v0.18.0) (2022-01-30)
 
 
