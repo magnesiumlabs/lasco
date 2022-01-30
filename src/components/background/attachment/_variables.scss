@@ -4,8 +4,10 @@
 
 @use "sass:map";
 
-$bg-attachment: (
+$defaults: (
     fixed,
     local,
     scroll
-) !default;
+);
+
+$bg-attachment: $defaults !default;

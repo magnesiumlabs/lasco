@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
@@ -11,6 +12,10 @@
         @include core.declaration(bg-clip) {
             @each $key in variables.$bg-clip {
                 &-#{$key} {
+                    @if list.index(variables.$defaults, $key) == null {
+                        @error "Invalid `background-clip` value, '#{$key}' is not alowed here. Choose one of '#{variables.$defaults}' values.";
+                    }
+
                     $value: null;
 
                     @if $key != text {

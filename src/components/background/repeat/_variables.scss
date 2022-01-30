@@ -4,11 +4,13 @@
 
 @use "sass:map";
 
-$bg-repeat: (
+$defaults: (
     repeat,
     no-repeat,
     repeat-x,
     repeat-y,
     round,
     space
-) !default;
+);
+
+$bg-repeat: $defaults !default;

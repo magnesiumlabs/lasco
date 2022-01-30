@@ -4,9 +4,11 @@
 
 @use "sass:map";
 
-$bg-clip: (
+$defaults: (
     border,
     content,
     padding,
     text
-) !default;
+);
+
+$bg-clip: $defaults !default;
