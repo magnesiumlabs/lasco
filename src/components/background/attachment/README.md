@@ -4,7 +4,7 @@ Utilities for applying background image's position on scroll.
 
 ## Usage
 
-Use the `bg-attachment-{values}` class for setup ratio aspect.
+Use the `bg-attachment-{value}` class for setup ratio aspect.
 
 ```html
 

@@ -58,6 +58,13 @@ npm install lasco
 | `min-height` | See [readme](/src/components/height/min#readme). |
 | `max-height` | See [readme](/src/components/height/max#readme). |
 
+#### Backgrounds
+
+| Property                | Docs                                                        |
+|-------------------------|-------------------------------------------------------------|
+| `background-attachment` | See [readme](/src/components/background/attachment#readme). |
+| `background-clip`       | See [readme](/src/components/background/clip#readme).       |
+
 #### Filters
 
 | Property     | Docs                                                    |
