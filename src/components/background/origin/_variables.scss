@@ -4,8 +4,10 @@
 
 @use "sass:map";
 
-$bg-origin: (
-    border,
-    content,
-    padding
-) !default;
+$defaults: (
+    border-box,
+    content-box,
+    padding-box
+);
+
+$bg-origin: $defaults !default;

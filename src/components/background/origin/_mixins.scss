@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
@@ -10,8 +11,12 @@
     .bg-origin {
         @include core.declaration(bg-origin) {
             @each $key in variables.$bg-origin {
+                @if list.index(variables.$defaults, $key) == null {
+                    @error "Invalid `background-origin` value, '#{$key}' is not alowed here. Choose one of '#{variables.$defaults}' values.";
+                }
+
                 &-#{$key} {
-                    @include css.declaration(background-origin, #{$key}-box);
+                    @include css.declaration(background-origin, $key);
                 }
             }
         }

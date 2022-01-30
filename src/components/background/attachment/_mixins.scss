@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
@@ -10,6 +11,10 @@
     .bg-attachment {
         @include core.declaration(bg-attachment) {
             @each $key in variables.$bg-attachment {
+                @if list.index(variables.$defaults, $key) == null {
+                    @error "Invalid `background-attachment` value, '#{$key}' is not alowed here. Choose one of '#{variables.$defaults}' values.";
+                }
+
                 &-#{$key} {
                     @include css.declaration(background-attachment, $key);
                 }
