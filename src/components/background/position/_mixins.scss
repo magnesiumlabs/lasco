@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .bg-position {
+        @include core.declaration(bg-position) {
+            @each $key, $value in variables.$bg-position {
+                &-#{$key} {
+                    @include css.declaration(background-position, $value);
+                }
+            }
+        }
+    }
+}
