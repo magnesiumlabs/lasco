@@ -1,0 +1,20 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:string";
+@use "@sass-collective/css";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .bg-size {
+        @include core.declaration(bg-size) {
+            @each $key, $value in variables.$bg-size {
+                &-#{$key} {
+                    @include css.declaration(background-size, string.unquote($value));
+                }
+            }
+        }
+    }
+}

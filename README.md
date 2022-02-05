@@ -67,9 +67,9 @@ npm install lasco
 | `background-color`      | See [documentation](/src/components/background/color#readme).      |
 | `background-image`      | See [documentation](/src/components/background/image#readme).      |
 | `background-origin`     | See [documentation](/src/components/background/origin#readme).     |
-| `background-position`   | _Coming soon._                                                     |
+| `background-position`   | See [documentation](/src/components/background/position#readme).   |
 | `background-repeat`     | See [documentation](/src/components/background/repeat#readme).     |
-| `background-size`       | _Coming soon._                                                     |
+| `background-size`       | See [documentation](/src/components/background/size#readme).       |
 
 ### Filters
 
