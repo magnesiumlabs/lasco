@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.0](https://github.com/magnesiumlabs/lasco/compare/v0.20.0...v0.21.0) (2022-02-06)
+
+
+### Features
+
+* **background-color:** wrap value with quote ([860342b](https://github.com/magnesiumlabs/lasco/commit/860342b46311cf8867e608027c2752d9d4da79c6))
+* **background-image:** add multiple values support ([71cf1f2](https://github.com/magnesiumlabs/lasco/commit/71cf1f26d2c5086dc34358701f88b4cbda8a0885))
+* **background-size:** add main classes ([148b8a0](https://github.com/magnesiumlabs/lasco/commit/148b8a0ecda5334a8c59c32132f57477127fdc41))
+* **core:** add `is-quoted-string` function ([a74609e](https://github.com/magnesiumlabs/lasco/commit/a74609e4197af439723344063b4153f59dc320cd))
+
 ## [0.20.0](https://github.com/magnesiumlabs/lasco/compare/v0.19.0...v0.20.0) (2022-02-05)
 
 
