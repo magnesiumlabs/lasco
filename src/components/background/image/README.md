@@ -27,10 +27,13 @@ scales using the Sass configuration.
 ```scss
 @use "lasco" with (
     $bg-image: (
-        hero: url('https://picsum.photos/200/300')
+        "single": "url('https://picsum.photos/200/300')", /// One-value syntax.
+        "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))" /// Multiple values syntax.
     )
 );
 ```
+
+> **Note:** the value can be a `image` value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#values))_
 
 ### Breakpoints
 
