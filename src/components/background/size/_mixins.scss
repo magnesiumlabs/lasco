@@ -7,11 +7,11 @@
 @use "./variables";
 
 @mixin core-styles {
-    .bg-color {
-        @include core.declaration(bg-color) {
-            @each $key, $value in variables.$bg-color {
+    .bg-size {
+        @include core.declaration(bg-size) {
+            @each $key, $value in variables.$bg-size {
                 &-#{$key} {
-                    @include css.declaration(background-color, core.is-quoted-string($value));
+                    @include css.declaration(background-size, core.is-quoted-string($value));
                 }
             }
         }

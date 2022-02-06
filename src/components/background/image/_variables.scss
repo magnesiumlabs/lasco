@@ -5,7 +5,7 @@
 @use "sass:map";
 
 $_defaults: (
-    none: none,
+    "none": "none"
 );
 
 $bg-image: () !default;

@@ -31,7 +31,7 @@ scales using the Sass configuration.
 ```scss
 @use "lasco" with (
     $bg-position: (
-        left-top: left top
+        "left-top": "left top"
     )
 );
 ```

@@ -5,9 +5,9 @@
 @use "sass:map";
 
 $_defaults: (
-    inherit: inherit,
-    current: currentColor,
-    "transparent": transparent
+    "inherit": "inherit",
+    "current": "currentColor",
+    "transparent": "transparent"
 );
 
 $bg-color: () !default;

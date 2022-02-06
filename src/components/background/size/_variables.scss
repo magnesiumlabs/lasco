@@ -5,12 +5,10 @@
 @use "sass:map";
 
 $_defaults: (
-    "bottom": "bottom",
-    "center": "center",
-    "left": "left",
-    "right": "right",
-    "top": "top"
+    "auto": "auto",
+    "cover": "cover",
+    "contain": "contain"
 );
 
-$bg-position: () !default;
-$bg-position: map.merge($_defaults, $bg-position);
+$bg-size: () !default;
+$bg-size: map.merge($_defaults, $bg-size);
