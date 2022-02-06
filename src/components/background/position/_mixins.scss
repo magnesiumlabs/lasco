@@ -11,7 +11,7 @@
         @include core.declaration(bg-position) {
             @each $key, $value in variables.$bg-position {
                 &-#{$key} {
-                    @include css.declaration(background-position, $value);
+                    @include css.declaration(background-position, core.is-quoted-string($value));
                 }
             }
         }

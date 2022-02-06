@@ -2,7 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "sass:string";
 @use "@sass-collective/css";
 @use "../../core";
 @use "./variables";
@@ -12,7 +11,7 @@
         @include core.declaration(bg-image) {
             @each $key, $value in variables.$bg-image {
                 &-#{$key} {
-                    @include css.declaration(background-image, string.unquote($value));
+                    @include css.declaration(background-image, core.is-quoted-string($value));
                 }
             }
         }

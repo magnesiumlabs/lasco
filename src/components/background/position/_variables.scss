@@ -5,11 +5,11 @@
 @use "sass:map";
 
 $_defaults: (
-    bottom: bottom,
-    center: center,
-    left: left,
-    right: right,
-    top: top
+    "bottom": "bottom",
+    "center": "center",
+    "left": "left",
+    "right": "right",
+    "top": "top"
 );
 
 $bg-position: () !default;

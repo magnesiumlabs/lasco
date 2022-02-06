@@ -21,6 +21,14 @@
     @return $string;
 }
 
+@function is-quoted-string($value) {
+    @if meta.type-of($value) == string {
+        @return string.unquote($value);
+    }
+
+    @return $value;
+}
+
 @function is-disabled($property) {
     @return list.index(variables.$disabled, $property);
 }
