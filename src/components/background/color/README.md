@@ -29,7 +29,7 @@ scales using the Sass configuration.
 ```scss
 @use "lasco" with (
     $bg-color: (
-        "black": #000
+        "black": "#000"
     )
 );
 ```
