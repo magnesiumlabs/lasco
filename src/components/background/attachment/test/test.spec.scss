@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "index" with (
+    $with-breakpoints: false
+);
+@use "../src/components/background/attachment";
+
+@include describe("image.core-styles()") {
+    @include it("Should return `background-attachment` declaration.") {
+        @include assert {
+            @include output {
+                @include attachment.core-styles;
+            }
+
+            @include expect {
+                .bg-attachment-fixed {
+                    background-attachment: fixed;
+                }
+
+                .bg-attachment-local {
+                    background-attachment: local;
+                }
+
+                .bg-attachment-scroll {
+                    background-attachment: scroll;
+                }
+
+            }
+        }
+    }
+}
