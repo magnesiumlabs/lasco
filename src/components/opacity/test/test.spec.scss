@@ -1,0 +1,29 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "index" with (
+    $with-breakpoints: false
+);
+@use "../src/components/opacity";
+
+@include describe("image.core-styles()") {
+    @include it("Should return `opacity` declaration.") {
+        @include assert {
+            @include output {
+                @include opacity.core-styles;
+            }
+
+            @include expect {
+                .opacity-0 {
+                    opacity: 0;
+                }
+
+                .opacity-100 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
