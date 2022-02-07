@@ -38,12 +38,14 @@
 // Public mixins
 // ------------------------------------------------------------------------- //
 
-@mixin declaration($property) {
+@mixin declaration($property, $breakpoints: variables.$with-breakpoints) {
     @if not functions.is-disabled($property) {
         @content;
 
-        @include _breakpoint {
-            @content;
+        @if ($breakpoints) {
+            @include _breakpoint {
+                @content;
+            }
         }
     }
 }

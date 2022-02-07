@@ -7,6 +7,7 @@
         "clean:dist": "rimraf \"dist/*\"",
         "clean": "npm-run-all --parallel clean:*",
         "build": "npm run clean:dist && webpack && npm run clean:chunks",
+        "test": "jest",
         "prepare": "husky install && npm run build",
         "release": "semantic-release --branches main"
     },
@@ -22,12 +23,15 @@
         "autoprefixer": "^10.4.2",
         "css-loader": "^6.5.1",
         "css-minimizer-webpack-plugin": "^3.4.1",
+        "glob": "^7.2.0",
         "husky": "^7.0.4",
+        "jest": "^27.5.0",
         "mini-css-extract-plugin": "^2.5.3",
         "npm-run-all": "^4.1.5",
         "postcss-loader": "^6.2.1",
         "rimraf": "^3.0.2",
         "sass-loader": "^12.4.0",
+        "sass-true": "^6.0.1",
         "semantic-release": "^19.0.2",
         "webpack": "^5.67.0",
         "webpack-cli": "^4.9.2"

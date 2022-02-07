@@ -1,0 +1,32 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "index" with (
+    $with-breakpoints: false,
+    $bg-image: (
+        "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))"
+    )
+);
+@use "../src/components/background/image";
+
+@include describe("image.core-styles()") {
+    @include it("Should return `background-image` declaration.") {
+        @include assert {
+            @include output {
+                @include image.core-styles;
+            }
+
+            @include expect {
+                .bg-image-none {
+                    background-image: none;
+                }
+
+                .bg-image-multiple {
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                }
+            }
+        }
+    }
+}
