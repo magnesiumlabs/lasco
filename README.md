@@ -24,11 +24,12 @@ npm install lasco
 
 ### Options
 
-| Name                 | Default                                                                                                             | Description                               |
-|----------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| `$breakpoints`       | See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint#tokens) plugin. | Sets a list of screens for breakpoint.    |
-| `$breakpoints-reset` | `false`                                                                                                             | Sets the `$breakpoints` has new defaults. |
-| `$disabled`          | `()`                                                                                                                | Sets a list of properties to disabled.    |
+| Name                 | Default                                                                                                             | Description                                             |
+|----------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| `$breakpoints`       | See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint#tokens) plugin. | Sets a list of screens for breakpoint.                  |
+| `$breakpoints-reset` | `false`                                                                                                             | Sets the `$breakpoints` configuration has new defaults. |
+| `$with-breakpoints`  | `true`                                                                                                              | Sets the breakpoints `@media` declarations.             |
+| `$disabled`          | `()`                                                                                                                | Sets a list of properties to disabled.                  |
 
 ## Properties
 
