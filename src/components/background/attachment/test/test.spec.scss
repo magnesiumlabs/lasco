@@ -8,7 +8,7 @@
 );
 @use "../src/components/background/attachment";
 
-@include describe("image.core-styles()") {
+@include describe("attachment.core-styles()") {
     @include it("Should return `background-attachment` declaration.") {
         @include assert {
             @include output {
