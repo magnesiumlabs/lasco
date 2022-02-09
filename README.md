@@ -80,7 +80,7 @@ npm install lasco
 | `contrast`   | See [documentation](/src/components/filter/contrast#readme).   |
 | `grayscale`  | See [documentation](/src/components/filter/grayscale#readme).  |
 
-### Others
+### Flexbox & Grid
 
 | Property          | Docs                                             |
 |-------------------|--------------------------------------------------|
@@ -89,15 +89,22 @@ npm install lasco
 | `flex-grow`       | _Coming soon._                                   |
 | `flex-shrink`     | _Coming soon._                                   |
 | `gap`             | See [documentation](/src/components/gap#readme). |
-| `align-self`      | _Coming soon._                                   |
-| `align-items`     | _Coming soon._                                   |
-| `align-content`   | _Coming soon._                                   |
 | `justify-self`    | _Coming soon._                                   |
 | `justify-items`   | _Coming soon._                                   |
 | `justify-content` | _Coming soon._                                   |
+| `align-self`      | _Coming soon._                                   |
+| `align-items`     | _Coming soon._                                   |
+| `align-content`   | _Coming soon._                                   |
 | `place-self`      | _Coming soon._                                   |
 | `place-items`     | _Coming soon._                                   |
 | `place-content`   | _Coming soon._                                   |
+
+### Spacing
+
+| Property  | Docs           |
+|-----------|----------------|
+| `margin`  | _Coming soon._ |
+| `padding` | _Coming soon._ |
 
 ## Disabled
 
