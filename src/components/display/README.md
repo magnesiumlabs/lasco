@@ -27,7 +27,7 @@ Use the `{key}` class for setup the display type.
 | `inline-table` | `display: inline-table;` |
 | `hidden`       | `display: none;`         |
 
-### Configuration
+## Configuration
 
 First, allow `display` classes to be generated.
 
@@ -39,7 +39,7 @@ First, allow `display` classes to be generated.
 );
 ```
 
-#### Extend
+### Extend
 
 By default, Lasco provides a handful of general purpose display type utilities. You can easily filter the default scales
 using the Sass configuration.
@@ -53,6 +53,8 @@ using the Sass configuration.
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 

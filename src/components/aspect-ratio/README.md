@@ -21,7 +21,7 @@ Use the `aspect-{index}` class for setup ratio aspect.
 | `aspect-square` | `aspect-ratio: 1/1`  |
 | `aspect-video`  | `aspect-ratio: 16/9` |
 
-### Configuration
+## Configuration
 
 First, allow `aspect-ratio` classes to be generated.
 
@@ -33,7 +33,7 @@ First, allow `aspect-ratio` classes to be generated.
 );
 ```
 
-#### Extend
+### Extend
 
 By default, Lasco provides a handful of general purpose ratio aspect utilities. You can easily extend the default scales
 using the Sass configuration.
@@ -47,6 +47,8 @@ using the Sass configuration.
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 

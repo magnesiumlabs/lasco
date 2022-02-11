@@ -2,23 +2,24 @@
 
 Class generator for setting `gap` property for an element.
 
-## Classes
+## Usage
+
+Use the `gap-{index}` class for setup ratio aspect.
+
+```html
+
+<div class="gap-0">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class   | Property  |
 |---------|-----------|
 | `gap-0` | `gap: 0;` |
 
-## Breakpoints
-
-To control the gap at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
-
-```html
-<div class="gap-0 lg:gap-24">
-    <!-- ... -->
-</div>
-```
-
-### Configuration
+## Configuration
 
 First, allow `aspect-ratio` classes to be generated.
 
@@ -30,7 +31,7 @@ First, allow `aspect-ratio` classes to be generated.
 );
 ```
 
-#### Extend
+### Extend
 
 By default, Lasco provides a handful of general purpose gap utilities. You can easily extend the default scales
 using the Sass configuration.
@@ -46,4 +47,16 @@ using the Sass configuration.
         )
     )
 );
+```
+
+## Applying conditionally
+
+### Breakpoints
+
+To control the gap at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+
+```html
+<div class="gap-0 lg:gap-24">
+    <!-- ... -->
+</div>
 ```
