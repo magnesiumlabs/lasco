@@ -3,11 +3,11 @@
 // ============================================================================================= //
 
 @use "@sass-collective/css";
-@use "../core";
+@use "../../../mixins" as core-mixins;
 @use "./variables";
 
 @mixin core-styles {
-    @each $key in variables.$display {
+    @each $key in variables.$extend {
         $value: $key;
 
         @if ($key == hidden) {
@@ -15,7 +15,7 @@
         }
 
         .#{$key} {
-            @include core.declaration(display) {
+            @include core-mixins.declaration(display) {
                 @include css.declaration(display, $value);
             }
         }

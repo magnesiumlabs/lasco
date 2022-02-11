@@ -59,15 +59,3 @@ example `lg:aspect-video` will be only apply on large screens size and above.
     <!-- ... -->
 </div>
 ```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        aspect-ratio
-    )
-);
-```

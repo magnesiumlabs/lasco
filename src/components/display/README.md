@@ -29,13 +29,27 @@ Use the `{key}` class for setup the display type.
 
 ### Configuration
 
+First, allow `display` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "display": true
+    )
+);
+```
+
+#### Customization
+
 By default, Lasco provides a handful of general purpose display type utilities. You can easily filter the default scales
 using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $display: (
-        flex
+    $extend: (
+        "display": (
+            flex
+        )
     )
 );
 ```
@@ -50,16 +64,4 @@ example `lg:hidden` will be only apply on large screens size and above.
 <div class="block lg:hidden">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        display
-    )
-);
 ```
