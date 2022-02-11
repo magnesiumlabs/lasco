@@ -33,7 +33,7 @@ First, allow `aspect-ratio` classes to be generated.
 );
 ```
 
-#### Customization
+#### Extend
 
 By default, Lasco provides a handful of general purpose ratio aspect utilities. You can easily extend the default scales
 using the Sass configuration.

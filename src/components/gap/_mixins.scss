@@ -5,13 +5,14 @@
 @use "sass:meta";
 @use "sass:string";
 @use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .gap {
-        @include core.declaration(gap) {
-            @each $key, $value in variables.$gap {
+        @include core-mixins.declaration(gap) {
+            @each $key, $value in variables.$extend {
                 $property: gap;
 
                 @if meta.type-of($key) == "string" and string.index($key, "x-") {

@@ -39,7 +39,7 @@ First, allow `display` classes to be generated.
 );
 ```
 
-#### Customization
+#### Extend
 
 By default, Lasco provides a handful of general purpose display type utilities. You can easily filter the default scales
 using the Sass configuration.

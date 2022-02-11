@@ -3,10 +3,15 @@
 // ============================================================================================= //
 
 @use "sass:map";
+@use "sass:meta";
+@use "../../../variables" as core-variables;
 
 $_defaults: (
     0: 0
 );
 
-$gap: () !default;
-$gap: map.merge($_defaults, $gap);
+$extend: $_defaults;
+
+@if (meta.type-of(map.get(core-variables.$extend, "gap")) == "map") {
+    $extend: map.merge($_defaults, map.get(core-variables.$extend, "gap"));
+}
