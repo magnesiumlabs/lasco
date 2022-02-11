@@ -5,13 +5,14 @@
 @use "sass:string";
 @use "sass:meta";
 @use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .aspect {
-        @include core.declaration(aspect-ratio) {
-            @each $key, $value in variables.$aspect-ratio {
+        @include core-mixins.declaration(aspect-ratio) {
+            @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }

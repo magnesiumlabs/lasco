@@ -23,13 +23,27 @@ Use the `aspect-{index}` class for setup ratio aspect.
 
 ### Configuration
 
+First, allow `aspect-ratio` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "aspect-ratio": true
+    )
+);
+```
+
+#### Customization
+
 By default, Lasco provides a handful of general purpose ratio aspect utilities. You can easily extend the default scales
 using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $aspect-ratio: (
-        "4/3": "4/3"
+    $extend: (
+        "aspect-ratio": (
+            "4/3": "4/3"
+        )
     )
 );
 ```
