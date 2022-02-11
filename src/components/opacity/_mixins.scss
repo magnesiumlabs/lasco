@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "@sass-collective/css";
-@use "../core";
+@use "../../../mixins" as core-mixins;
 @use "./variables";
 
 @mixin core-styles {
     .opacity {
-        @include core.declaration(opacity) {
-            @each $key, $value in variables.$opacity {
+        @include core-mixins.declaration(opacity) {
+            @each $key, $value in variables.$extend {
                 &-#{$key} {
                     @include css.declaration(opacity, $value);
                 }

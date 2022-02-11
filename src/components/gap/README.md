@@ -21,7 +21,7 @@ Use the `gap-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `aspect-ratio` classes to be generated.
+First, allow `gap` classes to be generated.
 
 ```scss
 @use "lasco" with (
