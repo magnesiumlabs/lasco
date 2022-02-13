@@ -22,18 +22,34 @@ Use the `grayscale-{amount}` class for setup ratio aspect.
 
 ### Configuration
 
+First, allow `grayscale` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "grayscale": true
+    )
+);
+```
+
+### Extend
+
 By default, Lasco provides a handful of general purpose grayscale utilities. You can easily extend the default scales
 using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $grayscale: (
-        50: 0.5
+    $extend: (
+        "grayscale": (
+            50: 0.5
+        )
     )
 );
 ```
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()#exemples))_
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -45,16 +61,4 @@ example `lg:grayscale` will be only apply on large screens size and above.
 <div class="grayscale-0 lg:grayscale">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        grayscale
-    )
-);
 ```

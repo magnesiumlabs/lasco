@@ -4,14 +4,14 @@
 
 @use "@sass-collective/property";
 @use "@sass-collective/property/custom-properties";
-@use "../../core";
+@use "../../../../mixins" as core-mixins;
 @use "../index" as filter;
 @use "./variables";
 
 @mixin core-styles {
     .grayscale {
-        @include core.declaration(grayscale) {
-            @each $key, $value in variables.$grayscale {
+        @include core-mixins.declaration(grayscale) {
+            @each $key, $value in variables.$extend {
                 &-#{$key} {
                     @include property.declaration(custom-properties.create(--lsc-grayscale, grayscale($value)));
                     @include filter.declaration(grayscale);

@@ -22,18 +22,34 @@ Use the `contrast-{amount}` class for setup ratio aspect.
 
 ### Configuration
 
+First, allow `contrast` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "contrast": true
+    )
+);
+```
+
+### Extend
+
 By default, Lasco provides a handful of general purpose contrast utilities. You can easily extend the default scales
 using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $contrast: (
-        50: 0.5
+    $extend: (
+        "contrast": (
+            50: 0.5
+        )
     )
 );
 ```
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast()#exemples))_
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -45,16 +61,4 @@ example `lg:contrast` will be only apply on large screens size and above.
 <div class="contrast-0">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        contrast
-    )
-);
 ```

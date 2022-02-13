@@ -2,12 +2,11 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     0: 0,
     100: 1
 );
 
-$contrast: () !default;
-$contrast: map.merge($_defaults, $contrast);
+$extend: core-functions.extend("contrast", $_defaults);
