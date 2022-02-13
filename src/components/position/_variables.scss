@@ -2,10 +2,14 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-$position: (
+@use "../../../functions" as core-functions;
+
+$_defaults: (
     absolute,
     fixed,
     relative,
     static,
     sticky
 ) !default;
+
+$extend: core-functions.filter("position", $_defaults);

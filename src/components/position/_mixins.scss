@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "@sass-collective/css";
-@use "../core";
+@use "../../../mixins" as core-mixins;
 @use "./variables";
 
 @mixin core-styles {
-    @each $key in variables.$position {
+    @each $key in variables.$extend {
         .#{$key} {
-            @include core.declaration(position) {
+            @include core-mixins.declaration(position) {
                 @include css.declaration(position, $key);
             }
         }

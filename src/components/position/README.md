@@ -2,7 +2,18 @@
 
 Class generator for setting `position` property for an element.
 
-## Classes
+## Usage
+
+Use the `{key}` class for setup the display type.
+
+```html
+
+<div class="absolute">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class      | Property              |
 |------------|-----------------------|
@@ -12,42 +23,43 @@ Class generator for setting `position` property for an element.
 | `static`   | `position: static;`   |
 | `sticky`   | `position: sticky;`   |
 
-## Breakpoints
+## Configuration
 
-To control the `position` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+First, allow `position` classes to be generated.
 
-```html
-
-<div class="sticky lg:absolute">
-    <!-- ... -->
-</div>
+```scss
+@use "lasco" with (
+    $extend: (
+        "position": true
+    )
+);
 ```
 
-## Customization
-
-### Filter
+### Extend
 
 By default, Lasco provides a handful of general purpose position utilities. You can easily filter the default scales
 using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $position: (
-        fixed
+    $extend: (
+        "position": (
+            fixed
+        )
     )
 );
 ```
 
-...will produce only the `fixed` classes.
+## Applying conditionally
 
-### Disabled
+### Breakpoints
 
-If you needed, you can easily disable this utility with `$disabled` option.
+You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
+example `lg:relative` will be only apply on large screens size and above.
 
-```scss
-@use "lasco" with (
-    $disabled: (
-        position
-    )
-);
+```html
+
+<div class="absolute lg:relative">
+    <!-- ... -->
+</div>
 ```
