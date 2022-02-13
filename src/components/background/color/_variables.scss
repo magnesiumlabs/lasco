@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     "inherit": "inherit",
@@ -10,5 +10,4 @@ $_defaults: (
     "transparent": "transparent"
 );
 
-$bg-color: () !default;
-$bg-color: map.merge($_defaults, $bg-color);
+$extend: core-functions.extend("bg-color", $_defaults);

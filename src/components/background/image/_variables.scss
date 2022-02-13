@@ -2,11 +2,10 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     "none": "none"
 );
 
-$bg-image: () !default;
-$bg-image: map.merge($_defaults, $bg-image);
+$extend: core-functions.extend("bg-image", $_defaults);

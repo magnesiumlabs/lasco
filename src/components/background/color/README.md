@@ -21,18 +21,34 @@ Use the `bg-color-{value}` class for setup background color.
 | `bg-color-current`     | `background-color: currentColor;` |
 | `bg-color-transparent` | `background-color: transparent;`  |
 
-### Configuration
+## Configuration
+
+First, allow `background-color` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-color": true
+    )
+);
+```
+
+### Extend
 
 By default, Lasco provides a handful of general purpose background color utilities. You can easily extend the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $bg-color: (
-        "black": #000
+    $extend: (
+        "bg-color": (
+            "black": #000
+        )
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -44,16 +60,4 @@ example `lg:bg-color-transparent` will be only apply on large screens size and a
 <div class="bg-color-current lg:bg-color-transparent">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        bg-color
-    )
-);
 ```

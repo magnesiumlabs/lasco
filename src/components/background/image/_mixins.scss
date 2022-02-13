@@ -3,13 +3,14 @@
 // ============================================================================================= //
 
 @use "@sass-collective/css";
+@use "../../../../mixins" as core-mixins;
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .bg-image {
-        @include core.declaration(bg-image) {
-            @each $key, $value in variables.$bg-image {
+        @include core-mixins.declaration(bg-image) {
+            @each $key, $value in variables.$extend {
                 &-#{$key} {
                     @include css.declaration(background-image, core.is-quoted-string($value));
                 }

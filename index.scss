@@ -10,8 +10,6 @@
 @forward "./src/components/height/min/variables";
 @forward "./src/components/height/max/variables";
 @forward "./src/components/height/variables";
-@forward "./src/components/background/color/variables";
-@forward "./src/components/background/image/variables";
 @forward "./src/components/background/origin/variables" hide $defaults;
 @forward "./src/components/background/position/variables";
 @forward "./src/components/background/repeat/variables" hide $defaults;
