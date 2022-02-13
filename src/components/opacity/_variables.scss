@@ -4,15 +4,11 @@
 
 @use "sass:map";
 @use "sass:meta";
-@use "../../../variables" as core-variables;
+@use "../../../functions" as core-functions;
 
 $_defaults: (
     0: 0,
     100: 1
 );
 
-$extend: $_defaults;
-
-@if (meta.type-of(map.get(core-variables.$extend, "opacity")) == "map") {
-    $extend: map.merge($_defaults, map.get(core-variables.$extend, "opacity"));
-}
+$extend: core-functions.extend("opacity", $_defaults);

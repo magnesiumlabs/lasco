@@ -1,0 +1,17 @@
+// ============================================================================================= //
+//                                           FUNCTIONS                                           //
+// ============================================================================================= //
+
+@use "sass:map";
+@use "sass:meta";
+@use "./variables" as variables;
+
+@function extend($property, $defaults) {
+    $map: ();
+
+    @if (meta.type-of(map.get(variables.$extend, $property)) == "map") {
+        $map: map.merge($defaults, map.get(variables.$extend, $property));
+    }
+
+    @return $map;
+}

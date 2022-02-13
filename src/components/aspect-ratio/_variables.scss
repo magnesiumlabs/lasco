@@ -4,7 +4,7 @@
 
 @use "sass:map";
 @use "sass:meta";
-@use "../../../variables" as core-variables;
+@use "../../../functions" as core-functions;
 
 $_defaults: (
     auto: auto,
@@ -12,8 +12,4 @@ $_defaults: (
     video: "16/9"
 );
 
-$extend: $_defaults;
-
-@if (meta.type-of(map.get(core-variables.$extend, "aspect-ratio")) == "map") {
-    $extend: map.merge($_defaults, map.get(core-variables.$extend, "aspect-ratio"));
-}
+$extend: core-functions.extend("aspect-ratio", $_defaults);
