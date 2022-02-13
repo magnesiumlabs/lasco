@@ -4,17 +4,13 @@
 
 @use "sass:list";
 @use "@sass-collective/css";
-@use "../../core";
+@use "../../../../mixins" as core-mixins;
 @use "./variables";
 
 @mixin core-styles {
     .bg-origin {
-        @include core.declaration(bg-origin) {
-            @each $key in variables.$bg-origin {
-                @if list.index(variables.$defaults, $key) == null {
-                    @error "Invalid `background-origin` value, '#{$key}' is not alowed here. Choose one of '#{variables.$defaults}' values.";
-                }
-
+        @include core-mixins.declaration(bg-origin) {
+            @each $key in variables.$extend {
                 &-#{$key} {
                     @include css.declaration(background-origin, $key);
                 }

@@ -2,12 +2,12 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
-$defaults: (
+$_defaults: (
     border-box,
     content-box,
     padding-box
 );
 
-$bg-origin: $defaults !default;
+$extend: core-functions.filter("bg-origin", $_defaults);

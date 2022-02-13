@@ -15,13 +15,13 @@ Use the `bg-image-{value}` class for setup background image.
 
 ### Scales
 
-| Class                  | Property                  |
-|------------------------|---------------------------|
-| `bg-image-none`        | `background-image: none;` |
+| Class           | Property                  |
+|-----------------|---------------------------|
+| `bg-image-none` | `background-image: none;` |
 
 ## Configuration
 
-First, allow `background-color` classes to be generated.
+First, allow `background-image` classes to be generated.
 
 ```scss
 @use "lasco" with (

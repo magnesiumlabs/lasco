@@ -24,7 +24,7 @@ Use the `bg-clip-{value}` class for setup background box.
 
 ## Configuration
 
-First, allow `background-attachment` classes to be generated.
+First, allow `background-clip` classes to be generated.
 
 ```scss
 @use "lasco" with (
