@@ -5,7 +5,7 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "../../../variables" as core-variables;
+@use "../../../functions" as core-functions;
 
 $_defaults: (
     block,
@@ -19,12 +19,4 @@ $_defaults: (
     hidden
 ) !default;
 
-$extend: $_defaults;
-
-@if (meta.type-of(map.get(core-variables.$extend, "display")) == "list" or meta.type-of(map.get(core-variables.$extend, "display")) == "string") {
-    @if list.index($_defaults, map.get(core-variables.$extend, "display")) == null {
-        @error "Invalid typography property, '#{map.get(core-variables.$extend, "display")}' is not alowed here. Choose one of '#{$_defaults}' properties.";
-    }
-
-    $extend: map.get(core-variables.$extend, "display");
-}
+$extend: core-functions.filter("display", $_defaults);

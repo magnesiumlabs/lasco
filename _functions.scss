@@ -2,6 +2,7 @@
 //                                           FUNCTIONS                                           //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "sass:map";
 @use "sass:meta";
 @use "./variables" as variables;
@@ -14,4 +15,18 @@
     }
 
     @return $map;
+}
+
+@function filter($property, $defaults) {
+    $list: $defaults;
+
+    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" {
+        @if list.index($defaults, map.get(variables.$extend, $property)) == null {
+            @error "Invalid typography property, '#{map.get(variables.$extend, $property)}' is not alowed here. Choose one of '#{$defaults}' properties.";
+        }
+
+        $list: map.get(variables.$extend, $property);
+    }
+
+    @return $list;
 }
