@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     "bottom": "bottom",
@@ -12,5 +12,4 @@ $_defaults: (
     "top": "top"
 );
 
-$bg-position: () !default;
-$bg-position: map.merge($_defaults, $bg-position);
+$extend: core-functions.extend("bg-position", $_defaults);

@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     "auto": "auto",
@@ -10,5 +10,4 @@ $_defaults: (
     "contain": "contain"
 );
 
-$bg-size: () !default;
-$bg-size: map.merge($_defaults, $bg-size);
+$extend: core-functions.extend("bg-size", $_defaults);

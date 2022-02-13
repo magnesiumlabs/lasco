@@ -23,18 +23,34 @@ Use the `bg-position-{position}` class for setup background position.
 | `bg-position-right`  | `background-position: right;`  |
 | `bg-position-top`    | `background-position: top;`    |
 
-### Configuration
+## Configuration
+
+First, allow `background-position` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-position": true
+    )
+);
+```
+
+### Extend
 
 By default, Lasco provides a handful of general purpose background position utilities. You can easily extend the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $bg-position: (
-        "left-top": "left top"
+    $extend: (
+        "bg-position": (
+            "left-top": "left top"
+        )
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -46,16 +62,4 @@ example `lg:bg-position-bottom` will be only apply on large screens size and abo
 <div class="bg-position-top lg:bg-position-bottom">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        bg-position
-    )
-);
 ```

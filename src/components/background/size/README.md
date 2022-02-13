@@ -21,22 +21,38 @@ Use the `bg-size-{value}` class for setup background size.
 | `bg-size-contain` | `background-size: contain;` |
 | `bg-size-cover`   | `background-size: cover;`   |
 
-### Configuration
+## Configuration
+
+First, allow `background-size` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-size": true
+    )
+);
+```
+
+### Extend
 
 By default, Lasco provides a handful of general purpose background size utilities. You can easily extend the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $bg-size: (
-        "50": "50%", /// One-value syntax.
-        "50-auto": "50% auto", /// Two-value syntax.
-        "multiple": "50%, 25%, 25%" /// Multiple backgrounds.
+    $extend: (
+        "bg-size": (
+            "50": "50%", /// One-value syntax.
+            "50-auto": "50% auto", /// Two-value syntax.
+            "multiple": "50%, 25%, 25%" /// Multiple backgrounds.
+        )
     )
 );
 ```
 
 > **Note:** the value can be a `length` or `percentage` value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values))_
+
+## Applying conditionally
 
 ### Breakpoints
 
