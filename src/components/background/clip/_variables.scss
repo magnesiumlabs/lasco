@@ -2,13 +2,13 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
-$defaults: (
+$_defaults: (
     border,
     content,
     padding,
     text
 );
 
-$bg-clip: $defaults !default;
+$extend: core-functions.filter("bg-clip", $_defaults);

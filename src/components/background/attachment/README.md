@@ -21,18 +21,34 @@ Use the `bg-attachment-{value}` class for setup background image's position.
 | `bg-attachment-fixed`  | `background-attachment: fixed;`  |
 | `bg-attachment-scroll` | `background-attachment: scroll;` |
 
-### Configuration
+## Configuration
+
+First, allow `background-attachment` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-attachment": true
+    )
+);
+```
+
+### Extend
 
 By default, Lasco provides a handful of general purpose background image's position utilities. You can easily filter the
 default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $bg-attachment: (
-        fixed
+    $extend: (
+        "bg-attachment": (
+            fixed
+        )
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -44,16 +60,4 @@ example `lg:bg-attachment-scroll` will be only apply on large screens size and a
 <div class="bg-attachment-fixed lg:bg-attachment-scroll">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        bg-attachment
-    )
-);
 ```

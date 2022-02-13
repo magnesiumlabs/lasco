@@ -22,18 +22,34 @@ Use the `bg-clip-{value}` class for setup background box.
 | `bg-clip-padding` | `background-clip: padding-box;` |    
 | `bg-clip-text`    | `background-clip: text;`        |    
 
-### Configuration
+## Configuration
+
+First, allow `background-attachment` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-clip": true
+    )
+);
+```
+
+### Extend
 
 By default, Lasco provides a handful of general purpose background box utilities. You can easily filter the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $bg-clip: (
-        content
+    $extend: (
+        "bg-clip": (
+            content
+        )
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -45,16 +61,4 @@ example `lg:bg-clip-padding` will be only apply on large screens size and above.
 <div class="bg-clip-border lg:bg-clip-padding">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        bg-clip
-    )
-);
 ```
