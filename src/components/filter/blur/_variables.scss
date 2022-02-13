@@ -2,11 +2,10 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     0: 0
 );
 
-$blur: () !default;
-$blur: map.merge($_defaults, $blur);
+$extend: core-functions.extend("blur", $_defaults);
