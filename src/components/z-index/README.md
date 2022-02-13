@@ -20,7 +20,7 @@ Use the `z-{index}` class for setup order position.
 | `z-0`    | `z-index: 0;`    |
 | `z-auto` | `z-index: auto;` |
 
-### Configuration
+## Configuration
 
 First, allow `z-index` classes to be generated.
 

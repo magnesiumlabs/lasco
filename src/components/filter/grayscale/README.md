@@ -20,7 +20,7 @@ Use the `grayscale-{amount}` class for setup ratio aspect.
 | `grayscale-0` | `filter: grayscale(0);` |
 | `grayscale`   | `filter: grayscale(1);` |
 
-### Configuration
+## Configuration
 
 First, allow `grayscale` classes to be generated.
 

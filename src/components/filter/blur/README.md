@@ -19,7 +19,7 @@ Use the `blur-{radius}` class for setup ratio aspect.
 |----------|--------------------|
 | `blur-0` | `filter: blur(0);` |
 
-### Configuration
+## Configuration
 
 First, allow `blur` classes to be generated.
 

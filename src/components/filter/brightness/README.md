@@ -20,7 +20,7 @@ Use the `brightness-{amount}` class for setup ratio aspect.
 | `brightness-0`   | `filter: brightness(0);` |
 | `brightness-100` | `filter: brightness(1);` |
 
-### Configuration
+## Configuration
 
 First, allow `brightness` classes to be generated.
 

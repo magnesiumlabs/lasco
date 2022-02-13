@@ -20,7 +20,7 @@ Use the `contrast-{amount}` class for setup ratio aspect.
 | `contrast-0`   | `filter: contrast(0);` |
 | `contrast-100` | `filter: contrast(1);` |
 
-### Configuration
+## Configuration
 
 First, allow `contrast` classes to be generated.
 
