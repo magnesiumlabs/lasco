@@ -22,16 +22,32 @@ Use the `z-{index}` class for setup order position.
 
 ### Configuration
 
+First, allow `z-index` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "z-index": true
+    )
+);
+```
+
+### Extend
+
 By default, Lasco provides a handful of general purpose position order utilities. You can easily extend the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
-    $z-index: (
-        10: 10
+    $extend: (
+        "z-index": (
+            10: 10
+        )
     )
 );
 ```
+
+## Applying conditionally
 
 ### Breakpoints
 
@@ -43,16 +59,4 @@ example `lg:z-auto` will be only apply on large screens size and above.
 <div class="z-0 lg:z-auto">
     <!-- ... -->
 </div>
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        z-index
-    )
-);
 ```

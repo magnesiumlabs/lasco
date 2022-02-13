@@ -3,11 +3,16 @@
 // ============================================================================================= //
 
 @use "sass:map";
+@use "sass:meta";
+@use "../../../variables" as core-variables;
 
 $_defaults: (
     0: 0,
     auto: auto
 );
 
-$z-index: () !default;
-$z-index: map.merge($_defaults, $z-index);
+$extend: $_defaults;
+
+@if (meta.type-of(map.get(core-variables.$extend, "z-index")) == "map") {
+    $extend: map.merge($_defaults, map.get(core-variables.$extend, "z-index"));
+}
