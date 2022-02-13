@@ -8,7 +8,7 @@
 @use "./variables" as variables;
 
 @function extend($property, $defaults) {
-    $map: ();
+    $map: $defaults;
 
     @if (meta.type-of(map.get(variables.$extend, $property)) == "map") {
         $map: map.merge($defaults, map.get(variables.$extend, $property));
