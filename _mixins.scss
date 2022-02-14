@@ -27,8 +27,8 @@
 // Public mixins
 // ------------------------------------------------------------------------- //
 
-@mixin declaration($property) {
-    @if map.has-key(variables.$extend, $property) {
+@mixin declaration($option) {
+    @if map.has-key(variables.$extend, $option) {
         @content;
 
         @include _breakpoint {
