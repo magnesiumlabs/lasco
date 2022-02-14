@@ -74,6 +74,12 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 | `min-height` | See [documentation](/src/components/height/min#readme). |
 | `max-height` | See [documentation](/src/components/height/max#readme). |
 
+### Typography
+
+| Property      | Docs                                                                |
+|---------------|---------------------------------------------------------------------|
+| `font-weight` | See [documentation](/src/components/typography/font-weight#readme). |
+
 ### Backgrounds
 
 | Property                | Docs                                                               |

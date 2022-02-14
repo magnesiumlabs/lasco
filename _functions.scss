@@ -20,7 +20,7 @@
 @function filter($property, $defaults) {
     $list: $defaults;
 
-    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" {
+    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
         @if list.index($defaults, map.get(variables.$extend, $property)) == null {
             @error "Invalid '#{$property}' option, '#{map.get(variables.$extend, $property)}' is not alowed here. Choose one of '#{$defaults}' options.";
         }

@@ -1,0 +1,17 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    @each $key in variables.$extend {
+        .font-#{$key} {
+            @include core-mixins.declaration(font-weight) {
+                @include css.declaration(font-weight, $key);
+            }
+        }
+    }
+}
