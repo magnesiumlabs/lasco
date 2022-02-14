@@ -4,12 +4,13 @@
 
 @use "sass:meta";
 @use "@sass-collective/css";
+@use "../../../../mixins" as core-mixins;
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .max-w {
-        @include core.declaration(max-width) {
+        @include core-mixins.declaration(max-width) {
             @each $key, $value in variables.$max-width {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);

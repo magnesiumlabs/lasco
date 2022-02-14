@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     0: 0,
@@ -10,5 +10,4 @@ $_defaults: (
     screen: 100vh
 );
 
-$max-height: () !default;
-$max-height: map.merge($_defaults, $max-height);
+$extend: core-functions.extend("min-height", $_defaults);

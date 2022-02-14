@@ -2,7 +2,18 @@
 
 Class generator for setting `max-width` property for an element.
 
-## Classes
+## Usage
+
+Use the `max-w-{index}` class for setup ratio aspect.
+
+```html
+
+<div class="max-w-0">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class          | Property            |
 |----------------|---------------------|
@@ -10,40 +21,44 @@ Class generator for setting `max-width` property for an element.
 | `max-w-full`   | `max-width: 100%;`  |
 | `max-w-screen` | `max-width: 100vw;` |
 
-## Breakpoints
+## Configuration
+
+First, allow `max-width` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "max-width": true
+    )
+);
+```
+
+### Extend
+
+By default, Lasco provides a handful of general purpose `max-width` utilities. You can easily extend the default scales
+using the Sass configuration.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "max-width": (
+            25: 25%,
+            50: 50%,
+            75: 75%
+        )
+    )
+);
+```
+
+## Applying conditionally
+
+### Breakpoints
 
 To control the `max-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
+
 <div class="max-w-0 lg:max-w-full">
     <!-- ... -->
 </div>
-```
-
-## Customization
-
-### Extend
-
-You can easily extend the Lasco's `max-width` scales:
-
-```scss
-@use "lasco" with (
-    $max-width: (
-        25: 25%,
-        50: 50%,
-        75: 75%
-    )
-);
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        max-width
-    )
-);
 ```

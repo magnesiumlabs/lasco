@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "sass:map";
+@use "../../../../functions" as core-functions;
 
 $_defaults: (
     0: 0,
@@ -10,5 +10,4 @@ $_defaults: (
     screen: 100vw
 );
 
-$max-width: () !default;
-$max-width: map.merge($_defaults, $max-width);
+$extend: core-functions.extend("max-width", $_defaults);

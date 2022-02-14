@@ -4,13 +4,14 @@
 
 @use "sass:meta";
 @use "@sass-collective/css";
+@use "../../../../mixins" as core-mixins;
 @use "../../core";
 @use "./variables";
 
 @mixin core-styles {
     .min-h {
-        @include core.declaration(min-height) {
-            @each $key, $value in variables.$min-height {
+        @include core-mixins.declaration(min-height) {
+            @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }

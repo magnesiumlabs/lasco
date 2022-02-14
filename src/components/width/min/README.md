@@ -2,7 +2,18 @@
 
 Class generator for setting `min-width` property for an element.
 
-## Classes
+## Usage
+
+Use the `min-w-{index}` class for setup ratio aspect.
+
+```html
+
+<div class="min-w-0">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class          | Property            |
 |----------------|---------------------|
@@ -10,40 +21,44 @@ Class generator for setting `min-width` property for an element.
 | `min-w-full`   | `min-width: 100%;`  |
 | `min-w-screen` | `min-width: 100vw;` |
 
-## Breakpoints
+## Configuration
+
+First, allow `min-width` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "min-width": true
+    )
+);
+```
+
+### Extend
+
+By default, Lasco provides a handful of general purpose `min-width` utilities. You can easily extend the default scales
+using the Sass configuration.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "min-width": (
+            25: 25%,
+            50: 50%,
+            75: 75%
+        )
+    )
+);
+```
+
+## Applying conditionally
+
+### Breakpoints
 
 To control the `min-width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
+
 <div class="min-w-0 lg:min-w-full">
     <!-- ... -->
 </div>
-```
-
-## Customization
-
-### Extend
-
-You can easily extend the Lasco's `min-width` scales:
-
-```scss
-@use "lasco" with (
-    $min-width: (
-        25: 25%,
-        50: 50%,
-        75: 75%
-    )
-);
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        min-width
-    )
-);
 ```

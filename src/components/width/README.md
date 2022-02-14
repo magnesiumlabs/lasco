@@ -2,7 +2,18 @@
 
 Class generator for setting `width` property for an element.
 
-## Classes
+## Usage
+
+Use the `w-{index}` class for setup ratio aspect.
+
+```html
+
+<div class="w-0">
+    <!-- ... -->
+</div>
+```
+
+### Scales
 
 | Class      | Property        |
 |------------|-----------------|
@@ -10,40 +21,44 @@ Class generator for setting `width` property for an element.
 | `w-full`   | `width: 100%;`  |
 | `w-screen` | `width: 100vw;` |
 
-## Breakpoints
+## Configuration
+
+First, allow `width` classes to be generated.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "width": true
+    )
+);
+```
+
+### Extend
+
+By default, Lasco provides a handful of general purpose `width` utilities. You can easily extend the default scales
+using the Sass configuration.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "width": (
+            25: 25%,
+            50: 50%,
+            75: 75%
+        )
+    )
+);
+```
+
+## Applying conditionally
+
+### Breakpoints
 
 To control the `width` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
 
 ```html
+
 <div class="w-0 lg:w-full">
     <!-- ... -->
 </div>
-```
-
-## Customization
-
-### Extend
-
-You can easily extend the Lasco's width scales:
-
-```scss
-@use "lasco" with (
-    $width: (
-        25: 25%,
-        50: 50%,
-        75: 75%
-    )
-);
-```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        width
-    )
-);
 ```
