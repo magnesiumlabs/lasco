@@ -1,4 +1,4 @@
-# Background size
+# Background Size
 
 Utilities for applying background size of an element.
 

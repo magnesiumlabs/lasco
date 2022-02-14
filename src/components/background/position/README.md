@@ -1,4 +1,4 @@
-# Background position
+# Background Position
 
 Utilities for applying background position of an element.
 

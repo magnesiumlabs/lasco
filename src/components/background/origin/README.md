@@ -1,4 +1,4 @@
-# Background origin
+# Background Origin
 
 Utilities for controlling background box origin.
 

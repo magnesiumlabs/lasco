@@ -1,4 +1,4 @@
-# Background clip
+# Background Clip
 
 Utilities for controlling background box.
 

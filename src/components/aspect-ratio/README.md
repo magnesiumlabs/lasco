@@ -1,4 +1,4 @@
-# Aspect-ratio
+# Aspect Ratio
 
 Utilities for applying ratio aspect of an element.
 

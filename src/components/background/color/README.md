@@ -1,4 +1,4 @@
-# Background color
+# Background Color
 
 Utilities for applying background color of an element.
 

@@ -1,4 +1,4 @@
-# Background attachment
+# Background Attachment
 
 Utilities for applying background image's position on scroll.
 

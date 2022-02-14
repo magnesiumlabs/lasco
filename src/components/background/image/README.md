@@ -1,4 +1,4 @@
-# Background image
+# Background Image
 
 Utilities for applying background image of an element.
 

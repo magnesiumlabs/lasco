@@ -1,4 +1,4 @@
-# Background repeat
+# Background Repeat
 
 Utilities for controlling background image repeat.
 
