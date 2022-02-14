@@ -28,7 +28,3 @@
 
     @return $value;
 }
-
-@function is-disabled($property) {
-    @return list.index(variables.$disabled, $property);
-}

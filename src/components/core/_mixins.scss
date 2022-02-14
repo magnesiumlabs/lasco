@@ -3,24 +3,12 @@
 // ============================================================================================= //
 
 @use "sass:map";
-@use "@sass-collective/breakpoint";
 @use "@sass-collective/css";
 @use "./variables";
-@use "./functions";
 
 // ------------------------------------------------------------------------- //
 // Private mixins
 // ------------------------------------------------------------------------- //
-
-@mixin _breakpoint() {
-    @each $key, $value in breakpoint.$screens {
-        @include breakpoint.up($key) {
-            @include css.selector($key) {
-                @content;
-            }
-        }
-    }
-}
 
 @mixin _class-suffix($property, $key) {
     $suffix: $key;
@@ -37,16 +25,6 @@
 // ------------------------------------------------------------------------- //
 // Public mixins
 // ------------------------------------------------------------------------- //
-
-@mixin declaration($property) {
-    @if not functions.is-disabled($property) {
-        @content;
-
-        @include _breakpoint {
-            @content;
-        }
-    }
-}
 
 @mixin classes($property, $list) {
     @each $key in $list {
