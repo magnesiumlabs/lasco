@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.0](https://github.com/magnesiumlabs/lasco/compare/v0.22.0...v0.23.0) (2022-02-14)
+
+
+### Features
+
+* **font-weight:** add main component ([0f05daf](https://github.com/magnesiumlabs/lasco/commit/0f05daf96ce691f14d3c6b4e5ac9332239407794))
+* **text-align:** add main component ([2e6eca4](https://github.com/magnesiumlabs/lasco/commit/2e6eca445d9a5c4a145ca4dff72ef29c12579e3f))
+* **text-transform:** add main component ([47a6516](https://github.com/magnesiumlabs/lasco/commit/47a6516874363ba73168faaaec7c5184977ea27e))
+
+
+### Code Refactoring
+
+* **display, position:** remove unneeded `!default` ([dcc9c8f](https://github.com/magnesiumlabs/lasco/commit/dcc9c8f098e152ce02b7a5f1f41605afb2d18193))
+
 ## [0.22.0](https://github.com/magnesiumlabs/lasco/compare/v0.21.0...v0.22.0) (2022-02-14)
 
 
