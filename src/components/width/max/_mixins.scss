@@ -11,7 +11,7 @@
 @mixin core-styles {
     .max-w {
         @include core-mixins.declaration(max-width) {
-            @each $key, $value in variables.$max-width {
+            @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: core.replace($key, "/", \/);
                 }
