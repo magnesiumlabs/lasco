@@ -83,7 +83,7 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 | `font-weight`     | See [documentation](/src/components/typography/font-weight#readme).    |
 | `letter-spacing`  | _Coming soon._                                                         |
 | `line-height`     | _Coming soon._                                                         |
-| `text-align`      | _Coming soon._                                                         |
+| `text-align`      | See [documentation](/src/components/typography/text-align#readme).     |
 | `text-decoration` | _Coming soon._                                                         |
 | `text-transform`  | See [documentation](/src/components/typography/text-transform#readme). |
 
