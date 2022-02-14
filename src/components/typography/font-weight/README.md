@@ -1,4 +1,4 @@
-# `font-weight`
+# Font Weight
 
 Utilities for applying `font-weight` of an element.
 
