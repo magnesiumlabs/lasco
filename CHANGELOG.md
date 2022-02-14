@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.0](https://github.com/magnesiumlabs/lasco/compare/v0.21.0...v0.22.0) (2022-02-14)
+
+
+### Features
+
+* **align, display:** use new `$extend` config parameter ([8ae1b63](https://github.com/magnesiumlabs/lasco/commit/8ae1b63c599fc25e8e0461f8e8167c6fa761d367))
+* **aspect-ratio:** use new `$extend` config parameter ([541e8b7](https://github.com/magnesiumlabs/lasco/commit/541e8b770f972de8ec8d332e103ae442db1e25b4))
+* **background-attachment, background-clip:** use new `$extend` config parameter ([8b1fd86](https://github.com/magnesiumlabs/lasco/commit/8b1fd8679d11bec2362ee4b48f566e896435174d))
+* **background-color, background-image:** use new `$extend` config parameter ([47f3906](https://github.com/magnesiumlabs/lasco/commit/47f3906b25ae0dfda6318b86fc2aa36acc330f30))
+* **background-origin, background-repeat:** use new `$extend` config parameter ([5305fe6](https://github.com/magnesiumlabs/lasco/commit/5305fe6c958195c309246e016dd82f656211aa17))
+* **background-position, background-size:** use new `$extend` config parameter ([84feb1a](https://github.com/magnesiumlabs/lasco/commit/84feb1ab0be05bb89f707bb6cdcc9a330fe0b260))
+* **blur:** use new `$extend` config parameter ([5c34918](https://github.com/magnesiumlabs/lasco/commit/5c349188619434326418b3bc848fc282da5f40c1))
+* **brightness:** use new `$extend` config parameter ([de17049](https://github.com/magnesiumlabs/lasco/commit/de17049200943e5c12437bf0c6d5f28ab28add8e))
+* **contrast, grayscale:** use new `$extend` config parameter ([1e3943f](https://github.com/magnesiumlabs/lasco/commit/1e3943f49c606b126ab3d4cdd05879e42ac7816a))
+* **core:** add `extend` function ([f8a6cfa](https://github.com/magnesiumlabs/lasco/commit/f8a6cfac69b54af40de4a681007ce8b380509cd9))
+* **core:** add `filter` function ([8b80eab](https://github.com/magnesiumlabs/lasco/commit/8b80eab750ec656975dc9a28cd166a0baa04ab28))
+* **flex, justify, place:** use new `$extend` config parameter ([56fa63d](https://github.com/magnesiumlabs/lasco/commit/56fa63d00b7e15c8ccb2cfb4902d41cf00b91874))
+* **gap:** use new `$extend` config parameter ([ff1a787](https://github.com/magnesiumlabs/lasco/commit/ff1a78784698bfa70f2165da7be94ad48e5c7523))
+* **height, width:** use new `$extend` config parameter ([2d92ae4](https://github.com/magnesiumlabs/lasco/commit/2d92ae4ef86d7b408269a9cc491039cf675718c5))
+* **opacity:** use new `$extend` config parameter ([828cdb2](https://github.com/magnesiumlabs/lasco/commit/828cdb25c874970abee627b9a127adf0dfcfcb65))
+* **position:** use new `$extend` config parameter ([fac2d4e](https://github.com/magnesiumlabs/lasco/commit/fac2d4e2f59469de46df113ac113fca817016a1b))
+* **screens:** add disabled option ([8b88739](https://github.com/magnesiumlabs/lasco/commit/8b88739126f91d6f33e6c32382ff1dfc53f8d993))
+* **z-index:** use new `$extend` config parameter ([efa4f60](https://github.com/magnesiumlabs/lasco/commit/efa4f60b312f25d1a6834b962b1c229003188ee4))
+
+
+### Bug Fixes
+
+* **core:** `extend` function with white list ([7d948c6](https://github.com/magnesiumlabs/lasco/commit/7d948c6cce4ec938d75e36ea5bc53063d9dd208f))
+* **core:** filter function error return ([74a5684](https://github.com/magnesiumlabs/lasco/commit/74a568434553d3b766bde7c26d34ccebfcc897a9))
+* **width:** call good variable ([d967edf](https://github.com/magnesiumlabs/lasco/commit/d967edf94df026968bc3e8d9b52505b73bdd58fa))
+
+
+### Code Refactoring
+
+* **core:** remove unneeded mixins and functions ([dd8ad64](https://github.com/magnesiumlabs/lasco/commit/dd8ad64a00016a506e80ceed2cc4d4f5ae3464f7))
+* remove unnneeded `[@use](https://github.com/use)` calls ([9ef53ba](https://github.com/magnesiumlabs/lasco/commit/9ef53ba3bd8421ec062089f82dd79d2ff2a27116))
+
 ## [0.21.0](https://github.com/magnesiumlabs/lasco/compare/v0.20.0...v0.21.0) (2022-02-06)
 
 
