@@ -76,9 +76,16 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 
 ### Typography
 
-| Property      | Docs                                                                |
-|---------------|---------------------------------------------------------------------|
-| `font-weight` | See [documentation](/src/components/typography/font-weight#readme). |
+| Property          | Docs                                                                |
+|-------------------|---------------------------------------------------------------------|
+| `font-size`       | _Coming soon._                                                      |
+| `font-style`      | _Coming soon._                                                      |
+| `font-weight`     | See [documentation](/src/components/typography/font-weight#readme). |
+| `letter-spacing`  | _Coming soon._                                                      |
+| `line-height`     | _Coming soon._                                                      |
+| `text-align`      | _Coming soon._                                                      |
+| `text-decoration` | _Coming soon._                                                      |
+| `text-transform`  | _Coming soon._                                                      |
 
 ### Backgrounds
 
