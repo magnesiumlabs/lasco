@@ -22,13 +22,29 @@ npm install lasco
 @use "lasco/styles";
 ```
 
-### Options
+### Breakpoints
 
-| Name                 | Default                                                                                                             | Description                               |
-|----------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| `$breakpoints`       | See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint#tokens) plugin. | Sets a list of screens for breakpoint.    |
-| `$breakpoints-reset` | `false`                                                                                                             | Sets the `$breakpoints` has new defaults. |
-| `$disabled`          | `()`                                                                                                                | Sets a list of properties to disabled.    |
+See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint#tokens) plugin.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "screens": (
+            "lg": 1024px
+        )
+    )
+);
+```
+
+#### Disabled breakpoints
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "screens": false
+    )
+);
+```
 
 ## Properties
 
@@ -105,17 +121,3 @@ npm install lasco
 |-----------|----------------|
 | `margin`  | _Coming soon._ |
 | `padding` | _Coming soon._ |
-
-## Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        min-height,
-        max-height
-        // etc...
-    )
-);
-```

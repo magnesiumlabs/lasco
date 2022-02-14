@@ -2,13 +2,23 @@
 //                                         CONFIGURATION                                         //
 // ============================================================================================= //
 
+@use "sass:map";
+@use "sass:meta";
 @use "@sass-collective/breakpoint";
-@use "../components/core/variables";
+@use "./variables";
+
+$screens: ();
+$screens-reset: false;
+
+@if map.get(variables.$extend, "screens") == false {
+    $screens-reset: true
+} @else {
+    @if map.get(variables.$extend, "screens") {
+        $screens: map.get(variables.$extend, "screens")
+    }
+}
 
 ///
 /// @see {mixin} breakpoint.config
 ///
-@include breakpoint.config(
-    variables.$breakpoints,
-    variables.$breakpoints-reset
-);
+@include breakpoint.config($screens, $screens-reset);
