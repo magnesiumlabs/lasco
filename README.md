@@ -36,7 +36,7 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 );
 ```
 
-#### Disabled breakpoints
+#### Disable breakpoints
 
 ```scss
 @use "lasco" with (
