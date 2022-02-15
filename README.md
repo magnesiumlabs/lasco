@@ -53,6 +53,7 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 | Property       | Docs                                                      |
 |----------------|-----------------------------------------------------------|
 | `aspect-ratio` | See [documentation](/src/components/aspect-ratio#readme). |
+| `clear`        | See [documentation](/src/components/clear#readme).        |
 | `display`      | See [documentation](/src/components/display#readme).      |
 | `position`     | See [documentation](/src/components/position#readme).     |
 | `z-index`      | See [documentation](/src/components/z-index#readme).      |
