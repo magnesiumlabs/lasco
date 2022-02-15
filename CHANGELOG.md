@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.0](https://github.com/magnesiumlabs/lasco/compare/v0.23.0...v0.24.0) (2022-02-15)
+
+
+### Features
+
+* **clear:** add main component ([d4b3330](https://github.com/magnesiumlabs/lasco/commit/d4b33307e3f341cd930a4539a4dbc71fe9af6533))
+
+
+### Code Refactoring
+
+* **core:** remove deprecated `$disabled`, `$breakpoints` and `$breakpoints-reset` variables ([2ef38dc](https://github.com/magnesiumlabs/lasco/commit/2ef38dc8ee83c1be8e0c3739153321f5655cb136))
+* reorder styles.scss ([8c9b827](https://github.com/magnesiumlabs/lasco/commit/8c9b8277aed66150e28d60ae9f85ab7b90c4526f))
+
 ## [0.23.0](https://github.com/magnesiumlabs/lasco/compare/v0.22.0...v0.23.0) (2022-02-14)
 
 
