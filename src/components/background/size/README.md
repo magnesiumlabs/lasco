@@ -65,15 +65,3 @@ example `lg:bg-size-cover` will be only apply on large screens size and above.
     <!-- ... -->
 </div>
 ```
-
-### Disabled
-
-If you needed, you can easily disable this utility with `$disabled` option.
-
-```scss
-@use "lasco" with (
-    $disabled: (
-        bg-size
-    )
-);
-```
