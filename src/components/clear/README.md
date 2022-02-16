@@ -15,12 +15,12 @@ Use the `clear-{key}` class for setup the clear type.
 
 ### Scales
 
-| Class   | Property        |
-|---------|-----------------|
-| `none`  | `clear: none;`  |
-| `left`  | `clear: left;`  |
-| `right` | `clear: right;` |
-| `both`  | `clear: both;`  |
+| Class         | Property        |
+|---------------|-----------------|
+| `clear-none`  | `clear: none;`  |
+| `clear-left`  | `clear: left;`  |
+| `clear-right` | `clear: right;` |
+| `clear-both`  | `clear: both;`  |
 
 ## Configuration
 
