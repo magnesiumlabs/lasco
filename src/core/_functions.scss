@@ -8,19 +8,6 @@
 @use "sass:string";
 @use "./variables";
 
-///
-/// Replace.
-///
-@function replace($string, $search, $replace: "") {
-    $index: string.index($string, $search);
-
-    @if $index {
-        @return string.slice($string, 1, $index - 1) + $replace + replace(str-slice($string, $index + string.length($search)), $search, $replace);
-    }
-
-    @return $string;
-}
-
 @function is-quoted-string($value) {
     @if meta.type-of($value) == string {
         @return string.unquote($value);

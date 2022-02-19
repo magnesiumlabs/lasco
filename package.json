@@ -36,6 +36,7 @@
         "@sass-collective/breakpoint": "^2.4.1",
         "@sass-collective/css": "^2.0.2",
         "@sass-collective/property": "^4.6.3",
+        "@unsass/utilities": "^1.0.0",
         "sass": "^1.49.7"
     },
     "files": [

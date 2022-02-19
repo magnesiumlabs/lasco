@@ -4,6 +4,7 @@
 
 @use "sass:meta";
 @use "@sass-collective/css";
+@use "@unsass/utilities";
 @use "../../mixins" as core-mixins;
 @use "../core";
 @use "./variables";
@@ -13,11 +14,11 @@
         @include core-mixins.declaration(height) {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
-                    $key: core.replace($key, "/", \/);
+                    $key: utilities.string-replace($key, "/", \/);
                 }
 
                 @if meta.type-of($key) == "string" {
-                    $key: core.replace($key, ".", \.);
+                    $key: utilities.string-replace($key, ".", \.);
                 }
 
                 &-#{$key} {
