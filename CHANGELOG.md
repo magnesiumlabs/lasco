@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.0](https://github.com/magnesiumlabs/lasco/compare/v0.24.0...v0.25.0) (2022-02-19)
+
+
+### Features
+
+* **core:** use `@unsass/utilities` for string replace ([8c728ac](https://github.com/magnesiumlabs/lasco/commit/8c728acab0eea98c4c26ef971d89fc488348f0c0))
+
+
+### Code Refactoring
+
+* remove components folder ([a23b77f](https://github.com/magnesiumlabs/lasco/commit/a23b77f2923f82975c3688adce53e0205df00bdd))
+
 ## [0.24.0](https://github.com/magnesiumlabs/lasco/compare/v0.23.0...v0.24.0) (2022-02-15)
 
 
