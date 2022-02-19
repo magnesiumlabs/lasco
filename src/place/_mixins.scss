@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../../mixins" as core-mixins;
+@use "../core";
+
+@mixin core-styles {
+    .place-self {
+        @include core-mixins.declaration(place-self) {
+            @include core.classes(place-self, core.$place-self);
+        }
+    }
+
+    .place-content {
+        @include core-mixins.declaration(place-content) {
+            @include core.classes(place-content, core.$place-content);
+        }
+    }
+
+    .place-items {
+        @include core-mixins.declaration(place-items) {
+            @include core.classes(place-items, core.$place-items);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    repeat,
+    no-repeat,
+    repeat-x,
+    repeat-y,
+    round,
+    space
+);
+
+$extend: core-functions.filter("bg-repeat", $_defaults);

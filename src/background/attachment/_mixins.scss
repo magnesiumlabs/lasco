@@ -1,0 +1,20 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:list";
+@use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    .bg-attachment {
+        @include core-mixins.declaration(bg-attachment) {
+            @each $key in variables.$extend {
+                &-#{$key} {
+                    @include css.declaration(background-attachment, $key);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    .z {
+        @include core-mixins.declaration(z-index) {
+            @each $key, $value in variables.$extend {
+                &-#{$key} {
+                    @include css.declaration(z-index, $value);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    "inherit": "inherit",
+    "current": "currentColor",
+    "transparent": "transparent"
+);
+
+$extend: core-functions.extend("bg-color", $_defaults);

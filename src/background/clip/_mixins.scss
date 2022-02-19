@@ -1,0 +1,28 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:list";
+@use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    .bg-clip {
+        @include core-mixins.declaration(bg-clip) {
+            @each $key in variables.$extend {
+                &-#{$key} {
+                    $value: null;
+
+                    @if $key != text {
+                        $value: #{$key}-box;
+                    } @else {
+                        $value: #{$key};
+                    }
+
+                    @include css.declaration(background-clip, $value);
+                }
+            }
+        }
+    }
+}

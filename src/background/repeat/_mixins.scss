@@ -1,0 +1,30 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:list";
+@use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    .bg {
+        @include core-mixins.declaration(bg-repeat) {
+            @each $key in variables.$extend {
+                $suffix: null;
+
+                @if $key == round or $key == space {
+                    $suffix: repeat-#{$key};
+                } @else if $key == no-repeat {
+                    $suffix: repeat-none;
+                } @else {
+                    $suffix: $key;
+                }
+
+                &-#{$suffix} {
+                    @include css.declaration(background-repeat, $key);
+                }
+            }
+        }
+    }
+}

@@ -14,70 +14,70 @@
 // Layout
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/aspect-ratio/styles" as aspect-ratio-styles;
-@use "./src/components/clear/styles" as clear-styles;
-@use "./src/components/display/styles" as display-styles;
-@use "./src/components/position/styles" as position-styles;
-@use "./src/components/z-index/styles" as z-index-styles;
+@use "./src/aspect-ratio/styles" as aspect-ratio-styles;
+@use "./src/clear/styles" as clear-styles;
+@use "./src/display/styles" as display-styles;
+@use "./src/position/styles" as position-styles;
+@use "./src/z-index/styles" as z-index-styles;
 
 // ------------------------------------------------------------------------- //
 // Effects
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/opacity/styles" as opacity-styles;
+@use "./src/opacity/styles" as opacity-styles;
 
 // ------------------------------------------------------------------------- //
 // Sizing
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/width/min/styles" as min-width-styles;
-@use "./src/components/width/max/styles" as max-width-styles;
-@use "./src/components/width/styles" as width-styles;
-@use "./src/components/height/min/styles" as min-height-styles;
-@use "./src/components/height/max/styles" as max-height-styles;
-@use "./src/components/height/styles" as height-styles;
+@use "./src/width/min/styles" as min-width-styles;
+@use "./src/width/max/styles" as max-width-styles;
+@use "./src/width/styles" as width-styles;
+@use "./src/height/min/styles" as min-height-styles;
+@use "./src/height/max/styles" as max-height-styles;
+@use "./src/height/styles" as height-styles;
 
 // ------------------------------------------------------------------------- //
 // Typography
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/typography/font-weight/styles" as font-weight-styles;
-@use "./src/components/typography/text-align/styles" as text-align-styles;
-@use "./src/components/typography/text-transform/styles" as text-transform-styles;
+@use "./src/typography/font-weight/styles" as font-weight-styles;
+@use "./src/typography/text-align/styles" as text-align-styles;
+@use "./src/typography/text-transform/styles" as text-transform-styles;
 
 // ------------------------------------------------------------------------- //
 // Backgrounds
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/background/attachment/styles" as background-attachment-styles;
-@use "./src/components/background/clip/styles" as background-clip-styles;
-@use "./src/components/background/color/styles" as background-color-styles;
-@use "./src/components/background/image/styles" as background-image-styles;
-@use "./src/components/background/origin/styles" as background-origin-styles;
-@use "./src/components/background/position/styles" as background-position-styles;
-@use "./src/components/background/repeat/styles" as background-repeat-styles;
-@use "./src/components/background/size/styles" as background-size-styles;
+@use "./src/background/attachment/styles" as background-attachment-styles;
+@use "./src/background/clip/styles" as background-clip-styles;
+@use "./src/background/color/styles" as background-color-styles;
+@use "./src/background/image/styles" as background-image-styles;
+@use "./src/background/origin/styles" as background-origin-styles;
+@use "./src/background/position/styles" as background-position-styles;
+@use "./src/background/repeat/styles" as background-repeat-styles;
+@use "./src/background/size/styles" as background-size-styles;
 
 // ------------------------------------------------------------------------- //
 // Filters
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/filter/blur/styles" as filter-blur-styles;
-@use "./src/components/filter/brightness/styles" as filter-brightness-styles;
-@use "./src/components/filter/contrast/styles" as filter-contrast-styles;
-@use "./src/components/filter/grayscale/styles" as filter-grayscale-styles;
+@use "./src/filter/blur/styles" as filter-blur-styles;
+@use "./src/filter/brightness/styles" as filter-brightness-styles;
+@use "./src/filter/contrast/styles" as filter-contrast-styles;
+@use "./src/filter/grayscale/styles" as filter-grayscale-styles;
 
 // ------------------------------------------------------------------------- //
 // Flexbox & Grid
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/flex/styles" as flex-styles;
-@use "./src/components/gap/styles" as gap-styles;
+@use "./src/flex/styles" as flex-styles;
+@use "./src/gap/styles" as gap-styles;
 
 // ------------------------------------------------------------------------- //
 // ...
 // ------------------------------------------------------------------------- //
 
-@use "./src/components/align/styles" as align-styles;
-@use "./src/components/justify/styles" as justify-styles;
-@use "./src/components/place/styles" as place-styles;
+@use "./src/align/styles" as align-styles;
+@use "./src/justify/styles" as justify-styles;
+@use "./src/place/styles" as place-styles;

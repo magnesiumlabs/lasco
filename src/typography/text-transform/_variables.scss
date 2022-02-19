@@ -1,0 +1,14 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    normal,
+    uppercase,
+    lowercase,
+    capitalize
+);
+
+$extend: core-functions.filter("text-transform", $_defaults);

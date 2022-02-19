@@ -1,0 +1,17 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "@sass-collective/css";
+@use "../../../mixins" as core-mixins;
+@use "./variables";
+
+@mixin core-styles {
+    @each $key in variables.$extend {
+        .text-#{$key} {
+            @include core-mixins.declaration(text-align) {
+                @include css.declaration(text-align, $key);
+            }
+        }
+    }
+}

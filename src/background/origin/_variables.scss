@@ -1,0 +1,13 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    border-box,
+    content-box,
+    padding-box
+);
+
+$extend: core-functions.filter("bg-origin", $_defaults);
