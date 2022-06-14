@@ -22,18 +22,6 @@ Use the `z-{index}` class for setup order position.
 
 ## Configuration
 
-First, allow `z-index` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "z-index": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose position order utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -43,6 +31,16 @@ default scales using the Sass configuration.
         "z-index": (
             10: 10
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "z-index": false
     )
 );
 ```

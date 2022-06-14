@@ -2,12 +2,12 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../mixins" as core-mixins;
+@use "../core" as core;
 @use "./variables";
 
 @mixin core-styles {
     .z {
-        @include core-mixins.declaration("z-index") {
+        @include core.declaration("z-index") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     z-index: $value;
