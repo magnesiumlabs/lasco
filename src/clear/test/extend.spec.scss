@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "clear": (
+            left
+        )
+    )
+);
+@use "../index" as clear;
+
+@include describe("clear.core-styles()") {
+    @include it("Should return extended `clear` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include clear.core-styles;
+            }
+
+            @include expect(false) {
+                .clear-left {
+                    clear: left;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:clear-left {
+                        clear: left;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:clear-left {
+                        clear: left;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:clear-left {
+                        clear: left;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:clear-left {
+                        clear: left;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:clear-left {
+                        clear: left;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:clear-left {
+                        clear: left;
+                    }
+                }
+            }
+        }
+    }
+}

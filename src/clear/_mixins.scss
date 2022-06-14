@@ -2,12 +2,12 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../mixins" as core-mixins;
+@use "../core" as core;
 @use "./variables";
 
 @mixin core-styles {
     .clear {
-        @include core-mixins.declaration("clear") {
+        @include core.declaration("clear") {
             @each $key in variables.$extend {
                 &-#{$key} {
                     clear: $key;
