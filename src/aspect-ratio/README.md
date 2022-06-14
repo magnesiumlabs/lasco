@@ -23,18 +23,6 @@ Use the `aspect-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `aspect-ratio` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "aspect-ratio": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose ratio aspect utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -44,6 +32,16 @@ default scales using the Sass configuration.
         "aspect-ratio": (
             "4/3": "4/3"
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "aspect-ratio": false
     )
 );
 ```
