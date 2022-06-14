@@ -25,18 +25,6 @@ Use the `{key}` class for setup the display type.
 
 ## Configuration
 
-First, allow `position` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "position": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose position utilities. You can easily filter the
 default scales using the Sass configuration.
 
@@ -46,6 +34,18 @@ default scales using the Sass configuration.
         "position": (
             fixed
         )
+    )
+);
+```
+
+### Disabled
+
+If you don't need the `position` classes, you can disable them by setting the option to `false`.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "position": false
     )
 );
 ```
