@@ -21,18 +21,6 @@ Use the `gap-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `gap` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "gap": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose gap utilities. You can easily extend the default
 scales using the Sass configuration.
 
@@ -45,6 +33,16 @@ scales using the Sass configuration.
             "x-12": 12px,
             "y-24": 24px
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "gap": false
     )
 );
 ```

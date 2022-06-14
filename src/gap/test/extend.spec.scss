@@ -1,0 +1,180 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "gap": (
+            12: 12px,
+            24: 24px,
+            "x-12": 12px,
+            "y-24": 24px
+        )
+    )
+);
+@use "../index" as gap;
+
+@include describe("gap.core-styles()") {
+    @include it("Should return extended `gap` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include gap.core-styles;
+            }
+
+            @include expect(false) {
+                .gap-0 {
+                    gap: 0;
+                }
+
+                .gap-12 {
+                    gap: 12px;
+                }
+
+                .gap-24 {
+                    gap: 24px;
+                }
+
+                .gap-x-12 {
+                    column-gap: 12px;
+                }
+
+                .gap-y-24 {
+                    row-gap: 24px;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .xs\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .xs\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .xs\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .xs\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .sm\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .sm\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .sm\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .sm\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .md\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .md\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .md\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .md\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .lg\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .lg\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .lg\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .lg\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .xl\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .xl\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .xl\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .xl\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:gap-0 {
+                        gap: 0;
+                    }
+
+                    .\32 xl\:gap-12 {
+                        gap: 12px;
+                    }
+
+                    .\32 xl\:gap-24 {
+                        gap: 24px;
+                    }
+
+                    .\32 xl\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .\32 xl\:gap-y-24 {
+                        row-gap: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
