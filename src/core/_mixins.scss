@@ -3,8 +3,11 @@
 // ============================================================================================= //
 
 @use "sass:map";
+@use "sass:meta";
 @use "@sass-collective/css";
+@use "@unsass/breakpoint";
 @use "./variables";
+@use "../variables" as core-variables;
 
 // ------------------------------------------------------------------------- //
 // Private mixins
@@ -29,5 +32,25 @@
 @mixin classes($property, $list) {
     @each $key in $list {
         @include _class-suffix($property, $key);
+    }
+}
+
+@mixin declaration($property) {
+    $declaration: true;
+
+    @if map.has-key(core-variables.$extend, $property) and map.get(core-variables.$extend, $property) == false {
+        $declaration: false;
+    }
+
+    @if $declaration {
+        @content;
+
+        @each $key, $value in breakpoint.get-screens() {
+            @include breakpoint.up($key) {
+                @include css.selector($key) {
+                    @content;
+                }
+            }
+        }
     }
 }

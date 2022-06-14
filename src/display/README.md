@@ -1,10 +1,10 @@
 # Display
 
-Utilities for applying display type of an element.
+Utilities for applying display type of element.
 
 ## Usage
 
-Use the `{key}` class for setup the display type.
+Use the `{key}` class for set up the display type.
 
 ```html
 
@@ -29,19 +29,7 @@ Use the `{key}` class for setup the display type.
 
 ## Configuration
 
-First, allow `display` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "display": true
-    )
-);
-```
-
-### Extend
-
-By default, the configuration provides a handful of general purpose display type utilities. You can easily filter the
+By default, the configuration provides a handful of general purpose `display` type utilities. You can easily filter the
 default scales using the Sass configuration.
 
 ```scss
@@ -50,6 +38,18 @@ default scales using the Sass configuration.
         "display": (
             flex
         )
+    )
+);
+```
+
+### Disabled
+
+If you don't need the `display` classes, you can disable them by setting the option to `false`.
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "display": false
     )
 );
 ```
