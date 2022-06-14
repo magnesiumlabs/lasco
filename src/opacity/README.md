@@ -22,18 +22,6 @@ Use the `opacity-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `opacity` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "opacity": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose opacity utilities. You can easily extend the default
 scales using the Sass configuration.
 
@@ -43,6 +31,16 @@ scales using the Sass configuration.
         "opacity": (
             50: 0.5
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "opacity": false
     )
 );
 ```
