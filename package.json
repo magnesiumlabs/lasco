@@ -8,7 +8,7 @@
         "clean": "npm-run-all --parallel clean:*",
         "build": "npm run clean:dist && webpack && npm run clean:chunks",
         "prepare": "husky install && npm run build",
-        "release": "semantic-release --branches main"
+        "release": "semantic-release"
     },
     "engines": {
         "node": ">=14.0.0",
