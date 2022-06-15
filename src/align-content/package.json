@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@lasco/clear",
+    "name": "@lasco/align-content",
     "version": "0.0.0",
     "description": "",
     "main": "index.scss",
@@ -13,16 +13,16 @@
     ],
     "keywords": [
         "lasco",
-        "clear",
+        "align-content",
         "sass",
         "css",
         "front-end"
     ],
-    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/clear",
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/align/content",
     "repository": {
         "type": "git",
         "url": "https://github.com/magnesiumlabs/lasco.git",
-        "directory": "src/clear"
+        "directory": "src/align/content"
     },
     "bugs": {
         "url": "https://github.com/magnesiumlabs/lasco/issues"

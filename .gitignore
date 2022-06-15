@@ -4,11 +4,11 @@
 *.lerna_backup
 *.log
 junit.xml
-/src/*/package-lock.json
+/src/**/*/package-lock.json
 
 ## Folders
 .DS_Store
 /.idea
 /dist
 /node_modules
-/src/*/node_modules
+/src/**/*/node_modules

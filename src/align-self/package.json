@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@lasco/clear",
+    "name": "@lasco/align-self",
     "version": "0.0.0",
     "description": "",
     "main": "index.scss",
@@ -13,16 +13,16 @@
     ],
     "keywords": [
         "lasco",
-        "clear",
+        "align-self",
         "sass",
         "css",
         "front-end"
     ],
-    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/clear",
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/align/self",
     "repository": {
         "type": "git",
         "url": "https://github.com/magnesiumlabs/lasco.git",
-        "directory": "src/clear"
+        "directory": "src/align/self"
     },
     "bugs": {
         "url": "https://github.com/magnesiumlabs/lasco/issues"

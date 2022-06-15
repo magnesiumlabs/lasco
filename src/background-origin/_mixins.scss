@@ -3,8 +3,7 @@
 // ============================================================================================= //
 
 @use "sass:map";
-@use "sass:list";
-@use "../core";
+@use "@lasco/core";
 @use "./variables";
 
 @mixin core-styles {
