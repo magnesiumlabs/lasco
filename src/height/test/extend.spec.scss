@@ -1,0 +1,207 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "height": (
+            25: 25%,
+            50: 50%,
+            75: 75%
+        )
+    )
+);
+@use "../index" as height;
+
+@include describe("height.core-styles()") {
+    @include it("Should return extended `height` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include height.core-styles;
+            }
+
+            @include expect(false) {
+                .h-0 {
+                    height: 0;
+                }
+
+                .h-full {
+                    height: 100%;
+                }
+
+                .h-screen {
+                    height: 100vh;
+                }
+
+                .h-25 {
+                    height: 25%;
+                }
+
+                .h-50 {
+                    height: 50%;
+                }
+
+                .h-75 {
+                    height: 75%;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:h-0 {
+                        height: 0;
+                    }
+
+                    .xs\:h-full {
+                        height: 100%;
+                    }
+
+                    .xs\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .xs\:h-25 {
+                        height: 25%;
+                    }
+
+                    .xs\:h-50 {
+                        height: 50%;
+                    }
+
+                    .xs\:h-75 {
+                        height: 75%;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:h-0 {
+                        height: 0;
+                    }
+
+                    .sm\:h-full {
+                        height: 100%;
+                    }
+
+                    .sm\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .sm\:h-25 {
+                        height: 25%;
+                    }
+
+                    .sm\:h-50 {
+                        height: 50%;
+                    }
+
+                    .sm\:h-75 {
+                        height: 75%;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:h-0 {
+                        height: 0;
+                    }
+
+                    .md\:h-full {
+                        height: 100%;
+                    }
+
+                    .md\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .md\:h-25 {
+                        height: 25%;
+                    }
+
+                    .md\:h-50 {
+                        height: 50%;
+                    }
+
+                    .md\:h-75 {
+                        height: 75%;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:h-0 {
+                        height: 0;
+                    }
+
+                    .lg\:h-full {
+                        height: 100%;
+                    }
+
+                    .lg\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .lg\:h-25 {
+                        height: 25%;
+                    }
+
+                    .lg\:h-50 {
+                        height: 50%;
+                    }
+
+                    .lg\:h-75 {
+                        height: 75%;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:h-0 {
+                        height: 0;
+                    }
+
+                    .xl\:h-full {
+                        height: 100%;
+                    }
+
+                    .xl\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .xl\:h-25 {
+                        height: 25%;
+                    }
+
+                    .xl\:h-50 {
+                        height: 50%;
+                    }
+
+                    .xl\:h-75 {
+                        height: 75%;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:h-0 {
+                        height: 0;
+                    }
+
+                    .\32 xl\:h-full {
+                        height: 100%;
+                    }
+
+                    .\32 xl\:h-screen {
+                        height: 100vh;
+                    }
+
+                    .\32 xl\:h-25 {
+                        height: 25%;
+                    }
+
+                    .\32 xl\:h-50 {
+                        height: 50%;
+                    }
+
+                    .\32 xl\:h-75 {
+                        height: 75%;
+                    }
+                }
+            }
+        }
+    }
+}

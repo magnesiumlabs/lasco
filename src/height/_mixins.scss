@@ -4,13 +4,12 @@
 
 @use "sass:meta";
 @use "@unsass/utilities";
-@use "../../mixins" as core-mixins;
 @use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .h {
-        @include core-mixins.declaration("height") {
+        @include core.declaration("height") {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: utilities.string-replace($key, "/", \/);
