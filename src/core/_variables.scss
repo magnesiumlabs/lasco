@@ -48,36 +48,6 @@ $flex-shrink: () !default;
 $flex-shrink: map.merge($_defaults-flex-shrink, $flex-shrink);
 
 // --------------------------------- //
-// Align
-// --------------------------------- //
-
-$align-self: (
-    auto,
-    flex-start,
-    flex-end,
-    center,
-    stretch,
-    baseline
-) !default;
-
-$align-items: (
-    flex-start,
-    flex-end,
-    center,
-    baseline,
-    stretch
-) !default;
-
-$align-content: (
-    flex-start,
-    flex-end,
-    center,
-    space-between,
-    space-around,
-    space-evenly
-) !default;
-
-// --------------------------------- //
 // Justify
 // --------------------------------- //
 
@@ -99,34 +69,6 @@ $justify-items: (
 $justify-content: (
     flex-start,
     flex-end,
-    center,
-    space-between,
-    space-around,
-    space-evenly
-) !default;
-
-// --------------------------------- //
-// Place
-// --------------------------------- //
-
-$place-self: (
-    auto,
-    start,
-    end,
-    center,
-    stretch
-) !default;
-
-$place-items: (
-    start,
-    end,
-    center,
-    stretch
-) !default;
-
-$place-content: (
-    start,
-    end,
     center,
     space-between,
     space-around,

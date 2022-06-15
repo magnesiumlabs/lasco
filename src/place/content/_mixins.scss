@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:map";
+@use "@unsass/utilities";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .place-content {
+        @include core.declaration("place-content") {
+            @each $key in variables.$extend {
+                $suffix: $key;
+
+                @if map.has-key(core.$names, $key) {
+                    $suffix: map.get(core.$names, $key);
+                }
+
+                &-#{$suffix} {
+                    place-content: $key;
+                }
+            }
+        }
+    }
+}

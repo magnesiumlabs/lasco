@@ -1,0 +1,17 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    start,
+    end,
+    center,
+    space-between,
+    space-around,
+    space-evenly,
+    stretch
+) !default;
+
+$extend: core-functions.filter("place-content", $_defaults);
