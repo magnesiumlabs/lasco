@@ -68,25 +68,25 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 
 | Property     | Docs                                         |
 |--------------|----------------------------------------------|
+| `min-width`  | See [documentation](/src/min-width#readme).  |
+| `max-width`  | See [documentation](/src/max-width#readme).  |
 | `width`      | See [documentation](/src/width#readme).      |
-| `min-width`  | See [documentation](/src/width/min#readme).  |
-| `max-width`  | See [documentation](/src/width/max#readme).  |
+| `min-height` | See [documentation](/src/min-height#readme). |
+| `max-height` | See [documentation](/src/max-height#readme). |
 | `height`     | See [documentation](/src/height#readme).     |
-| `min-height` | See [documentation](/src/height/min#readme). |
-| `max-height` | See [documentation](/src/height/max#readme). |
 
 ### Typography
 
-| Property          | Docs                                                        |
-|-------------------|-------------------------------------------------------------|
-| `font-size`       | _Coming soon._                                              |
-| `font-style`      | _Coming soon._                                              |
-| `font-weight`     | See [documentation](/src/typography/font-weight#readme).    |
-| `letter-spacing`  | _Coming soon._                                              |
-| `line-height`     | _Coming soon._                                              |
-| `text-align`      | See [documentation](/src/typography/text-align#readme).     |
-| `text-decoration` | _Coming soon._                                              |
-| `text-transform`  | See [documentation](/src/typography/text-transform#readme). |
+| Property          | Docs                                             |
+|-------------------|--------------------------------------------------|
+| `font-size`       | _Coming soon._                                   |
+| `font-style`      | _Coming soon._                                   |
+| `font-weight`     | See [documentation](/src/font-weight#readme).    |
+| `letter-spacing`  | _Coming soon._                                   |
+| `line-height`     | _Coming soon._                                   |
+| `text-align`      | See [documentation](/src/text-align#readme).     |
+| `text-decoration` | _Coming soon._                                   |
+| `text-transform`  | See [documentation](/src/text-transform#readme). |
 
 ### Backgrounds
 
@@ -112,22 +112,22 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 
 ### Flexbox & Grid
 
-| Property          | Docs                                  |
-|-------------------|---------------------------------------|
-| `flex-direction`  | _Coming soon._                        |
-| `flex-wrap`       | _Coming soon._                        |
-| `flex-grow`       | _Coming soon._                        |
-| `flex-shrink`     | _Coming soon._                        |
-| `gap`             | See [documentation](/src/gap#readme). |
-| `justify-self`    | _Coming soon._                        |
-| `justify-items`   | _Coming soon._                        |
-| `justify-content` | _Coming soon._                        |
-| `align-self`      | _Coming soon._                        |
-| `align-items`     | _Coming soon._                        |
-| `align-content`   | _Coming soon._                        |
-| `place-self`      | _Coming soon._                        |
-| `place-items`     | _Coming soon._                        |
-| `place-content`   | _Coming soon._                        |
+| Property          | Docs                                              |
+|-------------------|---------------------------------------------------|
+| `flex-direction`  | _Coming soon._                                    |
+| `flex-wrap`       | _Coming soon._                                    |
+| `flex-grow`       | _Coming soon._                                    |
+| `flex-shrink`     | _Coming soon._                                    |
+| `gap`             | See [documentation](/src/gap#readme).             |
+| `justify-self`    | See [documentation](/src/justify-self#readme).    |
+| `justify-items`   | See [documentation](/src/justify-items#readme).   |
+| `justify-content` | See [documentation](/src/justify-content#readme). |
+| `align-self`      | See [documentation](/src/align-self#readme).      |
+| `align-items`     | See [documentation](/src/align-items#readme).     |
+| `align-content`   | See [documentation](/src/align-content#readme).   |
+| `place-self`      | See [documentation](/src/place-self#readme).      |
+| `place-items`     | See [documentation](/src/place-items#readme).     |
+| `place-content`   | See [documentation](/src/place-content#readme).   |
 
 ### Spacing
 
