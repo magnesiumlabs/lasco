@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "text-transform": (
+            lowercase
+        )
+    )
+);
+@use "../index" as text-transform;
+
+@include describe("text-transform.core-styles()") {
+    @include it("Should return extended `text-transform` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include text-transform.core-styles;
+            }
+
+            @include expect(false) {
+                .text-lowercase {
+                    text-transform: lowercase;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+    }
+}

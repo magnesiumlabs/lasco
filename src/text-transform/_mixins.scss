@@ -2,7 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../../mixins" as core-mixins;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
@@ -14,7 +14,7 @@
         }
 
         .text-#{$key} {
-            @include core-mixins.declaration("text-transform") {
+            @include core.declaration("text-transform") {
                 text-transform: $value;
             }
         }

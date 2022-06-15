@@ -24,18 +24,6 @@ Use the `text-{key}` class for setup the `text-transform`.
 
 ## Configuration
 
-First, allow `text-transform` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "text-transform": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose `text-transform` type utilities. You can easily
 filter the default scales using the Sass configuration.
 
@@ -45,6 +33,16 @@ filter the default scales using the Sass configuration.
         "text-transform": (
             lowercase
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "text-transform": false
     )
 );
 ```
