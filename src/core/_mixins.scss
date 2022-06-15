@@ -7,7 +7,7 @@
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
 @use "./variables";
-@use "../variables" as core-variables;
+@use "../../variables" as core-variables;
 
 // ------------------------------------------------------------------------- //
 // Private mixins
