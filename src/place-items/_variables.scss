@@ -2,14 +2,13 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../../functions" as core-functions;
+@use "../../functions" as core-functions;
 
 $_defaults: (
-    auto,
     start,
     end,
     center,
     stretch
 ) !default;
 
-$extend: core-functions.filter("place-self", $_defaults);
+$extend: core-functions.filter("place-items", $_defaults);

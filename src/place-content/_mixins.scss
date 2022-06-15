@@ -4,12 +4,12 @@
 
 @use "sass:map";
 @use "@unsass/utilities";
-@use "../../core";
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
-    .place-items {
-        @include core.declaration("place-items") {
+    .place-content {
+        @include core.declaration("place-content") {
             @each $key in variables.$extend {
                 $suffix: $key;
 
@@ -18,7 +18,7 @@
                 }
 
                 &-#{$suffix} {
-                    place-items: $key;
+                    place-content: $key;
                 }
             }
         }

@@ -3,60 +3,60 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "place-items": (
+        "place-self": (
             center
         )
     )
 );
-@use "../index" as place-items;
+@use "../index" as place-self;
 
-@include describe("place-items.core-styles()") {
-    @include it("Should return extended `place-items` declarations.") {
+@include describe("place-self.core-styles()") {
+    @include it("Should return extended `place-self` declarations.") {
         @include assert {
             @include output(false) {
-                @include place-items.core-styles;
+                @include place-self.core-styles;
             }
 
             @include expect(false) {
-                .place-items-center {
-                    place-items: center;
+                .place-self-center {
+                    place-self: center;
                 }
 
                 @media (min-width: 320px) {
-                    .xs\:place-items-center {
-                        place-items: center;
+                    .xs\:place-self-center {
+                        place-self: center;
                     }
                 }
 
                 @media (min-width: 480px) {
-                    .sm\:place-items-center {
-                        place-items: center;
+                    .sm\:place-self-center {
+                        place-self: center;
                     }
                 }
 
                 @media (min-width: 768px) {
-                    .md\:place-items-center {
-                        place-items: center;
+                    .md\:place-self-center {
+                        place-self: center;
                     }
                 }
 
                 @media (min-width: 960px) {
-                    .lg\:place-items-center {
-                        place-items: center;
+                    .lg\:place-self-center {
+                        place-self: center;
                     }
                 }
 
                 @media (min-width: 1200px) {
-                    .xl\:place-items-center {
-                        place-items: center;
+                    .xl\:place-self-center {
+                        place-self: center;
                     }
                 }
 
                 @media (min-width: 1400px) {
-                    .\32 xl\:place-items-center {
-                        place-items: center;
+                    .\32 xl\:place-self-center {
+                        place-self: center;
                     }
                 }
             }

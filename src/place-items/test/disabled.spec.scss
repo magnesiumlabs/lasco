@@ -3,18 +3,18 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "place-content": false
+        "place-items": false
     )
 );
-@use "../index" as place-content;
+@use "../index" as place-items;
 
-@include describe("place-content.core-styles()") {
+@include describe("place-items.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include place-content.core-styles;
+                @include place-items.core-styles;
             }
 
             @include expect(false) {
