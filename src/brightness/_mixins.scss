@@ -2,10 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/property";
-@use "@sass-collective/property/custom-properties";
 @use "../core";
-@use "../index" as filter;
 @use "./variables";
 
 @mixin core-styles {

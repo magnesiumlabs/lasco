@@ -2,19 +2,15 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/property";
-@use "@sass-collective/property/custom-properties";
-@use "../../../mixins" as core-mixins;
-@use "../index" as filter;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .contrast {
-        @include core-mixins.declaration("contrast") {
+        @include core.declaration("contrast") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
-                    @include property.declaration(custom-properties.create(--lsc-contrast, contrast($value)));
-                    @include filter.declaration(contrast);
+                    filter: contrast($value);
                 }
             }
         }

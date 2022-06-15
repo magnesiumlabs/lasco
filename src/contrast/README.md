@@ -22,18 +22,6 @@ Use the `contrast-{amount}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `contrast` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "contrast": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose contrast utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -49,6 +37,16 @@ default scales using the Sass configuration.
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast()#exemples))_
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "contrast": false
+    )
+);
+```
 
 ## Applying conditionally
 
