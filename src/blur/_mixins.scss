@@ -2,19 +2,15 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/property";
-@use "@sass-collective/property/custom-properties";
-@use "../../../mixins" as core-mixins;
-@use "../index" as filter;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .blur {
-        @include core-mixins.declaration("blur") {
+        @include core.declaration("blur") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
-                    @include property.declaration(custom-properties.create(--lsc-blur, blur($value)));
-                    @include filter.declaration(blur);
+                    filter: blur($value);
                 }
             }
         }

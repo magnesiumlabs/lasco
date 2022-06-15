@@ -21,31 +21,27 @@ Use the `blur-{radius}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `blur` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "blur": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose blur utilities. You can easily extend the default
 scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
     $extend: (
-        "blur: (
+        "blur": (
             lg: 16px
         )
     )
+);
+```
 
-)
-;
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "blur": false
+    )
+);
 ```
 
 > **Note:** the radius can be a pixel or rem value. _(
