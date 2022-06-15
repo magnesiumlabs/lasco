@@ -2,13 +2,13 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../../mixins" as core-mixins;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     @each $key in variables.$extend {
         .text-#{$key} {
-            @include core-mixins.declaration("text-align") {
+            @include core.declaration("text-align") {
                 text-align: $key;
             }
         }

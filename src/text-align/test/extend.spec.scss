@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "text-align": (
+            center
+        )
+    )
+);
+@use "../index" as text-align;
+
+@include describe("text-align.core-styles()") {
+    @include it("Should return extended `text-align` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include text-align.core-styles;
+            }
+
+            @include expect(false) {
+                .text-center {
+                    text-align: center;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:text-center {
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:text-center {
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:text-center {
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:text-center {
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:text-center {
+                        text-align: center;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:text-center {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

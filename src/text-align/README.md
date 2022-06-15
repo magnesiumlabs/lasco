@@ -24,18 +24,6 @@ Use the `text-{key}` class for setup the `text-align`.
 
 ## Configuration
 
-First, allow `text-align` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "text-align": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose `text-align` type utilities. You can easily filter
 the default scales using the Sass configuration.
 
@@ -45,6 +33,16 @@ the default scales using the Sass configuration.
         "text-align": (
             center
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "text-align": false
     )
 );
 ```
