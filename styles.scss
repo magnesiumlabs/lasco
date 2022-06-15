@@ -30,8 +30,8 @@
 // Sizing
 // ------------------------------------------------------------------------- //
 
-@use "./src/width/min/styles" as min-width-styles;
-@use "./src/width/max/styles" as max-width-styles;
+@use "./src/min-width/styles" as min-width-styles;
+@use "./src/max-width/styles" as max-width-styles;
 @use "./src/width/styles" as width-styles;
 @use "./src/min-height/styles" as min-height-styles;
 @use "./src/max-height/styles" as max-height-styles;
