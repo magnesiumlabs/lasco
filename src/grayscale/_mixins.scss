@@ -1,0 +1,20 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .grayscale {
+        @include core.declaration("grayscale") {
+            @each $key, $value in variables.$extend {
+                &-#{$key} {
+                    filter: grayscale($value);
+                }
+            }
+
+            filter: grayscale(1);
+        }
+    }
+}

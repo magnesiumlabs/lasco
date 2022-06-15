@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "grayscale": false
+    )
+);
+@use "../index" as grayscale;
+
+@include describe("grayscale.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include grayscale.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

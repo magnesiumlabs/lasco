@@ -22,18 +22,6 @@ Use the `grayscale-{amount}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `grayscale` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "grayscale": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose grayscale utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -49,6 +37,16 @@ default scales using the Sass configuration.
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()#exemples))_
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "grayscale": false
+    )
+);
+```
 
 ## Applying conditionally
 

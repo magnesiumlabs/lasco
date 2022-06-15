@@ -103,12 +103,12 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 
 ### Filters
 
-| Property     | Docs                                                |
-|--------------|-----------------------------------------------------|
-| `blur`       | See [documentation](/src/filter/blur#readme).       |
-| `brightness` | See [documentation](/src/filter/brightness#readme). |
-| `contrast`   | See [documentation](/src/filter/contrast#readme).   |
-| `grayscale`  | See [documentation](/src/filter/grayscale#readme).  |
+| Property     | Docs                                         |
+|--------------|----------------------------------------------|
+| `blur`       | See [documentation](/src/blur#readme).       |
+| `brightness` | See [documentation](/src/brightness#readme). |
+| `contrast`   | See [documentation](/src/contrast#readme).   |
+| `grayscale`  | See [documentation](/src/grayscale#readme).  |
 
 ### Flexbox & Grid
 
