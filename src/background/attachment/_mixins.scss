@@ -3,12 +3,12 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "../../../mixins" as core-mixins;
+@use "../../core" as core;
 @use "./variables";
 
 @mixin core-styles {
     .bg-attachment {
-        @include core-mixins.declaration("bg-attachment") {
+        @include core.declaration("bg-attachment") {
             @each $key in variables.$extend {
                 &-#{$key} {
                     background-attachment: $key;

@@ -23,18 +23,6 @@ Use the `bg-attachment-{value}` class for setup background image's position.
 
 ## Configuration
 
-First, allow `background-attachment` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-attachment": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background image's position utilities. You can
 easily filter the default scales using the Sass configuration.
 
@@ -44,6 +32,16 @@ easily filter the default scales using the Sass configuration.
         "bg-attachment": (
             fixed
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-attachment": false
     )
 );
 ```

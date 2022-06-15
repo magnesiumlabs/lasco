@@ -1,0 +1,114 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-attachment;
+
+@include describe("bg-attachment.core-styles()") {
+    @include it("Should return all `bg-attachment` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-attachment.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-attachment-fixed {
+                    background-attachment: fixed;
+                }
+
+                .bg-attachment-local {
+                    background-attachment: local;
+                }
+
+                .bg-attachment-scroll {
+                    background-attachment: scroll;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .xs\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .xs\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .sm\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .sm\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .md\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .md\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .lg\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .lg\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .xl\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .xl\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-attachment-fixed {
+                        background-attachment: fixed;
+                    }
+
+                    .\32 xl\:bg-attachment-local {
+                        background-attachment: local;
+                    }
+
+                    .\32 xl\:bg-attachment-scroll {
+                        background-attachment: scroll;
+                    }
+                }
+            }
+        }
+    }
+}
