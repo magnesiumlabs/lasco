@@ -8,7 +8,7 @@
 @mixin core-styles {
     @each $key in variables.$extend {
         .text-#{$key} {
-            @include core-mixins.declaration(text-align) {
+            @include core-mixins.declaration("text-align") {
                 text-align: $key;
             }
         }

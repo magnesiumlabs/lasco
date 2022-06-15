@@ -10,7 +10,7 @@
 
 @mixin core-styles {
     .w {
-        @include core-mixins.declaration(width) {
+        @include core-mixins.declaration("width") {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: utilities.string-replace($key, "/", \/);

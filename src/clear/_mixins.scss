@@ -7,7 +7,7 @@
 
 @mixin core-styles {
     .clear {
-        @include core-mixins.declaration(clear) {
+        @include core-mixins.declaration("clear") {
             @each $key in variables.$extend {
                 &-#{$key} {
                     clear: $key;

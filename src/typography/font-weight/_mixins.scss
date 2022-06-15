@@ -8,7 +8,7 @@
 @mixin core-styles {
     @each $key in variables.$extend {
         .font-#{$key} {
-            @include core-mixins.declaration(font-weight) {
+            @include core-mixins.declaration("font-weight") {
                 font-weight: $key;
             }
         }

@@ -7,19 +7,19 @@
 
 @mixin core-styles {
     .flex {
-        @include core-mixins.declaration(flex-wrap) {
+        @include core-mixins.declaration("flex-wrap") {
             @include core.classes(flex-wrap, core.$flex-wrap);
         }
     }
 
     .flex-direction {
-        @include core-mixins.declaration(flex-direction) {
+        @include core-mixins.declaration("flex-direction") {
             @include core.classes(flex-direction, core.$flex-direction);
         }
     }
 
     .flex-grow {
-        @include core-mixins.declaration(flex-grow) {
+        @include core-mixins.declaration("flex-grow") {
             @each $key, $value in core.$flex-grow {
                 @if ($key == default) {
                     flex-grow: $value;
@@ -33,7 +33,7 @@
     }
 
     .flex-shrink {
-        @include core-mixins.declaration(flex-shrink) {
+        @include core-mixins.declaration("flex-shrink") {
             @each $key, $value in core.$flex-shrink {
                 @if ($key == default) {
                     flex-shrink: $value;

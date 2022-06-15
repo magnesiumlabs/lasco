@@ -14,7 +14,7 @@
         }
 
         .#{$key} {
-            @include core-mixins.declaration(display) {
+            @include core-mixins.declaration("display") {
                 display: $value;
             }
         }

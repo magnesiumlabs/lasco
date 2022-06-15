@@ -10,7 +10,7 @@
 
 @mixin core-styles {
     .brightness {
-        @include core-mixins.declaration(brightness) {
+        @include core-mixins.declaration("brightness") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     @include property.declaration(custom-properties.create(--lsc-brightness, brightness($value)));

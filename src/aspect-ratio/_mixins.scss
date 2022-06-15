@@ -11,7 +11,7 @@
 
 @mixin core-styles {
     .aspect {
-        @include core-mixins.declaration(aspect-ratio) {
+        @include core-mixins.declaration("aspect-ratio") {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: utilities.string-replace($key, "/", \/);

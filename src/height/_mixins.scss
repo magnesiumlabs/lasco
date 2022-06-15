@@ -10,7 +10,7 @@
 
 @mixin core-styles {
     .h {
-        @include core-mixins.declaration(height) {
+        @include core-mixins.declaration("height") {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: utilities.string-replace($key, "/", \/);

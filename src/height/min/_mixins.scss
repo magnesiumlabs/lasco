@@ -10,7 +10,7 @@
 
 @mixin core-styles {
     .min-h {
-        @include core-mixins.declaration(min-height) {
+        @include core-mixins.declaration("min-height") {
             @each $key, $value in variables.$extend {
                 @if meta.type-of($key) == "string" {
                     $key: utilities.string-replace($key, "/", \/);

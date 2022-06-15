@@ -8,7 +8,7 @@
 
 @mixin core-styles {
     .bg-color {
-        @include core-mixins.declaration(bg-color) {
+        @include core-mixins.declaration("bg-color") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     background-color: core.is-quoted-string($value);

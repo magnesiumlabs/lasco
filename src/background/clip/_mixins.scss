@@ -8,7 +8,7 @@
 
 @mixin core-styles {
     .bg-clip {
-        @include core-mixins.declaration(bg-clip) {
+        @include core-mixins.declaration("bg-clip") {
             @each $key in variables.$extend {
                 &-#{$key} {
                     $value: null;

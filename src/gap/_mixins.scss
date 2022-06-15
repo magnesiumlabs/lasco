@@ -10,7 +10,7 @@
 
 @mixin core-styles {
     .gap {
-        @include core-mixins.declaration(gap) {
+        @include core-mixins.declaration("gap") {
             @each $key, $value in variables.$extend {
                 $property: gap;
 
