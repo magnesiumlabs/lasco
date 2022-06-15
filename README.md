@@ -94,7 +94,7 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 |-------------------------|---------------------------------------------------------|
 | `background-attachment` | See [documentation](/src/background-attachment#readme). |
 | `background-clip`       | See [documentation](/src/background-clip#readme).       |
-| `background-color`      | See [documentation](/src/background/color#readme).      |
+| `background-color`      | See [documentation](/src/background-color#readme).      |
 | `background-image`      | See [documentation](/src/background/image#readme).      |
 | `background-origin`     | See [documentation](/src/background/origin#readme).     |
 | `background-position`   | See [documentation](/src/background/position#readme).   |

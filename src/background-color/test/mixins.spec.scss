@@ -1,0 +1,114 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-color;
+
+@include describe("bg-color.core-styles()") {
+    @include it("Should return all `bg-color` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-color.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-color-inherit {
+                    background-color: inherit;
+                }
+
+                .bg-color-current {
+                    background-color: currentColor;
+                }
+
+                .bg-color-transparent {
+                    background-color: transparent;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .xs\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .xs\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .sm\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .sm\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .md\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .md\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .lg\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .lg\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .xl\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .xl\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-color-inherit {
+                        background-color: inherit;
+                    }
+
+                    .\32 xl\:bg-color-current {
+                        background-color: currentColor;
+                    }
+
+                    .\32 xl\:bg-color-transparent {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

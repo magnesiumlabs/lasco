@@ -23,18 +23,6 @@ Use the `bg-color-{value}` class for setup background color.
 
 ## Configuration
 
-First, allow `background-color` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-color": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background color utilities. You can easily extend
 the default scales using the Sass configuration.
 
@@ -44,6 +32,16 @@ the default scales using the Sass configuration.
         "bg-color": (
             "black": #000
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-color": false
     )
 );
 ```
