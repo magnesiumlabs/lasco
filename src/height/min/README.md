@@ -23,18 +23,6 @@ Use the `min-h-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `min-height` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "min-height": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose `min-height` utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -46,6 +34,16 @@ default scales using the Sass configuration.
             50: 50%,
             75: 75%
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "min-height": false
     )
 );
 ```

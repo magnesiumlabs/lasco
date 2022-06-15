@@ -1,0 +1,207 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../../index" with (
+    $extend: (
+        "max-height": (
+            25: 25%,
+            50: 50%,
+            75: 75%
+        )
+    )
+);
+@use "../index" as max-height;
+
+@include describe("max-height.core-styles()") {
+    @include it("Should return extended `max-height` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include max-height.core-styles;
+            }
+
+            @include expect(false) {
+                .max-h-0 {
+                    max-height: 0;
+                }
+
+                .max-h-full {
+                    max-height: 100%;
+                }
+
+                .max-h-screen {
+                    max-height: 100vh;
+                }
+
+                .max-h-25 {
+                    max-height: 25%;
+                }
+
+                .max-h-50 {
+                    max-height: 50%;
+                }
+
+                .max-h-75 {
+                    max-height: 75%;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .xs\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .xs\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .xs\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .xs\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .xs\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .sm\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .sm\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .sm\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .sm\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .sm\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .md\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .md\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .md\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .md\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .md\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .lg\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .lg\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .lg\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .lg\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .lg\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .xl\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .xl\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .xl\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .xl\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .xl\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:max-h-0 {
+                        max-height: 0;
+                    }
+
+                    .\32 xl\:max-h-full {
+                        max-height: 100%;
+                    }
+
+                    .\32 xl\:max-h-screen {
+                        max-height: 100vh;
+                    }
+
+                    .\32 xl\:max-h-25 {
+                        max-height: 25%;
+                    }
+
+                    .\32 xl\:max-h-50 {
+                        max-height: 50%;
+                    }
+
+                    .\32 xl\:max-h-75 {
+                        max-height: 75%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,4 +10,4 @@ $_defaults: (
     screen: 100vh
 );
 
-$extend: core-functions.extend("min-height", $_defaults);
+$extend: core-functions.extend("max-height", $_defaults);
