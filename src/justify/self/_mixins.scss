@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:map";
+@use "@unsass/utilities";
+@use "../../core";
+@use "./variables";
+
+@mixin core-styles {
+    .justify-self {
+        @include core.declaration("justify-self") {
+            @each $key in variables.$extend {
+                $suffix: $key;
+
+                @if map.has-key(core.$names, $key) {
+                    $suffix: map.get(core.$names, $key);
+                }
+
+                &-#{$suffix} {
+                    justify-self: $key;
+                }
+            }
+        }
+    }
+}

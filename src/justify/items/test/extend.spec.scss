@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../../index" with (
+    $extend: (
+        "justify-items": (
+            center
+        )
+    )
+);
+@use "../index" as justify-items;
+
+@include describe("justify-items.core-styles()") {
+    @include it("Should return extended `justify-items` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include justify-items.core-styles;
+            }
+
+            @include expect(false) {
+                .justify-items-center {
+                    justify-items: center;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:justify-items-center {
+                        justify-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
