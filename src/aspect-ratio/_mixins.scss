@@ -4,7 +4,6 @@
 
 @use "sass:meta";
 @use "sass:string";
-@use "@sass-collective/css";
 @use "@unsass/utilities";
 @use "../../mixins" as core-mixins;
 @use "../core";
@@ -19,7 +18,7 @@
                 }
 
                 &-#{$key} {
-                    @include css.declaration(aspect-ratio, string.unquote($value));
+                    aspect-ratio: string.unquote($value);
                 }
             }
         }

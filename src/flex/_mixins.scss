@@ -2,7 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/css";
 @use "../../mixins" as core-mixins;
 @use "../core";
 
@@ -23,10 +22,10 @@
         @include core-mixins.declaration(flex-grow) {
             @each $key, $value in core.$flex-grow {
                 @if ($key == default) {
-                    @include css.declaration(flex-grow, $value);
+                    flex-grow: $value;
                 } @else {
                     &-#{$key} {
-                        @include css.declaration(flex-grow, $value);
+                        flex-grow: $value;
                     }
                 }
             }
@@ -37,10 +36,10 @@
         @include core-mixins.declaration(flex-shrink) {
             @each $key, $value in core.$flex-shrink {
                 @if ($key == default) {
-                    @include css.declaration(flex-shrink, $value);
+                    flex-shrink: $value;
                 } @else {
                     &-#{$key} {
-                        @include css.declaration(flex-shrink, $value);
+                        flex-shrink: $value;
                     }
                 }
             }

@@ -3,7 +3,6 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "@sass-collective/css";
 @use "../../../mixins" as core-mixins;
 @use "./variables";
 
@@ -12,7 +11,7 @@
         @include core-mixins.declaration(bg-origin) {
             @each $key in variables.$extend {
                 &-#{$key} {
-                    @include css.declaration(background-origin, $key);
+                    background-origin: $key;
                 }
             }
         }

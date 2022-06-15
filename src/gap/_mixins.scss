@@ -4,7 +4,6 @@
 
 @use "sass:meta";
 @use "sass:string";
-@use "@sass-collective/css";
 @use "../../mixins" as core-mixins;
 @use "../core";
 @use "./variables";
@@ -22,7 +21,7 @@
                 }
 
                 &-#{$key} {
-                    @include css.declaration($property, $value);
+                    #{$property}: $value;
                 }
             }
         }

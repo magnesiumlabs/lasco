@@ -3,7 +3,6 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "@sass-collective/css";
 @use "../../../mixins" as core-mixins;
 @use "./variables";
 
@@ -20,7 +19,7 @@
                         $value: #{$key};
                     }
 
-                    @include css.declaration(background-clip, $value);
+                    background-clip: $value;
                 }
             }
         }

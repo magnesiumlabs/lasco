@@ -3,7 +3,6 @@
 // ============================================================================================= //
 
 @use "sass:meta";
-@use "@sass-collective/css";
 @use "@unsass/utilities";
 @use "../../../mixins" as core-mixins;
 @use "../../core";
@@ -22,7 +21,7 @@
                 }
 
                 &-#{$key} {
-                    @include css.declaration(min-width, $value);
+                    min-width: $value;
                 }
             }
         }

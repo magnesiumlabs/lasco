@@ -2,7 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/css";
 @use "../../../mixins" as core-mixins;
 @use "./variables";
 
@@ -10,7 +9,7 @@
     @each $key in variables.$extend {
         .font-#{$key} {
             @include core-mixins.declaration(font-weight) {
-                @include css.declaration(font-weight, $key);
+                font-weight: $key;
             }
         }
     }

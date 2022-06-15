@@ -2,7 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/css";
 @use "../../../mixins" as core-mixins;
 @use "./variables";
 
@@ -16,7 +15,7 @@
 
         .text-#{$key} {
             @include core-mixins.declaration(text-transform) {
-                @include css.declaration(text-transform, $value);
+                text-transform: $value;
             }
         }
     }

@@ -2,7 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "@sass-collective/css";
 @use "../../mixins" as core-mixins;
 @use "./variables";
 
@@ -11,7 +10,7 @@
         @include core-mixins.declaration(z-index) {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
-                    @include css.declaration(z-index, $value);
+                    z-index: $value;
                 }
             }
         }

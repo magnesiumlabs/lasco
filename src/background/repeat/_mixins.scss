@@ -3,7 +3,6 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "@sass-collective/css";
 @use "../../../mixins" as core-mixins;
 @use "./variables";
 
@@ -22,7 +21,7 @@
                 }
 
                 &-#{$suffix} {
-                    @include css.declaration(background-repeat, $key);
+                    background-repeat: $key;
                 }
             }
         }
