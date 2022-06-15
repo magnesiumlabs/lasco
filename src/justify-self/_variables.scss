@@ -2,16 +2,14 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../../functions" as core-functions;
+@use "../../functions" as core-functions;
 
 $_defaults: (
+    auto,
     start,
     end,
     center,
-    space-between,
-    space-around,
-    space-evenly,
     stretch
 ) !default;
 
-$extend: core-functions.filter("justify-content", $_defaults);
+$extend: core-functions.filter("justify-self", $_defaults);

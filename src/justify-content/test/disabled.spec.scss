@@ -3,18 +3,18 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "justify-items": false
+        "justify-content": false
     )
 );
-@use "../index" as justify-items;
+@use "../index" as justify-content;
 
-@include describe("justify-items.core-styles()") {
+@include describe("justify-content.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include justify-items.core-styles;
+                @include justify-content.core-styles;
             }
 
             @include expect(false) {

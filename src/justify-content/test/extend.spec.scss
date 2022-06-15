@@ -3,60 +3,60 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "justify-self": (
+        "justify-content": (
             center
         )
     )
 );
-@use "../index" as justify-self;
+@use "../index" as justify-content;
 
-@include describe("justify-self.core-styles()") {
-    @include it("Should return extended `justify-self` declarations.") {
+@include describe("justify-content.core-styles()") {
+    @include it("Should return extended `justify-content` declarations.") {
         @include assert {
             @include output(false) {
-                @include justify-self.core-styles;
+                @include justify-content.core-styles;
             }
 
             @include expect(false) {
-                .justify-self-center {
-                    justify-self: center;
+                .justify-content-center {
+                    justify-content: center;
                 }
 
                 @media (min-width: 320px) {
-                    .xs\:justify-self-center {
-                        justify-self: center;
+                    .xs\:justify-content-center {
+                        justify-content: center;
                     }
                 }
 
                 @media (min-width: 480px) {
-                    .sm\:justify-self-center {
-                        justify-self: center;
+                    .sm\:justify-content-center {
+                        justify-content: center;
                     }
                 }
 
                 @media (min-width: 768px) {
-                    .md\:justify-self-center {
-                        justify-self: center;
+                    .md\:justify-content-center {
+                        justify-content: center;
                     }
                 }
 
                 @media (min-width: 960px) {
-                    .lg\:justify-self-center {
-                        justify-self: center;
+                    .lg\:justify-content-center {
+                        justify-content: center;
                     }
                 }
 
                 @media (min-width: 1200px) {
-                    .xl\:justify-self-center {
-                        justify-self: center;
+                    .xl\:justify-content-center {
+                        justify-content: center;
                     }
                 }
 
                 @media (min-width: 1400px) {
-                    .\32 xl\:justify-self-center {
-                        justify-self: center;
+                    .\32 xl\:justify-content-center {
+                        justify-content: center;
                     }
                 }
             }
