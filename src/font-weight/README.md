@@ -4,7 +4,7 @@ Utilities for applying `font-weight` of an element.
 
 ## Usage
 
-Use the `font-{number}` class for setup the `font-weight`.
+Use the `font-{number}` class for set up the `font-weight`.
 
 ```html
 
@@ -29,18 +29,6 @@ Use the `font-{number}` class for setup the `font-weight`.
 
 ## Configuration
 
-First, allow `font-weight` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "font-weight": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose `font-weight` type utilities. You can easily filter
 the default scales using the Sass configuration.
 
@@ -50,6 +38,16 @@ the default scales using the Sass configuration.
         "font-weight": (
             400
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "font-weight": false
     )
 );
 ```

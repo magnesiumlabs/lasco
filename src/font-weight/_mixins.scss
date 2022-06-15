@@ -2,13 +2,13 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../../mixins" as core-mixins;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     @each $key in variables.$extend {
         .font-#{$key} {
-            @include core-mixins.declaration("font-weight") {
+            @include core.declaration("font-weight") {
                 font-weight: $key;
             }
         }
