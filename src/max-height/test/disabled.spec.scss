@@ -3,18 +3,18 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "min-height": false
+        "max-height": false
     )
 );
-@use "../index" as min-height;
+@use "../index" as max-height;
 
-@include describe("min-height.core-styles()") {
+@include describe("max-height.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include min-height.core-styles;
+                @include max-height.core-styles;
             }
 
             @include expect(false) {

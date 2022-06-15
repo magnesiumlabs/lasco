@@ -33,8 +33,8 @@
 @use "./src/width/min/styles" as min-width-styles;
 @use "./src/width/max/styles" as max-width-styles;
 @use "./src/width/styles" as width-styles;
-@use "./src/height/min/styles" as min-height-styles;
-@use "./src/height/max/styles" as max-height-styles;
+@use "./src/min-height/styles" as min-height-styles;
+@use "./src/max-height/styles" as max-height-styles;
 @use "./src/height/styles" as height-styles;
 
 // ------------------------------------------------------------------------- //
