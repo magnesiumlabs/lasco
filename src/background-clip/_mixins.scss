@@ -3,12 +3,12 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "../../../mixins" as core-mixins;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .bg-clip {
-        @include core-mixins.declaration("bg-clip") {
+        @include core.declaration("bg-clip") {
             @each $key in variables.$extend {
                 &-#{$key} {
                     $value: null;

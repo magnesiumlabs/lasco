@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "bg-clip": (
+            content
+        )
+    )
+);
+@use "../index" as bg-clip;
+
+@include describe("bg-clip.core-styles()") {
+    @include it("Should return extended `bg-clip` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-clip.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-clip-content {
+                    background-clip: content-box;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+                }
+            }
+        }
+    }
+}

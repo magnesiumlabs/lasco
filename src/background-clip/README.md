@@ -24,18 +24,6 @@ Use the `bg-clip-{value}` class for setup background box.
 
 ## Configuration
 
-First, allow `background-clip` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-clip": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background box utilities. You can easily filter the
 default scales using the Sass configuration.
 
@@ -45,6 +33,16 @@ default scales using the Sass configuration.
         "bg-clip": (
             content
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-clip": false
     )
 );
 ```
