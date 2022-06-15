@@ -1,0 +1,122 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "bg-image": (
+            "single": "url('https://picsum.photos/200/300')", /// One-value syntax.
+            "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))" /// Multiple values syntax.
+        )
+    )
+);
+@use "../index" as bg-image;
+
+@include describe("bg-image.core-styles()") {
+    @include it("Should return extended `bg-image` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-image.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-image-none {
+                    background-image: none;
+                }
+
+                .bg-image-single {
+                    background-image: url('https://picsum.photos/200/300');
+                }
+
+                .bg-image-multiple {
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .xs\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .xs\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .sm\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .sm\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .md\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .md\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .lg\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .lg\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .xl\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .xl\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-image-none {
+                        background-image: none;
+                    }
+
+                    .\32 xl\:bg-image-single {
+                        background-image: url('https://picsum.photos/200/300');
+                    }
+
+                    .\32 xl\:bg-image-multiple {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                    }
+                }
+            }
+        }
+    }
+}

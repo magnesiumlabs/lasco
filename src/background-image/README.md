@@ -21,18 +21,6 @@ Use the `bg-image-{value}` class for setup background image.
 
 ## Configuration
 
-First, allow `background-image` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-image": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background image utilities. You can easily extend
 the default scales using the Sass configuration.
 
@@ -49,6 +37,16 @@ the default scales using the Sass configuration.
 
 > **Note:** the value can be a `image` value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#values))_
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-image": false
+    )
+);
+```
 
 ## Applying conditionally
 

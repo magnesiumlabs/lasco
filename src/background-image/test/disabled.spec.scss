@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "bg-image": false
+    )
+);
+@use "../index" as bg-image;
+
+@include describe("bg-image.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include bg-image.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
