@@ -1,0 +1,30 @@
+{
+    "private": true,
+    "name": "@lasco/text-align",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.scss",
+    "dependencies": {
+        "@lasco/core": "^0.0.0",
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "text-align",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/text-align",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git",
+        "directory": "src/text-align"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}
