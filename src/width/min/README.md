@@ -23,18 +23,6 @@ Use the `min-w-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-First, allow `min-width` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "min-width": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose `min-width` utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -46,6 +34,16 @@ default scales using the Sass configuration.
             50: 50%,
             75: 75%
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "min-width": true
     )
 );
 ```
