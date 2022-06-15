@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "@lasco/clear",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.scss",
+    "dependencies": {
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "clear",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/clear",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git",
+        "directory": "src/clear"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}

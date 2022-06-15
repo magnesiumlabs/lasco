@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "@lasco/gap",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.scss",
+    "dependencies": {
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "gap",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/gap",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git",
+        "directory": "src/gap"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "@lasco/z-index",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.scss",
+    "dependencies": {
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "z-index",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/z-index",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git",
+        "directory": "src/z-index"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}

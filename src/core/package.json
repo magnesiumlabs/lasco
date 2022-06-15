@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "name": "@lasco/core",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.scss",
+    "dependencies": {
+        "@sass-collective/css": "^2.1.0",
+        "@unsass/breakpoint": "^2.1.0",
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "core",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main/src/core",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git",
+        "directory": "src/core"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}
