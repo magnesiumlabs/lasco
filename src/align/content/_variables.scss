@@ -1,0 +1,16 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+
+$extend: core-functions.filter("align-content", $_defaults);

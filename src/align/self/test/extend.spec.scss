@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../../index" with (
+    $extend: (
+        "align-self": (
+            center
+        )
+    )
+);
+@use "../index" as align-self;
+
+@include describe("align-self.core-styles()") {
+    @include it("Should return extended `align-self` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include align-self.core-styles;
+            }
+
+            @include expect(false) {
+                .align-self-center {
+                    align-self: center;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:align-self-center {
+                        align-self: center;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:align-self-center {
+                        align-self: center;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:align-self-center {
+                        align-self: center;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:align-self-center {
+                        align-self: center;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:align-self-center {
+                        align-self: center;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:align-self-center {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

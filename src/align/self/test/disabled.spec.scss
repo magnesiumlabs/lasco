@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../../index" with (
+    $extend: (
+        "align-self": false
+    )
+);
+@use "../index" as align-self;
+
+@include describe("align-self.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include align-self.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

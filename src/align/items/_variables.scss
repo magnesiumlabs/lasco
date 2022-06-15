@@ -1,0 +1,15 @@
+// ============================================================================================= //
+//                                           VARIABLES                                           //
+// ============================================================================================= //
+
+@use "../../../functions" as core-functions;
+
+$_defaults: (
+    flex-start,
+    flex-end,
+    center,
+    baseline,
+    stretch
+) !default;
+
+$extend: core-functions.filter("align-items", $_defaults);
