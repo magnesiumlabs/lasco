@@ -13,7 +13,7 @@ Use the `aspect-{index}` class for setup ratio aspect.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class           | Property             |
 |-----------------|----------------------|
@@ -35,8 +35,8 @@ First, allow `aspect-ratio` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose ratio aspect utilities. You can easily extend the default scales
-using the Sass configuration.
+By default, the configuration provides a handful of general purpose ratio aspect utilities. You can easily extend the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

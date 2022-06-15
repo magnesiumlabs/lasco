@@ -13,7 +13,7 @@ Use the `bg-image-{value}` class for setup background image.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class           | Property                  |
 |-----------------|---------------------------|
@@ -33,8 +33,8 @@ First, allow `background-image` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose background image utilities. You can easily extend the default
-scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose background image utilities. You can easily extend
+the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -47,7 +47,8 @@ scales using the Sass configuration.
 );
 ```
 
-> **Note:** the value can be a `image` value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#values))_
+> **Note:** the value can be a `image` value. _(
+Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#values))_
 
 ## Applying conditionally
 

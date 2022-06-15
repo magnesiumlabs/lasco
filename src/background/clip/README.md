@@ -13,7 +13,7 @@ Use the `bg-clip-{value}` class for setup background box.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class             | Property                        |
 |-------------------|---------------------------------|
@@ -36,8 +36,8 @@ First, allow `background-clip` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose background box utilities. You can easily filter the default
-scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose background box utilities. You can easily filter the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

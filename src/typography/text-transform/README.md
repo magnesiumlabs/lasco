@@ -13,7 +13,7 @@ Use the `text-{key}` class for setup the `text-transform`.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class             | Property                      |
 |-------------------|-------------------------------|
@@ -36,8 +36,8 @@ First, allow `text-transform` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose `text-transform` type utilities. You can easily filter the
-default scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose `text-transform` type utilities. You can easily
+filter the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

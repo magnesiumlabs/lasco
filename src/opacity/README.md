@@ -13,7 +13,7 @@ Use the `opacity-{index}` class for setup ratio aspect.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class         | Property      |
 |---------------|---------------|
@@ -34,8 +34,8 @@ First, allow `opacity` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose opacity utilities. You can easily extend the default scales
-using the Sass configuration.
+By default, the configuration provides a handful of general purpose opacity utilities. You can easily extend the default
+scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

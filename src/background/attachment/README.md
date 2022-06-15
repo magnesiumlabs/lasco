@@ -13,7 +13,7 @@ Use the `bg-attachment-{value}` class for setup background image's position.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class                  | Property                         |
 |------------------------|----------------------------------|
@@ -35,8 +35,8 @@ First, allow `background-attachment` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose background image's position utilities. You can easily filter the
-default scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose background image's position utilities. You can
+easily filter the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

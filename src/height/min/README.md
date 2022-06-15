@@ -13,7 +13,7 @@ Use the `min-h-{index}` class for setup ratio aspect.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class          | Property             |
 |----------------|----------------------|
@@ -35,8 +35,8 @@ First, allow `min-height` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose `min-height` utilities. You can easily extend the default scales
-using the Sass configuration.
+By default, the configuration provides a handful of general purpose `min-height` utilities. You can easily extend the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

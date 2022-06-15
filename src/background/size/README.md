@@ -13,7 +13,7 @@ Use the `bg-size-{value}` class for setup background size.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class             | Property                    |
 |-------------------|-----------------------------|
@@ -35,8 +35,8 @@ First, allow `background-size` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose background size utilities. You can easily extend the default
-scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose background size utilities. You can easily extend the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -50,7 +50,8 @@ scales using the Sass configuration.
 );
 ```
 
-> **Note:** the value can be a `length` or `percentage` value. _(Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values))_
+> **Note:** the value can be a `length` or `percentage` value. _(
+Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values))_
 
 ## Applying conditionally
 

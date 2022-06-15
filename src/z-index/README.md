@@ -13,7 +13,7 @@ Use the `z-{index}` class for setup order position.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class    | Property         |
 |----------|------------------|
@@ -34,8 +34,8 @@ First, allow `z-index` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose position order utilities. You can easily extend the default
-scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose position order utilities. You can easily extend the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

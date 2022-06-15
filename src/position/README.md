@@ -13,7 +13,7 @@ Use the `{key}` class for setup the display type.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class      | Property              |
 |------------|-----------------------|
@@ -37,8 +37,8 @@ First, allow `position` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose position utilities. You can easily filter the default scales
-using the Sass configuration.
+By default, the configuration provides a handful of general purpose position utilities. You can easily filter the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (

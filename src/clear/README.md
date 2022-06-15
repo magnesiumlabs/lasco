@@ -13,7 +13,7 @@ Use the `clear-{key}` class for setup the clear type.
 </div>
 ```
 
-### Scales
+### Classes
 
 | Class         | Property        |
 |---------------|-----------------|
@@ -36,8 +36,8 @@ First, allow `clear` classes to be generated.
 
 ### Extend
 
-By default, Lasco provides a handful of general purpose clear type utilities. You can easily filter the default scales
-using the Sass configuration.
+By default, the configuration provides a handful of general purpose clear type utilities. You can easily filter the
+default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
