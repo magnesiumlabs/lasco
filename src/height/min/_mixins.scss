@@ -5,7 +5,6 @@
 @use "sass:meta";
 @use "@unsass/utilities";
 @use "../../../mixins" as core-mixins;
-@use "../../core";
 @use "./variables";
 
 @mixin core-styles {
