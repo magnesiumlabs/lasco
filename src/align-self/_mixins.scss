@@ -4,12 +4,12 @@
 
 @use "sass:map";
 @use "@unsass/utilities";
-@use "../../core";
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
-    .align-content {
-        @include core.declaration("align-content") {
+    .align-self {
+        @include core.declaration("align-self") {
             @each $key in variables.$extend {
                 $suffix: $key;
 
@@ -18,7 +18,7 @@
                 }
 
                 &-#{$suffix} {
-                    align-content: $key;
+                    align-self: $key;
                 }
             }
         }

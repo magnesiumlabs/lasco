@@ -3,18 +3,18 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "align-items": false
+        "align-self": false
     )
 );
-@use "../index" as align-items;
+@use "../index" as align-self;
 
-@include describe("align-items.core-styles()") {
+@include describe("align-self.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include align-items.core-styles;
+                @include align-self.core-styles;
             }
 
             @include expect(false) {

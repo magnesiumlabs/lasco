@@ -73,9 +73,9 @@
 
 @use "./src/flex/styles" as flex-styles;
 @use "./src/gap/styles" as gap-styles;
-@use "./src/align/self/styles" as align-self-styles;
-@use "./src/align/content/styles" as align-content-styles;
-@use "./src/align/items/styles" as align-items-styles;
+@use "./src/align-self/styles" as align-self-styles;
+@use "./src/align-content/styles" as align-content-styles;
+@use "./src/align-items/styles" as align-items-styles;
 @use "./src/justify/self/styles" as justify-self-styles;
 @use "./src/justify/content/styles" as justify-content-styles;
 @use "./src/justify/items/styles" as justify-items-styles;

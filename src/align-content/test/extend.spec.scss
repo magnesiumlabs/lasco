@@ -3,60 +3,60 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../../index" with (
+@use "../../../index" with (
     $extend: (
-        "align-self": (
+        "align-content": (
             center
         )
     )
 );
-@use "../index" as align-self;
+@use "../index" as align-content;
 
-@include describe("align-self.core-styles()") {
-    @include it("Should return extended `align-self` declarations.") {
+@include describe("align-content.core-styles()") {
+    @include it("Should return extended `align-content` declarations.") {
         @include assert {
             @include output(false) {
-                @include align-self.core-styles;
+                @include align-content.core-styles;
             }
 
             @include expect(false) {
-                .align-self-center {
-                    align-self: center;
+                .align-content-center {
+                    align-content: center;
                 }
 
                 @media (min-width: 320px) {
-                    .xs\:align-self-center {
-                        align-self: center;
+                    .xs\:align-content-center {
+                        align-content: center;
                     }
                 }
 
                 @media (min-width: 480px) {
-                    .sm\:align-self-center {
-                        align-self: center;
+                    .sm\:align-content-center {
+                        align-content: center;
                     }
                 }
 
                 @media (min-width: 768px) {
-                    .md\:align-self-center {
-                        align-self: center;
+                    .md\:align-content-center {
+                        align-content: center;
                     }
                 }
 
                 @media (min-width: 960px) {
-                    .lg\:align-self-center {
-                        align-self: center;
+                    .lg\:align-content-center {
+                        align-content: center;
                     }
                 }
 
                 @media (min-width: 1200px) {
-                    .xl\:align-self-center {
-                        align-self: center;
+                    .xl\:align-content-center {
+                        align-content: center;
                     }
                 }
 
                 @media (min-width: 1400px) {
-                    .\32 xl\:align-self-center {
-                        align-self: center;
+                    .\32 xl\:align-content-center {
+                        align-content: center;
                     }
                 }
             }
