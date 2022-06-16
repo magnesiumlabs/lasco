@@ -6,7 +6,7 @@
 @use "../../../index" with (
     $extend: (
         "bg-image": (
-            "single": "url('https://picsum.photos/200/300')", /// One-value syntax.
+            "single": "url(\"https://picsum.photos/200/300\")", /// One-value syntax.
             "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))" /// Multiple values syntax.
         )
     )
@@ -26,7 +26,7 @@
                 }
 
                 .bg-image-single {
-                    background-image: url('https://picsum.photos/200/300');
+                    background-image: url("https://picsum.photos/200/300");
                 }
 
                 .bg-image-multiple {
@@ -39,7 +39,7 @@
                     }
 
                     .xs\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .xs\:bg-image-multiple {
@@ -53,7 +53,7 @@
                     }
 
                     .sm\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .sm\:bg-image-multiple {
@@ -67,7 +67,7 @@
                     }
 
                     .md\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .md\:bg-image-multiple {
@@ -81,7 +81,7 @@
                     }
 
                     .lg\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .lg\:bg-image-multiple {
@@ -95,7 +95,7 @@
                     }
 
                     .xl\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .xl\:bg-image-multiple {
@@ -109,7 +109,7 @@
                     }
 
                     .\32 xl\:bg-image-single {
-                        background-image: url('https://picsum.photos/200/300');
+                        background-image: url("https://picsum.photos/200/300");
                     }
 
                     .\32 xl\:bg-image-multiple {
