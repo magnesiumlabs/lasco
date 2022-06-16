@@ -1,0 +1,138 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as flex-wrap;
+
+@include describe("flex-wrap.core-styles()") {
+    @include it("Should return all `flex-wrap` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include flex-wrap.core-styles;
+            }
+
+            @include expect(false) {
+                .flex-wrap {
+                    flex-wrap: wrap;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex-wrap {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .flex-wrap-reverse {
+                    flex-wrap: wrap-reverse;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex-wrap-reverse {
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+
+                .flex-nowrap {
+                    flex-wrap: nowrap;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex-nowrap {
+                        flex-wrap: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
