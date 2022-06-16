@@ -71,7 +71,10 @@
 // Flexbox & Grid
 // ------------------------------------------------------------------------- //
 
-@use "./src/flex/styles" as flex-styles;
+@use "./src/flex-direction/styles" as flex-direction-styles;
+@use "./src/flex-grow/styles" as flex-grow-styles;
+@use "./src/flex-shrink/styles" as flex-shrink-styles;
+@use "./src/flex-wrap/styles" as flex-wrap-styles;
 @use "./src/gap/styles" as gap-styles;
 @use "./src/align-self/styles" as align-self-styles;
 @use "./src/align-content/styles" as align-content-styles;

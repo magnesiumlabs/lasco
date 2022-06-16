@@ -4,7 +4,7 @@ Utilities for applying flex-grow type of element.
 
 ## Usage
 
-Use the `{key}` class for set up the flex-grow type.
+Use the `flex-grow-{amount}` class for set up the flex-grow type.
 
 ```html
 

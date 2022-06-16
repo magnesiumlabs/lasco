@@ -4,7 +4,7 @@ Utilities for applying flex-direction type of element.
 
 ## Usage
 
-Use the `{key}` class for set up the flex-direction type.
+Use the `flex-{key}` class for set up the flex-direction type.
 
 ```html
 

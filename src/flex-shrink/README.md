@@ -4,7 +4,7 @@ Utilities for applying flex-shrink type of element.
 
 ## Usage
 
-Use the `{key}` class for set up the flex-shrink type.
+Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
 
 ```html
 

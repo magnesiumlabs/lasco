@@ -17,36 +17,3 @@ $names: (
     space-evenly: evenly
 );
 
-// --------------------------------- //
-// Flex
-// --------------------------------- //
-
-$_defaults-flex-grow: (
-    default: 1,
-    0: 0
-);
-
-$_defaults-flex-shrink: (
-    default: 1,
-    0: 0
-);
-
-$flex-direction: (
-    row,
-    row-reverse,
-    column,
-    column-reverse
-) !default;
-
-$flex-wrap: (
-    wrap,
-    wrap-reverse,
-    nowrap
-) !default;
-
-$flex-grow: () !default;
-$flex-grow: map.merge($_defaults-flex-grow, $flex-grow);
-
-$flex-shrink: () !default;
-$flex-shrink: map.merge($_defaults-flex-shrink, $flex-shrink);
-

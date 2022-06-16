@@ -4,7 +4,7 @@ Utilities for applying `flex-wrap` type of element.
 
 ## Usage
 
-Use the `{key}` class for set up the `flex-wrap` type.
+Use the `flex-{key}` class for set up the `flex-wrap` type.
 
 ```html
 
