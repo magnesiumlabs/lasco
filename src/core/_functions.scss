@@ -2,11 +2,8 @@
 //                                           FUNCTIONS                                           //
 // ============================================================================================= //
 
-@use "sass:list";
-@use "sass:map";
 @use "sass:meta";
 @use "sass:string";
-@use "./variables";
 
 @function is-quoted-string($value) {
     @if meta.type-of($value) == string {

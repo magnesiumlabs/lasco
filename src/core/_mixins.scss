@@ -3,37 +3,19 @@
 // ============================================================================================= //
 
 @use "sass:map";
-@use "sass:meta";
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
-@use "./variables";
 @use "../../variables" as core-variables;
 
 // ------------------------------------------------------------------------- //
 // Private mixins
 // ------------------------------------------------------------------------- //
 
-@mixin _class-suffix($property, $key) {
-    $suffix: $key;
-
-    @if map.has-key(variables.$names, $key) {
-        $suffix: map.get(variables.$names, $key);
-    }
-
-    &-#{$suffix} {
-        @include css.declaration($property, $key);
-    }
-}
+// ...
 
 // ------------------------------------------------------------------------- //
 // Public mixins
 // ------------------------------------------------------------------------- //
-
-@mixin classes($property, $list) {
-    @each $key in $list {
-        @include _class-suffix($property, $key);
-    }
-}
 
 @mixin declaration($property) {
     $declaration: true;
