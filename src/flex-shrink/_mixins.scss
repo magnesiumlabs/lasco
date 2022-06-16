@@ -1,0 +1,22 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .flex-shrink {
+        @include core.declaration("flex-shrink") {
+            @each $key, $value in variables.$extend {
+                @if ($key == "1") {
+                    flex-shrink: $value;
+                } @else {
+                    &-#{$key} {
+                        flex-shrink: $value;
+                    }
+                }
+            }
+        }
+    }
+}

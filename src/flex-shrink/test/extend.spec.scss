@@ -1,0 +1,121 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "flex-shrink": (
+            "2": 2
+        )
+    )
+);
+@use "../index" as flex-shrink;
+
+@include describe("flex-shrink.core-styles()") {
+    @include it("Should return extended `flex-shrink` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include flex-shrink.core-styles;
+            }
+
+            @include expect(false) {
+                .flex-shrink {
+                    flex-shrink: 1;
+                }
+
+                .flex-shrink-0 {
+                    flex-shrink: 0;
+                }
+
+                .flex-shrink-2 {
+                    flex-shrink: 2;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .xs\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .xs\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .sm\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .sm\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .md\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .md\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .lg\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .lg\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .xl\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .xl\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex-shrink {
+                        flex-shrink: 1;
+                    }
+
+                    .\32 xl\:flex-shrink-0 {
+                        flex-shrink: 0;
+                    }
+
+                    .\32 xl\:flex-shrink-2 {
+                        flex-shrink: 2;
+                    }
+                }
+            }
+        }
+    }
+}
