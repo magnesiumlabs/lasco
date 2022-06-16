@@ -1,4 +1,4 @@
-# Min-Width
+# Min Width
 
 Class generator for setting `min-width` property for an element.
 

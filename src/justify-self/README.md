@@ -1,4 +1,4 @@
-# justify-self
+# Justify Self
 
 Utilities for applying `justify-self` property an element.
 

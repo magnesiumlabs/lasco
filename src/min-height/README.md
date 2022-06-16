@@ -1,4 +1,4 @@
-# Min-Height
+# Min Height
 
 Class generator for setting `min-height` property for an element.
 

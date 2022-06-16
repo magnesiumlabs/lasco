@@ -1,4 +1,4 @@
-# Max-Width
+# Max Width
 
 Class generator for setting `max-width` property for an element.
 

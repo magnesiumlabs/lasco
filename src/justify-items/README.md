@@ -1,4 +1,4 @@
-# justify-items
+# Justify Items
 
 Utilities for applying `justify-items` property an element.
 

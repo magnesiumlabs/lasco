@@ -1,4 +1,4 @@
-# place-content
+# Place Content
 
 Utilities for applying `place-content` property an element.
 

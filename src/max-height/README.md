@@ -1,4 +1,4 @@
-# Max-Height
+# Max Height
 
 Class generator for setting `max-height` property for an element.
 

@@ -1,4 +1,4 @@
-# Align-Items
+# Align Items
 
 Utilities for applying `align-items` property an element.
 

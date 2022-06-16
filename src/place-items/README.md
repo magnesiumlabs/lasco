@@ -1,4 +1,4 @@
-# place-items
+# Place Items
 
 Utilities for applying `place-items` property an element.
 

@@ -1,4 +1,4 @@
-# flex-direction
+# Flex Direction
 
 Utilities for applying flex-direction type of element.
 

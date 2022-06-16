@@ -1,4 +1,4 @@
-# justify-content
+# Justify Content
 
 Utilities for applying `justify-content` property an element.
 

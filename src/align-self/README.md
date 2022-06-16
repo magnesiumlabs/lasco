@@ -1,4 +1,4 @@
-# Align-Self
+# Align Self
 
 Utilities for applying `align-self` property an element.
 

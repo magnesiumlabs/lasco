@@ -1,4 +1,4 @@
-# Align-Content
+# Align Content
 
 Utilities for applying `align-content` property an element.
 

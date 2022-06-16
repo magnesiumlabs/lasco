@@ -1,4 +1,4 @@
-# Place-Self
+# Place Self
 
 Utilities for applying `place-self` property an element.
 
