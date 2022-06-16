@@ -23,18 +23,6 @@ Use the `bg-size-{value}` class for setup background size.
 
 ## Configuration
 
-First, allow `background-size` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-size": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background size utilities. You can easily extend the
 default scales using the Sass configuration.
 
@@ -52,6 +40,16 @@ default scales using the Sass configuration.
 
 > **Note:** the value can be a `length` or `percentage` value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values))_
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-size": false
+    )
+);
+```
 
 ## Applying conditionally
 

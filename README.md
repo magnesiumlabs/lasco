@@ -99,7 +99,7 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 | `background-origin`     | See [documentation](/src/background-origin#readme).     |
 | `background-position`   | See [documentation](/src/background-position#readme).   |
 | `background-repeat`     | See [documentation](/src/background-repeat#readme).     |
-| `background-size`       | See [documentation](/src/background/size#readme).       |
+| `background-size`       | See [documentation](/src/background-size#readme).       |
 
 ### Filters
 

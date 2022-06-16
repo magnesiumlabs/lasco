@@ -2,13 +2,12 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "../../../mixins" as core-mixins;
-@use "../../core";
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .bg-size {
-        @include core-mixins.declaration("bg-size") {
+        @include core.declaration("bg-size") {
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     background-size: core.is-quoted-string($value);

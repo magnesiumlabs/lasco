@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "bg-size": false
+    )
+);
+@use "../index" as bg-size;
+
+@include describe("bg-size.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include bg-size.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
