@@ -1,0 +1,170 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-position;
+
+@include describe("bg-position.core-styles()") {
+    @include it("Should return all `bg-position` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-position.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-position-bottom {
+                    background-position: bottom;
+                }
+
+                .bg-position-center {
+                    background-position: center;
+                }
+
+                .bg-position-left {
+                    background-position: left;
+                }
+
+                .bg-position-right {
+                    background-position: right;
+                }
+
+                .bg-position-top {
+                    background-position: top;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .xs\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .xs\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .xs\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .xs\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .sm\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .sm\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .sm\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .sm\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .md\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .md\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .md\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .md\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .lg\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .lg\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .lg\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .lg\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .xl\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .xl\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .xl\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .xl\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-position-bottom {
+                        background-position: bottom;
+                    }
+
+                    .\32 xl\:bg-position-center {
+                        background-position: center;
+                    }
+
+                    .\32 xl\:bg-position-left {
+                        background-position: left;
+                    }
+
+                    .\32 xl\:bg-position-right {
+                        background-position: right;
+                    }
+
+                    .\32 xl\:bg-position-top {
+                        background-position: top;
+                    }
+                }
+            }
+        }
+    }
+}

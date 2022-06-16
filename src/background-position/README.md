@@ -25,18 +25,6 @@ Use the `bg-position-{position}` class for setup background position.
 
 ## Configuration
 
-First, allow `background-position` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-position": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background position utilities. You can easily extend
 the default scales using the Sass configuration.
 
@@ -46,6 +34,16 @@ the default scales using the Sass configuration.
         "bg-position": (
             "left-top": "left top"
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-position": false
     )
 );
 ```
