@@ -26,18 +26,6 @@ Use the `bg-repeat-{style}` class for setup background image repeat.
 
 ## Configuration
 
-First, allow `background-repeat` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-repeat": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background image repeat utilities. You can easily
 filter the default scales using the Sass configuration.
 
@@ -47,6 +35,16 @@ filter the default scales using the Sass configuration.
         "bg-repeat": (
             no-repeat
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-repeat": false
     )
 );
 ```

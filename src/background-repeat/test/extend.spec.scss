@@ -1,0 +1,65 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" with (
+    $extend: (
+        "bg-repeat": (
+            no-repeat
+        )
+    )
+);
+@use "../index" as bg-repeat;
+
+@include describe("bg-repeat.core-styles()") {
+    @include it("Should return extended `bg-repeat` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-repeat.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-repeat-none {
+                    background-repeat: no-repeat;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
