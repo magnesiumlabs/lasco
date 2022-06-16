@@ -1,0 +1,114 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-origin;
+
+@include describe("bg-origin.core-styles()") {
+    @include it("Should return all `bg-origin` declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-origin.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-origin-border {
+                    background-origin: border-box;
+                }
+
+                .bg-origin-content {
+                    background-origin: content-box;
+                }
+
+                .bg-origin-padding {
+                    background-origin: padding-box;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .xs\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .xs\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .sm\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .sm\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .md\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .md\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .lg\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .lg\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .xl\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .xl\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-origin-border {
+                        background-origin: border-box;
+                    }
+
+                    .\32 xl\:bg-origin-content {
+                        background-origin: content-box;
+                    }
+
+                    .\32 xl\:bg-origin-padding {
+                        background-origin: padding-box;
+                    }
+                }
+            }
+        }
+    }
+}

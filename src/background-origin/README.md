@@ -23,18 +23,6 @@ Use the `bg-origin-{value}` class for setup background box origin.
 
 ## Configuration
 
-First, allow `background-origin` classes to be generated.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-origin": true
-    )
-);
-```
-
-### Extend
-
 By default, the configuration provides a handful of general purpose background box origin utilities. You can easily
 filter the default scales using the Sass configuration.
 
@@ -44,6 +32,16 @@ filter the default scales using the Sass configuration.
         "bg-origin": (
             content-box
         )
+    )
+);
+```
+
+### Disabled
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "bg-origin": false
     )
 );
 ```

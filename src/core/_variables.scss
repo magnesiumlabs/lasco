@@ -5,6 +5,9 @@
 @use "sass:map";
 
 $names: (
+    border-box: border,
+    content-box: content,
+    padding-box: padding,
     flex-start: start,
     flex-end: end,
     column: col,

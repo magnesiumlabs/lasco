@@ -2,15 +2,22 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:map";
 @use "sass:list";
-@use "../../../mixins" as core-mixins;
+@use "../core";
 @use "./variables";
 
 @mixin core-styles {
     .bg-origin {
-        @include core-mixins.declaration("bg-origin") {
+        @include core.declaration("bg-origin") {
             @each $key in variables.$extend {
-                &-#{$key} {
+                $suffix: $key;
+
+                @if map.has-key(core.$names, $key) {
+                    $suffix: map.get(core.$names, $key);
+                }
+
+                &-#{$suffix} {
                     background-origin: $key;
                 }
             }
