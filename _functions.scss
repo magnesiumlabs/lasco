@@ -5,7 +5,7 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "./variables" as variables;
+@use "./variables";
 
 @function extend($property, $defaults) {
     $map: $defaults;

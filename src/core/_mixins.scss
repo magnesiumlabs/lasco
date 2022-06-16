@@ -5,7 +5,7 @@
 @use "sass:map";
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
-@use "../../variables" as core-variables;
+@use "./variables";
 
 // ------------------------------------------------------------------------- //
 // Private mixins
@@ -20,7 +20,7 @@
 @mixin declaration($property) {
     $declaration: true;
 
-    @if map.has-key(core-variables.$extend, $property) and map.get(core-variables.$extend, $property) == false {
+    @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
         $declaration: false;
     }
 
