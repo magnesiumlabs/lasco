@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     0: 0,
@@ -10,4 +10,4 @@ $_defaults: (
     screen: 100vh
 );
 
-$extend: core-functions.extend("height", $_defaults);
+$extend: core.extend("height", $_defaults);

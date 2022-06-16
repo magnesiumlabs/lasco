@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     "inherit": "inherit",
@@ -10,4 +10,4 @@ $_defaults: (
     "transparent": "transparent"
 );
 
-$extend: core-functions.extend("bg-color", $_defaults);
+$extend: core.extend("bg-color", $_defaults);

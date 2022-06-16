@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     fixed,
@@ -10,4 +10,4 @@ $_defaults: (
     scroll
 );
 
-$extend: core-functions.filter("bg-attachment", $_defaults);
+$extend: core.filter("bg-attachment", $_defaults);

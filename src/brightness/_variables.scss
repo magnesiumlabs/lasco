@@ -2,11 +2,11 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     0: 0,
     100: 1
 );
 
-$extend: core-functions.extend("brightness", $_defaults);
+$extend: core.extend("brightness", $_defaults);

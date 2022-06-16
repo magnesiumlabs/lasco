@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     border,
@@ -11,4 +11,4 @@ $_defaults: (
     text
 );
 
-$extend: core-functions.filter("bg-clip", $_defaults);
+$extend: core.filter("bg-clip", $_defaults);

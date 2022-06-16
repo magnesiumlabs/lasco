@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     wrap,
@@ -10,4 +10,4 @@ $_defaults: (
     nowrap
 );
 
-$extend: core-functions.filter("flex-wrap", $_defaults);
+$extend: core.filter("flex-wrap", $_defaults);

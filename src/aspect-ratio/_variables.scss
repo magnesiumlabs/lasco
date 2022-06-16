@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     auto: auto,
@@ -10,4 +10,4 @@ $_defaults: (
     video: "16/9"
 );
 
-$extend: core-functions.extend("aspect-ratio", $_defaults);
+$extend: core.extend("aspect-ratio", $_defaults);

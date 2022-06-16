@@ -2,10 +2,10 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     "none": "none"
 );
 
-$extend: core-functions.extend("bg-image", $_defaults);
+$extend: core.extend("bg-image", $_defaults);

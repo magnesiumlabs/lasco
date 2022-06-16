@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     none,
@@ -11,4 +11,4 @@ $_defaults: (
     both
 );
 
-$extend: core-functions.filter("clear", $_defaults);
+$extend: core.filter("clear", $_defaults);

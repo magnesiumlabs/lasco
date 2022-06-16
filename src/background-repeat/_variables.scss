@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     repeat,
@@ -13,4 +13,4 @@ $_defaults: (
     space
 );
 
-$extend: core-functions.filter("bg-repeat", $_defaults);
+$extend: core.filter("bg-repeat", $_defaults);

@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     block,
@@ -16,4 +16,4 @@ $_defaults: (
     hidden
 );
 
-$extend: core-functions.filter("display", $_defaults);
+$extend: core.filter("display", $_defaults);

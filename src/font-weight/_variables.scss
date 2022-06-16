@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     100,
@@ -16,4 +16,4 @@ $_defaults: (
     900
 );
 
-$extend: core-functions.filter("font-weight", $_defaults);
+$extend: core.filter("font-weight", $_defaults);

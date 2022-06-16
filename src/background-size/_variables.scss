@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     "auto": "auto",
@@ -10,4 +10,4 @@ $_defaults: (
     "contain": "contain"
 );
 
-$extend: core-functions.extend("bg-size", $_defaults);
+$extend: core.extend("bg-size", $_defaults);

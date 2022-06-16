@@ -2,10 +2,10 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     0: 0
 );
 
-$extend: core-functions.extend("blur", $_defaults);
+$extend: core.extend("blur", $_defaults);

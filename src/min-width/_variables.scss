@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     0: 0,
@@ -10,4 +10,4 @@ $_defaults: (
     screen: 100vw
 );
 
-$extend: core-functions.extend("min-width", $_defaults);
+$extend: core.extend("min-width", $_defaults);

@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     auto,
@@ -12,4 +12,4 @@ $_defaults: (
     stretch
 ) !default;
 
-$extend: core-functions.filter("place-self", $_defaults);
+$extend: core.filter("place-self", $_defaults);

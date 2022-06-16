@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     auto,
@@ -13,4 +13,4 @@ $_defaults: (
     baseline
 ) !default;
 
-$extend: core-functions.filter("align-self", $_defaults);
+$extend: core.filter("align-self", $_defaults);

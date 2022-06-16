@@ -2,11 +2,11 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     "0": 0,
     "1": 1
 );
 
-$extend: core-functions.extend("flex-grow", $_defaults);
+$extend: core.extend("flex-grow", $_defaults);

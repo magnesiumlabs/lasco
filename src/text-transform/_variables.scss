@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     normal,
@@ -11,4 +11,4 @@ $_defaults: (
     capitalize
 );
 
-$extend: core-functions.filter("text-transform", $_defaults);
+$extend: core.filter("text-transform", $_defaults);

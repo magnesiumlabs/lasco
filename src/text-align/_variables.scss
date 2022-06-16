@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     left,
@@ -11,4 +11,4 @@ $_defaults: (
     justify
 );
 
-$extend: core-functions.filter("text-align", $_defaults);
+$extend: core.filter("text-align", $_defaults);

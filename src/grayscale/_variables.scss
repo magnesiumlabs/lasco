@@ -2,10 +2,10 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     0: 0
 );
 
-$extend: core-functions.extend("grayscale", $_defaults);
+$extend: core.extend("grayscale", $_defaults);

@@ -2,31 +2,4 @@
 //                                           FUNCTIONS                                           //
 // ============================================================================================= //
 
-@use "sass:list";
-@use "sass:map";
-@use "sass:meta";
-@use "./variables";
-
-@function extend($property, $defaults) {
-    $map: $defaults;
-
-    @if (meta.type-of(map.get(variables.$extend, $property)) == "map") {
-        $map: map.merge($defaults, map.get(variables.$extend, $property));
-    }
-
-    @return $map;
-}
-
-@function filter($property, $defaults) {
-    $list: $defaults;
-
-    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
-        @if list.index($defaults, map.get(variables.$extend, $property)) == null {
-            @error "Invalid '#{$property}' option, '#{map.get(variables.$extend, $property)}' is not alowed here. Choose one of '#{$defaults}' options.";
-        }
-
-        $list: map.get(variables.$extend, $property);
-    }
-
-    @return $list;
-}
+@forward "./src/core/functions";

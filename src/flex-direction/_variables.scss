@@ -2,7 +2,7 @@
 //                                           VARIABLES                                           //
 // ============================================================================================= //
 
-@use "../../functions" as core-functions;
+@use "../core";
 
 $_defaults: (
     row,
@@ -11,4 +11,4 @@ $_defaults: (
     column-reverse
 );
 
-$extend: core-functions.filter("flex-direction", $_defaults);
+$extend: core.filter("flex-direction", $_defaults);
