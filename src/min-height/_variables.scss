@@ -10,4 +10,4 @@ $_defaults: (
     screen: 100vh
 );
 
-$extend: core.extend("max-height", $_defaults);
+$extend: core.extend($_defaults, "max-height");

@@ -9,4 +9,4 @@ $_defaults: (
     "1": 1
 );
 
-$extend: core.extend("flex-shrink", $_defaults);
+$extend: core.extend($_defaults, "flex-shrink");

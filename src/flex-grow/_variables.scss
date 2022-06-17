@@ -9,4 +9,4 @@ $_defaults: (
     "1": 1
 );
 
-$extend: core.extend("flex-grow", $_defaults);
+$extend: core.extend($_defaults, "flex-grow");

@@ -9,4 +9,4 @@ $_defaults: (
     auto: auto
 );
 
-$extend: core.extend("z-index", $_defaults);
+$extend: core.extend($_defaults, "z-index");

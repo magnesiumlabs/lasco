@@ -10,4 +10,4 @@ $_defaults: (
     "contain": "contain"
 );
 
-$extend: core.extend("bg-size", $_defaults);
+$extend: core.extend($_defaults, "bg-size");

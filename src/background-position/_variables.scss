@@ -12,4 +12,4 @@ $_defaults: (
     "top": "top"
 );
 
-$extend: core.extend("bg-position", $_defaults);
+$extend: core.extend($_defaults, "bg-position");

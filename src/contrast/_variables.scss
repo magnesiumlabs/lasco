@@ -9,4 +9,4 @@ $_defaults: (
     100: 1
 );
 
-$extend: core.extend("contrast", $_defaults);
+$extend: core.extend($_defaults, "contrast");

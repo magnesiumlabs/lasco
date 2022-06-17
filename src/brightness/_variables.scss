@@ -9,4 +9,4 @@ $_defaults: (
     100: 1
 );
 
-$extend: core.extend("brightness", $_defaults);
+$extend: core.extend($_defaults, "brightness");

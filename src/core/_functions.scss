@@ -16,11 +16,11 @@
     @return $value;
 }
 
-@function extend($property, $defaults) {
-    $map: $defaults;
+@function extend($default, $property) {
+    $map: $default;
 
     @if (meta.type-of(map.get(variables.$extend, $property)) == "map") {
-        $map: map.merge($defaults, map.get(variables.$extend, $property));
+        $map: map.merge($default, map.get(variables.$extend, $property));
     }
 
     @return $map;

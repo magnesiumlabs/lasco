@@ -10,4 +10,4 @@ $_defaults: (
     "transparent": "transparent"
 );
 
-$extend: core.extend("bg-color", $_defaults);
+$extend: core.extend($_defaults, "bg-color");

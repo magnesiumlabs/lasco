@@ -8,4 +8,4 @@ $_defaults: (
     0: 0
 );
 
-$extend: core.extend("grayscale", $_defaults);
+$extend: core.extend($_defaults, "grayscale");

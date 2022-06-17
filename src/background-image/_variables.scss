@@ -8,4 +8,4 @@ $_defaults: (
     "none": "none"
 );
 
-$extend: core.extend("bg-image", $_defaults);
+$extend: core.extend($_defaults, "bg-image");

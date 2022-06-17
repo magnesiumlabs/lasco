@@ -10,4 +10,4 @@ $_defaults: (
     video: "16/9"
 );
 
-$extend: core.extend("aspect-ratio", $_defaults);
+$extend: core.extend($_defaults, "aspect-ratio");
