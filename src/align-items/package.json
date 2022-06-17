@@ -23,7 +23,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/magnesiumlabs/lasco.git",
-        "directory": "src/align/items"
+        "directory": "src/align-items"
     },
     "bugs": {
         "url": "https://github.com/magnesiumlabs/lasco/issues"
