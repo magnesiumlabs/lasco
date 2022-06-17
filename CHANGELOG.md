@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.0.1](https://github.com/magnesiumlabs/lasco/compare/v1.0.0...v1.0.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* **core:** filter list when multiple value ([12f0c5e](https://github.com/magnesiumlabs/lasco/commit/12f0c5e03db77f176b0ab53a6252ac3d7b0f46fd))
+
 ## [1.0.0](https://github.com/magnesiumlabs/lasco/compare/v0.25.0...v1.0.0) (2022-06-17)
 
 
