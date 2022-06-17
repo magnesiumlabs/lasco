@@ -26,13 +26,13 @@
     @return $map;
 }
 
-@function filter($property, $defaults) {
-    $list: $defaults;
+@function filter($default, $property) {
+    $list: $default;
 
     @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
         @each $value in map.get(variables.$extend, $property) {
-            @if list.index($defaults, $value) == null {
-                @error "Invalid '#{$value}' option, '#{$value}' is not alowed here. Choose one of '#{$defaults}' options.";
+            @if list.index($default, $value) == null {
+                @error "Invalid '#{$value}' option, '#{$value}' is not alowed here. Choose one of '#{$default}' options.";
             }
 
             $list: map.get(variables.$extend, $property);

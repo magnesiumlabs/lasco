@@ -12,4 +12,4 @@ $_defaults: (
     stretch
 ) !default;
 
-$extend: core.filter("justify-self", $_defaults);
+$extend: core.filter($_defaults, "justify-self");

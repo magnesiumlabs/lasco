@@ -12,4 +12,4 @@ $_defaults: (
     sticky
 );
 
-$extend: core.filter("position", $_defaults);
+$extend: core.filter($_defaults, "position");

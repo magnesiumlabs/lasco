@@ -16,4 +16,4 @@ $_defaults: (
     900
 );
 
-$extend: core.filter("font-weight", $_defaults);
+$extend: core.filter($_defaults, "font-weight");

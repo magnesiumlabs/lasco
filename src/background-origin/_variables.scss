@@ -10,4 +10,4 @@ $_defaults: (
     padding-box
 );
 
-$extend: core.filter("bg-origin", $_defaults);
+$extend: core.filter($_defaults, "bg-origin");

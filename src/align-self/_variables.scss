@@ -13,4 +13,4 @@ $_defaults: (
     baseline
 ) !default;
 
-$extend: core.filter("align-self", $_defaults);
+$extend: core.filter($_defaults, "align-self");

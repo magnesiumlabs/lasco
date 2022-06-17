@@ -14,4 +14,4 @@ $_defaults: (
     stretch
 ) !default;
 
-$extend: core.filter("place-content", $_defaults);
+$extend: core.filter($_defaults, "place-content");

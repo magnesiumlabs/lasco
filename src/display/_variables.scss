@@ -16,4 +16,4 @@ $_defaults: (
     hidden
 );
 
-$extend: core.filter("display", $_defaults);
+$extend: core.filter($_defaults, "display");

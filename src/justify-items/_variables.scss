@@ -11,4 +11,4 @@ $_defaults: (
     stretch
 ) !default;
 
-$extend: core.filter("justify-items", $_defaults);
+$extend: core.filter($_defaults, "justify-items");

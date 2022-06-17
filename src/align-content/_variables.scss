@@ -13,4 +13,4 @@ $_defaults: (
     space-evenly
 ) !default;
 
-$extend: core.filter("align-content", $_defaults);
+$extend: core.filter($_defaults, "align-content");

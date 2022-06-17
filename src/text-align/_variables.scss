@@ -11,4 +11,4 @@ $_defaults: (
     justify
 );
 
-$extend: core.filter("text-align", $_defaults);
+$extend: core.filter($_defaults, "text-align");

@@ -11,4 +11,4 @@ $_defaults: (
     text
 );
 
-$extend: core.filter("bg-clip", $_defaults);
+$extend: core.filter($_defaults, "bg-clip");

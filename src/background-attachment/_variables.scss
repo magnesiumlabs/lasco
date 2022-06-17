@@ -10,4 +10,4 @@ $_defaults: (
     scroll
 );
 
-$extend: core.filter("bg-attachment", $_defaults);
+$extend: core.filter($_defaults, "bg-attachment");

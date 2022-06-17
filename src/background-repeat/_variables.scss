@@ -13,4 +13,4 @@ $_defaults: (
     space
 );
 
-$extend: core.filter("bg-repeat", $_defaults);
+$extend: core.filter($_defaults, "bg-repeat");
