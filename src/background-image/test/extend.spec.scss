@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "@lasco/core" with (
     $extend: (
         "bg-image": (
             "single": "url(\"https://picsum.photos/200/300\")", /// One-value syntax.

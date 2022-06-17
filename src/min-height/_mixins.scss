@@ -4,7 +4,7 @@
 
 @use "sass:meta";
 @use "@unsass/utilities";
-@use "../core";
+@use "@lasco/core";
 @use "./variables";
 
 @mixin core-styles {

@@ -15,7 +15,13 @@
                 "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines."
             }
         ],
-        "@semantic-release/npm",
+        [
+            "semantic-release-lerna",
+            {
+                "npmVerifyAuth": false,
+                "rootVersion": false
+            }
+        ],
         [
             "@semantic-release/release-notes-generator",
             {
@@ -65,7 +71,14 @@
         [
             "@semantic-release/git",
             {
-                "message": "chore(release): publish version ${nextRelease.version}"
+                "message": "chore(release): publish version ${nextRelease.version}",
+                "assets": [
+                    "CHANGELOG.md",
+                    "lerna.json",
+                    "package.json",
+                    "package-lock.json",
+                    "src/*/package.json"
+                ]
             }
         ],
         "@semantic-release/github"

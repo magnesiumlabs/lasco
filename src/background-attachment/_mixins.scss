@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "sass:list";
-@use "../core" as core;
+@use "@lasco/core";
 @use "./variables";
 
 @mixin core-styles {
