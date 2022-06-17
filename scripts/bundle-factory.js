@@ -10,7 +10,7 @@ const PATH = {
 
 const FILES = {
     APP: [
-        './styles.scss'
+        './src/lasco/styles.scss'
     ]
 };
 

@@ -1,0 +1,70 @@
+{
+    "name": "lasco",
+    "version": "1.0.0",
+    "description": "The Sass utilities classes library.",
+    "dependencies": {
+        "@lasco/align-content": "^0.0.0",
+        "@lasco/align-items": "^0.0.0",
+        "@lasco/align-self": "^0.0.0",
+        "@lasco/aspect-ratio": "^0.0.0",
+        "@lasco/background-attachment": "^0.0.0",
+        "@lasco/background-clip": "^0.0.0",
+        "@lasco/background-color": "^0.0.0",
+        "@lasco/background-image": "^0.0.0",
+        "@lasco/background-origin": "^0.0.0",
+        "@lasco/background-position": "^0.0.0",
+        "@lasco/background-repeat": "^0.0.0",
+        "@lasco/background-size": "^0.0.0",
+        "@lasco/blur": "^0.0.0",
+        "@lasco/brightness": "^0.0.0",
+        "@lasco/clear": "^0.0.0",
+        "@lasco/contrast": "^0.0.0",
+        "@lasco/core": "^0.0.0",
+        "@lasco/display": "^0.0.0",
+        "@lasco/flex-direction": "^0.0.0",
+        "@lasco/flex-grow": "^0.0.0",
+        "@lasco/flex-shrink": "^0.0.0",
+        "@lasco/flex-wrap": "^0.0.0",
+        "@lasco/font-weight": "^0.0.0",
+        "@lasco/gap": "^0.0.0",
+        "@lasco/grayscale": "^0.0.0",
+        "@lasco/height": "^0.0.0",
+        "@lasco/justify-content": "^0.0.0",
+        "@lasco/justify-items": "^0.0.0",
+        "@lasco/justify-self": "^0.0.0",
+        "@lasco/max-height": "^0.0.0",
+        "@lasco/max-width": "^0.0.0",
+        "@lasco/min-height": "^0.0.0",
+        "@lasco/min-width": "^0.0.0",
+        "@lasco/opacity": "^0.0.0",
+        "@lasco/place-content": "^0.0.0",
+        "@lasco/place-items": "^0.0.0",
+        "@lasco/place-self": "^0.0.0",
+        "@lasco/position": "^0.0.0",
+        "@lasco/text-align": "^0.0.0",
+        "@lasco/text-transform": "^0.0.0",
+        "@lasco/width": "^0.0.0",
+        "@lasco/z-index": "^0.0.0",
+        "sass": "^1.52.3"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "lasco",
+        "sass",
+        "utilities",
+        "library",
+        "css",
+        "front-end"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/magnesiumlabs/lasco/tree/main",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/magnesiumlabs/lasco.git"
+    },
+    "bugs": {
+        "url": "https://github.com/magnesiumlabs/lasco/issues"
+    }
+}
