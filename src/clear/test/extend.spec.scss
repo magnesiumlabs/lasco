@@ -13,7 +13,7 @@
 @use "../index" as clear;
 
 @include describe("clear.core-styles()") {
-    @include it("Should return extended `clear` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include clear.core-styles;

@@ -13,7 +13,7 @@
 @use "../index" as brightness;
 
 @include describe("brightness.core-styles()") {
-    @include it("Should return extended `brightness` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include brightness.core-styles;

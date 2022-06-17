@@ -15,7 +15,7 @@
 @use "../index" as min-height;
 
 @include describe("min-height.core-styles()") {
-    @include it("Should return extended `min-height` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include min-height.core-styles;

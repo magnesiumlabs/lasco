@@ -15,7 +15,7 @@
 @use "../index" as height;
 
 @include describe("height.core-styles()") {
-    @include it("Should return extended `height` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include height.core-styles;

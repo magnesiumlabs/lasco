@@ -13,7 +13,7 @@
 @use "../index" as justify-content;
 
 @include describe("justify-content.core-styles()") {
-    @include it("Should return extended `justify-content` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include justify-content.core-styles;

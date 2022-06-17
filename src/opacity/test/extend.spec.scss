@@ -13,7 +13,7 @@
 @use "../index" as opacity;
 
 @include describe("opacity.core-styles()") {
-    @include it("Should return extended `opacity` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include opacity.core-styles;

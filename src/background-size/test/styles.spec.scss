@@ -1,0 +1,114 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-size;
+
+@include describe("bg-size.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-size.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-size-auto {
+                    background-size: auto;
+                }
+
+                .bg-size-cover {
+                    background-size: cover;
+                }
+
+                .bg-size-contain {
+                    background-size: contain;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .xs\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .xs\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .sm\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .sm\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .md\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .md\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .lg\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .lg\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .xl\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .xl\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-size-auto {
+                        background-size: auto;
+                    }
+
+                    .\32 xl\:bg-size-cover {
+                        background-size: cover;
+                    }
+
+                    .\32 xl\:bg-size-contain {
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@
 @use "../index" as bg-size;
 
 @include describe("bg-size.core-styles()") {
-    @include it("Should return extended `bg-size` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include bg-size.core-styles;

@@ -13,7 +13,7 @@
 @use "../index" as flex-direction;
 
 @include describe("flex-direction.core-styles()") {
-    @include it("Should return extended `flex-direction` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include flex-direction.core-styles;

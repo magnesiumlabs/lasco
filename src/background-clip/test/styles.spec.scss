@@ -1,0 +1,142 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-clip;
+
+@include describe("bg-clip.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-clip.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-clip-border {
+                    background-clip: border-box;
+                }
+
+                .bg-clip-content {
+                    background-clip: content-box;
+                }
+
+                .bg-clip-padding {
+                    background-clip: padding-box;
+                }
+
+                .bg-clip-text {
+                    background-clip: text;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .xs\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .xs\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .xs\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .sm\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .sm\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .sm\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .md\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .md\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .md\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .lg\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .lg\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .lg\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .xl\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .xl\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .xl\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-clip-border {
+                        background-clip: border-box;
+                    }
+
+                    .\32 xl\:bg-clip-content {
+                        background-clip: content-box;
+                    }
+
+                    .\32 xl\:bg-clip-padding {
+                        background-clip: padding-box;
+                    }
+
+                    .\32 xl\:bg-clip-text {
+                        background-clip: text;
+                    }
+                }
+            }
+        }
+    }
+}

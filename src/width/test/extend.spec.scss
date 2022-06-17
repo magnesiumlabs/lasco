@@ -15,7 +15,7 @@
 @use "../index" as width;
 
 @include describe("width.core-styles()") {
-    @include it("Should return extended `width` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include width.core-styles;

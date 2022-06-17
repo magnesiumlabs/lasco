@@ -13,7 +13,7 @@
 @use "../index" as position;
 
 @include describe("position.core-styles()") {
-    @include it("Should return extended `position` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include position.core-styles;

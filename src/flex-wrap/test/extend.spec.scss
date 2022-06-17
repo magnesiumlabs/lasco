@@ -13,7 +13,7 @@
 @use "../index" as flex-wrap;
 
 @include describe("flex-wrap.core-styles()") {
-    @include it("Should return extended `flex-wrap` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include flex-wrap.core-styles;

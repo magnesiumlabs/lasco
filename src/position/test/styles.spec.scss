@@ -1,0 +1,218 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as position;
+
+@include describe("position.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include position.core-styles;
+            }
+
+            @include expect(false) {
+                .absolute {
+                    position: absolute;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:absolute {
+                        position: absolute;
+                    }
+                }
+
+                .fixed {
+                    position: fixed;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:fixed {
+                        position: fixed;
+                    }
+                }
+
+                .relative {
+                    position: relative;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:relative {
+                        position: relative;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:relative {
+                        position: relative;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:relative {
+                        position: relative;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:relative {
+                        position: relative;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:relative {
+                        position: relative;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:relative {
+                        position: relative;
+                    }
+                }
+
+                .static {
+                    position: static;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:static {
+                        position: static;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:static {
+                        position: static;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:static {
+                        position: static;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:static {
+                        position: static;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:static {
+                        position: static;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:static {
+                        position: static;
+                    }
+                }
+
+                .sticky {
+                    position: sticky;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:sticky {
+                        position: sticky;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:sticky {
+                        position: sticky;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:sticky {
+                        position: sticky;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:sticky {
+                        position: sticky;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:sticky {
+                        position: sticky;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:sticky {
+                        position: sticky;
+                    }
+                }
+            }
+        }
+    }
+}

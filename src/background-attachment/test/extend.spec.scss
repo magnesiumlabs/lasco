@@ -13,7 +13,7 @@
 @use "../index" as bg-attachment;
 
 @include describe("bg-attachment.core-styles()") {
-    @include it("Should return extended `bg-attachment` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include bg-attachment.core-styles;

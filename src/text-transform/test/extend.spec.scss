@@ -13,7 +13,7 @@
 @use "../index" as text-transform;
 
 @include describe("text-transform.core-styles()") {
-    @include it("Should return extended `text-transform` declarations.") {
+    @include it("Should return extended declarations.") {
         @include assert {
             @include output(false) {
                 @include text-transform.core-styles;

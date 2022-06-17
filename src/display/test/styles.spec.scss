@@ -1,0 +1,378 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as display;
+
+@include describe("display.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include display.core-styles;
+            }
+
+            @include expect(false) {
+                .block {
+                    display: block;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:block {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:block {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:block {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:block {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:block {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:block {
+                        display: block;
+                    }
+                }
+
+                .inline-block {
+                    display: inline-block;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:inline-block {
+                        display: inline-block;
+                    }
+                }
+
+                .flex {
+                    display: flex;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex {
+                        display: flex;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex {
+                        display: flex;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex {
+                        display: flex;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex {
+                        display: flex;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex {
+                        display: flex;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex {
+                        display: flex;
+                    }
+                }
+
+                .inline-flex {
+                    display: inline-flex;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:inline-flex {
+                        display: inline-flex;
+                    }
+                }
+
+                .grid {
+                    display: grid;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:grid {
+                        display: grid;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:grid {
+                        display: grid;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:grid {
+                        display: grid;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:grid {
+                        display: grid;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:grid {
+                        display: grid;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:grid {
+                        display: grid;
+                    }
+                }
+
+                .inline-grid {
+                    display: inline-grid;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:inline-grid {
+                        display: inline-grid;
+                    }
+                }
+
+                .table {
+                    display: table;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:table {
+                        display: table;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:table {
+                        display: table;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:table {
+                        display: table;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:table {
+                        display: table;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:table {
+                        display: table;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:table {
+                        display: table;
+                    }
+                }
+
+                .inline-table {
+                    display: inline-table;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:inline-table {
+                        display: inline-table;
+                    }
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:hidden {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:hidden {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:hidden {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:hidden {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:hidden {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:hidden {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as justify-items;
+
+@include describe("justify-items.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include justify-items.core-styles;
+            }
+
+            @include expect(false) {
+                .justify-items-start {
+                    justify-items: start;
+                }
+
+                .justify-items-end {
+                    justify-items: end;
+                }
+
+                .justify-items-center {
+                    justify-items: center;
+                }
+
+                .justify-items-stretch {
+                    justify-items: stretch;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .xs\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .xs\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .xs\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .sm\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .sm\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .sm\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .md\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .md\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .md\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .lg\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .lg\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .lg\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .xl\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .xl\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .xl\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:justify-items-start {
+                        justify-items: start;
+                    }
+
+                    .\32 xl\:justify-items-end {
+                        justify-items: end;
+                    }
+
+                    .\32 xl\:justify-items-center {
+                        justify-items: center;
+                    }
+
+                    .\32 xl\:justify-items-stretch {
+                        justify-items: stretch;
+                    }
+                }
+            }
+        }
+    }
+}

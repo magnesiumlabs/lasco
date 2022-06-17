@@ -1,0 +1,198 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as bg-repeat;
+
+@include describe("bg-repeat.core-styles()") {
+    @include it("Should return main styles for declarations.") {
+        @include assert {
+            @include output(false) {
+                @include bg-repeat.core-styles;
+            }
+
+            @include expect(false) {
+                .bg-repeat {
+                    background-repeat: repeat;
+                }
+
+                .bg-repeat-none {
+                    background-repeat: no-repeat;
+                }
+
+                .bg-repeat-x {
+                    background-repeat: repeat-x;
+                }
+
+                .bg-repeat-y {
+                    background-repeat: repeat-y;
+                }
+
+                .bg-repeat-round {
+                    background-repeat: round;
+                }
+
+                .bg-repeat-space {
+                    background-repeat: space;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .xs\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .xs\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .xs\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .xs\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .xs\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .sm\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .sm\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .sm\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .sm\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .sm\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .md\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .md\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .md\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .md\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .md\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .lg\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .lg\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .lg\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .lg\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .lg\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .xl\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .xl\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .xl\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .xl\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .xl\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:bg-repeat {
+                        background-repeat: repeat;
+                    }
+
+                    .\32 xl\:bg-repeat-none {
+                        background-repeat: no-repeat;
+                    }
+
+                    .\32 xl\:bg-repeat-x {
+                        background-repeat: repeat-x;
+                    }
+
+                    .\32 xl\:bg-repeat-y {
+                        background-repeat: repeat-y;
+                    }
+
+                    .\32 xl\:bg-repeat-round {
+                        background-repeat: round;
+                    }
+
+                    .\32 xl\:bg-repeat-space {
+                        background-repeat: space;
+                    }
+                }
+            }
+        }
+    }
+}
