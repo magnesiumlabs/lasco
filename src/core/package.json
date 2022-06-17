@@ -3,6 +3,7 @@
     "name": "@lasco/core",
     "version": "0.0.0",
     "description": "",
+    "license": "MIT",
     "main": "index.scss",
     "dependencies": {
         "@sass-collective/css": "^2.1.0",

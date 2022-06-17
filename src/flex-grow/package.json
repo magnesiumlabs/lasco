@@ -3,6 +3,7 @@
     "name": "@lasco/flex-grow",
     "version": "0.0.0",
     "description": "",
+    "license": "MIT",
     "main": "index.scss",
     "dependencies": {
         "@lasco/core": "^0.0.0",
