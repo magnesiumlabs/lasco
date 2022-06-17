@@ -2,4 +2,11 @@
 //                                         CONFIGURATION                                         //
 // ============================================================================================= //
 
-@forward "./src/core/config";
+@use "sass:map";
+@use "@unsass/breakpoint";
+@use "./variables";
+
+///
+/// @see {mixin} breakpoint.config
+///
+@include breakpoint.config(variables.$screens);

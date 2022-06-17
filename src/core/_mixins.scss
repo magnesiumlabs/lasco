@@ -19,18 +19,25 @@
 
 @mixin declaration($property) {
     $declaration: true;
+    $breakpoint: true;
 
     @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
         $declaration: false;
     }
 
+    @if variables.$screens == false {
+        $breakpoint: false;
+    }
+
     @if $declaration {
         @content;
 
-        @each $key, $value in breakpoint.get-screens() {
-            @include breakpoint.up($key) {
-                @include css.selector($key) {
-                    @content;
+        @if $breakpoint {
+            @each $key, $value in breakpoint.get-screens() {
+                @include breakpoint.up($key) {
+                    @include css.selector($key) {
+                        @content;
+                    }
                 }
             }
         }

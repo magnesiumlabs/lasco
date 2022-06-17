@@ -3,6 +3,9 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../core" with (
+    $screens: false
+);
 @use "../index" as align-items;
 
 @include describe("align-items.core-styles()") {
@@ -31,138 +34,6 @@
 
                 .align-items-stretch {
                     align-items: stretch;
-                }
-
-                @media (min-width: 320px) {
-                    .xs\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .xs\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .xs\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .xs\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .xs\:align-items-stretch {
-                        align-items: stretch;
-                    }
-                }
-
-                @media (min-width: 480px) {
-                    .sm\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .sm\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .sm\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .sm\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .sm\:align-items-stretch {
-                        align-items: stretch;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    .md\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .md\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .md\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .md\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .md\:align-items-stretch {
-                        align-items: stretch;
-                    }
-                }
-
-                @media (min-width: 960px) {
-                    .lg\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .lg\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .lg\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .lg\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .lg\:align-items-stretch {
-                        align-items: stretch;
-                    }
-                }
-
-                @media (min-width: 1200px) {
-                    .xl\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .xl\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .xl\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .xl\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .xl\:align-items-stretch {
-                        align-items: stretch;
-                    }
-                }
-
-                @media (min-width: 1400px) {
-                    .\32 xl\:align-items-start {
-                        align-items: flex-start;
-                    }
-
-                    .\32 xl\:align-items-end {
-                        align-items: flex-end;
-                    }
-
-                    .\32 xl\:align-items-center {
-                        align-items: center;
-                    }
-
-                    .\32 xl\:align-items-baseline {
-                        align-items: baseline;
-                    }
-
-                    .\32 xl\:align-items-stretch {
-                        align-items: stretch;
-                    }
                 }
             }
         }

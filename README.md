@@ -22,27 +22,35 @@ npm install lasco
 @use "lasco/styles";
 ```
 
-### Breakpoints
-
-See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint#tokens) plugin.
+## Configuration
 
 ```scss
 @use "lasco" with (
     $extend: (
-        "screens": (
-            "lg": 1024px
+        "display": (
+            flex
         )
     )
 );
 ```
 
-#### Disable breakpoints
+### Options
+
+| Name       | Default | Description                                                                                               |
+|------------|---------|-----------------------------------------------------------------------------------------------------------|
+| `$extend`  | `()`    | Extend classes generator. List of [properties](#properties).                                              |
+| `$screens` | `()`    | Extend breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
+
+### Disabled
+
+For example, if you don't need the `display` classes, you can disable them by setting the option to `false`.
 
 ```scss
 @use "lasco" with (
     $extend: (
-        "screens": false
-    )
+        "display": false
+    ),
+    $screens: false // Disabled the breakpoints classes.
 );
 ```
 
@@ -114,10 +122,10 @@ See [breakpoint](https://github.com/sass-collective/sass-collective/tree/master/
 
 | Property          | Docs                                              |
 |-------------------|---------------------------------------------------|
-| `flex-direction`  | _Coming soon._                                    |
-| `flex-wrap`       | _Coming soon._                                    |
-| `flex-grow`       | _Coming soon._                                    |
-| `flex-shrink`     | _Coming soon._                                    |
+| `flex-direction`  | See [documentation](/src/flex-direction#readme).  |
+| `flex-wrap`       | See [documentation](/src/flex-wrap#readme).       |
+| `flex-grow`       | See [documentation](/src/flex-grow#readme).       |
+| `flex-shrink`     | See [documentation](/src/flex-shrink#readme).     |
 | `gap`             | See [documentation](/src/gap#readme).             |
 | `justify-self`    | See [documentation](/src/justify-self#readme).    |
 | `justify-items`   | See [documentation](/src/justify-items#readme).   |
