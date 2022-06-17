@@ -5,6 +5,7 @@
     "description": "",
     "main": "index.scss",
     "dependencies": {
+        "@lasco/core": "^0.0.0",
         "sass": "^1.52.3"
     },
     "files": [
