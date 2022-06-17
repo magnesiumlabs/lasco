@@ -25,5 +25,8 @@
     },
     "bugs": {
         "url": "https://github.com/magnesiumlabs/lasco/issues"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
