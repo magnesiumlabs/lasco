@@ -30,11 +30,13 @@
     $list: $defaults;
 
     @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
-        @if list.index($defaults, map.get(variables.$extend, $property)) == null {
-            @error "Invalid '#{$property}' option, '#{map.get(variables.$extend, $property)}' is not alowed here. Choose one of '#{$defaults}' options.";
-        }
+        @each $value in map.get(variables.$extend, $property) {
+            @if list.index($defaults, $value) == null {
+                @error "Invalid '#{$value}' option, '#{$value}' is not alowed here. Choose one of '#{$defaults}' options.";
+            }
 
-        $list: map.get(variables.$extend, $property);
+            $list: map.get(variables.$extend, $property);
+        }
     }
 
     @return $list;
