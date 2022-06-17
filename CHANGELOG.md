@@ -2,6 +2,107 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/magnesiumlabs/lasco/compare/v0.25.0...v1.0.0) (2022-06-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **flex-wrap:** use new core `declaration` mixin
+* **flex-shrink:** use new core `declaration` mixin
+* **flex-grow:** use new core `declaration` mixin
+* **flex-direction:** use new core `declaration` mixin
+* **background-size:** use new core `declaration` mixin
+* **background-repeat:** use new core `declaration` mixin
+* **background-position:** use new core `declaration` mixin
+* **background-origin:** use new core `declaration` mixin
+* **background-image:** use new core `declaration` mixin
+* **background-color:** use new core `declaration` mixin
+* **background-clip:** use new core `declaration` mixin
+* **grayscale:** use new core `declaration` mixin
+* **contrast:** use new core `declaration` mixin
+* **brightness:** use new core `declaration` mixin
+* **blur:** use new core `declaration` mixin
+* **text-transform:** use new core `declaration` mixin
+* **text-align:** use new core `declaration` mixin
+* **font-weight:** use new core `declaration` mixin
+* **justify:** use new core `declaration` mixins
+* **place:** use new core `declaration` mixins
+* **align:** use new core `declaration` mixins
+* **width:** use new core `declaration` mixins
+* **min-height, max-height:** use new core `declaration` mixins
+* **height:** use new core `declaration` mixins
+* **bg-attachment:** use new core `declaration` mixins
+* **gap:** use new core `declaration` mixins
+* **aspect-ratio:** use new core `declaration` mixins
+* **opacity:** use new core `declaration` mixins
+* **z-index:** use new core `declaration` mixins
+* **position:** use new core `declaration` mixins
+* **clear:** use new core `declaration` mixins
+* **display:** use new core `declaration` mixins
+
+### Features
+
+* **align-content, align-items, align-self:** moved to their own folders ([1a04cdf](https://github.com/magnesiumlabs/lasco/commit/1a04cdf1a1a9904b17c44259a7bcf00eebe2e92e)), closes [#36](https://github.com/magnesiumlabs/lasco/issues/36)
+* **align:** use new core `declaration` mixins ([44fa8f6](https://github.com/magnesiumlabs/lasco/commit/44fa8f6eb0f9f9a06d0b92aa45bf0fa1b31b7811)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **aspect-ratio:** use new core `declaration` mixins ([6a9cb94](https://github.com/magnesiumlabs/lasco/commit/6a9cb94da000f4eb195fd49ef7db0596cade6b86)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-attachment:** moved to their own folders ([e55e150](https://github.com/magnesiumlabs/lasco/commit/e55e1509deb5f7b1d4ee15a5eaedb979268e1da0))
+* **background-clip:** use new core `declaration` mixin ([74ddaf2](https://github.com/magnesiumlabs/lasco/commit/74ddaf2336cbd2ecb69e5e063318884b7c897f3b)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-color:** use new core `declaration` mixin ([0b54710](https://github.com/magnesiumlabs/lasco/commit/0b54710465fb31440bbb0f0c8e9839d4b0171a8e)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-image:** use new core `declaration` mixin ([4f7a77d](https://github.com/magnesiumlabs/lasco/commit/4f7a77de26b53dd3257e1285282bacfc340e6b01)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-origin:** use new core `declaration` mixin ([09d5536](https://github.com/magnesiumlabs/lasco/commit/09d5536f0a8f15d763a941b26b084f8cce56a3ee)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-position:** use new core `declaration` mixin ([3bc5416](https://github.com/magnesiumlabs/lasco/commit/3bc541643190d139228eb2d63f13f543f0b2002d)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-repeat:** use new core `declaration` mixin ([34bdf78](https://github.com/magnesiumlabs/lasco/commit/34bdf785cdf24bcd98624698a70292f07a6a224f)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **background-size:** use new core `declaration` mixin ([14d93a3](https://github.com/magnesiumlabs/lasco/commit/14d93a309662fb473b2da1fcf2a83f639109358a)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **bg-attachment:** use new core `declaration` mixins ([9191d36](https://github.com/magnesiumlabs/lasco/commit/9191d36fe2803286fbb61eb91acab91519015b60)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **blur:** use new core `declaration` mixin ([8cbc716](https://github.com/magnesiumlabs/lasco/commit/8cbc71604b828e230397894930ded74eeb216059)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **brightness:** use new core `declaration` mixin ([be7135e](https://github.com/magnesiumlabs/lasco/commit/be7135e34809e0804a2471c1e430566840c9e03f)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **clear:** use new core `declaration` mixins ([b23ce37](https://github.com/magnesiumlabs/lasco/commit/b23ce378573b00d3db88616c316b0ea151664433)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **contrast:** use new core `declaration` mixin ([0c0992c](https://github.com/magnesiumlabs/lasco/commit/0c0992c71e06875c95e1aef9c2bcfdb338d7a2e4)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **display:** use new core `declaration` mixins ([fc415e4](https://github.com/magnesiumlabs/lasco/commit/fc415e4479ce9bd26faa787105b5fa39cdb57228)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **flex-direction:** use new core `declaration` mixin ([5c83465](https://github.com/magnesiumlabs/lasco/commit/5c83465b37c6049f37abbc25cd92ae6b9ad2fc29)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **flex-grow:** use new core `declaration` mixin ([b2f5fa4](https://github.com/magnesiumlabs/lasco/commit/b2f5fa4c4da0b74399a9dd65b46d5b0e55560744)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **flex-shrink:** use new core `declaration` mixin ([5fb6747](https://github.com/magnesiumlabs/lasco/commit/5fb674764429ee5a50e610b7186f8b3a97f8cef9)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **flex-wrap:** use new core `declaration` mixin ([194d696](https://github.com/magnesiumlabs/lasco/commit/194d696314cc93d8f65d1defc57e79d933520d73)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **font-weight:** use new core `declaration` mixin ([02294f1](https://github.com/magnesiumlabs/lasco/commit/02294f1a988b718363dd09610c5a6b62037d70bb)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **gap:** use new core `declaration` mixins ([39e99c3](https://github.com/magnesiumlabs/lasco/commit/39e99c3e5bbdd507a4a99460b47ecb780dc787ff)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **grayscale:** use new core `declaration` mixin ([9ca3d83](https://github.com/magnesiumlabs/lasco/commit/9ca3d83a130e22a19378544b2121b61dc9f2891e)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **height:** use new core `declaration` mixins ([b36699b](https://github.com/magnesiumlabs/lasco/commit/b36699b505cf20b49038dfb9d1bb4342ffb23560)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **justify-content, justify-items, justify-self:** moved to their own folders ([2b4ac1a](https://github.com/magnesiumlabs/lasco/commit/2b4ac1a39cc07e83ca87222150e5bee7c40d7116)), closes [#34](https://github.com/magnesiumlabs/lasco/issues/34)
+* **justify:** use new core `declaration` mixins ([13db356](https://github.com/magnesiumlabs/lasco/commit/13db3562acc33016c16d15aa82bdf54d95bacd68)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **min-height, max-height:** moved to their own folders ([9fed1db](https://github.com/magnesiumlabs/lasco/commit/9fed1db25774d85a0a738675007e435e44b44e18))
+* **min-height, max-height:** use new core `declaration` mixins ([e858452](https://github.com/magnesiumlabs/lasco/commit/e858452c4653b71731594186725125632d776ec1)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **min-width, max-width:** moved to their own folders ([a765888](https://github.com/magnesiumlabs/lasco/commit/a7658881a822abbff33bf008415fb004c2af01b1))
+* **opacity:** use new core `declaration` mixins ([9bd8328](https://github.com/magnesiumlabs/lasco/commit/9bd8328edc5c2f92c6a31696f48dba784545c6e1)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **options:** rework `screens` option ([23a05fc](https://github.com/magnesiumlabs/lasco/commit/23a05fcb230b265bb86f7ebd976a12ea1a70cad2))
+* **place-content, place-items, place-self:** moved to their own folders ([a172347](https://github.com/magnesiumlabs/lasco/commit/a172347c15959ef0fe741678b6939169ca52305b)), closes [#35](https://github.com/magnesiumlabs/lasco/issues/35)
+* **place:** use new core `declaration` mixins ([23f8919](https://github.com/magnesiumlabs/lasco/commit/23f89197a98e1c5cfbfcc2b189f7c8f8af6d298d)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **position:** use new core `declaration` mixins ([699e93a](https://github.com/magnesiumlabs/lasco/commit/699e93aa3043ce07761f03dd396eab2ef1a6054e)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **text-align:** use new core `declaration` mixin ([0cd3b59](https://github.com/magnesiumlabs/lasco/commit/0cd3b59cae127fe7b9d4fed3a2acdbd0a5c82b53)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **text-transform:** use new core `declaration` mixin ([f1fa685](https://github.com/magnesiumlabs/lasco/commit/f1fa685c9aef51fc6540ac8a508bb6de575636a9)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **width:** use new core `declaration` mixins ([47de4b1](https://github.com/magnesiumlabs/lasco/commit/47de4b13c39b20fd5b1eeee8b9a52b2c123aabcf)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+* **z-index:** use new core `declaration` mixins ([cf00cd7](https://github.com/magnesiumlabs/lasco/commit/cf00cd7625349f78dd5ed71cc74ab426673d4f95)), closes [#63](https://github.com/magnesiumlabs/lasco/issues/63)
+
+
+### Bug Fixes
+
+* **core:** bad path ([470116e](https://github.com/magnesiumlabs/lasco/commit/470116e7b1c9991a6b1cc4fe30c66a3c56df68bc))
+* scope name duplication ([f3e2bd0](https://github.com/magnesiumlabs/lasco/commit/f3e2bd0562dfd1ab06aec2327dc47bdb92f5a2af))
+
+
+### Code Refactoring
+
+* add `index.scss` inside all folders ([98d2228](https://github.com/magnesiumlabs/lasco/commit/98d2228f83a67edd15edab912b7d152902c5ea4b))
+* move `$extend` to `core` ([4dcc9e1](https://github.com/magnesiumlabs/lasco/commit/4dcc9e13f169bd88e892d6d08d52666d1ed7ecb6))
+* move functions to `core` ([a01fcee](https://github.com/magnesiumlabs/lasco/commit/a01fcee1914f6388a2f8799d9ecf234451103b13))
+* remove `_config.scss` ([598457d](https://github.com/magnesiumlabs/lasco/commit/598457d5229487b4dd0c61ca95e9baa5c2ac8f6d))
+* remove old `flex` folder ([3505bbc](https://github.com/magnesiumlabs/lasco/commit/3505bbc9d1aafdc2b986470dcc0a7d174188c7c7))
+* remove unneeded `@sass-collective/css` call ([0a273a9](https://github.com/magnesiumlabs/lasco/commit/0a273a9918063fd3ce0b0cef1190bb0870d84085))
+* remove unneeded calls ([72c023e](https://github.com/magnesiumlabs/lasco/commit/72c023e76f30cfd2af76d4c814f76979d651432c))
+* remove unneeded calls ([3ebffe1](https://github.com/magnesiumlabs/lasco/commit/3ebffe1745258a193a64a79c770c208567f09655))
+* remove unneeded scope name ([aebf987](https://github.com/magnesiumlabs/lasco/commit/aebf9874032589b7f3dab39b601a1b8cf214e043))
+* remove unused code ([167a2e3](https://github.com/magnesiumlabs/lasco/commit/167a2e359b11a56ee1dae1c2047d31406f62f9ea))
+* wrap properties with quotes ([a77757c](https://github.com/magnesiumlabs/lasco/commit/a77757c34890338e3e226571bd5710f7464d8b5d))
+
 ## [1.0.0-beta.1](https://github.com/magnesiumlabs/lasco/compare/v0.25.0...v1.0.0-beta.1) (2022-06-17)
 
 
