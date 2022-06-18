@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/magnesiumlabs/lasco/compare/v1.0.1...v1.1.0) (2022-06-18)
+
+
+### Features
+
+* **core:** add  `$engine` option with `list` key ([224dcfd](https://github.com/magnesiumlabs/lasco/commit/224dcfd2776084b4d411ba046a29d7fae975656a)), closes [#68](https://github.com/magnesiumlabs/lasco/issues/68)
+* **font-style:** add main styles ([65f82db](https://github.com/magnesiumlabs/lasco/commit/65f82db0bab0151043f640d3c70bf79485d3ebaa))
+
+
+### Code Refactoring
+
+* **core:** reorder `extend` parameters ([da85b05](https://github.com/magnesiumlabs/lasco/commit/da85b05ad3b9b5d925e60b2e78792b6376c7cdab))
+* **core:** reorder `filter` parameters ([d5f0fa1](https://github.com/magnesiumlabs/lasco/commit/d5f0fa17bc7b9c4763d06b9c765ed60a74e3ce29))
+
 ### [1.0.1](https://github.com/magnesiumlabs/lasco/compare/v1.0.0...v1.0.1) (2022-06-17)
 
 
