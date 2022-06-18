@@ -36,21 +36,58 @@ npm install lasco
 
 ### Options
 
-| Name       | Default | Description                                                                                               |
-|------------|---------|-----------------------------------------------------------------------------------------------------------|
-| `$extend`  | `()`    | Extend classes generator. List of [properties](#properties).                                              |
-| `$screens` | `()`    | Extend breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
+| Name       | Default                              | Description                                                                                               |
+|------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| `$engine`  | See [Engine](#the-engine-keys) keys. | Sets engine options for generate classes.                                                                 |
+| `$extend`  | `()`                                 | Extend classes generator. List of [properties](#properties).                                              |
+| `$screens` | `()`                                 | Extend breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
 
-### Disabled
+#### The `$engine` keys
 
-For example, if you don't need the `display` classes, you can disable them by setting the option to `false`.
+| Name   | Default | Description                                               |
+|--------|---------|-----------------------------------------------------------|
+| `list` | `black` | Sets list engine _(black or white)_ for generate classes. |
+
+### Extend with black list engine _(default)_
+
+```scss
+@use "lasco" with (
+    $extend: (
+        "display": (
+            flex
+        )
+    )
+);
+```
+
+#### Disabled
 
 ```scss
 @use "lasco" with (
     $extend: (
         "display": false
+    )
+);
+```
+
+### Extend with white list engine
+
+This method provide only properties set at `true` or with valued map.
+
+For example, if you only need the `display` and `position: absolute` classes, you can set `"list": "white"` option
+on `$engine` and configure the `$extend` like that:
+
+```scss
+@use "lasco" with (
+    $engine: (
+        "list": "white"
     ),
-    $screens: false // Disabled the breakpoints classes.
+    $extend: (
+        "display": true,
+        "position": (
+            absolute
+        )
+    )
 );
 ```
 

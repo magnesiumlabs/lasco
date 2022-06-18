@@ -41,3 +41,11 @@
 
     @return $list;
 }
+
+@function is-black-list() {
+    @return map.has-key(variables.$engine, "list") and  map.get(variables.$engine, "list") == "black";
+}
+
+@function is-white-list() {
+    @return map.has-key(variables.$engine, "list") and  map.get(variables.$engine, "list") == "white";
+}

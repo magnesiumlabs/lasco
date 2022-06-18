@@ -6,6 +6,7 @@
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
 @use "./variables";
+@use "./functions";
 
 // ------------------------------------------------------------------------- //
 // Private mixins
@@ -21,13 +22,35 @@
     $declaration: true;
     $breakpoint: true;
 
-    @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
+    ///
+    /// Sets white list engine.
+    ///
+
+    @if functions.is-white-list() {
         $declaration: false;
     }
+
+    @if functions.is-white-list() {
+        @if map.has-key(variables.$extend, $property) {
+            $declaration: true;
+        }
+    } @else {
+        @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
+            $declaration: false;
+        }
+    }
+
+    ///
+    /// Conditional breakpoint.
+    ///
 
     @if variables.$screens == false {
         $breakpoint: false;
     }
+
+    ///
+    /// Set declaration.
+    ///
 
     @if $declaration {
         @content;
