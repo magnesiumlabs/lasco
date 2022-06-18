@@ -1,0 +1,104 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: (
+        lg: "1024px"
+    )
+);
+@use "../../core/config";
+@use "../index" as font-style;
+
+@include describe("font-style.core-styles()") {
+    @include it("Should return main styles declarations with extended breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include font-style.core-styles;
+            }
+
+            @include expect(false) {
+                .font-normal {
+                    font-style: normal;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    .lg\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:font-normal {
+                        font-style: normal;
+                    }
+                }
+
+                .font-italic {
+                    font-style: italic;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:font-italic {
+                        font-style: italic;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:font-italic {
+                        font-style: italic;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:font-italic {
+                        font-style: italic;
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    .lg\:font-italic {
+                        font-style: italic;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:font-italic {
+                        font-style: italic;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:font-italic {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

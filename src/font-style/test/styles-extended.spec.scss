@@ -1,0 +1,30 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: false,
+    $extend: (
+        "font-style": (
+            italic
+        )
+    )
+);
+@use "../index" as font-style;
+
+@include describe("font-style.core-styles()") {
+    @include it("Should return main styles extended declarations.") {
+        @include assert {
+            @include output(false) {
+                @include font-style.core-styles;
+            }
+
+            @include expect(false) {
+                .font-italic {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

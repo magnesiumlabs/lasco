@@ -41,6 +41,7 @@
 // Typography
 // ------------------------------------------------------------------------- //
 
+@use "./src/font-style/styles" as font-style-styles;
 @use "./src/font-weight/styles" as font-weight-styles;
 @use "./src/text-align/styles" as text-align-styles;
 @use "./src/text-transform/styles" as text-transform-styles;

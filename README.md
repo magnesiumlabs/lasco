@@ -88,7 +88,7 @@ For example, if you don't need the `display` classes, you can disable them by se
 | Property          | Docs                                             |
 |-------------------|--------------------------------------------------|
 | `font-size`       | _Coming soon._                                   |
-| `font-style`      | _Coming soon._                                   |
+| `font-style`      | See [documentation](/src/font-style#readme).     |
 | `font-weight`     | See [documentation](/src/font-weight#readme).    |
 | `letter-spacing`  | _Coming soon._                                   |
 | `line-height`     | _Coming soon._                                   |
