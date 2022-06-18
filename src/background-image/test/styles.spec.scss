@@ -6,7 +6,7 @@
 @use "../index" as bg-image;
 
 @include describe("bg-image.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include bg-image.core-styles;

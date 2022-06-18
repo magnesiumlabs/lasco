@@ -6,7 +6,7 @@
 @use "../index" as place-content;
 
 @include describe("place-content.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include place-content.core-styles;

@@ -6,7 +6,7 @@
 @use "../index" as flex-wrap;
 
 @include describe("flex-wrap.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include flex-wrap.core-styles;

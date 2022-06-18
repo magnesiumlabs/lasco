@@ -13,7 +13,7 @@
 @use "../index" as bg-color;
 
 @include describe("bg-color.core-styles()") {
-    @include it("Should return extended declarations.") {
+    @include it("Should return main styles extended declarations.") {
         @include assert {
             @include output(false) {
                 @include bg-color.core-styles;

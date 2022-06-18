@@ -6,7 +6,7 @@
 @use "../index" as z-index;
 
 @include describe("z-index.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include z-index.core-styles;

@@ -6,7 +6,7 @@
 @use "../index" as flex-shrink;
 
 @include describe("flex-shrink.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include flex-shrink.core-styles;

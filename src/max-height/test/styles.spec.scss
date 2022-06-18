@@ -6,7 +6,7 @@
 @use "../index" as max-height;
 
 @include describe("max-height.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include max-height.core-styles;

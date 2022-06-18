@@ -6,7 +6,7 @@
 @use "../index" as bg-clip;
 
 @include describe("bg-clip.core-styles()") {
-    @include it("Should return main styles for declarations.") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
                 @include bg-clip.core-styles;

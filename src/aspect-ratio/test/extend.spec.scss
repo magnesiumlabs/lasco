@@ -13,7 +13,7 @@
 @use "../index" as aspect-ratio;
 
 @include describe("aspect-ratio.core-styles()") {
-    @include it("Should return extended declarations.") {
+    @include it("Should return main styles extended declarations.") {
         @include assert {
             @include output(false) {
                 @include aspect-ratio.core-styles;
