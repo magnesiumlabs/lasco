@@ -4,8 +4,10 @@
 
 @use "true" as *;
 @use "../../core" with (
-    $screens: (
-        lg: "1024px"
+    $engine: (
+        "screens": (
+           "lg": "1024px"
+        )
     ),
     $extend: (
         "align-content": (

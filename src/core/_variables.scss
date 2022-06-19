@@ -17,9 +17,14 @@ $names: (
     space-evenly: evenly
 );
 
+///
+/// @deprecated Use `$engine` with `screens` key instead.
+///
+$screens: () !default;
+
 $engine: (
+    "screens": $screens,
     "list": "black"
 ) !default;
 
 $extend: () !default;
-$screens: () !default;

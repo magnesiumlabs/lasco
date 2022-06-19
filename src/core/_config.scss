@@ -9,4 +9,4 @@
 ///
 /// @see {mixin} breakpoint.config
 ///
-@include breakpoint.config(variables.$screens);
+@include breakpoint.config(map.get(variables.$engine, "screens"));

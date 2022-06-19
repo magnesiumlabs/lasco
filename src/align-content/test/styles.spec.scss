@@ -4,7 +4,9 @@
 
 @use "true" as *;
 @use "../../core" with (
-    $screens: false
+    $engine: (
+        "screens": false
+    )
 );
 @use "../index" as align-content;
 

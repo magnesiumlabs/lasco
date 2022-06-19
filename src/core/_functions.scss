@@ -43,9 +43,19 @@
 }
 
 @function is-black-list() {
-    @return map.has-key(variables.$engine, "list") and  map.get(variables.$engine, "list") == "black";
+    @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "black";
 }
 
 @function is-white-list() {
-    @return map.has-key(variables.$engine, "list") and  map.get(variables.$engine, "list") == "white";
+    @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "white";
+}
+
+@function has-breakpoints() {
+    $breakpoint: false;
+
+    @if (map.has-key(variables.$engine, "screens") and meta.type-of(map.get(variables.$engine, "screens")) == map) or (map.has-key(variables.$engine, "screens") and meta.type-of(map.get(variables.$engine, "screens")) == list) {
+        $breakpoint: true;
+    }
+
+    @return $breakpoint;
 }

@@ -20,7 +20,7 @@
 
 @mixin declaration($property) {
     $declaration: true;
-    $breakpoint: true;
+    $breakpoint: false;
 
     ///
     /// Sets white list engine.
@@ -44,8 +44,8 @@
     /// Conditional breakpoint.
     ///
 
-    @if variables.$screens == false {
-        $breakpoint: false;
+    @if functions.has-breakpoints() {
+        $breakpoint: true;
     }
 
     ///

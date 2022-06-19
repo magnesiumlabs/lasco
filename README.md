@@ -38,17 +38,17 @@ npm install lasco
 
 ### Options
 
-| Name       | Default                              | Description                                                                                               |
-|------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| `$engine`  | See [Engine](#the-engine-keys) keys. | Sets engine options for generate classes.                                                                 |
-| `$extend`  | `()`                                 | Extend classes generator. List of [properties](#properties).                                              |
-| `$screens` | `()`                                 | Extend breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
+| Name      | Default                              | Description                                                   |
+|-----------|--------------------------------------|---------------------------------------------------------------|
+| `$engine` | See [Engine](#the-engine-keys) keys. | Sets engine options for generate classes.                     |
+| `$extend` | `()`                                 | Extend classes generator. See [properties](#properties) list. |
 
 #### The `$engine` keys
 
-| Name   | Default | Description                                               |
-|--------|---------|-----------------------------------------------------------|
-| `list` | `black` | Sets list engine _(black or white)_ for generate classes. |
+| Name      | Default | Description                                                                                             |
+|-----------|---------|---------------------------------------------------------------------------------------------------------|
+| `screens` | `()`    | Sets breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
+| `list`    | `black` | Sets list engine _(black or white)_ for generate classes.                                               |
 
 ### Extend with black list engine _(default)_
 
