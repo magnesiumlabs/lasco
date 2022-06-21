@@ -1,6 +1,6 @@
 # Background Position
 
-Utilities for applying background position of an element.
+Utilities for applying `background-position` to an element.
 
 ## Usage
 
@@ -52,8 +52,8 @@ the default scales using the Sass configuration.
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:bg-position-bottom` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-position-bottom` will be
+only apply on large screens size and above.
 
 ```html
 

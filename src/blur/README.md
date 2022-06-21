@@ -1,6 +1,6 @@
 # Blur
 
-Utilities for applying blur of an element.
+Utilities for applying `blur` to an element.
 
 ## Usage
 
@@ -51,8 +51,8 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/bl
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:blur` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:blur` will be only apply on
+large screens size and above.
 
 ```html
 

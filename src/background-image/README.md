@@ -1,6 +1,6 @@
 # Background Image
 
-Utilities for applying background image of an element.
+Utilities for applying `background-image` to an element.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Use the `bg-image-{value}` class for setup background image.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose background image utilities. You can easily extend
+By default, the configuration provides a handful of general purpose `background-image` utilities. You can easily extend
 the default scales using the Sass configuration.
 
 ```scss
@@ -52,8 +52,8 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#v
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:bg-image-hero` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-image-hero` will be only
+apply on large screens size and above.
 
 ```html
 

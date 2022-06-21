@@ -1,6 +1,6 @@
 # Font Weight
 
-Utilities for applying `font-weight` of an element.
+Utilities for applying `font-weight` to an element.
 
 ## Usage
 
@@ -56,8 +56,8 @@ the default scales using the Sass configuration.
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:font-700` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:font-700` will be only
+apply on large screens size and above.
 
 ```html
 

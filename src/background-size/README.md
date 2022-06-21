@@ -1,6 +1,6 @@
 # Background Size
 
-Utilities for applying background size of an element.
+Utilities for applying `background-size` to an element.
 
 ## Usage
 
@@ -55,8 +55,8 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#va
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:bg-size-cover` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-size-cover` will be only
+apply on large screens size and above.
 
 ```html
 

@@ -51,7 +51,8 @@ scales using the Sass configuration.
 
 ### Breakpoints
 
-To control the gap at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:gap-24` will be only apply
+on large screens size and above.
 
 ```html
 

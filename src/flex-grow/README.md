@@ -1,6 +1,6 @@
 # Flex Grow
 
-Utilities for applying flex-grow type of element.
+Utilities for applying `flex-grow` type of element.
 
 ## Usage
 
@@ -22,8 +22,8 @@ Use the `flex-grow-{amount}` class for set up the flex-grow type.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose `flex-grow` type utilities. You can easily filter the
-default scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose `flex-grow` type utilities. You can easily filter
+the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -51,8 +51,8 @@ If you don't need the `flex-grow` classes, you can disable them by setting the o
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:flex-grow-0` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-grow-0` will be only
+apply on large screens size and above.
 
 ```html
 

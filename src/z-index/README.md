@@ -1,6 +1,6 @@
 # Z-Index
 
-Utilities for applying position order of an element.
+Utilities for applying position order to an element.
 
 ## Usage
 
@@ -49,8 +49,8 @@ default scales using the Sass configuration.
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:z-auto` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:z-auto` will be only apply
+on large screens size and above.
 
 ```html
 

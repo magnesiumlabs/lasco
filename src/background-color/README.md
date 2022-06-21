@@ -1,6 +1,6 @@
 # Background Color
 
-Utilities for applying background color of an element.
+Utilities for applying `background-color` to an element.
 
 ## Usage
 
@@ -23,7 +23,7 @@ Use the `bg-color-{value}` class for setup background color.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose background color utilities. You can easily extend
+By default, the configuration provides a handful of general purpose `background-color` utilities. You can easily extend
 the default scales using the Sass configuration.
 
 ```scss
@@ -50,8 +50,8 @@ the default scales using the Sass configuration.
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:bg-color-transparent` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-color-transparent` will
+be only apply on large screens size and above.
 
 ```html
 

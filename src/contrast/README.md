@@ -1,6 +1,6 @@
 # Contrast
 
-Utilities for applying contrast of an element.
+Utilities for applying contrast to an element.
 
 ## Usage
 
@@ -52,8 +52,8 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/co
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:contrast` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:contrast` will be only
+apply on large screens size and above.
 
 ```html
 

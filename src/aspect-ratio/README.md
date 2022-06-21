@@ -1,6 +1,6 @@
 # Aspect Ratio
 
-Utilities for applying ratio aspect of an element.
+Utilities for applying `aspect-ratio` to an element.
 
 ## Usage
 
@@ -23,7 +23,7 @@ Use the `aspect-{index}` class for setup ratio aspect.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose ratio aspect utilities. You can easily extend the
+By default, the configuration provides a handful of general purpose `aspect-ratio` utilities. You can easily extend the
 default scales using the Sass configuration.
 
 ```scss
@@ -50,8 +50,8 @@ default scales using the Sass configuration.
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:aspect-video` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:aspect-video` will be only
+apply on large screens size and above.
 
 ```html
 

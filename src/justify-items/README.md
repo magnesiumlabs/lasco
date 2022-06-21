@@ -24,8 +24,8 @@ Use the `justify-items-{key}` class for set up the justify-items type.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose justify-items type utilities. You can easily filter the
-default scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose `justify-items` type utilities. You can easily
+filter the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -53,8 +53,8 @@ If you don't need the `justify-items` classes, you can disable them by setting t
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:justify-items-start` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-items-start` will
+be only apply on large screens size and above.
 
 ```html
 

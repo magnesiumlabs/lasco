@@ -1,6 +1,6 @@
 # Flex Shrink
 
-Utilities for applying flex-shrink type of element.
+Utilities for applying `flex-shrink` type of element.
 
 ## Usage
 
@@ -22,8 +22,8 @@ Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
 
 ## Configuration
 
-By default, the configuration provides a handful of general purpose `flex-shrink` type utilities. You can easily filter the
-default scales using the Sass configuration.
+By default, the configuration provides a handful of general purpose `flex-shrink` type utilities. You can easily filter
+the default scales using the Sass configuration.
 
 ```scss
 @use "lasco" with (
@@ -51,8 +51,8 @@ If you don't need the `flex-shrink` classes, you can disable them by setting the
 
 ### Breakpoints
 
-You can also use variant modifiers to target breakpoints with `{screen}:` prefix token to any existing class. For
-example `lg:flex-shrink-0` will be only apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-shrink-0` will be only
+apply on large screens size and above.
 
 ```html
 
