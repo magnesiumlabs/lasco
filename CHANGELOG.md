@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/magnesiumlabs/lasco/compare/v1.2.0...v1.3.0) (2022-06-22)
+
+
+### Features
+
+* **grid-template-columns:** add main styles ([a37f1fd](https://github.com/magnesiumlabs/lasco/commit/a37f1fdf7a81662291383862e6c2890594ab6b5b))
+* **grid-template-rows:** add main styles ([506b433](https://github.com/magnesiumlabs/lasco/commit/506b433be6f408155bfaf82f5f04007f23451f2e))
+* **order:** add main styles ([f704b50](https://github.com/magnesiumlabs/lasco/commit/f704b50c12859b1e8a874eb6df970a3db43ff68d))
+
 ## [1.2.0](https://github.com/magnesiumlabs/lasco/compare/v1.1.0...v1.2.0) (2022-06-22)
 
 
