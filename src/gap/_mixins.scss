@@ -2,8 +2,6 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "sass:meta";
-@use "sass:string";
 @use "../core";
 @use "./variables";
 
@@ -11,16 +9,16 @@
     .gap {
         @include core.declaration("gap") {
             @each $key, $value in variables.$extend {
-                $property: gap;
-
-                @if meta.type-of($key) == "string" and string.index($key, "x-") {
-                    $property: column-gap;
-                } @else if meta.type-of($key) == "string" and string.index($key, "y-") {
-                    $property: row-gap;
+                &-#{$key} {
+                    gap: $value;
                 }
 
-                &-#{$key} {
-                    #{$property}: $value;
+                &-x-#{$key} {
+                    column-gap: $value;
+                }
+
+                &-y-#{$key} {
+                    row-gap: $value;
                 }
             }
         }

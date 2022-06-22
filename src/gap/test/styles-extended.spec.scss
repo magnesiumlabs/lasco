@@ -7,9 +7,7 @@
     $extend: (
         "gap": (
             12: 12px,
-            24: 24px,
-            "x-12": 12px,
-            "y-24": 24px
+            24: 24px
         )
     )
 );
@@ -27,16 +25,32 @@
                     gap: 0;
                 }
 
+                .gap-x-0 {
+                    column-gap: 0;
+                }
+
+                .gap-y-0 {
+                    row-gap: 0;
+                }
+
                 .gap-12 {
                     gap: 12px;
+                }
+
+                .gap-x-12 {
+                    column-gap: 12px;
+                }
+
+                .gap-y-12 {
+                    row-gap: 12px;
                 }
 
                 .gap-24 {
                     gap: 24px;
                 }
 
-                .gap-x-12 {
-                    column-gap: 12px;
+                .gap-x-24 {
+                    column-gap: 24px;
                 }
 
                 .gap-y-24 {
@@ -48,16 +62,32 @@
                         gap: 0;
                     }
 
+                    .xs\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .xs\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .xs\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .xs\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .xs\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .xs\:gap-24 {
                         gap: 24px;
                     }
 
-                    .xs\:gap-x-12 {
-                        column-gap: 12px;
+                    .xs\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .xs\:gap-y-24 {
@@ -70,16 +100,32 @@
                         gap: 0;
                     }
 
+                    .sm\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .sm\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .sm\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .sm\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .sm\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .sm\:gap-24 {
                         gap: 24px;
                     }
 
-                    .sm\:gap-x-12 {
-                        column-gap: 12px;
+                    .sm\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .sm\:gap-y-24 {
@@ -92,16 +138,32 @@
                         gap: 0;
                     }
 
+                    .md\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .md\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .md\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .md\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .md\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .md\:gap-24 {
                         gap: 24px;
                     }
 
-                    .md\:gap-x-12 {
-                        column-gap: 12px;
+                    .md\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .md\:gap-y-24 {
@@ -114,16 +176,32 @@
                         gap: 0;
                     }
 
+                    .lg\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .lg\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .lg\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .lg\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .lg\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .lg\:gap-24 {
                         gap: 24px;
                     }
 
-                    .lg\:gap-x-12 {
-                        column-gap: 12px;
+                    .lg\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .lg\:gap-y-24 {
@@ -136,16 +214,32 @@
                         gap: 0;
                     }
 
+                    .xl\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .xl\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .xl\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .xl\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .xl\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .xl\:gap-24 {
                         gap: 24px;
                     }
 
-                    .xl\:gap-x-12 {
-                        column-gap: 12px;
+                    .xl\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .xl\:gap-y-24 {
@@ -158,16 +252,32 @@
                         gap: 0;
                     }
 
+                    .\32 xl\:gap-x-0 {
+                        column-gap: 0;
+                    }
+
+                    .\32 xl\:gap-y-0 {
+                        row-gap: 0;
+                    }
+
                     .\32 xl\:gap-12 {
                         gap: 12px;
+                    }
+
+                    .\32 xl\:gap-x-12 {
+                        column-gap: 12px;
+                    }
+
+                    .\32 xl\:gap-y-12 {
+                        row-gap: 12px;
                     }
 
                     .\32 xl\:gap-24 {
                         gap: 24px;
                     }
 
-                    .\32 xl\:gap-x-12 {
-                        column-gap: 12px;
+                    .\32 xl\:gap-x-24 {
+                        column-gap: 24px;
                     }
 
                     .\32 xl\:gap-y-24 {
