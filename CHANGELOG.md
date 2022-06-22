@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/magnesiumlabs/lasco/compare/v1.1.0...v1.2.0) (2022-06-22)
+
+
+### Features
+
+* **gap:** gap generate `x` and `y` classes by default ([6d3cacd](https://github.com/magnesiumlabs/lasco/commit/6d3cacdf6f2336813dc33f2dd489ea0272ff87c4))
+
 ## [1.1.0](https://github.com/magnesiumlabs/lasco/compare/v1.0.1...v1.1.0) (2022-06-18)
 
 
