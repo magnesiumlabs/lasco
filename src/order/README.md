@@ -8,8 +8,6 @@ Utilities for applying `order` to an element.
 
 ## Usage
 
-### Setting the order on element
-
 Use the `order-{key}` class for setup ratio aspect.
 
 ```html

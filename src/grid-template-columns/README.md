@@ -2,19 +2,6 @@
 
 Utilities for applying `grid-template-columns` to an element.
 
-## Usage
-
-Use the `grid-cols-{key}` class for setup grid columns.
-
-```html
-
-<div class="grid-cols-12">
-    <!-- ... -->
-</div>
-```
-
-### Classes
-
 | Class            | Property                                             |
 |------------------|------------------------------------------------------|
 | `grid-cols-1`    | `grid-template-columns: repeat(1, minmax(0, 1fr));`  |
@@ -30,6 +17,17 @@ Use the `grid-cols-{key}` class for setup grid columns.
 | `grid-cols-11`   | `grid-template-columns: repeat(11, minmax(0, 1fr));` |
 | `grid-cols-12`   | `grid-template-columns: repeat(12, minmax(0, 1fr));` |
 | `grid-cols-none` | `grid-template-columns: none;`                       |
+
+## Usage
+
+Use the `grid-cols-{key}` class for setup grid columns.
+
+```html
+
+<div class="grid-cols-12">
+    <!-- ... -->
+</div>
+```
 
 ## Configuration
 
