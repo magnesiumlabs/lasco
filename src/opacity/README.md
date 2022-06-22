@@ -49,7 +49,8 @@ scales using the Sass configuration.
 
 ### Breakpoints
 
-To control the `opacity` at a specific breakpoint, add a `{screen}:` prefix token to any existing class.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:opacity-100` will be only
+apply on large screens size and above.
 
 ```html
 
