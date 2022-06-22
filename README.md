@@ -159,22 +159,23 @@ on `$engine` and configure the `$extend` like that:
 
 ### Flexbox & Grid
 
-| Property          | Docs                                              |
-|-------------------|---------------------------------------------------|
-| `flex-direction`  | See [documentation](/src/flex-direction#readme).  |
-| `flex-wrap`       | See [documentation](/src/flex-wrap#readme).       |
-| `flex-grow`       | See [documentation](/src/flex-grow#readme).       |
-| `flex-shrink`     | See [documentation](/src/flex-shrink#readme).     |
-| `gap`             | See [documentation](/src/gap#readme).             |
-| `justify-self`    | See [documentation](/src/justify-self#readme).    |
-| `justify-items`   | See [documentation](/src/justify-items#readme).   |
-| `justify-content` | See [documentation](/src/justify-content#readme). |
-| `align-self`      | See [documentation](/src/align-self#readme).      |
-| `align-items`     | See [documentation](/src/align-items#readme).     |
-| `align-content`   | See [documentation](/src/align-content#readme).   |
-| `place-self`      | See [documentation](/src/place-self#readme).      |
-| `place-items`     | See [documentation](/src/place-items#readme).     |
-| `place-content`   | See [documentation](/src/place-content#readme).   |
+| Property                | Docs                                                    |
+|-------------------------|---------------------------------------------------------|
+| `flex-direction`        | See [documentation](/src/flex-direction#readme).        |
+| `flex-wrap`             | See [documentation](/src/flex-wrap#readme).             |
+| `flex-grow`             | See [documentation](/src/flex-grow#readme).             |
+| `flex-shrink`           | See [documentation](/src/flex-shrink#readme).           |
+| `grid-template-columns` | See [documentation](/src/grid-template-columns#readme). |
+| `gap`                   | See [documentation](/src/gap#readme).                   |
+| `justify-self`          | See [documentation](/src/justify-self#readme).          |
+| `justify-items`         | See [documentation](/src/justify-items#readme).         |
+| `justify-content`       | See [documentation](/src/justify-content#readme).       |
+| `align-self`            | See [documentation](/src/align-self#readme).            |
+| `align-items`           | See [documentation](/src/align-items#readme).           |
+| `align-content`         | See [documentation](/src/align-content#readme).         |
+| `place-self`            | See [documentation](/src/place-self#readme).            |
+| `place-items`           | See [documentation](/src/place-items#readme).           |
+| `place-content`         | See [documentation](/src/place-content#readme).         |
 
 ### Spacing
 
