@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: false,
+    $extend: (
+        "order": (
+            12: 12
+        )
+    )
+);
+@use "../index" as order;
+
+@include describe("order.core-styles()") {
+    @include it("Should return main styles extended declarations.") {
+        @include assert {
+            @include output(false) {
+                @include order.core-styles;
+            }
+
+            @include expect(false) {
+                .order-12 {
+                    order: 12;
+                }
+
+                .order-none {
+                    order: 0;
+                }
+            }
+        }
+    }
+}

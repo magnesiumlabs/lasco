@@ -165,6 +165,7 @@ on `$engine` and configure the `$extend` like that:
 | `flex-wrap`             | See [documentation](/src/flex-wrap#readme).             |
 | `flex-grow`             | See [documentation](/src/flex-grow#readme).             |
 | `flex-shrink`           | See [documentation](/src/flex-shrink#readme).           |
+| `order`                 | See [documentation](/src/order#readme).                 |
 | `grid-template-columns` | See [documentation](/src/grid-template-columns#readme). |
 | `grid-template-rows`    | See [documentation](/src/grid-template-rows#readme).    |
 | `gap`                   | See [documentation](/src/gap#readme).                   |
