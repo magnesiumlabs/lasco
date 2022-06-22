@@ -4,7 +4,7 @@ Utilities for applying `grid-template-columns` to an element.
 
 ## Usage
 
-Use the `grid-cols-{key}` class for setup ratio aspect.
+Use the `grid-cols-{key}` class for setup grid columns.
 
 ```html
 

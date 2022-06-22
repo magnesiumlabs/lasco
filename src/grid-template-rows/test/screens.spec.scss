@@ -1,0 +1,226 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as grid-template-rows;
+
+@include describe("grid-template-rows.core-styles()") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include grid-template-rows.core-styles;
+            }
+
+            @include expect(false) {
+                .grid-rows-1 {
+                    grid-template-rows: repeat(1, minmax(0, 1fr));
+                }
+
+                .grid-rows-2 {
+                    grid-template-rows: repeat(2, minmax(0, 1fr));
+                }
+
+                .grid-rows-3 {
+                    grid-template-rows: repeat(3, minmax(0, 1fr));
+                }
+
+                .grid-rows-4 {
+                    grid-template-rows: repeat(4, minmax(0, 1fr));
+                }
+
+                .grid-rows-5 {
+                    grid-template-rows: repeat(5, minmax(0, 1fr));
+                }
+
+                .grid-rows-6 {
+                    grid-template-rows: repeat(6, minmax(0, 1fr));
+                }
+
+                .grid-rows-none {
+                    grid-template-rows: none;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .xs\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .sm\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .md\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .lg\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .xl\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:grid-rows-1 {
+                        grid-template-rows: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-2 {
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-3 {
+                        grid-template-rows: repeat(3, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-4 {
+                        grid-template-rows: repeat(4, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-5 {
+                        grid-template-rows: repeat(5, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-6 {
+                        grid-template-rows: repeat(6, minmax(0, 1fr));
+                    }
+
+                    .\32 xl\:grid-rows-none {
+                        grid-template-rows: none;
+                    }
+                }
+            }
+        }
+    }
+}

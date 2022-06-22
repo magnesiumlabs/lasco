@@ -1,0 +1,23 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:string";
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .grid-rows {
+        @include core.declaration("grid-template-rows") {
+            @each $key, $value in variables.$extend {
+                &-#{$key} {
+                    grid-template-rows: string.unquote($value);
+                }
+            }
+
+            &-none {
+                grid-template-rows: none;
+            }
+        }
+    }
+}

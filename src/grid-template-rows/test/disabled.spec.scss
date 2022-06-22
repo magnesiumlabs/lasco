@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $extend: (
+        "grid-template-rows": false
+    )
+);
+@use "../index" as grid-template-rows;
+
+@include describe("grid-template-rows.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include grid-template-rows.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
