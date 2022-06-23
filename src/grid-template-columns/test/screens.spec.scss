@@ -13,6 +13,10 @@
             }
 
             @include expect(false) {
+                .grid-cols-none {
+                    grid-template-columns: none;
+                }
+
                 .grid-cols-1 {
                     grid-template-columns: repeat(1, minmax(0, 1fr));
                 }
@@ -61,11 +65,11 @@
                     grid-template-columns: repeat(12, minmax(0, 1fr));
                 }
 
-                .grid-cols-none {
-                    grid-template-columns: none;
-                }
-
                 @media (min-width: 320px) {
+                    .xs\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .xs\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -113,13 +117,13 @@
                     .xs\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
                     }
-
-                    .xs\:grid-cols-none {
-                        grid-template-columns: none;
-                    }
                 }
 
                 @media (min-width: 480px) {
+                    .sm\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .sm\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -167,13 +171,13 @@
                     .sm\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
                     }
-
-                    .sm\:grid-cols-none {
-                        grid-template-columns: none;
-                    }
                 }
 
                 @media (min-width: 768px) {
+                    .md\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .md\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -221,13 +225,13 @@
                     .md\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
                     }
-
-                    .md\:grid-cols-none {
-                        grid-template-columns: none;
-                    }
                 }
 
                 @media (min-width: 960px) {
+                    .lg\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .lg\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -275,13 +279,13 @@
                     .lg\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
                     }
-
-                    .lg\:grid-cols-none {
-                        grid-template-columns: none;
-                    }
                 }
 
                 @media (min-width: 1200px) {
+                    .xl\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .xl\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -329,13 +333,13 @@
                     .xl\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
                     }
-
-                    .xl\:grid-cols-none {
-                        grid-template-columns: none;
-                    }
                 }
 
                 @media (min-width: 1400px) {
+                    .\32 xl\:grid-cols-none {
+                        grid-template-columns: none;
+                    }
+
                     .\32 xl\:grid-cols-1 {
                         grid-template-columns: repeat(1, minmax(0, 1fr));
                     }
@@ -382,10 +386,6 @@
 
                     .\32 xl\:grid-cols-12 {
                         grid-template-columns: repeat(12, minmax(0, 1fr));
-                    }
-
-                    .\32 xl\:grid-cols-none {
-                        grid-template-columns: none;
                     }
                 }
             }

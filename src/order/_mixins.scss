@@ -8,14 +8,14 @@
 @mixin core-styles {
     .order {
         @include core.declaration("order") {
+            &-none {
+                order: 0;
+            }
+
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     order: $value;
                 }
-            }
-
-            &-none {
-                order: 0;
             }
         }
     }

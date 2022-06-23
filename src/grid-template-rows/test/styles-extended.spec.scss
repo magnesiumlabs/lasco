@@ -21,6 +21,10 @@
             }
 
             @include expect(false) {
+                .grid-rows-none {
+                    grid-template-rows: none;
+                }
+
                 .grid-rows-1 {
                     grid-template-rows: repeat(1, minmax(0, 1fr));
                 }
@@ -47,10 +51,6 @@
 
                 .grid-rows-8 {
                     grid-template-rows: repeat(8, minmax(0, 1fr));
-                }
-
-                .grid-rows-none {
-                    grid-template-rows: none;
                 }
             }
         }

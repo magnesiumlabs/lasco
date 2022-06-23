@@ -21,6 +21,10 @@
             }
 
             @include expect(false) {
+                .flex-none {
+                    flex: none;
+                }
+
                 .flex-auto {
                     flex: 1 1 auto;
                 }
@@ -31,10 +35,6 @@
 
                 .flex-1 {
                     flex: 1 1 0%;
-                }
-
-                .flex-none {
-                    flex: none;
                 }
             }
         }

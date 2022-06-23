@@ -9,14 +9,14 @@
 @mixin core-styles {
     .grid-cols {
         @include core.declaration("grid-template-columns") {
+            &-none {
+                grid-template-columns: none;
+            }
+
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     grid-template-columns: string.unquote($value);
                 }
-            }
-
-            &-none {
-                grid-template-columns: none;
             }
         }
     }

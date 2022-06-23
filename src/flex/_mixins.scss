@@ -9,14 +9,14 @@
 @mixin core-styles {
     .flex {
         @include core.declaration("flex") {
+            &-none {
+                flex: none;
+            }
+
             @each $key, $value in variables.$extend {
                 &-#{$key} {
                     flex: string.unquote($value);
                 }
-            }
-
-            &-none {
-                flex: none;
             }
         }
     }
