@@ -1,0 +1,42 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: false,
+    $extend: (
+        "flex-basis": (
+            50: 50%
+        )
+    )
+);
+@use "../index" as flex-basis;
+
+@include describe("flex-basis.core-styles()") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include flex-basis.core-styles;
+            }
+
+            @include expect(false) {
+                .flex-basic-none {
+                    flex-basis: 0;
+                }
+
+                .flex-basic-auto {
+                    flex-basis: auto;
+                }
+
+                .flex-basic-50 {
+                    flex-basis: 50%;
+                }
+
+                .flex-basic-full {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
