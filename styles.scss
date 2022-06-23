@@ -72,10 +72,11 @@
 // Flexbox & Grid
 // ------------------------------------------------------------------------- //
 
+@use "./src/flex/styles" as flex-styles;
 @use "./src/flex-direction/styles" as flex-direction-styles;
+@use "./src/flex-wrap/styles" as flex-wrap-styles;
 @use "./src/flex-grow/styles" as flex-grow-styles;
 @use "./src/flex-shrink/styles" as flex-shrink-styles;
-@use "./src/flex-wrap/styles" as flex-wrap-styles;
 @use "./src/order/styles" as order-styles;
 @use "./src/grid-template-columns/styles" as grid-template-columns-styles;
 @use "./src/grid-template-rows/styles" as grid-template-rows-styles;

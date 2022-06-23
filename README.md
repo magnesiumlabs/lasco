@@ -161,6 +161,7 @@ on `$engine` and configure the `$extend` like that:
 
 | Property                | Docs                                                    |
 |-------------------------|---------------------------------------------------------|
+| `flex`                  | See [documentation](/src/flex#readme).                  |
 | `flex-direction`        | See [documentation](/src/flex-direction#readme).        |
 | `flex-wrap`             | See [documentation](/src/flex-wrap#readme).             |
 | `flex-grow`             | See [documentation](/src/flex-grow#readme).             |

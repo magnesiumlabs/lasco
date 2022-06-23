@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: false
+);
+@use "../index" as flex;
+
+@include describe("flex.core-styles()") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include flex.core-styles;
+            }
+
+            @include expect(false) {
+                .flex-auto {
+                    flex: 1 1 auto;
+                }
+
+                .flex-initial {
+                    flex: 0 1 auto;
+                }
+
+                .flex-none {
+                    flex: none;
+                }
+            }
+        }
+    }
+}
