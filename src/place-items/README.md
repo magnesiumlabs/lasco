@@ -2,6 +2,13 @@
 
 Utilities for applying `place-items` property an element.
 
+| Class                  | Property                   |
+|------------------------|----------------------------|
+| `place-items-start`    | `place-items: flex-start;` |
+| `place-items-end`      | `place-items: flex-end;`   |
+| `place-items-center`   | `place-items: center;`     |
+| `place-items-stretch`  | `place-items: stretch;`    |
+
 ## Usage
 
 Use the `place-items-{key}` class for set up the place-items type.
@@ -12,15 +19,6 @@ Use the `place-items-{key}` class for set up the place-items type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                  | Property                   |
-|------------------------|----------------------------|
-| `place-items-start`    | `place-items: flex-start;` |
-| `place-items-end`      | `place-items: flex-end;`   |
-| `place-items-center`   | `place-items: center;`     |
-| `place-items-stretch`  | `place-items: stretch;`    |
 
 ## Configuration
 

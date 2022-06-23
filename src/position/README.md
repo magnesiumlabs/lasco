@@ -2,6 +2,14 @@
 
 Class generator for setting `position` property for an element.
 
+| Class      | Property              |
+|------------|-----------------------|
+| `absolute` | `position: absolute;` |
+| `fixed`    | `position: fixed;`    |
+| `relative` | `position: relative;` |
+| `static`   | `position: static;`   |
+| `sticky`   | `position: sticky;`   |
+
 ## Usage
 
 Use the `{key}` class for setup the display type.
@@ -12,16 +20,6 @@ Use the `{key}` class for setup the display type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class      | Property              |
-|------------|-----------------------|
-| `absolute` | `position: absolute;` |
-| `fixed`    | `position: fixed;`    |
-| `relative` | `position: relative;` |
-| `static`   | `position: static;`   |
-| `sticky`   | `position: sticky;`   |
 
 ## Configuration
 

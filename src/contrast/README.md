@@ -2,6 +2,11 @@
 
 Utilities for applying contrast to an element.
 
+| Class          | Property               |
+|----------------|------------------------|
+| `contrast-0`   | `filter: contrast(0);` |
+| `contrast-100` | `filter: contrast(1);` |
+
 ## Usage
 
 Use the `contrast-{amount}` class for setup ratio aspect.
@@ -12,13 +17,6 @@ Use the `contrast-{amount}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class          | Property               |
-|----------------|------------------------|
-| `contrast-0`   | `filter: contrast(0);` |
-| `contrast-100` | `filter: contrast(1);` |
 
 ## Configuration
 

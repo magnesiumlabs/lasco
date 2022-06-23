@@ -2,6 +2,11 @@
 
 Utilities for applying `flex-shrink` type of element.
 
+| Class           | Property          |
+|-----------------|-------------------|
+| `flex-shrink`   | `flex-shrink: 1;` |
+| `flex-shrink-0` | `flex-shrink: 0;` |
+
 ## Usage
 
 Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
@@ -12,13 +17,6 @@ Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class           | Property          |
-|-----------------|-------------------|
-| `flex-shrink`   | `flex-shrink: 1;` |
-| `flex-shrink-0` | `flex-shrink: 0;` |
 
 ## Configuration
 

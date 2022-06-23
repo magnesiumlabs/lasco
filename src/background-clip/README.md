@@ -2,6 +2,13 @@
 
 Utilities for controlling background box.
 
+| Class             | Property                        |
+|-------------------|---------------------------------|
+| `bg-clip-border`  | `background-clip: border-box;`  |
+| `bg-clip-content` | `background-clip: content-box;` |
+| `bg-clip-padding` | `background-clip: padding-box;` |    
+| `bg-clip-text`    | `background-clip: text;`        |
+
 ## Usage
 
 Use the `bg-clip-{value}` class for setup background box.
@@ -12,15 +19,6 @@ Use the `bg-clip-{value}` class for setup background box.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class             | Property                        |
-|-------------------|---------------------------------|
-| `bg-clip-border`  | `background-clip: border-box;`  |
-| `bg-clip-content` | `background-clip: content-box;` |
-| `bg-clip-padding` | `background-clip: padding-box;` |    
-| `bg-clip-text`    | `background-clip: text;`        |    
 
 ## Configuration
 

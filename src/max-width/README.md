@@ -2,6 +2,12 @@
 
 Class generator for setting `max-width` property for an element.
 
+| Class          | Property            |
+|----------------|---------------------|
+| `max-w-0`      | `max-width: 0;`     |
+| `max-w-full`   | `max-width: 100%;`  |
+| `max-w-screen` | `max-width: 100vw;` |
+
 ## Usage
 
 Use the `max-w-{index}` class for setup ratio aspect.
@@ -12,14 +18,6 @@ Use the `max-w-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class          | Property            |
-|----------------|---------------------|
-| `max-w-0`      | `max-width: 0;`     |
-| `max-w-full`   | `max-width: 100%;`  |
-| `max-w-screen` | `max-width: 100vw;` |
 
 ## Configuration
 

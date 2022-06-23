@@ -2,6 +2,14 @@
 
 Utilities for applying `background-position` to an element.
 
+| Class                | Property                       |
+|----------------------|--------------------------------|
+| `bg-position-bottom` | `background-position: bottom;` |
+| `bg-position-center` | `background-position: center;` |
+| `bg-position-left`   | `background-position: left;`   |
+| `bg-position-right`  | `background-position: right;`  |
+| `bg-position-top`    | `background-position: top;`    |
+
 ## Usage
 
 Use the `bg-position-{position}` class for setup background position.
@@ -12,16 +20,6 @@ Use the `bg-position-{position}` class for setup background position.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                | Property                       |
-|----------------------|--------------------------------|
-| `bg-position-bottom` | `background-position: bottom;` |
-| `bg-position-center` | `background-position: center;` |
-| `bg-position-left`   | `background-position: left;`   |
-| `bg-position-right`  | `background-position: right;`  |
-| `bg-position-top`    | `background-position: top;`    |
 
 ## Configuration
 

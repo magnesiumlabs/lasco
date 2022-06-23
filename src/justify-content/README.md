@@ -2,6 +2,16 @@
 
 Utilities for applying `justify-content` property an element.
 
+| Class                     | Property                          |
+|---------------------------|-----------------------------------|
+| `justify-content-start`   | `justify-content: flex-start;`    |
+| `justify-content-end`     | `justify-content: flex-end;`      |
+| `justify-content-center`  | `justify-content: center;`        |
+| `justify-content-between` | `justify-content: space-between;` |
+| `justify-content-around`  | `justify-content: space-around;`  |
+| `justify-content-evenly`  | `justify-content: space-evenly;`  |
+| `justify-content-stretch` | `justify-content: stretch;`       |
+
 ## Usage
 
 Use the `justify-content-{key}` class for set up the justify-content type.
@@ -12,18 +22,6 @@ Use the `justify-content-{key}` class for set up the justify-content type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                     | Property                          |
-|---------------------------|-----------------------------------|
-| `justify-content-start`   | `justify-content: flex-start;`    |
-| `justify-content-end`     | `justify-content: flex-end;`      |
-| `justify-content-center`  | `justify-content: center;`        |
-| `justify-content-between` | `justify-content: space-between;` |
-| `justify-content-around`  | `justify-content: space-around;`  |
-| `justify-content-evenly`  | `justify-content: space-evenly;`  |
-| `justify-content-stretch` | `justify-content: stretch;`       |
 
 ## Configuration
 

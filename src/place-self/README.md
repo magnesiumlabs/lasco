@@ -2,6 +2,14 @@
 
 Utilities for applying `place-self` property an element.
 
+| Class                 | Property               |
+|-----------------------|------------------------|
+| `place-self-auto`     | `place-self: auto;`    |
+| `place-self-start`    | `place-self: start;`   |
+| `place-self-end`      | `place-self: end;`     |
+| `place-self-center`   | `place-self: center;`  |
+| `place-self-stretch`  | `place-self: stretch;` |
+
 ## Usage
 
 Use the `place-self-{key}` class for set up the place-self type.
@@ -12,16 +20,6 @@ Use the `place-self-{key}` class for set up the place-self type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                 | Property               |
-|-----------------------|------------------------|
-| `place-self-auto`     | `place-self: auto;`    |
-| `place-self-start`    | `place-self: start;`   |
-| `place-self-end`      | `place-self: end;`     |
-| `place-self-center`   | `place-self: center;`  |
-| `place-self-stretch`  | `place-self: stretch;` |
 
 ## Configuration
 

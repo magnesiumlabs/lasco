@@ -2,6 +2,12 @@
 
 Class generator for setting `min-width` property for an element.
 
+| Class          | Property            |
+|----------------|---------------------|
+| `min-w-0`      | `min-width: 0;`     |
+| `min-w-full`   | `min-width: 100%;`  |
+| `min-w-screen` | `min-width: 100vw;` |
+
 ## Usage
 
 Use the `min-w-{index}` class for setup ratio aspect.
@@ -12,14 +18,6 @@ Use the `min-w-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class          | Property            |
-|----------------|---------------------|
-| `min-w-0`      | `min-width: 0;`     |
-| `min-w-full`   | `min-width: 100%;`  |
-| `min-w-screen` | `min-width: 100vw;` |
 
 ## Configuration
 

@@ -2,6 +2,11 @@
 
 Utilities for applying `flex-grow` type of element.
 
+| Class         | Property        |
+|---------------|-----------------|
+| `flex-grow`   | `flex-grow: 1;` |
+| `flex-grow-0` | `flex-grow: 0;` |
+
 ## Usage
 
 Use the `flex-grow-{amount}` class for set up the flex-grow type.
@@ -12,13 +17,6 @@ Use the `flex-grow-{amount}` class for set up the flex-grow type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class         | Property        |
-|---------------|-----------------|
-| `flex-grow`   | `flex-grow: 1;` |
-| `flex-grow-0` | `flex-grow: 0;` |
 
 ## Configuration
 

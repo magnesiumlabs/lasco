@@ -2,6 +2,15 @@
 
 Utilities for applying `align-self` property an element.
 
+| Class                 | Property                  |
+|-----------------------|---------------------------|
+| `align-self-auto`     | `align-self: auto;`       |
+| `align-self-start`    | `align-self: flex-start;` |
+| `align-self-end`      | `align-self: flex-end;`   |
+| `align-self-center`   | `align-self: center;`     |
+| `align-self-stretch`  | `align-self: stretch;`    |
+| `align-self-baseline` | `align-self: baseline;`   |
+
 ## Usage
 
 Use the `align-self-{key}` class for set up the align-self type.
@@ -12,17 +21,6 @@ Use the `align-self-{key}` class for set up the align-self type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                 | Property                  |
-|-----------------------|---------------------------|
-| `align-self-auto`     | `align-self: auto;`       |
-| `align-self-start`    | `align-self: flex-start;` |
-| `align-self-end`      | `align-self: flex-end;`   |
-| `align-self-center`   | `align-self: center;`     |
-| `align-self-stretch`  | `align-self: stretch;`    |
-| `align-self-baseline` | `align-self: baseline;`   |
 
 ## Configuration
 

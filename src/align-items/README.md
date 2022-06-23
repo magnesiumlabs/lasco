@@ -2,6 +2,14 @@
 
 Utilities for applying `align-items` property an element.
 
+| Class                  | Property                   |
+|------------------------|----------------------------|
+| `align-items-start`    | `align-items: flex-start;` |
+| `align-items-end`      | `align-items: flex-end;`   |
+| `align-items-center`   | `align-items: center;`     |
+| `align-items-stretch`  | `align-items: stretch;`    |
+| `align-items-baseline` | `align-items: baseline;`   |
+
 ## Usage
 
 Use the `align-items-{key}` class for set up the align-items type.
@@ -12,16 +20,6 @@ Use the `align-items-{key}` class for set up the align-items type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                  | Property                   |
-|------------------------|----------------------------|
-| `align-items-start`    | `align-items: flex-start;` |
-| `align-items-end`      | `align-items: flex-end;`   |
-| `align-items-center`   | `align-items: center;`     |
-| `align-items-stretch`  | `align-items: stretch;`    |
-| `align-items-baseline` | `align-items: baseline;`   |
 
 ## Configuration
 

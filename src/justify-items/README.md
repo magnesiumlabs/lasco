@@ -2,6 +2,13 @@
 
 Utilities for applying `justify-items` property an element.
 
+| Class                   | Property                     |
+|-------------------------|------------------------------|
+| `justify-items-start`   | `justify-items: flex-start;` |
+| `justify-items-end`     | `justify-items: flex-end;`   |
+| `justify-items-center`  | `justify-items: center;`     |
+| `justify-items-stretch` | `justify-items: stretch;`    |
+
 ## Usage
 
 Use the `justify-items-{key}` class for set up the justify-items type.
@@ -12,15 +19,6 @@ Use the `justify-items-{key}` class for set up the justify-items type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                   | Property                     |
-|-------------------------|------------------------------|
-| `justify-items-start`   | `justify-items: flex-start;` |
-| `justify-items-end`     | `justify-items: flex-end;`   |
-| `justify-items-center`  | `justify-items: center;`     |
-| `justify-items-stretch` | `justify-items: stretch;`    |
 
 ## Configuration
 

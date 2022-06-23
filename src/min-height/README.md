@@ -2,6 +2,12 @@
 
 Class generator for setting `min-height` property for an element.
 
+| Class          | Property             |
+|----------------|----------------------|
+| `min-h-0`      | `min-height: 0;`     |
+| `min-h-full`   | `min-height: 100%;`  |
+| `min-h-screen` | `min-height: 100vh;` |
+
 ## Usage
 
 Use the `min-h-{index}` class for setup ratio aspect.
@@ -12,14 +18,6 @@ Use the `min-h-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class          | Property             |
-|----------------|----------------------|
-| `min-h-0`      | `min-height: 0;`     |
-| `min-h-full`   | `min-height: 100%;`  |
-| `min-h-screen` | `min-height: 100vh;` |
 
 ## Configuration
 

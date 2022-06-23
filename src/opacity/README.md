@@ -2,6 +2,11 @@
 
 Class generator for setting `opacity` property for an element.
 
+| Class         | Property      |
+|---------------|---------------|
+| `opacity-0`   | `opacity: 0;` |
+| `opacity-100` | `opacity: 1;` |
+
 ## Usage
 
 Use the `opacity-{index}` class for setup ratio aspect.
@@ -12,13 +17,6 @@ Use the `opacity-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class         | Property      |
-|---------------|---------------|
-| `opacity-0`   | `opacity: 0;` |
-| `opacity-100` | `opacity: 1;` |
 
 ## Configuration
 

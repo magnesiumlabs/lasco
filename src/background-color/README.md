@@ -2,6 +2,12 @@
 
 Utilities for applying `background-color` to an element.
 
+| Class                  | Property                          |
+|------------------------|-----------------------------------|
+| `bg-color-inherit`     | `background-color: inherit;`      |
+| `bg-color-current`     | `background-color: currentColor;` |
+| `bg-color-transparent` | `background-color: transparent;`  |
+
 ## Usage
 
 Use the `bg-color-{value}` class for setup background color.
@@ -12,14 +18,6 @@ Use the `bg-color-{value}` class for setup background color.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                  | Property                          |
-|------------------------|-----------------------------------|
-| `bg-color-inherit`     | `background-color: inherit;`      |
-| `bg-color-current`     | `background-color: currentColor;` |
-| `bg-color-transparent` | `background-color: transparent;`  |
 
 ## Configuration
 

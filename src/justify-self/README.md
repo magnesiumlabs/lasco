@@ -2,6 +2,14 @@
 
 Utilities for applying `justify-self` property an element.
 
+| Class                  | Property                 |
+|------------------------|--------------------------|
+| `justify-self-auto`    | `justify-self: auto;`    |
+| `justify-self-start`   | `justify-self: start;`   |
+| `justify-self-end`     | `justify-self: end;`     |
+| `justify-self-center`  | `justify-self: center;`  |
+| `justify-self-stretch` | `justify-self: stretch;` |
+
 ## Usage
 
 Use the `justify-self-{key}` class for set up the justify-self type.
@@ -12,16 +20,6 @@ Use the `justify-self-{key}` class for set up the justify-self type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                  | Property                 |
-|------------------------|--------------------------|
-| `justify-self-auto`    | `justify-self: auto;`    |
-| `justify-self-start`   | `justify-self: start;`   |
-| `justify-self-end`     | `justify-self: end;`     |
-| `justify-self-center`  | `justify-self: center;`  |
-| `justify-self-stretch` | `justify-self: stretch;` |
 
 ## Configuration
 

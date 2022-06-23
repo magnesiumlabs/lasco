@@ -2,6 +2,13 @@
 
 Utilities for applying `text-align` to an element.
 
+| Class          | Property               |
+|----------------|------------------------|
+| `text-left`    | `text-align: left;`    |
+| `text-center`  | `text-align: center;`  |
+| `text-right`   | `text-align: right;`   |
+| `text-justify` | `text-align: justify;` |
+
 ## Usage
 
 Use the `text-{key}` class for setup the `text-align`.
@@ -12,15 +19,6 @@ Use the `text-{key}` class for setup the `text-align`.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class          | Property               |
-|----------------|------------------------|
-| `text-left`    | `text-align: left;`    |
-| `text-center`  | `text-align: center;`  |
-| `text-right`   | `text-align: right;`   |
-| `text-justify` | `text-align: justify;` |
 
 ## Configuration
 

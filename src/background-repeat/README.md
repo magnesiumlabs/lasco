@@ -2,6 +2,15 @@
 
 Utilities for controlling background image repeat.
 
+| Class             | Property                        |
+|-------------------|---------------------------------|
+| `bg-repeat`       | `background-repeat: repeat;`    |
+| `bg-repeat-none`  | `background-repeat: no-repeat;` |
+| `bg-repeat-x`     | `background-repeat: repeat-x;`  |
+| `bg-repeat-y`     | `background-repeat: repeat-y;`  |
+| `bg-repeat-round` | `background-repeat: round;`     |
+| `bg-repeat-space` | `background-repeat: space;`     |
+
 ## Usage
 
 Use the `bg-repeat-{style}` class for setup background image repeat.
@@ -12,17 +21,6 @@ Use the `bg-repeat-{style}` class for setup background image repeat.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class             | Property                        |
-|-------------------|---------------------------------|
-| `bg-repeat`       | `background-repeat: repeat;`    |
-| `bg-repeat-none`  | `background-repeat: no-repeat;` |
-| `bg-repeat-x`     | `background-repeat: repeat-x;`  |
-| `bg-repeat-y`     | `background-repeat: repeat-y;`  |
-| `bg-repeat-round` | `background-repeat: round;`     |
-| `bg-repeat-space` | `background-repeat: space;`     |
 
 ## Configuration
 

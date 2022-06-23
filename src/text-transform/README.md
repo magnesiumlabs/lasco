@@ -2,6 +2,13 @@
 
 Utilities for applying `text-transform` to an element.
 
+| Class             | Property                      |
+|-------------------|-------------------------------|
+| `text-uppercase`  | `text-transform: uppercase;`  |
+| `text-lowercase`  | `text-transform: lowercase;`  |
+| `text-capitalize` | `text-transform: capitalize;` |
+| `text-normal`     | `text-transform: none;`       |
+
 ## Usage
 
 Use the `text-{key}` class for setup the `text-transform`.
@@ -12,15 +19,6 @@ Use the `text-{key}` class for setup the `text-transform`.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class             | Property                      |
-|-------------------|-------------------------------|
-| `text-uppercase`  | `text-transform: uppercase;`  |
-| `text-lowercase`  | `text-transform: lowercase;`  |
-| `text-capitalize` | `text-transform: capitalize;` |
-| `text-normal`     | `text-transform: none;`       |
 
 ## Configuration
 

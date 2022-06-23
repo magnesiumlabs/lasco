@@ -2,6 +2,12 @@
 
 Utilities for applying `flex-wrap` type of element.
 
+| Class               | Property                   |
+|---------------------|----------------------------|
+| `flex-wrap`         | `flex-wrap: wrap;`         |
+| `flex-wrap-reverse` | `flex-wrap: wrap-reverse;` |
+| `flex-nowrap`       | `flex-wrap: nowrap;`       |
+
 ## Usage
 
 Use the `flex-{key}` class for set up the `flex-wrap` type.
@@ -12,14 +18,6 @@ Use the `flex-{key}` class for set up the `flex-wrap` type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class               | Property                   |
-|---------------------|----------------------------|
-| `flex-wrap`         | `flex-wrap: wrap;`         |
-| `flex-wrap-reverse` | `flex-wrap: wrap-reverse;` |
-| `flex-nowrap`       | `flex-wrap: nowrap;`       |
 
 ## Configuration
 

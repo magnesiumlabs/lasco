@@ -2,6 +2,13 @@
 
 Utilities for applying `flex-direction` type of element.
 
+| Class                 | Property                          |
+|-----------------------|-----------------------------------|
+| `flex-row`            | `flex-direction: row;`            |
+| `flex-row-reverse`    | `flex-direction: row-reverse;`    |
+| `flex-column`         | `flex-direction: column;`         |
+| `flex-column-reverse` | `flex-direction: column-reverse;` |
+
 ## Usage
 
 Use the `flex-{key}` class for set up the flex-direction type.
@@ -12,15 +19,6 @@ Use the `flex-{key}` class for set up the flex-direction type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                 | Property                          |
-|-----------------------|-----------------------------------|
-| `flex-row`            | `flex-direction: row;`            |
-| `flex-row-reverse`    | `flex-direction: row-reverse;`    |
-| `flex-column`         | `flex-direction: column;`         |
-| `flex-column-reverse` | `flex-direction: column-reverse;` |
 
 ## Configuration
 
