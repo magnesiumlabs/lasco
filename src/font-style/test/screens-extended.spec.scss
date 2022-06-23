@@ -12,7 +12,7 @@
 @use "../index" as font-style;
 
 @include describe("font-style.core-styles()") {
-    @include it("Should return main styles declarations with extended breakpoints.") {
+    @include it("Should return extended styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
                 @include font-style.core-styles;

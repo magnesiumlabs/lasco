@@ -14,7 +14,7 @@
 @use "../index" as font-style;
 
 @include describe("font-style.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include font-style.core-styles;

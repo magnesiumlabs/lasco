@@ -14,7 +14,7 @@
 @use "../index" as align-self;
 
 @include describe("align-self.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include align-self.core-styles;

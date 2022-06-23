@@ -13,7 +13,7 @@
 @use "../index" as grayscale;
 
 @include describe("grayscale.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include grayscale.core-styles;

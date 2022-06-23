@@ -13,7 +13,7 @@
 @use "../index" as flex-grow;
 
 @include describe("flex-grow.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include flex-grow.core-styles;
