@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/magnesiumlabs/lasco/compare/v1.3.0...v1.4.0) (2022-06-23)
+
+
+### Features
+
+* **flex-basis:** add main styles ([3456e1d](https://github.com/magnesiumlabs/lasco/commit/3456e1d1385c167f8b24b13a2527f12dc103d2ea))
+* **flex:** add main styles ([37f1155](https://github.com/magnesiumlabs/lasco/commit/37f1155051777be9ba051cbd48619e4b6ba275c7)), closes [#77](https://github.com/magnesiumlabs/lasco/issues/77)
+
+
+### Code Refactoring
+
+* move `none` on top ([d6db8fd](https://github.com/magnesiumlabs/lasco/commit/d6db8fd0361a356089e06e27b75e7a12b8a7dc7a))
+
 ## [1.3.0](https://github.com/magnesiumlabs/lasco/compare/v1.2.0...v1.3.0) (2022-06-22)
 
 
