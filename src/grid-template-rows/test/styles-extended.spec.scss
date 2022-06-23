@@ -14,7 +14,7 @@
 @use "../index" as grid-template-rows;
 
 @include describe("grid-template-rows.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include grid-template-rows.core-styles;

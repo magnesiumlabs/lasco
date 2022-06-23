@@ -14,7 +14,7 @@
 @use "../index" as gap;
 
 @include describe("gap.core-styles()") {
-    @include it("Should return main styles extended declarations.") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
                 @include gap.core-styles;
