@@ -21,12 +21,12 @@
             }
 
             @include expect(false) {
-                .order-12 {
-                    order: 12;
-                }
-
                 .order-none {
                     order: 0;
+                }
+
+                .order-12 {
+                    order: 12;
                 }
             }
         }
