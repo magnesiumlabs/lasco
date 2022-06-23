@@ -1,0 +1,23 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:string";
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .flex {
+        @include core.declaration("flex") {
+            @each $key, $value in variables.$extend {
+                &-#{$key} {
+                    flex: string.unquote($value);
+                }
+            }
+
+            &-none {
+                flex: none;
+            }
+        }
+    }
+}
