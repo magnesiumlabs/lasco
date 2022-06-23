@@ -1,0 +1,30 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "../core";
+@use "./variables";
+
+@mixin core-styles {
+    .flex-basic {
+        @include core.declaration("flex-basis") {
+            &-none {
+                flex-basis: 0;
+            }
+
+            &-auto {
+                flex-basis: auto;
+            }
+
+            @each $key, $value in variables.$extend {
+                &-#{$key} {
+                    flex-basis: $value;
+                }
+            }
+
+            &-full {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
