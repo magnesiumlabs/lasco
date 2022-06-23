@@ -2,19 +2,6 @@
 
 Utilities for applying `font-weight` to an element.
 
-## Usage
-
-Use the `font-{number}` class for set up the `font-weight`.
-
-```html
-
-<div class="font-400">
-    <!-- ... -->
-</div>
-```
-
-### Classes
-
 | Class      | Property            |
 |------------|---------------------|
 | `font-100` | `font-weight: 100;` |
@@ -26,6 +13,17 @@ Use the `font-{number}` class for set up the `font-weight`.
 | `font-700` | `font-weight: 700;` |
 | `font-800` | `font-weight: 800;` |
 | `font-900` | `font-weight: 900;` |
+
+## Usage
+
+Use the `font-{number}` class for set up the `font-weight`.
+
+```html
+
+<div class="font-400">
+    <!-- ... -->
+</div>
+```
 
 ## Configuration
 

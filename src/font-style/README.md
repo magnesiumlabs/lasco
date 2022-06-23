@@ -2,6 +2,11 @@
 
 Utilities for applying `font-style` to an element.
 
+| Class         | Property              |
+|---------------|-----------------------|
+| `font-normal` | `font-style: normal;` |
+| `font-italic` | `font-style: italic;` |
+
 ## Usage
 
 Use the `font-{key}` class for set up the `font-style`.
@@ -12,13 +17,6 @@ Use the `font-{key}` class for set up the `font-style`.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class         | Property              |
-|---------------|-----------------------|
-| `font-normal` | `font-style: normal;` |
-| `font-italic` | `font-style: italic;` |
 
 ## Configuration
 

@@ -2,19 +2,6 @@
 
 Utilities for applying `display` type of element.
 
-## Usage
-
-Use the `{key}` class for set up the display type.
-
-```html
-
-<div class="block">
-    <!-- ... -->
-</div>
-```
-
-### Classes
-
 | Class          | Property                 |
 |----------------|--------------------------|
 | `block`        | `display: block;`        |
@@ -26,6 +13,17 @@ Use the `{key}` class for set up the display type.
 | `table`        | `display: table;`        |
 | `inline-table` | `display: inline-table;` |
 | `hidden`       | `display: none;`         |
+
+## Usage
+
+Use the `{key}` class for set up the display type.
+
+```html
+
+<div class="block">
+    <!-- ... -->
+</div>
+```
 
 ## Configuration
 

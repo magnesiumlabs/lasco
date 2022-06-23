@@ -2,6 +2,12 @@
 
 Class generator for setting `height` property for an element.
 
+| Class      | Property         |
+|------------|------------------|
+| `h-0`      | `height: 0;`     |
+| `h-full`   | `height: 100%;`  |
+| `h-screen` | `height: 100vh;` |
+
 ## Usage
 
 Use the `h-{index}` class for setup ratio aspect.
@@ -12,14 +18,6 @@ Use the `h-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class      | Property         |
-|------------|------------------|
-| `h-0`      | `height: 0;`     |
-| `h-full`   | `height: 100%;`  |
-| `h-screen` | `height: 100vh;` |
 
 ## Configuration
 

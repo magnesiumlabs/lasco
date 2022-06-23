@@ -2,6 +2,12 @@
 
 Utilities for applying background image's position on scroll.
 
+| Class                  | Property                         |
+|------------------------|----------------------------------|
+| `bg-attachment-local`  | `background-attachment: local;`  |
+| `bg-attachment-fixed`  | `background-attachment: fixed;`  |
+| `bg-attachment-scroll` | `background-attachment: scroll;` |
+
 ## Usage
 
 Use the `bg-attachment-{value}` class for setup background image's position.
@@ -12,14 +18,6 @@ Use the `bg-attachment-{value}` class for setup background image's position.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                  | Property                         |
-|------------------------|----------------------------------|
-| `bg-attachment-local`  | `background-attachment: local;`  |
-| `bg-attachment-fixed`  | `background-attachment: fixed;`  |
-| `bg-attachment-scroll` | `background-attachment: scroll;` |
 
 ## Configuration
 

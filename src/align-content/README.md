@@ -2,6 +2,15 @@
 
 Utilities for applying `align-content` property an element.
 
+| Class                   | Property                        |
+|-------------------------|---------------------------------|
+| `align-content-start`   | `align-content: flex-start;`    |
+| `align-content-end`     | `align-content: flex-end;`      |
+| `align-content-center`  | `align-content: center;`        |
+| `align-content-between` | `align-content: space-between;` |
+| `align-content-around`  | `align-content: space-around;`  |
+| `align-content-evenly`  | `align-content: space-evenly;`  |
+
 ## Usage
 
 Use the `align-content-{key}` class for set up the align-content type.
@@ -12,17 +21,6 @@ Use the `align-content-{key}` class for set up the align-content type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                   | Property                        |
-|-------------------------|---------------------------------|
-| `align-content-start`   | `align-content: flex-start;`    |
-| `align-content-end`     | `align-content: flex-end;`      |
-| `align-content-center`  | `align-content: center;`        |
-| `align-content-between` | `align-content: space-between;` |
-| `align-content-around`  | `align-content: space-around;`  |
-| `align-content-evenly`  | `align-content: space-evenly;`  |
 
 ## Configuration
 

@@ -2,6 +2,11 @@
 
 Utilities for applying grayscale to an element.
 
+| Class         | Property                |
+|---------------|-------------------------|
+| `grayscale-0` | `filter: grayscale(0);` |
+| `grayscale`   | `filter: grayscale(1);` |
+
 ## Usage
 
 Use the `grayscale-{amount}` class for setup ratio aspect.
@@ -12,13 +17,6 @@ Use the `grayscale-{amount}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class         | Property                |
-|---------------|-------------------------|
-| `grayscale-0` | `filter: grayscale(0);` |
-| `grayscale`   | `filter: grayscale(1);` |
 
 ## Configuration
 

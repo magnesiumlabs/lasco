@@ -2,6 +2,13 @@
 
 Utilities for applying clear type an element.
 
+| Class         | Property        |
+|---------------|-----------------|
+| `clear-none`  | `clear: none;`  |
+| `clear-left`  | `clear: left;`  |
+| `clear-right` | `clear: right;` |
+| `clear-both`  | `clear: both;`  |
+
 ## Usage
 
 Use the `clear-{key}` class for set up the clear type.
@@ -12,15 +19,6 @@ Use the `clear-{key}` class for set up the clear type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class         | Property        |
-|---------------|-----------------|
-| `clear-none`  | `clear: none;`  |
-| `clear-left`  | `clear: left;`  |
-| `clear-right` | `clear: right;` |
-| `clear-both`  | `clear: both;`  |
 
 ## Configuration
 

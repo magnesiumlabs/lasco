@@ -2,6 +2,10 @@
 
 Utilities for applying `background-image` to an element.
 
+| Class           | Property                  |
+|-----------------|---------------------------|
+| `bg-image-none` | `background-image: none;` |
+
 ## Usage
 
 Use the `bg-image-{value}` class for setup background image.
@@ -12,12 +16,6 @@ Use the `bg-image-{value}` class for setup background image.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class           | Property                  |
-|-----------------|---------------------------|
-| `bg-image-none` | `background-image: none;` |
 
 ## Configuration
 

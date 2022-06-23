@@ -2,6 +2,12 @@
 
 Class generator for setting `width` property for an element.
 
+| Class      | Property        |
+|------------|-----------------|
+| `w-0`      | `width: 0;`     |
+| `w-full`   | `width: 100%;`  |
+| `w-screen` | `width: 100vw;` |
+
 ## Usage
 
 Use the `w-{index}` class for setup ratio aspect.
@@ -12,14 +18,6 @@ Use the `w-{index}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class      | Property        |
-|------------|-----------------|
-| `w-0`      | `width: 0;`     |
-| `w-full`   | `width: 100%;`  |
-| `w-screen` | `width: 100vw;` |
 
 ## Configuration
 

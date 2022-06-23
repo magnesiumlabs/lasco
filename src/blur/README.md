@@ -2,6 +2,10 @@
 
 Utilities for applying `blur` to an element.
 
+| Class    | Property           |
+|----------|--------------------|
+| `blur-0` | `filter: blur(0);` |
+
 ## Usage
 
 Use the `blur-{radius}` class for setup ratio aspect.
@@ -12,12 +16,6 @@ Use the `blur-{radius}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class    | Property           |
-|----------|--------------------|
-| `blur-0` | `filter: blur(0);` |
 
 ## Configuration
 

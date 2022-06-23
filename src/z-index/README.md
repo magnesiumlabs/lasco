@@ -2,6 +2,11 @@
 
 Utilities for applying position order to an element.
 
+| Class    | Property         |
+|----------|------------------|
+| `z-0`    | `z-index: 0;`    |
+| `z-auto` | `z-index: auto;` |
+
 ## Usage
 
 Use the `z-{index}` class for setup order position.
@@ -12,13 +17,6 @@ Use the `z-{index}` class for setup order position.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class    | Property         |
-|----------|------------------|
-| `z-0`    | `z-index: 0;`    |
-| `z-auto` | `z-index: auto;` |
 
 ## Configuration
 

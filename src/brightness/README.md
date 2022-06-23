@@ -2,6 +2,11 @@
 
 Utilities for applying `brightness` to an element.
 
+| Class            | Property                 |
+|------------------|--------------------------|
+| `brightness-0`   | `filter: brightness(0);` |
+| `brightness-100` | `filter: brightness(1);` |
+
 ## Usage
 
 Use the `brightness-{amount}` class for setup ratio aspect.
@@ -12,13 +17,6 @@ Use the `brightness-{amount}` class for setup ratio aspect.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class            | Property                 |
-|------------------|--------------------------|
-| `brightness-0`   | `filter: brightness(0);` |
-| `brightness-100` | `filter: brightness(1);` |
 
 ## Configuration
 

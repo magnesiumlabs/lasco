@@ -2,6 +2,16 @@
 
 Utilities for applying `place-content` property an element.
 
+| Class                   | Property                        |
+|-------------------------|---------------------------------|
+| `place-content-start`   | `place-content: flex-start;`    |
+| `place-content-end`     | `place-content: flex-end;`      |
+| `place-content-center`  | `place-content: center;`        |
+| `place-content-between` | `place-content: space-between;` |
+| `place-content-around`  | `place-content: space-around;`  |
+| `place-content-evenly`  | `place-content: space-evenly;`  |
+| `place-content-stretch` | `place-content: stretch;`       |
+
 ## Usage
 
 Use the `place-content-{key}` class for set up the place-content type.
@@ -12,18 +22,6 @@ Use the `place-content-{key}` class for set up the place-content type.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class                   | Property                        |
-|-------------------------|---------------------------------|
-| `place-content-start`   | `place-content: flex-start;`    |
-| `place-content-end`     | `place-content: flex-end;`      |
-| `place-content-center`  | `place-content: center;`        |
-| `place-content-between` | `place-content: space-between;` |
-| `place-content-around`  | `place-content: space-around;`  |
-| `place-content-evenly`  | `place-content: space-evenly;`  |
-| `place-content-stretch` | `place-content: stretch;`       |
 
 ## Configuration
 

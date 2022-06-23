@@ -2,6 +2,12 @@
 
 Utilities for controlling background box origin.
 
+| Class               | Property                          |
+|---------------------|-----------------------------------|
+| `bg-origin-border`  | `background-origin: border-box;`  |
+| `bg-origin-content` | `background-origin: content-box;` |
+| `bg-origin-padding` | `background-origin: padding-box;` |  
+
 ## Usage
 
 Use the `bg-origin-{value}` class for setup background box origin.
@@ -12,14 +18,6 @@ Use the `bg-origin-{value}` class for setup background box origin.
     <!-- ... -->
 </div>
 ```
-
-### Classes
-
-| Class               | Property                          |
-|---------------------|-----------------------------------|
-| `bg-origin-border`  | `background-origin: border-box;`  |
-| `bg-origin-content` | `background-origin: content-box;` |
-| `bg-origin-padding` | `background-origin: padding-box;` |    
 
 ## Configuration
 
