@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/magnesiumlabs/lasco/compare/v1.4.0...v1.5.0) (2022-06-28)
+
+
+### Features
+
+* **options:** add  `screens` key on `$engine` ([214b5f4](https://github.com/magnesiumlabs/lasco/commit/214b5f4501aa877b61895b457ff2fff24b0e2ba5)), closes [#72](https://github.com/magnesiumlabs/lasco/issues/72)
+
 ## [1.4.0](https://github.com/magnesiumlabs/lasco/compare/v1.3.0...v1.4.0) (2022-06-23)
 
 
