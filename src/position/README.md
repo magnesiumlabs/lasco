@@ -21,7 +21,23 @@ Use the `{key}` class for setup the display type.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:relative` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="absolute lg:relative">
+    <!-- ... -->
+</div>
+```
+
+## Customizing
+
+### Extend
 
 By default, the configuration provides a handful of general purpose position utilities. You can easily filter the
 default scales using the Sass configuration.
@@ -46,18 +62,4 @@ If you don't need the `position` classes, you can disable them by setting the op
         "position": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:relative` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="absolute lg:relative">
-    <!-- ... -->
-</div>
 ```

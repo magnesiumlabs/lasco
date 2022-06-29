@@ -19,7 +19,23 @@ Use the `aspect-{index}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:aspect-video` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="aspect-auto lg:aspect-video">
+    <!-- ... -->
+</div>
+```
+
+## Customizing
+
+### Extend
 
 By default, the configuration provides a handful of general purpose `aspect-ratio` utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -42,18 +58,4 @@ default scales using the Sass configuration.
         "aspect-ratio": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:aspect-video` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="aspect-auto lg:aspect-video">
-    <!-- ... -->
-</div>
 ```

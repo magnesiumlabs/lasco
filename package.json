@@ -9,6 +9,9 @@
         "test:unit": "jest --ci --reporters=default --reporters=jest-junit",
         "test": "npm-run-all --parallel test:*",
         "build": "npm run clean:dist && webpack && npm run clean:chunks",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:serve": "vitepress serve docs",
         "prepare": "husky install && npm run build",
         "release": "semantic-release"
     },
@@ -36,6 +39,8 @@
         "sass-loader": "^12.6.0",
         "sass-true": "^6.1.0",
         "semantic-release": "^19.0.3",
+        "vitepress": "^1.0.0-alpha.4",
+        "vue": "^3.2.37",
         "webpack": "^5.73.0",
         "webpack-cli": "^4.10.0"
     },

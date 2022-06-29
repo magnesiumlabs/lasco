@@ -20,7 +20,23 @@ Use the `clear-{key}` class for set up the clear type.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:clear-right` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="clear-left lg:clear-right">
+    <!-- ... -->
+</div>
+```
+
+## Customizing
+
+### Extend
 
 By default, the configuration provides a handful of general purpose clear type utilities. You can easily filter the
 default scales using the Sass configuration.
@@ -45,18 +61,4 @@ If you don't need the `clear` classes, you can disable them by setting the optio
         "clear": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:clear-right` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="clear-left lg:clear-right">
-    <!-- ... -->
-</div>
 ```
