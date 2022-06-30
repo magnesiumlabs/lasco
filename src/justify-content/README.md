@@ -23,6 +23,20 @@ Use the `justify-content-{key}` class for set up the justify-content type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-content-start` will
+be only apply on large screens size and above.
+
+```html
+
+<div class="justify-content-center lg:justify-content-start">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -50,18 +64,4 @@ You can easily disable the properties you don't need to use.
         "justify-content": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-content-start` will
-be only apply on large screens size and above.
-
-```html
-
-<div class="justify-content-center lg:justify-content-start">
-    <!-- ... -->
-</div>
 ```

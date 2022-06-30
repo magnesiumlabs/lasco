@@ -21,6 +21,20 @@ Use the `justify-self-{key}` class for set up the justify-self type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-self-start` will be
+only apply on large screens size and above.
+
+```html
+
+<div class="justify-self-center lg:justify-self-start">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -48,18 +62,4 @@ You can easily disable the properties you don't need to use.
         "justify-self": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-self-start` will be
-only apply on large screens size and above.
-
-```html
-
-<div class="justify-self-center lg:justify-self-start">
-    <!-- ... -->
-</div>
 ```

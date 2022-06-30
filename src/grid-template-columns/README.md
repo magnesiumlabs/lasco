@@ -29,6 +29,20 @@ Use the `grid-cols-{key}` class for setup grid columns.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:grid-cols-12` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="grid-cols-6 lg:grid-cols-12">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -57,18 +71,4 @@ You can easily disable the properties you don't need to use.
         "grid-template-columns": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:grid-cols-12` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="grid-cols-6 lg:grid-cols-12">
-    <!-- ... -->
-</div>
 ```

@@ -22,6 +22,20 @@ Use the `align-content-{key}` class for set up the align-content type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:align-content-start` will
+be only apply on large screens size and above.
+
+```html
+
+<div class="align-content-center lg:align-content-start">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -49,18 +63,4 @@ You can easily disable the properties you don't need to use.
         "align-content": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:align-content-start` will
-be only apply on large screens size and above.
-
-```html
-
-<div class="align-content-center lg:align-content-start">
-    <!-- ... -->
-</div>
 ```

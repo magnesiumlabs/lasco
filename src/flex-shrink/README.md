@@ -18,6 +18,20 @@ Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-shrink-0` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="flex-shrink lg:flex-shrink-0">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -45,18 +59,4 @@ You can easily disable the properties you don't need to use.
         "flex-shrink": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-shrink-0` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="flex-shrink lg:flex-shrink-0">
-    <!-- ... -->
-</div>
 ```

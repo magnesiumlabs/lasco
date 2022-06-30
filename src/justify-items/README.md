@@ -20,6 +20,20 @@ Use the `justify-items-{key}` class for set up the justify-items type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-items-start` will
+be only apply on large screens size and above.
+
+```html
+
+<div class="justify-items-center lg:justify-items-start">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -47,18 +61,4 @@ You can easily disable the properties you don't need to use.
         "justify-items": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-items-start` will
-be only apply on large screens size and above.
-
-```html
-
-<div class="justify-items-center lg:justify-items-start">
-    <!-- ... -->
-</div>
 ```

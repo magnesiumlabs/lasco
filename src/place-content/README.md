@@ -23,6 +23,20 @@ Use the `place-content-{key}` class for set up the place-content type.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:place-content-start` will
+be only apply on large screens size and above.
+
+```html
+
+<div class="place-content-center lg:place-content-start">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -50,18 +64,4 @@ You can easily disable the properties you don't need to use.
         "place-content": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:place-content-start` will
-be only apply on large screens size and above.
-
-```html
-
-<div class="place-content-center lg:place-content-start">
-    <!-- ... -->
-</div>
 ```

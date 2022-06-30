@@ -17,6 +17,20 @@ Use the `order-{key}` class for setup ratio aspect.
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:order-12` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="order-none lg:order-12">
+    <!-- ... -->
+</div>
+```
+
 ## Customization
 
 ### Extend your theme
@@ -46,18 +60,4 @@ You can easily disable the properties you don't need to use.
         "order": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:order-12` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="order-none lg:order-12">
-    <!-- ... -->
-</div>
 ```
