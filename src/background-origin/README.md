@@ -19,7 +19,23 @@ Use the `bg-origin-{value}` class for setup background box origin.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-origin-padding` will be
+only apply on large screens size and above.
+
+```html
+
+<div class="bg-origin-border lg:bg-origin-padding">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose background box origin utilities. You can easily
 filter the default scales using the Sass configuration.
@@ -44,18 +60,4 @@ You can easily disable the properties you don't need to use.
         "bg-origin": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-origin-padding` will be
-only apply on large screens size and above.
-
-```html
-
-<div class="bg-origin-border lg:bg-origin-padding">
-    <!-- ... -->
-</div>
 ```

@@ -18,7 +18,9 @@ Use the `flex--shrink-{amount}` class for set up the flex-shrink type.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `flex-shrink` type utilities. You can easily filter
 the default scales using the Sass configuration.

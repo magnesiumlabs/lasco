@@ -18,7 +18,9 @@ Use the `flex-grow-{amount}` class for set up the flex-grow type.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `flex-grow` type utilities. You can easily filter
 the default scales using the Sass configuration.

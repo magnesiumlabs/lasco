@@ -19,7 +19,9 @@ Use the `flex-{key}` class for set up the `flex-wrap` type.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `flex-wrap` type utilities. You can easily filter
 the default scales using the Sass configuration.

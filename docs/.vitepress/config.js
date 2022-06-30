@@ -114,7 +114,40 @@ module.exports = {
             {
                 text: 'Backgrounds',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Background-Attachment',
+                        link: 'guide/background-attachment'
+                    },
+                    {
+                        text: 'Background-Clip',
+                        link: 'guide/background-clip'
+                    },
+                    {
+                        text: 'Background-Color',
+                        link: 'guide/background-color'
+                    },
+                    {
+                        text: 'Background-Image',
+                        link: 'guide/background-image'
+                    },
+                    {
+                        text: 'Background-Origin',
+                        link: 'guide/background-origin'
+                    },
+                    {
+                        text: 'Background-Position',
+                        link: 'guide/background-position'
+                    },
+                    {
+                        text: 'Background-Repeat',
+                        link: 'guide/background-repeat'
+                    },
+                    {
+                        text: 'Background-Size',
+                        link: 'guide/background-size'
+                    }
+                ]
             },
             {
                 text: 'Filters',

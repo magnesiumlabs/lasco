@@ -20,7 +20,9 @@ Use the `place-items-{key}` class for set up the place-items type.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `place-items` type utilities. You can easily filter
 the default scales using the Sass configuration.

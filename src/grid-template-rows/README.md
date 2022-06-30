@@ -23,7 +23,9 @@ Use the `grid-rows-{key}` class for setup grid rows.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `grid-template-rows` utilities. You can easily
 extend the default scales using the Sass configuration.

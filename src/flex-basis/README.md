@@ -19,7 +19,9 @@ Use the `flex-basis-{key}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose flex-basis utilities. You can easily extend the default
 scales using the Sass configuration.

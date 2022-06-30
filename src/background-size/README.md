@@ -19,7 +19,23 @@ Use the `bg-size-{value}` class for setup background size.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-size-cover` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="bg-size-auto lg:bg-size-cover">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose background size utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -49,18 +65,4 @@ You can easily disable the properties you don't need to use.
         "bg-size": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-size-cover` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="bg-size-auto lg:bg-size-cover">
-    <!-- ... -->
-</div>
 ```

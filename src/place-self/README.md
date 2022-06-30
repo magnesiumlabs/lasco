@@ -21,7 +21,9 @@ Use the `place-self-{key}` class for set up the place-self type.
 </div>
 ```
 
-## Configuration
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `place-self` type utilities. You can easily filter
 the default scales using the Sass configuration.
