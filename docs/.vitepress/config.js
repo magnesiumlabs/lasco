@@ -174,7 +174,84 @@ module.exports = {
             {
                 text: 'Flexbox & Grid',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Flex',
+                        link: 'guide/flex'
+                    },
+                    {
+                        text: 'Flex-Direction',
+                        link: 'guide/flex-direction'
+                    },
+                    {
+                        text: 'Flex-Wrap',
+                        link: 'guide/flex-wrap'
+                    },
+                    {
+                        text: 'Flex-Grow',
+                        link: 'guide/flex-grow'
+                    },
+                    {
+                        text: 'Flex-Shrink',
+                        link: 'guide/flex-shrink'
+                    },
+                    {
+                        text: 'Flex-Basis',
+                        link: 'guide/flex-basis'
+                    },
+                    {
+                        text: 'Order',
+                        link: 'guide/order'
+                    },
+                    {
+                        text: 'Grid-Template-Columns',
+                        link: 'guide/grid-template-columns'
+                    },
+                    {
+                        text: 'Grid-Template-Rows',
+                        link: 'guide/grid-template-rows'
+                    },
+                    {
+                        text: 'Gap',
+                        link: 'guide/gap'
+                    },
+                    {
+                        text: 'Align-Self',
+                        link: 'guide/align-self'
+                    },
+                    {
+                        text: 'Align-Content',
+                        link: 'guide/align-content'
+                    },
+                    {
+                        text: 'Align-Items',
+                        link: 'guide/align-items'
+                    },
+                    {
+                        text: 'Justify-Self',
+                        link: 'guide/justify-self'
+                    },
+                    {
+                        text: 'Justify-Content',
+                        link: 'guide/justify-content'
+                    },
+                    {
+                        text: 'Justify-Items',
+                        link: 'guide/justify-items'
+                    },
+                    {
+                        text: 'Place-Self',
+                        link: 'guide/place-self'
+                    },
+                    {
+                        text: 'Place-Content',
+                        link: 'guide/place-content'
+                    },
+                    {
+                        text: 'Place-Items',
+                        link: 'guide/place-items'
+                    }
+                ]
             }
         ]
     }
