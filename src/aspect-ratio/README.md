@@ -10,7 +10,7 @@ Utilities for applying `aspect-ratio` to an element.
 
 ## Usage
 
-Use the `aspect-{index}` class for setup ratio aspect.
+Use the `aspect-{key}` class for setup ratio aspect.
 
 ```html
 
@@ -21,7 +21,7 @@ Use the `aspect-{index}` class for setup ratio aspect.
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:aspect-video` will be only
 apply on large screens size and above.
@@ -33,9 +33,9 @@ apply on large screens size and above.
 </div>
 ```
 
-## Customizing
+## Customization
 
-### Extend
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `aspect-ratio` utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -51,6 +51,8 @@ default scales using the Sass configuration.
 ```
 
 ### Disabled
+
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (

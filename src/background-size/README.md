@@ -41,6 +41,8 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#va
 
 ### Disabled
 
+You can easily disable the properties you don't need to use.
+
 ```scss
 @use "lasco" with (
     $extend: (
@@ -51,7 +53,7 @@ Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#va
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-size-cover` will be only
 apply on large screens size and above.

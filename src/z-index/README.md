@@ -9,7 +9,7 @@ Utilities for applying position order to an element.
 
 ## Usage
 
-Use the `z-{index}` class for setup order position.
+Use the `z-{key}` class for setup order position.
 
 ```html
 
@@ -20,7 +20,7 @@ Use the `z-{index}` class for setup order position.
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:z-auto` will be only apply
 on large screens size and above.
@@ -32,9 +32,9 @@ on large screens size and above.
 </div>
 ```
 
-## Customizing
+## Customization
 
-### Extend
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose position order utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -50,6 +50,8 @@ default scales using the Sass configuration.
 ```
 
 ### Disabled
+
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (

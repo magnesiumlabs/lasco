@@ -22,7 +22,7 @@ Use the `clear-{key}` class for set up the clear type.
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:clear-right` will be only
 apply on large screens size and above.
@@ -34,9 +34,9 @@ apply on large screens size and above.
 </div>
 ```
 
-## Customizing
+## Customization
 
-### Extend
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose clear type utilities. You can easily filter the
 default scales using the Sass configuration.
@@ -53,7 +53,7 @@ default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `clear` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (

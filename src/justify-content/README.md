@@ -40,7 +40,7 @@ filter the default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `justify-content` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (
@@ -52,7 +52,7 @@ If you don't need the `justify-content` classes, you can disable them by setting
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:justify-content-start` will
 be only apply on large screens size and above.

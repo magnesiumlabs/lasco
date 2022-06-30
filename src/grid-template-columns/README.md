@@ -47,6 +47,8 @@ extend the default scales using the Sass configuration.
 
 ### Disabled
 
+You can easily disable the properties you don't need to use.
+
 ```scss
 @use "lasco" with (
     $extend: (
@@ -57,7 +59,7 @@ extend the default scales using the Sass configuration.
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:grid-cols-12` will be only
 apply on large screens size and above.

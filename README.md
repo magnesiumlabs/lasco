@@ -24,86 +24,21 @@ npm install lasco
 @use "lasco/styles";
 ```
 
-## Configuration
+## Docs
 
-```scss
-@use "lasco" with (
-    $extend: (
-        "display": (
-            flex
-        )
-    )
-);
-```
-
-### Options
-
-| Name      | Default                              | Description                                                   |
-|-----------|--------------------------------------|---------------------------------------------------------------|
-| `$engine` | See [Engine](#the-engine-keys) keys. | Sets engine options for generate classes.                     |
-| `$extend` | `()`                                 | Extend classes generator. See [properties](#properties) list. |
-
-#### The `$engine` keys
-
-| Name      | Default | Description                                                                                             |
-|-----------|---------|---------------------------------------------------------------------------------------------------------|
-| `screens` | `()`    | Sets breakpoint classes generator. See [@unsass/breakpoint](https://github.com/unsass/breakpoint) docs. |
-| `list`    | `black` | Sets list engine _(black or white)_ for generate classes.                                               |
-
-### Extend with black list engine _(default)_
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "display": (
-            flex
-        )
-    )
-);
-```
-
-#### Disabled
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "display": false
-    )
-);
-```
-
-### Extend with white list engine
-
-This method provide only properties set at `true` or with valued map.
-
-For example, if you only need the `display` and `position: absolute` classes, you can set `"list": "white"` option
-on `$engine` and configure the `$extend` like that:
-
-```scss
-@use "lasco" with (
-    $engine: (
-        "list": "white"
-    ),
-    $extend: (
-        "display": true,
-        "position": (
-            absolute
-        )
-    )
-);
-```
+Check the documentation [here](https://docs.dtdmnlzgl3mrc.amplifyapp.com).
 
 ## Properties
 
 ### Layout
 
-| Property       | Docs                                           |
-|----------------|------------------------------------------------|
-| `aspect-ratio` | See [documentation](/src/aspect-ratio#readme). |
-| `clear`        | See [documentation](/src/clear#readme).        |
-| `display`      | See [documentation](/src/display#readme).      |
-| `position`     | See [documentation](/src/position#readme).     |
-| `z-index`      | See [documentation](/src/z-index#readme).      |
+| Property       | Docs                                                                               |
+|----------------|------------------------------------------------------------------------------------|
+| `aspect-ratio` | See [documentation](https://docs.dtdmnlzgl3mrc.amplifyapp.com/guide/aspect-ratio). |
+| `clear`        | See [documentation](https://docs.dtdmnlzgl3mrc.amplifyapp.com/guide/clear).        |
+| `display`      | See [documentation](https://docs.dtdmnlzgl3mrc.amplifyapp.com/guide/display).      |
+| `position`     | See [documentation](https://docs.dtdmnlzgl3mrc.amplifyapp.com/guide/position).     |
+| `z-index`      | See [documentation](https://docs.dtdmnlzgl3mrc.amplifyapp.com/guide/z-index).      |
 
 ### Effect
 

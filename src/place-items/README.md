@@ -37,7 +37,7 @@ the default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `place-items` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (
@@ -49,7 +49,7 @@ If you don't need the `place-items` classes, you can disable them by setting the
 
 ## Applying conditionally
 
-### Breakpoints
+### Breakpoints and media queries
 
 You can also control the responsive breakpoint with variant class modifiers. For example `lg:place-items-start` will be
 only apply on large screens size and above.
