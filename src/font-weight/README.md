@@ -25,7 +25,23 @@ Use the `font-{number}` class for set up the `font-weight`.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:font-700` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="font-400 lg:font-700">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `font-weight` type utilities. You can easily filter
 the default scales using the Sass configuration.
@@ -50,18 +66,4 @@ You can easily disable the properties you don't need to use.
         "font-weight": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:font-700` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="font-400 lg:font-700">
-    <!-- ... -->
-</div>
 ```

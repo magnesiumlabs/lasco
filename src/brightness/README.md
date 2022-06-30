@@ -18,7 +18,23 @@ Use the `brightness-{amount}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:brightness` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="brightness-0">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose brightness utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -46,18 +62,4 @@ You can easily disable the properties you don't need to use.
         "brightness": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:brightness` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="brightness-0">
-    <!-- ... -->
-</div>
 ```

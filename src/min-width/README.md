@@ -19,7 +19,23 @@ Use the `min-w-{index}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:min-w-full` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="min-w-0 lg:min-w-full">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `min-width` utilities. You can easily extend the
 default scales using the Sass configuration.
@@ -46,18 +62,4 @@ You can easily disable the properties you don't need to use.
         "min-width": true
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:min-w-full` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="min-w-0 lg:min-w-full">
-    <!-- ... -->
-</div>
 ```

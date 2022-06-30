@@ -52,17 +52,64 @@ module.exports = {
             {
                 text: 'Effects',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Opacity',
+                        link: 'guide/opacity'
+                    }
+                ]
             },
             {
                 text: 'Sizing',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Width',
+                        link: 'guide/width'
+                    },
+                    {
+                        text: 'Min-Width',
+                        link: 'guide/min-width'
+                    },
+                    {
+                        text: 'Max-Width',
+                        link: 'guide/max-width'
+                    },
+                    {
+                        text: 'Height',
+                        link: 'guide/min-height'
+                    },
+                    {
+                        text: 'Min-Height',
+                        link: 'guide/min-height'
+                    },
+                    {
+                        text: 'Max-Height',
+                        link: 'guide/max-height'
+                    }
+                ]
             },
             {
                 text: 'Typography',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Font-Style',
+                        link: 'guide/font-style'
+                    },
+                    {
+                        text: 'Font-Weight',
+                        link: 'guide/font-weight'
+                    },
+                    {
+                        text: 'Text-Align',
+                        link: 'guide/text-align'
+                    },
+                    {
+                        text: 'Text-Transform',
+                        link: 'guide/text-transform'
+                    }
+                ]
             },
             {
                 text: 'Backgrounds',
@@ -72,7 +119,24 @@ module.exports = {
             {
                 text: 'Filters',
                 collapsible: true,
-                items: []
+                items: [
+                    {
+                        text: 'Blur',
+                        link: 'guide/blur'
+                    },
+                    {
+                        text: 'Brightness',
+                        link: 'guide/brightness'
+                    },
+                    {
+                        text: 'Contrast',
+                        link: 'guide/contrast'
+                    },
+                    {
+                        text: 'Grayscale',
+                        link: 'guide/grayscale'
+                    }
+                ]
             },
             {
                 text: 'Flexbox & Grid',

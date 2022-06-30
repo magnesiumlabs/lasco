@@ -19,7 +19,23 @@ Use the `w-{index}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:w-full` will be only apply
+on large screens size and above.
+
+```html
+
+<div class="w-0 lg:w-full">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `width` utilities. You can easily extend the default
 scales using the Sass configuration.
@@ -46,18 +62,4 @@ You can easily disable the properties you don't need to use.
         "width": true
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints and media queries
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:w-full` will be only apply
-on large screens size and above.
-
-```html
-
-<div class="w-0 lg:w-full">
-    <!-- ... -->
-</div>
 ```
