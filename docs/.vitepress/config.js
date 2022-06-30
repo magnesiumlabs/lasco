@@ -5,7 +5,7 @@ module.exports = {
         nav: [
             {
                 text: 'Guide',
-                link: 'introduction'
+                link: 'guide/getting-started'
             },
             {
                 text: 'Changelog',
@@ -14,12 +14,16 @@ module.exports = {
         ],
         sidebar: [
             {
-                text: 'Guide',
+                text: 'Introduction',
                 collapsible: true,
                 items: [
                     {
-                        text: 'Introduction',
-                        link: 'introduction'
+                        text: 'Getting Started',
+                        link: 'guide/getting-started'
+                    },
+                    {
+                        text: 'Configuration',
+                        link: 'guide/configuration'
                     }
                 ]
             },
