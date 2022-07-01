@@ -2,6 +2,8 @@ module.exports = {
     title: 'Lasco',
     description: 'Just playing around.',
     themeConfig: {
+        logo: '/assets/logo.svg',
+        siteTitle: false,
         nav: [
             {
                 text: 'Guide',
@@ -13,15 +15,11 @@ module.exports = {
                 link: 'https://github.com/magnesiumlabs/lasco/blob/main/CHANGELOG.md'
             },
             {
-                text: '1.5.0',
+                text: '1.x',
                 items: [
                     {
-                        items: [
-                            {
-                                text: '1.5.0',
-                                link: '/'
-                            }
-                        ]
+                        text: '1.x',
+                        link: '/'
                     }
                 ]
             }
