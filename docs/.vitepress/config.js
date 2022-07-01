@@ -5,11 +5,35 @@ module.exports = {
         nav: [
             {
                 text: 'Guide',
-                link: 'guide/getting-started'
+                link: 'guide/getting-started',
+                activeMatch: '/guide/'
             },
             {
                 text: 'Changelog',
                 link: 'https://github.com/magnesiumlabs/lasco/blob/main/CHANGELOG.md'
+            },
+            {
+                text: '1.5.0',
+                items: [
+                    {
+                        items: [
+                            {
+                                text: '1.5.0',
+                                link: '/'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        socialLinks: [
+            {
+                icon: 'github',
+                link: 'https://github.com/magnesiumlabs/lasco'
+            },
+            {
+                icon: 'twitter',
+                link: 'https://twitter.com/lascocss'
             }
         ],
         sidebar: [
@@ -257,6 +281,10 @@ module.exports = {
                     }
                 ]
             }
-        ]
+        ],
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2021-present'
+        }
     }
 };

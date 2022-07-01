@@ -2,9 +2,8 @@
 layout: home
 
 hero:
-    name: Lasco
-    text: A utility-first CSS framework.
-    tagline: ...
+    text: Lasco
+    tagline: A utility-first CSS framework.
     actions:
         - theme: brand
           text: Get Started
