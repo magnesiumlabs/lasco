@@ -32,7 +32,23 @@ Use the `gap-x-{key}` or `gap-y-{key}` to change gap between element.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:gap-24` will be only apply
+on large screens size and above.
+
+```html
+
+<div class="gap-0 lg:gap-24">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `gap` type utilities. You can easily filter the
 default scales using the Sass configuration.
@@ -50,24 +66,12 @@ default scales using the Sass configuration.
 
 ### Disabled
 
+You can easily disable the properties you don't need to use.
+
 ```scss
 @use "lasco" with (
     $extend: (
         "gap": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:gap-24` will be only apply
-on large screens size and above.
-
-```html
-
-<div class="gap-0 lg:gap-24">
-    <!-- ... -->
-</div>
 ```

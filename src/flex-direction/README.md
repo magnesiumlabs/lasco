@@ -20,7 +20,23 @@ Use the `flex-{key}` class for set up the flex-direction type.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-column` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="flex-row lg:flex-column">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `flex-direction` type utilities. You can easily
 filter the default scales using the Sass configuration.
@@ -37,7 +53,7 @@ filter the default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `flex-direction` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (
@@ -45,18 +61,4 @@ If you don't need the `flex-direction` classes, you can disable them by setting 
         "flex-direction": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-column` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="flex-row lg:flex-column">
-    <!-- ... -->
-</div>
 ```

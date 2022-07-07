@@ -20,7 +20,23 @@ Use the `place-items-{key}` class for set up the place-items type.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:place-items-start` will be
+only apply on large screens size and above.
+
+```html
+
+<div class="place-items-center lg:place-items-start">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `place-items` type utilities. You can easily filter
 the default scales using the Sass configuration.
@@ -37,7 +53,7 @@ the default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `place-items` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (
@@ -45,18 +61,4 @@ If you don't need the `place-items` classes, you can disable them by setting the
         "place-items": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:place-items-start` will be
-only apply on large screens size and above.
-
-```html
-
-<div class="place-items-center lg:place-items-start">
-    <!-- ... -->
-</div>
 ```

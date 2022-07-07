@@ -19,7 +19,23 @@ Use the `flex-{key}` class for setup ratio aspect.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-none` will be only
+apply on large screens size and above.
+
+```html
+
+<div class="flex-auto lg:flex-none">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose flex utilities. You can easily extend the default
 scales using the Sass configuration.
@@ -36,24 +52,12 @@ scales using the Sass configuration.
 
 ### Disabled
 
+You can easily disable the properties you don't need to use.
+
 ```scss
 @use "lasco" with (
     $extend: (
         "flex": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:flex-none` will be only
-apply on large screens size and above.
-
-```html
-
-<div class="flex-auto lg:flex-none">
-    <!-- ... -->
-</div>
 ```

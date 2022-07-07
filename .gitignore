@@ -7,4 +7,5 @@ junit.xml
 .DS_Store
 /.idea
 /dist
+/docs/.vitepress/dist
 /node_modules

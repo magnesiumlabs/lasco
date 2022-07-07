@@ -22,7 +22,23 @@ Use the `align-self-{key}` class for set up the align-self type.
 </div>
 ```
 
-## Configuration
+## Applying conditionally
+
+### Breakpoints and media queries
+
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:align-self-start` will be
+only apply on large screens size and above.
+
+```html
+
+<div class="align-self-center lg:align-self-start">
+    <!-- ... -->
+</div>
+```
+
+## Customization
+
+### Extend your theme
 
 By default, the configuration provides a handful of general purpose `align-self` type utilities. You can easily filter
 the default scales using the Sass configuration.
@@ -39,7 +55,7 @@ the default scales using the Sass configuration.
 
 ### Disabled
 
-If you don't need the `align-self` classes, you can disable them by setting the option to `false`.
+You can easily disable the properties you don't need to use.
 
 ```scss
 @use "lasco" with (
@@ -47,18 +63,4 @@ If you don't need the `align-self` classes, you can disable them by setting the 
         "align-self": false
     )
 );
-```
-
-## Applying conditionally
-
-### Breakpoints
-
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:align-self-start` will be
-only apply on large screens size and above.
-
-```html
-
-<div class="align-self-center lg:align-self-start">
-    <!-- ... -->
-</div>
 ```
