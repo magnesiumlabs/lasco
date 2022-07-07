@@ -3,15 +3,14 @@
     "version": "1.5.0",
     "description": "The Sass utilities classes library.",
     "scripts": {
+        "dev:docs": "vitepress dev docs",
         "clean:chunks": "rimraf \"dist/*.js*\"",
         "clean:dist": "rimraf \"dist/*\"",
         "clean": "npm-run-all --parallel clean:*",
         "test:unit": "jest --ci --reporters=default --reporters=jest-junit",
         "test": "npm-run-all --parallel test:*",
         "build": "npm run clean:dist && webpack && npm run clean:chunks",
-        "docs:dev": "vitepress dev docs",
-        "docs:build": "vitepress build docs",
-        "docs:serve": "vitepress serve docs",
+        "build:docs": "vitepress build docs",
         "prepare": "husky install && npm run build",
         "release": "semantic-release"
     },

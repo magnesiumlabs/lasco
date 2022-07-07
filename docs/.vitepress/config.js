@@ -11,10 +11,6 @@ module.exports = {
                 activeMatch: '/guide/'
             },
             {
-                text: 'Changelog',
-                link: 'https://github.com/magnesiumlabs/lasco/blob/main/CHANGELOG.md'
-            },
-            {
                 text: '1.x',
                 items: [
                     {
@@ -46,6 +42,10 @@ module.exports = {
                     {
                         text: 'Configuration',
                         link: 'guide/configuration'
+                    },
+                    {
+                        text: 'Changelog',
+                        link: 'guide/changelog'
                     }
                 ]
             },

@@ -6,13 +6,15 @@ outline: deep
 
 ## Installing
 
+Add Lasco as dependencies for your project.
+
 ```shell
 npm install lasco
 ```
 
-## Usage
+## Basic usage
 
-### Styles
+Add main styles to your project.
 
 ```scss
 @use "lasco/styles";

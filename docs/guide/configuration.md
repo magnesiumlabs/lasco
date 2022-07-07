@@ -4,25 +4,16 @@ outline: deep
 
 # Configuration
 
-Without any configuration, all classes will be generated. To customize your site, use `$engine` and `$extend` options
-for customize your theme.
+Without any configuration, all Lasco classes will be generated. To customize your theme, you can use many options
+describe below.
 
-## `$engine`
+## Engine Configuration
 
-Option for globally configure the framework.
+The `$engine` section is where you configure Lasco global behavior, like media queries breakpoints or list authority.
 
-```scss
-@use "lasco" with (
-    $engine: (
-        // ...
-    )
-);
-```
+### Configuring media queries
 
-### `screens`
-
-Sets breakpoint classes generator. This is based on [@unsass/breakpoint](https://github.com/unsass/breakpoint)
-dependency.
+The `screens` key allow to set token rules for media queries.
 
 ```scss
 @use "lasco" with (
@@ -34,23 +25,41 @@ dependency.
 );
 ```
 
-### `list`
+#### Media queries
 
-Sets list engine _(black or white)_ for generate classes. This method provide only properties set at `true` or with
-valued map. Default `"black"`.
+| Token | Value    |
+|-------|----------|
+| `xs`  | `360px`  |
+| `sm`  | `480px`  |
+| `md`  | `768px`  |
+| `lg`  | `960px`  |
+| `xl`  | `1200px` |
+| `2xl` | `1400px` |
+
+::: info Breakpoint
+This option is based and use [@unsass/breakpoint](https://github.com/unsass/breakpoint) dependency.
+:::
+
+### Configuring list authority
+
+The `list` key allow to manage the list authority, `black` _(default)_ or `white`.
 
 ```scss
 @use "lasco" with (
     $engine: (
-        "list": "white" // default: "black"
+        "list": "white"
     )
 );
 ```
 
-#### White list with extended properties
+::: warning White List
+This `white` configuration provide only properties set at `true` or with valued map.
+:::
 
-If you only want the `display` and `position: absolute` classes, you can set `"list": "white"` option on `$engine` and
-configure the `$extend` like that:
+#### White list
+
+If you want only the `display` and `position: absolute` declarations, you can set `"list": "white"` option and configure
+the wanted properties.
 
 ```scss
 @use "lasco" with (
@@ -66,18 +75,18 @@ configure the `$extend` like that:
 );
 ```
 
-## `$extend`
+## Extend Configuration
 
-Option for extend each property.
+### Configuring properties
+
+Each property have their own key for extend each default configuration.
 
 ```scss
 @use "lasco" with (
     $extend: (
-        // ...
+        "display": (
+            flex
+        )
     )
 );
 ```
-
-### `property`
-
-See each property documentation for see how extend it.
