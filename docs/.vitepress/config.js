@@ -94,11 +94,11 @@ module.exports = {
                         link: 'guide/width'
                     },
                     {
-                        text: 'Min-Width',
+                        text: 'Min Width',
                         link: 'guide/min-width'
                     },
                     {
-                        text: 'Max-Width',
+                        text: 'Max Width',
                         link: 'guide/max-width'
                     },
                     {
@@ -106,11 +106,11 @@ module.exports = {
                         link: 'guide/min-height'
                     },
                     {
-                        text: 'Min-Height',
+                        text: 'Min Height',
                         link: 'guide/min-height'
                     },
                     {
-                        text: 'Max-Height',
+                        text: 'Max Height',
                         link: 'guide/max-height'
                     }
                 ]
@@ -120,19 +120,19 @@ module.exports = {
                 collapsible: true,
                 items: [
                     {
-                        text: 'Font-Style',
+                        text: 'Font Style',
                         link: 'guide/font-style'
                     },
                     {
-                        text: 'Font-Weight',
+                        text: 'Font Weight',
                         link: 'guide/font-weight'
                     },
                     {
-                        text: 'Text-Align',
+                        text: 'Text Align',
                         link: 'guide/text-align'
                     },
                     {
-                        text: 'Text-Transform',
+                        text: 'Text Transform',
                         link: 'guide/text-transform'
                     }
                 ]
@@ -142,35 +142,35 @@ module.exports = {
                 collapsible: true,
                 items: [
                     {
-                        text: 'Background-Attachment',
+                        text: 'Background Attachment',
                         link: 'guide/background-attachment'
                     },
                     {
-                        text: 'Background-Clip',
+                        text: 'Background Clip',
                         link: 'guide/background-clip'
                     },
                     {
-                        text: 'Background-Color',
+                        text: 'Background Color',
                         link: 'guide/background-color'
                     },
                     {
-                        text: 'Background-Image',
+                        text: 'Background Image',
                         link: 'guide/background-image'
                     },
                     {
-                        text: 'Background-Origin',
+                        text: 'Background Origin',
                         link: 'guide/background-origin'
                     },
                     {
-                        text: 'Background-Position',
+                        text: 'Background Position',
                         link: 'guide/background-position'
                     },
                     {
-                        text: 'Background-Repeat',
+                        text: 'Background Repeat',
                         link: 'guide/background-repeat'
                     },
                     {
-                        text: 'Background-Size',
+                        text: 'Background Size',
                         link: 'guide/background-size'
                     }
                 ]
@@ -206,23 +206,23 @@ module.exports = {
                         link: 'guide/flex'
                     },
                     {
-                        text: 'Flex-Direction',
+                        text: 'Flex Direction',
                         link: 'guide/flex-direction'
                     },
                     {
-                        text: 'Flex-Wrap',
+                        text: 'Flex Wrap',
                         link: 'guide/flex-wrap'
                     },
                     {
-                        text: 'Flex-Grow',
+                        text: 'Flex Grow',
                         link: 'guide/flex-grow'
                     },
                     {
-                        text: 'Flex-Shrink',
+                        text: 'Flex Shrink',
                         link: 'guide/flex-shrink'
                     },
                     {
-                        text: 'Flex-Basis',
+                        text: 'Flex Basis',
                         link: 'guide/flex-basis'
                     },
                     {
@@ -230,11 +230,11 @@ module.exports = {
                         link: 'guide/order'
                     },
                     {
-                        text: 'Grid-Template-Columns',
+                        text: 'Grid Template Columns',
                         link: 'guide/grid-template-columns'
                     },
                     {
-                        text: 'Grid-Template-Rows',
+                        text: 'Grid Template Rows',
                         link: 'guide/grid-template-rows'
                     },
                     {
@@ -242,39 +242,39 @@ module.exports = {
                         link: 'guide/gap'
                     },
                     {
-                        text: 'Align-Self',
+                        text: 'Align Self',
                         link: 'guide/align-self'
                     },
                     {
-                        text: 'Align-Content',
+                        text: 'Align Content',
                         link: 'guide/align-content'
                     },
                     {
-                        text: 'Align-Items',
+                        text: 'Align Items',
                         link: 'guide/align-items'
                     },
                     {
-                        text: 'Justify-Self',
+                        text: 'Justify Self',
                         link: 'guide/justify-self'
                     },
                     {
-                        text: 'Justify-Content',
+                        text: 'Justify Content',
                         link: 'guide/justify-content'
                     },
                     {
-                        text: 'Justify-Items',
+                        text: 'Justify Items',
                         link: 'guide/justify-items'
                     },
                     {
-                        text: 'Place-Self',
+                        text: 'Place Self',
                         link: 'guide/place-self'
                     },
                     {
-                        text: 'Place-Content',
+                        text: 'Place Content',
                         link: 'guide/place-content'
                     },
                     {
-                        text: 'Place-Items',
+                        text: 'Place Items',
                         link: 'guide/place-items'
                     }
                 ]
