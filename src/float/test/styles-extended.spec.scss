@@ -1,0 +1,30 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $screens: false,
+    $extend: (
+        "float": (
+            left
+        )
+    )
+);
+@use "../index" as float;
+
+@include describe("float.core-styles()") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include float.core-styles;
+            }
+
+            @include expect(false) {
+                .float-left {
+                    float: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $engine: (
+        "screens": false
+    )
+);
+@use "../index" as float;
+
+@include describe("float.core-styles()") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include float.core-styles;
+            }
+
+            @include expect(false) {
+                .float-left {
+                    float: left;
+                }
+
+                .float-right {
+                    float: right;
+                }
+
+                .float-none {
+                    float: none;
+                }
+            }
+        }
+    }
+}
