@@ -66,6 +66,10 @@ module.exports = {
                         link: 'guide/display'
                     },
                     {
+                        text: 'Float',
+                        link: 'guide/float'
+                    },
+                    {
                         text: 'Position',
                         link: 'guide/position'
                     },

@@ -1,0 +1,71 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $engine: (
+        "screens": (
+           "lg": "1024px"
+        )
+    ),
+    $extend: (
+        "float": (
+            left
+        )
+    )
+);
+@use "../../core/config";
+@use "../index" as float;
+
+@include describe("float.core-styles()") {
+    @include it("Should return extended styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include float.core-styles;
+            }
+
+            @include expect(false) {
+                .float-left {
+                    float: left;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:float-left {
+                        float: left;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:float-left {
+                        float: left;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:float-left {
+                        float: left;
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    .lg\:float-left {
+                        float: left;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:float-left {
+                        float: left;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:float-left {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
