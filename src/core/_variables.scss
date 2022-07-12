@@ -4,6 +4,27 @@
 
 @use "sass:map";
 
+$clear: (
+    none,
+    left,
+    right,
+    both
+);
+
+$display: (
+    "block": block,
+    "inline-block": inline-block,
+    "flex": flex,
+    "inline-flex": inline-flex,
+    "grid": grid,
+    "inline-grid": inline-grid,
+    "table": table,
+    "inline-table": inline-table,
+    "hidden": none
+);
+
+/// ...
+
 $names: (
     border-box: border,
     content-box: content,
