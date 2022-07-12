@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "sass:map";
+@use "sass:meta";
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
 @use "./variables";
@@ -62,6 +63,28 @@
                         @content;
                     }
                 }
+            }
+        }
+    }
+}
+
+@mixin create($property, $options: ()) {
+    @if meta.type-of($options) == "list" or meta.type-of($options) == "string" or meta.type-of($options) == "number" {
+        $keys: functions.filter($options, $property);
+
+        @each $key in $keys {
+            .#{$property} {
+                &-#{$key} {
+                    #{$property}: $key;
+                }
+            }
+        }
+    }
+
+    @if meta.type-of($options) == "map" {
+        @each $key, $value in $options {
+            .#{$key} {
+                #{$property}: $value;
             }
         }
     }
