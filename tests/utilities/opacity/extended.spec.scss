@@ -1,0 +1,39 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "opacity": (
+            "50": "0.5"
+        )
+    )
+);
+
+@include describe("opacity") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("opacity", core.$opacity, "opacity");
+            }
+
+            @include expect(false) {
+                .opacity-0 {
+                    opacity: 0;
+                }
+
+                .opacity-100 {
+                    opacity: 1;
+                }
+
+                .opacity-50 {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
