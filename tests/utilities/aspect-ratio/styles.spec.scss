@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("aspect-ratio") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("aspect-ratio", core.$aspect-ratio, "aspect");
+            }
+
+            @include expect(false) {
+                .aspect-auto {
+                    aspect-ratio: auto;
+                }
+
+                .aspect-square {
+                    aspect-ratio: 1/1;
+                }
+
+                .aspect-video {
+                    aspect-ratio: 16/9;
+                }
+            }
+        }
+    }
+}
