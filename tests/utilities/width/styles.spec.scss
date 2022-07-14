@@ -3,24 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as core with (
-    $extend: (
-        "clear": (
-            left
-        )
+@use "../src/core" with (
+    $engine: (
+        "screens": false
     )
 );
 
-@include describe("core.create()") {
-    @include it("Should return extended declarations from list.") {
+@include describe("width") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.addUtility("clear", core.$clear);
+                @include core.createUtility("width", core.$width, "w");
             }
 
             @include expect(false) {
-                .clear-left {
-                    clear: left;
+                .w-0 {
+                    width: 0;
+                }
+
+                .w-full {
+                    width: 100%;
+                }
+
+                .w-screen {
+                    width: 100vw;
                 }
             }
         }
