@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "aspect-ratio": false
+    )
+);
+
+@include describe("aspect-ratio") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("aspect-ratio", core.$aspect-ratio, "aspect");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
