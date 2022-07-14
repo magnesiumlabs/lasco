@@ -5,9 +5,9 @@
 @use "sass:map";
 
 $aspect-ratio: (
-    "aspect-auto": auto,
-    "aspect-square": "1/1",
-    "aspect-video": "16/9"
+    "auto": "auto",
+    "square": "1/1",
+    "video": "16/9"
 );
 
 $align-content: (
