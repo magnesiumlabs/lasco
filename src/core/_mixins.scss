@@ -4,6 +4,7 @@
 
 @use "sass:map";
 @use "sass:meta";
+@use "sass:string";
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
 @use "./variables";
@@ -68,14 +69,14 @@
     }
 }
 
-@mixin create($property, $options: ()) {
+@mixin addUtility($property, $options: ()) {
     @if meta.type-of($options) == "list" or meta.type-of($options) == "string" or meta.type-of($options) == "number" {
         $keys: functions.filter($options, $property);
 
         @each $key in $keys {
             .#{$property} {
                 &-#{$key} {
-                    #{$property}: $key;
+                    #{$property}: string.unquote($key);
                 }
             }
         }
@@ -84,7 +85,21 @@
     @if meta.type-of($options) == "map" {
         @each $key, $value in $options {
             .#{$key} {
-                #{$property}: $value;
+                #{$property}: string.unquote($value);
+            }
+        }
+    }
+}
+
+@mixin createUtility($property, $utilities, $variation) {
+    $extend: functions.extend($utilities, $property);
+
+    .#{$variation} {
+        @include declaration($property) {
+            @each $key, $value in $extend {
+                &-#{$key} {
+                    #{$property}: string.unquote($value);
+                }
             }
         }
     }

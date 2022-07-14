@@ -3,25 +3,21 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as core with (
+@use "../src/core" with (
     $extend: (
-        "clear": (
-            left
-        )
+        "max-width": false
     )
 );
 
-@include describe("core.create()") {
-    @include it("Should return extended declarations from list.") {
+@include describe("max-width") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.addUtility("clear", core.$clear);
+                @include core.createUtility("max-width", core.$max-width, "max-w");
             }
 
             @include expect(false) {
-                .clear-left {
-                    clear: left;
-                }
+                // ...
             }
         }
     }

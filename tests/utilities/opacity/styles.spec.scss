@@ -3,24 +3,26 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as core with (
-    $extend: (
-        "clear": (
-            left
-        )
+@use "../src/core" with (
+    $engine: (
+        "screens": false
     )
 );
 
-@include describe("core.create()") {
-    @include it("Should return extended declarations from list.") {
+@include describe("opacity") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.addUtility("clear", core.$clear);
+                @include core.createUtility("opacity", core.$opacity, "opacity");
             }
 
             @include expect(false) {
-                .clear-left {
-                    clear: left;
+                .opacity-0 {
+                    opacity: 0;
+                }
+
+                .opacity-100 {
+                    opacity: 1;
                 }
             }
         }

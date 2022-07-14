@@ -1,0 +1,114 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("width") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("width", core.$width, "w");
+            }
+
+            @include expect(false) {
+                .w-0 {
+                    width: 0;
+                }
+
+                .w-full {
+                    width: 100%;
+                }
+
+                .w-screen {
+                    width: 100vw;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:w-0 {
+                        width: 0;
+                    }
+
+                    .xs\:w-full {
+                        width: 100%;
+                    }
+
+                    .xs\:w-screen {
+                        width: 100vw;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:w-0 {
+                        width: 0;
+                    }
+
+                    .sm\:w-full {
+                        width: 100%;
+                    }
+
+                    .sm\:w-screen {
+                        width: 100vw;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:w-0 {
+                        width: 0;
+                    }
+
+                    .md\:w-full {
+                        width: 100%;
+                    }
+
+                    .md\:w-screen {
+                        width: 100vw;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:w-0 {
+                        width: 0;
+                    }
+
+                    .lg\:w-full {
+                        width: 100%;
+                    }
+
+                    .lg\:w-screen {
+                        width: 100vw;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:w-0 {
+                        width: 0;
+                    }
+
+                    .xl\:w-full {
+                        width: 100%;
+                    }
+
+                    .xl\:w-screen {
+                        width: 100vw;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:w-0 {
+                        width: 0;
+                    }
+
+                    .\32 xl\:w-full {
+                        width: 100%;
+                    }
+
+                    .\32 xl\:w-screen {
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,21 @@
 
 @use "sass:map";
 
+$aspect-ratio: (
+    "aspect-auto": auto,
+    "aspect-square": "1/1",
+    "aspect-video": "16/9"
+);
+
+$align-content: (
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+
 $clear: (
     none,
     left,
@@ -21,6 +36,48 @@ $display: (
     "table": table,
     "inline-table": inline-table,
     "hidden": none
+);
+
+$float: (
+    left,
+    right,
+    none
+);
+
+$min-width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$max-width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$opacity: (
+    "0": "0",
+    "100": "1"
+);
+
+$position: (
+    absolute,
+    fixed,
+    relative,
+    static,
+    sticky
+);
+
+$z-index: (
+    "0": "0",
+    "auto": "auto"
 );
 
 /// ...
