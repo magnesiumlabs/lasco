@@ -1,0 +1,31 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "display": (
+            "hidden"
+        )
+    )
+);
+
+@include describe("display") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("display", core.$display);
+            }
+
+            @include expect(false) {
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}
