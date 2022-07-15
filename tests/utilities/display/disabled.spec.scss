@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "display": false
     )
 );
-@use "../index" as display;
 
-@include describe("display.core-styles()") {
+@include describe("display") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include display.core-styles;
+                @include core.createUtility("display", core.$display);
             }
 
             @include expect(false) {
