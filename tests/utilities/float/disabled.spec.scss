@@ -3,27 +3,21 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
     $extend: (
-        "float": (
-            left
-        )
+        "float": false
     )
 );
-@use "../index" as float;
 
-@include describe("float.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("float") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include float.core-styles;
+                @include core.createUtility("float", core.$float, "float");
             }
 
             @include expect(false) {
-                .float-left {
-                    float: left;
-                }
+                // ...
             }
         }
     }

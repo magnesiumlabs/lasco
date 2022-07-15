@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as float;
+@use "../src/core";
 
-@include describe("float.core-styles()") {
+@include describe("float") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include float.core-styles;
+                @include core.createUtility("float", core.$float, "float");
             }
 
             @include expect(false) {

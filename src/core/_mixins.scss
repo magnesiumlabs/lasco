@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
@@ -93,7 +94,15 @@
 }
 
 @mixin createUtility($property, $utilities, $variation) {
-    $extend: functions.extend($utilities, $property);
+    $extend: ();
+
+    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
+        @each $key in map.get(variables.$extend, $property) {
+            $extend: map.set($extend, $key, map.get($utilities, $key));
+        }
+    } @else {
+        $extend: functions.extend($utilities, $property);
+    }
 
     .#{$variation} {
         @include declaration($property) {
