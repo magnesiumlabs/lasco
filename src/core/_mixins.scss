@@ -71,7 +71,7 @@
     }
 }
 
-@mixin addUtility($property, $utilities) {
+@mixin createUtility($property, $utilities, $variation: "") {
     $extend: ();
 
     @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
@@ -82,34 +82,24 @@
         $extend: functions.extend($utilities, $property);
     }
 
-    @each $key, $value in $extend {
-        .#{$key} {
+    @if $variation != "" {
+        .#{$variation} {
             @include declaration($property) {
-                #{$property}: string.unquote($value);
+                @each $key, $value in $extend {
+                    @if meta.type-of($key) == "string" {
+                        $key: utilities.string-replace($key, "/", \/);
+                    }
+
+                    &-#{$key} {
+                        #{$property}: string.unquote($value);
+                    }
+                }
             }
         }
-    }
-}
-
-@mixin createUtility($property, $utilities, $variation) {
-    $extend: ();
-
-    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
-        @each $key in map.get(variables.$extend, $property) {
-            $extend: map.set($extend, $key, map.get($utilities, $key));
-        }
     } @else {
-        $extend: functions.extend($utilities, $property);
-    }
-
-    .#{$variation} {
-        @include declaration($property) {
-            @each $key, $value in $extend {
-                @if meta.type-of($key) == "string" {
-                    $key: utilities.string-replace($key, "/", \/);
-                }
-
-                &-#{$key} {
+        @each $key, $value in $extend {
+            .#{$key} {
+                @include declaration($property) {
                     #{$property}: string.unquote($value);
                 }
             }
