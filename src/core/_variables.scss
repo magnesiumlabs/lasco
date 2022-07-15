@@ -68,11 +68,11 @@ $opacity: (
 );
 
 $position: (
-    absolute,
-    fixed,
-    relative,
-    static,
-    sticky
+    "absolute": "absolute",
+    "fixed": "fixed",
+    "relative": "relative",
+    "static": "static",
+    "sticky": "sticky"
 );
 
 $z-index: (
