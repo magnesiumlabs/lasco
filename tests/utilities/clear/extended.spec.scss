@@ -1,0 +1,31 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "clear": (
+            "left"
+        )
+    )
+);
+
+@include describe("clear") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("clear", core.$clear, "clear");
+            }
+
+            @include expect(false) {
+                .clear-left {
+                    clear: left;
+                }
+            }
+        }
+    }
+}
