@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.addUtility("position", core.$position);
+                @include core.createUtility("position", core.$position);
             }
 
             @include expect(false) {

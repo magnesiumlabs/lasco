@@ -20,7 +20,7 @@
 @include core.createUtility("clear", core.$clear, "clear");
 //@include core.addUtility("display", core.$display);
 @include core.createUtility("float", core.$float, "float");
-@include core.addUtility("position", core.$position);
+@include core.createUtility("position", core.$position);
 @include core.createUtility("z-index", core.$z-index, "z");
 
 // ------------------------------------------------------------------------- //
