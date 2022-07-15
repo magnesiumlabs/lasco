@@ -71,7 +71,7 @@
     }
 }
 
-@mixin createUtility($property, $utilities, $variation: "") {
+@mixin createUtility($property, $utilities, $variation: "", $filter: false) {
     $extend: ();
 
     @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
@@ -91,7 +91,11 @@
                     }
 
                     &-#{$key} {
-                        #{$property}: string.unquote($value);
+                        @if $filter {
+                            filter: #{$property}(string.unquote($value));
+                        } @else {
+                            #{$property}: string.unquote($value);
+                        }
                     }
                 }
             }

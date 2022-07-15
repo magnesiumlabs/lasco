@@ -66,7 +66,7 @@
 // Filters
 // ------------------------------------------------------------------------- //
 
-//@use "./src/blur/styles" as blur-styles;
+@include core.createUtility("blur", core.$blur, "blur", true);
 //@use "./src/brightness/styles" as brightness-styles;
 //@use "./src/contrast/styles" as contrast-styles;
 //@use "./src/grayscale/styles" as grayscale-styles;
