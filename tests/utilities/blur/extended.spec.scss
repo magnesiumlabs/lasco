@@ -3,22 +3,32 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "blur": false
+        "blur": (
+           "lg": "16px"
+        )
     )
 );
-@use "../index" as blur;
 
-@include describe("blur.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("blur") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include blur.core-styles;
+                @include core.createUtility("blur", core.$blur, "blur", true);
             }
 
             @include expect(false) {
-                // ...
+                .blur-0 {
+                    filter: blur(0);
+                }
+
+                .blur-lg {
+                    filter: blur(16px);
+                }
             }
         }
     }

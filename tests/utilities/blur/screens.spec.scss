@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as blur;
+@use "../src/core";
 
-@include describe("blur.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("blur") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include blur.core-styles;
+                @include core.createUtility("blur", core.$blur, "blur", true);
             }
 
             @include expect(false) {
