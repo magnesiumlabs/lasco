@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "position": false
+    )
+);
+
+@include describe("position") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.addUtility("position", core.$position);
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
