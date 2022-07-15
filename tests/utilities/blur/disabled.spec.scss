@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "blur": false
+    )
+);
+
+@include describe("blur") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("blur", core.$blur, "blur", true);
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
