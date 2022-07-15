@@ -20,10 +20,10 @@ $align-content: (
 ) !default;
 
 $clear: (
-    none,
-    left,
-    right,
-    both
+    "none": "none",
+    "left": "left",
+    "right": "right",
+    "both": "both"
 );
 
 $display: (
