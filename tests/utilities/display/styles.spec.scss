@@ -1,0 +1,58 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("display") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("display", core.$display);
+            }
+
+            @include expect(false) {
+                .block {
+                    display: block;
+                }
+
+                .inline-block {
+                    display: inline-block;
+                }
+
+                .flex {
+                    display: flex;
+                }
+
+                .inline-flex {
+                    display: inline-flex;
+                }
+
+                .grid {
+                    display: grid;
+                }
+
+                .inline-grid {
+                    display: inline-grid;
+                }
+
+                .table {
+                    display: table;
+                }
+
+                .inline-table {
+                    display: inline-table;
+                }
+
+                .hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}

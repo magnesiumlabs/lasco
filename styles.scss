@@ -18,7 +18,7 @@
 
 @include core.createUtility("aspect-ratio", core.$aspect-ratio, "aspect");
 @include core.createUtility("clear", core.$clear, "clear");
-//@include core.addUtility("display", core.$display);
+@include core.createUtility("display", core.$display);
 @include core.createUtility("float", core.$float, "float");
 @include core.createUtility("position", core.$position);
 @include core.createUtility("z-index", core.$z-index, "z");

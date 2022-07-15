@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as display;
+@use "../src/core";
 
-@include describe("display.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("display") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include display.core-styles;
+                @include core.createUtility("display", core.$display);
             }
 
             @include expect(false) {
