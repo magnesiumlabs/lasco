@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Float
 
 Utilities for applying `float` type of element.
@@ -46,7 +50,7 @@ default scales using the Sass configuration.
 @use "lasco" with (
     $extend: (
         "float": (
-            left
+            "left"
         )
     )
 );

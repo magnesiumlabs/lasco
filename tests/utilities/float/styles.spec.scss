@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $engine: (
         "screens": false
     )
 );
-@use "../index" as float;
 
-@include describe("float.core-styles()") {
+@include describe("float") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include float.core-styles;
+                @include core.createUtility("float", core.$float, "float");
             }
 
             @include expect(false) {
