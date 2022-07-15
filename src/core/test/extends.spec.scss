@@ -15,7 +15,7 @@
     @include it("Should return extended declarations from list.") {
         @include assert {
             @include output(false) {
-                @include core.addUtility("clear", core.$clear);
+                @include core.createUtility("clear", core.$clear);
             }
 
             @include expect(false) {
