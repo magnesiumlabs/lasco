@@ -3,22 +3,28 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "position": false
+        "position": (
+            "fixed"
+        )
     )
 );
-@use "../index" as position;
 
-@include describe("position.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("position") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include position.core-styles;
+                @include core.addUtility("position", core.$position);
             }
 
             @include expect(false) {
-                // ...
+                 .fixed {
+                   position: fixed;
+                 }
             }
         }
     }
