@@ -3,20 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "contrast": (
-            50: 0.5
-        )
-    )
-);
-@use "../index" as contrast;
+@use "../src/core";
 
-@include describe("contrast.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("contrast") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include contrast.core-styles;
+                @include core.createUtility("contrast", core.$contrast, "contrast", true);
             }
 
             @include expect(false) {
@@ -28,10 +21,6 @@
                     filter: contrast(1);
                 }
 
-                .contrast-50 {
-                    filter: contrast(0.5);
-                }
-
                 @media (min-width: 320px) {
                     .xs\:contrast-0 {
                         filter: contrast(0);
@@ -39,10 +28,6 @@
 
                     .xs\:contrast-100 {
                         filter: contrast(1);
-                    }
-
-                    .xs\:contrast-50 {
-                        filter: contrast(0.5);
                     }
                 }
 
@@ -54,10 +39,6 @@
                     .sm\:contrast-100 {
                         filter: contrast(1);
                     }
-
-                    .sm\:contrast-50 {
-                        filter: contrast(0.5);
-                    }
                 }
 
                 @media (min-width: 768px) {
@@ -67,10 +48,6 @@
 
                     .md\:contrast-100 {
                         filter: contrast(1);
-                    }
-
-                    .md\:contrast-50 {
-                        filter: contrast(0.5);
                     }
                 }
 
@@ -82,10 +59,6 @@
                     .lg\:contrast-100 {
                         filter: contrast(1);
                     }
-
-                    .lg\:contrast-50 {
-                        filter: contrast(0.5);
-                    }
                 }
 
                 @media (min-width: 1200px) {
@@ -96,10 +69,6 @@
                     .xl\:contrast-100 {
                         filter: contrast(1);
                     }
-
-                    .xl\:contrast-50 {
-                        filter: contrast(0.5);
-                    }
                 }
 
                 @media (min-width: 1400px) {
@@ -109,10 +78,6 @@
 
                     .\32 xl\:contrast-100 {
                         filter: contrast(1);
-                    }
-
-                    .\32 xl\:contrast-50 {
-                        filter: contrast(0.5);
                     }
                 }
             }

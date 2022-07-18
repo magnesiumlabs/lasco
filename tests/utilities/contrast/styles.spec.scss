@@ -3,22 +3,27 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "clear": false
+@use "../src/core" with (
+    $engine: (
+        "screens": false
     )
 );
-@use "../index" as clear;
 
-@include describe("clear.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("contrast") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include clear.core-styles;
+                @include core.createUtility("contrast", core.$contrast, "contrast", true);
             }
 
             @include expect(false) {
-                // ...
+                .contrast-0 {
+                    filter: contrast(0);
+                }
+
+                .contrast-100 {
+                    filter: contrast(1);
+                }
             }
         }
     }
