@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "contrast": false
     )
 );
-@use "../index" as contrast;
 
-@include describe("contrast.core-styles()") {
+@include describe("contrast") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include contrast.core-styles;
+                @include core.createUtility("contrast", core.$contrast, "contrast", true);
             }
 
             @include expect(false) {
