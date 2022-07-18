@@ -1,0 +1,39 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "contrast": (
+           "50": "0.5"
+        )
+    )
+);
+
+@include describe("contrast") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("contrast", core.$contrast, "contrast", true);
+            }
+
+            @include expect(false) {
+                .contrast-0 {
+                    filter: contrast(0);
+                }
+
+                .contrast-100 {
+                    filter: contrast(1);
+                }
+
+                .contrast-50 {
+                    filter: contrast(0.5);
+                }
+            }
+        }
+    }
+}
