@@ -1,0 +1,53 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "min-width": (
+            "25": "25%",
+            "50": "50%",
+            "75": "75%"
+        )
+    )
+);
+
+@include describe("min-width") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("min-width", core.$min-width, "min-w");
+            }
+
+            @include expect(false) {
+                .min-w-0 {
+                    min-width: 0;
+                }
+
+                .min-w-full {
+                    min-width: 100%;
+                }
+
+                .min-w-screen {
+                    min-width: 100vw;
+                }
+
+                .min-w-25 {
+                    min-width: 25%;
+                }
+
+                .min-w-50 {
+                    min-width: 50%;
+                }
+
+                .min-w-75 {
+                    min-width: 75%;
+                }
+            }
+        }
+    }
+}

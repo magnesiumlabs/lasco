@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "display": false
+    )
+);
+
+@include describe("display") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("display", core.$display);
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

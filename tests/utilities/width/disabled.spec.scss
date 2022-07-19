@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "width": false
+    )
+);
+
+@include describe("width") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("width", core.$width, "w");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

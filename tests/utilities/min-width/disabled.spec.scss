@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "min-width": false
+    )
+);
+
+@include describe("min-width") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("min-width", core.$min-width, "min-width");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

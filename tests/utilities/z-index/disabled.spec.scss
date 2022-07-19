@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "z-index": false
+    )
+);
+
+@include describe("z-index") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("z-index", core.$opacity, "z-index");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

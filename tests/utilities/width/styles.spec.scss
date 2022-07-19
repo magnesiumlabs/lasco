@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("width") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("width", core.$width, "w");
+            }
+
+            @include expect(false) {
+                .w-0 {
+                    width: 0;
+                }
+
+                .w-full {
+                    width: 100%;
+                }
+
+                .w-screen {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}

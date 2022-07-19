@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "contrast": false
+    )
+);
+
+@include describe("contrast") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("contrast", core.$contrast, "contrast", true);
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

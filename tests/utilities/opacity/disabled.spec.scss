@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "opacity": false
+    )
+);
+
+@include describe("opacity") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("opacity", core.$opacity, "opacity");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

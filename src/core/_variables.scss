@@ -4,6 +4,98 @@
 
 @use "sass:map";
 
+$aspect-ratio: (
+    "auto": "auto",
+    "square": "1/1",
+    "video": "16/9"
+);
+
+$align-content: (
+    flex-start,
+    flex-end,
+    center,
+    space-between,
+    space-around,
+    space-evenly
+) !default;
+
+$blur: (
+    "0": "0"
+);
+
+$brightness: (
+    "0": "0",
+    "100": "1"
+);
+
+$clear: (
+    "none": "none",
+    "left": "left",
+    "right": "right",
+    "both": "both"
+);
+
+$contrast: (
+    "0": "0",
+    "100": "1"
+);
+
+$display: (
+    "block": block,
+    "inline-block": inline-block,
+    "flex": flex,
+    "inline-flex": inline-flex,
+    "grid": grid,
+    "inline-grid": inline-grid,
+    "table": table,
+    "inline-table": inline-table,
+    "hidden": none
+);
+
+$float: (
+    "left": "left",
+    "right": "right",
+    "none": "none"
+);
+
+$min-width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$max-width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$width: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vw"
+);
+
+$opacity: (
+    "0": "0",
+    "100": "1"
+);
+
+$position: (
+    "absolute": "absolute",
+    "fixed": "fixed",
+    "relative": "relative",
+    "static": "static",
+    "sticky": "sticky"
+);
+
+$z-index: (
+    "0": "0",
+    "auto": "auto"
+);
+
+/// ...
+
 $names: (
     border-box: border,
     content-box: content,

@@ -1,0 +1,24 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "max-width": false
+    )
+);
+
+@include describe("max-width") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("max-width", core.$max-width, "max-w");
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

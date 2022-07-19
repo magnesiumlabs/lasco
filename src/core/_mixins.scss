@@ -2,9 +2,13 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "sass:list";
 @use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 @use "@sass-collective/css";
 @use "@unsass/breakpoint";
+@use "@unsass/utilities";
 @use "./variables";
 @use "./functions";
 
@@ -61,6 +65,46 @@
                     @include css.selector($key) {
                         @content;
                     }
+                }
+            }
+        }
+    }
+}
+
+@mixin createUtility($property, $utilities, $variation: "", $filter: false) {
+    $extend: ();
+
+    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
+        @each $key in map.get(variables.$extend, $property) {
+            $extend: map.set($extend, $key, map.get($utilities, $key));
+        }
+    } @else {
+        $extend: functions.extend($utilities, $property);
+    }
+
+    @if $variation != "" {
+        .#{$variation} {
+            @include declaration($property) {
+                @each $key, $value in $extend {
+                    @if meta.type-of($key) == "string" {
+                        $key: utilities.string-replace($key, "/", \/);
+                    }
+
+                    &-#{$key} {
+                        @if $filter {
+                            filter: #{$property}(string.unquote($value));
+                        } @else {
+                            #{$property}: string.unquote($value);
+                        }
+                    }
+                }
+            }
+        }
+    } @else {
+        @each $key, $value in $extend {
+            .#{$key} {
+                @include declaration($property) {
+                    #{$property}: string.unquote($value);
                 }
             }
         }

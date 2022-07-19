@@ -1,0 +1,39 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "brightness": (
+           "50": "0.5"
+        )
+    )
+);
+
+@include describe("brightness") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("brightness", core.$brightness, "brightness", true);
+            }
+
+            @include expect(false) {
+                .brightness-0 {
+                    filter: brightness(0);
+                }
+
+                .brightness-100 {
+                    filter: brightness(1);
+                }
+
+                .brightness-50 {
+                    filter: brightness(0.5);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "blur": (
+           "lg": "16px"
+        )
+    )
+);
+
+@include describe("blur") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("blur", core.$blur, "blur", true);
+            }
+
+            @include expect(false) {
+                .blur-0 {
+                    filter: blur(0);
+                }
+
+                .blur-lg {
+                    filter: blur(16px);
+                }
+            }
+        }
+    }
+}
