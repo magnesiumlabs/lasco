@@ -3,22 +3,27 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "brightness": false
+@use "../src/core" with (
+    $engine: (
+        "screens": false
     )
 );
-@use "../index" as brightness;
 
-@include describe("brightness.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("brightness") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include brightness.core-styles;
+                @include core.createUtility("brightness", core.$brightness, "brightness", true);
             }
 
             @include expect(false) {
-                // ...
+                .brightness-0 {
+                    filter: brightness(0);
+                }
+
+                .brightness-100 {
+                    filter: brightness(1);
+                }
             }
         }
     }

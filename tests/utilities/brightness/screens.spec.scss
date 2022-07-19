@@ -3,13 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as brightness;
+@use "../src/core";
 
-@include describe("brightness.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("brightness") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include brightness.core-styles;
+                @include core.createUtility("brightness", core.$brightness, "brightness", true);
             }
 
             @include expect(false) {
