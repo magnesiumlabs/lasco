@@ -67,7 +67,7 @@
 // ------------------------------------------------------------------------- //
 
 @include core.createUtility("blur", core.$blur, "blur", true);
-//@use "./src/brightness/styles" as brightness-styles;
+@include core.createUtility("brightness", core.$brightness, "brightness", true);
 @include core.createUtility("contrast", core.$contrast, "contrast", true);
 //@use "./src/grayscale/styles" as grayscale-styles;
 
