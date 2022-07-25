@@ -5,6 +5,7 @@ Class generator for setting `height` property for an element.
 | Class      | Property         |
 |------------|------------------|
 | `h-0`      | `height: 0;`     |
+| `h-auto`   | `height: auto;`  |
 | `h-full`   | `height: 100%;`  |
 | `h-screen` | `height: 100vh;` |
 
