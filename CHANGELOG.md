@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.0](https://github.com/magnesiumlabs/lasco/compare/v1.6.0...v1.7.0) (2022-07-25)
+
+
+### Features
+
+* **height, width:** add `auto` ([a75536e](https://github.com/magnesiumlabs/lasco/commit/a75536e53ca7919163243cfdec6ecd57a9693b82))
+
 ## [1.6.0](https://github.com/magnesiumlabs/lasco/compare/v1.5.0...v1.6.0) (2022-07-25)
 
 
