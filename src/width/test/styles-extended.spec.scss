@@ -34,6 +34,18 @@
                     width: 100vw;
                 }
 
+                .w-min {
+                    width: min-content;
+                }
+
+                .w-max {
+                    width: max-content;
+                }
+
+                .w-fit {
+                    width: fit-content;
+                }
+
                 .w-25 {
                     width: 25%;
                 }
@@ -57,6 +69,18 @@
 
                     .xs\:w-screen {
                         width: 100vw;
+                    }
+
+                    .xs\:w-min {
+                        width: min-content;
+                    }
+
+                    .xs\:w-max {
+                        width: max-content;
+                    }
+
+                    .xs\:w-fit {
+                        width: fit-content;
                     }
 
                     .xs\:w-25 {
@@ -85,6 +109,18 @@
                         width: 100vw;
                     }
 
+                    .sm\:w-min {
+                        width: min-content;
+                    }
+
+                    .sm\:w-max {
+                        width: max-content;
+                    }
+
+                    .sm\:w-fit {
+                        width: fit-content;
+                    }
+
                     .sm\:w-25 {
                         width: 25%;
                     }
@@ -109,6 +145,18 @@
 
                     .md\:w-screen {
                         width: 100vw;
+                    }
+
+                    .md\:w-min {
+                        width: min-content;
+                    }
+
+                    .md\:w-max {
+                        width: max-content;
+                    }
+
+                    .md\:w-fit {
+                        width: fit-content;
                     }
 
                     .md\:w-25 {
@@ -137,6 +185,18 @@
                         width: 100vw;
                     }
 
+                    .lg\:w-min {
+                        width: min-content;
+                    }
+
+                    .lg\:w-max {
+                        width: max-content;
+                    }
+
+                    .lg\:w-fit {
+                        width: fit-content;
+                    }
+
                     .lg\:w-25 {
                         width: 25%;
                     }
@@ -163,6 +223,18 @@
                         width: 100vw;
                     }
 
+                    .xl\:w-min {
+                        width: min-content;
+                    }
+
+                    .xl\:w-max {
+                        width: max-content;
+                    }
+
+                    .xl\:w-fit {
+                        width: fit-content;
+                    }
+
                     .xl\:w-25 {
                         width: 25%;
                     }
@@ -180,13 +252,24 @@
                     .\32 xl\:w-0 {
                         width: 0;
                     }
-
                     .\32 xl\:w-full {
                         width: 100%;
                     }
 
                     .\32 xl\:w-screen {
                         width: 100vw;
+                    }
+
+                    .\32 xl\:w-min {
+                        width: min-content;
+                    }
+
+                    .\32 xl\:w-max {
+                        width: max-content;
+                    }
+
+                    .\32 xl\:w-fit {
+                        width: fit-content;
                     }
 
                     .\32 xl\:w-25 {

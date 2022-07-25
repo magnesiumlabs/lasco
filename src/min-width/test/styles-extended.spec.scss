@@ -34,6 +34,18 @@
                     min-width: 100vw;
                 }
 
+                .min-w-min {
+                    min-width: min-content;
+                }
+
+                .min-w-max {
+                    min-width: max-content;
+                }
+
+                .min-w-fit {
+                    min-width: fit-content;
+                }
+
                 .min-w-25 {
                     min-width: 25%;
                 }
@@ -57,6 +69,18 @@
 
                     .xs\:min-w-screen {
                         min-width: 100vw;
+                    }
+
+                    .xs\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .xs\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .xs\:min-w-fit {
+                        min-width: fit-content;
                     }
 
                     .xs\:min-w-25 {
@@ -85,6 +109,18 @@
                         min-width: 100vw;
                     }
 
+                    .sm\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .sm\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .sm\:min-w-fit {
+                        min-width: fit-content;
+                    }
+
                     .sm\:min-w-25 {
                         min-width: 25%;
                     }
@@ -109,6 +145,18 @@
 
                     .md\:min-w-screen {
                         min-width: 100vw;
+                    }
+
+                    .md\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .md\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .md\:min-w-fit {
+                        min-width: fit-content;
                     }
 
                     .md\:min-w-25 {
@@ -137,6 +185,18 @@
                         min-width: 100vw;
                     }
 
+                    .lg\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .lg\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .lg\:min-w-fit {
+                        min-width: fit-content;
+                    }
+
                     .lg\:min-w-25 {
                         min-width: 25%;
                     }
@@ -163,6 +223,18 @@
                         min-width: 100vw;
                     }
 
+                    .xl\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .xl\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .xl\:min-w-fit {
+                        min-width: fit-content;
+                    }
+
                     .xl\:min-w-25 {
                         min-width: 25%;
                     }
@@ -187,6 +259,18 @@
 
                     .\32 xl\:min-w-screen {
                         min-width: 100vw;
+                    }
+
+                    .\32 xl\:min-w-min {
+                        min-width: min-content;
+                    }
+
+                    .\32 xl\:min-w-max {
+                        min-width: max-content;
+                    }
+
+                    .\32 xl\:min-w-fit {
+                        min-width: fit-content;
                     }
 
                     .\32 xl\:min-w-25 {
