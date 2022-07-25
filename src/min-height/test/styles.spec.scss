@@ -25,6 +25,18 @@
                     min-height: 100vh;
                 }
 
+                .min-h-min {
+                    min-height: min-content;
+                }
+
+                .min-h-max {
+                    min-height: max-content;
+                }
+
+                .min-h-fit {
+                    min-height: fit-content;
+                }
+
                 @media (min-width: 320px) {
                     .xs\:min-h-0 {
                         min-height: 0;
@@ -36,6 +48,18 @@
 
                     .xs\:min-h-screen {
                         min-height: 100vh;
+                    }
+
+                    .xs\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .xs\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .xs\:min-h-fit {
+                        min-height: fit-content;
                     }
                 }
 
@@ -51,6 +75,18 @@
                     .sm\:min-h-screen {
                         min-height: 100vh;
                     }
+
+                    .sm\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .sm\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .sm\:min-h-fit {
+                        min-height: fit-content;
+                    }
                 }
 
                 @media (min-width: 768px) {
@@ -64,6 +100,18 @@
 
                     .md\:min-h-screen {
                         min-height: 100vh;
+                    }
+
+                    .md\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .md\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .md\:min-h-fit {
+                        min-height: fit-content;
                     }
                 }
 
@@ -79,6 +127,18 @@
                     .lg\:min-h-screen {
                         min-height: 100vh;
                     }
+
+                    .lg\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .lg\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .lg\:min-h-fit {
+                        min-height: fit-content;
+                    }
                 }
 
                 @media (min-width: 1200px) {
@@ -93,6 +153,18 @@
                     .xl\:min-h-screen {
                         min-height: 100vh;
                     }
+
+                    .xl\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .xl\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .xl\:min-h-fit {
+                        min-height: fit-content;
+                    }
                 }
 
                 @media (min-width: 1400px) {
@@ -106,6 +178,18 @@
 
                     .\32 xl\:min-h-screen {
                         min-height: 100vh;
+                    }
+
+                    .\32 xl\:min-h-min {
+                        min-height: min-content;
+                    }
+
+                    .\32 xl\:min-h-max {
+                        min-height: max-content;
+                    }
+
+                    .\32 xl\:min-h-fit {
+                        min-height: fit-content;
                     }
                 }
             }

@@ -34,6 +34,18 @@
                     max-height: 100vh;
                 }
 
+                .max-h-min {
+                    max-height: min-content;
+                }
+
+                .max-h-max {
+                    max-height: max-content;
+                }
+
+                .max-h-fit {
+                    max-height: fit-content;
+                }
+
                 .max-h-25 {
                     max-height: 25%;
                 }
@@ -57,6 +69,18 @@
 
                     .xs\:max-h-screen {
                         max-height: 100vh;
+                    }
+
+                    .xs\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .xs\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .xs\:max-h-fit {
+                        max-height: fit-content;
                     }
 
                     .xs\:max-h-25 {
@@ -85,6 +109,18 @@
                         max-height: 100vh;
                     }
 
+                    .sm\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .sm\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .sm\:max-h-fit {
+                        max-height: fit-content;
+                    }
+
                     .sm\:max-h-25 {
                         max-height: 25%;
                     }
@@ -109,6 +145,18 @@
 
                     .md\:max-h-screen {
                         max-height: 100vh;
+                    }
+
+                    .md\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .md\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .md\:max-h-fit {
+                        max-height: fit-content;
                     }
 
                     .md\:max-h-25 {
@@ -137,6 +185,18 @@
                         max-height: 100vh;
                     }
 
+                    .lg\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .lg\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .lg\:max-h-fit {
+                        max-height: fit-content;
+                    }
+
                     .lg\:max-h-25 {
                         max-height: 25%;
                     }
@@ -163,6 +223,18 @@
                         max-height: 100vh;
                     }
 
+                    .xl\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .xl\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .xl\:max-h-fit {
+                        max-height: fit-content;
+                    }
+
                     .xl\:max-h-25 {
                         max-height: 25%;
                     }
@@ -187,6 +259,18 @@
 
                     .\32 xl\:max-h-screen {
                         max-height: 100vh;
+                    }
+
+                    .\32 xl\:max-h-min {
+                        max-height: min-content;
+                    }
+
+                    .\32 xl\:max-h-max {
+                        max-height: max-content;
+                    }
+
+                    .\32 xl\:max-h-fit {
+                        max-height: fit-content;
                     }
 
                     .\32 xl\:max-h-25 {

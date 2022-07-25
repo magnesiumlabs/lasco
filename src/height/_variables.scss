@@ -7,7 +7,10 @@
 $_defaults: (
     0: 0,
     full: 100%,
-    screen: 100vh
+    screen: 100vh,
+    min: min-content,
+    max: max-content,
+    fit: fit-content
 );
 
 $extend: core.extend($_defaults, "height");
