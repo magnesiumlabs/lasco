@@ -36,6 +36,18 @@
                     min-width: 100vw;
                 }
 
+                .min-w-min {
+                    min-width: min-content;
+                }
+
+                .min-w-max {
+                    min-width: max-content;
+                }
+
+                .min-w-fit {
+                    min-width: fit-content;
+                }
+
                 .min-w-25 {
                     min-width: 25%;
                 }

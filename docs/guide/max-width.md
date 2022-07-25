@@ -6,11 +6,14 @@ outline: deep
 
 Class generator for setting `max-width` property for an element.
 
-| Class          | Property            |
-|----------------|---------------------|
-| `max-w-0`      | `max-width: 0;`     |
-| `max-w-full`   | `max-width: 100%;`  |
-| `max-w-screen` | `max-width: 100vw;` |
+| Class          | Property                  |
+|----------------|---------------------------|
+| `max-w-0`      | `max-width: 0;`           |
+| `max-w-full`   | `max-width: 100%;`        |
+| `max-w-screen` | `max-width: 100vw;`       |
+| `max-w-min`    | `max-width: min-content;` |
+| `max-w-max`    | `max-width: max-content;` |
+| `max-w-fit`    | `max-width: fit-content;` |
 
 ## Usage
 

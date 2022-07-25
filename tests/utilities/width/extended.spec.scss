@@ -28,12 +28,28 @@
                     width: 0;
                 }
 
+                .w-auto {
+                    width: auto;
+                }
+
                 .w-full {
                     width: 100%;
                 }
 
                 .w-screen {
                     width: 100vw;
+                }
+
+                .w-min {
+                    width: min-content;
+                }
+
+                .w-max {
+                    width: max-content;
+                }
+
+                .w-fit {
+                    width: fit-content;
                 }
 
                 .w-25 {

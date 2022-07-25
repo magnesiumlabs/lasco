@@ -61,19 +61,29 @@ $float: (
 $min-width: (
     "0": "0",
     "full": "100%",
-    "screen": "100vw"
+    "screen": "100vw",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
 );
 
 $max-width: (
     "0": "0",
     "full": "100%",
-    "screen": "100vw"
+    "screen": "100vw",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
 );
 
 $width: (
     "0": "0",
+    "auto": "auto",
     "full": "100%",
-    "screen": "100vw"
+    "screen": "100vw",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
 );
 
 $opacity: (
