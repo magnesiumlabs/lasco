@@ -6,11 +6,14 @@ outline: deep
 
 Class generator for setting `min-width` property for an element.
 
-| Class          | Property            |
-|----------------|---------------------|
-| `min-w-0`      | `min-width: 0;`     |
-| `min-w-full`   | `min-width: 100%;`  |
-| `min-w-screen` | `min-width: 100vw;` |
+| Class          | Property                  |
+|----------------|---------------------------|
+| `min-w-0`      | `min-width: 0;`           |
+| `min-w-full`   | `min-width: 100%;`        |
+| `min-w-screen` | `min-width: 100vw;`       |
+| `min-w-min`    | `min-width: min-content;` |
+| `min-w-max`    | `min-width: max-content;` |
+| `min-w-fit`    | `min-width: fit-content;` |
 
 ## Usage
 
