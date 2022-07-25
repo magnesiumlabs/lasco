@@ -16,26 +16,50 @@
 // Layout
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("aspect-ratio", core.$aspect-ratio, "aspect");
-@include core.createUtility("clear", core.$clear, "clear");
+@include core.createUtility("aspect-ratio", core.$aspect-ratio,  (
+    "aspect": 'aspect-ratio'
+));
+
+@include core.createUtility("clear", core.$clear, (
+    "clear": "clear"
+));
+
 @include core.createUtility("display", core.$display);
-@include core.createUtility("float", core.$float, "float");
+
+@include core.createUtility("float", core.$float, (
+    "float": "float"
+));
+
 @include core.createUtility("position", core.$position);
-@include core.createUtility("z-index", core.$z-index, "z");
+
+@include core.createUtility("z-index", core.$z-index, (
+    "z": "z-index"
+));
 
 // ------------------------------------------------------------------------- //
 // Effects
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("opacity", core.$opacity, "opacity");
+@include core.createUtility("opacity", core.$opacity, (
+    "opacity": "opacity"
+));
 
 // ------------------------------------------------------------------------- //
 // Sizing
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("min-width", core.$min-width, "min-w");
-@include core.createUtility("max-width", core.$max-width, "max-w");
-@include core.createUtility("width", core.$width, "w");
+@include core.createUtility("min-width", core.$min-width, (
+    "min-w": "min-width"
+));
+
+@include core.createUtility("max-width", core.$max-width, (
+    "max-w": "max-width"
+));
+
+@include core.createUtility("width", core.$width, (
+    "w": "width"
+));
+
 //@use "./src/min-height/styles" as min-height-styles;
 //@use "./src/max-height/styles" as max-height-styles;
 //@use "./src/height/styles" as height-styles;
@@ -66,9 +90,18 @@
 // Filters
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("blur", core.$blur, "blur", true);
-@include core.createUtility("brightness", core.$brightness, "brightness", true);
-@include core.createUtility("contrast", core.$contrast, "contrast", true);
+@include core.createUtility("blur", core.$blur, (
+    "blur": "filter"
+));
+
+@include core.createUtility("brightness", core.$brightness, (
+    "brightness": "filter"
+));
+
+@include core.createUtility("contrast", core.$contrast, (
+    "contrast": "filter"
+));
+
 //@use "./src/grayscale/styles" as grayscale-styles;
 
 // ------------------------------------------------------------------------- //
