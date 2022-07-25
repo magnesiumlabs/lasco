@@ -13,7 +13,9 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("z-index", core.$z-index, "z");
+                @include core.createUtility("z-index", core.$z-index, (
+                    "z": "z-index"
+                ));
             }
 
             @include expect(false) {
