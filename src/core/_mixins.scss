@@ -84,24 +84,36 @@
 
     @if $variation and meta.type-of($variation) == "map" {
         @each $key, $value in $variation {
-            $filter: false;
+            $filter-function: "";
 
-            @if $value == "filter" {
-                $filter: true;
+            ///
+            /// CSS Filter Functions.
+            ///
+
+            @if string.index($value, "filter:blur") {
+                $filter-function: "blur"
+            } @else if string.index($value, "filter:contrast") {
+                $filter-function: "contrast"
+            } @else if string.index($value, "filter:brightness") {
+                $filter-function: "brightness"
             }
+
+            ///
+            /// Declaration.
+            ///
 
             .#{$key} {
                 @include declaration($property) {
-                    @each $key, $value in $extend {
-                        @if meta.type-of($key) == "string" {
-                            $key: utilities.string-replace($key, "/", \/);
+                    @each $key2, $value2 in $extend {
+                        @if meta.type-of($key2) == "string" {
+                            $key2: utilities.string-replace($key2, "/", \/);
                         }
 
-                        &-#{$key} {
-                            @if $filter {
-                                filter: #{$property}(string.unquote($value));
+                        &-#{$key2} {
+                            @if string.index($value, "filter") {
+                                filter: #{$filter-function}(string.unquote($value2));
                             } @else {
-                                #{$property}: string.unquote($value);
+                                #{$value}: string.unquote($value2);
                             }
                         }
                     }

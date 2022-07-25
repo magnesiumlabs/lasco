@@ -10,7 +10,7 @@
         @include assert {
             @include output(false) {
                 @include core.createUtility("brightness", core.$brightness, (
-                    "brightness": "filter"
+                    "brightness": "filter:brightness"
                 ));
             }
 
