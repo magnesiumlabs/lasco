@@ -13,7 +13,9 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("opacity", core.$opacity, "opacity");
+                @include core.createUtility("opacity", core.$opacity, (
+                    "opacity": "opacity"
+                ));
             }
 
             @include expect(false) {
