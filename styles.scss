@@ -91,15 +91,15 @@
 // ------------------------------------------------------------------------- //
 
 @include core.createUtility("blur", core.$blur, (
-    "blur": "filter"
+    "blur": "filter:blur"
 ));
 
 @include core.createUtility("brightness", core.$brightness, (
-    "brightness": "filter"
+    "brightness": "filter:brightness"
 ));
 
 @include core.createUtility("contrast", core.$contrast, (
-    "contrast": "filter"
+    "contrast": "filter:contrast"
 ));
 
 //@use "./src/grayscale/styles" as grayscale-styles;
