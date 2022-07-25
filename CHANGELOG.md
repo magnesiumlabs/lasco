@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.0](https://github.com/magnesiumlabs/lasco/compare/v1.5.0...v1.6.0) (2022-07-25)
+
+
+### Features
+
+* **float:** add main styles ([da6a968](https://github.com/magnesiumlabs/lasco/commit/da6a9681207336fa163c99830fe3fe55fadfd11b))
+* **height:** add `min-content`, `max-content` and `fit-content` ([b2c5dcf](https://github.com/magnesiumlabs/lasco/commit/b2c5dcf6163edb341b6114e2d269a681c5ce51fe))
+* **width:** add `min-content`, `max-content` and `fit-content` ([6b78606](https://github.com/magnesiumlabs/lasco/commit/6b786060a82a2e256a191ead889b3ddbf96299ce))
+
+
+### Bug Fixes
+
+* **deps:** bump to `@unsass/breakpoint` 2.1.1 ([028ef11](https://github.com/magnesiumlabs/lasco/commit/028ef119b3de3e2fa36dbfacf25a30d86745b3d7))
+
 ## [1.5.0](https://github.com/magnesiumlabs/lasco/compare/v1.4.0...v1.5.0) (2022-06-28)
 
 
