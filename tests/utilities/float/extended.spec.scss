@@ -18,7 +18,9 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("float", core.$float, "float");
+                @include core.createUtility("float", core.$float, (
+                    "float": "float"
+                ));
             }
 
             @include expect(false) {

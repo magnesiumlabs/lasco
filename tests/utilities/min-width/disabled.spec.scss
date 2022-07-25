@@ -13,7 +13,9 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("min-width", core.$min-width, "min-width");
+                @include core.createUtility("min-width", core.$min-width, (
+                    "min-w": "min-width"
+                ));
             }
 
             @include expect(false) {
