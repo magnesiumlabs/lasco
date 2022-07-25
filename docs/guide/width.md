@@ -6,11 +6,15 @@ outline: deep
 
 Class generator for setting `width` property for an element.
 
-| Class      | Property        |
-|------------|-----------------|
-| `w-0`      | `width: 0;`     |
-| `w-full`   | `width: 100%;`  |
-| `w-screen` | `width: 100vw;` |
+| Class      | Property              |
+|------------|-----------------------|
+| `w-0`      | `width: 0;`           |
+| `w-auto`   | `width: auto;`        |
+| `w-full`   | `width: 100%;`        |
+| `w-screen` | `width: 100vw;`       |
+| `w-min`    | `width: min-content;` |
+| `w-max`    | `width: max-content;` |
+| `w-fit`    | `width: fit-content;` |
 
 ## Usage
 
