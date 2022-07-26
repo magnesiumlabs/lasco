@@ -1,0 +1,42 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "gap": (
+            "12": "12px",
+            "24": "24px"
+        )
+    )
+);
+
+@include describe("gap") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("gap", core.$gap, (
+                    "gap": "gap"
+                ));
+            }
+
+            @include expect(false) {
+                .gap-0 {
+                    gap: 0;
+                }
+
+                .gap-12 {
+                    gap: 12px;
+                }
+
+                .gap-24 {
+                    gap: 24px;
+                }
+            }
+        }
+    }
+}
