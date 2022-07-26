@@ -6,6 +6,8 @@ outline: deep
 
 Class generator for setting `position` property for an element.
 
+## Quick reference
+
 | Class      | Property              |
 |------------|-----------------------|
 | `absolute` | `position: absolute;` |

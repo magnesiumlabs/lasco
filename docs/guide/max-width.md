@@ -6,6 +6,8 @@ outline: deep
 
 Class generator for setting `max-width` property for an element.
 
+## Quick reference
+
 | Class          | Property                  |
 |----------------|---------------------------|
 | `max-w-0`      | `max-width: 0;`           |
