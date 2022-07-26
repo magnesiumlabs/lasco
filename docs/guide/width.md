@@ -6,6 +6,8 @@ outline: deep
 
 Class generator for setting `width` property for an element.
 
+## Quick reference
+
 | Class      | Property              |
 |------------|-----------------------|
 | `w-0`      | `width: 0;`           |

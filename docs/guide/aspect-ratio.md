@@ -6,6 +6,8 @@ outline: deep
 
 Utilities for applying `aspect-ratio` to an element.
 
+## Quick reference
+
 | Class           | Property             |
 |-----------------|----------------------|
 | `aspect-auto`   | `aspect-ratio: auto` |
