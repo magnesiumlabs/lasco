@@ -14,7 +14,7 @@
     )
 );
 
-@include describe("margin") {
+@include describe("padding") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
