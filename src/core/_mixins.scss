@@ -90,12 +90,14 @@
             /// CSS Filter Functions.
             ///
 
-            @if string.index($value, "filter:blur") {
-                $filter-function: "blur"
-            } @else if string.index($value, "filter:contrast") {
-                $filter-function: "contrast"
-            } @else if string.index($value, "filter:brightness") {
-                $filter-function: "brightness"
+            @if meta.type-of($value) == "string" {
+                @if string.index($value, "filter:blur") {
+                    $filter-function: "blur"
+                } @else if string.index($value, "filter:contrast") {
+                    $filter-function: "contrast"
+                } @else if string.index($value, "filter:brightness") {
+                    $filter-function: "brightness"
+                }
             }
 
             ///
@@ -110,10 +112,16 @@
                         }
 
                         &-#{$key2} {
-                            @if string.index($value, "filter") {
+                            @if meta.type-of($value) == "string" and string.index($value, "filter") {
                                 filter: #{$filter-function}(string.unquote($value2));
                             } @else {
-                                #{$value}: string.unquote($value2);
+                                @if meta.type-of($value) == "list" {
+                                    @each $key3 in $value {
+                                        #{$key3}: string.unquote($value2);
+                                    }
+                                } @else {
+                                    #{$value}: string.unquote($value2);
+                                }
                             }
                         }
                     }

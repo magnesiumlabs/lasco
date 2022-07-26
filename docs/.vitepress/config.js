@@ -284,6 +284,16 @@ module.exports = {
                         link: 'guide/place-items'
                     }
                 ]
+            },
+            {
+                text: 'Spacing',
+                collapsible: true,
+                items: [
+                    {
+                        text: 'Margin',
+                        link: 'guide/margin'
+                    }
+                ]
             }
         ],
         footer: {

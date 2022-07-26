@@ -1,0 +1,139 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "margin": (
+            "6": "6px"
+        )
+    )
+);
+
+@include describe("margin") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("margin", core.$margin, (
+                    "m": "margin",
+                    "mx": (
+                        "margin-left",
+                        "margin-right"
+                    ),
+                    "my": (
+                        "margin-top",
+                        "margin-bottom"
+                    ),
+                    "mt": (
+                        "margin-top"
+                    ),
+                    "mr": (
+                        "margin-right"
+                    ),
+                    "mb": (
+                        "margin-bottom"
+                    ),
+                    "ml": (
+                        "margin-left"
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                .m-0 {
+                    margin: 0;
+                }
+
+                .m-auto {
+                    margin: auto;
+                }
+
+                .m-6 {
+                    margin: 6px;
+                }
+
+                .mx-0 {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .mx-auto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .mx-6 {
+                    margin-left: 6px;
+                    margin-right: 6px;
+                }
+
+                .my-0 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .my-auto {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .my-6 {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                }
+
+                .mt-0 {
+                    margin-top: 0;
+                }
+
+                .mt-auto {
+                    margin-top: auto;
+                }
+
+                .mt-6 {
+                    margin-top: 6px;
+                }
+
+                .mr-0 {
+                    margin-right: 0;
+                }
+
+                .mr-auto {
+                    margin-right: auto;
+                }
+
+                .mr-6 {
+                    margin-right: 6px;
+                }
+
+                .mb-0 {
+                    margin-bottom: 0;
+                }
+
+                .mb-auto {
+                    margin-bottom: auto;
+                }
+
+                .mb-6 {
+                    margin-bottom: 6px;
+                }
+
+                .ml-0 {
+                    margin-left: 0;
+                }
+
+                .ml-auto {
+                    margin-left: auto;
+                }
+
+                .ml-6 {
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
