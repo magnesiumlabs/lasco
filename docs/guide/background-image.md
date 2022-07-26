@@ -2,4 +2,4 @@
 outline: deep
 ---
 
-<!-- @include: ../../src/blur/README.md -->
+<!-- @include: ../../src/background-image/README.md -->
