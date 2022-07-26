@@ -1,0 +1,46 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "padding": false
+    )
+);
+
+@include describe("padding") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("padding", core.$padding, (
+                    "p": "padding",
+                    "px": (
+                        "padding-left",
+                        "padding-right"
+                    ),
+                    "py": (
+                        "padding-top",
+                        "padding-bottom"
+                    ),
+                    "pt": (
+                        "padding-top"
+                    ),
+                    "pr": (
+                        "padding-right"
+                    ),
+                    "pb": (
+                        "padding-bottom"
+                    ),
+                    "pl": (
+                        "padding-left"
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
