@@ -1,0 +1,109 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "padding": (
+            "6": "6px"
+        )
+    )
+);
+
+@include describe("margin") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("padding", core.$padding, (
+                    "p": "padding",
+                    "px": (
+                        "padding-left",
+                        "padding-right"
+                    ),
+                    "py": (
+                        "padding-top",
+                        "padding-bottom"
+                    ),
+                    "pt": (
+                        "padding-top"
+                    ),
+                    "pr": (
+                        "padding-right"
+                    ),
+                    "pb": (
+                        "padding-bottom"
+                    ),
+                    "pl": (
+                        "padding-left"
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                .p-0 {
+                    padding: 0;
+                }
+
+                .p-6 {
+                    padding: 6px;
+                }
+
+                .px-0 {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                .px-6 {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+
+                .py-0 {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+                .py-6 {
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                }
+
+                .pt-0 {
+                    padding-top: 0;
+                }
+
+                .pt-6 {
+                    padding-top: 6px;
+                }
+
+                .pr-0 {
+                    padding-right: 0;
+                }
+
+                .pr-6 {
+                    padding-right: 6px;
+                }
+
+                .pb-0 {
+                    padding-bottom: 0;
+                }
+
+                .pb-6 {
+                    padding-bottom: 6px;
+                }
+
+                .pl-0 {
+                    padding-left: 0;
+                }
+
+                .pl-6 {
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}

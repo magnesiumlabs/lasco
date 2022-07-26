@@ -290,6 +290,10 @@ module.exports = {
                     {
                         text: 'Margin',
                         link: 'guide/margin'
+                    },
+                    {
+                        text: 'Padding',
+                        link: 'guide/padding'
                     }
                 ]
             }
