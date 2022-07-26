@@ -1,0 +1,104 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("margin") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("margin", core.$margin, (
+                    "m": "margin",
+                    "mx": (
+                        "margin-left",
+                        "margin-right"
+                    ),
+                    "my": (
+                        "margin-top",
+                        "margin-bottom"
+                    ),
+                    "mt": (
+                        "margin-top"
+                    ),
+                    "mr": (
+                        "margin-right"
+                    ),
+                    "mb": (
+                        "margin-bottom"
+                    ),
+                    "ml": (
+                        "margin-left"
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                .m-0 {
+                    margin: 0;
+                }
+
+                .m-auto {
+                    margin: auto;
+                }
+
+                .mx-0 {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .mx-auto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .my-0 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .my-auto {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .mt-0 {
+                    margin-top: 0;
+                }
+
+                .mt-auto {
+                    margin-top: auto;
+                }
+
+                .mr-0 {
+                    margin-right: 0;
+                }
+
+                .mr-auto {
+                    margin-right: auto;
+                }
+
+                .mb-0 {
+                    margin-bottom: 0;
+                }
+
+                .mb-auto {
+                    margin-bottom: auto;
+                }
+
+                .ml-0 {
+                    margin-left: 0;
+                }
+
+                .ml-auto {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
