@@ -16,8 +16,8 @@
 // Layout
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("aspect-ratio", core.$aspect-ratio,  (
-    "aspect": 'aspect-ratio'
+@include core.createUtility("aspect-ratio", core.$aspect-ratio, (
+    "aspect": "aspect-ratio"
 ));
 
 @include core.createUtility("clear", core.$clear, (
@@ -133,25 +133,49 @@
 // ------------------------------------------------------------------------- //
 
 @include core.createUtility("margin", core.$margin, (
-    'm': 'margin',
-    'mx': (
-        'margin-left',
-        'margin-right'
+    "m": "margin",
+    "mx": (
+        "margin-left",
+        "margin-right"
     ),
-    'my': (
-        'margin-top',
-        'margin-bottom'
+    "my": (
+        "margin-top",
+        "margin-bottom"
     ),
-    'mt': (
-        'margin-top'
+    "mt": (
+        "margin-top"
     ),
-    'mr': (
-        'margin-right'
+    "mr": (
+        "margin-right"
     ),
-    'mb': (
-        'margin-bottom'
+    "mb": (
+        "margin-bottom"
     ),
-    'ml': (
-        'margin-left'
+    "ml": (
+        "margin-left"
+    )
+));
+
+@include core.createUtility("padding", core.$padding, (
+    "p": "padding",
+    "px": (
+        "padding-left",
+        "padding-right"
+    ),
+    "py": (
+        "padding-top",
+        "padding-bottom"
+    ),
+    "pt": (
+        "padding-top"
+    ),
+    "pr": (
+        "padding-right"
+    ),
+    "pb": (
+        "padding-bottom"
+    ),
+    "pl": (
+        "padding-left"
     )
 ));
