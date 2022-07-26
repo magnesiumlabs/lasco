@@ -1,0 +1,544 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("margin") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("margin", core.$margin, (
+                    "m": "margin",
+                    "mx": (
+                        "margin-left",
+                        "margin-right"
+                    ),
+                    "my": (
+                        "margin-top",
+                        "margin-bottom"
+                    ),
+                    "mt": (
+                        "margin-top"
+                    ),
+                    "mr": (
+                        "margin-right"
+                    ),
+                    "mb": (
+                        "margin-bottom"
+                    ),
+                    "ml": (
+                        "margin-left"
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                .m-0 {
+                    margin: 0;
+                }
+
+                .m-auto {
+                    margin: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:m-0 {
+                        margin: 0;
+                    }
+
+                    .xs\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:m-0 {
+                        margin: 0;
+                    }
+
+                    .sm\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:m-0 {
+                        margin: 0;
+                    }
+
+                    .md\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:m-0 {
+                        margin: 0;
+                    }
+
+                    .lg\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:m-0 {
+                        margin: 0;
+                    }
+
+                    .xl\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:m-0 {
+                        margin: 0;
+                    }
+
+                    .\32 xl\:m-auto {
+                        margin: auto;
+                    }
+                }
+
+                .mx-0 {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .mx-auto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .xs\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .sm\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .md\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .lg\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .xl\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .\32 xl\:mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                .my-0 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .my-auto {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .xs\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .sm\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .md\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .lg\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .xl\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .\32 xl\:my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+
+                .mt-0 {
+                    margin-top: 0;
+                }
+
+                .mt-auto {
+                    margin-top: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .xs\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .sm\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .md\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .lg\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .xl\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .\32 xl\:mt-auto {
+                        margin-top: auto;
+                    }
+                }
+
+                .mr-0 {
+                    margin-right: 0;
+                }
+
+                .mr-auto {
+                    margin-right: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .xs\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .sm\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .md\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .lg\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .xl\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .\32 xl\:mr-auto {
+                        margin-right: auto;
+                    }
+                }
+
+                .mb-0 {
+                    margin-bottom: 0;
+                }
+
+                .mb-auto {
+                    margin-bottom: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .xs\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .sm\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .md\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .lg\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .xl\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .\32 xl\:mb-auto {
+                        margin-bottom: auto;
+                    }
+                }
+
+                .ml-0 {
+                    margin-left: 0;
+                }
+
+                .ml-auto {
+                    margin-left: auto;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .xs\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .sm\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .md\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .lg\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .xl\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .\32 xl\:ml-auto {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}

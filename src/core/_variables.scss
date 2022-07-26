@@ -58,6 +58,11 @@ $float: (
     "none": "none"
 );
 
+$margin: (
+    "0": "0",
+    "auto": "auto"
+);
+
 $min-width: (
     "0": "0",
     "full": "100%",
@@ -76,16 +81,6 @@ $max-width: (
     "fit": "fit-content"
 );
 
-$width: (
-    "0": "0",
-    "auto": "auto",
-    "full": "100%",
-    "screen": "100vw",
-    "min": "min-content",
-    "max": "max-content",
-    "fit": "fit-content"
-);
-
 $opacity: (
     "0": "0",
     "100": "1"
@@ -97,6 +92,16 @@ $position: (
     "relative": "relative",
     "static": "static",
     "sticky": "sticky"
+);
+
+$width: (
+    "0": "0",
+    "auto": "auto",
+    "full": "100%",
+    "screen": "100vw",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
 );
 
 $z-index: (
