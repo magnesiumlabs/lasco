@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "gap": false
     )
 );
-@use "../index" as gap;
 
-@include describe("gap.core-styles()") {
+@include describe("gap") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include gap.core-styles;
+                @include core.createUtility("gap", core.$gap, (
+                    "gap": "gap"
+                ));
             }
 
             @include expect(false) {
