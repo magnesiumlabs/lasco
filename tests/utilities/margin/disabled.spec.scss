@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "margin": false
+    )
+);
+
+@include describe("margin") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("margin", core.$margin, (
+                    'm': 'margin',
+                    'mx': (
+                        'margin-left',
+                        'margin-right'
+                    ),
+                    'my': (
+                        'margin-top',
+                        'margin-bottom'
+                    )
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
