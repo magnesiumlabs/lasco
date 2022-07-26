@@ -6,6 +6,8 @@ outline: deep
 
 Utilities for applying `blur` to an element.
 
+## Quick reference
+
 | Class    | Property           |
 |----------|--------------------|
 | `blur-0` | `filter: blur(0);` |

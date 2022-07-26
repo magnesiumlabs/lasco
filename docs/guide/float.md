@@ -6,6 +6,8 @@ outline: deep
 
 Utilities for applying `float` type of element.
 
+## Quick reference
+
 | Class         | Property        |
 |---------------|-----------------|
 | `float-left`  | `float: left;`  |
