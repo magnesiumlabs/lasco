@@ -6,6 +6,8 @@ outline: deep
 
 Class generator for setting `margin` property for an element.
 
+## Quick reference
+
 | Class     | Property                                 |
 |-----------|------------------------------------------|
 | `m-0`     | `margin: 0;`                             |

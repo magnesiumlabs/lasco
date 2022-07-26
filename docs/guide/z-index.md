@@ -6,6 +6,8 @@ outline: deep
 
 Utilities for applying position order to an element.
 
+## Quick reference
+
 | Class    | Property         |
 |----------|------------------|
 | `z-0`    | `z-index: 0;`    |
