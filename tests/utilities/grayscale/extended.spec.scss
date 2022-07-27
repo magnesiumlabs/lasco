@@ -1,0 +1,37 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "grayscale": (
+           "50": "0.5"
+        )
+    )
+);
+
+@include describe("grayscale") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("grayscale", core.$grayscale, (
+                    "grayscale": "filter:grayscale"
+                ));
+            }
+
+            @include expect(false) {
+                .grayscale-0 {
+                    filter: grayscale(0);
+                }
+
+                .grayscale-50 {
+                    filter: grayscale(0.5);
+                }
+            }
+        }
+    }
+}
