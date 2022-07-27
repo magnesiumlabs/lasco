@@ -97,6 +97,8 @@
                     $filter-function: "contrast"
                 } @else if string.index($value, "filter:brightness") {
                     $filter-function: "brightness"
+                } @else if string.index($value, "filter:grayscale") {
+                    $filter-function: "grayscale"
                 }
             }
 

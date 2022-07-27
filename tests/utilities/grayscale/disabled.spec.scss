@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "grayscale": false
     )
 );
-@use "../index" as grayscale;
 
-@include describe("grayscale.core-styles()") {
+@include describe("grayscale") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include grayscale.core-styles;
+                @include core.createUtility("grayscale", core.$grayscale, (
+                    "grayscale": "filter:grayscale"
+                ));
             }
 
             @include expect(false) {

@@ -102,7 +102,9 @@
     "contrast": "filter:contrast"
 ));
 
-//@use "./src/grayscale/styles" as grayscale-styles;
+@include core.createUtility("grayscale", core.$grayscale, (
+    "grayscale": "filter:grayscale"
+));
 
 // ------------------------------------------------------------------------- //
 // Flexbox & Grid
