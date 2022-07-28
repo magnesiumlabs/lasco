@@ -19,9 +19,17 @@
                     filter: grayscale(0);
                 }
 
+                .grayscale-100 {
+                    filter: grayscale(1);
+                }
+
                 @media (min-width: 320px) {
                     .xs\:grayscale-0 {
                         filter: grayscale(0);
+                    }
+
+                    .xs\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
@@ -29,11 +37,19 @@
                     .sm\:grayscale-0 {
                         filter: grayscale(0);
                     }
+
+                    .sm\:grayscale-100 {
+                        filter: grayscale(1);
+                    }
                 }
 
                 @media (min-width: 768px) {
                     .md\:grayscale-0 {
                         filter: grayscale(0);
+                    }
+
+                    .md\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
@@ -41,17 +57,29 @@
                     .lg\:grayscale-0 {
                         filter: grayscale(0);
                     }
+
+                    .lg\:grayscale-100 {
+                        filter: grayscale(1);
+                    }
                 }
 
                 @media (min-width: 1200px) {
                     .xl\:grayscale-0 {
                         filter: grayscale(0);
                     }
+
+                    .xl\:grayscale-100 {
+                        filter: grayscale(1);
+                    }
                 }
 
                 @media (min-width: 1400px) {
                     .\32 xl\:grayscale-0 {
                         filter: grayscale(0);
+                    }
+
+                    .\32 xl\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
             }
