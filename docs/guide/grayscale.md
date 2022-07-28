@@ -8,10 +8,10 @@ Utilities for applying grayscale to an element.
 
 ## Quick reference
 
-| Class         | Property                |
-|---------------|-------------------------|
-| `grayscale-0` | `filter: grayscale(0);` |
-| `grayscale`   | `filter: grayscale(1);` |
+| Class           | Property                |
+|-----------------|-------------------------|
+| `grayscale-0`   | `filter: grayscale(0);` |
+| `grayscale-100` | `filter: grayscale(1);` |
 
 ## Usage
 
