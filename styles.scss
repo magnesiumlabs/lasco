@@ -102,7 +102,9 @@
     "contrast": "filter:contrast"
 ));
 
-//@use "./src/grayscale/styles" as grayscale-styles;
+@include core.createUtility("grayscale", core.$grayscale, (
+    "grayscale": "filter:grayscale"
+));
 
 // ------------------------------------------------------------------------- //
 // Flexbox & Grid
@@ -117,7 +119,11 @@
 //@use "./src/order/styles" as order-styles;
 //@use "./src/grid-template-columns/styles" as grid-template-columns-styles;
 //@use "./src/grid-template-rows/styles" as grid-template-rows-styles;
-//@use "./src/gap/styles" as gap-styles;
+
+@include core.createUtility("gap", core.$gap, (
+    "gap": "gap"
+));
+
 //@use "./src/align-self/styles" as align-self-styles;
 //@include core.addUtility("align-content", core.$align-content);
 //@use "./src/align-items/styles" as align-items-styles;

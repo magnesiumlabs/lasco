@@ -3,116 +3,83 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "grayscale": (
-            50: 0.5
-        )
-    )
-);
-@use "../index" as grayscale;
+@use "../src/core";
 
-@include describe("grayscale.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("grayscale") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include grayscale.core-styles;
+                @include core.createUtility("grayscale", core.$grayscale, (
+                    "grayscale": "filter:grayscale"
+                ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
-                }
-
                 .grayscale-0 {
                     filter: grayscale(0);
                 }
 
-                .grayscale-50 {
-                    filter: grayscale(0.5);
+                .grayscale-100 {
+                    filter: grayscale(1);
                 }
 
                 @media (min-width: 320px) {
-                    .xs\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .xs\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .xs\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .xs\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
                 @media (min-width: 480px) {
-                    .sm\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .sm\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .sm\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .sm\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
                 @media (min-width: 768px) {
-                    .md\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .md\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .md\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .md\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
                 @media (min-width: 960px) {
-                    .lg\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .lg\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .lg\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .lg\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
                 @media (min-width: 1200px) {
-                    .xl\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .xl\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .xl\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .xl\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
 
                 @media (min-width: 1400px) {
-                    .\32 xl\:grayscale {
-                        filter: grayscale(1);
-                    }
-
                     .\32 xl\:grayscale-0 {
                         filter: grayscale(0);
                     }
 
-                    .\32 xl\:grayscale-50 {
-                        filter: grayscale(0.5);
+                    .\32 xl\:grayscale-100 {
+                        filter: grayscale(1);
                     }
                 }
             }

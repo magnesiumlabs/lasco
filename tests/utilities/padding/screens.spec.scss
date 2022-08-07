@@ -5,7 +5,7 @@
 @use "true" as *;
 @use "../src/core";
 
-@include describe("margin") {
+@include describe("padding") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {

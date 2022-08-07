@@ -6,8 +6,9 @@
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
-@use "@sass-collective/css";
+@use "@sass-collective/css" as collective-css;
 @use "@unsass/breakpoint";
+@use "@unsass/css";
 @use "@unsass/utilities";
 @use "./variables";
 @use "./functions";
@@ -62,7 +63,7 @@
         @if $breakpoint {
             @each $key, $value in breakpoint.get-screens() {
                 @include breakpoint.up($key) {
-                    @include css.selector($key) {
+                    @include collective-css.selector($key) {
                         @content;
                     }
                 }
@@ -97,6 +98,8 @@
                     $filter-function: "contrast"
                 } @else if string.index($value, "filter:brightness") {
                     $filter-function: "brightness"
+                } @else if string.index($value, "filter:grayscale") {
+                    $filter-function: "grayscale"
                 }
             }
 
@@ -117,10 +120,10 @@
                             } @else {
                                 @if meta.type-of($value) == "list" {
                                     @each $key3 in $value {
-                                        #{$key3}: string.unquote($value2);
+                                        @include css.declaration($key3, string.unquote($value2));
                                     }
                                 } @else {
-                                    #{$value}: string.unquote($value2);
+                                    @include css.declaration($value, string.unquote($value2));
                                 }
                             }
                         }
@@ -132,7 +135,7 @@
         @each $key, $value in $extend {
             .#{$key} {
                 @include declaration($property) {
-                    #{$property}: string.unquote($value);
+                    @include css.declaration($property, string.unquote($value));
                 }
             }
         }
