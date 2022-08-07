@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.2](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **grayscale:** remove files from `src`
+* **gap:** remove files from `src`
+
+### Features
+
+* **deps:** add `@unsass/css` 2.0.2 ([ff14d34](https://github.com/magnesiumlabs/lasco/commit/ff14d34fda0373620f0c111f4ba1ae8e4409f718))
+* **gap:** use `createUtility` mixin ([4032823](https://github.com/magnesiumlabs/lasco/commit/4032823a46f1db26bd6bdf278ccde7614a8aacf2))
+* **grayscale:** add `grayscale-100` on default class ([07a04f3](https://github.com/magnesiumlabs/lasco/commit/07a04f30c02bd30d287a70acc78bba17142c5525))
+* **grayscale:** use `createUtility` mixin ([7232573](https://github.com/magnesiumlabs/lasco/commit/7232573ba91dc0172d50102ac3c9f7ed79f52590))
+
 ## [2.0.0-beta.1](https://github.com/magnesiumlabs/lasco/compare/v1.7.0...v2.0.0-beta.1) (2022-07-26)
 
 
