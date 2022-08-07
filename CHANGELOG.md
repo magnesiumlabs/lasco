@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/magnesiumlabs/lasco/compare/v1.7.0...v1.7.1) (2022-08-07)
+
+
+### Bug Fixes
+
+* **deps:** packages vulnerabilities ([08f491f](https://github.com/magnesiumlabs/lasco/commit/08f491f4b6bb321da3eebbf3a9ef051d19fcae8d))
+
 ## [1.7.0](https://github.com/magnesiumlabs/lasco/compare/v1.6.0...v1.7.0) (2022-07-25)
 
 
