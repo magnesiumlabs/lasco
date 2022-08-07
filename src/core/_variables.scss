@@ -19,6 +19,12 @@ $align-content: (
     space-evenly
 ) !default;
 
+$background-origin: (
+    "border": "border-box",
+    "content": "content-box",
+    "padding": "padding-box"
+);
+
 $blur: (
     "0": "0"
 );

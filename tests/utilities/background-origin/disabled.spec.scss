@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "bg-origin": false
+        "background-origin": false
     )
 );
-@use "../index" as bg-origin;
 
-@include describe("bg-origin.core-styles()") {
+@include describe("background-origin") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include bg-origin.core-styles;
+                @include core.createUtility("background-origin", core.$background-origin);
             }
 
             @include expect(false) {
