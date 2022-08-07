@@ -2,6 +2,8 @@
 
 Utilities for applying `flex-direction` type of element.
 
+## Quick reference
+
 | Class                 | Property                          |
 |-----------------------|-----------------------------------|
 | `flex-row`            | `flex-direction: row;`            |

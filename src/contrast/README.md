@@ -2,6 +2,8 @@
 
 Utilities for applying contrast to an element.
 
+## Quick reference
+
 | Class          | Property               |
 |----------------|------------------------|
 | `contrast-0`   | `filter: contrast(0);` |

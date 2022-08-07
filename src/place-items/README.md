@@ -2,6 +2,8 @@
 
 Utilities for applying `place-items` property an element.
 
+## Quick reference
+
 | Class                  | Property                   |
 |------------------------|----------------------------|
 | `place-items-start`    | `place-items: flex-start;` |

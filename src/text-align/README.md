@@ -2,6 +2,8 @@
 
 Utilities for applying `text-align` to an element.
 
+## Quick reference
+
 | Class          | Property               |
 |----------------|------------------------|
 | `text-left`    | `text-align: left;`    |

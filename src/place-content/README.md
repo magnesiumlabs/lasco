@@ -2,6 +2,8 @@
 
 Utilities for applying `place-content` property an element.
 
+## Quick reference
+
 | Class                   | Property                        |
 |-------------------------|---------------------------------|
 | `place-content-start`   | `place-content: flex-start;`    |

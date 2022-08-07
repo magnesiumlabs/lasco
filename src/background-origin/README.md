@@ -2,6 +2,8 @@
 
 Utilities for controlling background box origin.
 
+## Quick reference
+
 | Class               | Property                          |
 |---------------------|-----------------------------------|
 | `bg-origin-border`  | `background-origin: border-box;`  |

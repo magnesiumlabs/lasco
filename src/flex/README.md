@@ -2,6 +2,8 @@
 
 Utilities for applying `flex` to an element.
 
+## Quick reference
+
 | Class          | Property          |
 |----------------|-------------------|
 | `flex-auto`    | `flex: 1 1 auto;` |

@@ -107,7 +107,7 @@ module.exports = {
                     },
                     {
                         text: 'Height',
-                        link: 'guide/min-height'
+                        link: 'guide/height'
                     },
                     {
                         text: 'Min Height',

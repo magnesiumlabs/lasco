@@ -2,6 +2,8 @@
 
 Utilities for applying `order` to an element.
 
+## Quick reference
+
 | Class        | Property    |
 |--------------|-------------|
 | `order-none` | `order: 0;` |

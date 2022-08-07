@@ -2,11 +2,13 @@
 
 Utilities for applying `aspect-ratio` to an element.
 
-| Class           | Property             |
-|-----------------|----------------------|
-| `aspect-auto`   | `aspect-ratio: auto` |
-| `aspect-square` | `aspect-ratio: 1/1`  |
-| `aspect-video`  | `aspect-ratio: 16/9` |
+## Quick reference
+
+| Class           | Property              |
+|-----------------|-----------------------|
+| `aspect-auto`   | `aspect-ratio: auto;` |
+| `aspect-square` | `aspect-ratio: 1/1;`  |
+| `aspect-video`  | `aspect-ratio: 16/9;` |
 
 ## Usage
 

@@ -2,6 +2,8 @@
 
 Utilities for applying `justify-content` property an element.
 
+## Quick reference
+
 | Class                     | Property                          |
 |---------------------------|-----------------------------------|
 | `justify-content-start`   | `justify-content: flex-start;`    |

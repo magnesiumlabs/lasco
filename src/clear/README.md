@@ -2,6 +2,8 @@
 
 Utilities for applying clear type an element.
 
+## Quick reference
+
 | Class         | Property        |
 |---------------|-----------------|
 | `clear-none`  | `clear: none;`  |

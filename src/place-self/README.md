@@ -2,6 +2,8 @@
 
 Utilities for applying `place-self` property an element.
 
+## Quick reference
+
 | Class                 | Property               |
 |-----------------------|------------------------|
 | `place-self-auto`     | `place-self: auto;`    |

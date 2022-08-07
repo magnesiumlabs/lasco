@@ -2,6 +2,8 @@
 
 Utilities for applying `display` type of element.
 
+## Quick reference
+
 | Class          | Property                 |
 |----------------|--------------------------|
 | `block`        | `display: block;`        |

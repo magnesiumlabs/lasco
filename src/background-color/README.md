@@ -2,6 +2,8 @@
 
 Utilities for applying `background-color` to an element.
 
+## Quick reference
+
 | Class                  | Property                          |
 |------------------------|-----------------------------------|
 | `bg-color-inherit`     | `background-color: inherit;`      |

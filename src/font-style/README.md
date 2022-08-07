@@ -2,6 +2,8 @@
 
 Utilities for applying `font-style` to an element.
 
+## Quick reference
+
 | Class         | Property              |
 |---------------|-----------------------|
 | `font-normal` | `font-style: normal;` |

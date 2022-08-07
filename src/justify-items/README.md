@@ -2,6 +2,8 @@
 
 Utilities for applying `justify-items` property an element.
 
+## Quick reference
+
 | Class                   | Property                     |
 |-------------------------|------------------------------|
 | `justify-items-start`   | `justify-items: flex-start;` |

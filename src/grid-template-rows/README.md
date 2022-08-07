@@ -2,6 +2,8 @@
 
 Utilities for applying `grid-template-rows` to an element.
 
+## Quick reference
+
 | Class            | Property                                          |
 |------------------|---------------------------------------------------|
 | `grid-rows-1`    | `grid-template-rows: repeat(1, minmax(0, 1fr));`  |

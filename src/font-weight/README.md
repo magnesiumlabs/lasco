@@ -2,6 +2,8 @@
 
 Utilities for applying `font-weight` to an element.
 
+## Quick reference
+
 | Class      | Property            |
 |------------|---------------------|
 | `font-100` | `font-weight: 100;` |

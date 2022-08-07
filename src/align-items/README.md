@@ -2,6 +2,8 @@
 
 Utilities for applying `align-items` property an element.
 
+## Quick reference
+
 | Class                  | Property                   |
 |------------------------|----------------------------|
 | `align-items-start`    | `align-items: flex-start;` |

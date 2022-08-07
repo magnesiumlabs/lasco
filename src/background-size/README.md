@@ -2,6 +2,8 @@
 
 Utilities for applying `background-size` to an element.
 
+## Quick reference
+
 | Class             | Property                    |
 |-------------------|-----------------------------|
 | `bg-size-auto`    | `background-size: auto;`    |

@@ -2,6 +2,8 @@
 
 Class generator for setting `min-height` property for an element.
 
+## Quick reference
+
 | Class          | Property             |
 |----------------|----------------------|
 | `min-h-0`      | `min-height: 0;`     |

@@ -2,6 +2,8 @@
 
 Class generator for setting `gap` property for an element.
 
+## Quick reference
+
 | Class     | Property         |
 |-----------|------------------|
 | `gap-0`   | `gap: 0;`        |

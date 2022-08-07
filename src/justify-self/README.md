@@ -2,6 +2,8 @@
 
 Utilities for applying `justify-self` property an element.
 
+## Quick reference
+
 | Class                  | Property                 |
 |------------------------|--------------------------|
 | `justify-self-auto`    | `justify-self: auto;`    |

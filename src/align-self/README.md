@@ -2,6 +2,8 @@
 
 Utilities for applying `align-self` property an element.
 
+## Quick reference
+
 | Class                 | Property                  |
 |-----------------------|---------------------------|
 | `align-self-auto`     | `align-self: auto;`       |

@@ -2,6 +2,8 @@
 
 Utilities for applying `text-transform` to an element.
 
+## Quick reference
+
 | Class             | Property                      |
 |-------------------|-------------------------------|
 | `text-uppercase`  | `text-transform: uppercase;`  |

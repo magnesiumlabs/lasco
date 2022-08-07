@@ -2,6 +2,8 @@
 
 Utilities for applying `flex-wrap` type of element.
 
+## Quick reference
+
 | Class               | Property                   |
 |---------------------|----------------------------|
 | `flex-wrap`         | `flex-wrap: wrap;`         |

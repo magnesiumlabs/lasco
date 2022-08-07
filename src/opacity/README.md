@@ -2,6 +2,8 @@
 
 Class generator for setting `opacity` property for an element.
 
+## Quick reference
+
 | Class         | Property      |
 |---------------|---------------|
 | `opacity-0`   | `opacity: 0;` |

@@ -2,6 +2,8 @@
 
 Utilities for applying `brightness` to an element.
 
+## Quick reference
+
 | Class            | Property                 |
 |------------------|--------------------------|
 | `brightness-0`   | `filter: brightness(0);` |

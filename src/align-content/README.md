@@ -2,6 +2,8 @@
 
 Utilities for applying `align-content` property an element.
 
+## Quick reference
+
 | Class                   | Property                        |
 |-------------------------|---------------------------------|
 | `align-content-start`   | `align-content: flex-start;`    |
