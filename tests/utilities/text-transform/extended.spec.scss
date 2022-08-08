@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "text-transform": false
+        "text-transform": (
+            "lowercase"
+        )
     )
 );
-@use "../index" as text-transform;
 
-@include describe("text-transform.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("text-transform") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include text-transform.core-styles;
+                @include core.createUtility("text-transform", core.$text-transform, (
+                    "text": "text-transform"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .text-lowercase {
+                    text-transform: lowercase;
+                }
             }
         }
     }
