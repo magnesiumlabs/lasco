@@ -71,7 +71,10 @@
 //@use "./src/font-style/styles" as font-style-styles;
 //@use "./src/font-weight/styles" as font-weight-styles;
 //@use "./src/text-align/styles" as text-align-styles;
-//@use "./src/text-transform/styles" as text-transform-styles;
+
+@include core.createUtility("text-transform", core.$text-transform, (
+    "text": "text-transform"
+));
 
 // ------------------------------------------------------------------------- //
 // Backgrounds
@@ -82,7 +85,11 @@
 //@use "./src/background-color/styles" as background-color-styles;
 //@use "./src/background-image/styles" as background-image-styles;
 //@use "./src/background-origin/styles" as background-origin-styles;
-//@use "./src/background-position/styles" as background-position-styles;
+
+@include core.createUtility("background-origin", core.$background-origin, (
+    "bg-origin": "background-origin"
+));
+
 //@use "./src/background-repeat/styles" as background-repeat-styles;
 //@use "./src/background-size/styles" as background-size-styles;
 
