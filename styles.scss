@@ -68,8 +68,13 @@
 // Typography
 // ------------------------------------------------------------------------- //
 
-//@use "./src/font-style/styles" as font-style-styles;
-//@use "./src/font-weight/styles" as font-weight-styles;
+@include core.createUtility("font-style", core.$font-weight, (
+    "font": "font-style"
+));
+
+@include core.createUtility("font-weight", core.$font-style, (
+    "font": "font-weight"
+));
 
 @include core.createUtility("text-align", core.$text-align, (
     "text": "text-align"
