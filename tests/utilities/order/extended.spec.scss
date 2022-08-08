@@ -1,0 +1,95 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "order": (
+            "13": "13",
+            "first": "1",
+            "last": "9999"
+        )
+    )
+);
+
+@include describe("order") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("order", core.$order, (
+                    "order": "order"
+                ));
+            }
+
+            @include expect(false) {
+                .order-0 {
+                    order: 0;
+                }
+
+                .order-1 {
+                    order: 1;
+                }
+
+                .order-2 {
+                    order: 2;
+                }
+
+                .order-3 {
+                    order: 3;
+                }
+
+                .order-4 {
+                    order: 4;
+                }
+
+                .order-5 {
+                    order: 5;
+                }
+
+                .order-6 {
+                    order: 6;
+                }
+
+                .order-7 {
+                    order: 7;
+                }
+
+                .order-8 {
+                    order: 8;
+                }
+
+                .order-9 {
+                    order: 9;
+                }
+
+                .order-10 {
+                    order: 10;
+                }
+
+                .order-11 {
+                    order: 11;
+                }
+
+                .order-12 {
+                    order: 12;
+                }
+
+                .order-13 {
+                    order: 13;
+                }
+
+                .order-first {
+                    order: 1;
+                }
+
+                .order-last {
+                    order: 9999;
+                }
+            }
+        }
+    }
+}
