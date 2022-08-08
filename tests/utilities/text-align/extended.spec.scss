@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "text-align": (
+            "center"
+        )
+    )
+);
+
+@include describe("text-align") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("text-align", core.$text-align, (
+                    "text": "text-align"
+                ));
+            }
+
+            @include expect(false) {
+                .text-center {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

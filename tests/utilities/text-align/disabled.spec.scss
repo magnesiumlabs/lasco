@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "text-align": false
     )
 );
-@use "../index" as text-align;
 
-@include describe("text-align.core-styles()") {
+@include describe("text-align") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include text-align.core-styles;
+                @include core.createUtility("text-align", core.$text-align);
             }
 
             @include expect(false) {
