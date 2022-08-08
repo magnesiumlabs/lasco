@@ -3,31 +3,23 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
     $extend: (
-        "order": (
-            12: 12
-        )
+        "order": false
     )
 );
-@use "../index" as order;
 
-@include describe("order.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("order") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include order.core-styles;
+                @include core.createUtility("order", core.$order, (
+                    "order": "order"
+                ));
             }
 
             @include expect(false) {
-                .order-none {
-                    order: 0;
-                }
-
-                .order-12 {
-                    order: 12;
-                }
+                // ...
             }
         }
     }
