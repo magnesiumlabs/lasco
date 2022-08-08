@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "font-weight": false
+        "font-weight": (
+            "400"
+        )
     )
 );
-@use "../index" as font-weight;
 
-@include describe("font-weight.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("font-weight") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include font-weight.core-styles;
+                @include core.createUtility("font-weight", core.$font-weight, (
+                    "font": "font-weight"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .font-400 {
+                    font-weight: 400;
+                }
             }
         }
     }

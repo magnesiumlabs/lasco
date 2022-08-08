@@ -1,0 +1,285 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("font-weight") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("font-weight", core.$font-weight, (
+                    "font": "font-weight"
+                ));
+            }
+
+            @include expect(false) {
+                .font-100 {
+                    font-weight: 100;
+                }
+
+                .font-200 {
+                    font-weight: 200;
+                }
+
+                .font-300 {
+                    font-weight: 300;
+                }
+
+                .font-400 {
+                    font-weight: 400;
+                }
+
+                .font-500 {
+                    font-weight: 500;
+                }
+
+                .font-600 {
+                    font-weight: 600;
+                }
+
+                .font-700 {
+                    font-weight: 700;
+                }
+
+                .font-800 {
+                    font-weight: 800;
+                }
+
+                .font-900 {
+                    font-weight: 900;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .xs\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .xs\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .xs\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .xs\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .xs\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .xs\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .xs\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .xs\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .sm\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .sm\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .sm\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .sm\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .sm\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .sm\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .sm\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .sm\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .md\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .md\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .md\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .md\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .md\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .md\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .md\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .md\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .lg\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .lg\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .lg\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .lg\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .lg\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .lg\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .lg\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .lg\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .xl\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .xl\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .xl\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .xl\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .xl\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .xl\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .xl\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .xl\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:font-100 {
+                        font-weight: 100;
+                    }
+
+                    .\32 xl\:font-200 {
+                        font-weight: 200;
+                    }
+
+                    .\32 xl\:font-300 {
+                        font-weight: 300;
+                    }
+
+                    .\32 xl\:font-400 {
+                        font-weight: 400;
+                    }
+
+                    .\32 xl\:font-500 {
+                        font-weight: 500;
+                    }
+
+                    .\32 xl\:font-600 {
+                        font-weight: 600;
+                    }
+
+                    .\32 xl\:font-700 {
+                        font-weight: 700;
+                    }
+
+                    .\32 xl\:font-800 {
+                        font-weight: 800;
+                    }
+
+                    .\32 xl\:font-900 {
+                        font-weight: 900;
+                    }
+                }
+
+            }
+        }
+    }
+}

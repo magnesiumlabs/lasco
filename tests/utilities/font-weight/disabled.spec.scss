@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "font-style": false
+        "font-weight": false
     )
 );
-@use "../index" as font-style;
 
-@include describe("font-style.core-styles()") {
+@include describe("font-weight") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include font-style.core-styles;
+                @include core.createUtility("font-weight", core.$font-weight, (
+                    "font": "font-weight"
+                ));
             }
 
             @include expect(false) {
