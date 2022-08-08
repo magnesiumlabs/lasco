@@ -113,6 +113,13 @@ $position: (
     "sticky": "sticky"
 );
 
+$text-transform: (
+    "normal": "none",
+    "uppercase": "uppercase",
+    "lowercase": "lowercase",
+    "capitalize": "capitalize"
+);
+
 $width: (
     "0": "0",
     "auto": "auto",
