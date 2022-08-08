@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as font-style;
+@use "../src/core";
 
-@include describe("font-style.core-styles()") {
+@include describe("font-style") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include font-style.core-styles;
+                @include core.createUtility("font-style", core.$font-style, (
+                    "font": "font-style"
+                ));
             }
 
             @include expect(false) {
@@ -17,9 +19,17 @@
                     font-style: normal;
                 }
 
+                .font-italic {
+                    font-style: italic;
+                }
+
                 @media (min-width: 320px) {
                     .xs\:font-normal {
                         font-style: normal;
+                    }
+
+                    .xs\:font-italic {
+                        font-style: italic;
                     }
                 }
 
@@ -27,11 +37,19 @@
                     .sm\:font-normal {
                         font-style: normal;
                     }
+
+                    .sm\:font-italic {
+                        font-style: italic;
+                    }
                 }
 
                 @media (min-width: 768px) {
                     .md\:font-normal {
                         font-style: normal;
+                    }
+
+                    .md\:font-italic {
+                        font-style: italic;
                     }
                 }
 
@@ -39,11 +57,19 @@
                     .lg\:font-normal {
                         font-style: normal;
                     }
+
+                    .lg\:font-italic {
+                        font-style: italic;
+                    }
                 }
 
                 @media (min-width: 1200px) {
                     .xl\:font-normal {
                         font-style: normal;
+                    }
+
+                    .xl\:font-italic {
+                        font-style: italic;
                     }
                 }
 
@@ -51,43 +77,7 @@
                     .\32 xl\:font-normal {
                         font-style: normal;
                     }
-                }
 
-                .font-italic {
-                    font-style: italic;
-                }
-
-                @media (min-width: 320px) {
-                    .xs\:font-italic {
-                        font-style: italic;
-                    }
-                }
-
-                @media (min-width: 480px) {
-                    .sm\:font-italic {
-                        font-style: italic;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    .md\:font-italic {
-                        font-style: italic;
-                    }
-                }
-
-                @media (min-width: 960px) {
-                    .lg\:font-italic {
-                        font-style: italic;
-                    }
-                }
-
-                @media (min-width: 1200px) {
-                    .xl\:font-italic {
-                        font-style: italic;
-                    }
-                }
-
-                @media (min-width: 1400px) {
                     .\32 xl\:font-italic {
                         font-style: italic;
                     }
