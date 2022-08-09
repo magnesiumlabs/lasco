@@ -149,9 +149,15 @@
 //@use "./src/justify-self/styles" as justify-self-styles;
 //@use "./src/justify-content/styles" as justify-content-styles;
 //@use "./src/justify-items/styles" as justify-items-styles;
-//@use "./src/place-self/styles" as place-self-styles;
 //@use "./src/place-content/styles" as place-content-styles;
-//@use "./src/place-items/styles" as place-items-styles;
+
+@include core.createUtility("place-items", core.$place-items, (
+    "place-items": "place-items"
+));
+
+@include core.createUtility("place-self", core.$place-self, (
+    "place-self": "place-self"
+));
 
 // ------------------------------------------------------------------------- //
 // Spacing

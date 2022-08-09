@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "place-content": false
+        "place-content": (
+            "center"
+        )
     )
 );
-@use "../index" as place-content;
 
-@include describe("place-content.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("place-content") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include place-content.core-styles;
+                @include core.createUtility("place-content", core.$place-content, (
+                    "place-content": "place-content"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .place-content-center {
+                    place-content: center;
+                }
             }
         }
     }

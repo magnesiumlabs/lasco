@@ -138,6 +138,31 @@ $padding: (
     "0": "0"
 );
 
+$place-content: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "space-between": "space-between",
+    "space-around": "space-around",
+    "space-evenly": "space-evenly",
+    "stretch": "stretch"
+);
+
+$place-items: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
+$place-self: (
+    "auto": "auto",
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
 $position: (
     "absolute": "absolute",
     "fixed": "fixed",
