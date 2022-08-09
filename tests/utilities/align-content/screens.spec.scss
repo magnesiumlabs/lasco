@@ -3,192 +3,194 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as align-content;
+@use "../src/core";
 
-@include describe("align-content.core-styles()") {
+@include describe("align-content") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include align-content.core-styles;
+                @include core.createUtility("align-content", core.$align-content, (
+                    "align-content": "align-content"
+                ));
             }
 
             @include expect(false) {
                 .align-content-start {
-                    align-content: flex-start;
+                    align-content: start;
                 }
 
                 .align-content-end {
-                    align-content: flex-end;
+                    align-content: end;
                 }
 
                 .align-content-center {
                     align-content: center;
                 }
 
-                .align-content-between {
+                .align-content-space-between {
                     align-content: space-between;
                 }
 
-                .align-content-around {
+                .align-content-space-around {
                     align-content: space-around;
                 }
 
-                .align-content-evenly {
+                .align-content-space-evenly {
                     align-content: space-evenly;
                 }
 
                 @media (min-width: 320px) {
                     .xs\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .xs\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .xs\:align-content-center {
                         align-content: center;
                     }
 
-                    .xs\:align-content-between {
+                    .xs\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .xs\:align-content-around {
+                    .xs\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .xs\:align-content-evenly {
+                    .xs\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }
 
                 @media (min-width: 480px) {
                     .sm\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .sm\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .sm\:align-content-center {
                         align-content: center;
                     }
 
-                    .sm\:align-content-between {
+                    .sm\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .sm\:align-content-around {
+                    .sm\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .sm\:align-content-evenly {
+                    .sm\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }
 
                 @media (min-width: 768px) {
                     .md\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .md\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .md\:align-content-center {
                         align-content: center;
                     }
 
-                    .md\:align-content-between {
+                    .md\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .md\:align-content-around {
+                    .md\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .md\:align-content-evenly {
+                    .md\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }
 
                 @media (min-width: 960px) {
                     .lg\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .lg\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .lg\:align-content-center {
                         align-content: center;
                     }
 
-                    .lg\:align-content-between {
+                    .lg\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .lg\:align-content-around {
+                    .lg\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .lg\:align-content-evenly {
+                    .lg\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }
 
                 @media (min-width: 1200px) {
                     .xl\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .xl\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .xl\:align-content-center {
                         align-content: center;
                     }
 
-                    .xl\:align-content-between {
+                    .xl\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .xl\:align-content-around {
+                    .xl\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .xl\:align-content-evenly {
+                    .xl\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }
 
                 @media (min-width: 1400px) {
                     .\32 xl\:align-content-start {
-                        align-content: flex-start;
+                        align-content: start;
                     }
 
                     .\32 xl\:align-content-end {
-                        align-content: flex-end;
+                        align-content: end;
                     }
 
                     .\32 xl\:align-content-center {
                         align-content: center;
                     }
 
-                    .\32 xl\:align-content-between {
+                    .\32 xl\:align-content-space-between {
                         align-content: space-between;
                     }
 
-                    .\32 xl\:align-content-around {
+                    .\32 xl\:align-content-space-around {
                         align-content: space-around;
                     }
 
-                    .\32 xl\:align-content-evenly {
+                    .\32 xl\:align-content-space-evenly {
                         align-content: space-evenly;
                     }
                 }

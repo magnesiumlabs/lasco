@@ -3,27 +3,23 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
     $extend: (
-        "align-items": (
-            center
-        )
+        "align-items": false
     )
 );
-@use "../index" as align-items;
 
-@include describe("align-items.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("align-items") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include align-items.core-styles;
+                @include core.createUtility("align-items", core.$align-items, (
+                    "align-items": "align-items"
+                ));
             }
 
             @include expect(false) {
-                .align-items-center {
-                    align-items: center;
-                }
+                // ...
             }
         }
     }

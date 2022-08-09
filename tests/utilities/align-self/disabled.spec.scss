@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "align-self": false
     )
 );
-@use "../index" as align-self;
 
-@include describe("align-self.core-styles()") {
+@include describe("align-self") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include align-self.core-styles;
+                @include core.createUtility("align-self", core.$align-self, (
+                    "align-self": "align-self"
+                ));
             }
 
             @include expect(false) {

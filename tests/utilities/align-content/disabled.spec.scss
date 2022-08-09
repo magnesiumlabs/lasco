@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "align-content": false
     )
 );
-@use "../index" as align-content;
 
-@include describe("align-content.core-styles()") {
+@include describe("align-content") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include align-content.core-styles;
+                @include core.createUtility("align-content", core.$align-content, (
+                    "align-content": "align-content"
+                ));
             }
 
             @include expect(false) {

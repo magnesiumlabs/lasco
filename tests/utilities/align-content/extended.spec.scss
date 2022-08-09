@@ -3,21 +3,24 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
         "align-content": (
-            center
+            "center"
         )
     )
 );
-@use "../index" as align-content;
 
-@include describe("align-content.core-styles()") {
+@include describe("align-content") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include align-content.core-styles;
+                @include core.createUtility("align-content", core.$align-content, (
+                    "align-content": "align-content"
+                ));
             }
 
             @include expect(false) {
