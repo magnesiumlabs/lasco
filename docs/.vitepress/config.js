@@ -272,16 +272,16 @@ module.exports = {
                         link: 'guide/justify-items'
                     },
                     {
-                        text: 'Place Self',
-                        link: 'guide/place-self'
-                    },
-                    {
                         text: 'Place Content',
                         link: 'guide/place-content'
                     },
                     {
                         text: 'Place Items',
                         link: 'guide/place-items'
+                    },
+                    {
+                        text: 'Place Self',
+                        link: 'guide/place-self'
                     }
                 ]
             },
@@ -302,7 +302,7 @@ module.exports = {
         ],
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2021-present'
+            copyright: 'Copyright © 2022-present'
         }
     }
 };

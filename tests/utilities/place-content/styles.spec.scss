@@ -1,0 +1,52 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("place-content") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("place-content", core.$place-content, (
+                    "place-content": "place-content"
+                ));
+            }
+
+            @include expect(false) {
+                .place-content-start {
+                    place-content: start;
+                }
+
+                .place-content-end {
+                    place-content: end;
+                }
+
+                .place-content-center {
+                    place-content: center;
+                }
+
+                .place-content-space-between {
+                    place-content: space-between;
+                }
+
+                .place-content-space-around {
+                    place-content: space-around;
+                }
+
+                .place-content-space-evenly {
+                    place-content: space-evenly;
+                }
+
+                .place-content-stretch {
+                    place-content: stretch;
+                }
+            }
+        }
+    }
+}

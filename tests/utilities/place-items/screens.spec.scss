@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as place-items;
+@use "../src/core";
 
-@include describe("place-items.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("place-items") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include place-items.core-styles;
+                @include core.createUtility("place-items", core.$place-items, (
+                    "place-items": "place-items"
+                ));
             }
 
             @include expect(false) {
