@@ -1,6 +1,7 @@
 ## Files
 *.orig
 *.log
+.merge_*
 junit.xml
 
 ## Folders
