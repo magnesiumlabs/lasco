@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as justify-items;
+@use "../src/core";
 
-@include describe("justify-items.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("justify-items") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include justify-items.core-styles;
+                @include core.createUtility("justify-items", core.$justify-items, (
+                    "justify-items": "justify-items"
+                ));
             }
 
             @include expect(false) {

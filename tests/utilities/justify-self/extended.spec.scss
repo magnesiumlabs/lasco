@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "justify-items": false
+        "justify-self": (
+            "center"
+        )
     )
 );
-@use "../index" as justify-items;
 
-@include describe("justify-items.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("justify-self") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include justify-items.core-styles;
+                @include core.createUtility("justify-self", core.$justify-self, (
+                    "justify-self": "justify-self"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .justify-self-center {
+                    justify-self: center;
+                }
             }
         }
     }
