@@ -2,6 +2,8 @@
 
 Utilities for controlling background image repeat.
 
+## Quick reference
+
 | Class             | Property                        |
 |-------------------|---------------------------------|
 | `bg-repeat`       | `background-repeat: repeat;`    |

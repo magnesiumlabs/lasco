@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "justify-self": (
+            "center"
+        )
+    )
+);
+
+@include describe("justify-self") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("justify-self", core.$justify-self, (
+                    "justify-self": "justify-self"
+                ));
+            }
+
+            @include expect(false) {
+                .justify-self-center {
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}

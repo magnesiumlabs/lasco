@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "order": false
+    )
+);
+
+@include describe("order") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("order", core.$order, (
+                    "order": "order"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

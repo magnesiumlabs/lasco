@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "justify-items": (
+            "center"
+        )
+    )
+);
+
+@include describe("justify-items") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("justify-items", core.$justify-items, (
+                    "justify-items": "justify-items"
+                ));
+            }
+
+            @include expect(false) {
+                .justify-items-center {
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "background-origin": (
+            "content"
+        )
+    )
+);
+
+@include describe("background-origin") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-origin", core.$background-origin, (
+                    "bg-origin": "background-origin"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-origin-content {
+                    background-origin: content-box;
+                }
+            }
+        }
+    }
+}

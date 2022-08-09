@@ -2,6 +2,8 @@
 
 Utilities for applying `grid-template-columns` to an element.
 
+## Quick reference
+
 | Class            | Property                                             |
 |------------------|------------------------------------------------------|
 | `grid-cols-1`    | `grid-template-columns: repeat(1, minmax(0, 1fr));`  |

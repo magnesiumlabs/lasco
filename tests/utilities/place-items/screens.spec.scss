@@ -1,0 +1,144 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("place-items") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("place-items", core.$place-items, (
+                    "place-items": "place-items"
+                ));
+            }
+
+            @include expect(false) {
+                .place-items-start {
+                    place-items: start;
+                }
+
+                .place-items-end {
+                    place-items: end;
+                }
+
+                .place-items-center {
+                    place-items: center;
+                }
+
+                .place-items-stretch {
+                    place-items: stretch;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .xs\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .xs\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .xs\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .sm\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .sm\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .sm\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .md\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .md\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .md\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .lg\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .lg\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .lg\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .xl\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .xl\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .xl\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:place-items-start {
+                        place-items: start;
+                    }
+
+                    .\32 xl\:place-items-end {
+                        place-items: end;
+                    }
+
+                    .\32 xl\:place-items-center {
+                        place-items: center;
+                    }
+
+                    .\32 xl\:place-items-stretch {
+                        place-items: stretch;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../core" with (
+    $extend: (
+        "aspect-ratio": false
+    )
+);
+@use "../index" as aspect-ratio;
+
+@include describe("aspect-ratio.core-styles()") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include aspect-ratio.core-styles;
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

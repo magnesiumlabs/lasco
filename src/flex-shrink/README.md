@@ -2,6 +2,8 @@
 
 Utilities for applying `flex-shrink` type of element.
 
+## Quick reference
+
 | Class           | Property          |
 |-----------------|-------------------|
 | `flex-shrink`   | `flex-shrink: 1;` |

@@ -2,6 +2,8 @@
 
 Utilities for applying `flex-basis` to an element.
 
+## Quick reference
+
 | Class             | Property            |
 |-------------------|---------------------|
 | `flex-basis-none` | `flex-basis: 0;`    |

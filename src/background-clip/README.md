@@ -2,6 +2,8 @@
 
 Utilities for controlling background box.
 
+## Quick reference
+
 | Class             | Property                        |
 |-------------------|---------------------------------|
 | `bg-clip-border`  | `background-clip: border-box;`  |

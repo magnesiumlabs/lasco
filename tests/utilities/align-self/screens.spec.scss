@@ -1,0 +1,200 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("align-self") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("align-self", core.$align-self, (
+                    "align-self": "align-self"
+                ));
+            }
+
+            @include expect(false) {
+                .align-self-auto {
+                    align-self: auto;
+                }
+
+                .align-self-start {
+                    align-self: start;
+                }
+
+                .align-self-end {
+                    align-self: end;
+                }
+
+                .align-self-center {
+                    align-self: center;
+                }
+
+                .align-self-stretch {
+                    align-self: stretch;
+                }
+
+                .align-self-baseline {
+                    align-self: baseline;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .xs\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .xs\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .xs\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .xs\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .xs\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .sm\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .sm\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .sm\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .sm\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .sm\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .md\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .md\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .md\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .md\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .md\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .lg\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .lg\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .lg\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .lg\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .lg\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .xl\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .xl\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .xl\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .xl\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .xl\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:align-self-auto {
+                        align-self: auto;
+                    }
+
+                    .\32 xl\:align-self-start {
+                        align-self: start;
+                    }
+
+                    .\32 xl\:align-self-end {
+                        align-self: end;
+                    }
+
+                    .\32 xl\:align-self-center {
+                        align-self: center;
+                    }
+
+                    .\32 xl\:align-self-stretch {
+                        align-self: stretch;
+                    }
+
+                    .\32 xl\:align-self-baseline {
+                        align-self: baseline;
+                    }
+                }
+            }
+        }
+    }
+}

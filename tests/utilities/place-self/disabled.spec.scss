@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "place-self": false
+    )
+);
+
+@include describe("place-self") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("place-self", core.$place-self, (
+                    "place-self": "place-self"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

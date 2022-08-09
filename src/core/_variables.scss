@@ -11,13 +11,36 @@ $aspect-ratio: (
 );
 
 $align-content: (
-    flex-start,
-    flex-end,
-    center,
-    space-between,
-    space-around,
-    space-evenly
-) !default;
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "space-between": "space-between",
+    "space-around": "space-around",
+    "space-evenly": "space-evenly"
+);
+
+$align-items: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "baseline": "baseline",
+    "stretch": "stretch"
+);
+
+$align-self: (
+    "auto": "auto",
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch",
+    "baseline": "baseline"
+);
+
+$background-origin: (
+    "border": "border-box",
+    "content": "content-box",
+    "padding": "padding-box"
+);
 
 $blur: (
     "0": "0"
@@ -58,6 +81,23 @@ $float: (
     "none": "none"
 );
 
+$font-style: (
+    "normal": "normal",
+    "italic": "italic"
+);
+
+$font-weight: (
+    "100": "100",
+    "200": "200",
+    "300": "300",
+    "400": "400",
+    "500": "500",
+    "600": "600",
+    "700": "700",
+    "800": "800",
+    "900": "900"
+);
+
 $gap: (
     "0": "0"
 );
@@ -65,6 +105,31 @@ $gap: (
 $grayscale: (
     "0": "0",
     "100": "1"
+);
+
+$justify-content: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "space-between": "space-between",
+    "space-around": "space-around",
+    "space-evenly": "space-evenly",
+    "stretch": "stretch"
+);
+
+$justify-items: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
+$justify-self: (
+    "auto": "auto",
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
 );
 
 $margin: (
@@ -90,6 +155,22 @@ $max-width: (
     "fit": "fit-content"
 );
 
+$order: (
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12"
+);
+
 $opacity: (
     "0": "0",
     "100": "1"
@@ -99,12 +180,51 @@ $padding: (
     "0": "0"
 );
 
+$place-content: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "space-between": "space-between",
+    "space-around": "space-around",
+    "space-evenly": "space-evenly",
+    "stretch": "stretch"
+);
+
+$place-items: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
+$place-self: (
+    "auto": "auto",
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
 $position: (
     "absolute": "absolute",
     "fixed": "fixed",
     "relative": "relative",
     "static": "static",
     "sticky": "sticky"
+);
+
+$text-align: (
+    "left": "left",
+    "center": "center",
+    "right": "right",
+    "justify": "justify"
+);
+
+$text-transform: (
+    "normal": "none",
+    "uppercase": "uppercase",
+    "lowercase": "lowercase",
+    "capitalize": "capitalize"
 );
 
 $width: (
@@ -120,21 +240,6 @@ $width: (
 $z-index: (
     "0": "0",
     "auto": "auto"
-);
-
-/// ...
-
-$names: (
-    border-box: border,
-    content-box: content,
-    padding-box: padding,
-    flex-start: start,
-    flex-end: end,
-    column: col,
-    column-reverse: col-reverse,
-    space-between: between,
-    space-around: around,
-    space-evenly: evenly
 );
 
 ///

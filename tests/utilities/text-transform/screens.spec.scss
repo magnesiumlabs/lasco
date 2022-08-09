@@ -1,0 +1,144 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("text-transform") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("text-transform", core.$text-transform, (
+                    "text": "text-transform"
+                ));
+            }
+
+            @include expect(false) {
+                .text-normal {
+                    text-transform: none;
+                }
+
+                .text-uppercase {
+                    text-transform: uppercase;
+                }
+
+                .text-lowercase {
+                    text-transform: lowercase;
+                }
+
+                .text-capitalize {
+                    text-transform: capitalize;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .xs\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .xs\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .xs\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .sm\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .sm\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .sm\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .md\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .md\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .md\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .lg\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .lg\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .lg\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .xl\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .xl\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .xl\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:text-normal {
+                        text-transform: none;
+                    }
+
+                    .\32 xl\:text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .\32 xl\:text-lowercase {
+                        text-transform: lowercase;
+                    }
+
+                    .\32 xl\:text-capitalize {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

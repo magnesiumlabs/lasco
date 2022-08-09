@@ -60,6 +60,20 @@ All notable changes to this project will be documented in this file. See [Conven
 * **core:** simplify `filter` condition ([c0b86b1](https://github.com/magnesiumlabs/lasco/commit/c0b86b18afad7581380a434e7707bbbaa468c21a))
 * **height, width:** add missing default ([ffdc24a](https://github.com/magnesiumlabs/lasco/commit/ffdc24a4bc8c07dbc7b7b8c487d732fd8577f6de))
 
+## [1.7.2](https://github.com/magnesiumlabs/lasco/compare/v1.7.1...v1.7.2) (2022-08-09)
+
+
+### Bug Fixes
+
+* **align, justify, place:** remove unneeded `!default` ([f8b96d2](https://github.com/magnesiumlabs/lasco/commit/f8b96d20666944d83c842b3dbd22cf920ca66fed))
+
+## [1.7.1](https://github.com/magnesiumlabs/lasco/compare/v1.7.0...v1.7.1) (2022-08-07)
+
+
+### Bug Fixes
+
+* **deps:** packages vulnerabilities ([08f491f](https://github.com/magnesiumlabs/lasco/commit/08f491f4b6bb321da3eebbf3a9ef051d19fcae8d))
+
 ## [1.7.0](https://github.com/magnesiumlabs/lasco/compare/v1.6.0...v1.7.0) (2022-07-25)
 
 

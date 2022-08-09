@@ -2,6 +2,8 @@
 
 Utilities for applying `background-image` to an element.
 
+## Quick reference
+
 | Class           | Property                  |
 |-----------------|---------------------------|
 | `bg-image-none` | `background-image: none;` |

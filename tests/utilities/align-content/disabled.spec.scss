@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "align-content": false
+    )
+);
+
+@include describe("align-content") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("align-content", core.$align-content, (
+                    "align-content": "align-content"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

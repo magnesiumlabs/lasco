@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "font-style": (
+            "italic"
+        )
+    )
+);
+
+@include describe("font-style") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("font-style", core.$font-style, (
+                    "font": "font-style"
+                ));
+            }
+
+            @include expect(false) {
+                .font-italic {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

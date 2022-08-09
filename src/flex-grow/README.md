@@ -2,6 +2,8 @@
 
 Utilities for applying `flex-grow` type of element.
 
+## Quick reference
+
 | Class         | Property        |
 |---------------|-----------------|
 | `flex-grow`   | `flex-grow: 1;` |

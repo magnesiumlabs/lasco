@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "align-items": (
+            "center"
+        )
+    )
+);
+
+@include describe("align-items") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("align-items", core.$align-items, (
+                    "align-items": "align-items"
+                ));
+            }
+
+            @include expect(false) {
+                .align-items-center {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

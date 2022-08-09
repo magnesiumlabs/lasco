@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "place-content": (
+            "center"
+        )
+    )
+);
+
+@include describe("place-content") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("place-content", core.$place-content, (
+                    "place-content": "place-content"
+                ));
+            }
+
+            @include expect(false) {
+                .place-content-center {
+                    place-content: center;
+                }
+            }
+        }
+    }
+}

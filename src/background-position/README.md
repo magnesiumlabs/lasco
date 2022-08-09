@@ -2,6 +2,8 @@
 
 Utilities for applying `background-position` to an element.
 
+## Quick reference
+
 | Class                | Property                       |
 |----------------------|--------------------------------|
 | `bg-position-bottom` | `background-position: bottom;` |

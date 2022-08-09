@@ -68,10 +68,21 @@
 // Typography
 // ------------------------------------------------------------------------- //
 
-//@use "./src/font-style/styles" as font-style-styles;
-//@use "./src/font-weight/styles" as font-weight-styles;
-//@use "./src/text-align/styles" as text-align-styles;
-//@use "./src/text-transform/styles" as text-transform-styles;
+@include core.createUtility("font-style", core.$font-weight, (
+    "font": "font-style"
+));
+
+@include core.createUtility("font-weight", core.$font-style, (
+    "font": "font-weight"
+));
+
+@include core.createUtility("text-align", core.$text-align, (
+    "text": "text-align"
+));
+
+@include core.createUtility("text-transform", core.$text-transform, (
+    "text": "text-transform"
+));
 
 // ------------------------------------------------------------------------- //
 // Backgrounds
@@ -81,8 +92,11 @@
 //@use "./src/background-clip/styles" as background-clip-styles;
 //@use "./src/background-color/styles" as background-color-styles;
 //@use "./src/background-image/styles" as background-image-styles;
-//@use "./src/background-origin/styles" as background-origin-styles;
-//@use "./src/background-position/styles" as background-position-styles;
+
+@include core.createUtility("background-origin", core.$background-origin, (
+    "bg-origin": "background-origin"
+));
+
 //@use "./src/background-repeat/styles" as background-repeat-styles;
 //@use "./src/background-size/styles" as background-size-styles;
 
@@ -116,7 +130,11 @@
 //@use "./src/flex-grow/styles" as flex-grow-styles;
 //@use "./src/flex-shrink/styles" as flex-shrink-styles;
 //@use "./src/flex-basis/styles" as flex-basis-styles;
-//@use "./src/order/styles" as order-styles;
+
+@include core.createUtility("order", core.$order, (
+    "order": "order"
+));
+
 //@use "./src/grid-template-columns/styles" as grid-template-columns-styles;
 //@use "./src/grid-template-rows/styles" as grid-template-rows-styles;
 
@@ -124,15 +142,41 @@
     "gap": "gap"
 ));
 
-//@use "./src/align-self/styles" as align-self-styles;
-//@include core.addUtility("align-content", core.$align-content);
-//@use "./src/align-items/styles" as align-items-styles;
-//@use "./src/justify-self/styles" as justify-self-styles;
-//@use "./src/justify-content/styles" as justify-content-styles;
-//@use "./src/justify-items/styles" as justify-items-styles;
-//@use "./src/place-self/styles" as place-self-styles;
-//@use "./src/place-content/styles" as place-content-styles;
-//@use "./src/place-items/styles" as place-items-styles;
+@include core.createUtility("align-content", core.$align-content, (
+    "align-content": "align-content"
+));
+
+@include core.createUtility("align-items", core.$align-items, (
+    "align-items": "align-items"
+));
+
+@include core.createUtility("align-self", core.$align-self, (
+    "align-self": "align-self"
+));
+
+@include core.createUtility("justify-content", core.$justify-content, (
+    "justify-content": "justify-content"
+));
+
+@include core.createUtility("justify-items", core.$justify-items, (
+    "justify-items": "justify-items"
+));
+
+@include core.createUtility("justify-self", core.$justify-self, (
+    "justify-self": "justify-self"
+));
+
+@include core.createUtility("place-content", core.$place-content, (
+    "place-content": "place-content"
+));
+
+@include core.createUtility("place-items", core.$place-items, (
+    "place-items": "place-items"
+));
+
+@include core.createUtility("place-self", core.$place-self, (
+    "place-self": "place-self"
+));
 
 // ------------------------------------------------------------------------- //
 // Spacing

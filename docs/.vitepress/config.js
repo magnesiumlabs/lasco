@@ -107,7 +107,7 @@ module.exports = {
                     },
                     {
                         text: 'Height',
-                        link: 'guide/min-height'
+                        link: 'guide/height'
                     },
                     {
                         text: 'Min Height',
@@ -270,16 +270,30 @@ module.exports = {
                         link: 'guide/justify-items'
                     },
                     {
-                        text: 'Place Self',
-                        link: 'guide/place-self'
-                    },
-                    {
                         text: 'Place Content',
                         link: 'guide/place-content'
                     },
                     {
                         text: 'Place Items',
                         link: 'guide/place-items'
+                    },
+                    {
+                        text: 'Place Self',
+                        link: 'guide/place-self'
+                    }
+                ]
+            },
+            {
+                text: 'Spacing',
+                collapsible: true,
+                items: [
+                    {
+                        text: 'Margin',
+                        link: 'guide/margin'
+                    },
+                    {
+                        text: 'Padding',
+                        link: 'guide/padding'
                     }
                 ]
             },
@@ -300,7 +314,7 @@ module.exports = {
         ],
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2021-present'
+            copyright: 'Copyright © 2022-present'
         }
     }
 };

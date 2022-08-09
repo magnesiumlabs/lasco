@@ -2,6 +2,8 @@
 
 Class generator for setting `height` property for an element.
 
+## Quick reference
+
 | Class      | Property         |
 |------------|------------------|
 | `h-0`      | `height: 0;`     |

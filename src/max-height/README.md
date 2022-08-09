@@ -2,6 +2,8 @@
 
 Class generator for setting `max-height` property for an element.
 
+## Quick reference
+
 | Class          | Property             |
 |----------------|----------------------|
 | `max-h-0`      | `max-height: 0;`     |

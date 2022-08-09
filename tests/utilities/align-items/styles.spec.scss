@@ -1,0 +1,44 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("align-items") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("align-items", core.$align-items, (
+                    "align-items": "align-items"
+                ));
+            }
+
+            @include expect(false) {
+                .align-items-start {
+                    align-items: start;
+                }
+
+                .align-items-end {
+                    align-items: end;
+                }
+
+                .align-items-center {
+                    align-items: center;
+                }
+
+                .align-items-baseline {
+                    align-items: baseline;
+                }
+
+                .align-items-stretch {
+                    align-items: stretch;
+                }
+            }
+        }
+    }
+}

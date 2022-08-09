@@ -2,6 +2,8 @@
 
 Utilities for applying background image's position on scroll.
 
+## Quick reference
+
 | Class                  | Property                         |
 |------------------------|----------------------------------|
 | `bg-attachment-local`  | `background-attachment: local;`  |
