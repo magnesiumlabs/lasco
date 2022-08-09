@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "place-items": false
+        "place-self": false
     )
 );
-@use "../index" as place-items;
 
-@include describe("place-items.core-styles()") {
+@include describe("place-self") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include place-items.core-styles;
+                @include core.createUtility("place-self", core.$place-self, (
+                    "place-self": "place-self"
+                ));
             }
 
             @include expect(false) {

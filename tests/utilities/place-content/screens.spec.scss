@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as place-content;
+@use "../src/core";
 
-@include describe("place-content.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("place-content") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include place-content.core-styles;
+                @include core.createUtility("place-content", core.$place-content, (
+                    "place-content": "place-content"
+                ));
             }
 
             @include expect(false) {
@@ -25,15 +27,15 @@
                     place-content: center;
                 }
 
-                .place-content-between {
+                .place-content-space-between {
                     place-content: space-between;
                 }
 
-                .place-content-around {
+                .place-content-space-around {
                     place-content: space-around;
                 }
 
-                .place-content-evenly {
+                .place-content-space-evenly {
                     place-content: space-evenly;
                 }
 
@@ -54,15 +56,15 @@
                         place-content: center;
                     }
 
-                    .xs\:place-content-between {
+                    .xs\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .xs\:place-content-around {
+                    .xs\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .xs\:place-content-evenly {
+                    .xs\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
@@ -84,15 +86,15 @@
                         place-content: center;
                     }
 
-                    .sm\:place-content-between {
+                    .sm\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .sm\:place-content-around {
+                    .sm\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .sm\:place-content-evenly {
+                    .sm\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
@@ -114,15 +116,15 @@
                         place-content: center;
                     }
 
-                    .md\:place-content-between {
+                    .md\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .md\:place-content-around {
+                    .md\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .md\:place-content-evenly {
+                    .md\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
@@ -144,15 +146,15 @@
                         place-content: center;
                     }
 
-                    .lg\:place-content-between {
+                    .lg\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .lg\:place-content-around {
+                    .lg\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .lg\:place-content-evenly {
+                    .lg\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
@@ -174,15 +176,15 @@
                         place-content: center;
                     }
 
-                    .xl\:place-content-between {
+                    .xl\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .xl\:place-content-around {
+                    .xl\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .xl\:place-content-evenly {
+                    .xl\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
@@ -204,15 +206,15 @@
                         place-content: center;
                     }
 
-                    .\32 xl\:place-content-between {
+                    .\32 xl\:place-content-space-between {
                         place-content: space-between;
                     }
 
-                    .\32 xl\:place-content-around {
+                    .\32 xl\:place-content-space-around {
                         place-content: space-around;
                     }
 
-                    .\32 xl\:place-content-evenly {
+                    .\32 xl\:place-content-space-evenly {
                         place-content: space-evenly;
                     }
 
