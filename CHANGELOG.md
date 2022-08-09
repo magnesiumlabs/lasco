@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.2](https://github.com/magnesiumlabs/lasco/compare/v1.7.1...v1.7.2) (2022-08-09)
+
+
+### Bug Fixes
+
+* **align, justify, place:** remove unneeded `!default` ([f8b96d2](https://github.com/magnesiumlabs/lasco/commit/f8b96d20666944d83c842b3dbd22cf920ca66fed))
+
 ## [1.7.1](https://github.com/magnesiumlabs/lasco/compare/v1.7.0...v1.7.1) (2022-08-07)
 
 
