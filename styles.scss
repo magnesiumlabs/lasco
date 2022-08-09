@@ -146,9 +146,19 @@
 //@use "./src/align-self/styles" as align-self-styles;
 //@include core.addUtility("align-content", core.$align-content);
 //@use "./src/align-items/styles" as align-items-styles;
-//@use "./src/justify-self/styles" as justify-self-styles;
-//@use "./src/justify-content/styles" as justify-content-styles;
-//@use "./src/justify-items/styles" as justify-items-styles;
+
+@include core.createUtility("justify-content", core.$justify-content, (
+    "justify-content": "justify-content"
+));
+
+@include core.createUtility("justify-items", core.$justify-items, (
+    "justify-items": "justify-items"
+));
+
+@include core.createUtility("justify-self", core.$justify-self, (
+    "justify-self": "justify-self"
+));
+
 //@use "./src/place-content/styles" as place-content-styles;
 
 @include core.createUtility("place-items", core.$place-items, (

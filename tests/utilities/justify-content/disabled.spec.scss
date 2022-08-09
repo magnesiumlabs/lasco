@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "justify-content": false
     )
 );
-@use "../index" as justify-content;
 
-@include describe("justify-content.core-styles()") {
+@include describe("justify-content") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include justify-content.core-styles;
+                @include core.createUtility("justify-content", core.$justify-content, (
+                    "justify-content": "justify-content"
+                ));
             }
 
             @include expect(false) {

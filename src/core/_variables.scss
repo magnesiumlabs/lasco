@@ -90,6 +90,31 @@ $grayscale: (
     "100": "1"
 );
 
+$justify-content: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "space-between": "space-between",
+    "space-around": "space-around",
+    "space-evenly": "space-evenly",
+    "stretch": "stretch"
+);
+
+$justify-items: (
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
+$justify-self: (
+    "auto": "auto",
+    "start": "start",
+    "end": "end",
+    "center": "center",
+    "stretch": "stretch"
+);
+
 $margin: (
     "0": "0",
     "auto": "auto"

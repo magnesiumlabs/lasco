@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as justify-content;
+@use "../src/core";
 
-@include describe("justify-content.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("justify-content") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include justify-content.core-styles;
+                @include core.createUtility("justify-content", core.$justify-content, (
+                    "justify-content": "justify-content"
+                ));
             }
 
             @include expect(false) {
@@ -25,15 +27,15 @@
                     justify-content: center;
                 }
 
-                .justify-content-between {
+                .justify-content-space-between {
                     justify-content: space-between;
                 }
 
-                .justify-content-around {
+                .justify-content-space-around {
                     justify-content: space-around;
                 }
 
-                .justify-content-evenly {
+                .justify-content-space-evenly {
                     justify-content: space-evenly;
                 }
 
@@ -54,15 +56,15 @@
                         justify-content: center;
                     }
 
-                    .xs\:justify-content-between {
+                    .xs\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .xs\:justify-content-around {
+                    .xs\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .xs\:justify-content-evenly {
+                    .xs\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
@@ -84,15 +86,15 @@
                         justify-content: center;
                     }
 
-                    .sm\:justify-content-between {
+                    .sm\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .sm\:justify-content-around {
+                    .sm\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .sm\:justify-content-evenly {
+                    .sm\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
@@ -114,15 +116,15 @@
                         justify-content: center;
                     }
 
-                    .md\:justify-content-between {
+                    .md\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .md\:justify-content-around {
+                    .md\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .md\:justify-content-evenly {
+                    .md\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
@@ -144,15 +146,15 @@
                         justify-content: center;
                     }
 
-                    .lg\:justify-content-between {
+                    .lg\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .lg\:justify-content-around {
+                    .lg\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .lg\:justify-content-evenly {
+                    .lg\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
@@ -174,15 +176,15 @@
                         justify-content: center;
                     }
 
-                    .xl\:justify-content-between {
+                    .xl\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .xl\:justify-content-around {
+                    .xl\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .xl\:justify-content-evenly {
+                    .xl\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
@@ -204,15 +206,15 @@
                         justify-content: center;
                     }
 
-                    .\32 xl\:justify-content-between {
+                    .\32 xl\:justify-content-space-between {
                         justify-content: space-between;
                     }
 
-                    .\32 xl\:justify-content-around {
+                    .\32 xl\:justify-content-space-around {
                         justify-content: space-around;
                     }
 
-                    .\32 xl\:justify-content-evenly {
+                    .\32 xl\:justify-content-space-evenly {
                         justify-content: space-evenly;
                     }
 
