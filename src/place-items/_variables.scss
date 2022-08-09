@@ -9,6 +9,6 @@ $_defaults: (
     end,
     center,
     stretch
-) !default;
+);
 
 $extend: core.filter($_defaults, "place-items");

@@ -10,6 +10,6 @@ $_defaults: (
     center,
     baseline,
     stretch
-) !default;
+);
 
 $extend: core.filter($_defaults, "align-items");

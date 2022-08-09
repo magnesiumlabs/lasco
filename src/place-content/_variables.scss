@@ -12,6 +12,6 @@ $_defaults: (
     space-around,
     space-evenly,
     stretch
-) !default;
+);
 
 $extend: core.filter($_defaults, "place-content");

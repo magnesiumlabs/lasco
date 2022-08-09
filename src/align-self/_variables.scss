@@ -11,6 +11,6 @@ $_defaults: (
     center,
     stretch,
     baseline
-) !default;
+);
 
 $extend: core.filter($_defaults, "align-self");

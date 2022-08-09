@@ -11,6 +11,6 @@ $_defaults: (
     space-between,
     space-around,
     space-evenly
-) !default;
+);
 
 $extend: core.filter($_defaults, "align-content");
