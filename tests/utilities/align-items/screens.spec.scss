@@ -3,22 +3,24 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as align-items;
+@use "../src/core";
 
-@include describe("align-items.core-styles()") {
+@include describe("align-items") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include align-items.core-styles;
+                @include core.createUtility("align-items", core.$align-items, (
+                    "align-items": "align-items"
+                ));
             }
 
             @include expect(false) {
                 .align-items-start {
-                    align-items: flex-start;
+                    align-items: start;
                 }
 
                 .align-items-end {
-                    align-items: flex-end;
+                    align-items: end;
                 }
 
                 .align-items-center {
@@ -35,11 +37,11 @@
 
                 @media (min-width: 320px) {
                     .xs\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .xs\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .xs\:align-items-center {
@@ -57,11 +59,11 @@
 
                 @media (min-width: 480px) {
                     .sm\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .sm\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .sm\:align-items-center {
@@ -79,11 +81,11 @@
 
                 @media (min-width: 768px) {
                     .md\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .md\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .md\:align-items-center {
@@ -101,11 +103,11 @@
 
                 @media (min-width: 960px) {
                     .lg\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .lg\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .lg\:align-items-center {
@@ -123,11 +125,11 @@
 
                 @media (min-width: 1200px) {
                     .xl\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .xl\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .xl\:align-items-center {
@@ -145,11 +147,11 @@
 
                 @media (min-width: 1400px) {
                     .\32 xl\:align-items-start {
-                        align-items: flex-start;
+                        align-items: start;
                     }
 
                     .\32 xl\:align-items-end {
-                        align-items: flex-end;
+                        align-items: end;
                     }
 
                     .\32 xl\:align-items-center {

@@ -3,43 +3,44 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $engine: (
         "screens": false
     )
 );
-@use "../index" as align-content;
 
-@include describe("align-content.core-styles()") {
+@include describe("align-self") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include align-content.core-styles;
+                @include core.createUtility("align-self", core.$align-self, (
+                    "align-self": "align-self"
+                ));
             }
 
             @include expect(false) {
-                .align-content-start {
-                    align-content: flex-start;
+                .align-self-auto {
+                    align-self: auto;
                 }
 
-                .align-content-end {
-                    align-content: flex-end;
+                .align-self-start {
+                    align-self: start;
                 }
 
-                .align-content-center {
-                    align-content: center;
+                .align-self-end {
+                    align-self: end;
                 }
 
-                .align-content-between {
-                    align-content: space-between;
+                .align-self-center {
+                    align-self: center;
                 }
 
-                .align-content-around {
-                    align-content: space-around;
+                .align-self-stretch {
+                    align-self: stretch;
                 }
 
-                .align-content-evenly {
-                    align-content: space-evenly;
+                .align-self-baseline {
+                    align-self: baseline;
                 }
             }
         }

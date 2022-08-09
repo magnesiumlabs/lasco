@@ -3,21 +3,24 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
         "align-self": (
-            center
+            "center"
         )
     )
 );
-@use "../index" as align-self;
 
-@include describe("align-self.core-styles()") {
+@include describe("align-self") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include align-self.core-styles;
+                @include core.createUtility("align-self", core.$align-self, (
+                    "align-self": "align-self"
+                ));
             }
 
             @include expect(false) {

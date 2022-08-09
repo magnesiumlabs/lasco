@@ -142,9 +142,17 @@
     "gap": "gap"
 ));
 
-//@use "./src/align-self/styles" as align-self-styles;
-//@include core.addUtility("align-content", core.$align-content);
-//@use "./src/align-items/styles" as align-items-styles;
+@include core.createUtility("align-content", core.$align-content, (
+    "align-content": "align-content"
+));
+
+@include core.createUtility("align-items", core.$align-items, (
+    "align-items": "align-items"
+));
+
+@include core.createUtility("align-self", core.$align-self, (
+    "align-self": "align-self"
+));
 
 @include core.createUtility("justify-content", core.$justify-content, (
     "justify-content": "justify-content"
