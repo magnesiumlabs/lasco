@@ -92,7 +92,6 @@
 //@use "./src/background-clip/styles" as background-clip-styles;
 //@use "./src/background-color/styles" as background-color-styles;
 //@use "./src/background-image/styles" as background-image-styles;
-//@use "./src/background-origin/styles" as background-origin-styles;
 
 @include core.createUtility("background-origin", core.$background-origin, (
     "bg-origin": "background-origin"
@@ -159,7 +158,9 @@
     "justify-self": "justify-self"
 ));
 
-//@use "./src/place-content/styles" as place-content-styles;
+@include core.createUtility("place-content", core.$place-content, (
+    "place-content": "place-content"
+));
 
 @include core.createUtility("place-items", core.$place-items, (
     "place-items": "place-items"
