@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "flex-wrap": false
+        "flex-wrap": (
+            "nowrap"
+        )
     )
 );
-@use "../index" as flex-wrap;
 
-@include describe("flex-wrap.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("flex-wrap") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include flex-wrap.core-styles;
+                @include core.createUtility("flex-wrap", core.$flex-wrap, (
+                    "flex": "flex-wrap"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .flex-nowrap {
+                    flex-wrap: nowrap;
+                }
             }
         }
     }

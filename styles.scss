@@ -134,7 +134,11 @@
 
 //@use "./src/flex/styles" as flex-styles;
 //@use "./src/flex-direction/styles" as flex-direction-styles;
-//@use "./src/flex-wrap/styles" as flex-wrap-styles;
+
+@include core.createUtility("flex-wrap", core.$flex-wrap, (
+    "flex": "flex-wrap"
+));
+
 //@use "./src/flex-grow/styles" as flex-grow-styles;
 //@use "./src/flex-shrink/styles" as flex-shrink-styles;
 //@use "./src/flex-basis/styles" as flex-basis-styles;
