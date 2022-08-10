@@ -1,0 +1,67 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "min-height": (
+            "25": "25%",
+            "50": "50%",
+            "75": "75%"
+        )
+    )
+);
+
+@include describe("min-height") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("min-height", core.$min-height, (
+                    "min-h": "min-height"
+                ));
+            }
+
+            @include expect(false) {
+                .min-h-0 {
+                    min-height: 0;
+                }
+
+                .min-h-full {
+                    min-height: 100%;
+                }
+
+                .min-h-screen {
+                    min-height: 100vh;
+                }
+
+                .min-h-min {
+                    min-height: min-content;
+                }
+
+                .min-h-max {
+                    min-height: max-content;
+                }
+
+                .min-h-fit {
+                    min-height: fit-content;
+                }
+
+                .min-h-25 {
+                    min-height: 25%;
+                }
+
+                .min-h-50 {
+                    min-height: 50%;
+                }
+
+                .min-h-75 {
+                    min-height: 75%;
+                }
+            }
+        }
+    }
+}

@@ -107,6 +107,16 @@ $grayscale: (
     "100": "1"
 );
 
+$height: (
+    "0": "0",
+    "auto": "auto",
+    "full": "100%",
+    "screen": "100vh",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
+);
+
 $justify-content: (
     "start": "start",
     "end": "end",
@@ -135,6 +145,24 @@ $justify-self: (
 $margin: (
     "0": "0",
     "auto": "auto"
+);
+
+$min-height: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vh",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
+);
+
+$max-height: (
+    "0": "0",
+    "full": "100%",
+    "screen": "100vh",
+    "min": "min-content",
+    "max": "max-content",
+    "fit": "fit-content"
 );
 
 $min-width: (

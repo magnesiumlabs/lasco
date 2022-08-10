@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as max-height;
+@use "../src/core";
 
-@include describe("max-height.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("max-height") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include max-height.core-styles;
+                @include core.createUtility("max-height", core.$max-height, (
+                    "max-h": "max-height"
+                ));
             }
 
             @include expect(false) {

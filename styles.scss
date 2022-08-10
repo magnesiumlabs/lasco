@@ -60,9 +60,17 @@
     "w": "width"
 ));
 
-//@use "./src/min-height/styles" as min-height-styles;
-//@use "./src/max-height/styles" as max-height-styles;
-//@use "./src/height/styles" as height-styles;
+@include core.createUtility("min-height", core.$min-height, (
+    "min-h": "min-height"
+));
+
+@include core.createUtility("max-height", core.$max-height, (
+    "max-h": "max-height"
+));
+
+@include core.createUtility("height", core.$height, (
+    "h": "height"
+));
 
 // ------------------------------------------------------------------------- //
 // Typography
