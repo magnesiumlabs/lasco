@@ -1,0 +1,52 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("height") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("height", core.$height, (
+                    "h": "height"
+                ));
+            }
+
+            @include expect(false) {
+                .h-0 {
+                    height: 0;
+                }
+
+                .h-auto {
+                    height: auto;
+                }
+
+                .h-full {
+                    height: 100%;
+                }
+
+                .h-screen {
+                    height: 100vh;
+                }
+
+                .h-min {
+                    height: min-content;
+                }
+
+                .h-max {
+                    height: max-content;
+                }
+
+                .h-fit {
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}

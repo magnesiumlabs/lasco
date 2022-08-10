@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "min-height": false
     )
 );
-@use "../index" as min-height;
 
-@include describe("min-height.core-styles()") {
+@include describe("min-height") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include min-height.core-styles;
+                @include core.createUtility("min-height", core.$min-height, (
+                    "min-h": "min-height"
+                ));
             }
 
             @include expect(false) {
