@@ -1,0 +1,48 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("max-height") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("max-height", core.$max-height, (
+                    "max-h": "max-height"
+                ));
+            }
+
+            @include expect(false) {
+                .max-h-0 {
+                    max-height: 0;
+                }
+
+                .max-h-full {
+                    max-height: 100%;
+                }
+
+                .max-h-screen {
+                    max-height: 100vh;
+                }
+
+                .max-h-min {
+                    max-height: min-content;
+                }
+
+                .max-h-max {
+                    max-height: max-content;
+                }
+
+                .max-h-fit {
+                    max-height: fit-content;
+                }
+            }
+        }
+    }
+}
