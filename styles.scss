@@ -60,9 +60,17 @@
     "w": "width"
 ));
 
-//@use "./src/min-height/styles" as min-height-styles;
-//@use "./src/max-height/styles" as max-height-styles;
-//@use "./src/height/styles" as height-styles;
+@include core.createUtility("min-height", core.$min-height, (
+    "min-h": "min-height"
+));
+
+@include core.createUtility("max-height", core.$max-height, (
+    "max-h": "max-height"
+));
+
+@include core.createUtility("height", core.$height, (
+    "h": "height"
+));
 
 // ------------------------------------------------------------------------- //
 // Typography
@@ -126,7 +134,11 @@
 
 //@use "./src/flex/styles" as flex-styles;
 //@use "./src/flex-direction/styles" as flex-direction-styles;
-//@use "./src/flex-wrap/styles" as flex-wrap-styles;
+
+@include core.createUtility("flex-wrap", core.$flex-wrap, (
+    "flex": "flex-wrap"
+));
+
 //@use "./src/flex-grow/styles" as flex-grow-styles;
 //@use "./src/flex-shrink/styles" as flex-shrink-styles;
 //@use "./src/flex-basis/styles" as flex-basis-styles;

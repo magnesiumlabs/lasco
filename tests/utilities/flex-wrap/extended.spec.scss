@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "max-height": false
+        "flex-wrap": (
+            "nowrap"
+        )
     )
 );
-@use "../index" as max-height;
 
-@include describe("max-height.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("flex-wrap") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include max-height.core-styles;
+                @include core.createUtility("flex-wrap", core.$flex-wrap, (
+                    "flex": "flex-wrap"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .flex-nowrap {
+                    flex-wrap: nowrap;
+                }
             }
         }
     }

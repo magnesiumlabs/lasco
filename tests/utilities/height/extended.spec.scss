@@ -1,0 +1,71 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "height": (
+            "25": "25%",
+            "50": "50%",
+            "75": "75%"
+        )
+    )
+);
+
+@include describe("height") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("height", core.$height, (
+                    "h": "height"
+                ));
+            }
+
+            @include expect(false) {
+                .h-0 {
+                    height: 0;
+                }
+
+                .h-auto {
+                    height: auto;
+                }
+
+                .h-full {
+                    height: 100%;
+                }
+
+                .h-screen {
+                    height: 100vh;
+                }
+
+                .h-min {
+                    height: min-content;
+                }
+
+                .h-max {
+                    height: max-content;
+                }
+
+                .h-fit {
+                    height: fit-content;
+                }
+
+                .h-25 {
+                    height: 25%;
+                }
+
+                .h-50 {
+                    height: 50%;
+                }
+
+                .h-75 {
+                    height: 75%;
+                }
+            }
+        }
+    }
+}

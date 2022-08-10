@@ -3,22 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "height": (
-            25: 25%,
-            50: 50%,
-            75: 75%
-        )
-    )
-);
-@use "../index" as height;
+@use "../src/core";
 
-@include describe("height.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("height") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include height.core-styles;
+                @include core.createUtility("height", core.$height, (
+                    "h": "height"
+                ));
             }
 
             @include expect(false) {
@@ -50,18 +43,6 @@
                     height: fit-content;
                 }
 
-                .h-25 {
-                    height: 25%;
-                }
-
-                .h-50 {
-                    height: 50%;
-                }
-
-                .h-75 {
-                    height: 75%;
-                }
-
                 @media (min-width: 320px) {
                     .xs\:h-0 {
                         height: 0;
@@ -89,18 +70,6 @@
 
                     .xs\:h-fit {
                         height: fit-content;
-                    }
-
-                    .xs\:h-25 {
-                        height: 25%;
-                    }
-
-                    .xs\:h-50 {
-                        height: 50%;
-                    }
-
-                    .xs\:h-75 {
-                        height: 75%;
                     }
                 }
 
@@ -132,18 +101,6 @@
                     .sm\:h-fit {
                         height: fit-content;
                     }
-
-                    .sm\:h-25 {
-                        height: 25%;
-                    }
-
-                    .sm\:h-50 {
-                        height: 50%;
-                    }
-
-                    .sm\:h-75 {
-                        height: 75%;
-                    }
                 }
 
                 @media (min-width: 768px) {
@@ -173,18 +130,6 @@
 
                     .md\:h-fit {
                         height: fit-content;
-                    }
-
-                    .md\:h-25 {
-                        height: 25%;
-                    }
-
-                    .md\:h-50 {
-                        height: 50%;
-                    }
-
-                    .md\:h-75 {
-                        height: 75%;
                     }
                 }
 
@@ -216,18 +161,6 @@
                     .lg\:h-fit {
                         height: fit-content;
                     }
-
-                    .lg\:h-25 {
-                        height: 25%;
-                    }
-
-                    .lg\:h-50 {
-                        height: 50%;
-                    }
-
-                    .lg\:h-75 {
-                        height: 75%;
-                    }
                 }
 
                 @media (min-width: 1200px) {
@@ -258,18 +191,6 @@
                     .xl\:h-fit {
                         height: fit-content;
                     }
-
-                    .xl\:h-25 {
-                        height: 25%;
-                    }
-
-                    .xl\:h-50 {
-                        height: 50%;
-                    }
-
-                    .xl\:h-75 {
-                        height: 75%;
-                    }
                 }
 
                 @media (min-width: 1400px) {
@@ -299,18 +220,6 @@
 
                     .\32 xl\:h-fit {
                         height: fit-content;
-                    }
-
-                    .\32 xl\:h-25 {
-                        height: 25%;
-                    }
-
-                    .\32 xl\:h-50 {
-                        height: 50%;
-                    }
-
-                    .\32 xl\:h-75 {
-                        height: 75%;
                     }
                 }
             }

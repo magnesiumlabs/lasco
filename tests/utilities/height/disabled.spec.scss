@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "flex-wrap": false
+        "height": false
     )
 );
-@use "../index" as flex-wrap;
 
-@include describe("flex-wrap.core-styles()") {
+@include describe("height") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include flex-wrap.core-styles;
+                @include core.createUtility("height", core.$height, (
+                    "h": "height"
+                ));
             }
 
             @include expect(false) {

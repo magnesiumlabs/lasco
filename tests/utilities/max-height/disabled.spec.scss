@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "height": false
+        "max-height": false
     )
 );
-@use "../index" as height;
 
-@include describe("height.core-styles()") {
+@include describe("max-height") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include height.core-styles;
+                @include core.createUtility("max-height", core.$max-height, (
+                    "max-h": "max-height"
+                ));
             }
 
             @include expect(false) {
