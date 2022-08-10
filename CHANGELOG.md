@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.4](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2022-08-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **flex-wrap:** remove files from `src`
+* **height, min-height, max-height:** remove files from `src`
+
+### Features
+
+* **flex-wrap:** use `createUtility` mixin ([3968762](https://github.com/magnesiumlabs/lasco/commit/3968762a5202a768a3ecaca545f4471f54ef2157))
+* **height, min-height, max-height:** use `createUtility` mixin ([a29f9ce](https://github.com/magnesiumlabs/lasco/commit/a29f9ce072430b18305913c8f45243b267deaa30))
+
 ## [2.0.0-beta.3](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2022-08-09)
 
 
