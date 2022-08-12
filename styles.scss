@@ -30,6 +30,10 @@
     "float": "float"
 ));
 
+@include core.createUtility("object-fit", core.$object-fit, (
+    "object": "object-fit"
+));
+
 @include core.createUtility("position", core.$position);
 
 @include core.createUtility("z-index", core.$z-index, (

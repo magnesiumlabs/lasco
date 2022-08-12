@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "object-fit": (
+            "cover"
+        )
+    )
+);
+
+@include describe("object-fit") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("object-fit", core.$object-fit, (
+                    "object": "object-fit"
+                ));
+            }
+
+            @include expect(false) {
+                .object-cover {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

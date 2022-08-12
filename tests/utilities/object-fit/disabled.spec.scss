@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $extend: (
+        "object-fit": false
+    )
+);
+
+@include describe("object-fit") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("object-fit", core.$object-fit, (
+                    "object": "object-fit"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

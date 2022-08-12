@@ -1,0 +1,172 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("object-fit") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("object-fit", core.$object-fit, (
+                    "object": "object-fit"
+                ));
+            }
+
+            @include expect(false) {
+                .object-contain {
+                    object-fit: contain;
+                }
+
+                .object-cover {
+                    object-fit: cover;
+                }
+
+                .object-fill {
+                    object-fit: fill;
+                }
+
+                .object-scale-down {
+                    object-fit: scale-down;
+                }
+
+                .object-none {
+                    object-fit: none;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .xs\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .xs\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .xs\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .xs\:object-none {
+                        object-fit: none;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .sm\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .sm\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .sm\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .sm\:object-none {
+                        object-fit: none;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .md\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .md\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .md\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .md\:object-none {
+                        object-fit: none;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .lg\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .lg\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .lg\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .lg\:object-none {
+                        object-fit: none;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .xl\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .xl\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .xl\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .xl\:object-none {
+                        object-fit: none;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:object-contain {
+                        object-fit: contain;
+                    }
+
+                    .\32 xl\:object-cover {
+                        object-fit: cover;
+                    }
+
+                    .\32 xl\:object-fill {
+                        object-fit: fill;
+                    }
+
+                    .\32 xl\:object-scale-down {
+                        object-fit: scale-down;
+                    }
+
+                    .\32 xl\:object-none {
+                        object-fit: none;
+                    }
+                }
+            }
+        }
+    }
+}
