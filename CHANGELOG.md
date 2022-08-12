@@ -2,6 +2,79 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.6](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.5...v2.0.0-beta.6) (2022-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **grid-template-columns, grid-template-rows:** remove files from `src`
+* **flex-wrap:** remove files from `src`
+* **height, min-height, max-height:** remove files from `src`
+* **align-content, align-items, align-self:** remove files from `src`
+* **justify-content, justify-items, justify-self:** remove files from `src`
+* **place-content, place-items, place-self:** remove files from `src`
+* **order:** remove files from `src`
+* **font-style, font-weight:** remove files from `src`
+* **text-align:** remove files from `src`
+* **text-transform:** remove files from `src`
+* **background-origin:** remove files from `src`
+* **grayscale:** remove files from `src`
+* **gap:** remove files from `src`
+* **brightness:** remove `brightness` from `src`
+* **contrast:** remove `contrast` from `src`
+* **blur:** remove `blur` from `src`
+* **display:** remove `display` from `src`
+* **position:** remove `position` from `src`
+* **clear:** remove `clear` from `src`
+* remove `aspect-ratio` from `src`
+* remove `max-width` from `src`
+* remove `min-width` from `src`
+* remove `opacity` from `src`
+* remove `width` from `src`
+* remove `z-index` from `src`
+* **float:** remove `float` from `src`
+
+### Features
+
+* **align-content, align-items, align-self:** use `createUtility` mixin ([7bf8a43](https://github.com/magnesiumlabs/lasco/commit/7bf8a43b72aaf77e493c2d8d25c4c572ec2cc341))
+* **aspect-ratio:** use `createUtility` mixin ([0479bf0](https://github.com/magnesiumlabs/lasco/commit/0479bf0cc731470436bab807fd44147c4ff33f86))
+* **background-origin:** use `createUtility` mixin ([d32e513](https://github.com/magnesiumlabs/lasco/commit/d32e513af201b186849a22364875a2d17b35b392))
+* **blur:** use `createUtility` mixin ([ecf37e4](https://github.com/magnesiumlabs/lasco/commit/ecf37e48801aef65aba4c63ad91a34df59247540))
+* **brightness:** use `createUtility` mixin ([7d22002](https://github.com/magnesiumlabs/lasco/commit/7d220022e019d5b7a8530b2be0ba73ed51d14c85))
+* **clear:** use `createUtility` mixin ([3e21d33](https://github.com/magnesiumlabs/lasco/commit/3e21d33b78f224befc3abc5919396506e2b2ae8b))
+* **contrast:** use `createUtility` mixin ([c83dc6a](https://github.com/magnesiumlabs/lasco/commit/c83dc6a45e6338d923530100514fe704b8f01c0e))
+* **core:** add `create` mixin ([9ede0a4](https://github.com/magnesiumlabs/lasco/commit/9ede0a4a093767ac1acd396742b17ca866553577))
+* **core:** add `createUtility` mixin ([20c3746](https://github.com/magnesiumlabs/lasco/commit/20c3746a2211e993d5a4bedc4201e8660d2e4d93))
+* **core:** merge `addUtility` and `createUtility` ([1b5c50f](https://github.com/magnesiumlabs/lasco/commit/1b5c50f57100b0ffd429ff1b43ed7088a9435ae7))
+* **deps:** add `@unsass/css` 2.0.2 ([6747e8c](https://github.com/magnesiumlabs/lasco/commit/6747e8cb73de2b685f572f218b117ac172a401cc))
+* **display:** use `createUtility` mixin ([13b4e27](https://github.com/magnesiumlabs/lasco/commit/13b4e27f0bf38d0fe800e5bb0c9f74cc9be66022))
+* **flex-wrap:** use `createUtility` mixin ([da816f4](https://github.com/magnesiumlabs/lasco/commit/da816f42d7dd3056228af40988ee9d8bdfa39e0d))
+* **float:** use `createUtility` mixin ([3e9c5c9](https://github.com/magnesiumlabs/lasco/commit/3e9c5c964fae074e5870867587b26d18ebb3f7b2))
+* **font-style, font-weight:** use `createUtility` mixin ([4549028](https://github.com/magnesiumlabs/lasco/commit/454902820a21f1c98efd65f7f3aed87f074f399e))
+* **gap:** use `createUtility` mixin ([8709747](https://github.com/magnesiumlabs/lasco/commit/8709747de004486e9874be93107e71c32fd97746))
+* **grayscale:** add `grayscale-100` on default class ([089ac7c](https://github.com/magnesiumlabs/lasco/commit/089ac7ca41f41b2889762e9afefcccde4c95f85f))
+* **grayscale:** use `createUtility` mixin ([42f9ffa](https://github.com/magnesiumlabs/lasco/commit/42f9ffa6c59e7adb2cb44d94c3595472695d2d19))
+* **grid-template-columns, grid-template-rows:** use `createUtility` mixin ([e5d7d57](https://github.com/magnesiumlabs/lasco/commit/e5d7d57c2643f15a93de18ddfa3534bd37d10839))
+* **height, min-height, max-height:** use `createUtility` mixin ([506e497](https://github.com/magnesiumlabs/lasco/commit/506e497ca830b38acf4f34cad6f32a071af8ca85))
+* **justify-content, justify-items, justify-self:** use `createUtility` mixin ([b4d2029](https://github.com/magnesiumlabs/lasco/commit/b4d2029c1bc00d8da771b04cbbbd22b9a2191434))
+* **margin:** add main utilities ([fbc365d](https://github.com/magnesiumlabs/lasco/commit/fbc365df25c0bb88e2c6cc9015779b8cebf2edf7)), closes [#78](https://github.com/magnesiumlabs/lasco/issues/78)
+* move code ([27dbe5c](https://github.com/magnesiumlabs/lasco/commit/27dbe5ca28cd43c4e34d25e7b1fabce41d04bb22))
+* **object-fit:** add main classes ([b1d5193](https://github.com/magnesiumlabs/lasco/commit/b1d5193fca719687f01bccf8043c0010d1fcb9b5)), closes [#89](https://github.com/magnesiumlabs/lasco/issues/89)
+* **order:** use `createUtility` mixin ([d052809](https://github.com/magnesiumlabs/lasco/commit/d052809902f4adfa7326a2140da4bcc5fa3b73ad))
+* **padding:** add main utilities ([810143f](https://github.com/magnesiumlabs/lasco/commit/810143f007f7249657dcddc1b72862720799402c)), closes [#79](https://github.com/magnesiumlabs/lasco/issues/79)
+* **place-content, place-items, place-self:** use `createUtility` mixin ([955de69](https://github.com/magnesiumlabs/lasco/commit/955de69dc57f2bdc2d6e0949680af102f5b8cc4e))
+* **position:** use `addUtility` mixin ([c469a13](https://github.com/magnesiumlabs/lasco/commit/c469a1373a94c989630e853953ee75b5760f9934))
+* **text-align:** use `createUtility` mixin ([e36051a](https://github.com/magnesiumlabs/lasco/commit/e36051a3b406e7bb5b541c43a11030a1b4a686d6))
+* **text-transform:** use `createUtility` mixin ([d48e38b](https://github.com/magnesiumlabs/lasco/commit/d48e38b2d2d073018dba9f4be45c2b086c17c359))
+
+
+### Code Refactoring
+
+* **core:** remove `$filter` parameter on `createUtility` mixin ([d39c03c](https://github.com/magnesiumlabs/lasco/commit/d39c03c9045c7e1d052980867be4925512a80533))
+* **core:** simplify `filter` condition ([bfdb8a0](https://github.com/magnesiumlabs/lasco/commit/bfdb8a0d012e0f96f281a6af6662ebddb3757ba4))
+* **height, width:** add missing default ([959d61f](https://github.com/magnesiumlabs/lasco/commit/959d61fdeb2460a0e59f9005b353d190358326bc))
+* missing quote ([32eb0fe](https://github.com/magnesiumlabs/lasco/commit/32eb0fedd4a3c77aaf72a81d007c57679175c6b0))
+
 ## [2.0.0-beta.5](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2022-08-12)
 
 
