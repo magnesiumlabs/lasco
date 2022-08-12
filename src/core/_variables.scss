@@ -36,6 +36,19 @@ $align-self: (
     "baseline": "baseline"
 );
 
+$background-attachment: (
+    "fixed": "fixed",
+    "local": "local",
+    "scroll": "scroll"
+);
+
+$background-clip: (
+    "border": "border-box",
+    "content": "content-box",
+    "padding": "padding-box",
+    "text": "text"
+);
+
 $background-origin: (
     "border": "border-box",
     "content": "content-box",

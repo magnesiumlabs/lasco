@@ -100,8 +100,14 @@
 // Backgrounds
 // ------------------------------------------------------------------------- //
 
-//@use "./src/background-attachment/styles" as background-attachment-styles;
-//@use "./src/background-clip/styles" as background-clip-styles;
+@include core.createUtility("background-attachment", core.$background-attachment, (
+    "bg-attachment": "background-attachment"
+));
+
+@include core.createUtility("background-clip", core.$background-clip, (
+    "bg-clip": "background-clip"
+));
+
 //@use "./src/background-color/styles" as background-color-styles;
 //@use "./src/background-image/styles" as background-image-styles;
 

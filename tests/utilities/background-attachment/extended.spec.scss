@@ -1,0 +1,33 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "background-attachment": (
+            "fixed"
+        )
+    )
+);
+
+@include describe("background-attachment") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-attachment", core.$background-attachment, (
+                    "bg-attachment": "background-attachment"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-attachment-fixed {
+                    background-attachment: fixed;
+                }
+            }
+        }
+    }
+}

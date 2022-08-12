@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "bg-attachment": false
+        "background-attachment": false
     )
 );
-@use "../index" as bg-attachment;
 
-@include describe("bg-attachment.core-styles()") {
+@include describe("background-attachment") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include bg-attachment.core-styles;
+                @include core.createUtility("background-attachment", core.$background-attachment, (
+                    "bg-attachment": "background-attachment"
+                ));
             }
 
             @include expect(false) {
