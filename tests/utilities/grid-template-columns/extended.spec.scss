@@ -3,21 +3,25 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
         "grid-template-columns": (
-            16: "repeat(16, minmax(0, 1fr))"
+            "13": "repeat(13, minmax(0, 1fr))",
+            "foo": "200px repeat(auto-fill, 100px) 300px"
         )
     )
 );
-@use "../index" as grid-template-columns;
 
-@include describe("grid-template-columns.core-styles()") {
+@include describe("grid-template-columns") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include grid-template-columns.core-styles;
+                @include core.createUtility("grid-template-columns", core.$grid-template-columns, (
+                    "grid-cols": "grid-template-columns"
+                ));
             }
 
             @include expect(false) {
@@ -73,8 +77,12 @@
                     grid-template-columns: repeat(12, minmax(0, 1fr));
                 }
 
-                .grid-cols-16 {
-                    grid-template-columns: repeat(16, minmax(0, 1fr));
+                .grid-cols-13 {
+                    grid-template-columns: repeat(13, minmax(0, 1fr));
+                }
+
+                .grid-cols-foo {
+                    grid-template-columns: 200px repeat(auto-fill, 100px) 300px;
                 }
             }
         }

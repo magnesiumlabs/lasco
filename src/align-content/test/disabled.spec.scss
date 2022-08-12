@@ -5,16 +5,16 @@
 @use "true" as *;
 @use "../../core" with (
     $extend: (
-        "grid-template-columns": false
+        "align-content": false
     )
 );
-@use "../index" as grid-template-columns;
+@use "../index" as align-content;
 
-@include describe("grid-template-columns.core-styles()") {
+@include describe("align-content.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include grid-template-columns.core-styles;
+                @include align-content.core-styles;
             }
 
             @include expect(false) {

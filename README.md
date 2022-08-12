@@ -26,4 +26,4 @@ npm install lasco
 
 ## Docs
 
-Check the documentation [here](https://docs.dtdmnlzgl3mrc.amplifyapp.com).
+Check the documentation [here](https://main.dtdmnlzgl3mrc.amplifyapp.com).
