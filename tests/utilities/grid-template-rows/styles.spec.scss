@@ -3,16 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
 );
-@use "../index" as grid-template-rows;
 
-@include describe("grid-template-rows.core-styles()") {
+@include describe("grid-template-rows") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include grid-template-rows.core-styles;
+                @include core.createUtility("grid-template-rows", core.$grid-template-rows, (
+                    "grid-rows": "grid-template-rows"
+                ));
             }
 
             @include expect(false) {
