@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as bg-attachment;
+@use "../src/core";
 
-@include describe("bg-attachment.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("background-attachment") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include bg-attachment.core-styles;
+                @include core.createUtility("background-attachment", core.$background-attachment, (
+                    "bg-attachment": "background-attachment"
+                ));
             }
 
             @include expect(false) {

@@ -1,0 +1,40 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("background-clip") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-clip", core.$background-clip, (
+                    "bg-clip": "background-clip"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-clip-border {
+                    background-clip: border-box;
+                }
+
+                .bg-clip-content {
+                    background-clip: content-box;
+                }
+
+                .bg-clip-padding {
+                    background-clip: padding-box;
+                }
+
+                .bg-clip-text {
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}

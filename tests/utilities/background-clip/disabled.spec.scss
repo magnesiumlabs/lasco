@@ -3,18 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "bg-clip": false
+        "background-clip": false
     )
 );
-@use "../index" as bg-clip;
 
-@include describe("bg-clip.core-styles()") {
+@include describe("background-clip") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include bg-clip.core-styles;
+                @include core.createUtility("background-clip", core.$background-clip);
             }
 
             @include expect(false) {
