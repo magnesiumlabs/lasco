@@ -5,16 +5,16 @@
 @use "true" as *;
 @use "../../core" with (
     $extend: (
-        "align-content": false
+        "bg-origin": false
     )
 );
-@use "../index" as align-content;
+@use "../index" as bg-origin;
 
-@include describe("align-content.core-styles()") {
+@include describe("bg-origin.core-styles()") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include align-content.core-styles;
+                @include bg-origin.core-styles;
             }
 
             @include expect(false) {
