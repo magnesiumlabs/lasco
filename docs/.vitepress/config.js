@@ -1,3 +1,5 @@
+const pkg = require('../../package.json');
+
 module.exports = {
     title: 'Lasco',
     description: 'Just playing around.',
@@ -11,10 +13,10 @@ module.exports = {
                 activeMatch: '/guide/'
             },
             {
-                text: '1.x',
+                text: pkg.version,
                 items: [
                     {
-                        text: '1.x',
+                        text: pkg.version,
                         link: '/'
                     }
                 ]
