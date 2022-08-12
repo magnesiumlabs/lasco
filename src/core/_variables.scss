@@ -215,6 +215,14 @@ $max-width: (
     "fit": "fit-content"
 );
 
+$object-fit: (
+    "contain": "contain",
+    "cover": "cover",
+    "fill": "fill",
+    "scale-down": "scale-down",
+    "none": "none"
+);
+
 $order: (
     "0": "0",
     "1": "1",

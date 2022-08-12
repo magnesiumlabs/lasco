@@ -72,6 +72,10 @@ module.exports = {
                         link: 'guide/float'
                     },
                     {
+                        text: 'Object Fit',
+                        link: 'guide/object-fit'
+                    },
+                    {
                         text: 'Position',
                         link: 'guide/position'
                     },
