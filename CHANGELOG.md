@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.8](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2022-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **background-repeat:** remove files from `src`
+
+### Features
+
+* **background-repeat:** use `createUtility` mixin ([5872c9b](https://github.com/magnesiumlabs/lasco/commit/5872c9b43d12cfa3677002f434ed2f85cd2719b0))
+
 ## [2.0.0-beta.7](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2022-08-12)
 
 
