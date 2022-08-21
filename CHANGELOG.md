@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.9](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2022-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **background-size:** remove files from `src`
+
+### Features
+
+* **background-size:** use `createUtility` mixin ([560496d](https://github.com/magnesiumlabs/lasco/commit/560496d8c8c9f4f5bdfcf59a64f38bc3c919b707))
+
+
+### Build System
+
+* **deps:** bump to `@unsass/css` 2.1.0 ([be3f7bf](https://github.com/magnesiumlabs/lasco/commit/be3f7bf664995a97c56d1b1cf70160980249748b))
+
 ## [2.0.0-beta.8](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2022-08-21)
 
 
