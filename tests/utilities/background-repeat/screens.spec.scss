@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as bg-repeat;
+@use "../src/core";
 
-@include describe("bg-repeat.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("background-repeat") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include bg-repeat.core-styles;
+                @include core.createUtility("background-repeat", core.$background-repeat, (
+                    "bg": "background-repeat"
+                ));
             }
 
             @include expect(false) {
@@ -17,7 +19,7 @@
                     background-repeat: repeat;
                 }
 
-                .bg-repeat-none {
+                .bg-no-repeat {
                     background-repeat: no-repeat;
                 }
 
@@ -42,7 +44,7 @@
                         background-repeat: repeat;
                     }
 
-                    .xs\:bg-repeat-none {
+                    .xs\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 
@@ -68,7 +70,7 @@
                         background-repeat: repeat;
                     }
 
-                    .sm\:bg-repeat-none {
+                    .sm\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 
@@ -94,7 +96,7 @@
                         background-repeat: repeat;
                     }
 
-                    .md\:bg-repeat-none {
+                    .md\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 
@@ -120,7 +122,7 @@
                         background-repeat: repeat;
                     }
 
-                    .lg\:bg-repeat-none {
+                    .lg\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 
@@ -146,7 +148,7 @@
                         background-repeat: repeat;
                     }
 
-                    .xl\:bg-repeat-none {
+                    .xl\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 
@@ -172,7 +174,7 @@
                         background-repeat: repeat;
                     }
 
-                    .\32 xl\:bg-repeat-none {
+                    .\32 xl\:bg-no-repeat {
                         background-repeat: no-repeat;
                     }
 

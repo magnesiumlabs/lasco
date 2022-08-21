@@ -115,7 +115,10 @@
     "bg-origin": "background-origin"
 ));
 
-//@use "./src/background-repeat/styles" as background-repeat-styles;
+@include core.createUtility("background-repeat", core.$background-repeat, (
+    "bg": "background-repeat"
+));
+
 //@use "./src/background-size/styles" as background-size-styles;
 
 // ------------------------------------------------------------------------- //

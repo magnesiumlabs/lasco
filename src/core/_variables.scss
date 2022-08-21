@@ -55,6 +55,15 @@ $background-origin: (
     "padding": "padding-box"
 );
 
+$background-repeat: (
+    "repeat": "repeat",
+    "no-repeat": "no-repeat",
+    "repeat-x": "repeat-x",
+    "repeat-y": "repeat-y",
+    "repeat-round": "round",
+    "repeat-space": "space"
+);
+
 $blur: (
     "0": "0"
 );
