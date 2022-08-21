@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "bg-repeat": false
+        "background-repeat": false
     )
 );
-@use "../index" as bg-repeat;
 
-@include describe("bg-repeat.core-styles()") {
+@include describe("background-repeat") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include bg-repeat.core-styles;
+                @include core.createUtility("background-repeat", core.$background-repeat, (
+                    "bg": "background-repeat"
+                ));
             }
 
             @include expect(false) {

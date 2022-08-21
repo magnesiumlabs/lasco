@@ -18,6 +18,10 @@ module.exports = {
                     {
                         text: pkg.version,
                         link: '/'
+                    },
+                    {
+                        text: '1.x',
+                        link: 'https://1-x.dtdmnlzgl3mrc.amplifyapp.com'
                     }
                 ]
             }
