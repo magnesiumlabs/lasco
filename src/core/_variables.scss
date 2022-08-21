@@ -64,6 +64,12 @@ $background-repeat: (
     "repeat-space": "space"
 );
 
+$background-size: (
+    "auto": "auto",
+    "cover": "cover",
+    "contain": "contain"
+);
+
 $blur: (
     "0": "0"
 );

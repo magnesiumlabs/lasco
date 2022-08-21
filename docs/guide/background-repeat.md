@@ -52,7 +52,7 @@ filter the default scales using the Sass configuration.
 ```scss
 @use "lasco" with (
     $extend: (
-        "bg-repeat": (
+        "background--repeat": (
             "no-repeat"
         )
     )
@@ -66,7 +66,7 @@ You can easily disable the properties you don't need to use.
 ```scss
 @use "lasco" with (
     $extend: (
-        "bg-repeat": false
+        "background--repeat": false
     )
 );
 ```
