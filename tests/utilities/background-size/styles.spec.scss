@@ -1,0 +1,36 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("background-size") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-size", core.$background-size, (
+                    "bg-size": "background-size"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-size-auto {
+                    background-size: auto;
+                }
+
+                .bg-size-cover {
+                    background-size: cover;
+                }
+
+                .bg-size-contain {
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

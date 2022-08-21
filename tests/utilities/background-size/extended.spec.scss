@@ -1,0 +1,55 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "background-size": (
+            "50": "50%",
+            "50-auto": "50% auto",
+            "multiple": "50%, 25%, 25%"
+        )
+    )
+);
+
+@include describe("background-size") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-size", core.$background-size, (
+                    "bg-size": "background-size"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-size-auto {
+                    background-size: auto;
+                }
+
+                .bg-size-cover {
+                    background-size: cover;
+                }
+
+                .bg-size-contain {
+                    background-size: contain;
+                }
+
+                .bg-size-50 {
+                    background-size: 50%;
+                }
+
+                .bg-size-50-auto {
+                    background-size: 50% auto;
+                }
+
+                .bg-size-multiple {
+                    background-size: 50%, 25%, 25%;
+                }
+            }
+        }
+    }
+}

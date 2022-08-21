@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as bg-size;
+@use "../src/core";
 
-@include describe("bg-size.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("background-size") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include bg-size.core-styles;
+                @include core.createUtility("background-size", core.$background-size, (
+                    "bg-size": "background-size"
+                ));
             }
 
             @include expect(false) {

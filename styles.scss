@@ -119,7 +119,9 @@
     "bg": "background-repeat"
 ));
 
-//@use "./src/background-size/styles" as background-size-styles;
+@include core.createUtility("background-size", core.$background-size, (
+    "bg-size": "background-size"
+));
 
 // ------------------------------------------------------------------------- //
 // Filters
