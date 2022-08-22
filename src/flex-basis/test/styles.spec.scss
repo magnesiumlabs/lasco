@@ -16,15 +16,15 @@
             }
 
             @include expect(false) {
-                .flex-basic-none {
+                .flex-basis-none {
                     flex-basis: 0;
                 }
 
-                .flex-basic-auto {
+                .flex-basis-auto {
                     flex-basis: auto;
                 }
 
-                .flex-basic-full {
+                .flex-basis-full {
                     flex-basis: 100%;
                 }
             }

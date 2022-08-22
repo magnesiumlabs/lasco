@@ -6,7 +6,7 @@
 @use "./variables";
 
 @mixin core-styles {
-    .flex-basic {
+    .flex-basis {
         @include core.declaration("flex-basis") {
             &-none {
                 flex-basis: 0;
