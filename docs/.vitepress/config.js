@@ -84,6 +84,10 @@ module.exports = {
                         link: 'guide/position'
                     },
                     {
+                        text: 'Visibility',
+                        link: 'guide/visibility'
+                    },
+                    {
                         text: 'Z-Index',
                         link: 'guide/z-index'
                     }
