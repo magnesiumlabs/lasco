@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.12](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2022-08-22)
+
+
+### Features
+
+* **visibility:** add main styles ([45f6eff](https://github.com/magnesiumlabs/lasco/commit/45f6eff9e852bb5968439ff4c89df74a83d752b5)), closes [#88](https://github.com/magnesiumlabs/lasco/issues/88)
+
 ## [2.0.0-beta.11](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2022-08-22)
 
 
