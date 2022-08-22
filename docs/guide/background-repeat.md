@@ -11,7 +11,7 @@ Utilities for controlling background image repeat.
 | Class             | Property                        | Token          |
 |-------------------|---------------------------------|----------------|
 | `bg-repeat`       | `background-repeat: repeat;`    | `repeat`       |
-| `bg-repeat-none`  | `background-repeat: no-repeat;` | `repeat-none`  |
+| `bg-no-repeat`    | `background-repeat: no-repeat;` | `bg-no-repeat` |
 | `bg-repeat-x`     | `background-repeat: repeat-x;`  | `repeat-x`     |
 | `bg-repeat-y`     | `background-repeat: repeat-y;`  | `repeat-y`     |
 | `bg-repeat-round` | `background-repeat: round;`     | `repeat-round` |
@@ -32,12 +32,12 @@ Use the `bg-repeat-{style}` class for setup background image repeat.
 
 ### Breakpoints and media queries
 
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-repeat-none` will be
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:bg-no-repeat` will be
 only apply on large screens size and above.
 
 ```html
 
-<div class="bg-repeat lg:bg-repeat-none">
+<div class="bg-repeat lg:bg-no-repeat">
     <!-- ... -->
 </div>
 ```
