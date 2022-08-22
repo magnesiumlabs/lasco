@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src/core" with (
+@use "../src" as core with (
     $extend: (
         "justify-items": false
     )
