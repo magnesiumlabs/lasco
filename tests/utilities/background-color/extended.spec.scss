@@ -8,32 +8,36 @@
         "screens": false
     ),
     $extend: (
-        "grayscale": (
-           "50": "0.5"
+        "background-color": (
+            "black": "#000"
         )
     )
 );
 
-@include describe("grayscale") {
+@include describe("background-color") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("background-color", core.$background-color, (
+                    "bg-color": "background-color"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
+                .bg-color-inherit {
+                    background-color: inherit;
                 }
 
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .bg-color-current {
+                    background-color: currentColor;
                 }
 
-                .grayscale-50 {
-                    filter: grayscale(0.5);
+                .bg-color-transparent {
+                    background-color: transparent;
+                }
+
+                .bg-color-black {
+                    background-color: #000;
                 }
             }
         }

@@ -1,0 +1,43 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "sass:string";
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "background-image": (
+            "single": "url('https://picsum.photos/200/300')",
+            "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))"
+        )
+    )
+);
+
+@include describe("background-image") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-image", core.$background-image, (
+                    "bg-image": "background-image"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-image-none {
+                    background-image: none;
+                }
+
+                .bg-image-single {
+                    background-image: string.unquote("url('https://picsum.photos/200/300')");
+                }
+
+                .bg-image-multiple {
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+                }
+            }
+        }
+    }
+}

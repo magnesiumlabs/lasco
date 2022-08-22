@@ -9,22 +9,22 @@
     )
 );
 
-@include describe("grayscale") {
+@include describe("flex-grow") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("flex-grow", core.$flex-grow, (
+                    "flex-grow": "flex-grow"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
+                .flex-grow {
+                    flex-grow: 1;
                 }
 
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .flex-grow-0 {
+                    flex-grow: 0;
                 }
             }
         }

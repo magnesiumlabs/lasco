@@ -220,12 +220,12 @@ module.exports = {
                         link: 'guide/flex'
                     },
                     {
-                        text: 'Flex Direction',
-                        link: 'guide/flex-direction'
+                        text: 'Flex Basis',
+                        link: 'guide/flex-basis'
                     },
                     {
-                        text: 'Flex Wrap',
-                        link: 'guide/flex-wrap'
+                        text: 'Flex Direction',
+                        link: 'guide/flex-direction'
                     },
                     {
                         text: 'Flex Grow',
@@ -236,8 +236,8 @@ module.exports = {
                         link: 'guide/flex-shrink'
                     },
                     {
-                        text: 'Flex Basis',
-                        link: 'guide/flex-basis'
+                        text: 'Flex Wrap',
+                        link: 'guide/flex-wrap'
                     },
                     {
                         text: 'Order',

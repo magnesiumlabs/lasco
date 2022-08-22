@@ -1,0 +1,144 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core";
+
+@include describe("flex-direction") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("flex-direction", core.$flex-direction, (
+                    "flex": "flex-direction"
+                ));
+            }
+
+            @include expect(false) {
+                .flex-row {
+                    flex-direction: row;
+                }
+
+                .flex-row-reverse {
+                    flex-direction: row-reverse;
+                }
+
+                .flex-column {
+                    flex-direction: column;
+                }
+
+                .flex-column-reverse {
+                    flex-direction: column-reverse;
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .xs\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .xs\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .xs\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .sm\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .sm\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .sm\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .md\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .md\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .md\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .lg\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .lg\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .lg\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .xl\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .xl\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .xl\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:flex-row {
+                        flex-direction: row;
+                    }
+
+                    .\32 xl\:flex-row-reverse {
+                        flex-direction: row-reverse;
+                    }
+
+                    .\32 xl\:flex-column {
+                        flex-direction: column;
+                    }
+
+                    .\32 xl\:flex-column-reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+            }
+        }
+    }
+}

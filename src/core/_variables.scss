@@ -49,10 +49,28 @@ $background-clip: (
     "text": "text"
 );
 
+$background-color: (
+    "inherit": "inherit",
+    "current": "currentColor",
+    "transparent": "transparent"
+);
+
+$background-image: (
+    "none": "none"
+);
+
 $background-origin: (
     "border": "border-box",
     "content": "content-box",
     "padding": "padding-box"
+);
+
+$background-position: (
+    "bottom": "bottom",
+    "center": "center",
+    "left": "left",
+    "right": "right",
+    "top": "top"
 );
 
 $background-repeat: (
@@ -103,6 +121,35 @@ $display: (
     "hidden": "none"
 );
 
+$flex: (
+    "none": "none",
+    "auto": "1 1 auto",
+    "initial": "0 1 auto"
+);
+
+$flex-basis: (
+    "0": "0",
+    "auto": "auto",
+    "full": "100%"
+);
+
+$flex-direction: (
+    "row": "row",
+    "row-reverse": "row-reverse",
+    "column": "column",
+    "column-reverse": "column-reverse"
+);
+
+$flex-grow: (
+    "DEFAULT": "1",
+    "0": "0"
+);
+
+$flex-shrink: (
+    "DEFAULT": "1",
+    "0": "0"
+);
+
 $flex-wrap: (
     "wrap": "wrap",
     "wrap-reverse": "wrap-reverse",
@@ -137,8 +184,8 @@ $gap: (
 );
 
 $grayscale: (
-    "0": "0",
-    "100": "1"
+    "DEFAULT": "1",
+    "0": "0"
 );
 
 $grid-template-columns: (

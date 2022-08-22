@@ -9,22 +9,18 @@
     )
 );
 
-@include describe("grayscale") {
+@include describe("background-image") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("background-image", core.$background-image, (
+                    "bg-image": "background-image"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
-                }
-
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .bg-image-none {
+                    background-image: none;
                 }
             }
         }

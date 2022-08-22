@@ -8,32 +8,36 @@
         "screens": false
     ),
     $extend: (
-        "grayscale": (
-           "50": "0.5"
+        "flex-basis": (
+            "50": "50%"
         )
     )
 );
 
-@include describe("grayscale") {
+@include describe("flex-basis") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("flex-basis", core.$flex-basis, (
+                    "flex-basis": "flex-basis"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
+                .flex-basis-0 {
+                    flex-basis: 0;
                 }
 
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .flex-basis-auto {
+                    flex-basis: auto;
                 }
 
-                .grayscale-50 {
-                    filter: grayscale(0.5);
+                .flex-basis-full {
+                    flex-basis: 100%;
+                }
+
+                .flex-basis-50 {
+                    flex-basis: 50%;
                 }
             }
         }

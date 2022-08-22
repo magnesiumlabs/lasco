@@ -108,11 +108,20 @@
     "bg-clip": "background-clip"
 ));
 
-//@use "./src/background-color/styles" as background-color-styles;
-//@use "./src/background-image/styles" as background-image-styles;
+@include core.createUtility("background-color", core.$background-color, (
+    "bg-color": "background-color"
+));
+
+@include core.createUtility("background-image", core.$background-image, (
+    "bg-image": "background-image"
+));
 
 @include core.createUtility("background-origin", core.$background-origin, (
     "bg-origin": "background-origin"
+));
+
+@include core.createUtility("background-position", core.$background-position, (
+    "bg-position": "background-position"
 ));
 
 @include core.createUtility("background-repeat", core.$background-repeat, (
@@ -147,16 +156,29 @@
 // Flexbox & Grid
 // ------------------------------------------------------------------------- //
 
-//@use "./src/flex/styles" as flex-styles;
-//@use "./src/flex-direction/styles" as flex-direction-styles;
+@include core.createUtility("flex", core.$flex, (
+    "flex": "flex"
+));
+
+@include core.createUtility("flex-direction", core.$flex-direction, (
+    "flex": "flex-direction"
+));
 
 @include core.createUtility("flex-wrap", core.$flex-wrap, (
     "flex": "flex-wrap"
 ));
 
-//@use "./src/flex-grow/styles" as flex-grow-styles;
-//@use "./src/flex-shrink/styles" as flex-shrink-styles;
-//@use "./src/flex-basis/styles" as flex-basis-styles;
+@include core.createUtility("flex-grow", core.$flex-grow, (
+    "flex-grow": "flex-grow"
+));
+
+@include core.createUtility("flex-shrink", core.$flex-shrink, (
+    "flex-shrink": "flex-shrink"
+));
+
+@include core.createUtility("flex-basis", core.$flex-basis, (
+    "flex-basis": "flex-basis"
+));
 
 @include core.createUtility("order", core.$order, (
     "order": "order"

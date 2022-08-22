@@ -9,22 +9,30 @@
     )
 );
 
-@include describe("grayscale") {
+@include describe("flex-direction") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("flex-direction", core.$flex-direction, (
+                    "flex": "flex-direction"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
+                .flex-row {
+                    flex-direction: row;
                 }
 
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .flex-row-reverse {
+                    flex-direction: row-reverse;
+                }
+
+                .flex-column {
+                    flex-direction: column;
+                }
+
+                .flex-column-reverse {
+                    flex-direction: column-reverse;
                 }
             }
         }

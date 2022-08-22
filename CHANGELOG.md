@@ -328,6 +328,13 @@ All notable changes to this project will be documented in this file. See [Conven
 * **core:** simplify `filter` condition ([c0b86b1](https://github.com/magnesiumlabs/lasco/commit/c0b86b18afad7581380a434e7707bbbaa468c21a))
 * **height, width:** add missing default ([ffdc24a](https://github.com/magnesiumlabs/lasco/commit/ffdc24a4bc8c07dbc7b7b8c487d732fd8577f6de))
 
+## [1.7.3](https://github.com/magnesiumlabs/lasco/compare/v1.7.2...v1.7.3) (2022-08-22)
+
+
+### Bug Fixes
+
+* **flex-basis:** bad class name ([6672af8](https://github.com/magnesiumlabs/lasco/commit/6672af89fc2a5d0ed4a0428c00e618eb02528ea7))
+
 ## [1.7.2](https://github.com/magnesiumlabs/lasco/compare/v1.7.1...v1.7.2) (2022-08-09)
 
 

@@ -8,11 +8,11 @@ Utilities for applying `background-size` to an element.
 
 ## Quick reference
 
-| Class             | Property                    | Token     |
-|-------------------|-----------------------------|-----------|
-| `bg-size-auto`    | `background-size: auto;`    | `auto`    |
-| `bg-size-contain` | `background-size: contain;` | `contain` |
-| `bg-size-cover`   | `background-size: cover;`   | `cover`   |
+| Class             | Property                    |
+|-------------------|-----------------------------|
+| `bg-size-auto`    | `background-size: auto;`    |
+| `bg-size-contain` | `background-size: contain;` |
+| `bg-size-cover`   | `background-size: cover;`   |
 
 ## Usage
 

@@ -114,16 +114,24 @@
                             $key2: utilities.string-replace($key2, "/", \/);
                         }
 
-                        &-#{$key2} {
+                        @if $key2 == "DEFAULT" {
                             @if meta.type-of($value) == "string" and string.index($value, "filter") {
                                 filter: #{$filter-function}(string.unquote($value2));
                             } @else {
-                                @if meta.type-of($value) == "list" {
-                                    @each $key3 in $value {
-                                        @include css.declaration($key3, string.unquote($value2));
-                                    }
+                                @include css.declaration($value, string.unquote($value2));
+                            }
+                        } @else {
+                            &-#{$key2} {
+                                @if meta.type-of($value) == "string" and string.index($value, "filter") {
+                                    filter: #{$filter-function}(string.unquote($value2));
                                 } @else {
-                                    @include css.declaration($value, string.unquote($value2));
+                                    @if meta.type-of($value) == "list" {
+                                        @each $key3 in $value {
+                                            @include css.declaration($key3, string.unquote($value2));
+                                        }
+                                    } @else {
+                                        @include css.declaration($value, string.unquote($value2));
+                                    }
                                 }
                             }
                         }

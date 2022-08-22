@@ -4,28 +4,22 @@
 
 @use "true" as *;
 @use "../src/core" with (
-    $engine: (
-        "screens": false
+    $extend: (
+        "flex-grow": false
     )
 );
 
-@include describe("grayscale") {
-    @include it("Should return main styles declarations.") {
+@include describe("flex-grow") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                @include core.createUtility("flex-grow", core.$flex-grow, (
+                    "flex-grow": "flex-grow"
                 ));
             }
 
             @include expect(false) {
-                .grayscale {
-                    filter: grayscale(1);
-                }
-
-                .grayscale-0 {
-                    filter: grayscale(0);
-                }
+                // ...
             }
         }
     }
