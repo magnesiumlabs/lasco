@@ -1,0 +1,28 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("background-image") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-image", core.$background-image, (
+                    "bg-image": "background-image"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-image-none {
+                    background-image: none;
+                }
+            }
+        }
+    }
+}
