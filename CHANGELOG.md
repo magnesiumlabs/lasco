@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.10](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2022-08-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **flex:** remove files from `src`
+* **flex-basis:** remove files from `src`
+* **flex-direction:** remove files from `src`
+* **flex-grow:** remove files from `src`
+* **flex-shrink:** remove files from `src`
+* **background-position:** remove files from `src`
+* **background-image:** remove files from `src`
+* **background-color:** remove files from `src`
+
+### Features
+
+* **background-color:** use `createUtility` mixin ([553cf47](https://github.com/magnesiumlabs/lasco/commit/553cf47887fb0c3f56b3bceda3706885a474b51f))
+* **background-image:** use `createUtility` mixin ([ec36086](https://github.com/magnesiumlabs/lasco/commit/ec3608614d41fbbb3c674a4d1550d6e8197394f8))
+* **background-position:** use `createUtility` mixin ([cd3c119](https://github.com/magnesiumlabs/lasco/commit/cd3c11977ef16b2ff498bc82fc3d71d99ce06e36))
+* **flex-basis:** use `createUtility` mixin ([4a33fea](https://github.com/magnesiumlabs/lasco/commit/4a33feab50a48b6917e85f0df44dc4ce34405a7b))
+* **flex-direction:** use `createUtility` mixin ([344b07f](https://github.com/magnesiumlabs/lasco/commit/344b07f7b807e207f517d171955c6a6c03391feb))
+* **flex-grow:** use `createUtility` mixin ([edfe119](https://github.com/magnesiumlabs/lasco/commit/edfe1194fcfcf28a38d95e15dfe52b8a7fe93663))
+* **flex-shrink:** use `createUtility` mixin ([fd1c5ca](https://github.com/magnesiumlabs/lasco/commit/fd1c5cad4a475a91a3afae0ad77a77151721eb97))
+* **flex:** use `createUtility` mixin ([0ae775c](https://github.com/magnesiumlabs/lasco/commit/0ae775cd3fc9ad645acaf4abfc94d4fbaf175738))
+
+
+### Bug Fixes
+
+* **flex-basis:** bad class name ([6672af8](https://github.com/magnesiumlabs/lasco/commit/6672af89fc2a5d0ed4a0428c00e618eb02528ea7))
+
+
+### Code Refactoring
+
+* **grayscale:** use `DEFAULT` ([46734e2](https://github.com/magnesiumlabs/lasco/commit/46734e26b2b6c0f7af5563a49dcb04ca7dada146))
+
 ## [2.0.0-beta.9](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2022-08-21)
 
 
