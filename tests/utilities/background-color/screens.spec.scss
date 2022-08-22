@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as bg-color;
+@use "../src/core";
 
-@include describe("bg-color.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("background-color") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include bg-color.core-styles;
+                @include core.createUtility("background-color", core.$background-color, (
+                    "bg-color": "background-color"
+                ));
             }
 
             @include expect(false) {

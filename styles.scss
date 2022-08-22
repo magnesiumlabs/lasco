@@ -108,7 +108,10 @@
     "bg-clip": "background-clip"
 ));
 
-//@use "./src/background-color/styles" as background-color-styles;
+@include core.createUtility("background-color", core.$background-color, (
+    "bg-color": "background-color"
+));
+
 //@use "./src/background-image/styles" as background-image-styles;
 
 @include core.createUtility("background-origin", core.$background-origin, (

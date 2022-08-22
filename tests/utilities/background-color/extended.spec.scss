@@ -1,0 +1,45 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "background-color": (
+            "black": "#000"
+        )
+    )
+);
+
+@include describe("background-color") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-color", core.$background-color, (
+                    "bg-color": "background-color"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-color-inherit {
+                    background-color: inherit;
+                }
+
+                .bg-color-current {
+                    background-color: currentColor;
+                }
+
+                .bg-color-transparent {
+                    background-color: transparent;
+                }
+
+                .bg-color-black {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}

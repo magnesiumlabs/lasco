@@ -49,6 +49,12 @@ $background-clip: (
     "text": "text"
 );
 
+$background-color: (
+    "inherit": "inherit",
+    "current": "currentColor",
+    "transparent": "transparent"
+);
+
 $background-origin: (
     "border": "border-box",
     "content": "content-box",
