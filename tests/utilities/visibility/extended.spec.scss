@@ -1,0 +1,31 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src" as core with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "visibility": (
+            "visible"
+        )
+    )
+);
+
+@include describe("visibility") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("visibility", core.$visibility);
+            }
+
+            @include expect(false) {
+                .visible {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
