@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.13](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2022-08-22)
+
+
+### Features
+
+* **max-height, max-width:** add `none` declarations ([6d80dd0](https://github.com/magnesiumlabs/lasco/commit/6d80dd034812d7e15c05539307673fa457ded9f4))
+
 ## [2.0.0-beta.12](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2022-08-22)
 
 
