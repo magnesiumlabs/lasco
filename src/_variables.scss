@@ -265,6 +265,7 @@ $min-height: (
 
 $max-height: (
     "0": "0",
+    "none": "none",
     "full": "100%",
     "screen": "100vh",
     "min": "min-content",
@@ -283,6 +284,7 @@ $min-width: (
 
 $max-width: (
     "0": "0",
+    "none": "none",
     "full": "100%",
     "screen": "100vw",
     "min": "min-content",

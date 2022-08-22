@@ -19,6 +19,10 @@
                     max-width: 0;
                 }
 
+                .max-w-none {
+                    max-width: none;
+                }
+
                 .max-w-full {
                     max-width: 100%;
                 }
@@ -42,6 +46,10 @@
                 @media (min-width: 320px) {
                     .xs\:max-w-0 {
                         max-width: 0;
+                    }
+
+                    .xs\:max-w-none {
+                        max-width: none;
                     }
 
                     .xs\:max-w-full {
@@ -70,6 +78,10 @@
                         max-width: 0;
                     }
 
+                    .sm\:max-w-none {
+                        max-width: none;
+                    }
+
                     .sm\:max-w-full {
                         max-width: 100%;
                     }
@@ -94,6 +106,10 @@
                 @media (min-width: 768px) {
                     .md\:max-w-0 {
                         max-width: 0;
+                    }
+
+                    .md\:max-w-none {
+                        max-width: none;
                     }
 
                     .md\:max-w-full {
@@ -122,6 +138,10 @@
                         max-width: 0;
                     }
 
+                    .lg\:max-w-none {
+                        max-width: none;
+                    }
+
                     .lg\:max-w-full {
                         max-width: 100%;
                     }
@@ -148,6 +168,10 @@
                         max-width: 0;
                     }
 
+                    .xl\:max-w-none {
+                        max-width: none;
+                    }
+
                     .xl\:max-w-full {
                         max-width: 100%;
                     }
@@ -172,6 +196,10 @@
                 @media (min-width: 1400px) {
                     .\32 xl\:max-w-0 {
                         max-width: 0;
+                    }
+
+                    .\32 xl\:max-w-none {
+                        max-width: none;
                     }
 
                     .\32 xl\:max-w-full {
