@@ -1,0 +1,32 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("flex-shrink") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("flex-shrink", core.$flex-shrink, (
+                    "flex-shrink": "flex-shrink"
+                ));
+            }
+
+            @include expect(false) {
+                .flex-shrink {
+                    flex-shrink: 1;
+                }
+
+                .flex-shrink-0 {
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}

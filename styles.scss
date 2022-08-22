@@ -164,7 +164,11 @@
 ));
 
 //@use "./src/flex-grow/styles" as flex-grow-styles;
-//@use "./src/flex-shrink/styles" as flex-shrink-styles;
+
+@include core.createUtility("flex-shrink", core.$flex-shrink, (
+    "flex-shrink": "flex-shrink"
+));
+
 //@use "./src/flex-basis/styles" as flex-basis-styles;
 
 @include core.createUtility("order", core.$order, (

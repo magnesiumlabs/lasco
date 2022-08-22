@@ -127,6 +127,11 @@ $flex-wrap: (
     "nowrap": "nowrap"
 );
 
+$flex-shrink: (
+    "DEFAULT": "1",
+    "0": "0"
+);
+
 $float: (
     "left": "left",
     "right": "right",

@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "flex-shrink": false
     )
 );
-@use "../index" as flex-shrink;
 
-@include describe("flex-shrink.core-styles()") {
+@include describe("flex-shrink") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include flex-shrink.core-styles;
+                @include core.createUtility("flex-shrink", core.$flex-shrink, (
+                    "flex-shrink": "flex-shrink"
+                ));
             }
 
             @include expect(false) {
