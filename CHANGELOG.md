@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0-beta.11](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2022-08-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **options:** remove deprecated `$screens` option
+
+### Features
+
+* **options:** remove deprecated `$screens` option ([1b98cf5](https://github.com/magnesiumlabs/lasco/commit/1b98cf590bdb5ed6cac495aa0d6a097abad2144b))
+
+
+### Code Refactoring
+
+* **core:** move code ([027db18](https://github.com/magnesiumlabs/lasco/commit/027db1897a83585915650364b3d25424323a93e1))
+
 ## [2.0.0-beta.10](https://github.com/magnesiumlabs/lasco/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2022-08-22)
 
 
