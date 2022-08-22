@@ -3,30 +3,23 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false
+@use "../src/core" with (
+    $extend: (
+        "flex": false
+    )
 );
-@use "../index" as flex;
 
-@include describe("flex.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("flex") {
+    @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include flex.core-styles;
+                @include core.createUtility("flex", core.$flex, (
+                    "flex": "flex"
+                ));
             }
 
             @include expect(false) {
-                .flex-none {
-                    flex: none;
-                }
-
-                .flex-auto {
-                    flex: 1 1 auto;
-                }
-
-                .flex-initial {
-                    flex: 0 1 auto;
-                }
+                // ...
             }
         }
     }

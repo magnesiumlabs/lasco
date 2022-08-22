@@ -156,7 +156,9 @@
 // Flexbox & Grid
 // ------------------------------------------------------------------------- //
 
-//@use "./src/flex/styles" as flex-styles;
+@include core.createUtility("flex", core.$flex, (
+    "flex": "flex"
+));
 
 @include core.createUtility("flex-direction", core.$flex-direction, (
     "flex": "flex-direction"
@@ -174,7 +176,9 @@
     "flex-shrink": "flex-shrink"
 ));
 
-//@use "./src/flex-basis/styles" as flex-basis-styles;
+@include core.createUtility("flex-basis", core.$flex-basis, (
+    "flex-basis": "flex-basis"
+));
 
 @include core.createUtility("order", core.$order, (
     "order": "order"

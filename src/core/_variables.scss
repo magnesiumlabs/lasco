@@ -121,6 +121,12 @@ $display: (
     "hidden": "none"
 );
 
+$flex: (
+    "none": "none",
+    "auto": "1 1 auto",
+    "initial": "0 1 auto"
+);
+
 $flex-basis: (
     "0": "0",
     "auto": "auto",

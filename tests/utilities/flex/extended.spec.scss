@@ -3,21 +3,24 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false,
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
         "flex": (
             "1": "1 1 0%"
         )
     )
 );
-@use "../index" as flex;
 
-@include describe("flex.core-styles()") {
+@include describe("flex") {
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include flex.core-styles;
+                @include core.createUtility("flex", core.$flex, (
+                    "flex": "flex"
+                ));
             }
 
             @include expect(false) {
