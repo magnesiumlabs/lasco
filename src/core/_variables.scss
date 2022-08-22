@@ -121,6 +121,13 @@ $display: (
     "hidden": "none"
 );
 
+$flex-direction: (
+    "row": "row",
+    "row-reverse": "row-reverse",
+    "column": "column",
+    "column-reverse": "column-reverse"
+);
+
 $flex-grow: (
     "DEFAULT": "1",
     "0": "0"

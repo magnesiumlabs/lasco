@@ -3,22 +3,30 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
     $extend: (
-        "flex-direction": false
+        "flex-direction": (
+            "column"
+        )
     )
 );
-@use "../index" as flex-direction;
 
-@include describe("flex-direction.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("flex-direction") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include flex-direction.core-styles;
+                @include core.createUtility("flex-direction", core.$flex-direction, (
+                    "flex": "flex-direction"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .flex-column {
+                    flex-direction: column;
+                }
             }
         }
     }

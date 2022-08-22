@@ -157,7 +157,10 @@
 // ------------------------------------------------------------------------- //
 
 //@use "./src/flex/styles" as flex-styles;
-//@use "./src/flex-direction/styles" as flex-direction-styles;
+
+@include core.createUtility("flex-direction", core.$flex-direction, (
+    "flex": "flex-direction"
+));
 
 @include core.createUtility("flex-wrap", core.$flex-wrap, (
     "flex": "flex-wrap"
