@@ -8,9 +8,9 @@ Utilities for applying `background-image` to an element.
 
 ## Quick reference
 
-| Class           | Property                  | Token  |
-|-----------------|---------------------------|--------|
-| `bg-image-none` | `background-image: none;` | `none` |
+| Class           | Property                  |
+|-----------------|---------------------------|
+| `bg-image-none` | `background-image: none;` |
 
 ## Usage
 

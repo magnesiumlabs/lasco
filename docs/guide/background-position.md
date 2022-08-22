@@ -8,13 +8,13 @@ Utilities for applying `background-position` to an element.
 
 ## Quick reference
 
-| Class                | Property                       | Token    |
-|----------------------|--------------------------------|----------|
-| `bg-position-bottom` | `background-position: bottom;` | `bottom` |
-| `bg-position-center` | `background-position: center;` | `center` |
-| `bg-position-left`   | `background-position: left;`   | `left`   |
-| `bg-position-right`  | `background-position: right;`  | `right`  |
-| `bg-position-top`    | `background-position: top;`    | `top`    |
+| Class                | Property                       |
+|----------------------|--------------------------------|
+| `bg-position-bottom` | `background-position: bottom;` |
+| `bg-position-center` | `background-position: center;` |
+| `bg-position-left`   | `background-position: left;`   |
+| `bg-position-right`  | `background-position: right;`  |
+| `bg-position-top`    | `background-position: top;`    |
 
 ## Usage
 

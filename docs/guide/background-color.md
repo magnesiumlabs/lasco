@@ -8,11 +8,11 @@ Utilities for applying `background-color` to an element.
 
 ## Quick reference
 
-| Class                  | Property                          | Token         |
-|------------------------|-----------------------------------|---------------|
-| `bg-color-inherit`     | `background-color: inherit;`      | `inherit`     |
-| `bg-color-current`     | `background-color: currentColor;` | `current`     |
-| `bg-color-transparent` | `background-color: transparent;`  | `transparent` |
+| Class                  | Property                          |
+|------------------------|-----------------------------------|
+| `bg-color-inherit`     | `background-color: inherit;`      |
+| `bg-color-current`     | `background-color: currentColor;` |
+| `bg-color-transparent` | `background-color: transparent;`  |
 
 ## Usage
 
