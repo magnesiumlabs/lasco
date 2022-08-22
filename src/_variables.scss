@@ -386,12 +386,11 @@ $z-index: (
 );
 
 ///
-/// @deprecated Use `$engine` with `screens` key instead.
+/// Options
 ///
-$screens: () !default;
 
 $engine: (
-    "screens": $screens,
+    "screens": (),
     "list": "black"
 ) !default;
 
