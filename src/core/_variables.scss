@@ -121,6 +121,12 @@ $display: (
     "hidden": "none"
 );
 
+$flex-basis: (
+    "0": "0",
+    "auto": "auto",
+    "full": "100%"
+);
+
 $flex-direction: (
     "row": "row",
     "row-reverse": "row-reverse",

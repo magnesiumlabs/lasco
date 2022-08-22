@@ -3,29 +3,41 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $screens: false
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "flex-basis": (
+            "50": "50%"
+        )
+    )
 );
-@use "../index" as flex-basis;
 
-@include describe("flex-basis.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("flex-basis") {
+    @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include flex-basis.core-styles;
+                @include core.createUtility("flex-basis", core.$flex-basis, (
+                    "flex-basis": "flex-basis"
+                ));
             }
 
             @include expect(false) {
-                .flex-basic-none {
+                .flex-basis-0 {
                     flex-basis: 0;
                 }
 
-                .flex-basic-auto {
+                .flex-basis-auto {
                     flex-basis: auto;
                 }
 
-                .flex-basic-full {
+                .flex-basis-full {
                     flex-basis: 100%;
+                }
+
+                .flex-basis-50 {
+                    flex-basis: 50%;
                 }
             }
         }

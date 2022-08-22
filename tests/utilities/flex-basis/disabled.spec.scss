@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
         "flex-basis": false
     )
 );
-@use "../index" as flex-basis;
 
-@include describe("flex-basis.core-styles()") {
+@include describe("flex-basis") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include flex-basis.core-styles;
+                @include core.createUtility("flex-basis", core.$flex-basis, (
+                    "flex-basis": "flex-basis"
+                ));
             }
 
             @include expect(false) {
