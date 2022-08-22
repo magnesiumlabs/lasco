@@ -110,13 +110,17 @@
             .#{$key} {
                 @include declaration($property) {
                     @each $key2, $value2 in $extend {
-                        @if $key2 == "DEFAULT" {
-                            @include css.declaration($value, string.unquote($value2));
-                        } @else {
-                            @if meta.type-of($key2) == "string" {
-                                $key2: utilities.string-replace($key2, "/", \/);
-                            }
+                        @if meta.type-of($key2) == "string" {
+                            $key2: utilities.string-replace($key2, "/", \/);
+                        }
 
+                        @if $key2 == "DEFAULT" {
+                            @if meta.type-of($value) == "string" and string.index($value, "filter") {
+                                filter: #{$filter-function}(string.unquote($value2));
+                            } @else {
+                                @include css.declaration($value, string.unquote($value2));
+                            }
+                        } @else {
                             &-#{$key2} {
                                 @if meta.type-of($value) == "string" and string.index($value, "filter") {
                                     filter: #{$filter-function}(string.unquote($value2));

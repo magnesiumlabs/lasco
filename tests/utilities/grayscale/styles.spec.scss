@@ -19,12 +19,12 @@
             }
 
             @include expect(false) {
-                .grayscale-0 {
-                    filter: grayscale(0);
+                .grayscale {
+                    filter: grayscale(1);
                 }
 
-                .grayscale-100 {
-                    filter: grayscale(1);
+                .grayscale-0 {
+                    filter: grayscale(0);
                 }
             }
         }
