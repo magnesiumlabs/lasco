@@ -11,6 +11,7 @@ Class generator for setting `max-height` property for an element.
 | Class          | Property                   |
 |----------------|----------------------------|
 | `max-h-0`      | `max-height: 0;`           |
+| `max-h-none`   | `max-height: none;`        |
 | `max-h-full`   | `max-height: 100%;`        |
 | `max-h-screen` | `max-height: 100vh;`       |
 | `max-h-min`    | `max-height: min-content;` |

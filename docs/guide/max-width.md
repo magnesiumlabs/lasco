@@ -11,6 +11,7 @@ Class generator for setting `max-width` property for an element.
 | Class          | Property                  |
 |----------------|---------------------------|
 | `max-w-0`      | `max-width: 0;`           |
+| `max-w-none`   | `max-width: none;`        |
 | `max-w-full`   | `max-width: 100%;`        |
 | `max-w-screen` | `max-width: 100vw;`       |
 | `max-w-min`    | `max-width: min-content;` |

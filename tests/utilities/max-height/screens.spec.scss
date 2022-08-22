@@ -19,6 +19,10 @@
                     max-height: 0;
                 }
 
+                .max-h-none {
+                    max-height: none;
+                }
+
                 .max-h-full {
                     max-height: 100%;
                 }
@@ -42,6 +46,10 @@
                 @media (min-width: 320px) {
                     .xs\:max-h-0 {
                         max-height: 0;
+                    }
+
+                    .xs\:max-h-none {
+                        max-height: none;
                     }
 
                     .xs\:max-h-full {
@@ -70,6 +78,10 @@
                         max-height: 0;
                     }
 
+                    .sm\:max-h-none {
+                        max-height: none;
+                    }
+
                     .sm\:max-h-full {
                         max-height: 100%;
                     }
@@ -94,6 +106,10 @@
                 @media (min-width: 768px) {
                     .md\:max-h-0 {
                         max-height: 0;
+                    }
+
+                    .md\:max-h-none {
+                        max-height: none;
                     }
 
                     .md\:max-h-full {
@@ -122,6 +138,10 @@
                         max-height: 0;
                     }
 
+                    .lg\:max-h-none {
+                        max-height: none;
+                    }
+
                     .lg\:max-h-full {
                         max-height: 100%;
                     }
@@ -148,6 +168,10 @@
                         max-height: 0;
                     }
 
+                    .xl\:max-h-none {
+                        max-height: none;
+                    }
+
                     .xl\:max-h-full {
                         max-height: 100%;
                     }
@@ -172,6 +196,10 @@
                 @media (min-width: 1400px) {
                     .\32 xl\:max-h-0 {
                         max-height: 0;
+                    }
+
+                    .\32 xl\:max-h-none {
+                        max-height: none;
                     }
 
                     .\32 xl\:max-h-full {
