@@ -8,12 +8,12 @@ Utilities for applying clear type an element.
 
 ## Quick reference
 
-| Class         | Property        |
-|---------------|-----------------|
-| `clear-none`  | `clear: none;`  |
-| `clear-left`  | `clear: left;`  |
-| `clear-right` | `clear: right;` |
-| `clear-both`  | `clear: both;`  |
+| Class         | Property        | Token   |
+|---------------|-----------------|---------|
+| `clear-none`  | `clear: none;`  | `none`  |
+| `clear-left`  | `clear: left;`  | `left`  |
+| `clear-right` | `clear: right;` | `right` |
+| `clear-both`  | `clear: both;`  | `both`  |
 
 ## Usage
 

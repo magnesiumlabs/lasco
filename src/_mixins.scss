@@ -6,7 +6,6 @@
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
-@use "@sass-collective/css" as collective-css;
 @use "@unsass/breakpoint";
 @use "@unsass/css";
 @use "@unsass/utilities";
@@ -63,7 +62,7 @@
         @if $breakpoint {
             @each $key, $value in breakpoint.get-screens() {
                 @include breakpoint.up($key) {
-                    @include collective-css.selector($key) {
+                    @include css.selector($key) {
                         @content;
                     }
                 }

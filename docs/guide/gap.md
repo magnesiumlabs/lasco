@@ -56,7 +56,7 @@ on large screens size and above.
 
 ### Extend your theme
 
-By default, the configuration provides a handful of general purpose `gap` type utilities. You can easily filter the
+By default, the configuration provides a handful of general purpose `gap` type utilities. You can easily extend the
 default scales using the Sass configuration.
 
 ```scss

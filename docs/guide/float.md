@@ -8,11 +8,11 @@ Utilities for applying `float` type of element.
 
 ## Quick reference
 
-| Class         | Property        |
-|---------------|-----------------|
-| `float-left`  | `float: left;`  |
-| `float-right` | `float: right;` |
-| `float-none`  | `float: none;`  |
+| Class         | Property        | Token   |
+|---------------|-----------------|---------|
+| `float-left`  | `float: left;`  | `left`  |
+| `float-right` | `float: right;` | `right` |
+| `float-none`  | `float: none;`  | `none`  |
 
 ## Usage
 
