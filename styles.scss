@@ -163,7 +163,9 @@
     "flex": "flex-wrap"
 ));
 
-//@use "./src/flex-grow/styles" as flex-grow-styles;
+@include core.createUtility("flex-grow", core.$flex-grow, (
+    "flex-grow": "flex-grow"
+));
 
 @include core.createUtility("flex-shrink", core.$flex-shrink, (
     "flex-shrink": "flex-shrink"

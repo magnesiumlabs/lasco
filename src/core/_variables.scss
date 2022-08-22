@@ -121,15 +121,20 @@ $display: (
     "hidden": "none"
 );
 
-$flex-wrap: (
-    "wrap": "wrap",
-    "wrap-reverse": "wrap-reverse",
-    "nowrap": "nowrap"
+$flex-grow: (
+    "DEFAULT": "1",
+    "0": "0"
 );
 
 $flex-shrink: (
     "DEFAULT": "1",
     "0": "0"
+);
+
+$flex-wrap: (
+    "wrap": "wrap",
+    "wrap-reverse": "wrap-reverse",
+    "nowrap": "nowrap"
 );
 
 $float: (

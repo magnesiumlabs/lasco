@@ -3,22 +3,29 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "flex-grow": false
+@use "../src/core" with (
+    $engine: (
+        "screens": false
     )
 );
-@use "../index" as flex-grow;
 
-@include describe("flex-grow.core-styles()") {
-    @include it("Should return nothing.") {
+@include describe("flex-grow") {
+    @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include flex-grow.core-styles;
+                @include core.createUtility("flex-grow", core.$flex-grow, (
+                    "flex-grow": "flex-grow"
+                ));
             }
 
             @include expect(false) {
-                // ...
+                .flex-grow {
+                    flex-grow: 1;
+                }
+
+                .flex-grow-0 {
+                    flex-grow: 0;
+                }
             }
         }
     }

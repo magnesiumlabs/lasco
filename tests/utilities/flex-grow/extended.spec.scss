@@ -1,0 +1,41 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "flex-grow": (
+            "2": "2"
+        )
+    )
+);
+
+@include describe("flex-grow") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("flex-grow", core.$flex-grow, (
+                    "flex-grow": "flex-grow"
+                ));
+            }
+
+            @include expect(false) {
+                .flex-grow {
+                    flex-grow: 1;
+                }
+
+                .flex-grow-0 {
+                    flex-grow: 0;
+                }
+
+                .flex-grow-2 {
+                    flex-grow: 2;
+                }
+            }
+        }
+    }
+}

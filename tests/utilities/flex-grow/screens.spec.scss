@@ -3,13 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as flex-grow;
+@use "../src/core";
 
-@include describe("flex-grow.core-styles()") {
-    @include it("Should return main styles declarations.") {
+@include describe("flex-grow") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include flex-grow.core-styles;
+                @include core.createUtility("flex-grow", core.$flex-grow, (
+                    "flex-grow": "flex-grow"
+                ));
             }
 
             @include expect(false) {
