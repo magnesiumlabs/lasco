@@ -8,17 +8,17 @@ Utilities for applying `display` type of element.
 
 ## Quick reference
 
-| Class          | Property                 |
-|----------------|--------------------------|
-| `block`        | `display: block;`        |
-| `inline-block` | `display: inline-block;` |
-| `flex`         | `display: flex;`         |
-| `inline-flex`  | `display: inline-flex;`  |
-| `grid`         | `display: grid;`         |
-| `inline-grid`  | `display: inline-grid;`  |
-| `table`        | `display: table;`        |
-| `inline-table` | `display: inline-table;` |
-| `hidden`       | `display: none;`         |
+| Class          | Property                 | Token          |
+|----------------|--------------------------|----------------|
+| `block`        | `display: block;`        | `block`        |
+| `inline-block` | `display: inline-block;` | `inline-block` |
+| `flex`         | `display: flex;`         | `flex`         |
+| `inline-flex`  | `display: inline-flex;`  | `inline-flex`  |
+| `grid`         | `display: grid;`         | `grid`         |
+| `inline-grid`  | `display: inline-grid;`  | `inline-grid`  |
+| `table`        | `display: table;`        | `table`        |
+| `inline-table` | `display: inline-table;` | `inline-table` |
+| `hidden`       | `display: none;`         | `hidden`       |
 
 ## Usage
 

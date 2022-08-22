@@ -8,13 +8,13 @@ Class generator for setting `position` property for an element.
 
 ## Quick reference
 
-| Class      | Property              |
-|------------|-----------------------|
-| `absolute` | `position: absolute;` |
-| `fixed`    | `position: fixed;`    |
-| `relative` | `position: relative;` |
-| `static`   | `position: static;`   |
-| `sticky`   | `position: sticky;`   |
+| Class      | Property              | Token      |
+|------------|-----------------------|------------|
+| `absolute` | `position: absolute;` | `absolute` |
+| `fixed`    | `position: fixed;`    | `fixed`    |
+| `relative` | `position: relative;` | `relative` |
+| `static`   | `position: static;`   | `static`   |
+| `sticky`   | `position: sticky;`   | `sticky`   |
 
 ## Usage
 

@@ -42,7 +42,7 @@ apply on large screens size and above.
 
 ### Extend your theme
 
-By default, the configuration provides a handful of general purpose `flex-grow` type utilities. You can easily filter
+By default, the configuration provides a handful of general purpose `flex-grow` type utilities. You can easily extend
 the default scales using the Sass configuration.
 
 ```scss
