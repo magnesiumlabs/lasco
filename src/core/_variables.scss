@@ -65,6 +65,14 @@ $background-origin: (
     "padding": "padding-box"
 );
 
+$background-position: (
+    "bottom": "bottom",
+    "center": "center",
+    "left": "left",
+    "right": "right",
+    "top": "top"
+);
+
 $background-repeat: (
     "repeat": "repeat",
     "no-repeat": "no-repeat",

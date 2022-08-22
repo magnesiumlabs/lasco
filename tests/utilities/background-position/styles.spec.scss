@@ -1,0 +1,44 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src/core" with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("background-position") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("background-position", core.$background-position, (
+                    "bg-position": "background-position"
+                ));
+            }
+
+            @include expect(false) {
+                .bg-position-bottom {
+                    background-position: bottom;
+                }
+
+                .bg-position-center {
+                    background-position: center;
+                }
+
+                .bg-position-left {
+                    background-position: left;
+                }
+
+                .bg-position-right {
+                    background-position: right;
+                }
+
+                .bg-position-top {
+                    background-position: top;
+                }
+            }
+        }
+    }
+}

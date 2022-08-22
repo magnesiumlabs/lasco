@@ -3,20 +3,15 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
-    $extend: (
-        "bg-position": (
-            "left-top": "left top"
-        )
-    )
-);
-@use "../index" as bg-position;
+@use "../src/core";
 
-@include describe("bg-position.core-styles()") {
-    @include it("Should return extended styles declarations.") {
+@include describe("background-position") {
+    @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include bg-position.core-styles;
+                @include core.createUtility("background-position", core.$background-position, (
+                    "bg-position": "background-position"
+                ));
             }
 
             @include expect(false) {
@@ -40,10 +35,6 @@
                     background-position: top;
                 }
 
-                .bg-position-left-top {
-                    background-position: left top;
-                }
-
                 @media (min-width: 320px) {
                     .xs\:bg-position-bottom {
                         background-position: bottom;
@@ -63,10 +54,6 @@
 
                     .xs\:bg-position-top {
                         background-position: top;
-                    }
-
-                    .xs\:bg-position-left-top {
-                        background-position: left top;
                     }
                 }
 
@@ -90,10 +77,6 @@
                     .sm\:bg-position-top {
                         background-position: top;
                     }
-
-                    .sm\:bg-position-left-top {
-                        background-position: left top;
-                    }
                 }
 
                 @media (min-width: 768px) {
@@ -115,10 +98,6 @@
 
                     .md\:bg-position-top {
                         background-position: top;
-                    }
-
-                    .md\:bg-position-left-top {
-                        background-position: left top;
                     }
                 }
 
@@ -142,10 +121,6 @@
                     .lg\:bg-position-top {
                         background-position: top;
                     }
-
-                    .lg\:bg-position-left-top {
-                        background-position: left top;
-                    }
                 }
 
                 @media (min-width: 1200px) {
@@ -168,10 +143,6 @@
                     .xl\:bg-position-top {
                         background-position: top;
                     }
-
-                    .xl\:bg-position-left-top {
-                        background-position: left top;
-                    }
                 }
 
                 @media (min-width: 1400px) {
@@ -193,10 +164,6 @@
 
                     .\32 xl\:bg-position-top {
                         background-position: top;
-                    }
-
-                    .\32 xl\:bg-position-left-top {
-                        background-position: left top;
                     }
                 }
             }

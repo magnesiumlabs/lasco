@@ -3,18 +3,19 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../core" with (
+@use "../src/core" with (
     $extend: (
-        "bg-position": false
+        "background-position": false
     )
 );
-@use "../index" as bg-position;
 
-@include describe("bg-position.core-styles()") {
+@include describe("background-position") {
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include bg-position.core-styles;
+                @include core.createUtility("background-position", core.$background-position, (
+                    "bg-position": "background-position"
+                ));
             }
 
             @include expect(false) {

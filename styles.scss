@@ -120,6 +120,10 @@
     "bg-origin": "background-origin"
 ));
 
+@include core.createUtility("background-position", core.$background-position, (
+    "bg-position": "background-position"
+));
+
 @include core.createUtility("background-repeat", core.$background-repeat, (
     "bg": "background-repeat"
 ));
