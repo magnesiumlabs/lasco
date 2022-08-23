@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/magnesiumlabs/lasco/compare/v2.0.1...v2.0.2) (2022-08-23)
+
+
+### Bug Fixes
+
+* **font-style, font-weight:** bad default properties in `styles.scss` ([2cd4946](https://github.com/magnesiumlabs/lasco/commit/2cd49463a0dbc5318a6bff8b1c90275084c0940b)), closes [#96](https://github.com/magnesiumlabs/lasco/issues/96)
+
+
+### Code Refactoring
+
+* **gap:** add parentheses ([87b9400](https://github.com/magnesiumlabs/lasco/commit/87b94003c6646b58615dc2e4b7c97b5a8c717e6e))
+
 ## [2.0.1](https://github.com/magnesiumlabs/lasco/compare/v2.0.0...v2.0.1) (2022-08-23)
 
 

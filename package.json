@@ -1,6 +1,6 @@
 {
     "name": "lasco",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "The Sass utilities classes library.",
     "scripts": {
         "dev:docs": "vitepress dev docs",
