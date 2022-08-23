@@ -81,11 +81,11 @@
 // Typography
 // ------------------------------------------------------------------------- //
 
-@include core.createUtility("font-style", core.$font-weight, (
+@include core.createUtility("font-style", core.$font-style, (
     "font": "font-style"
 ));
 
-@include core.createUtility("font-weight", core.$font-style, (
+@include core.createUtility("font-weight", core.$font-weight, (
     "font": "font-weight"
 ));
 
