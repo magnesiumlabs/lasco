@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/magnesiumlabs/lasco/compare/v2.0.0...v2.0.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* **gap:** missing `x` and `y` declarations ([0ea1588](https://github.com/magnesiumlabs/lasco/commit/0ea15882da99be42b052fa3aca448a673645b5d5))
+
 ## [2.0.0](https://github.com/magnesiumlabs/lasco/compare/v1.7.3...v2.0.0) (2022-08-22)
 
 
