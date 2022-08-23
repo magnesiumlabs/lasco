@@ -59,7 +59,3 @@
 
     @return $breakpoint;
 }
-
-@function set-filter($filter, $value) {
-    @return #{$filter}(string.unquote($value));
-}

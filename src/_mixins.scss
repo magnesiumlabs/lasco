@@ -71,6 +71,10 @@
     }
 }
 
+@mixin set-filter($filter, $value) {
+    @include css.declaration("filter", #{$filter}(string.unquote($value)));
+}
+
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
 
@@ -107,14 +111,14 @@
 
                         @if $key2 == "DEFAULT" {
                             @if meta.type-of($value) == "string" and $is-filter {
-                                @include css.declaration("filter", functions.set-filter($value, $value2));
+                                @include set-filter($value, $value2);
                             } @else {
                                 @include css.declaration($value, string.unquote($value2));
                             }
                         } @else {
                             &-#{$key2} {
                                 @if meta.type-of($value) == "string" and $is-filter {
-                                    @include css.declaration("filter", functions.set-filter($value, $value2));
+                                    @include set-filter($value, $value2);
                                 } @else {
                                     @if meta.type-of($value) == "list" {
                                         @each $key3 in $value {
