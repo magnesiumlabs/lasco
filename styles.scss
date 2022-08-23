@@ -138,19 +138,19 @@
 // ------------------------------------------------------------------------- //
 
 @include core.createUtility("blur", core.$blur, (
-    "blur": "filter:blur"
+    "blur": "blur"
 ));
 
 @include core.createUtility("brightness", core.$brightness, (
-    "brightness": "filter:brightness"
+    "brightness": "brightness"
 ));
 
 @include core.createUtility("contrast", core.$contrast, (
-    "contrast": "filter:contrast"
+    "contrast": "contrast"
 ));
 
 @include core.createUtility("grayscale", core.$grayscale, (
-    "grayscale": "filter:grayscale"
+    "grayscale": "grayscale"
 ));
 
 // ------------------------------------------------------------------------- //

@@ -84,22 +84,14 @@
 
     @if $variation and meta.type-of($variation) == "map" {
         @each $key, $value in $variation {
-            $filter-function: "";
+            $is-filter: false;
 
             ///
-            /// CSS Filter Functions.
+            /// Filter property.
             ///
 
-            @if meta.type-of($value) == "string" {
-                @if string.index($value, "filter:blur") {
-                    $filter-function: "blur"
-                } @else if string.index($value, "filter:contrast") {
-                    $filter-function: "contrast"
-                } @else if string.index($value, "filter:brightness") {
-                    $filter-function: "brightness"
-                } @else if string.index($value, "filter:grayscale") {
-                    $filter-function: "grayscale"
-                }
+            @if meta.type-of($value) == "string" and list.index(variables.$filters, $value) != null {
+                $is-filter: true
             }
 
             ///
@@ -114,15 +106,15 @@
                         }
 
                         @if $key2 == "DEFAULT" {
-                            @if meta.type-of($value) == "string" and string.index($value, "filter") {
-                                filter: #{$filter-function}(string.unquote($value2));
+                            @if meta.type-of($value) == "string" and $is-filter {
+                                filter: #{$value}(string.unquote($value2));
                             } @else {
                                 @include css.declaration($value, string.unquote($value2));
                             }
                         } @else {
                             &-#{$key2} {
-                                @if meta.type-of($value) == "string" and string.index($value, "filter") {
-                                    filter: #{$filter-function}(string.unquote($value2));
+                                @if meta.type-of($value) == "string" and $is-filter {
+                                    filter: #{$value}(string.unquote($value2));
                                 } @else {
                                     @if meta.type-of($value) == "list" {
                                         @each $key3 in $value {

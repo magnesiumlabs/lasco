@@ -14,7 +14,7 @@
         @include assert {
             @include output(false) {
                 @include core.createUtility("grayscale", core.$grayscale, (
-                    "grayscale": "filter:grayscale"
+                    "grayscale": "grayscale"
                 ));
             }
 
