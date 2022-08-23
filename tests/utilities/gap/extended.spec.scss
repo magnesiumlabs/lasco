@@ -20,7 +20,9 @@
         @include assert {
             @include output(false) {
                 @include core.createUtility("gap", core.$gap, (
-                    "gap": "gap"
+                    "gap": "gap",
+                    "gap-x": "column-gap",
+                    "gap-y": "row-gap"
                 ));
             }
 
@@ -35,6 +37,30 @@
 
                 .gap-24 {
                     gap: 24px;
+                }
+
+                .gap-x-0 {
+                    column-gap: 0;
+                }
+
+                .gap-x-12 {
+                    column-gap: 12px;
+                }
+
+                .gap-x-24 {
+                    column-gap: 24px;
+                }
+
+                .gap-y-0 {
+                    row-gap: 0;
+                }
+
+                .gap-y-12 {
+                    row-gap: 12px;
+                }
+
+                .gap-y-24 {
+                    row-gap: 24px;
                 }
             }
         }

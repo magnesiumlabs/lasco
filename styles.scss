@@ -194,7 +194,9 @@
 ));
 
 @include core.createUtility("gap", core.$gap, (
-    "gap": "gap"
+    "gap": "gap",
+    "gap-x": "column-gap",
+    "gap-y": "row-gap"
 ));
 
 @include core.createUtility("align-content", core.$align-content, (

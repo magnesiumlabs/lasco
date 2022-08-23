@@ -14,7 +14,9 @@
         @include assert {
             @include output(false) {
                 @include core.createUtility("gap", core.$gap, (
-                    "gap": "gap"
+                    "gap": "gap",
+                    "gap-x": "column-gap",
+                    "gap-y": "row-gap"
                 ));
             }
 
