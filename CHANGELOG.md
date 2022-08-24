@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/magnesiumlabs/lasco/compare/v2.0.2...v2.0.3) (2022-08-24)
+
+
+### Bug Fixes
+
+* **options:** extended `$engine` ([2a7ae81](https://github.com/magnesiumlabs/lasco/commit/2a7ae814294c488b495f2ee1c1042e510fd6ac1d))
+
 ## [2.0.2](https://github.com/magnesiumlabs/lasco/compare/v2.0.1...v2.0.2) (2022-08-23)
 
 
