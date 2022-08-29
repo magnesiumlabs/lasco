@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/magnesiumlabs/lasco/compare/v2.1.0...v2.1.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* **core:** bad scoped calls ([5edcf8c](https://github.com/magnesiumlabs/lasco/commit/5edcf8c63c3e69ee1d5a01315901d27f931b67fe))
+
 ## [2.1.0](https://github.com/magnesiumlabs/lasco/compare/v2.0.3...v2.1.0) (2022-08-29)
 
 
