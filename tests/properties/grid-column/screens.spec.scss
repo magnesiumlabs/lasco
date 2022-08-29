@@ -1,0 +1,425 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "sass:string";
+@use "../src" as core;
+
+@include describe("grid-column") {
+    @include it("Should return main styles declarations with breakpoints.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("grid-column", core.$grid-column, (
+                    "col": "grid-column"
+                ));
+            }
+
+            @include expect(false) {
+                .col-auto {
+                    grid-column: auto;
+                }
+
+                .col-span-full {
+                    grid-column: string.unquote("1 / -1");
+                }
+
+                .col-span-1 {
+                    grid-column: string.unquote("span 1 / span 1");
+                }
+
+                .col-span-2 {
+                    grid-column: string.unquote("span 2 / span 2");
+                }
+
+                .col-span-3 {
+                    grid-column: string.unquote("span 3 / span 3");
+                }
+
+                .col-span-4 {
+                    grid-column: string.unquote("span 4 / span 4");
+                }
+
+                .col-span-5 {
+                    grid-column: string.unquote("span 5 / span 5");
+                }
+
+                .col-span-6 {
+                    grid-column: string.unquote("span 6 / span 6");
+                }
+
+                .col-span-7 {
+                    grid-column: string.unquote("span 7 / span 7");
+                }
+
+                .col-span-8 {
+                    grid-column: string.unquote("span 8 / span 8");
+                }
+
+                .col-span-9 {
+                    grid-column: string.unquote("span 9 / span 9");
+                }
+
+                .col-span-10 {
+                    grid-column: string.unquote("span 10 / span 10");
+                }
+
+                .col-span-11 {
+                    grid-column: string.unquote("span 11 / span 11");
+                }
+
+                .col-span-12 {
+                    grid-column: string.unquote("span 12 / span 12");
+                }
+
+                @media (min-width: 320px) {
+                    .xs\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .xs\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .xs\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .xs\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .xs\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .xs\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .xs\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .xs\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .xs\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .xs\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .xs\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .xs\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .xs\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .xs\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+
+                @media (min-width: 480px) {
+                    .sm\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .sm\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .sm\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .sm\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .sm\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .sm\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .sm\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .sm\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .sm\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .sm\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .sm\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .sm\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .sm\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .sm\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .md\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .md\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .md\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .md\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .md\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .md\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .md\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .md\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .md\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .md\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .md\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .md\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .md\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .md\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+
+                @media (min-width: 960px) {
+                    .lg\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .lg\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .lg\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .lg\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .lg\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .lg\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .lg\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .lg\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .lg\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .lg\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .lg\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .lg\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .lg\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .lg\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .xl\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .xl\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .xl\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .xl\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .xl\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .xl\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .xl\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .xl\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .xl\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .xl\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .xl\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .xl\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .xl\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .xl\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+
+                @media (min-width: 1400px) {
+                    .\32 xl\:col-auto {
+                        grid-column: auto;
+                    }
+
+                    .\32 xl\:col-span-full {
+                        grid-column: string.unquote("1 / -1");
+                    }
+
+                    .\32 xl\:col-span-1 {
+                        grid-column: string.unquote("span 1 / span 1");
+                    }
+
+                    .\32 xl\:col-span-2 {
+                        grid-column: string.unquote("span 2 / span 2");
+                    }
+
+                    .\32 xl\:col-span-3 {
+                        grid-column: string.unquote("span 3 / span 3");
+                    }
+
+                    .\32 xl\:col-span-4 {
+                        grid-column: string.unquote("span 4 / span 4");
+                    }
+
+                    .\32 xl\:col-span-5 {
+                        grid-column: string.unquote("span 5 / span 5");
+                    }
+
+                    .\32 xl\:col-span-6 {
+                        grid-column: string.unquote("span 6 / span 6");
+                    }
+
+                    .\32 xl\:col-span-7 {
+                        grid-column: string.unquote("span 7 / span 7");
+                    }
+
+                    .\32 xl\:col-span-8 {
+                        grid-column: string.unquote("span 8 / span 8");
+                    }
+
+                    .\32 xl\:col-span-9 {
+                        grid-column: string.unquote("span 9 / span 9");
+                    }
+
+                    .\32 xl\:col-span-10 {
+                        grid-column: string.unquote("span 10 / span 10");
+                    }
+
+                    .\32 xl\:col-span-11 {
+                        grid-column: string.unquote("span 11 / span 11");
+                    }
+
+                    .\32 xl\:col-span-12 {
+                        grid-column: string.unquote("span 12 / span 12");
+                    }
+                }
+            }
+        }
+    }
+}

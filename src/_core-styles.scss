@@ -10,6 +10,7 @@
 /// @see {mixin} core.createUtility
 ///
 @mixin core-styles {
+
     // ------------------------------------------------------------------------- //
     // Layout
     // ------------------------------------------------------------------------- //
@@ -189,6 +190,18 @@
 
     @include core.createUtility("grid-template-rows", core.$grid-template-rows, (
         "grid-rows": "grid-template-rows"
+    ));
+
+    @include core.createUtility("grid-column", core.$grid-column, (
+        "col": "grid-column"
+    ));
+
+    @include core.createUtility("grid-column-start", core.$grid-column-end, (
+        "col-start": "grid-column-start"
+    ));
+
+    @include core.createUtility("grid-column-end", core.$grid-column-end, (
+        "col-end": "grid-column-end"
     ));
 
     @include core.createUtility("gap", core.$gap, (

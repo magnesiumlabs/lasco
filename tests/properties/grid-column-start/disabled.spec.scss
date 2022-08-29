@@ -1,0 +1,26 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src" as core with (
+    $extend: (
+        "grid-column-start": false
+    )
+);
+
+@include describe("grid-column-start") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("grid-column-start", core.$grid-column-start, (
+                    "col-start": "grid-column-start"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}

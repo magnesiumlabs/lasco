@@ -256,6 +256,10 @@ module.exports = {
                         link: 'guide/grid-template-rows'
                     },
                     {
+                        text: 'Grid Column',
+                        link: 'guide/grid-column'
+                    },
+                    {
                         text: 'Gap',
                         link: 'guide/gap'
                     },
