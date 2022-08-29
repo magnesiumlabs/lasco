@@ -2,12 +2,13 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
-@use "./src" as core;
+@use "./mixins" as mixins;
+@use "./variables" as variables;
 
 ///
 /// Core styles.
 ///
-/// @see {mixin} core.createUtility
+/// @see {mixin} mixins.createUtility
 ///
 @mixin core-styles {
 
@@ -15,28 +16,28 @@
     // Layout
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("aspect-ratio", core.$aspect-ratio, (
+    @include mixins.createUtility("aspect-ratio", variables.$aspect-ratio, (
         "aspect": "aspect-ratio"
     ));
 
-    @include core.createUtility("clear", core.$clear, (
+    @include mixins.createUtility("clear", variables.$clear, (
         "clear": "clear"
     ));
 
-    @include core.createUtility("display", core.$display);
+    @include mixins.createUtility("display", variables.$display);
 
-    @include core.createUtility("float", core.$float, (
+    @include mixins.createUtility("float", variables.$float, (
         "float": "float"
     ));
 
-    @include core.createUtility("object-fit", core.$object-fit, (
+    @include mixins.createUtility("object-fit", variables.$object-fit, (
         "object": "object-fit"
     ));
 
-    @include core.createUtility("position", core.$position);
-    @include core.createUtility("visibility", core.$visibility);
+    @include mixins.createUtility("position", variables.$position);
+    @include mixins.createUtility("visibility", variables.$visibility);
 
-    @include core.createUtility("z-index", core.$z-index, (
+    @include mixins.createUtility("z-index", variables.$z-index, (
         "z": "z-index"
     ));
 
@@ -44,7 +45,7 @@
     // Effects
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("opacity", core.$opacity, (
+    @include mixins.createUtility("opacity", variables.$opacity, (
         "opacity": "opacity"
     ));
 
@@ -52,27 +53,27 @@
     // Sizing
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("min-width", core.$min-width, (
+    @include mixins.createUtility("min-width", variables.$min-width, (
         "min-w": "min-width"
     ));
 
-    @include core.createUtility("max-width", core.$max-width, (
+    @include mixins.createUtility("max-width", variables.$max-width, (
         "max-w": "max-width"
     ));
 
-    @include core.createUtility("width", core.$width, (
+    @include mixins.createUtility("width", variables.$width, (
         "w": "width"
     ));
 
-    @include core.createUtility("min-height", core.$min-height, (
+    @include mixins.createUtility("min-height", variables.$min-height, (
         "min-h": "min-height"
     ));
 
-    @include core.createUtility("max-height", core.$max-height, (
+    @include mixins.createUtility("max-height", variables.$max-height, (
         "max-h": "max-height"
     ));
 
-    @include core.createUtility("height", core.$height, (
+    @include mixins.createUtility("height", variables.$height, (
         "h": "height"
     ));
 
@@ -80,19 +81,19 @@
     // Typography
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("font-style", core.$font-style, (
+    @include mixins.createUtility("font-style", variables.$font-style, (
         "font": "font-style"
     ));
 
-    @include core.createUtility("font-weight", core.$font-weight, (
+    @include mixins.createUtility("font-weight", variables.$font-weight, (
         "font": "font-weight"
     ));
 
-    @include core.createUtility("text-align", core.$text-align, (
+    @include mixins.createUtility("text-align", variables.$text-align, (
         "text": "text-align"
     ));
 
-    @include core.createUtility("text-transform", core.$text-transform, (
+    @include mixins.createUtility("text-transform", variables.$text-transform, (
         "text": "text-transform"
     ));
 
@@ -100,35 +101,35 @@
     // Backgrounds
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("background-attachment", core.$background-attachment, (
+    @include mixins.createUtility("background-attachment", variables.$background-attachment, (
         "bg-attachment": "background-attachment"
     ));
 
-    @include core.createUtility("background-clip", core.$background-clip, (
+    @include mixins.createUtility("background-clip", variables.$background-clip, (
         "bg-clip": "background-clip"
     ));
 
-    @include core.createUtility("background-color", core.$background-color, (
+    @include mixins.createUtility("background-color", variables.$background-color, (
         "bg-color": "background-color"
     ));
 
-    @include core.createUtility("background-image", core.$background-image, (
+    @include mixins.createUtility("background-image", variables.$background-image, (
         "bg-image": "background-image"
     ));
 
-    @include core.createUtility("background-origin", core.$background-origin, (
+    @include mixins.createUtility("background-origin", variables.$background-origin, (
         "bg-origin": "background-origin"
     ));
 
-    @include core.createUtility("background-position", core.$background-position, (
+    @include mixins.createUtility("background-position", variables.$background-position, (
         "bg-position": "background-position"
     ));
 
-    @include core.createUtility("background-repeat", core.$background-repeat, (
+    @include mixins.createUtility("background-repeat", variables.$background-repeat, (
         "bg": "background-repeat"
     ));
 
-    @include core.createUtility("background-size", core.$background-size, (
+    @include mixins.createUtility("background-size", variables.$background-size, (
         "bg-size": "background-size"
     ));
 
@@ -136,19 +137,19 @@
     // Filters
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("blur", core.$blur, (
+    @include mixins.createUtility("blur", variables.$blur, (
         "blur": "blur"
     ));
 
-    @include core.createUtility("brightness", core.$brightness, (
+    @include mixins.createUtility("brightness", variables.$brightness, (
         "brightness": "brightness"
     ));
 
-    @include core.createUtility("contrast", core.$contrast, (
+    @include mixins.createUtility("contrast", variables.$contrast, (
         "contrast": "contrast"
     ));
 
-    @include core.createUtility("grayscale", core.$grayscale, (
+    @include mixins.createUtility("grayscale", variables.$grayscale, (
         "grayscale": "grayscale"
     ));
 
@@ -156,55 +157,55 @@
     // Flexbox & Grid
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("flex", core.$flex, (
+    @include mixins.createUtility("flex", variables.$flex, (
         "flex": "flex"
     ));
 
-    @include core.createUtility("flex-direction", core.$flex-direction, (
+    @include mixins.createUtility("flex-direction", variables.$flex-direction, (
         "flex": "flex-direction"
     ));
 
-    @include core.createUtility("flex-wrap", core.$flex-wrap, (
+    @include mixins.createUtility("flex-wrap", variables.$flex-wrap, (
         "flex": "flex-wrap"
     ));
 
-    @include core.createUtility("flex-grow", core.$flex-grow, (
+    @include mixins.createUtility("flex-grow", variables.$flex-grow, (
         "flex-grow": "flex-grow"
     ));
 
-    @include core.createUtility("flex-shrink", core.$flex-shrink, (
+    @include mixins.createUtility("flex-shrink", variables.$flex-shrink, (
         "flex-shrink": "flex-shrink"
     ));
 
-    @include core.createUtility("flex-basis", core.$flex-basis, (
+    @include mixins.createUtility("flex-basis", variables.$flex-basis, (
         "flex-basis": "flex-basis"
     ));
 
-    @include core.createUtility("order", core.$order, (
+    @include mixins.createUtility("order", variables.$order, (
         "order": "order"
     ));
 
-    @include core.createUtility("grid-template-columns", core.$grid-template-columns, (
+    @include mixins.createUtility("grid-template-columns", variables.$grid-template-columns, (
         "grid-cols": "grid-template-columns"
     ));
 
-    @include core.createUtility("grid-template-rows", core.$grid-template-rows, (
+    @include mixins.createUtility("grid-template-rows", variables.$grid-template-rows, (
         "grid-rows": "grid-template-rows"
     ));
 
-    @include core.createUtility("grid-column", core.$grid-column, (
+    @include mixins.createUtility("grid-column", variables.$grid-column, (
         "col": "grid-column"
     ));
 
-    @include core.createUtility("grid-column-start", core.$grid-column-end, (
+    @include mixins.createUtility("grid-column-start", variables.$grid-column-end, (
         "col-start": "grid-column-start"
     ));
 
-    @include core.createUtility("grid-column-end", core.$grid-column-end, (
+    @include mixins.createUtility("grid-column-end", variables.$grid-column-end, (
         "col-end": "grid-column-end"
     ));
 
-    @include core.createUtility("gap", core.$gap, (
+    @include mixins.createUtility("gap", variables.$gap, (
         "gap": "gap",
         "gap-x": (
             "column-gap"
@@ -214,39 +215,39 @@
         )
     ));
 
-    @include core.createUtility("align-content", core.$align-content, (
+    @include mixins.createUtility("align-content", variables.$align-content, (
         "align-content": "align-content"
     ));
 
-    @include core.createUtility("align-items", core.$align-items, (
+    @include mixins.createUtility("align-items", variables.$align-items, (
         "align-items": "align-items"
     ));
 
-    @include core.createUtility("align-self", core.$align-self, (
+    @include mixins.createUtility("align-self", variables.$align-self, (
         "align-self": "align-self"
     ));
 
-    @include core.createUtility("justify-content", core.$justify-content, (
+    @include mixins.createUtility("justify-content", variables.$justify-content, (
         "justify-content": "justify-content"
     ));
 
-    @include core.createUtility("justify-items", core.$justify-items, (
+    @include mixins.createUtility("justify-items", variables.$justify-items, (
         "justify-items": "justify-items"
     ));
 
-    @include core.createUtility("justify-self", core.$justify-self, (
+    @include mixins.createUtility("justify-self", variables.$justify-self, (
         "justify-self": "justify-self"
     ));
 
-    @include core.createUtility("place-content", core.$place-content, (
+    @include mixins.createUtility("place-content", variables.$place-content, (
         "place-content": "place-content"
     ));
 
-    @include core.createUtility("place-items", core.$place-items, (
+    @include mixins.createUtility("place-items", variables.$place-items, (
         "place-items": "place-items"
     ));
 
-    @include core.createUtility("place-self", core.$place-self, (
+    @include mixins.createUtility("place-self", variables.$place-self, (
         "place-self": "place-self"
     ));
 
@@ -254,7 +255,7 @@
     // Spacing
     // ------------------------------------------------------------------------- //
 
-    @include core.createUtility("margin", core.$margin, (
+    @include mixins.createUtility("margin", variables.$margin, (
         "m": "margin",
         "mx": (
             "margin-left",
@@ -278,7 +279,7 @@
         )
     ));
 
-    @include core.createUtility("padding", core.$padding, (
+    @include mixins.createUtility("padding", variables.$padding, (
         "p": "padding",
         "px": (
             "padding-left",
