@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/magnesiumlabs/lasco/compare/v2.0.3...v2.1.0) (2022-08-29)
+
+
+### Features
+
+* **grid:** add `grid-column`, `grid-column-start` and `grid-column-end` properties ([db67797](https://github.com/magnesiumlabs/lasco/commit/db677979962322bd9fa0bdc31821eae3bf0aabb2))
+
+
+### Code Refactoring
+
+* add `core-styles` mixin ([581dbd9](https://github.com/magnesiumlabs/lasco/commit/581dbd9f629f1001a8cc88ad181ed4180f0dd6b4))
+* **core:** add `set-filter` function ([c3f7330](https://github.com/magnesiumlabs/lasco/commit/c3f733053a59526fc1ba59b5868ef3ea7638ef09))
+* **core:** replace `set-filter` function for mixin ([03279dc](https://github.com/magnesiumlabs/lasco/commit/03279dcf8657b4b6354ebd3461312c0fc822d29f))
+* **core:** simplify filter property condition ([b207b01](https://github.com/magnesiumlabs/lasco/commit/b207b01d65df42ba70339cbfab7458371738f315))
+* split variables files ([214bef7](https://github.com/magnesiumlabs/lasco/commit/214bef7af9347133347bcac3234dd4d5c2a859c5))
+
 ## [2.0.3](https://github.com/magnesiumlabs/lasco/compare/v2.0.2...v2.0.3) (2022-08-24)
 
 
