@@ -1,0 +1,135 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as lasco with (
+    $prefix: "ls",
+    $engine: (
+        "screens": false,
+        "list": "white"
+    ),
+    $extend: (
+        "display": true, // Root class
+        "grayscale": true, // Filter
+        "margin": true // Normal utility
+    )
+);
+
+@include describe("core") {
+    @include describe("styles") {
+        @include it("Should return prefixed selectors.") {
+            @include assert {
+                @include output(false) {
+                    @include lasco.core-styles;
+                }
+
+                @include expect(false) {
+                    .ls-block {
+                        display: block;
+                    }
+
+                    .ls-inline-block {
+                        display: inline-block;
+                    }
+
+                    .ls-flex {
+                        display: flex;
+                    }
+
+                    .ls-inline-flex {
+                        display: inline-flex;
+                    }
+
+                    .ls-grid {
+                        display: grid;
+                    }
+
+                    .ls-inline-grid {
+                        display: inline-grid;
+                    }
+
+                    .ls-table {
+                        display: table;
+                    }
+
+                    .ls-inline-table {
+                        display: inline-table;
+                    }
+
+                    .ls-hidden {
+                        display: none;
+                    }
+
+                    .ls-grayscale {
+                        filter: grayscale(1);
+                    }
+
+                    .ls-grayscale-0 {
+                        filter: grayscale(0);
+                    }
+
+                    .ls-m-0 {
+                        margin: 0;
+                    }
+
+                    .ls-m-auto {
+                        margin: auto;
+                    }
+
+                    .ls-mx-0 {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    .ls-mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .ls-my-0 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .ls-my-auto {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+
+                    .ls-mt-0 {
+                        margin-top: 0;
+                    }
+
+                    .ls-mt-auto {
+                        margin-top: auto;
+                    }
+
+                    .ls-mr-0 {
+                        margin-right: 0;
+                    }
+
+                    .ls-mr-auto {
+                        margin-right: auto;
+                    }
+
+                    .ls-mb-0 {
+                        margin-bottom: 0;
+                    }
+
+                    .ls-mb-auto {
+                        margin-bottom: auto;
+                    }
+
+                    .ls-ml-0 {
+                        margin-left: 0;
+                    }
+
+                    .ls-ml-auto {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}

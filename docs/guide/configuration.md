@@ -90,3 +90,35 @@ Each property have their own key for extend each default configuration.
     )
 );
 ```
+
+## Configuration options
+
+### Prefix
+
+The `$prefix` allow to generate all classes with custom prefix.
+
+For example, you could set the `$prefix` option to `ls`...
+
+```scss
+@use "lasco" with (
+    $prefix: "ls"
+);
+```
+
+...and now every class will be generated with the configured prefix:
+
+```css
+.ls-block {
+    display: block;
+}
+
+.ls-flex {
+    display: flex;
+}
+
+.ls-grid {
+    display: grid;
+}
+```
+
+

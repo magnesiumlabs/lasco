@@ -102,7 +102,7 @@
             /// Declaration.
             ///
 
-            .#{$key} {
+            @include selector($key, variables.$prefix) {
                 @include declaration($property) {
                     @each $key2, $value2 in $extend {
                         @if meta.type-of($key2) == "string" {
@@ -136,11 +136,23 @@
         }
     } @else {
         @each $key, $value in $extend {
-            .#{$key} {
+            @include selector($key, variables.$prefix) {
                 @include declaration($property) {
                     @include css.declaration($property, string.unquote($value));
                 }
             }
+        }
+    }
+}
+
+@mixin selector($name, $prefix: null) {
+    @if $prefix {
+        .#{$prefix}-#{$name} {
+            @content
+        }
+    } @else {
+        .#{$name} {
+            @content
         }
     }
 }
