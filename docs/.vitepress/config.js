@@ -314,20 +314,6 @@ module.exports = {
                         link: 'guide/padding'
                     }
                 ]
-            },
-            {
-                text: 'Spacing',
-                collapsible: true,
-                items: [
-                    {
-                        text: 'Margin',
-                        link: 'guide/margin'
-                    },
-                    {
-                        text: 'Padding',
-                        link: 'guide/padding'
-                    }
-                ]
             }
         ],
         footer: {
