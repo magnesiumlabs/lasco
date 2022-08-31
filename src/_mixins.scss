@@ -62,7 +62,7 @@
         @if $breakpoint {
             @each $key, $value in breakpoint.get-screens() {
                 @include breakpoint.up($key) {
-                    @include css.selector($key) {
+                    @include css.selector($key, variables.$separator) {
                         @content;
                     }
                 }

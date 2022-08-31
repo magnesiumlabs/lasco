@@ -28,6 +28,7 @@ $default-engine: (
 
 $prefix: null !default;
 $important: false !default;
+$separator: ":" !default;
 $engine: () !default;
 $extend: () !default;
 

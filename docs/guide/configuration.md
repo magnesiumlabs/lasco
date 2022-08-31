@@ -147,4 +147,15 @@ Now every class will be generated with the configured prefix:
 }
 ```
 
+### Separator
+
+The `$separator` allow to customize the character used on to separate classes modifiers _(media queries)_. For example,
+you could set the `$separator` option to `@` like that:
+
+```scss
+@use "lasco" with (
+    $separator: "@"
+);
+```
+
 
