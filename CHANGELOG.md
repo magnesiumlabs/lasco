@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/magnesiumlabs/lasco/compare/v2.2.0...v2.3.0) (2022-08-31)
+
+
+### Features
+
+* **options:** add `$important` option ([fe40124](https://github.com/magnesiumlabs/lasco/commit/fe401244568e54acc9906734cbcf3f3782520f6a)), closes [#98](https://github.com/magnesiumlabs/lasco/issues/98)
+* **options:** add `$separator` option ([df4f088](https://github.com/magnesiumlabs/lasco/commit/df4f088da65cec52bbc26f970465d1bf2eeb1dda)), closes [#105](https://github.com/magnesiumlabs/lasco/issues/105)
+
+
+### Code Refactoring
+
+* simplify declaration mixins ([aa1c5bc](https://github.com/magnesiumlabs/lasco/commit/aa1c5bc909b7ae784a4848832acf27f6d3cea8d4))
+
 ## [2.2.0](https://github.com/magnesiumlabs/lasco/compare/v2.1.1...v2.2.0) (2022-08-30)
 
 
