@@ -47,7 +47,7 @@ option to `true` like that:
 );
 ```
 
-Now every class will be generated with the configured prefix:
+Now every class will be generated with the `!important` rule:
 
 ```css
 .block {
