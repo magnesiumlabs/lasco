@@ -22,7 +22,7 @@
 // Public mixins
 // ------------------------------------------------------------------------- //
 
-@mixin declaration($property) {
+@mixin responsive($property) {
     $declaration: true;
     $breakpoint: false;
 
@@ -71,10 +71,6 @@
     }
 }
 
-@mixin set-filter($filter, $value) {
-    @include css.declaration("filter", #{$filter}(string.unquote($value)), variables.$important);
-}
-
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
 
@@ -103,7 +99,7 @@
             ///
 
             @include selector($key, variables.$prefix) {
-                @include declaration($property) {
+                @include responsive($property) {
                     @each $key2, $value2 in $extend {
                         @if meta.type-of($key2) == "string" {
                             $key2: utilities.string-replace($key2, "/", \/);
@@ -111,21 +107,21 @@
 
                         @if $key2 == "DEFAULT" {
                             @if meta.type-of($value) == "string" and $is-filter {
-                                @include set-filter($value, $value2);
+                                @include declaration($value, $value2, true);
                             } @else {
-                                @include css.declaration($value, string.unquote($value2), variables.$important);
+                                @include declaration($value, $value2);
                             }
                         } @else {
                             &-#{$key2} {
                                 @if meta.type-of($value) == "string" and $is-filter {
-                                    @include set-filter($value, $value2);
+                                    @include declaration($value, $value2, true);
                                 } @else {
                                     @if meta.type-of($value) == "list" {
                                         @each $key3 in $value {
-                                            @include css.declaration($key3, string.unquote($value2), variables.$important);
+                                            @include declaration($key3, $value2);
                                         }
                                     } @else {
-                                        @include css.declaration($value, string.unquote($value2), variables.$important);
+                                        @include declaration($value, $value2);
                                     }
                                 }
                             }
@@ -137,8 +133,8 @@
     } @else {
         @each $key, $value in $extend {
             @include selector($key, variables.$prefix) {
-                @include declaration($property) {
-                    @include css.declaration($property, string.unquote($value), variables.$important);
+                @include responsive($property) {
+                    @include declaration($property, $value);
                 }
             }
         }
@@ -155,4 +151,13 @@
             @content
         }
     }
+}
+
+@mixin declaration($property, $value, $filter: false) {
+    @if $filter {
+        $value: #{$property}(string.unquote($value));
+        $property: "filter";
+    }
+
+    @include css.declaration($property, string.unquote($value), variables.$important);
 }
