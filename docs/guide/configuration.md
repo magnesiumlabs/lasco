@@ -95,9 +95,8 @@ Each property have their own key for extend each default configuration.
 
 ### Prefix
 
-The `$prefix` allow to generate all classes with custom prefix.
-
-For example, you could set the `$prefix` option to `ls`...
+The `$prefix` allow to generate all classes with custom prefix. For example, you could set the `$prefix` option to `ls`
+like that:
 
 ```scss
 @use "lasco" with (
@@ -105,7 +104,7 @@ For example, you could set the `$prefix` option to `ls`...
 );
 ```
 
-...and now every class will be generated with the configured prefix:
+Now every class will be generated with the configured prefix:
 
 ```css
 .ls-block {
@@ -118,6 +117,33 @@ For example, you could set the `$prefix` option to `ls`...
 
 .ls-grid {
     display: grid;
+}
+```
+
+### Important
+
+The `$important` allow to generate all classes with `!important` rule. For example, you could set the `$important`
+option to `true` like that:
+
+```scss
+@use "lasco" with (
+    $important: true
+);
+```
+
+Now every class will be generated with the configured prefix:
+
+```css
+.block {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.grid {
+    display: grid !important;
 }
 ```
 

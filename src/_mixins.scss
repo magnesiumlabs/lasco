@@ -72,7 +72,7 @@
 }
 
 @mixin set-filter($filter, $value) {
-    @include css.declaration("filter", #{$filter}(string.unquote($value)));
+    @include css.declaration("filter", #{$filter}(string.unquote($value)), variables.$important);
 }
 
 @mixin createUtility($property, $utilities, $variation: ()) {
@@ -113,7 +113,7 @@
                             @if meta.type-of($value) == "string" and $is-filter {
                                 @include set-filter($value, $value2);
                             } @else {
-                                @include css.declaration($value, string.unquote($value2));
+                                @include css.declaration($value, string.unquote($value2), variables.$important);
                             }
                         } @else {
                             &-#{$key2} {
@@ -122,10 +122,10 @@
                                 } @else {
                                     @if meta.type-of($value) == "list" {
                                         @each $key3 in $value {
-                                            @include css.declaration($key3, string.unquote($value2));
+                                            @include css.declaration($key3, string.unquote($value2), variables.$important);
                                         }
                                     } @else {
-                                        @include css.declaration($value, string.unquote($value2));
+                                        @include css.declaration($value, string.unquote($value2), variables.$important);
                                     }
                                 }
                             }
@@ -138,7 +138,7 @@
         @each $key, $value in $extend {
             @include selector($key, variables.$prefix) {
                 @include declaration($property) {
-                    @include css.declaration($property, string.unquote($value));
+                    @include css.declaration($property, string.unquote($value), variables.$important);
                 }
             }
         }

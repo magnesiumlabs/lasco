@@ -27,6 +27,7 @@ $default-engine: (
 // ------------------------------------------------------------------------- //
 
 $prefix: null !default;
+$important: false !default;
 $engine: () !default;
 $extend: () !default;
 
