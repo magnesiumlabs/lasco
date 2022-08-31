@@ -8,6 +8,7 @@
 @use "sass:string";
 @use "@unsass/breakpoint";
 @use "@unsass/css";
+@use "@unsass/selector";
 @use "@unsass/utilities";
 @use "./variables";
 @use "./functions";
@@ -143,12 +144,12 @@
 
 @mixin selector($name, $prefix: null) {
     @if $prefix {
-        .#{$prefix}-#{$name} {
-            @content
+        @include selector.create($name, $prefix, "-") {
+            @content;
         }
     } @else {
-        .#{$name} {
-            @content
+        @include selector.create($name) {
+            @content;
         }
     }
 }
