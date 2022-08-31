@@ -38,7 +38,7 @@
         "sass-loader": "^13.0.2",
         "sass-true": "^6.1.0",
         "semantic-release": "^19.0.5",
-        "vitepress": "^1.0.0-alpha.12",
+        "vitepress": "^1.0.0-alpha.13",
         "vue": "^3.2.37",
         "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0"
@@ -55,11 +55,10 @@
         "CHANGELOG.md"
     ],
     "keywords": [
-        "lasco",
         "sass",
         "utilities",
         "library",
-        "css",
+        "lasco",
         "front-end"
     ],
     "license": "MIT",

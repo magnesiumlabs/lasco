@@ -7,6 +7,73 @@ outline: deep
 Without any configuration, all Lasco classes will be generated. To customize your theme, you can use many options
 describe below.
 
+## Options
+
+### Prefix
+
+The `$prefix` allow to generate all classes with custom prefix. For example, you could set the `$prefix` option to `ls`
+like that:
+
+```scss
+@use "lasco" with (
+    $prefix: "ls"
+);
+```
+
+Now every class will be generated with the configured prefix:
+
+```css
+.ls-block {
+    display: block;
+}
+
+.ls-flex {
+    display: flex;
+}
+
+.ls-grid {
+    display: grid;
+}
+```
+
+### Important
+
+The `$important` allow to generate all classes with `!important` rule. For example, you could set the `$important`
+option to `true` like that:
+
+```scss
+@use "lasco" with (
+    $important: true
+);
+```
+
+Now every class will be generated with the configured prefix:
+
+```css
+.block {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.grid {
+    display: grid !important;
+}
+```
+
+### Separator
+
+The `$separator` allow to customize the character used on to separate classes modifiers _(media queries)_. For example,
+you could set the `$separator` option to `@` like that:
+
+```scss
+@use "lasco" with (
+    $separator: "@"
+);
+```
+
 ## Engine Configuration
 
 The `$engine` section is where you configure Lasco global behavior, like media queries breakpoints or list authority.
@@ -90,72 +157,3 @@ Each property have their own key for extend each default configuration.
     )
 );
 ```
-
-## Configuration options
-
-### Prefix
-
-The `$prefix` allow to generate all classes with custom prefix. For example, you could set the `$prefix` option to `ls`
-like that:
-
-```scss
-@use "lasco" with (
-    $prefix: "ls"
-);
-```
-
-Now every class will be generated with the configured prefix:
-
-```css
-.ls-block {
-    display: block;
-}
-
-.ls-flex {
-    display: flex;
-}
-
-.ls-grid {
-    display: grid;
-}
-```
-
-### Important
-
-The `$important` allow to generate all classes with `!important` rule. For example, you could set the `$important`
-option to `true` like that:
-
-```scss
-@use "lasco" with (
-    $important: true
-);
-```
-
-Now every class will be generated with the configured prefix:
-
-```css
-.block {
-    display: block !important;
-}
-
-.flex {
-    display: flex !important;
-}
-
-.grid {
-    display: grid !important;
-}
-```
-
-### Separator
-
-The `$separator` allow to customize the character used on to separate classes modifiers _(media queries)_. For example,
-you could set the `$separator` option to `@` like that:
-
-```scss
-@use "lasco" with (
-    $separator: "@"
-);
-```
-
-
