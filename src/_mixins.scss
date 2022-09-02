@@ -142,18 +142,24 @@
     }
 }
 
+///
+/// Selector.
+///
 @mixin selector($name, $prefix: null) {
+    $separator: null;
+
     @if $prefix {
-        @include selector.create($name, $prefix, "-") {
-            @content;
-        }
-    } @else {
-        @include selector.create($name) {
-            @content;
-        }
+        $separator: "-";
+    }
+
+    @include selector.create($name, $prefix, $separator) {
+        @content;
     }
 }
 
+///
+/// Declaration.
+///
 @mixin declaration($property, $value, $filter: false) {
     @if $filter {
         $value: #{$property}(string.unquote($value));
