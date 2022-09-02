@@ -166,5 +166,9 @@
         $property: "filter";
     }
 
-    @include css.declaration($property, string.unquote($value), variables.$important);
+    @if meta.type-of($value) == "string" {
+        $value: string.unquote($value);
+    }
+
+    @include css.declaration($property, $value, variables.$important);
 }
