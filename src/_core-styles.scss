@@ -61,6 +61,10 @@
         "max-w": "max-width"
     ));
 
+    @include mixins.createUtility("max-width", variables.$max-width-screens, (
+        "max-w-screen": "max-width"
+    ));
+
     @include mixins.createUtility("width", variables.$width, (
         "w": "width"
     ));

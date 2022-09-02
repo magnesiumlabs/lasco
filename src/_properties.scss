@@ -2,6 +2,8 @@
 //                                          PROPERTIES                                           //
 // ============================================================================================= //
 
+@use "@unsass/breakpoint";
+
 $aspect-ratio: (
     "auto": "auto",
     "square": "1/1",
@@ -340,6 +342,8 @@ $max-width: (
     "max": "max-content",
     "fit": "fit-content"
 );
+
+$max-width-screens: breakpoint.get-screens();
 
 $object-fit: (
     "contain": "contain",

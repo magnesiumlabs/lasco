@@ -50,3 +50,41 @@
         }
     }
 }
+
+@include describe("max-width-screen") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("max-width", core.$max-width-screens, (
+                    "max-w-screen": "max-width"
+                ));
+            }
+
+            @include expect(false) {
+                .max-w-screen-xs {
+                    max-width: 320px;
+                }
+
+                .max-w-screen-sm {
+                    max-width: 480px;
+                }
+
+                .max-w-screen-md {
+                    max-width: 768px;
+                }
+
+                .max-w-screen-lg {
+                    max-width: 960px;
+                }
+
+                .max-w-screen-xl {
+                    max-width: 1200px;
+                }
+
+                .max-w-screen-2xl {
+                    max-width: 1400px;
+                }
+            }
+        }
+    }
+}
