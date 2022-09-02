@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/magnesiumlabs/lasco/compare/v2.3.0...v2.4.0) (2022-09-02)
+
+
+### Features
+
+* **max-width:** add breakpoints default classes ([802476a](https://github.com/magnesiumlabs/lasco/commit/802476a0c0a19e349f0adc1f5b7ec23580f2c13a))
+
+
+### Bug Fixes
+
+* allow unquoted values ([3a9b874](https://github.com/magnesiumlabs/lasco/commit/3a9b874f9e52d100c1790dd74f1dde51298df8e0))
+
+
+### Build System
+
+* **deps:** use `@unsass/selector` ([98b2f4d](https://github.com/magnesiumlabs/lasco/commit/98b2f4ddbb84046e0bb59832ce65cdc30064135b))
+
+
+### Code Refactoring
+
+* simplify mixins ([2e8804f](https://github.com/magnesiumlabs/lasco/commit/2e8804fb4aa0b65ac0051384b44409eb9c485975))
+
 ## [2.3.0](https://github.com/magnesiumlabs/lasco/compare/v2.2.0...v2.3.0) (2022-08-31)
 
 
