@@ -306,5 +306,12 @@
             "padding-left"
         )
     ));
-}
 
+    // ------------------------------------------------------------------------- //
+    // Others
+    // ------------------------------------------------------------------------- //
+
+    @include mixins.createUtility("appearance", variables.$appearance, (
+        "appearance": "appearance"
+    ));
+}

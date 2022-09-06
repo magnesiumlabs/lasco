@@ -314,6 +314,16 @@ module.exports = {
                         link: 'guide/padding'
                     }
                 ]
+            },
+            {
+                text: 'Others',
+                collapsible: true,
+                items: [
+                    {
+                        text: 'Appearance',
+                        link: 'guide/appearance'
+                    }
+                ]
             }
         ],
         footer: {
