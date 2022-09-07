@@ -107,11 +107,7 @@
                         }
 
                         @if $key2 == "DEFAULT" {
-                            @if meta.type-of($value) == "string" and $is-filter {
-                                @include declaration($value, $value2, true);
-                            } @else {
-                                @include declaration($value, $value2);
-                            }
+                            @include declaration($value, $value2, $is-filter);
                         } @else {
                             &-#{$key2} {
                                 @if meta.type-of($value) == "string" and $is-filter {
