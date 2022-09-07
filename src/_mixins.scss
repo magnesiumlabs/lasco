@@ -110,16 +110,12 @@
                             @include declaration($value, $value2, $filter);
                         } @else {
                             &-#{$key2} {
-                                @if meta.type-of($value) == "string" and $filter {
-                                    @include declaration($value, $value2, true);
-                                } @else {
-                                    @if meta.type-of($value) == "list" {
-                                        @each $key3 in $value {
-                                            @include declaration($key3, $value2);
-                                        }
-                                    } @else {
-                                        @include declaration($value, $value2);
+                                @if meta.type-of($value) == "list" {
+                                    @each $key3 in $value {
+                                        @include declaration($key3, $value2);
                                     }
+                                } @else {
+                                    @include declaration($value, $value2, $filter);
                                 }
                             }
                         }
