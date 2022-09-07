@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.0](https://github.com/magnesiumlabs/lasco/compare/v2.4.0...v2.5.0) (2022-09-07)
+
+
+### Features
+
+* **appearance:** add main styles ([926edf9](https://github.com/magnesiumlabs/lasco/commit/926edf93a7e347a3323070a58af65b2544a432cc))
+
+
+### Code Refactoring
+
+* **core:** rename `$is-filter` variable ([7a28c29](https://github.com/magnesiumlabs/lasco/commit/7a28c29741b4718b456f69a4dd66125865529c9a))
+* **core:** variants selector code simplification ([538f6de](https://github.com/magnesiumlabs/lasco/commit/538f6de96670c22d5aa24015d2f628862e0c5316))
+
 ## [2.4.0](https://github.com/magnesiumlabs/lasco/compare/v2.3.0...v2.4.0) (2022-09-02)
 
 
