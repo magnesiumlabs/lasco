@@ -85,14 +85,14 @@
 
     @if $variation and meta.type-of($variation) == "map" {
         @each $key, $value in $variation {
-            $is-filter: false;
+            $filter: false;
 
             ///
             /// Filter property.
             ///
 
             @if meta.type-of($value) == "string" and list.index(variables.$filters, $value) != null {
-                $is-filter: true
+                $filter: true
             }
 
             ///
@@ -107,14 +107,14 @@
                         }
 
                         @if $key2 == "DEFAULT" {
-                            @if meta.type-of($value) == "string" and $is-filter {
+                            @if meta.type-of($value) == "string" and $filter {
                                 @include declaration($value, $value2, true);
                             } @else {
                                 @include declaration($value, $value2);
                             }
                         } @else {
                             &-#{$key2} {
-                                @if meta.type-of($value) == "string" and $is-filter {
+                                @if meta.type-of($value) == "string" and $filter {
                                     @include declaration($value, $value2, true);
                                 } @else {
                                     @if meta.type-of($value) == "list" {
