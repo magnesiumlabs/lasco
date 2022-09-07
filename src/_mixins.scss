@@ -85,6 +85,7 @@
 
     @if $variation and meta.type-of($variation) == "map" {
         @each $key, $value in $variation {
+            $properties: $value;
             $filter: false;
 
             ///
@@ -101,29 +102,17 @@
 
             @include selector($key, variables.$prefix) {
                 @include responsive($property) {
-                    @each $key2, $value2 in $extend {
-                        @if meta.type-of($key2) == "string" {
-                            $key2: utilities.string-replace($key2, "/", \/);
+                    @each $key, $value in $extend {
+                        @if meta.type-of($key) == "string" {
+                            $key: utilities.string-replace($key, "/", \/);
                         }
 
-                        @if $key2 == "DEFAULT" {
-                            @if meta.type-of($value) == "string" and $filter {
-                                @include declaration($value, $value2, true);
-                            } @else {
-                                @include declaration($value, $value2);
-                            }
+                        @if $key == "DEFAULT" {
+                            @include declaration($properties, $value, $filter);
                         } @else {
-                            &-#{$key2} {
-                                @if meta.type-of($value) == "string" and $filter {
-                                    @include declaration($value, $value2, true);
-                                } @else {
-                                    @if meta.type-of($value) == "list" {
-                                        @each $key3 in $value {
-                                            @include declaration($key3, $value2);
-                                        }
-                                    } @else {
-                                        @include declaration($value, $value2);
-                                    }
+                            &-#{$key} {
+                                @each $key in $properties {
+                                    @include declaration($key, $value, $filter);
                                 }
                             }
                         }
