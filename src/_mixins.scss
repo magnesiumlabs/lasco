@@ -85,6 +85,7 @@
 
     @if $variation and meta.type-of($variation) == "map" {
         @each $key, $value in $variation {
+            $properties: $value;
             $filter: false;
 
             ///
@@ -107,15 +108,11 @@
                         }
 
                         @if $key2 == "DEFAULT" {
-                            @include declaration($value, $value2, $filter);
+                            @include declaration($properties, $value2, $filter);
                         } @else {
                             &-#{$key2} {
-                                @if meta.type-of($value) == "list" {
-                                    @each $key3 in $value {
-                                        @include declaration($key3, $value2);
-                                    }
-                                } @else {
-                                    @include declaration($value, $value2, $filter);
+                                @each $key in $properties {
+                                    @include declaration($key, $value2, $filter);
                                 }
                             }
                         }
