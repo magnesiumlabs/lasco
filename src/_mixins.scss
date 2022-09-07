@@ -102,17 +102,17 @@
 
             @include selector($key, variables.$prefix) {
                 @include responsive($property) {
-                    @each $key2, $value2 in $extend {
-                        @if meta.type-of($key2) == "string" {
-                            $key2: utilities.string-replace($key2, "/", \/);
+                    @each $key, $value in $extend {
+                        @if meta.type-of($key) == "string" {
+                            $key: utilities.string-replace($key, "/", \/);
                         }
 
-                        @if $key2 == "DEFAULT" {
-                            @include declaration($properties, $value2, $filter);
+                        @if $key == "DEFAULT" {
+                            @include declaration($properties, $value, $filter);
                         } @else {
-                            &-#{$key2} {
+                            &-#{$key} {
                                 @each $key in $properties {
-                                    @include declaration($key, $value2, $filter);
+                                    @include declaration($key, $value, $filter);
                                 }
                             }
                         }
