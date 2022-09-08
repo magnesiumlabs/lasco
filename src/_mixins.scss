@@ -25,7 +25,6 @@
 
 @mixin responsive($property) {
     $declaration: true;
-    $breakpoint: false;
 
     ///
     /// Sets white list engine.
@@ -46,21 +45,13 @@
     }
 
     ///
-    /// Conditional breakpoint.
-    ///
-
-    @if functions.has-breakpoints() {
-        $breakpoint: true;
-    }
-
-    ///
     /// Set declaration.
     ///
 
     @if $declaration {
         @content;
 
-        @if $breakpoint {
+        @if functions.has-breakpoints() {
             @each $key, $value in breakpoint.get-screens() {
                 @include breakpoint.up($key) {
                     @include css.selector($key, variables.$separator) {
