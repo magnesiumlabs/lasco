@@ -50,6 +50,24 @@
     @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "white";
 }
 
+@function has-declaration($property) {
+    $declaration: true; // Black - Default enable all.
+
+    @if is-white-list() {
+        $declaration: false;  // White - Disabled all.
+
+        @if map.has-key(variables.$extend, $property) {
+            $declaration: true; // White - Enabled only `true`.
+        }
+    } @else {
+        @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
+            $declaration: false; // Black - Disabled only `false`.
+        }
+    }
+
+    @return $declaration;
+}
+
 @function has-breakpoints() {
     $breakpoint: false;
 

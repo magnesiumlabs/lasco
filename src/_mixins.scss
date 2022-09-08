@@ -17,51 +17,65 @@
 // Private mixins
 // ------------------------------------------------------------------------- //
 
-// ...
+///
+/// Selector.
+///
+@mixin _selector($name, $prefix: null) {
+    $separator: null;
 
-// ------------------------------------------------------------------------- //
-// Public mixins
-// ------------------------------------------------------------------------- //
-
-@mixin responsive($property) {
-    $declaration: true;
-
-    ///
-    /// Sets white list engine.
-    ///
-
-    @if functions.is-white-list() {
-        $declaration: false;
+    @if $prefix {
+        $separator: "-";
     }
 
-    @if functions.is-white-list() {
-        @if map.has-key(variables.$extend, $property) {
-            $declaration: true;
-        }
-    } @else {
-        @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
-            $declaration: false;
-        }
-    }
-
-    ///
-    /// Set declaration.
-    ///
-
-    @if $declaration {
+    @include selector.create($name, $prefix, $separator) {
         @content;
+    }
+}
 
-        @if functions.has-breakpoints() {
-            @each $key, $value in breakpoint.get-screens() {
-                @include breakpoint.up($key) {
-                    @include css.selector($key, variables.$separator) {
-                        @content;
-                    }
+///
+/// Declaration.
+///
+@mixin _declaration($property, $value, $filter: false) {
+    @if $filter {
+        $value: #{$property}(string.unquote($value));
+        $property: "filter";
+    }
+
+    @if meta.type-of($value) == "string" {
+        $value: string.unquote($value);
+    }
+
+    @include css.declaration($property, $value, variables.$important);
+}
+
+///
+/// Breakpoint.
+///
+@mixin _breakpoint() {
+    @if functions.has-breakpoints() {
+        @each $key, $value in breakpoint.get-screens() {
+            @include breakpoint.up($key) {
+                @include css.selector($key, variables.$separator) {
+                    @content;
                 }
             }
         }
     }
 }
+
+@mixin _responsive($property) {
+    @if functions.has-declaration($property) {
+        @content;
+
+        @include _breakpoint {
+            @content;
+        }
+    }
+}
+
+// ------------------------------------------------------------------------- //
+// Public mixins
+// ------------------------------------------------------------------------- //
 
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
@@ -91,19 +105,19 @@
             /// Declaration.
             ///
 
-            @include selector($key, variables.$prefix) {
-                @include responsive($property) {
+            @include _selector($key, variables.$prefix) {
+                @include _responsive($property) {
                     @each $key, $value in $extend {
                         @if meta.type-of($key) == "string" {
                             $key: utilities.string-replace($key, "/", \/);
                         }
 
                         @if $key == "DEFAULT" {
-                            @include declaration($properties, $value, $filter);
+                            @include _declaration($properties, $value, $filter);
                         } @else {
                             &-#{$key} {
                                 @each $key in $properties {
-                                    @include declaration($key, $value, $filter);
+                                    @include _declaration($key, $value, $filter);
                                 }
                             }
                         }
@@ -113,42 +127,11 @@
         }
     } @else {
         @each $key, $value in $extend {
-            @include selector($key, variables.$prefix) {
-                @include responsive($property) {
-                    @include declaration($property, $value);
+            @include _selector($key, variables.$prefix) {
+                @include _responsive($property) {
+                    @include _declaration($property, $value);
                 }
             }
         }
     }
-}
-
-///
-/// Selector.
-///
-@mixin selector($name, $prefix: null) {
-    $separator: null;
-
-    @if $prefix {
-        $separator: "-";
-    }
-
-    @include selector.create($name, $prefix, $separator) {
-        @content;
-    }
-}
-
-///
-/// Declaration.
-///
-@mixin declaration($property, $value, $filter: false) {
-    @if $filter {
-        $value: #{$property}(string.unquote($value));
-        $property: "filter";
-    }
-
-    @if meta.type-of($value) == "string" {
-        $value: string.unquote($value);
-    }
-
-    @include css.declaration($property, $value, variables.$important);
 }
