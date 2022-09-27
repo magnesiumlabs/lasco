@@ -51,7 +51,7 @@
 ///
 /// Breakpoint.
 ///
-@mixin _breakpoint() {
+@mixin _breakpoint {
     @if functions.has-breakpoints() {
         @each $key, $value in breakpoint.get-screens() {
             @include breakpoint.up($key) {
