@@ -9,7 +9,7 @@
 @use "@unsass/breakpoint";
 @use "@unsass/css";
 @use "@unsass/selector";
-@use "@unsass/utilities";
+@use "@unsass/string" as unsass-string;
 @use "./variables";
 @use "./functions";
 
@@ -111,7 +111,7 @@
                 @include _responsive($property) {
                     @each $key, $value in $extend {
                         @if meta.type-of($key) == "string" {
-                            $key: utilities.string-replace($key, "/", \/);
+                            $key: unsass-string.replace($key, "/", \/);
                         }
 
                         @if $key == "DEFAULT" {
