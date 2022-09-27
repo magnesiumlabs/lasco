@@ -38,7 +38,8 @@ module.exports = {
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require('autoprefixer')
+                                    require('autoprefixer'),
+                                    require('postcss-sort-media-queries')
                                 ]
                             }
                         }
