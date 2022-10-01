@@ -4,7 +4,7 @@ module.exports = {
     title: 'Lasco',
     description: 'Just playing around.',
     themeConfig: {
-        logo: '/assets/logo.svg',
+        logo: 'logo.svg',
         siteTitle: false,
         nav: [
             {
