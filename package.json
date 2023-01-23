@@ -38,8 +38,8 @@
         "sass-loader": "^13.0.2",
         "sass-true": "^6.1.0",
         "semantic-release": "^19.0.5",
-        "vitepress": "^1.0.0-alpha.13",
-        "vue": "^3.2.38",
+        "vitepress": "^1.0.0-alpha.40",
+        "vue": "^3.2.45",
         "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0"
     },
