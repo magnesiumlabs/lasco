@@ -40,77 +40,11 @@ $appearance: (
     "none": "none"
 );
 
-$background-attachment: (
-    "fixed": "fixed",
-    "local": "local",
-    "scroll": "scroll"
-);
-
-$background-clip: (
-    "border": "border-box",
-    "content": "content-box",
-    "padding": "padding-box",
-    "text": "text"
-);
-
-$background-color: (
-    "inherit": "inherit",
-    "current": "currentColor",
-    "transparent": "transparent"
-);
-
-$background-image: (
-    "none": "none"
-);
-
-$background-origin: (
-    "border": "border-box",
-    "content": "content-box",
-    "padding": "padding-box"
-);
-
-$background-position: (
-    "bottom": "bottom",
-    "center": "center",
-    "left": "left",
-    "right": "right",
-    "top": "top"
-);
-
-$background-repeat: (
-    "repeat": "repeat",
-    "no-repeat": "no-repeat",
-    "repeat-x": "repeat-x",
-    "repeat-y": "repeat-y",
-    "repeat-round": "round",
-    "repeat-space": "space"
-);
-
-$background-size: (
-    "auto": "auto",
-    "cover": "cover",
-    "contain": "contain"
-);
-
-$blur: (
-    "0": "0"
-);
-
-$brightness: (
-    "0": "0",
-    "100": "1"
-);
-
 $clear: (
     "none": "none",
     "left": "left",
     "right": "right",
     "both": "both"
-);
-
-$contrast: (
-    "0": "0",
-    "100": "1"
 );
 
 $display: (
@@ -184,11 +118,6 @@ $font-weight: (
 );
 
 $gap: (
-    "0": "0"
-);
-
-$grayscale: (
-    "DEFAULT": "1",
     "0": "0"
 );
 

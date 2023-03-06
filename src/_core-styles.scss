@@ -2,6 +2,7 @@
 //                                            MIXINS                                             //
 // ============================================================================================= //
 
+@use "./tokens";
 @use "./mixins";
 @use "./variables";
 
@@ -105,35 +106,35 @@
     // Backgrounds
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("background-attachment", variables.$background-attachment, (
+    @include mixins.createUtility("background-attachment", tokens.$background-attachment, (
         "bg-attachment": "background-attachment"
     ));
 
-    @include mixins.createUtility("background-clip", variables.$background-clip, (
+    @include mixins.createUtility("background-clip", tokens.$background-clip, (
         "bg-clip": "background-clip"
     ));
 
-    @include mixins.createUtility("background-color", variables.$background-color, (
+    @include mixins.createUtility("background-color", tokens.$background-color, (
         "bg-color": "background-color"
     ));
 
-    @include mixins.createUtility("background-image", variables.$background-image, (
+    @include mixins.createUtility("background-image", tokens.$background-image, (
         "bg-image": "background-image"
     ));
 
-    @include mixins.createUtility("background-origin", variables.$background-origin, (
+    @include mixins.createUtility("background-origin", tokens.$background-origin, (
         "bg-origin": "background-origin"
     ));
 
-    @include mixins.createUtility("background-position", variables.$background-position, (
+    @include mixins.createUtility("background-position", tokens.$background-position, (
         "bg-position": "background-position"
     ));
 
-    @include mixins.createUtility("background-repeat", variables.$background-repeat, (
+    @include mixins.createUtility("background-repeat", tokens.$background-repeat, (
         "bg": "background-repeat"
     ));
 
-    @include mixins.createUtility("background-size", variables.$background-size, (
+    @include mixins.createUtility("background-size", tokens.$background-size, (
         "bg-size": "background-size"
     ));
 
@@ -141,19 +142,19 @@
     // Filters
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("blur", variables.$blur, (
+    @include mixins.createUtility("blur", tokens.$blur, (
         "blur": "blur"
     ));
 
-    @include mixins.createUtility("brightness", variables.$brightness, (
+    @include mixins.createUtility("brightness", tokens.$brightness, (
         "brightness": "brightness"
     ));
 
-    @include mixins.createUtility("contrast", variables.$contrast, (
+    @include mixins.createUtility("contrast", tokens.$contrast, (
         "contrast": "contrast"
     ));
 
-    @include mixins.createUtility("grayscale", variables.$grayscale, (
+    @include mixins.createUtility("grayscale", tokens.$grayscale, (
         "grayscale": "grayscale"
     ));
 
