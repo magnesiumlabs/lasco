@@ -4,11 +4,11 @@
 
 @use "sass:list";
 @use "sass:map";
-@use "sass:meta";
 @use "@unsass/breakpoint";
 @use "@unsass/css";
 @use "@unsass/selector";
 @use "@unsass/string";
+@use "@unsass/types" as type;
 @use "./variables";
 @use "./functions";
 
@@ -40,7 +40,7 @@
         $property: "filter";
     }
 
-    @if meta.type-of($value) == "string" {
+    @if type.is-string($value) {
         $value: string.unquote($value);
     }
 
@@ -79,7 +79,7 @@
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
 
-    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
+    @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
         @each $key in map.get(variables.$extend, $property) {
             $extend: map.set($extend, $key, map.get($utilities, $key));
         }
@@ -87,7 +87,7 @@
         $extend: functions.extend($utilities, $property);
     }
 
-    @if $variation and meta.type-of($variation) == "map" {
+    @if $variation and type.is-map($variation) {
         @each $key, $value in $variation {
             $properties: $value;
             $filter: false;
@@ -96,7 +96,7 @@
             /// Filter property.
             ///
 
-            @if meta.type-of($value) == "string" and list.index(variables.$filters, $value) != null {
+            @if type.is-string($value) and list.index(variables.$filters, $value) != null {
                 $filter: true
             }
 
@@ -107,7 +107,7 @@
             @include _selector($key, variables.$prefix) {
                 @include _responsive($property) {
                     @each $key, $value in $extend {
-                        @if meta.type-of($key) == "string" {
+                        @if type.is-string($key) {
                             $key: string.replace($key, "/", \/);
                         }
 

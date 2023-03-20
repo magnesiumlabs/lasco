@@ -4,12 +4,12 @@
 
 @use "sass:list";
 @use "sass:map";
-@use "sass:meta";
 @use "sass:string";
+@use "@unsass/types" as type;
 @use "./variables";
 
 @function is-quoted-string($value) {
-    @if meta.type-of($value) == string {
+    @if type.is-string($value) {
         @return string.unquote($value);
     }
 
@@ -19,7 +19,7 @@
 @function extend($default, $property) {
     $map: $default;
 
-    @if (meta.type-of(map.get(variables.$extend, $property)) == "map") {
+    @if (type.is-map(map.get(variables.$extend, $property))) {
         $map: map.merge($default, map.get(variables.$extend, $property));
     }
 
@@ -29,7 +29,7 @@
 @function filter($default, $property) {
     $list: $default;
 
-    @if meta.type-of(map.get(variables.$extend, $property)) == "list" or meta.type-of(map.get(variables.$extend, $property)) == "string" or meta.type-of(map.get(variables.$extend, $property)) == "number" {
+    @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
         @each $value in map.get(variables.$extend, $property) {
             @if list.index($default, $value) == null {
                 @error "Invalid '#{$value}' option, '#{$value}' is not alowed here. Choose one of '#{$default}' options.";
@@ -71,7 +71,7 @@
 @function has-breakpoints() {
     $breakpoint: false;
 
-    @if (map.has-key(variables.$engine, "screens") and meta.type-of(map.get(variables.$engine, "screens")) == map) or (map.has-key(variables.$engine, "screens") and meta.type-of(map.get(variables.$engine, "screens")) == list) {
+    @if (map.has-key(variables.$engine, "screens") and type.is-map(map.get(variables.$engine, "screens"))) or (map.has-key(variables.$engine, "screens") and type.is-list(map.get(variables.$engine, "screens"))) {
         $breakpoint: true;
     }
 
