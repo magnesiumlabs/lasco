@@ -41,15 +41,15 @@
         "semantic-release": "^20.1.1",
         "vitepress": "^1.0.0-alpha.49",
         "vue": "^3.2.45",
-        "webpack": "^5.74.0",
+        "webpack": "^5.76.2",
         "webpack-cli": "^5.0.1"
     },
     "dependencies": {
         "@unsass/breakpoint": "^2.1.2",
         "@unsass/css": "^2.1.0",
-        "@unsass/selector": "^1.0.0",
+        "@unsass/selector": "^1.2.0",
         "@unsass/string": "^1.0.0",
-        "sass": "^1.53.0"
+        "sass": "^1.59.3"
     },
     "files": [
         "*.scss",

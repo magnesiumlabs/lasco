@@ -55,10 +55,8 @@
     @if functions.has-breakpoints() {
         @each $key, $value in breakpoint.get-screens() {
             @include breakpoint.up($key) {
-                @at-root {
-                    @include selector.create("#{list.nth(&, 1)}", $key, variables.$separator) {
-                        @content;
-                    }
+                @include selector.create("#{list.nth(&, 1)}", $key, variables.$separator, $root: true) {
+                    @content;
                 }
             }
         }
