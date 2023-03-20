@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("brightness", core.$brightness, (
+                @include core.createUtility("brightness", core.$filter-brightness, (
                     "brightness": "brightness"
                 ));
             }

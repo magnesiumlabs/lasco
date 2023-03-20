@@ -142,19 +142,19 @@
     // Filters
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("blur", tokens.$blur, (
+    @include mixins.createUtility("blur", tokens.$filter-blur, (
         "blur": "blur"
     ));
 
-    @include mixins.createUtility("brightness", tokens.$brightness, (
+    @include mixins.createUtility("brightness", tokens.$filter-brightness, (
         "brightness": "brightness"
     ));
 
-    @include mixins.createUtility("contrast", tokens.$contrast, (
+    @include mixins.createUtility("contrast", tokens.$filter-contrast, (
         "contrast": "contrast"
     ));
 
-    @include mixins.createUtility("grayscale", tokens.$grayscale, (
+    @include mixins.createUtility("grayscale", tokens.$filter-grayscale, (
         "grayscale": "grayscale"
     ));
 
