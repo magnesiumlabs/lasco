@@ -5,11 +5,10 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
-@use "sass:string";
 @use "@unsass/breakpoint";
 @use "@unsass/css";
 @use "@unsass/selector";
-@use "@unsass/string" as unsass-string;
+@use "@unsass/string";
 @use "./variables";
 @use "./functions";
 
@@ -109,7 +108,7 @@
                 @include _responsive($property) {
                     @each $key, $value in $extend {
                         @if meta.type-of($key) == "string" {
-                            $key: unsass-string.replace($key, "/", \/);
+                            $key: string.replace($key, "/", \/);
                         }
 
                         @if $key == "DEFAULT" {
