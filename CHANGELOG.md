@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.0](https://github.com/magnesiumlabs/lasco/compare/v2.5.0...v2.6.0) (2023-03-21)
+
+
+### Features
+
+* **fill:** add main styles ([5255fa9](https://github.com/magnesiumlabs/lasco/commit/5255fa9d3d895f2eb4193a756e854d67ed2d108c))
+
+
+### Code Refactoring
+
+* madd `has-declaration` function ([a509f61](https://github.com/magnesiumlabs/lasco/commit/a509f611a352f89ce7c76b1d82904b7c0d7e8749))
+* remove unneeded `()` ([76b8f1e](https://github.com/magnesiumlabs/lasco/commit/76b8f1e2cc111391d48f441fa13b1c4e00a20179))
+* remove unneeded namespace ([3dd4bd8](https://github.com/magnesiumlabs/lasco/commit/3dd4bd8c4b94e1903095ea42ffda235f40642681))
+* remove unneeded namespaces ([0f90ce2](https://github.com/magnesiumlabs/lasco/commit/0f90ce278a39d3dc528ea7df71b8169fc7dca621))
+* remove unneeded option condition ([5521cb0](https://github.com/magnesiumlabs/lasco/commit/5521cb0e6f8e4b10df3aa065410033148fa0b305))
+* rename `_index.scss` to `index.scss` ([474687f](https://github.com/magnesiumlabs/lasco/commit/474687f25e02b39622b925e98e6f7abdcfab3391))
+* use `selector.create` instead of `css.selector` ([1df4479](https://github.com/magnesiumlabs/lasco/commit/1df44795d30174a72d277f9a533b2b2071d9b881))
+
+
+### Build System
+
+* **deps:** add `@unsass/types` 1.0.2 ([60a9772](https://github.com/magnesiumlabs/lasco/commit/60a977227121ad762820494b86233d13e44202dd))
+* **deps:** bump to `@unsass/selector` 1.2.0 ([4ca3021](https://github.com/magnesiumlabs/lasco/commit/4ca30218c4fb36cbe88db8e4f11d64a9be789659))
+* **deps:** replace `@unsass/utilities` for `@unsass/string` ([d2c92bb](https://github.com/magnesiumlabs/lasco/commit/d2c92bb6bfa8fc0e98b985790230d3906cc51463))
+* sort media queries ([ad0e46f](https://github.com/magnesiumlabs/lasco/commit/ad0e46ff06a406f8b8eeb95287772993f5976ed6))
+
 ## [2.5.0](https://github.com/magnesiumlabs/lasco/compare/v2.4.0...v2.5.0) (2022-09-07)
 
 
