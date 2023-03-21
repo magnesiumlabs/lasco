@@ -1,0 +1,53 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src" as core with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "fill": (
+            "red": red
+        )
+    )
+);
+
+@include describe("fill") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("fill", core.$fill, (
+                    "fill": "fill"
+                ));
+            }
+
+            @include expect(false) {
+                .fill-none {
+                    fill: none;
+                }
+
+                .fill-current {
+                    fill: currentColor;
+                }
+
+                .fill-transparent {
+                    fill: transparent;
+                }
+
+                .fill-black {
+                    fill: #000;
+                }
+
+                .fill-white {
+                    fill: #fff;
+                }
+
+                .fill-red {
+                    fill: red;
+                }
+            }
+        }
+    }
+}

@@ -314,4 +314,8 @@
     @include mixins.createUtility("appearance", variables.$appearance, (
         "appearance": "appearance"
     ));
+
+    @include mixins.createUtility("fill", variables.$fill, (
+        "fill": "fill"
+    ));
 }

@@ -448,3 +448,11 @@ $z-index: (
     "0": "0",
     "auto": "auto"
 );
+
+$fill: (
+    "none": "none",
+    "current": "currentColor",
+    "transparent": "transparent",
+    "black": #000,
+    "white": #fff
+)
