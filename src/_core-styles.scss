@@ -25,7 +25,7 @@
         "clear": "clear"
     ));
 
-    @include mixins.createUtility("display", variables.$display);
+    @include mixins.createUtility("display", tokens.$display);
 
     @include mixins.createUtility("float", variables.$float, (
         "float": "float"
