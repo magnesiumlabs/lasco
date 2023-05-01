@@ -46,7 +46,7 @@
     // Effects
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("opacity", variables.$opacity, (
+    @include mixins.createUtility("opacity", tokens.opacity-values(), (
         "opacity": "opacity"
     ));
 
