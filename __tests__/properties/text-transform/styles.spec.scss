@@ -13,7 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("text-transform", core.$text-transform, (
+                @include core.createUtility("text-transform", core.text-transform-values(), (
                     "text": "text-transform"
                 ));
             }

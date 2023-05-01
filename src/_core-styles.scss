@@ -94,11 +94,11 @@
         "font": "font-weight"
     ));
 
-    @include mixins.createUtility("text-align", variables.$text-align, (
+    @include mixins.createUtility("text-align", variables.text-align-values(), (
         "text": "text-align"
     ));
 
-    @include mixins.createUtility("text-transform", variables.$text-transform, (
+    @include mixins.createUtility("text-transform", tokens.text-transform-values(), (
         "text": "text-transform"
     ));
 
