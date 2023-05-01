@@ -21,13 +21,13 @@
         "aspect": "aspect-ratio"
     ));
 
-    @include mixins.createUtility("clear", tokens.$clear, (
+    @include mixins.createUtility("clear", tokens.clear-values(), (
         "clear": "clear"
     ));
 
-    @include mixins.createUtility("display", tokens.$display);
+    @include mixins.createUtility("display", tokens.display-values());
 
-    @include mixins.createUtility("float", tokens.$float, (
+    @include mixins.createUtility("float", tokens.float-values(), (
         "float": "float"
     ));
 

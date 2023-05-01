@@ -4,11 +4,11 @@
 
 @forward "appearance" as appearance-*;
 @forward "backgrounds" as background-*;
-@forward "display";
-@forward "clear";
+@forward "display" as display-*;
+@forward "clear" as clear-*;
 @forward "fill" as fill-*;
 @forward "filters" as filter-*;
-@forward "float";
+@forward "float" as float-*;
 @forward "opacity" as opacity-*;
 @forward "pointer-events" as pointer-events-*;
 @forward "position" as position-*;

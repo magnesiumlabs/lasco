@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("clear", core.$clear, (
+                @include core.createUtility("clear", core.clear-values(), (
                     "clear": "clear"
                 ));
             }

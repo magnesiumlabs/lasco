@@ -2,8 +2,10 @@
 //                                            TOKENS                                             //
 // ============================================================================================= //
 
-$float: (
-    "left": "left",
-    "right": "right",
-    "none": "none"
-);
+@function values() {
+    @return (
+        "left": "left",
+        "right": "right",
+        "none": "none"
+    );
+}

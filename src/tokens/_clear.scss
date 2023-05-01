@@ -2,9 +2,11 @@
 //                                            TOKENS                                             //
 // ============================================================================================= //
 
-$clear: (
-    "none": "none",
-    "left": "left",
-    "right": "right",
-    "both": "both"
-);
+@function values() {
+    @return (
+        "none": "none",
+        "left": "left",
+        "right": "right",
+        "both": "both"
+    );
+}
