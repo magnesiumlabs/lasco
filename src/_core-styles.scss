@@ -35,7 +35,7 @@
         "object": "object-fit"
     ));
 
-    @include mixins.createUtility("position", variables.$position);
+    @include mixins.createUtility("position", tokens.position-values());
     @include mixins.createUtility("visibility", tokens.visibility-values());
 
     @include mixins.createUtility("z-index", tokens.z-index-values(), (
