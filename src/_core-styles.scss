@@ -316,7 +316,7 @@
         "appearance": "appearance"
     ));
 
-    @include mixins.createUtility("fill", variables.$fill, (
+    @include mixins.createUtility("fill", tokens.fill-values(), (
         "fill": "fill"
     ));
 }

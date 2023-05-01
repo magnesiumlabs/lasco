@@ -13,7 +13,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("fill", core.$fill, (
+                @include core.createUtility("fill", core.fill-values(), (
                     "fill": "fill"
                 ));
             }

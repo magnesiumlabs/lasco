@@ -6,6 +6,7 @@
 @forward "backgrounds" as background-*;
 @forward "display";
 @forward "clear";
+@forward "fill" as fill-*;
 @forward "filters" as filter-*;
 @forward "float";
 @forward "z-index" as z-index-*;
