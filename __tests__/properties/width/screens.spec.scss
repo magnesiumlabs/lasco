@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("width", core.$width, (
+                @include core.createUtility("width", core.width-values(), (
                     "w": "width"
                 ));
             }
