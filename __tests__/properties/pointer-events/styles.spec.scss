@@ -1,0 +1,32 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../src" as core with (
+    $engine: (
+        "screens": false
+    )
+);
+
+@include describe("pointer-events") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("pointer-events", core.pointer-events-values(), (
+                    "pointer-events": "pointer-events"
+                ));
+            }
+
+            @include expect(false) {
+                .pointer-events-none {
+                    pointer-events: none;
+                }
+
+                .pointer-events-auto {
+                    pointer-events: auto;
+                }
+            }
+        }
+    }
+}

@@ -316,6 +316,10 @@
         "appearance": "appearance"
     ));
 
+    @include mixins.createUtility("pointer-events", tokens.pointer-events-values(), (
+        "pointer-events": "pointer-events"
+    ));
+
     @include mixins.createUtility("fill", tokens.fill-values(), (
         "fill": "fill"
     ));
