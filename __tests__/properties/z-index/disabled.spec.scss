@@ -13,7 +13,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("z-index", core.$opacity, (
+                @include core.createUtility("z-index", core.$z-index, (
                     "z": "z-index"
                 ));
             }
