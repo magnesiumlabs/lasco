@@ -13,7 +13,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("visibility", core.$visibility);
+                @include core.createUtility("visibility", core.visibility-values());
             }
 
             @include expect(false) {

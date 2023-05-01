@@ -36,7 +36,7 @@
     ));
 
     @include mixins.createUtility("position", variables.$position);
-    @include mixins.createUtility("visibility", variables.$visibility);
+    @include mixins.createUtility("visibility", tokens.visibility-values());
 
     @include mixins.createUtility("z-index", tokens.z-index-values(), (
         "z": "z-index"
