@@ -312,7 +312,7 @@
     // Others
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("appearance", variables.$appearance, (
+    @include mixins.createUtility("appearance", tokens.appearance-values(), (
         "appearance": "appearance"
     ));
 

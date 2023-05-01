@@ -2,6 +2,7 @@
 //                                             INDEX                                             //
 // ============================================================================================= //
 
+@forward "appearance" as appearance-*;
 @forward "backgrounds" as background-*;
 @forward "display";
 @forward "clear";
