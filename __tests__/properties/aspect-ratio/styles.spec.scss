@@ -13,7 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("aspect-ratio", core.$aspect-ratio,  (
+                @include core.createUtility("aspect-ratio", core.aspect-ratio-values(),  (
                     "aspect": 'aspect-ratio'
                 ));
             }

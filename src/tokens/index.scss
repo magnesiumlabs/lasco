@@ -2,6 +2,7 @@
 //                                             INDEX                                             //
 // ============================================================================================= //
 
+@forward "aspect-ratio" as aspect-ratio-*;
 @forward "appearance" as appearance-*;
 @forward "backgrounds" as background-*;
 @forward "display" as display-*;
@@ -9,6 +10,7 @@
 @forward "fill" as fill-*;
 @forward "filters" as filter-*;
 @forward "float" as float-*;
+@forward "object-fit" as object-fit-*;
 @forward "opacity" as opacity-*;
 @forward "pointer-events" as pointer-events-*;
 @forward "position" as position-*;

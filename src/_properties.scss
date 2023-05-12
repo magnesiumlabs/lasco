@@ -4,12 +4,6 @@
 
 @use "@unsass/breakpoint";
 
-$aspect-ratio: (
-    "auto": "auto",
-    "square": "1/1",
-    "video": "16/9"
-);
-
 $align-content: (
     "start": "start",
     "end": "end",
@@ -248,14 +242,6 @@ $max-width: (
 );
 
 $max-width-screens: breakpoint.get-screens();
-
-$object-fit: (
-    "contain": "contain",
-    "cover": "cover",
-    "fill": "fill",
-    "scale-down": "scale-down",
-    "none": "none"
-);
 
 $order: (
     "0": "0",

@@ -17,7 +17,7 @@
     // Layout
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("aspect-ratio", variables.$aspect-ratio, (
+    @include mixins.createUtility("aspect-ratio", tokens.aspect-ratio-values(), (
         "aspect": "aspect-ratio"
     ));
 
@@ -31,7 +31,7 @@
         "float": "float"
     ));
 
-    @include mixins.createUtility("object-fit", variables.$object-fit, (
+    @include mixins.createUtility("object-fit", tokens.object-fit-values(), (
         "object": "object-fit"
     ));
 
