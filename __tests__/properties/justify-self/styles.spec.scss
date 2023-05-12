@@ -13,7 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("justify-self", core.$justify-self, (
+                @include core.createUtility("justify-self", core.justify-self-values(), (
                     "justify-self": "justify-self"
                 ));
             }

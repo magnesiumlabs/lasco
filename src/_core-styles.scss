@@ -232,15 +232,15 @@
         "align-self": "align-self"
     ));
 
-    @include mixins.createUtility("justify-content", variables.$justify-content, (
+    @include mixins.createUtility("justify-content", tokens.justify-content-values(), (
         "justify-content": "justify-content"
     ));
 
-    @include mixins.createUtility("justify-items", variables.$justify-items, (
+    @include mixins.createUtility("justify-items", tokens.justify-items-values(), (
         "justify-items": "justify-items"
     ));
 
-    @include mixins.createUtility("justify-self", variables.$justify-self, (
+    @include mixins.createUtility("justify-self", tokens.justify-self-values(), (
         "justify-self": "justify-self"
     ));
 

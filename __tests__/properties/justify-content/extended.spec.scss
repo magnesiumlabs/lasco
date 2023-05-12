@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("justify-content", core.$justify-content, (
+                @include core.createUtility("justify-content", core.justify-content-values(), (
                     "justify-content": "justify-content"
                 ));
             }
