@@ -13,7 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.$max-width, (
+                @include core.createUtility("max-width", core.max-width-values(), (
                     "max-w": "max-width"
                 ));
             }
@@ -55,7 +55,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.$max-width-screens, (
+                @include core.createUtility("max-width", core.max-width-screen-values(), (
                     "max-w-screen": "max-width"
                 ));
             }

@@ -54,15 +54,15 @@
     // Sizing
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("min-width", variables.$min-width, (
+    @include mixins.createUtility("min-width", tokens.min-width-values(), (
         "min-w": "min-width"
     ));
 
-    @include mixins.createUtility("max-width", variables.$max-width, (
+    @include mixins.createUtility("max-width", tokens.max-width-values(), (
         "max-w": "max-width"
     ));
 
-    @include mixins.createUtility("max-width", variables.$max-width-screens, (
+    @include mixins.createUtility("max-width", tokens.max-width-screen-values(), (
         "max-w-screen": "max-width"
     ));
 
@@ -70,15 +70,15 @@
         "w": "width"
     ));
 
-    @include mixins.createUtility("min-height", variables.$min-height, (
+    @include mixins.createUtility("min-height", tokens.min-height-values(), (
         "min-h": "min-height"
     ));
 
-    @include mixins.createUtility("max-height", variables.$max-height, (
+    @include mixins.createUtility("max-height", tokens.max-height-values(), (
         "max-h": "max-height"
     ));
 
-    @include mixins.createUtility("height", variables.$height, (
+    @include mixins.createUtility("height", tokens.height-values(), (
         "h": "height"
     ));
 

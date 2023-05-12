@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("min-width", core.$min-width, (
+                @include core.createUtility("min-width", core.min-width-values(), (
                     "min-w": "min-width"
                 ));
             }

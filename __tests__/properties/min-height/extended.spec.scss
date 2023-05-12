@@ -20,7 +20,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("min-height", core.$min-height, (
+                @include core.createUtility("min-height", core.min-height-values(), (
                     "min-h": "min-height"
                 ));
             }

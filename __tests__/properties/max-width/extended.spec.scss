@@ -20,7 +20,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.$max-width, (
+                @include core.createUtility("max-width", core.max-width-values(), (
                     "max-w": "max-width"
                 ));
             }
