@@ -19,7 +19,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("gap", core.$gap, (
+                @include core.createUtility("gap", core.gap-values(), (
                     "gap": "gap",
                     "gap-x": (
                         "column-gap"

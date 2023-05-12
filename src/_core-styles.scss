@@ -210,7 +210,7 @@
         "col-end": "grid-column-end"
     ));
 
-    @include mixins.createUtility("gap", variables.$gap, (
+    @include mixins.createUtility("gap", tokens.gap-values(), (
         "gap": "gap",
         "gap-x": (
             "column-gap"
