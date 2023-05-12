@@ -20,7 +20,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("order", core.$order, (
+                @include core.createUtility("order", core.order-values(), (
                     "order": "order"
                 ));
             }

@@ -186,7 +186,7 @@
         "flex-basis": "flex-basis"
     ));
 
-    @include mixins.createUtility("order", variables.$order, (
+    @include mixins.createUtility("order", tokens.order-values(), (
         "order": "order"
     ));
 
