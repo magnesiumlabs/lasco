@@ -260,7 +260,7 @@
     // Spacing
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("margin", variables.$margin, (
+    @include mixins.createUtility("margin", tokens.margin-values(), (
         "m": "margin",
         "mx": (
             "margin-left",
@@ -284,7 +284,7 @@
         )
     ));
 
-    @include mixins.createUtility("padding", variables.$padding, (
+    @include mixins.createUtility("padding", tokens.padding-values(), (
         "p": "padding",
         "px": (
             "padding-left",

@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("padding", core.$padding, (
+                @include core.createUtility("padding", core.padding-values(), (
                     "p": "padding",
                     "px": (
                         "padding-left",
