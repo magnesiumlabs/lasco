@@ -86,11 +86,11 @@
     // Typography
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("font-style", variables.$font-style, (
+    @include mixins.createUtility("font-style", tokens.font-style-values(), (
         "font": "font-style"
     ));
 
-    @include mixins.createUtility("font-weight", variables.$font-weight, (
+    @include mixins.createUtility("font-weight", tokens.font-weight-values(), (
         "font": "font-weight"
     ));
 

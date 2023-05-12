@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("font-weight", core.$font-weight, (
+                @include core.createUtility("font-weight", core.font-weight-values(), (
                     "font": "font-weight"
                 ));
             }
