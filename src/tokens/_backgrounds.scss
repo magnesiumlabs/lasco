@@ -2,54 +2,70 @@
 //                                            TOKENS                                             //
 // ============================================================================================= //
 
-$attachment: (
-    "fixed": "fixed",
-    "local": "local",
-    "scroll": "scroll"
-);
+@function attachment-values() {
+    @return (
+        "fixed": "fixed",
+        "local": "local",
+        "scroll": "scroll"
+    );
+}
 
-$clip: (
-    "border": "border-box",
-    "content": "content-box",
-    "padding": "padding-box",
-    "text": "text"
-);
+@function clip-values() {
+    @return (
+        "border": "border-box",
+        "content": "content-box",
+        "padding": "padding-box",
+        "text": "text"
+    );
+}
 
-$color: (
-    "inherit": "inherit",
-    "current": "currentColor",
-    "transparent": "transparent"
-);
+@function color-values() {
+    @return (
+        "inherit": "inherit",
+        "current": "currentColor",
+        "transparent": "transparent"
+    );
+}
 
-$image: (
-    "none": "none"
-);
+@function image-values() {
+    @return (
+        "none": "none"
+    );
+}
 
-$origin: (
-    "border": "border-box",
-    "content": "content-box",
-    "padding": "padding-box"
-);
+@function origin-values() {
+    @return (
+        "border": "border-box",
+        "content": "content-box",
+        "padding": "padding-box"
+    );
+}
 
-$position: (
-    "bottom": "bottom",
-    "center": "center",
-    "left": "left",
-    "right": "right",
-    "top": "top"
-);
+@function position-values() {
+    @return (
+        "bottom": "bottom",
+        "center": "center",
+        "left": "left",
+        "right": "right",
+        "top": "top"
+    );
+}
 
-$repeat: (
-    "repeat": "repeat",
-    "no-repeat": "no-repeat",
-    "repeat-x": "repeat-x",
-    "repeat-y": "repeat-y",
-    "repeat-round": "round",
-    "repeat-space": "space"
-);
+@function repeat-values() {
+    @return (
+        "repeat": "repeat",
+        "no-repeat": "no-repeat",
+        "repeat-x": "repeat-x",
+        "repeat-y": "repeat-y",
+        "repeat-round": "round",
+        "repeat-space": "space"
+    );
+}
 
-$size: (
-    "auto": "auto",
-    "cover": "cover",
-    "contain": "contain"
-);
+@function size-values() {
+    @return (
+        "auto": "auto",
+        "cover": "cover",
+        "contain": "contain"
+    );
+}

@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grayscale", core.$filter-grayscale, (
+                @include core.createUtility("grayscale", core.filter-grayscale-values(), (
                     "grayscale": "grayscale"
                 ));
             }

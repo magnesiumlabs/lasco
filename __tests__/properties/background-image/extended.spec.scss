@@ -20,7 +20,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-image", core.$background-image, (
+                @include core.createUtility("background-image", core.background-image-values(), (
                     "bg-image": "background-image"
                 ));
             }

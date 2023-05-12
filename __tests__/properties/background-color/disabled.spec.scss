@@ -13,7 +13,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-color", core.$background-color, (
+                @include core.createUtility("background-color", core.background-color-values(), (
                     "bg-color": "background-color"
                 ));
             }

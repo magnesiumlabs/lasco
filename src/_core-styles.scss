@@ -106,35 +106,35 @@
     // Backgrounds
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("background-attachment", tokens.$background-attachment, (
+    @include mixins.createUtility("background-attachment", tokens.background-attachment-values(), (
         "bg-attachment": "background-attachment"
     ));
 
-    @include mixins.createUtility("background-clip", tokens.$background-clip, (
+    @include mixins.createUtility("background-clip", tokens.background-clip-values(), (
         "bg-clip": "background-clip"
     ));
 
-    @include mixins.createUtility("background-color", tokens.$background-color, (
+    @include mixins.createUtility("background-color", tokens.background-color-values(), (
         "bg-color": "background-color"
     ));
 
-    @include mixins.createUtility("background-image", tokens.$background-image, (
+    @include mixins.createUtility("background-image", tokens.background-image-values(), (
         "bg-image": "background-image"
     ));
 
-    @include mixins.createUtility("background-origin", tokens.$background-origin, (
+    @include mixins.createUtility("background-origin", tokens.background-origin-values(), (
         "bg-origin": "background-origin"
     ));
 
-    @include mixins.createUtility("background-position", tokens.$background-position, (
+    @include mixins.createUtility("background-position", tokens.background-position-values(), (
         "bg-position": "background-position"
     ));
 
-    @include mixins.createUtility("background-repeat", tokens.$background-repeat, (
+    @include mixins.createUtility("background-repeat", tokens.background-repeat-values(), (
         "bg": "background-repeat"
     ));
 
-    @include mixins.createUtility("background-size", tokens.$background-size, (
+    @include mixins.createUtility("background-size", tokens.background-size-values(), (
         "bg-size": "background-size"
     ));
 
@@ -142,19 +142,19 @@
     // Filters
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("blur", tokens.$filter-blur, (
+    @include mixins.createUtility("blur", tokens.filter-blur-values(), (
         "blur": "blur"
     ));
 
-    @include mixins.createUtility("brightness", tokens.$filter-brightness, (
+    @include mixins.createUtility("brightness", tokens.filter-brightness-values(), (
         "brightness": "brightness"
     ));
 
-    @include mixins.createUtility("contrast", tokens.$filter-contrast, (
+    @include mixins.createUtility("contrast", tokens.filter-contrast-values(), (
         "contrast": "contrast"
     ));
 
-    @include mixins.createUtility("grayscale", tokens.$filter-grayscale, (
+    @include mixins.createUtility("grayscale", tokens.filter-grayscale-values(), (
         "grayscale": "grayscale"
     ));
 

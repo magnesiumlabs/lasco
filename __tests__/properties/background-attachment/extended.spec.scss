@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-attachment", core.$background-attachment, (
+                @include core.createUtility("background-attachment", core.background-attachment-values(), (
                     "bg-attachment": "background-attachment"
                 ));
             }

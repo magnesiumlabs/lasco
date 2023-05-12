@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-clip", core.$background-clip, (
+                @include core.createUtility("background-clip", core.background-clip-values(), (
                     "bg-clip": "background-clip"
                 ));
             }

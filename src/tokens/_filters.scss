@@ -2,21 +2,29 @@
 //                                            TOKENS                                             //
 // ============================================================================================= //
 
-$blur: (
-    "0": "0"
-);
+@function blur-values() {
+    @return (
+        "0": "0"
+    );
+}
 
-$brightness: (
-    "0": "0",
-    "100": "1"
-);
+@function brightness-values() {
+    @return (
+        "0": "0",
+        "100": "1"
+    );
+}
 
-$contrast: (
-    "0": "0",
-    "100": "1"
-);
+@function contrast-values() {
+    @return (
+        "0": "0",
+        "100": "1"
+    );
+}
 
-$grayscale: (
-    "DEFAULT": "1",
-    "0": "0"
-);
+@function grayscale-values() {
+    @return (
+        "DEFAULT": "1",
+        "0": "0"
+    );
+}

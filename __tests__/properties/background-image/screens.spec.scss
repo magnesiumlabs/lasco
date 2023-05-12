@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-image", core.$background-image, (
+                @include core.createUtility("background-image", core.background-image-values(), (
                     "bg-image": "background-image"
                 ));
             }

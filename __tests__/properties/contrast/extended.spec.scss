@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("contrast", core.$filter-contrast, (
+                @include core.createUtility("contrast", core.filter-contrast-values(), (
                     "contrast": "contrast"
                 ));
             }
