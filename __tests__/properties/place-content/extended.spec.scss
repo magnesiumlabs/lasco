@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("place-content", core.$place-content, (
+                @include core.createUtility("place-content", core.place-content-values(), (
                     "place-content": "place-content"
                 ));
             }

@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("place-items", core.$place-items, (
+                @include core.createUtility("place-items", core.place-items-values(), (
                     "place-items": "place-items"
                 ));
             }

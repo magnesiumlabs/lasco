@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                            TOKENS                                             //
+// ============================================================================================= //
+
+@function content-values() {
+    @return (
+        "start": "start",
+        "end": "end",
+        "center": "center",
+        "space-between": "space-between",
+        "space-around": "space-around",
+        "space-evenly": "space-evenly",
+        "stretch": "stretch"
+    );
+}
+
+@function items-values() {
+    @return (
+        "start": "start",
+        "end": "end",
+        "center": "center",
+        "stretch": "stretch"
+    );
+}
+
+@function self-values() {
+    @return (
+        "auto": "auto",
+        "start": "start",
+        "end": "end",
+        "center": "center",
+        "stretch": "stretch"
+    );
+}

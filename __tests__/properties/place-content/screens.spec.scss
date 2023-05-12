@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("place-content", core.$place-content, (
+                @include core.createUtility("place-content", core.place-content-values(), (
                     "place-content": "place-content"
                 ));
             }

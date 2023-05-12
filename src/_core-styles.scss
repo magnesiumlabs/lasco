@@ -244,15 +244,15 @@
         "justify-self": "justify-self"
     ));
 
-    @include mixins.createUtility("place-content", variables.$place-content, (
+    @include mixins.createUtility("place-content", tokens.place-content-values(), (
         "place-content": "place-content"
     ));
 
-    @include mixins.createUtility("place-items", variables.$place-items, (
+    @include mixins.createUtility("place-items", tokens.place-items-values(), (
         "place-items": "place-items"
     ));
 
-    @include mixins.createUtility("place-self", variables.$place-self, (
+    @include mixins.createUtility("place-self", tokens.place-self-values(), (
         "place-self": "place-self"
     ));
 
