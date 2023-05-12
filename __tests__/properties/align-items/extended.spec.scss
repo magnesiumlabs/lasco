@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("align-items", core.$align-items, (
+                @include core.createUtility("align-items", core.align-items-values(), (
                     "align-items": "align-items"
                 ));
             }

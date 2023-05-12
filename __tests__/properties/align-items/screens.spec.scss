@@ -9,7 +9,7 @@
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("align-items", core.$align-items, (
+                @include core.createUtility("align-items", core.align-items-values(), (
                     "align-items": "align-items"
                 ));
             }

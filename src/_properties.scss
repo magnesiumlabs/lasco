@@ -4,32 +4,6 @@
 
 @use "@unsass/breakpoint";
 
-$align-content: (
-    "start": "start",
-    "end": "end",
-    "center": "center",
-    "space-between": "space-between",
-    "space-around": "space-around",
-    "space-evenly": "space-evenly"
-);
-
-$align-items: (
-    "start": "start",
-    "end": "end",
-    "center": "center",
-    "baseline": "baseline",
-    "stretch": "stretch"
-);
-
-$align-self: (
-    "auto": "auto",
-    "start": "start",
-    "end": "end",
-    "center": "center",
-    "stretch": "stretch",
-    "baseline": "baseline"
-);
-
 $flex: (
     "none": "none",
     "auto": "1 1 auto",

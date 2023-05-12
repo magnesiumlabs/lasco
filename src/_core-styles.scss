@@ -220,15 +220,15 @@
         )
     ));
 
-    @include mixins.createUtility("align-content", variables.$align-content, (
+    @include mixins.createUtility("align-content", tokens.align-content-values(), (
         "align-content": "align-content"
     ));
 
-    @include mixins.createUtility("align-items", variables.$align-items, (
+    @include mixins.createUtility("align-items", tokens.align-items-values(), (
         "align-items": "align-items"
     ));
 
-    @include mixins.createUtility("align-self", variables.$align-self, (
+    @include mixins.createUtility("align-self", tokens.align-self-values(), (
         "align-self": "align-self"
     ));
 
