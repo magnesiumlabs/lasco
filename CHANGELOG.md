@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.1](https://github.com/magnesiumlabs/lasco/compare/v2.6.0...v2.6.1) (2023-05-15)
+
+
+### Bug Fixes
+
+* **grid-column-start:** use good variables ([8b5aac8](https://github.com/magnesiumlabs/lasco/commit/8b5aac8895d7e05fff4e624e592135feabfa51c9))
+
+
+### Build System
+
+* **deps:** bump to `sass` 1.62.1 ([80000a9](https://github.com/magnesiumlabs/lasco/commit/80000a913e4fa498c0ce4c0a075629a28b8fb41f))
+
 ## [2.6.0](https://github.com/magnesiumlabs/lasco/compare/v2.5.0...v2.6.0) (2023-03-21)
 
 
