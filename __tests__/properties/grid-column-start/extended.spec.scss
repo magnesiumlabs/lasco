@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-column-start", core.$grid-column-start, (
+                @include core.createUtility("grid-column-start", core.grid-column-start-values(), (
                     "col-start": "grid-column-start"
                 ));
             }

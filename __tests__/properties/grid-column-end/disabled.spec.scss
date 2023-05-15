@@ -13,7 +13,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-column-end", core.$grid-column-end, (
+                @include core.createUtility("grid-column-end", core.grid-column-end-values(), (
                     "col-end": "grid-column-end"
                 ));
             }

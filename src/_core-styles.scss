@@ -190,23 +190,23 @@
         "order": "order"
     ));
 
-    @include mixins.createUtility("grid-template-columns", variables.$grid-template-columns, (
+    @include mixins.createUtility("grid-template-columns", tokens.grid-template-columns-values(), (
         "grid-cols": "grid-template-columns"
     ));
 
-    @include mixins.createUtility("grid-template-rows", variables.$grid-template-rows, (
+    @include mixins.createUtility("grid-template-rows", tokens.grid-template-rows-values(), (
         "grid-rows": "grid-template-rows"
     ));
 
-    @include mixins.createUtility("grid-column", variables.$grid-column, (
+    @include mixins.createUtility("grid-column", tokens.grid-column-values(), (
         "col": "grid-column"
     ));
 
-    @include mixins.createUtility("grid-column-start", variables.$grid-column-start, (
+    @include mixins.createUtility("grid-column-start", tokens.grid-column-start-values(), (
         "col-start": "grid-column-start"
     ));
 
-    @include mixins.createUtility("grid-column-end", variables.$grid-column-end, (
+    @include mixins.createUtility("grid-column-end", tokens.grid-column-end-values(), (
         "col-end": "grid-column-end"
     ));
 

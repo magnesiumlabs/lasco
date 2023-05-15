@@ -19,7 +19,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-template-columns", core.$grid-template-columns, (
+                @include core.createUtility("grid-template-columns", core.grid-template-columns-values(), (
                     "grid-cols": "grid-template-columns"
                 ));
             }
