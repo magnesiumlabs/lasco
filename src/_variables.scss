@@ -17,7 +17,7 @@ $filters: (
     "grayscale"
 );
 
-$default-engine: (
+$_default-engine: (
     "screens": (),
     "list": "black"
 );
@@ -36,4 +36,4 @@ $extend: () !default;
 /// Extend options.
 ///
 
-$engine: map.deep-merge($default-engine, $engine);
+$engine: map.deep-merge($_default-engine, $engine);
