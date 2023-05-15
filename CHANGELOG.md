@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.0](https://github.com/magnesiumlabs/lasco/compare/v2.6.1...v2.7.0) (2023-05-15)
+
+
+### Features
+
+* **pointer-events:** add main styles ([566d363](https://github.com/magnesiumlabs/lasco/commit/566d36363e7e591bc04294bee9637f73a227bbe9))
+
+
+### Code Refactoring
+
+* **align-content, align-items, align-self:** add new tokens method ([7104a46](https://github.com/magnesiumlabs/lasco/commit/7104a467d764801dd84348623fb57124b55782ef))
+* **appearance:** add new tokens method ([d2255af](https://github.com/magnesiumlabs/lasco/commit/d2255af378b6e3c08d0d389c2e680d6d6af9121e))
+* **aspect-ratio, object-fit:** add new tokens method ([402119d](https://github.com/magnesiumlabs/lasco/commit/402119da1a8582cfb85c241fc52d5f642999c117))
+* **background, filter:** use tokens functions ([8d589f8](https://github.com/magnesiumlabs/lasco/commit/8d589f801868d395b8a2774c636c702144589419))
+* **backgrounds, filters:** add new tokens method ([c54b85f](https://github.com/magnesiumlabs/lasco/commit/c54b85f6b22e9c0d13c8064c62e3f79d02247979))
+* **clear, display, float:** use tokens functions ([e9afb68](https://github.com/magnesiumlabs/lasco/commit/e9afb6825dcffe4f04f2ca3968201ba38027b820))
+* **clear, float:** add new tokens method ([e2d2b7b](https://github.com/magnesiumlabs/lasco/commit/e2d2b7bcf121938de3e6a2588b0ac27135fcb538))
+* **display:** add new tokens method ([f528229](https://github.com/magnesiumlabs/lasco/commit/f528229103c6b5a7a248a2a8412331fe4ff1af2f))
+* **fill:** add new tokens method ([a608c42](https://github.com/magnesiumlabs/lasco/commit/a608c42c4d29f7751fbf225761f192ff69c35143))
+* **filters:** prefix tokens variables ([572913c](https://github.com/magnesiumlabs/lasco/commit/572913c91608f1bd62ada7a8a36578a11b0427c6))
+* **flex:** add new tokens method ([07e1870](https://github.com/magnesiumlabs/lasco/commit/07e1870bbb7659af93fc0e9d955ab0d3de35263a))
+* **font-style, font-weight:** add new tokens method ([a06dbc2](https://github.com/magnesiumlabs/lasco/commit/a06dbc2089424d18e90a9d8ec6dacd01d097431c))
+* **gap:** add new tokens method ([0281dbd](https://github.com/magnesiumlabs/lasco/commit/0281dbd278cd72913258ee77bbb89b1de455ccf4))
+* **grid:** add new tokens method ([e02feb2](https://github.com/magnesiumlabs/lasco/commit/e02feb2f3f5796295b6624b4dd83688a56a53ce6))
+* **justify-content, justify-items, justify-self:** add new tokens method ([e698ab3](https://github.com/magnesiumlabs/lasco/commit/e698ab39350cb36433342e02814d781f643eff86))
+* **margin, padding:** add new tokens method ([2741d68](https://github.com/magnesiumlabs/lasco/commit/2741d68ae103894bfc2cd3dc3e2472cb2f633219))
+* **opacity:** add new tokens method ([f26c2cd](https://github.com/magnesiumlabs/lasco/commit/f26c2cd9c0ba7507d3b04649e00ea644a2d62809))
+* **order:** add new tokens method ([7aae5fe](https://github.com/magnesiumlabs/lasco/commit/7aae5fe119f77493bc1b72d787fb0513a6952577))
+* **place-content, place-items, place-self:** add new tokens method ([891f931](https://github.com/magnesiumlabs/lasco/commit/891f9312c97b3fe50762aee3c8a8a7c692491a2b))
+* **position:** add new tokens method ([cecce31](https://github.com/magnesiumlabs/lasco/commit/cecce31da4cfbe41a789ee20457304536ff70fc2))
+* removed unneeded `_properties.scss` file ([2c157ea](https://github.com/magnesiumlabs/lasco/commit/2c157ea8c7d3d2490a7dbde96551f5655533b8c7))
+* **sizing:** add new tokens method ([a5b5ea6](https://github.com/magnesiumlabs/lasco/commit/a5b5ea6fabd914b0f12f42df61e208992010a9df))
+* **text-align, text-transform:** add new tokens method ([5eae19e](https://github.com/magnesiumlabs/lasco/commit/5eae19e7eb7bcacf8e0c876d097ccb91f1f47d6e))
+* **variables:** switch `$default-engine` to private ([bcd180e](https://github.com/magnesiumlabs/lasco/commit/bcd180eea3f829c0835d6233580f2074c83c70c7))
+* **visibility:** add new tokens method ([2002492](https://github.com/magnesiumlabs/lasco/commit/20024922d6b24eeb8fc42a256e45805331d87b21))
+* **width:** add new tokens method ([80f3a81](https://github.com/magnesiumlabs/lasco/commit/80f3a81306c53463e18b6907524cf5e43a50366a))
+* **z-index:** add new tokens method ([7544164](https://github.com/magnesiumlabs/lasco/commit/754416403a03778f92f9ba3ee1e0af17742c04a0))
+
 ## [2.6.1](https://github.com/magnesiumlabs/lasco/compare/v2.6.0...v2.6.1) (2023-05-15)
 
 
