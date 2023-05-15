@@ -201,7 +201,7 @@
         "col": "grid-column"
     ));
 
-    @include mixins.createUtility("grid-column-start", variables.$grid-column-end, (
+    @include mixins.createUtility("grid-column-start", variables.$grid-column-start, (
         "col-start": "grid-column-start"
     ));
 
