@@ -4,41 +4,6 @@
 
 @use "@unsass/breakpoint";
 
-$flex: (
-    "none": "none",
-    "auto": "1 1 auto",
-    "initial": "0 1 auto"
-);
-
-$flex-basis: (
-    "0": "0",
-    "auto": "auto",
-    "full": "100%"
-);
-
-$flex-direction: (
-    "row": "row",
-    "row-reverse": "row-reverse",
-    "column": "column",
-    "column-reverse": "column-reverse"
-);
-
-$flex-grow: (
-    "DEFAULT": "1",
-    "0": "0"
-);
-
-$flex-shrink: (
-    "DEFAULT": "1",
-    "0": "0"
-);
-
-$flex-wrap: (
-    "wrap": "wrap",
-    "wrap-reverse": "wrap-reverse",
-    "nowrap": "nowrap"
-);
-
 $grid-column: (
     "auto": "auto",
     "span-full": "1 / -1",

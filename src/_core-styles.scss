@@ -162,27 +162,27 @@
     // Flexbox & Grid
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("flex", variables.$flex, (
+    @include mixins.createUtility("flex", tokens.flex-values() (
         "flex": "flex"
     ));
 
-    @include mixins.createUtility("flex-direction", variables.$flex-direction, (
+    @include mixins.createUtility("flex-direction", tokens.flex-direction-values(), (
         "flex": "flex-direction"
     ));
 
-    @include mixins.createUtility("flex-wrap", variables.$flex-wrap, (
+    @include mixins.createUtility("flex-wrap", tokens.flex-wrap-values(), (
         "flex": "flex-wrap"
     ));
 
-    @include mixins.createUtility("flex-grow", variables.$flex-grow, (
+    @include mixins.createUtility("flex-grow", tokens.flex-grow-values(), (
         "flex-grow": "flex-grow"
     ));
 
-    @include mixins.createUtility("flex-shrink", variables.$flex-shrink, (
+    @include mixins.createUtility("flex-shrink", tokens.flex-shrink-values(), (
         "flex-shrink": "flex-shrink"
     ));
 
-    @include mixins.createUtility("flex-basis", variables.$flex-basis, (
+    @include mixins.createUtility("flex-basis", tokens.flex-basis-values(), (
         "flex-basis": "flex-basis"
     ));
 

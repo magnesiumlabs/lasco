@@ -1,0 +1,50 @@
+// ============================================================================================= //
+//                                            TOKENS                                             //
+// ============================================================================================= //
+
+@function values() {
+    @return (
+        "none": "none",
+        "auto": "1 1 auto",
+        "initial": "0 1 auto"
+    );
+}
+
+@function basis-values() {
+    @return (
+        "0": "0",
+        "auto": "auto",
+        "full": "100%"
+    );
+}
+
+@function direction-values() {
+    @return (
+        "row": "row",
+        "row-reverse": "row-reverse",
+        "column": "column",
+        "column-reverse": "column-reverse"
+    );
+}
+
+@function grow-values() {
+    @return (
+        "DEFAULT": "1",
+        "0": "0"
+    );
+}
+
+@function shrink-values() {
+    @return (
+        "DEFAULT": "1",
+        "0": "0"
+    );
+}
+
+@function wrap-values() {
+    @return (
+        "wrap": "wrap",
+        "wrap-reverse": "wrap-reverse",
+        "nowrap": "nowrap"
+    );
+}

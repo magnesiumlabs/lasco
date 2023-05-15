@@ -13,7 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-basis", core.$flex-basis, (
+                @include core.createUtility("flex-basis", core.flex-basis-values(), (
                     "flex-basis": "flex-basis"
                 ));
             }

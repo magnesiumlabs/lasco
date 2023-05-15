@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-grow", core.$flex-grow, (
+                @include core.createUtility("flex-grow", core.flex-grow-values(), (
                     "flex-grow": "flex-grow"
                 ));
             }

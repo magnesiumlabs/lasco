@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-direction", core.$flex-direction, (
+                @include core.createUtility("flex-direction", core.flex-direction-values(), (
                     "flex": "flex-direction"
                 ));
             }

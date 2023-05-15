@@ -18,7 +18,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-shrink", core.$flex-shrink, (
+                @include core.createUtility("flex-shrink", core.flex-shrink-values(), (
                     "flex-shrink": "flex-shrink"
                 ));
             }
