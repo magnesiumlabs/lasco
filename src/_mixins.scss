@@ -78,6 +78,7 @@
 
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
+    $filter: false;
 
     @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
         @each $key in map.get(variables.$extend, $property) {
@@ -88,48 +89,33 @@
     }
 
     @if $variation and type.is-map($variation) {
-        @each $key, $value in $variation {
-            $properties: $value;
-            $filter: false;
 
-            ///
-            /// Filter property.
-            ///
+    }
 
-            @if type.is-string($value) and list.index(variables.$filters, $value) != null {
-                $filter: true
-            }
+    @each $key, $value in $extend {
+        @if $variation and type.is-map($variation) {
+            @each $variation in $variation {
+                $property: list.nth($variation, 2);
 
-            ///
-            /// Declaration.
-            ///
+                @if type.is-string(list.nth($variation, 2)) and list.index(variables.$filters, list.nth($variation, 2)) != null {
+                    $filter: true
+                }
 
-            @include _selector($key, variables.$prefix) {
-                @include _responsive($property) {
-                    @each $key, $value in $extend {
-                        @if type.is-string($key) {
-                            $key: string.replace($key, "/", \/);
-                        }
+                @if type.is-string($key) {
+                    $key: string.replace($key, "/", \/);
+                }
 
-                        @if $key == "DEFAULT" {
-                            @include _declaration($properties, $value, $filter);
-                        } @else {
-                            &-#{$key} {
-                                @each $key in $properties {
-                                    @include _declaration($key, $value, $filter);
-                                }
-                            }
-                        }
-                    }
+                @if $key == "DEFAULT" {
+                    $key: "#{list.nth($variation, 1)}";
+                } @else {
+                    $key: "#{list.nth($variation, 1)}-#{$key}";
                 }
             }
         }
-    } @else {
-        @each $key, $value in $extend {
-            @include _selector($key, variables.$prefix) {
-                @include _responsive($property) {
-                    @include _declaration($property, $value);
-                }
+
+        @include _selector($key, variables.$prefix) {
+            @include _responsive($property) {
+                @include _declaration($property, $value, $filter);
             }
         }
     }
