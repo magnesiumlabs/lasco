@@ -19,11 +19,11 @@
     },
     "sass": "index.scss",
     "devDependencies": {
-        "@commitlint/cli": "^17.6.1",
-        "@commitlint/config-conventional": "^17.6.1",
+        "@commitlint/cli": "^17.6.5",
+        "@commitlint/config-conventional": "^17.6.5",
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
-        "autoprefixer": "^10.4.13",
+        "autoprefixer": "^10.4.14",
         "css-loader": "^6.7.1",
         "css-minimizer-webpack-plugin": "^4.0.0",
         "glob": "^7.2.3",
@@ -38,7 +38,7 @@
         "rimraf": "^3.0.2",
         "sass-loader": "^13.0.2",
         "sass-true": "^7.0.0",
-        "semantic-release": "^21.0.2",
+        "semantic-release": "^21.0.5",
         "vitepress": "^1.0.0-alpha.75",
         "vue": "^3.2.45",
         "webpack": "^5.76.2",
@@ -50,7 +50,7 @@
         "@unsass/selector": "^1.2.0",
         "@unsass/string": "^1.0.0",
         "@unsass/types": "^1.0.2",
-        "sass": "^1.62.1"
+        "sass": "^1.63.5"
     },
     "files": [
         "*.scss",
