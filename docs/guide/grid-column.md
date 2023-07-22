@@ -104,7 +104,7 @@ You can easily disable the properties you don't need to use.
 ```scss
 @use "lasco" with (
     $extend: (
-        "grid-columns": false,
+        "grid-column": false,
         "grid-column-start": false,
         "grid-column-end": false
     )
