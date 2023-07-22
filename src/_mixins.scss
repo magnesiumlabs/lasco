@@ -78,6 +78,7 @@
 
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
+    $filter: false;
 
     @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
         @each $key in map.get(variables.$extend, $property) {
@@ -87,50 +88,90 @@
         $extend: functions.extend($utilities, $property);
     }
 
-    @if $variation and type.is-map($variation) {
-        @each $key, $value in $variation {
-            $properties: $value;
-            $filter: false;
+    $test: ();
 
-            ///
-            /// Filter property.
-            ///
-
-            @if type.is-string($value) and list.index(variables.$filters, $value) != null {
-                $filter: true
-            }
-
-            ///
-            /// Declaration.
-            ///
-
-            @include _selector($key, variables.$prefix) {
-                @include _responsive($property) {
-                    @each $key, $value in $extend {
-                        @if type.is-string($key) {
-                            $key: string.replace($key, "/", \/);
-                        }
-
-                        @if $key == "DEFAULT" {
-                            @include _declaration($properties, $value, $filter);
-                        } @else {
-                            &-#{$key} {
-                                @each $key in $properties {
-                                    @include _declaration($key, $value, $filter);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    @each $key, $value in $extend {
+        @each $variation in $variation {
+            $test: map.set($test, "#{list.nth($variation, 1)}-#{$key}", $value);
         }
-    } @else {
-        @each $key, $value in $extend {
-            @include _selector($key, variables.$prefix) {
-                @include _responsive($property) {
-                    @include _declaration($property, $value);
-                }
+    }
+
+    @include _selector("test", variables.$prefix) {
+        @include _responsive($property) {
+            @debug $extend;
+
+            @each $extend in $test {
+                @include _declaration($property, list.nth($extend, 2));
             }
         }
     }
+
+    // @each $variation in $variation {
+    //    @debug $variation;
+    //
+    //    @include _selector(list.nth($variation, 1), variables.$prefix) {
+    //        @include _responsive($property) {
+    //            @each $key, $value in $extend {
+    //                @include _declaration($property, $value, $filter);
+    //            }
+    //        }
+    //    }
+    //}
+
+    //@each $key, $value in $variation {
+    //    $properties: $value;
+    //    $filter: false;
+    //
+    //    @if type.is-string($value) and list.index(variables.$filters, $value) != null {
+    //        $filter: true
+    //    }
+    //
+    //    @include _selector($key, variables.$prefix) {
+    //        @include _responsive($property) {
+    //            @each $key, $value in $extend {
+    //                @if type.is-string($key) {
+    //                    $key: string.replace($key, "/", \/);
+    //                }
+    //
+    //                @if $key == "DEFAULT" {
+    //                    @include _declaration($properties, $value, $filter);
+    //                } @else {
+    //                    &-#{$key} {
+    //                        @each $key in $properties {
+    //                            @include _declaration($key, $value, $filter);
+    //                        }
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+
+    //@each $key, $value in $extend {
+    //    @if $variation and type.is-map($variation) {
+    //        @each $variation in $variation {
+    //            $property: list.nth($variation, 2);
+    //
+    //            @if type.is-string(list.nth($variation, 2)) and list.index(variables.$filters, list.nth($variation, 2)) != null {
+    //                $filter: true
+    //            }
+    //
+    //            @if type.is-string($key) {
+    //                $key: string.replace($key, "/", \/);
+    //            }
+    //
+    //            @if $key == "DEFAULT" {
+    //                $key: "#{list.nth($variation, 1)}";
+    //            } @else {
+    //                $key: "#{list.nth($variation, 1)}-#{$key}";
+    //            }
+    //        }
+    //    }
+    //
+    //    @include _selector($key, variables.$prefix) {
+    //        @include _responsive($property) {
+    //            @include _declaration($property, $value, $filter);
+    //        }
+    //    }
+    //}
 }
