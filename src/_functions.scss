@@ -54,7 +54,7 @@
     $declaration: true; // Black - Default enable all.
 
     @if is-white-list() {
-        $declaration: false;  // White - Disabled all.
+        $declaration: false; // White - Disabled all.
 
         @if map.has-key(variables.$extend, $property) {
             $declaration: true; // White - Enabled only `true`.
