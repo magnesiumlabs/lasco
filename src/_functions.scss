@@ -8,14 +8,6 @@
 @use "@unsass/types" as type;
 @use "./variables";
 
-@function is-quoted-string($value) {
-    @if type.is-string($value) {
-        @return string.unquote($value);
-    }
-
-    @return $value;
-}
-
 @function extend($default, $property) {
     $map: $default;
 
@@ -26,34 +18,14 @@
     @return $map;
 }
 
-@function filter($default, $property) {
-    $list: $default;
-
-    @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
-        @each $value in map.get(variables.$extend, $property) {
-            @if list.index($default, $value) == null {
-                @error "Invalid '#{$value}' option, '#{$value}' is not alowed here. Choose one of '#{$default}' options.";
-            }
-
-            $list: map.get(variables.$extend, $property);
-        }
-    }
-
-    @return $list;
-}
-
-@function is-black-list() {
-    @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "black";
-}
-
-@function is-white-list() {
+@function _is-white-list() {
     @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "white";
 }
 
 @function has-declaration($property) {
     $declaration: true; // Black - Default enable all.
 
-    @if is-white-list() {
+    @if _is-white-list() {
         $declaration: false; // White - Disabled all.
 
         @if map.has-key(variables.$extend, $property) {
