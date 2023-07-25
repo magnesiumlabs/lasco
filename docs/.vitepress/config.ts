@@ -1,11 +1,15 @@
-const pkg = require('../../package.json');
+// @ts-ignore
+import pkg = require('../../package.json');
+import { defineConfig } from 'vitepress';
 
-module.exports = {
+export default defineConfig({
     title: 'Lasco',
     description: 'Just playing around.',
     themeConfig: {
         logo: 'logo.svg',
-        siteTitle: false,
+        search: {
+            provider: 'local'
+        },
         nav: [
             {
                 text: 'Guide',
@@ -331,4 +335,4 @@ module.exports = {
             copyright: 'Copyright © 2022-present'
         }
     }
-};
+});
