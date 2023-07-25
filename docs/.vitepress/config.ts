@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     title: 'Lasco',
     siteTitle: false,
-    description: 'Just playing around.',
+    description: 'A utility-first Sass framework.',
     themeConfig: {
         logo: 'logo.svg',
         search: {
