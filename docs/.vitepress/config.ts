@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
     title: 'Lasco',
+    siteTitle: false,
     description: 'Just playing around.',
     themeConfig: {
         logo: 'logo.svg',
