@@ -18,8 +18,7 @@ $filters: (
 );
 
 $_default-engine: (
-    "screens": (),
-    "list": "black"
+    "screens": ()
 );
 
 // ------------------------------------------------------------------------- //
@@ -31,6 +30,7 @@ $important: false !default;
 $separator: ":" !default;
 $engine: () !default;
 $extend: () !default;
+$core: () !default;
 
 ///
 /// Extend options.

@@ -4,7 +4,7 @@
 
 @use "true" as *;
 @use "../src" as core with (
-    $extend: (
+    $core: (
         "flex-basis": false
     )
 );

@@ -18,26 +18,20 @@
     @return $map;
 }
 
-@function _is-white-list() {
-    @return map.has-key(variables.$engine, "list") and map.get(variables.$engine, "list") == "white";
-}
-
 @function has-declaration($property) {
-    $declaration: true; // Black - Default enable all.
-
-    @if _is-white-list() {
-        $declaration: false; // White - Disabled all.
-
-        @if map.has-key(variables.$extend, $property) {
-            $declaration: true; // White - Enabled only `true`.
+    @if type.is-list(variables.$core) or type.is-string(variables.$core) {
+        @if list.index(variables.$core, $property) != null or list.length(variables.$core) == 0 {
+            @return true;
+        } @else {
+            @return false;
         }
-    } @else {
-        @if map.has-key(variables.$extend, $property) and map.get(variables.$extend, $property) == false {
-            $declaration: false; // Black - Disabled only `false`.
+    } @else if type.is-map(variables.$core) {
+        @if map.get(variables.$core, $property) == false {
+            @return false;
+        } @else {
+            @return true;
         }
     }
-
-    @return $declaration;
 }
 
 @function has-breakpoints() {

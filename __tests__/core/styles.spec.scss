@@ -3,130 +3,128 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "sass:string";
 @use "../index" as lasco with (
     $engine: (
-        "screens": false,
-        "list": "white"
+        "screens": false
     ),
-    $extend: (
-        "display": true, // Root class
-        "grayscale": true, // Filter
-        "margin": true // Normal utility
+    $core: (
+        "display",
+        "grayscale",
+        "margin"
     )
 );
 
 @include describe("core") {
-    @include describe("styles") {
-        @include it("Should return main styles declarations.") {
-            @include assert {
-                @include output(false) {
-                    @include lasco.core-styles;
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.core-styles;
+            }
+
+            @include expect(false) {
+                .block {
+                    display: block;
                 }
 
-                @include expect(false) {
-                    .block {
-                        display: block;
-                    }
+                .inline-block {
+                    display: inline-block;
+                }
 
-                    .inline-block {
-                        display: inline-block;
-                    }
+                .flex {
+                    display: flex;
+                }
 
-                    .flex {
-                        display: flex;
-                    }
+                .inline-flex {
+                    display: inline-flex;
+                }
 
-                    .inline-flex {
-                        display: inline-flex;
-                    }
+                .grid {
+                    display: grid;
+                }
 
-                    .grid {
-                        display: grid;
-                    }
+                .inline-grid {
+                    display: inline-grid;
+                }
 
-                    .inline-grid {
-                        display: inline-grid;
-                    }
+                .table {
+                    display: table;
+                }
 
-                    .table {
-                        display: table;
-                    }
+                .inline-table {
+                    display: inline-table;
+                }
 
-                    .inline-table {
-                        display: inline-table;
-                    }
+                .hidden {
+                    display: none;
+                }
 
-                    .hidden {
-                        display: none;
-                    }
+                .grayscale {
+                    filter: grayscale(1);
+                }
 
-                    .grayscale {
-                        filter: grayscale(1);
-                    }
+                .grayscale-0 {
+                    filter: grayscale(0);
+                }
 
-                    .grayscale-0 {
-                        filter: grayscale(0);
-                    }
+                .m-0 {
+                    margin: 0;
+                }
 
-                    .m-0 {
-                        margin: 0;
-                    }
+                .m-auto {
+                    margin: auto;
+                }
 
-                    .m-auto {
-                        margin: auto;
-                    }
+                .mx-0 {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
 
-                    .mx-0 {
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
+                .mx-auto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
 
-                    .mx-auto {
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
+                .my-0 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
 
-                    .my-0 {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                    }
+                .my-auto {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
 
-                    .my-auto {
-                        margin-top: auto;
-                        margin-bottom: auto;
-                    }
+                .mt-0 {
+                    margin-top: 0;
+                }
 
-                    .mt-0 {
-                        margin-top: 0;
-                    }
+                .mt-auto {
+                    margin-top: auto;
+                }
 
-                    .mt-auto {
-                        margin-top: auto;
-                    }
+                .mr-0 {
+                    margin-right: 0;
+                }
 
-                    .mr-0 {
-                        margin-right: 0;
-                    }
+                .mr-auto {
+                    margin-right: auto;
+                }
 
-                    .mr-auto {
-                        margin-right: auto;
-                    }
+                .mb-0 {
+                    margin-bottom: 0;
+                }
 
-                    .mb-0 {
-                        margin-bottom: 0;
-                    }
+                .mb-auto {
+                    margin-bottom: auto;
+                }
 
-                    .mb-auto {
-                        margin-bottom: auto;
-                    }
+                .ml-0 {
+                    margin-left: 0;
+                }
 
-                    .ml-0 {
-                        margin-left: 0;
-                    }
-
-                    .ml-auto {
-                        margin-left: auto;
-                    }
+                .ml-auto {
+                    margin-left: auto;
                 }
             }
         }

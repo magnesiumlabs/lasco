@@ -57,15 +57,3 @@ the default scales using the Sass configuration.
 
 > **Note:** the value can be a `image` value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#values))_
-
-### Disabled
-
-You can easily disable the properties you don't need to use.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-image": false
-    )
-);
-```

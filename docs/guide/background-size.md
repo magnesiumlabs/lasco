@@ -60,15 +60,3 @@ default scales using the Sass configuration.
 
 > **Note:** the value can be a `length` or `percentage` value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#values))_
-
-### Disabled
-
-You can easily disable the properties you don't need to use.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "bg-size": false
-    )
-);
-```

@@ -58,16 +58,3 @@ the default scales using the Sass configuration.
     )
 );
 ```
-
-### Disabled
-
-You can easily disable the properties you don't need to use.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "align-self": false
-    )
-);
-```
-

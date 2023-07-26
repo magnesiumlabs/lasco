@@ -56,15 +56,3 @@ scales using the Sass configuration.
 
 > **Note:** the radius can be a pixel or rem value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur()#examples))_
-
-### Disabled
-
-You can easily disable the properties you don't need to use.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "blur": false
-    )
-);
-```

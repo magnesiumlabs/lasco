@@ -57,16 +57,3 @@ default scales using the Sass configuration.
 
 > **Note:** the amount can be a number _(0 to 1)_ or a percentage value. _(
 Source [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()#exemples))_
-
-### Disabled
-
-You can easily disable the properties you don't need to use.
-
-```scss
-@use "lasco" with (
-    $extend: (
-        "grayscale": false
-    )
-);
-```
-

@@ -11,8 +11,8 @@ describe below.
 
 ### Prefix
 
-The `$prefix` allow to generate all classes with custom prefix. For example, you could set the `$prefix` option to `ls`
-like that:
+The `$prefix` option allow to generate all classes with custom prefix. For example, you could set the `$prefix` option
+to `ls` like that:
 
 ```scss
 @use "lasco" with (
@@ -38,8 +38,8 @@ Now every class will be generated with the configured prefix:
 
 ### Important
 
-The `$important` allow to generate all classes with `!important` rule. For example, you could set the `$important`
-option to `true` like that:
+The `$important` option allow to generate all classes with `!important` rule. For example, you could set
+the `$important` option to `true` like that:
 
 ```scss
 @use "lasco" with (
@@ -65,12 +65,40 @@ Now every class will be generated with the `!important` rule:
 
 ### Separator
 
-The `$separator` allow to customize the character used on to separate classes modifiers _(media queries)_. For example,
-you could set the `$separator` option to `@` like that:
+The `$separator` option allow to customize the character used on to separate classes modifiers _(media queries)_. For
+example, you could set the `$separator` option to `@` like that:
 
 ```scss
 @use "lasco" with (
     $separator: "@"
+);
+```
+
+### Core
+
+The `core` section lets you completely configure each property you need by default on your project.
+
+To disable specific properties, provide a map of each property and set to false:
+
+```scss
+@use "lasco" with (
+    $core: (
+        "display": false,
+        "grayscale": false,
+        "margin": false
+    )
+);
+```
+
+To configure a safelist, provide a list of each property you would like to use:
+
+```scss
+@use "lasco" with (
+    $core: (
+        "display",
+        "grayscale",
+        "margin"
+    )
 );
 ```
 
@@ -106,41 +134,6 @@ The `screens` key allow to set token rules for media queries.
 ::: info Breakpoint
 This option is based and use [@unsass/breakpoint](https://github.com/unsass/breakpoint) dependency.
 :::
-
-### Configuring list authority
-
-The `list` key allow to manage the list authority, `black` _(default)_ or `white`.
-
-```scss
-@use "lasco" with (
-    $engine: (
-        "list": "white"
-    )
-);
-```
-
-::: warning White List
-This `white` configuration provide only properties set at `true` or with valued map.
-:::
-
-#### White list
-
-If you want only the `display` and `position: absolute` declarations, you can set `"list": "white"` option and configure
-the wanted properties.
-
-```scss
-@use "lasco" with (
-    $engine: (
-        "list": "white"
-    ),
-    $extend: (
-        "display": true,
-        "position": (
-            absolute
-        )
-    )
-);
-```
 
 ## Extend Configuration
 
