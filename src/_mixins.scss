@@ -92,17 +92,9 @@
         @each $key, $value in $variation {
             $properties: $value;
 
-            ///
-            /// Filter property.
-            ///
-
             @if type.is-string($value) and list.index(variables.$filters, $value) != null {
                 $filter: true
             }
-
-            ///
-            /// Declaration.
-            ///
 
             @include _selector($key, variables.$prefix) {
                 @include _responsive($property) {
