@@ -78,6 +78,7 @@
 
 @mixin createUtility($property, $utilities, $variation: ()) {
     $extend: ();
+    $filter: false;
 
     @if type.is-list(map.get(variables.$extend, $property)) or type.is-string(map.get(variables.$extend, $property)) or type.is-number(map.get(variables.$extend, $property)) {
         @each $key in map.get(variables.$extend, $property) {
@@ -90,7 +91,6 @@
     @if $variation and type.is-map($variation) {
         @each $key, $value in $variation {
             $properties: $value;
-            $filter: false;
 
             ///
             /// Filter property.
