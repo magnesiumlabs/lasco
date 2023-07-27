@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/magnesiumlabs/lasco/compare/v2.7.0...v3.0.0) (2023-07-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **options:** removed `list` option
+
+### Features
+
+* **options:** add new `core` option ([6eded07](https://github.com/magnesiumlabs/lasco/commit/6eded07fa0e78463d5749be3a26e7b8d77f6dbf1))
+
+
+### Build System
+
+* **deps:** bump to `sass` 1.63.5 ([862c7da](https://github.com/magnesiumlabs/lasco/commit/862c7da765bfb1347523ac7985ed065ce111bd49))
+
+
+### Code Refactoring
+
+* move variables ([18c59ef](https://github.com/magnesiumlabs/lasco/commit/18c59efc4ee639d8a774d716ec27d0fcaa981161))
+* removed unneeded functions ([aff58bf](https://github.com/magnesiumlabs/lasco/commit/aff58bfa36fd5f18b288bdc6ee17036261684b5d))
+
 ## [2.7.0](https://github.com/magnesiumlabs/lasco/compare/v2.6.1...v2.7.0) (2023-05-15)
 
 
