@@ -3,9 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "aspect-ratio"
     )
 );
 
@@ -13,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("aspect-ratio", core.aspect-ratio-values(),  (
-                    "aspect": 'aspect-ratio'
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

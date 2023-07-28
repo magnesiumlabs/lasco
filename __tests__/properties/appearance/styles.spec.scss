@@ -3,9 +3,9 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
-    $engine: (
-        "screens": false
+@use "../../../index" as lasco with (
+    $core: (
+        "appearance"
     )
 );
 
@@ -13,9 +13,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("appearance", core.appearance-values(), (
-                    "appearance": "appearance"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

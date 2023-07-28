@@ -4,7 +4,7 @@
 
 @use "true" as *;
 @use "sass:string";
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
     ),

@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
     ),
@@ -11,6 +11,9 @@
         "background-attachment": (
             "fixed"
         )
+    ),
+    $core: (
+        "background-attachment"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-attachment", core.background-attachment-values(), (
-                    "bg-attachment": "background-attachment"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

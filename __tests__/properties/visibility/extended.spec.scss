@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
     ),
@@ -11,6 +11,9 @@
         "visibility": (
             "visible"
         )
+    ),
+    $core: (
+        "visibility"
     )
 );
 
@@ -18,7 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("visibility", core.visibility-values());
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

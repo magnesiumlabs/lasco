@@ -3,13 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core;
+@use "../../../index" as lasco with (
+    $core: (
+        "visibility"
+    )
+);
 
 @include describe("visibility") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("visibility", core.visibility-values());
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

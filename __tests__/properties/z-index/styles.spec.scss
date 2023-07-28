@@ -3,9 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "z-index"
     )
 );
 
@@ -13,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("z-index", core.z-index-values(), (
-                    "z": "z-index"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

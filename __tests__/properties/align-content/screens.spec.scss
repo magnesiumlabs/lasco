@@ -3,15 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core;
+@use "../../../index" as lasco with (
+    $core: (
+        "align-content"
+    )
+);
 
 @include describe("align-content") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("align-content", core.align-content-values(), (
-                    "align-content": "align-content"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

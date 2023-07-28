@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
     ),
@@ -11,6 +11,9 @@
         "align-self": (
             "center"
         )
+    ),
+    $core: (
+        "align-items"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("align-self", core.align-self-values(), (
-                    "align-self": "align-self"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {
