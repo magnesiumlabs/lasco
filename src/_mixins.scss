@@ -88,13 +88,19 @@
         $extend: functions.extend($utilities, $property);
     }
 
+    ///
+    /// Check if property is a filter.
+    ///
+    @if list.index(variables.$filters, $property) != null {
+        $filter: true
+    }
+
+    ///
+    /// Generate CSS declaration.
+    ///
     @if $variation and type.is-map($variation) {
         @each $key, $value in $variation {
             $properties: $value;
-
-            @if type.is-string($value) and list.index(variables.$filters, $value) != null {
-                $filter: true
-            }
 
             @include _selector($key, variables.$prefix) {
                 @include _responsive($property) {
