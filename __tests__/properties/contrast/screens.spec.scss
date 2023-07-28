@@ -4,7 +4,7 @@
 
 @use "true" as *;
 @use "../../../src/tokens";
-@use "../src" as core;
+@use "../../../src" as core;
 
 @include describe("contrast") {
     @include it("Should return main styles declarations with breakpoints.") {

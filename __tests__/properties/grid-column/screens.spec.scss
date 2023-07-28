@@ -5,7 +5,7 @@
 @use "true" as *;
 @use "../../../src/tokens";
 @use "sass:string";
-@use "../src" as core;
+@use "../../../src" as core;
 
 @include describe("grid-column") {
     @include it("Should return main styles declarations with breakpoints.") {

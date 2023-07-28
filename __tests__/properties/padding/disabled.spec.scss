@@ -4,7 +4,7 @@
 
 @use "true" as *;
 @use "../../../src/tokens";
-@use "../src" as core with (
+@use "../../../src" as core with (
     $core: (
         "padding": false
     )
