@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "z-index": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("z-index", core.z-index-values(), (
+                @include core.createUtility("z-index", tokens.z-index-values(), (
                     "z": "z-index"
                 ));
             }

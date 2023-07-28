@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -18,7 +19,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("place-items", core.place-items-values(), (
+                @include core.createUtility("place-items", tokens.place-items-values(), (
                     "place-items": "place-items"
                 ));
             }

@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -18,7 +19,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-repeat", core.background-repeat-values(), (
+                @include core.createUtility("background-repeat", tokens.background-repeat-values(), (
                     "bg": "background-repeat"
                 ));
             }

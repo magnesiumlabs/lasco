@@ -3,13 +3,14 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core;
 
 @include describe("object-fit") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("object-fit", core.object-fit-values(), (
+                @include core.createUtility("object-fit", tokens.object-fit-values(), (
                     "object": "object-fit"
                 ));
             }

@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -13,7 +14,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("min-height", core.min-height-values(), (
+                @include core.createUtility("min-height", tokens.min-height-values(), (
                     "min-h": "min-height"
                 ));
             }

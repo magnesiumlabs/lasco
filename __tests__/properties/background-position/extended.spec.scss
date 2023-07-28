@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "sass:string";
 @use "../src" as core with (
     $engine: (
@@ -19,7 +20,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-position", core.background-position-values(), (
+                @include core.createUtility("background-position", tokens.background-position-values(), (
                     "bg-position": "background-position"
                 ));
             }

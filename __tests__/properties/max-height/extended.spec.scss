@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -20,7 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-height", core.max-height-values(), (
+                @include core.createUtility("max-height", tokens.max-height-values(), (
                     "max-h": "max-height"
                 ));
             }

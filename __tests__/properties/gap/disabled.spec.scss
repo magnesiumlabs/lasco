@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "gap": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("gap", core.gap-values(), (
+                @include core.createUtility("gap", tokens.gap-values(), (
                     "gap": "gap",
                     "gap-x": (
                         "column-gap"

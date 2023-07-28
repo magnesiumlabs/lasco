@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "background-clip": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-clip", core.background-clip-values());
+                @include core.createUtility("background-clip", tokens.background-clip-values());
             }
 
             @include expect(false) {

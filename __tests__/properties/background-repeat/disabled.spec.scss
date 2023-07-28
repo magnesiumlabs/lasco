@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "background-repeat": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-repeat", core.background-repeat-values(), (
+                @include core.createUtility("background-repeat", tokens.background-repeat-values(), (
                     "bg": "background-repeat"
                 ));
             }

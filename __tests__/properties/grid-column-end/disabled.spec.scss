@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "grid-column-end": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-column-end", core.grid-column-end-values(), (
+                @include core.createUtility("grid-column-end", tokens.grid-column-end-values(), (
                     "col-end": "grid-column-end"
                 ));
             }

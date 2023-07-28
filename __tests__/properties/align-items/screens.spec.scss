@@ -3,13 +3,14 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core;
 
 @include describe("align-items") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("align-items", core.align-items-values(), (
+                @include core.createUtility("align-items", tokens.align-items-values(), (
                     "align-items": "align-items"
                 ));
             }

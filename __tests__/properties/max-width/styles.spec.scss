@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -13,7 +14,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.max-width-values(), (
+                @include core.createUtility("max-width", tokens.max-width-values(), (
                     "max-w": "max-width"
                 ));
             }
@@ -55,7 +56,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.max-width-screen-values(), (
+                @include core.createUtility("max-width", tokens.max-width-screen-values(), (
                     "max-w-screen": "max-width"
                 ));
             }

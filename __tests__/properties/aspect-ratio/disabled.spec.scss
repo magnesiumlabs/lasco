@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "aspect-ratio": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("aspect-ratio", core.aspect-ratio-values(),  (
+                @include core.createUtility("aspect-ratio", tokens.aspect-ratio-values(),  (
                     "aspect": 'aspect-ratio'
                 ));
             }

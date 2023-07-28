@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "background-origin": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-origin", core.background-origin-values(), (
+                @include core.createUtility("background-origin", tokens.background-origin-values(), (
                     "bg-origin": "background-origin"
                 ));
             }

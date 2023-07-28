@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "flex-wrap": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-wrap", core.flex-wrap-values(), (
+                @include core.createUtility("flex-wrap", tokens.flex-wrap-values(), (
                     "flex": "flex-wrap"
                 ));
             }

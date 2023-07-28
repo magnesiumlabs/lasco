@@ -4,7 +4,6 @@
 
 @use "./tokens";
 @use "./mixins";
-@use "./variables";
 
 ///
 /// Core styles.
@@ -94,7 +93,7 @@
         "font": "font-weight"
     ));
 
-    @include mixins.createUtility("text-align", variables.text-align-values(), (
+    @include mixins.createUtility("text-align", tokens.text-align-values(), (
         "text": "text-align"
     ));
 

@@ -3,13 +3,14 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core;
 
 @include describe("font-style") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("font-style", core.font-style-values(), (
+                @include core.createUtility("font-style", tokens.font-style-values(), (
                     "font": "font-style"
                 ));
             }

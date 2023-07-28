@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "place-content": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("place-content", core.place-content-values(), (
+                @include core.createUtility("place-content", tokens.place-content-values(), (
                     "place-content": "place-content"
                 ));
             }

@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $engine: (
         "screens": false
@@ -13,7 +14,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("text-align", core.text-align-values(), (
+                @include core.createUtility("text-align", tokens.text-align-values(), (
                     "text": "text-align"
                 ));
             }

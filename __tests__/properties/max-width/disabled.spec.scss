@@ -3,6 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core with (
     $core: (
         "max-width": false
@@ -13,7 +14,7 @@
     @include it("Should return nothing.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", core.max-width-values(), (
+                @include core.createUtility("max-width", tokens.max-width-values(), (
                     "max-w": "max-width"
                 ));
             }

@@ -3,13 +3,14 @@
 // ============================================================================================= //
 
 @use "true" as *;
+@use "../../../src/tokens";
 @use "../src" as core;
 
 @include describe("background-image") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-image", core.background-image-values(), (
+                @include core.createUtility("background-image", tokens.background-image-values(), (
                     "bg-image": "background-image"
                 ));
             }
