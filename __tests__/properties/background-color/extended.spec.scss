@@ -11,6 +11,9 @@
         "background-color": (
             "black": "#000"
         )
+    ),
+    $core: (
+        "background-color"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-color", core.background-color-values(), (
-                    "bg-color": "background-color"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

@@ -11,6 +11,9 @@
         "background-clip": (
             "content"
         )
+    ),
+    $core: (
+        "background-clip"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-clip", core.background-clip-values(), (
-                    "bg-clip": "background-clip"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

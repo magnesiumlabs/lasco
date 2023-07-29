@@ -6,6 +6,9 @@
 @use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "background-color"
     )
 );
 
@@ -13,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-color", core.background-color-values(), (
-                    "bg-color": "background-color"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {
