@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/magnesiumlabs/lasco/compare/v3.0.0...v3.0.1) (2023-07-30)
+
+
+### Bug Fixes
+
+* **variables:** removed unneeded `[@forward](https://github.com/forward)` ([8090f7c](https://github.com/magnesiumlabs/lasco/commit/8090f7cc16bd563e72ca2cbb9d7e9c1517b0dd80))
+
+
+### Code Refactoring
+
+* hide no public variable ([76be338](https://github.com/magnesiumlabs/lasco/commit/76be338c5d9f72f14b006cb1f6b2f71487ce3745))
+
 ## [3.0.0](https://github.com/magnesiumlabs/lasco/compare/v2.7.0...v3.0.0) (2023-07-27)
 
 
