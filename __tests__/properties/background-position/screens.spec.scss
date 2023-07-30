@@ -3,15 +3,20 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "background-position"
+    )
+);
 
 @include describe("background-position") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-position", core.background-position-values(), (
-                    "bg-position": "background-position"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

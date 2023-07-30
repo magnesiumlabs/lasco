@@ -3,15 +3,17 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../src" as core;
+@use "../../../index" as lasco with (
+    $core: (
+        "background-origin"
+    )
+);
 
 @include describe("background-origin") {
     @include it("Should return main styles declarations with breakpoints.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-origin", core.background-origin-values(), (
-                    "bg-origin": "background-origin"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

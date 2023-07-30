@@ -13,6 +13,9 @@
             "single": "url('https://picsum.photos/200/300')",
             "multiple": "linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5))"
         )
+    ),
+    $core: (
+        "background-image"
     )
 );
 
@@ -20,9 +23,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-image", core.background-image-values(), (
-                    "bg-image": "background-image"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

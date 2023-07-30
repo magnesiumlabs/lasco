@@ -11,6 +11,9 @@
         "background-origin": (
             "content"
         )
+    ),
+    $core: (
+        "background-origin"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-origin", core.background-origin-values(), (
-                    "bg-origin": "background-origin"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

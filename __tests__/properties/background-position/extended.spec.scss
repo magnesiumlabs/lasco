@@ -12,6 +12,9 @@
         "background-position": (
             "left-top": "left top"
         )
+    ),
+    $core: (
+        "background-position"
     )
 );
 
@@ -19,9 +22,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-position", core.background-position-values(), (
-                    "bg-position": "background-position"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {
