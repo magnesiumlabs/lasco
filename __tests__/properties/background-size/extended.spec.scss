@@ -13,6 +13,9 @@
             "50-auto": "50% auto",
             "multiple": "50%, 25%, 25%"
         )
+    ),
+    $core: (
+        "background-size"
     )
 );
 
@@ -20,9 +23,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-size", core.background-size-values(), (
-                    "bg-size": "background-size"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

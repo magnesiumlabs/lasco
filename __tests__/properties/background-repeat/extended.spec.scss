@@ -11,6 +11,9 @@
         "background-repeat": (
             "no-repeat"
         )
+    ),
+    $core: (
+        "background-repeat"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-repeat", core.background-repeat-values(), (
-                    "bg": "background-repeat"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {
