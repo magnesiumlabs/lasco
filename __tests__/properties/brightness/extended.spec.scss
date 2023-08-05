@@ -11,6 +11,9 @@
         "brightness": (
            "50": "0.5"
         )
+    ),
+    $core: (
+        "brightness"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("brightness", core.filter-brightness-values(), (
-                    "brightness": "brightness"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

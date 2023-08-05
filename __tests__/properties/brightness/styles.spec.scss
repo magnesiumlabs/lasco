@@ -6,6 +6,9 @@
 @use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "brightness"
     )
 );
 
@@ -13,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("brightness", core.filter-brightness-values(), (
-                    "brightness": "brightness"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {

@@ -11,6 +11,9 @@
         "blur": (
            "lg": "16px"
         )
+    ),
+    $core: (
+        "blur"
     )
 );
 
@@ -18,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("blur", core.filter-blur-values(), (
-                    "blur": "blur"
-                ));
+                @include lasco.core-styles;
             }
 
             @include expect(false) {
