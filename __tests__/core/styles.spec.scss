@@ -2,8 +2,8 @@
 //                                             TEST                                              //
 // ============================================================================================= //
 
-@use "true" as *;
 @use "sass:string";
+@use "true" as *;
 @use "../../index" as lasco with (
     $engine: (
         "screens": false
