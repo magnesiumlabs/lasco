@@ -3,7 +3,7 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../index" as lasco with (
+@use "../../index" as lasco with (
     $core: (
         "display",
         "grayscale",
