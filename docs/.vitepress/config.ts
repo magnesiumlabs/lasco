@@ -265,12 +265,16 @@ export default defineConfig({
                         link: 'guide/grid-template-columns'
                     },
                     {
+                        text: 'Grid Column Start / End',
+                        link: 'guide/grid-column'
+                    },
+                    {
                         text: 'Grid Template Rows',
                         link: 'guide/grid-template-rows'
                     },
                     {
-                        text: 'Grid Column',
-                        link: 'guide/grid-column'
+                        text: 'Grid Row Start / End',
+                        link: 'guide/grid-row'
                     },
                     {
                         text: 'Gap',

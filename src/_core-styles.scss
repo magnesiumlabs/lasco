@@ -209,6 +209,18 @@
         "col-end": "grid-column-end"
     ));
 
+    @include mixins.createUtility("grid-row", tokens.grid-row-values(), (
+        "row": "grid-row"
+    ));
+
+    @include mixins.createUtility("grid-row-start", tokens.grid-row-start-values(), (
+        "row-start": "grid-row-start"
+    ));
+
+    @include mixins.createUtility("grid-row-end", tokens.grid-row-end-values(), (
+        "row-end": "grid-row-end"
+    ));
+
     @include mixins.createUtility("gap", tokens.gap-values(), (
         "gap": "gap",
         "gap-x": (

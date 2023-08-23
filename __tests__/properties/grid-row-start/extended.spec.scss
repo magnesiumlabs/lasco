@@ -1,0 +1,66 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../src/tokens";
+@use "../../../src" as core with (
+    $engine: (
+        "screens": false
+    ),
+    $extend: (
+        "grid-row-start": (
+           "8": "8"
+        )
+    )
+);
+
+@include describe("grid-row-start") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("grid-row-start", tokens.grid-row-start-values(), (
+                    "row-start": "grid-row-start"
+                ));
+            }
+
+            @include expect(false) {
+                .row-start-auto {
+                    grid-row-start: auto;
+                }
+
+                .row-start-1 {
+                    grid-row-start: 1;
+                }
+
+                .row-start-2 {
+                    grid-row-start: 2;
+                }
+
+                .row-start-3 {
+                    grid-row-start: 3;
+                }
+
+                .row-start-4 {
+                    grid-row-start: 4;
+                }
+
+                .row-start-5 {
+                    grid-row-start: 5;
+                }
+
+                .row-start-6 {
+                    grid-row-start: 6;
+                }
+
+                .row-start-7 {
+                    grid-row-start: 7;
+                }
+
+                .row-start-8 {
+                    grid-row-start: 8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../src/tokens";
+@use "../../../src" as core with (
+    $core: (
+        "grid-row": false
+    )
+);
+
+@include describe("grid-row") {
+    @include it("Should return nothing.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("grid-row", tokens.grid-row-values(), (
+                    "row": "grid-row"
+                ));
+            }
+
+            @include expect(false) {
+                // ...
+            }
+        }
+    }
+}
