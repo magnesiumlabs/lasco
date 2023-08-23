@@ -29,7 +29,7 @@ Utilities for applying `grid-column`, `grid-column-start` and `grid-column-end` 
 
 ### Spanning columns
 
-Use the `cols-span-{key}` class for use span column an element.
+Use the `col-span-{key}` class for use span column an element.
 
 ```html
 
@@ -40,7 +40,7 @@ Use the `cols-span-{key}` class for use span column an element.
 
 ### Starting line
 
-Use the `cols-start-{key}` class for use start line position an element.
+Use the `col-start-{key}` class for use start line position an element.
 
 ```html
 
@@ -51,7 +51,7 @@ Use the `cols-start-{key}` class for use start line position an element.
 
 ### Ending line
 
-Use the `cols-end-{key}` class for use end line position an element.
+Use the `col-end-{key}` class for use end line position an element.
 
 ```html
 
@@ -78,7 +78,7 @@ apply on large screens size and above.
 
 ### Extend your theme
 
-By default, the configuration provides a handful of general purpose `grid-columns` utilities. You can easily extend the
+By default, the configuration provides a handful of general purpose `grid-column` utilities. You can easily extend the
 default scales using the Sass configuration.
 
 ```scss
