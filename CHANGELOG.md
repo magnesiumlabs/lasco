@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/magnesiumlabs/lasco/compare/v3.0.1...v3.1.0) (2023-08-23)
+
+
+### Features
+
+* **grid:** add `grid-row` property ([a76b7a3](https://github.com/magnesiumlabs/lasco/commit/a76b7a367fe6e74042b154e60c023ba6d945207c))
+
+
+### Build System
+
+* **deps:** bump to `sass` 1.66.1 ([52a8b70](https://github.com/magnesiumlabs/lasco/commit/52a8b7018cf574728f5e60501371034738120ad5))
+
 ## [3.0.1](https://github.com/magnesiumlabs/lasco/compare/v3.0.0...v3.0.1) (2023-07-30)
 
 
