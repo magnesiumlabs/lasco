@@ -131,8 +131,8 @@ The `screens` key allow to set token rules for media queries.
 | `xl`  | `1200px` |
 | `2xl` | `1400px` |
 
-::: info Breakpoint
-This option is based and use [@unsass/breakpoint](https://github.com/unsass/breakpoint) dependency.
+::: info
+This option is passed on to [@unsass/breakpoint](https://github.com/unsass/breakpoint).
 :::
 
 ## Extend Configuration
