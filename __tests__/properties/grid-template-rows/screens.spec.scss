@@ -20,6 +20,10 @@
                     grid-template-rows: none;
                 }
 
+                .grid-rows-subgrid {
+                    grid-template-rows: subgrid;
+                }
+
                 .grid-rows-1 {
                     grid-template-rows: repeat(1, minmax(0, 1fr));
                 }
@@ -47,6 +51,10 @@
                 @media (min-width: 320px) {
                     .xs\:grid-rows-none {
                         grid-template-rows: none;
+                    }
+
+                    .xs\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
                     }
 
                     .xs\:grid-rows-1 {
@@ -79,6 +87,10 @@
                         grid-template-rows: none;
                     }
 
+                    .sm\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
+                    }
+
                     .sm\:grid-rows-1 {
                         grid-template-rows: repeat(1, minmax(0, 1fr));
                     }
@@ -107,6 +119,10 @@
                 @media (min-width: 768px) {
                     .md\:grid-rows-none {
                         grid-template-rows: none;
+                    }
+
+                    .md\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
                     }
 
                     .md\:grid-rows-1 {
@@ -139,6 +155,10 @@
                         grid-template-rows: none;
                     }
 
+                    .lg\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
+                    }
+
                     .lg\:grid-rows-1 {
                         grid-template-rows: repeat(1, minmax(0, 1fr));
                     }
@@ -169,6 +189,10 @@
                         grid-template-rows: none;
                     }
 
+                    .xl\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
+                    }
+
                     .xl\:grid-rows-1 {
                         grid-template-rows: repeat(1, minmax(0, 1fr));
                     }
@@ -197,6 +221,10 @@
                 @media (min-width: 1400px) {
                     .\32 xl\:grid-rows-none {
                         grid-template-rows: none;
+                    }
+
+                    .\32 xl\:grid-rows-subgrid {
+                        grid-template-rows: subgrid;
                     }
 
                     .\32 xl\:grid-rows-1 {
