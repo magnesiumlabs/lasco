@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.0](https://github.com/magnesiumlabs/lasco/compare/v3.1.0...v3.2.0) (2023-09-11)
+
+
+### Features
+
+* **grid:** add `subgrid` support ([c70e0d2](https://github.com/magnesiumlabs/lasco/commit/c70e0d2da786ab5d8da1631adb77e8bc6f738eca))
+
 ## [3.1.0](https://github.com/magnesiumlabs/lasco/compare/v3.0.1...v3.1.0) (2023-08-23)
 
 
