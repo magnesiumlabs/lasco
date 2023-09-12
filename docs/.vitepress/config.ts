@@ -25,12 +25,12 @@ export default defineConfig({
                         link: '/'
                     },
                     {
-                        text: '1.x',
-                        link: 'https://1-x.dtdmnlzgl3mrc.amplifyapp.com'
-                    },
-                    {
                         text: '2.x',
                         link: 'https://2-x.dtdmnlzgl3mrc.amplifyapp.com'
+                    },
+                    {
+                        text: '1.x',
+                        link: 'https://1-x.dtdmnlzgl3mrc.amplifyapp.com'
                     }
                 ]
             }
