@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.0](https://github.com/magnesiumlabs/lasco/compare/v3.2.0...v3.3.0) (2023-09-12)
+
+
+### Features
+
+* **core:** add `min/max` generated media ([95ee349](https://github.com/magnesiumlabs/lasco/commit/95ee34907a1533259ba595edd3cf962898e9eb18))
+
+
+### Build System
+
+* **deps:** bump to `@unsass/selector` 1.3.0 ([616afe8](https://github.com/magnesiumlabs/lasco/commit/616afe83527ad7c23bede84e804445b83dad2805))
+
 ## [3.2.0](https://github.com/magnesiumlabs/lasco/compare/v3.1.0...v3.2.0) (2023-09-11)
 
 
