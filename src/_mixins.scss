@@ -62,6 +62,29 @@
     }
 }
 
+@mixin _between-breakpoint {
+    $source-map: breakpoint.get-screens();
+    $max-map: breakpoint.get-screens();
+
+    @if functions.has-breakpoints() {
+        @each $key, $value in $source-map {
+            $index: index($source-map, $key $value);
+
+            @each $key2, $value2 in $max-map {
+                $index-max: index($max-map, $key2 $value2);
+
+                @if $index-max >= $index {
+                    @include breakpoint.between($key, breakpoint.get-next($key2)) {
+                        @include selector.create("#{list.nth(&, 1)}", ($key, breakpoint.get-next($key2)), variables.$separator, $root: true) {
+                            @content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @mixin _responsive($property) {
     @if functions.has-declaration($property) {
         @content;
@@ -69,6 +92,11 @@
         @include _breakpoint {
             @content;
         }
+
+        @include _between-breakpoint {
+            @content
+        }
+    ;
     }
 }
 
