@@ -69,6 +69,16 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'Core',
+                collapsible: true,
+                items: [
+                    {
+                        text: 'Responsive Design',
+                        link: 'guide/responsive-design'
+                    }
+                ]
+            },
+            {
                 text: 'Layout',
                 collapsible: true,
                 items: [
