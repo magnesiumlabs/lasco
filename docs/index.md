@@ -2,7 +2,8 @@
 layout: home
 
 hero:
-    text: Lasco
+    name: Lasco
+    text: Rapidly build modern website with Sass.
     tagline: A utility-first Sass framework.
     actions:
         - theme: brand
@@ -18,8 +19,8 @@ features:
       details: Use all the power of Sass Module System!
     - icon: 🖖
       title: Power of classes
-      details: Compose your design directly in your markup!
+      details: Compose your design directly in your HTML markup!
     - icon: 🛠️
       title: Simple and minimal, always
-      details: ...no need to say more...
+      details: No need to say more.
 ---
