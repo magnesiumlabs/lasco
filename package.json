@@ -54,6 +54,7 @@
         "sass": "^1.66.1"
     },
     "files": [
+        "*.mscss",
         "*.scss",
         "src/**/*",
         "CHANGELOG.md"
