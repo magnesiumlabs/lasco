@@ -4,3 +4,7 @@
 @include mixins.createUtility("grid-template-columns", tokens.grid-template-columns-values(), (
     "grid-cols": "grid-template-columns"
 ));
+
+@include mixins.createUtility("grid-column", tokens.grid-column-values(), (
+    "col": "grid-column"
+));
