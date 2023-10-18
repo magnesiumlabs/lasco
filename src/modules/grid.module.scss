@@ -1,0 +1,6 @@
+@use "../tokens";
+@use "../mixins";
+
+@include mixins.createUtility("grid-template-columns", tokens.grid-template-columns-values(), (
+    "grid-cols": "grid-template-columns"
+));
