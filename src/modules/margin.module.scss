@@ -1,0 +1,26 @@
+@use "../tokens";
+@use "../mixins";
+
+@include mixins.createUtility("margin", tokens.margin-values(), (
+    "m": "margin",
+    "mx": (
+        "margin-left",
+        "margin-right"
+    ),
+    "my": (
+        "margin-top",
+        "margin-bottom"
+    ),
+    "mt": (
+        "margin-top"
+    ),
+    "mr": (
+        "margin-right"
+    ),
+    "mb": (
+        "margin-bottom"
+    ),
+    "ml": (
+        "margin-left"
+    )
+));
