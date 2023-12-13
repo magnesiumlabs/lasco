@@ -8,14 +8,14 @@ Utilities for applying `align-content` property an element.
 
 ## Quick reference
 
-| Class                   | Property                        | Token           |
-|-------------------------|---------------------------------|-----------------|
-| `align-content-start`   | `align-content: start;`         | `start`         |
-| `align-content-end`     | `align-content: end;`           | `end`           |
-| `align-content-center`  | `align-content: center;`        | `center`        |
-| `align-content-between` | `align-content: space-between;` | `space-between` |
-| `align-content-around`  | `align-content: space-around;`  | `space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly;`  | `space-evenly`  |
+| Class                         | Property                        | Token           |
+|-------------------------------|---------------------------------|-----------------|
+| `align-content-start`         | `align-content: start;`         | `start`         |
+| `align-content-end`           | `align-content: end;`           | `end`           |
+| `align-content-center`        | `align-content: center;`        | `center`        |
+| `align-content-space-between` | `align-content: space-between;` | `space-between` |
+| `align-content-space-around`  | `align-content: space-around;`  | `space-around`  |
+| `align-content-space-evenly`  | `align-content: space-evenly;`  | `space-evenly`  |
 
 ## Usage
 

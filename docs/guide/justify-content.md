@@ -8,15 +8,15 @@ Utilities for applying `justify-content` property an element.
 
 ## Quick reference
 
-| Class                     | Property                          | Token           |
-|---------------------------|-----------------------------------|-----------------|
-| `justify-content-start`   | `justify-content: start;`         | `start`         |
-| `justify-content-end`     | `justify-content: end;`           | `end`           |
-| `justify-content-center`  | `justify-content: center;`        | `center`        |
-| `justify-content-between` | `justify-content: space-between;` | `space-between` |
-| `justify-content-around`  | `justify-content: space-around;`  | `space-around`  |
-| `justify-content-evenly`  | `justify-content: space-evenly;`  | `space-evenly`  |
-| `justify-content-stretch` | `justify-content: stretch;`       | `stretch`       |
+| Class                           | Property                          | Token           |
+|---------------------------------|-----------------------------------|-----------------|
+| `justify-content-start`         | `justify-content: start;`         | `start`         |
+| `justify-content-end`           | `justify-content: end;`           | `end`           |
+| `justify-content-center`        | `justify-content: center;`        | `center`        |
+| `justify-content-space-between` | `justify-content: space-between;` | `space-between` |
+| `justify-content-space-around`  | `justify-content: space-around;`  | `space-around`  |
+| `justify-content-space-evenly`  | `justify-content: space-evenly;`  | `space-evenly`  |
+| `justify-content-stretch`       | `justify-content: stretch;`       | `stretch`       |
 
 ## Usage
 

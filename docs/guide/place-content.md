@@ -8,15 +8,15 @@ Utilities for applying `place-content` property an element.
 
 ## Quick reference
 
-| Class                   | Property                        | Token           |
-|-------------------------|---------------------------------|-----------------|
-| `place-content-start`   | `place-content: start;`         | `start`         |
-| `place-content-end`     | `place-content: end;`           | `end`           |
-| `place-content-center`  | `place-content: center;`        | `center`        |
-| `place-content-between` | `place-content: space-between;` | `space-between` |
-| `place-content-around`  | `place-content: space-around;`  | `space-around`  |
-| `place-content-evenly`  | `place-content: space-evenly;`  | `space-evenly`  |
-| `place-content-stretch` | `place-content: stretch;`       | `stretch`       |
+| Class                         | Property                        | Token           |
+|-------------------------------|---------------------------------|-----------------|
+| `place-content-start`         | `place-content: start;`         | `start`         |
+| `place-content-end`           | `place-content: end;`           | `end`           |
+| `place-content-center`        | `place-content: center;`        | `center`        |
+| `place-content-space-between` | `place-content: space-between;` | `space-between` |
+| `place-content-space-around`  | `place-content: space-around;`  | `space-around`  |
+| `place-content-space-evenly`  | `place-content: space-evenly;`  | `space-evenly`  |
+| `place-content-stretch`       | `place-content: stretch;`       | `stretch`       |
 
 ## Usage
 
