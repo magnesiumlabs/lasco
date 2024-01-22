@@ -39,7 +39,7 @@
         "sass-loader": "^13.0.2",
         "sass-true": "^7.0.0",
         "semantic-release": "^21.0.5",
-        "vitepress": "^1.0.0-rc.34",
+        "vitepress": "^1.0.0-rc.39",
         "vue": "^3.4.3",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4"

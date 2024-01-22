@@ -106,6 +106,10 @@ export default defineConfig({
                         link: 'guide/position'
                     },
                     {
+                        text: 'Top / Right / Bottom / Left',
+                        link: 'guide/top-right-bottom-left'
+                    },
+                    {
                         text: 'Visibility',
                         link: 'guide/visibility'
                     },
