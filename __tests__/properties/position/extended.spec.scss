@@ -11,6 +11,18 @@
     $extend: (
         "position": (
             "fixed"
+        ),
+        "top": (
+            "10": "10px"
+        ),
+        "right": (
+            "10": "10px"
+        ),
+        "bottom": (
+            "10": "10px"
+        ),
+        "left": (
+            "10": "10px"
         )
     )
 );
@@ -23,9 +35,97 @@
             }
 
             @include expect(false) {
-                 .fixed {
-                   position: fixed;
-                 }
+                .fixed {
+                    position: fixed;
+                }
+            }
+        }
+    }
+}
+
+@include describe("top") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("top", tokens.position-top-values(), (
+                    "top": "top"
+                ));
+            }
+
+            @include expect(false) {
+                .top-0 {
+                    top: 0;
+                }
+
+                .top-10 {
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include describe("right") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("right", tokens.position-right-values(), (
+                    "right": "right"
+                ));
+            }
+
+            @include expect(false) {
+                .right-0 {
+                    right: 0;
+                }
+
+                .right-10 {
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include describe("bottom") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("bottom", tokens.position-bottom-values(), (
+                    "bottom": "bottom"
+                ));
+            }
+
+            @include expect(false) {
+                .bottom-0 {
+                    bottom: 0;
+                }
+
+                .bottom-10 {
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include describe("left") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include core.createUtility("left", tokens.position-left-values(), (
+                    "left": "left"
+                ));
+            }
+
+            @include expect(false) {
+                .left-0 {
+                    left: 0;
+                }
+
+                .left-10 {
+                    left: 10px;
+                }
             }
         }
     }

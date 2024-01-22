@@ -11,3 +11,27 @@
         "sticky": "sticky"
     );
 }
+
+@function top-values() {
+    @return (
+        "0": "0"
+    );
+}
+
+@function right-values() {
+    @return (
+        "0": "0"
+    );
+}
+
+@function bottom-values() {
+    @return (
+        "0": "0"
+    );
+}
+
+@function left-values() {
+    @return (
+        "0": "0"
+    );
+}

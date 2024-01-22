@@ -35,6 +35,23 @@
     ));
 
     @include mixins.createUtility("position", tokens.position-values());
+
+    @include mixins.createUtility("top", tokens.position-top-values(), (
+        "top": "top"
+    ));
+
+    @include mixins.createUtility("right", tokens.position-top-values(), (
+        "right": "right"
+    ));
+
+    @include mixins.createUtility("bottom", tokens.position-top-values(), (
+        "bottom": "bottom"
+    ));
+
+    @include mixins.createUtility("left", tokens.position-top-values(), (
+        "left": "left"
+    ));
+
     @include mixins.createUtility("visibility", tokens.visibility-values());
 
     @include mixins.createUtility("z-index", tokens.z-index-values(), (
