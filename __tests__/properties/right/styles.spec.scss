@@ -10,32 +10,18 @@
     )
 );
 
-@include describe("position") {
+@include describe("right") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("position", tokens.position-values());
+                @include core.createUtility("right", tokens.position-right-values(), (
+                    "right": "right"
+                ));
             }
 
             @include expect(false) {
-                .absolute {
-                    position: absolute;
-                }
-
-                .fixed {
-                    position: fixed;
-                }
-
-                .relative {
-                    position: relative;
-                }
-
-                .static {
-                    position: static;
-                }
-
-                .sticky {
-                    position: sticky;
+                .right-0 {
+                    right: 0;
                 }
             }
         }

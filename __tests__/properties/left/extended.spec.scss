@@ -7,35 +7,30 @@
 @use "../../../src" as core with (
     $engine: (
         "screens": false
+    ),
+    $extend: (
+        "left": (
+            "10": "10px"
+        )
     )
 );
 
-@include describe("position") {
+@include describe("left") {
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("position", tokens.position-values());
+                @include core.createUtility("left", tokens.position-left-values(), (
+                    "left": "left"
+                ));
             }
 
             @include expect(false) {
-                .absolute {
-                    position: absolute;
+                .left-0 {
+                    left: 0;
                 }
 
-                .fixed {
-                    position: fixed;
-                }
-
-                .relative {
-                    position: relative;
-                }
-
-                .static {
-                    position: static;
-                }
-
-                .sticky {
-                    position: sticky;
+                .left-10 {
+                    left: 10px;
                 }
             }
         }
