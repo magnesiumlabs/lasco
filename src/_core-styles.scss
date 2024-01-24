@@ -161,7 +161,7 @@
     // Flexbox & Grid
     // ------------------------------------------------------------------------- //
 
-    @include mixins.createUtility("flex", tokens.flex-values() (
+    @include mixins.createUtility("flex", tokens.flex-values(), (
         "flex": "flex"
     ));
 
