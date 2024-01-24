@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.2](https://github.com/magnesiumlabs/lasco/compare/v3.3.1...v3.3.2) (2024-01-24)
+
+
+### Bug Fixes
+
+* **flex:** missing comma ([6204041](https://github.com/magnesiumlabs/lasco/commit/6204041aa929fb15e31c291fc4e6053afda01466))
+
 ## [3.3.1](https://github.com/magnesiumlabs/lasco/compare/v3.3.0...v3.3.1) (2023-12-15)
 
 
