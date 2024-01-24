@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "grid-column-end"
     ),
     $extend: (
         "grid-column-end": (
@@ -19,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-column-end", tokens.grid-column-end-values(), (
-                    "col-end": "grid-column-end"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

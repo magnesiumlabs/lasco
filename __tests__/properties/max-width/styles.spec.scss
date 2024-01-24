@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "max-width"
     )
 );
 
@@ -14,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("max-width", tokens.max-width-values(), (
-                    "max-w": "max-width"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {
@@ -47,24 +47,10 @@
                 .max-w-fit {
                     max-width: fit-content;
                 }
-            }
-        }
-    }
-}
 
-@include describe("max-width-screen") {
-    @include it("Should return main styles declarations.") {
-        @include assert {
-            @include output(false) {
-                @include core.createUtility("max-width", tokens.max-width-screen-values(), (
-                    "max-w-screen": "max-width"
-                ));
-            }
-
-            @include expect(false) {
                 .max-w-screen-xs {
-                    max-width: 320px;
-                }
+                     max-width: 320px;
+                 }
 
                 .max-w-screen-sm {
                     max-width: 480px;

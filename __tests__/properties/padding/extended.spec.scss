@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "padding"
     ),
     $extend: (
         "padding": (
@@ -19,29 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("padding", tokens.padding-values(), (
-                    "p": "padding",
-                    "px": (
-                        "padding-left",
-                        "padding-right"
-                    ),
-                    "py": (
-                        "padding-top",
-                        "padding-bottom"
-                    ),
-                    "pt": (
-                        "padding-top"
-                    ),
-                    "pr": (
-                        "padding-right"
-                    ),
-                    "pb": (
-                        "padding-bottom"
-                    ),
-                    "pl": (
-                        "padding-left"
-                    )
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

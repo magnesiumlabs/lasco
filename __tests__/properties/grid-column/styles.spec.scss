@@ -3,11 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
 @use "sass:string";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "grid-column"
     )
 );
 
@@ -15,9 +17,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("grid-column", tokens.grid-column-values(), (
-                    "col": "grid-column"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

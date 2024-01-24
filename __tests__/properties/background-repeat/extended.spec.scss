@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "background-repeat"
     ),
     $extend: (
         "background-repeat": (
@@ -19,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-repeat", tokens.background-repeat-values(), (
-                    "bg": "background-repeat"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

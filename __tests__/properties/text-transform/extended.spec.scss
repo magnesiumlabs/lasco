@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "text-transform"
     ),
     $extend: (
         "text-transform": (
@@ -19,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("text-transform", tokens.text-transform-values(), (
-                    "text": "text-transform"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

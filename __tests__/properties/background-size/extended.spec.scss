@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "background-size"
     ),
     $extend: (
         "background-size": (
@@ -21,9 +23,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-size", tokens.background-size-values(), (
-                    "bg-size": "background-size"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

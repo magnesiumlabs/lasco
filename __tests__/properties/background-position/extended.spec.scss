@@ -3,11 +3,13 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
 @use "sass:string";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "background-position"
     ),
     $extend: (
         "background-position": (
@@ -20,9 +22,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("background-position", tokens.background-position-values(), (
-                    "bg-position": "background-position"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "flex-wrap"
     ),
     $extend: (
         "flex-wrap": (
@@ -19,9 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("flex-wrap", tokens.flex-wrap-values(), (
-                    "flex": "flex-wrap"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

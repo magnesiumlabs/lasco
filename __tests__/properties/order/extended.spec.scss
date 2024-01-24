@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "order"
     ),
     $extend: (
         "order": (
@@ -21,9 +23,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("order", tokens.order-values(), (
-                    "order": "order"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

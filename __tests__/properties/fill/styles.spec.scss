@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "fill"
     )
 );
 
@@ -14,9 +16,7 @@
     @include it("Should return main styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("fill", tokens.fill-values(), (
-                    "fill": "fill"
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

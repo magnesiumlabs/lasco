@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "gap"
     ),
     $extend: (
         "gap": (
@@ -20,15 +22,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("gap", tokens.gap-values(), (
-                    "gap": "gap",
-                    "gap-x": (
-                        "column-gap"
-                    ),
-                    "gap-y": (
-                        "row-gap"
-                    )
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {

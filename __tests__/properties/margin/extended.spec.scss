@@ -3,10 +3,12 @@
 // ============================================================================================= //
 
 @use "true" as *;
-@use "../../../src/tokens";
-@use "../../../src" as core with (
+@use "../../../index" as lasco with (
     $engine: (
         "screens": false
+    ),
+    $core: (
+        "margin"
     ),
     $extend: (
         "margin": (
@@ -19,29 +21,7 @@
     @include it("Should return extended styles declarations.") {
         @include assert {
             @include output(false) {
-                @include core.createUtility("margin", tokens.margin-values(), (
-                    "m": "margin",
-                    "mx": (
-                        "margin-left",
-                        "margin-right"
-                    ),
-                    "my": (
-                        "margin-top",
-                        "margin-bottom"
-                    ),
-                    "mt": (
-                        "margin-top"
-                    ),
-                    "mr": (
-                        "margin-right"
-                    ),
-                    "mb": (
-                        "margin-bottom"
-                    ),
-                    "ml": (
-                        "margin-left"
-                    )
-                ));
+                @include lasco.styles;
             }
 
             @include expect(false) {
