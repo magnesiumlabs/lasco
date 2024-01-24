@@ -1,0 +1,38 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "font-size"
+    ),
+    $extend: (
+        "font-size": (
+            "xl": "20px"
+        )
+    )
+);
+
+@include describe("font-size") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .text-base {
+                    font-size: 16px;
+                }
+
+                .text-xl {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

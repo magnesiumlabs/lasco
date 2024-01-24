@@ -164,6 +164,10 @@ export default defineConfig({
                 collapsible: true,
                 items: [
                     {
+                        text: 'Font Size',
+                        link: 'guide/font-size'
+                    },
+                    {
                         text: 'Font Style',
                         link: 'guide/font-style'
                     },

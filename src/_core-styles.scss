@@ -102,6 +102,10 @@
     // Typography
     // ------------------------------------------------------------------------- //
 
+    @include mixins.createUtility("font-size", tokens.font-size-values(), (
+        "text": "font-size"
+    ));
+
     @include mixins.createUtility("font-style", tokens.font-style-values(), (
         "font": "font-style"
     ));
