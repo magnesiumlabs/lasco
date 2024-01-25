@@ -8,9 +8,9 @@ Utilities for applying `font-size` to an element.
 
 ## Quick reference
 
-| Class       | Property           | Token       |
-|-------------|--------------------|-------------|
-| `text-base` | `font-size: 16px;` | `font-size` |
+| Class       | Property           |
+|-------------|--------------------|
+| `text-base` | `font-size: 16px;` |
 
 ## Usage
 
