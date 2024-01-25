@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.0](https://github.com/magnesiumlabs/lasco/compare/v3.3.2...v3.4.0) (2024-01-25)
+
+
+### Features
+
+* **font-size:** add main component ([4ae4001](https://github.com/magnesiumlabs/lasco/commit/4ae400192f2bc3e52a4174de5cff2a46d8b1315c))
+* **top, right, bottom, right:** add main components ([#151](https://github.com/magnesiumlabs/lasco/issues/151)) ([da6c019](https://github.com/magnesiumlabs/lasco/commit/da6c019c1b77eec6ab2d66a890c98364fecbbbc6))
+
+
+### Code Refactoring
+
+* renamed internal mixin `core-styles` to `styles` ([fc6a9ca](https://github.com/magnesiumlabs/lasco/commit/fc6a9ca9d4074496363ee6fc76b3c8c27e8ceb5c))
+* **tokens:** move on `layout` folder ([ecf38da](https://github.com/magnesiumlabs/lasco/commit/ecf38da85fa0bd13c39d6c22a2e6e71487db7a18))
+
 ## [3.3.2](https://github.com/magnesiumlabs/lasco/compare/v3.3.1...v3.3.2) (2024-01-24)
 
 
