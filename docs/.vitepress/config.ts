@@ -102,6 +102,10 @@ export default defineConfig({
                         link: 'guide/object-fit'
                     },
                     {
+                        text: 'Overflow',
+                        link: 'guide/overflow'
+                    },
+                    {
                         text: 'Position',
                         link: 'guide/position'
                     },

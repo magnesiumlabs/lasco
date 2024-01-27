@@ -1,0 +1,42 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "overflow"
+    ),
+    $extend: (
+        "overflow": (
+            "auto"
+        )
+    )
+);
+
+@include describe("overflow") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .overflow-auto {
+                    overflow: auto;
+                }
+
+                .overflow-x-auto {
+                    overflow-x: auto;
+                }
+
+                .overflow-y-auto {
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}

@@ -34,6 +34,16 @@
         "object": "object-fit"
     ));
 
+    @include mixins.createUtility("overflow", tokens.overflow-values(), (
+        "overflow": "overflow",
+        "overflow-x": (
+            "overflow-x"
+        ),
+        "overflow-y": (
+            "overflow-y"
+        )
+    ));
+
     @include mixins.createUtility("position", tokens.position-values());
 
     @include mixins.createUtility("top", tokens.position-top-values(), (
