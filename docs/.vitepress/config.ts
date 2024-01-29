@@ -98,6 +98,10 @@ export default defineConfig({
                         link: 'guide/float'
                     },
                     {
+                        text: 'Isolation',
+                        link: 'guide/isolation'
+                    },
+                    {
                         text: 'Object Fit',
                         link: 'guide/object-fit'
                     },

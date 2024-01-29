@@ -30,6 +30,10 @@
         "float": "float"
     ));
 
+    @include mixins.createUtility("isolation", tokens.isolate-values(), (
+        "isolation": "isolation"
+    ));
+
     @include mixins.createUtility("object-fit", tokens.object-fit-values(), (
         "object": "object-fit"
     ));

@@ -6,6 +6,7 @@
 @forward "./layout/display" as display-*;
 @forward "./layout/clear" as clear-*;
 @forward "./layout/float" as float-*;
+@forward "./layout/isolate" as isolate-*;
 @forward "./layout/object-fit" as object-fit-*;
 @forward "./layout/overflow" as overflow-*;
 @forward "./layout/position" as position-*;

@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "isolation"
+    ),
+    $extend: (
+        "isolation": (
+            "auto"
+        )
+    )
+);
+
+@include describe("isolation") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .isolation-auto {
+                    isolation: auto;
+                }
+            }
+        }
+    }
+}
