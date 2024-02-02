@@ -40,8 +40,8 @@ Use the `{key}` class for setup the display type.
 
 ### Breakpoints and media queries
 
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:overflow-scroll` will be only
-apply on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:overflow-scroll` will be
+only apply on large screens size and above.
 
 ```html
 

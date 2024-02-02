@@ -27,8 +27,8 @@ Use the `content-{key}` class for setup ratio aspect.
 
 ### Breakpoints and media queries
 
-You can also control the responsive breakpoint with variant class modifiers. For example `lg:content-none` will be only apply
-on large screens size and above.
+You can also control the responsive breakpoint with variant class modifiers. For example `lg:content-none` will be only
+apply on large screens size and above.
 
 ```html
 
