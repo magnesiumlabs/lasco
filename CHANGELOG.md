@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.0](https://github.com/magnesiumlabs/lasco/compare/v3.4.0...v3.5.0) (2024-02-02)
+
+
+### Features
+
+* **isolation:** add properties ([0031201](https://github.com/magnesiumlabs/lasco/commit/00312014a4c9a4a141b1b4fa2588a6b878563bbc))
+* **overflow:** add properties ([7d4518e](https://github.com/magnesiumlabs/lasco/commit/7d4518ea15f02dcb2c97c81b4b73e02c9f12dbce))
+
+
+### Build System
+
+* **deps:** bump to `sass` 1.70.0 ([2ca5aeb](https://github.com/magnesiumlabs/lasco/commit/2ca5aeb9a8cd4650b06c05a6d17c3e0258bda39c))
+
 ## [3.4.0](https://github.com/magnesiumlabs/lasco/compare/v3.3.2...v3.4.0) (2024-01-25)
 
 
