@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.0](https://github.com/magnesiumlabs/lasco/compare/v3.5.0...v3.6.0) (2024-02-02)
+
+
+### Features
+
+* **content:** add properties ([939defb](https://github.com/magnesiumlabs/lasco/commit/939defb67a373b388e39e78c3c5e5db21c6b1acc))
+* **hyphens:** add properties ([01ca067](https://github.com/magnesiumlabs/lasco/commit/01ca067e72ce5c6de1dc09c9c18a9a4004abb299))
+
 ## [3.5.0](https://github.com/magnesiumlabs/lasco/compare/v3.4.0...v3.5.0) (2024-02-02)
 
 
