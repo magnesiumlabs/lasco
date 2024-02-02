@@ -190,6 +190,10 @@ export default defineConfig({
                     {
                         text: 'Text Transform',
                         link: 'guide/text-transform'
+                    },
+                    {
+                        text: 'Content',
+                        link: 'guide/content'
                     }
                 ]
             },

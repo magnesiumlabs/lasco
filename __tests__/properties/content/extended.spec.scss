@@ -1,0 +1,39 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "sass:string";
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "content"
+    ),
+    $extend: (
+        "content": (
+            "icon": "'❤'"
+        )
+    )
+);
+
+@include describe("content") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .content-none {
+                    content: none;
+                }
+
+                .content-icon {
+                    content: string.unquote("'❤'");
+                }
+            }
+        }
+    }
+}
