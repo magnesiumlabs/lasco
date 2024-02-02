@@ -136,6 +136,10 @@
         "text": "text-transform"
     ));
 
+    @include mixins.createUtility("hyphens", tokens.hyphens-values(), (
+        "hyphens": "hyphens"
+    ));
+
     @include mixins.createUtility("content", tokens.content-values(), (
         "content": "content"
     ));

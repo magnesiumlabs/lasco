@@ -192,6 +192,10 @@ export default defineConfig({
                         link: 'guide/text-transform'
                     },
                     {
+                        text: 'Hyphens',
+                        link: 'guide/hyphens'
+                    },
+                    {
                         text: 'Content',
                         link: 'guide/content'
                     }

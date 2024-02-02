@@ -1,0 +1,37 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "hyphens"
+    )
+);
+
+@include describe("hyphens") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .hyphens-none {
+                    hyphens: none;
+                }
+
+                .hyphens-manual {
+                    hyphens: manual;
+                }
+
+                .hyphens-auto {
+                    hyphens: auto;
+                }
+            }
+        }
+    }
+}
