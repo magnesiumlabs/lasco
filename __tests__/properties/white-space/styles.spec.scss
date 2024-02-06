@@ -1,0 +1,49 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "white-space"
+    )
+);
+
+@include describe("white-space") {
+    @include it("Should return main styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .white-space-normal {
+                    white-space: normal;
+                }
+
+                .white-space-nowrap {
+                    white-space: nowrap;
+                }
+
+                .white-space-pre {
+                    white-space: pre;
+                }
+
+                .white-space-pre-line {
+                    white-space: pre-line;
+                }
+
+                .white-space-pre-wrap {
+                    white-space: pre-wrap;
+                }
+
+                .white-space-break-spaces {
+                    white-space: break-spaces;
+                }
+            }
+        }
+    }
+}

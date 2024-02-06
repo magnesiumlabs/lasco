@@ -140,6 +140,10 @@
         "hyphens": "hyphens"
     ));
 
+    @include mixins.createUtility("white-space", tokens.white-space-values(), (
+        "white-space": "white-space"
+    ));
+
     @include mixins.createUtility("content", tokens.content-values(), (
         "content": "content"
     ));

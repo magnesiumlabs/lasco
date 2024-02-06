@@ -1,0 +1,34 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../../../index" as lasco with (
+    $engine: (
+        "screens": false
+    ),
+    $core: (
+        "white-space"
+    ),
+    $extend: (
+        "white-space": (
+            "normal"
+        )
+    )
+);
+
+@include describe("white-space") {
+    @include it("Should return extended styles declarations.") {
+        @include assert {
+            @include output(false) {
+                @include lasco.styles;
+            }
+
+            @include expect(false) {
+                .white-space-normal {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
