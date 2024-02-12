@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.0](https://github.com/magnesiumlabs/lasco/compare/v3.6.0...v3.7.0) (2024-02-12)
+
+
+### Features
+
+* **white-space:** add properties ([55a5be9](https://github.com/magnesiumlabs/lasco/commit/55a5be9d7aab93aef1561c0ebb018509609f31b2))
+
+
+### Build System
+
+* **deps:** switch webpack for vite ([52f1cec](https://github.com/magnesiumlabs/lasco/commit/52f1cecac840cb0d19c4ae9fd452430cb5948857))
+* **deps:** update `clean:chunks` script ([23c75db](https://github.com/magnesiumlabs/lasco/commit/23c75dbad72a5a94e19dbf0f6986327f4c359348))
+
+
+### Code Refactoring
+
+* removed unneeded `index.scss` file ([ad49f5d](https://github.com/magnesiumlabs/lasco/commit/ad49f5dff1abdc4f38016a6783aac47b9c1bfa0c))
+* renamed file `_core-styles.scss` to `_core.scss` ([9a2c5e7](https://github.com/magnesiumlabs/lasco/commit/9a2c5e71dff1f975c857f4723716087fc3181945))
+
 ## [3.6.0](https://github.com/magnesiumlabs/lasco/compare/v3.5.0...v3.6.0) (2024-02-02)
 
 
