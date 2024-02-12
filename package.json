@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev:docs": "vitepress dev docs",
-        "clean:chunks": "rimraf \"dist/*.mjs*\" && rimraf \"dist/*.umd.js*\"",
+        "clean:chunks": "rimraf \"dist/*.js*\" && rimraf \"dist/*.umd.cjs*\"",
         "clean:dist": "rimraf \"dist/*\"",
         "clean": "npm-run-all --parallel clean:*",
         "test": "jest --ci",
