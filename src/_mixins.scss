@@ -68,10 +68,10 @@
 
     @if functions.has-breakpoints() {
         @each $key, $value in $source-map {
-            $index: index($source-map, $key $value);
+            $index: list.index($source-map, $key $value);
 
             @each $key2, $value2 in $max-map {
-                $index-max: index($max-map, $key2 $value2);
+                $index-max: list.index($max-map, $key2 $value2);
 
                 @if $index-max >= $index {
                     @include breakpoint.between($key, breakpoint.get-next($key2)) {
@@ -89,11 +89,11 @@
     @if functions.has-declaration($property) {
         @content;
 
-        @include _breakpoint {
+        @include _breakpoint() {
             @content;
         }
 
-        @include _between-breakpoint {
+        @include _between-breakpoint() {
             @content
         }
     }
