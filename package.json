@@ -48,8 +48,8 @@
         "@unsass/breakpoint": "^2.5.1",
         "@unsass/css": "^2.1.0",
         "@unsass/selector": "^1.3.0",
-        "@unsass/string": "^1.0.0",
-        "@unsass/types": "^1.0.2",
+        "@unsass/string": "^1.4.4",
+        "@unsass/types": "^1.0.3",
         "sass": "^1.83.1",
         "vitest": "^3.2.3"
     },
