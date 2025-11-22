@@ -36,7 +36,7 @@
         "postcss-sort-media-queries": "^5.2.0",
         "rimraf": "^3.0.2",
         "sass-true": "^10.0.0",
-        "semantic-release": "^24.2.5",
+        "semantic-release": "^25.0.2",
         "stylelint": "^16.26.0",
         "typescript": "^5.8.3",
         "vite": "^6.3.5",
