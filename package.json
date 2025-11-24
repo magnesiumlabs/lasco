@@ -37,7 +37,6 @@
         "sass-true": "^10.0.0",
         "semantic-release": "^24.2.9",
         "stylelint": "^16.26.0",
-        "typescript": "^5.9.3",
         "vite": "^7.2.4",
         "vitepress": "^1.6.4",
         "vitest": "^4.0.13"
