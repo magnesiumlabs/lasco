@@ -5,14 +5,14 @@
     "type": "module",
     "scripts": {
         "dev:docs": "vitepress dev docs",
-        "clean:chunks": "rimraf \"dist/*.js*\" && rimraf \"dist/*.umd.cjs*\"",
-        "clean:dist": "rimraf \"dist/*\"",
+        "clean:chunks": "rimraf --glob dist/*.js* dist/*.umd.cjs*",
+        "clean:dist": "rimraf dist",
         "clean": "npm-run-all --parallel clean:*",
         "lint:css": "stylelint --fix \"**/*.scss\"",
         "lint:js": "eslint --fix .",
         "lint": "npm-run-all --parallel lint:*",
         "test": "vitest",
-        "build": "npm run clean:dist && vue-tsc && vite build && npm run clean:chunks",
+        "build": "npm run clean:dist && vite build && npm run clean:chunks",
         "build:docs": "vitepress build docs",
         "prepare": "husky && npm run build",
         "release": "semantic-release"
@@ -33,15 +33,14 @@
         "husky": "^9.1.7",
         "npm-run-all": "^4.1.5",
         "postcss-sort-media-queries": "^5.2.0",
-        "rimraf": "^3.0.2",
+        "rimraf": "^6.1.2",
         "sass-true": "^10.0.0",
-        "semantic-release": "^25.0.2",
+        "semantic-release": "^24.2.9",
         "stylelint": "^16.26.0",
         "typescript": "^5.9.3",
         "vite": "^7.2.4",
         "vitepress": "^1.6.4",
-        "vitest": "^4.0.13",
-        "vue-tsc": "^3.1.5"
+        "vitest": "^4.0.13"
     },
     "dependencies": {
         "@unsass/breakpoint": "^2.5.1",
