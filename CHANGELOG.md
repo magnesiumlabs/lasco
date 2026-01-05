@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.0](https://github.com/magnesiumlabs/lasco/compare/v3.7.0...v3.8.0) (2026-01-05)
+
+### Dependencies
+
+* **deps:** bump to `@unsass/breakpoint` 2.6.0 ([87b7edc](https://github.com/magnesiumlabs/lasco/commit/87b7edc9e35a96769dfe53a330e9d585932da467))
+* **deps:** bump to `@unsass/css` 3.1.0 ([3c2d09a](https://github.com/magnesiumlabs/lasco/commit/3c2d09a9e9eafc028ea7e02aa26ef5dea575986d))
+* **deps:** bump to `@unsass/selector` 1.4.0 ([be369cb](https://github.com/magnesiumlabs/lasco/commit/be369cb0a3c6e8c1fddef42c1e71a29af6214935))
+* **deps:** bump to `@unsass/string` 1.4.4 ([a33a5e2](https://github.com/magnesiumlabs/lasco/commit/a33a5e238a2266f005787a772c2e7ca148593e4c))
+* **deps:** bump to `sass` 1.97.1 ([8a07a33](https://github.com/magnesiumlabs/lasco/commit/8a07a3337f9e42bca9a3425b6d75c0b4c810ae14))
+
 ## [3.7.0](https://github.com/magnesiumlabs/lasco/compare/v3.6.0...v3.7.0) (2024-02-12)
 
 
